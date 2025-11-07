@@ -16,80 +16,80 @@
             {{/* --------- CTA 文案：固定为“阅读” --------- */}}
             {{ $cta := "阅读" }}
 
-            <li class="res-row">
-              <div class="res-thumb" aria-hidden="true">
-                {{ with $cover }}
-                  {{ partial "picture.html" (dict
-                    "ctx"   $p
-                    "src"   .
-                    "alt"   $p.Title
-                    "w"     (slice 256 512 768)
-                    "sizes" "(max-width: 48rem) 100vw, 128px"
-                    "class" "res-thumb__img"
-                  ) }}
-                {{ else }}
-                  <img class="res-thumb__img" loading="lazy" alt=""
-                       src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23e5e7eb'/%3E%3C/svg%3E">
-                {{ end }}
-                {{/* —— 徽章整段删除（仅此两行） —— 
-                <span class="badge {{ $badgeClass }}">{{ $badgeLabel }}</span>
-                {{ if or $p.Params.gated $p.Params.locked }}<span class="badge badge--lock" title="下载需填写信息">🔒</span>{{ end }}
-                */}}
-              </div>
-
-              <div class="res-main">
-                <a class="res-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
-
-                <p class="res-desc">
-                  {{- with $p.Params.description -}}
-                    {{ . }}
-                  {{- else -}}
-                    {{- $txt := $p.Summary | plainify -}}
-                    {{- if lt (len $txt) 10 }}{{ $txt = (truncate 200 ($p.Plain | plainify)) }}{{ end -}}
-                    {{- $txt -}}
-                  {{- end -}}
-                </p>
-
-                <!-- ======= .res-meta：按你的新规则重构 ======= -->
-                <div class="res-meta">
-                  {{/* 归一化分类：使用 front matter 的 categories（字符串） */}}
-                  {{ $cat := lower (printf "%v" $p.Params.categories) }}
-                  {{ $isDL := or (eq $cat "download") (eq $cat "downloads") }}
-
-                  {{/* 分类显示标签映射（可按需改文字） */}}
-                  {{ $catLabelMap := dict "articles" "Articles" "download" "Download" "downloads" "Download" "news" "News" "faq" "FAQ" }}
-                  <span>分类：{{ or (index $catLabelMap $cat) $cat }}</span>
-
-                  {{/* articles/news/faq → 显示阅读时间（优先 reading；否则用 ReadingTime） */}}
-                  {{ if not $isDL }}
-                    {{ $rt := cond (gt $p.ReadingTime 0) (printf "%d 分钟" $p.ReadingTime) "" }}
-                    {{ with or $p.Params.reading $rt }}
-                      <span>阅读：{{ . }}</span>
-                    {{ end }}
+            <li class="res-card">
+              <article class="res-card__inner">
+                <a class="res-card__media" href="{{ $p.RelPermalink }}">
+                  {{ with $cover }}
+                    {{ partial "picture.html" (dict
+                      "ctx"   $p
+                      "src"   .
+                      "alt"   $p.Title
+                      "w"     (slice 480 720 960 1280)
+                      "sizes" "(max-width: 48rem) 100vw, min(33vw, 480px)"
+                      "class" "res-card__img"
+                    ) }}
+                  {{ else }}
+                    <img class="res-card__img" loading="lazy" alt=""
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'%3E%3Crect width='100%25' height='100%25' fill='%23e5e7eb'/%3E%3C/svg%3E">
                   {{ end }}
+                </a>
 
-                  {{/* download → 显示文件大小 */}}
-                  {{ if $isDL }}
-                    {{ with $p.Params.file_size }}
-                      <span>文件：{{ . }}</span>
-                    {{ end }}
-                  {{ end }}
+                <div class="res-card__content">
+                  <h3 class="res-card__title">
+                    <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                  </h3>
 
-                  {{/* 日期（使用 date；本地化格式） */}}
-                  <span>
-                    {{ if eq $.Site.Language.Lang "zh" }}
-                      发布：{{ ($p.Date | time).Format "2006-01-02" }}
-                    {{ else }}
-                      Published: {{ ($p.Date | time).Format "Jan 2, 2006" }}
+                  <p class="res-card__desc">
+                    {{- with $p.Params.description -}}
+                      {{ . }}
+                    {{- else -}}
+                      {{- $txt := $p.Summary | plainify -}}
+                      {{- if lt (len $txt) 10 }}{{ $txt = (truncate 200 ($p.Plain | plainify)) }}{{ end -}}
+                      {{- $txt -}}
+                    {{- end -}}
+                  </p>
+
+                  <!-- ======= .res-meta：按你的新规则重构 ======= -->
+                  <div class="res-card__meta res-meta">
+                    {{/* 归一化分类：使用 front matter 的 categories（字符串） */}}
+                    {{ $cat := lower (printf "%v" $p.Params.categories) }}
+                    {{ $isDL := or (eq $cat "download") (eq $cat "downloads") }}
+
+                    {{/* 分类显示标签映射（可按需改文字） */}}
+                    {{ $catLabelMap := dict "articles" "Articles" "download" "Download" "downloads" "Download" "news" "News" "faq" "FAQ" }}
+                    <span>分类：{{ or (index $catLabelMap $cat) $cat }}</span>
+
+                    {{/* articles/news/faq → 显示阅读时间（优先 reading；否则用 ReadingTime） */}}
+                    {{ if not $isDL }}
+                      {{ $rt := cond (gt $p.ReadingTime 0) (printf "%d 分钟" $p.ReadingTime) "" }}
+                      {{ with or $p.Params.reading $rt }}
+                        <span>阅读：{{ . }}</span>
+                      {{ end }}
                     {{ end }}
-                  </span>
+
+                    {{/* download → 显示文件大小 */}}
+                    {{ if $isDL }}
+                      {{ with $p.Params.file_size }}
+                        <span>文件：{{ . }}</span>
+                      {{ end }}
+                    {{ end }}
+
+                    {{/* 日期（使用 date；本地化格式） */}}
+                    <span>
+                      {{ if eq $.Site.Language.Lang "zh" }}
+                        发布：{{ ($p.Date | time).Format "2006-01-02" }}
+                      {{ else }}
+                        Published: {{ ($p.Date | time).Format "Jan 2, 2006" }}
+                      {{ end }}
+                    </span>
+                  </div>
+                  <!-- ======= 重构结束 ======= -->
                 </div>
-                <!-- ======= 重构结束 ======= -->
-              </div>
 
-              <div class="res-cta">
-                <a class="button" href="{{ $p.RelPermalink }}">{{ $cta }}</a>
-              </div>
+                <div class="res-card__footer">
+                  <a class="button" href="{{ $p.RelPermalink }}">{{ $cta }}</a>
+                </div>
+              </article>
             </li>
           {{ end }}
         </ul>
