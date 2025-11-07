@@ -1,151 +1,161 @@
 {{ define "main" }}
-<section class="blog-classic">
-  <div class="container">
-    <div class="layout layout--two"><!-- 修复：加 layout--two 触发布局 -->
+<section class="industries-listing blog-classic" aria-labelledby="industries-listing-heading">
+  <div class="industries-listing__container container">
+    <div class="industries-listing__layout">
 
-      <!-- 主列：文章列表（res-list 风格） -->
-      <div class="col-main">
+      <!-- 主列：行业案例列表 -->
+      <div class="industries-listing__main">
+        <header class="industries-listing__header">
+          <h1 class="industries-listing__title" id="industries-listing-heading">{{ .Title }}</h1>
+          {{ with .Params.description }}
+            <p class="industries-listing__description">{{ . }}</p>
+          {{ end }}
+        </header>
+
         {{ $pgr := .Paginate (.RegularPagesRecursive.ByDate.Reverse) }}
 
-        <ul class="res-list" role="list">
+        <ul class="industries-listing__items" role="list">
           {{ range $p := $pgr.Pages }}
             {{/* --------- 计算封面 --------- */}}
             {{ $cover := cond (isset $p.Params "cover_asset") $p.Params.cover_asset (cond (isset $p.Params "cover_image") $p.Params.cover_image (cond (isset $p.Params "cover") (index $p.Params "cover" "image") nil)) }}
 
-
             {{/* --------- CTA 文案：固定为“阅读” --------- */}}
             {{ $cta := "阅读" }}
 
-            <li class="res-row">
-              <div class="res-thumb" aria-hidden="true">
-                {{ with $cover }}
-                  {{ partial "picture.html" (dict
-                    "ctx"   $p
-                    "src"   .
-                    "alt"   $p.Title
-                    "w"     (slice 256 512 768)
-                    "sizes" "(max-width: 48rem) 100vw, 128px"
-                    "class" "res-thumb__img"
-                  ) }}
-                {{ else }}
-                  <img class="res-thumb__img" loading="lazy" alt=""
-                       src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23e5e7eb'/%3E%3C/svg%3E">
-                {{ end }}
-                {{/* —— 徽章整段删除（仅此两行） —— 
-                <span class="badge {{ $badgeClass }}">{{ $badgeLabel }}</span>
-                {{ if or $p.Params.gated $p.Params.locked }}<span class="badge badge--lock" title="下载需填写信息">🔒</span>{{ end }}
-                */}}
-              </div>
+            <li class="industries-listing__item">
+              <article class="industry-card">
+                <a class="industry-card__media" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}">
+                  {{ with $cover }}
+                    {{ partial "picture.html" (dict
+                      "ctx"   $p
+                      "src"   .
+                      "alt"   $p.Title
+                      "w"     (slice 384 640 960)
+                      "sizes" "(max-width: 48rem) 100vw, 320px"
+                      "class" "industry-card__img"
+                    ) }}
+                  {{ else }}
+                    <span class="industry-card__placeholder" aria-hidden="true"></span>
+                  {{ end }}
+                </a>
 
-              <div class="res-main">
-                <a class="res-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                <div class="industry-card__content">
+                  <h2 class="industry-card__title">
+                    <a class="industry-card__link" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                  </h2>
 
-                <p class="res-desc">
-                  {{- with $p.Params.description -}}
-                    {{ . }}
-                  {{- else -}}
-                    {{- $txt := $p.Summary | plainify -}}
-                    {{- if lt (len $txt) 10 }}{{ $txt = (truncate 200 ($p.Plain | plainify)) }}{{ end -}}
-                    {{- $txt -}}
-                  {{- end -}}
-                </p>
+                  <p class="industry-card__summary">
+                    {{- with $p.Params.description -}}
+                      {{ . }}
+                    {{- else -}}
+                      {{- $txt := $p.Summary | plainify -}}
+                      {{- if lt (len $txt) 10 }}{{ $txt = (truncate 200 ($p.Plain | plainify)) }}{{ end -}}
+                      {{- $txt -}}
+                    {{- end -}}
+                  </p>
 
-                <!-- ======= .res-meta：按你的新规则重构 ======= -->
-                <div class="res-meta">
-                  {{/* 归一化分类：使用 front matter 的 categories（字符串） */}}
                   {{ $cat := lower (printf "%v" $p.Params.categories) }}
                   {{ $isDL := or (eq $cat "download") (eq $cat "downloads") }}
-
-                  {{/* 分类显示标签映射（可按需改文字） */}}
                   {{ $catLabelMap := dict "articles" "Articles" "download" "Download" "downloads" "Download" "news" "News" "faq" "FAQ" }}
-                  <span>分类：{{ or (index $catLabelMap $cat) $cat }}</span>
 
-                  {{/* articles/news/faq → 显示阅读时间（优先 reading；否则用 ReadingTime） */}}
-                  {{ if not $isDL }}
-                    {{ $rt := cond (gt $p.ReadingTime 0) (printf "%d 分钟" $p.ReadingTime) "" }}
-                    {{ with or $p.Params.reading $rt }}
-                      <span>阅读：{{ . }}</span>
-                    {{ end }}
-                  {{ end }}
+                  <ul class="industry-card__meta" role="list">
+                    <li class="industry-card__meta-item">
+                      <span class="industry-card__meta-label">{{ if eq $.Site.Language.Lang "zh" }}分类{{ else }}Category{{ end }}</span>
+                      <span class="industry-card__meta-text">{{ or (index $catLabelMap $cat) $cat }}</span>
+                    </li>
 
-                  {{/* download → 显示文件大小 */}}
-                  {{ if $isDL }}
-                    {{ with $p.Params.file_size }}
-                      <span>文件：{{ . }}</span>
+                    {{ if not $isDL }}
+                      {{ $rt := cond (gt $p.ReadingTime 0) (printf "%d 分钟" $p.ReadingTime) "" }}
+                      {{ with or $p.Params.reading $rt }}
+                        <li class="industry-card__meta-item">
+                          <span class="industry-card__meta-label">{{ if eq $.Site.Language.Lang "zh" }}阅读{{ else }}Reading{{ end }}</span>
+                          <span class="industry-card__meta-text">{{ . }}</span>
+                        </li>
+                      {{ end }}
                     {{ end }}
-                  {{ end }}
 
-                  {{/* 日期（使用 date；本地化格式） */}}
-                  <span>
-                    {{ if eq $.Site.Language.Lang "zh" }}
-                      发布：{{ ($p.Date | time).Format "2006-01-02" }}
-                    {{ else }}
-                      Published: {{ ($p.Date | time).Format "Jan 2, 2006" }}
+                    {{ if $isDL }}
+                      {{ with $p.Params.file_size }}
+                        <li class="industry-card__meta-item">
+                          <span class="industry-card__meta-label">{{ if eq $.Site.Language.Lang "zh" }}文件{{ else }}File{{ end }}</span>
+                          <span class="industry-card__meta-text">{{ . }}</span>
+                        </li>
+                      {{ end }}
                     {{ end }}
-                  </span>
+
+                    <li class="industry-card__meta-item">
+                      <span class="industry-card__meta-label">{{ if eq $.Site.Language.Lang "zh" }}发布{{ else }}Published{{ end }}</span>
+                      <time class="industry-card__meta-text" datetime="{{ ($p.Date | time).Format "2006-01-02" }}">
+                        {{ if eq $.Site.Language.Lang "zh" }}
+                          {{ ($p.Date | time).Format "2006-01-02" }}
+                        {{ else }}
+                          {{ ($p.Date | time).Format "Jan 2, 2006" }}
+                        {{ end }}
+                      </time>
+                    </li>
+                  </ul>
+
+                  <div class="industry-card__actions">
+                    <a class="industry-card__button button" href="{{ $p.RelPermalink }}">{{ $cta }}</a>
+                  </div>
                 </div>
-                <!-- ======= 重构结束 ======= -->
-              </div>
-
-              <div class="res-cta">
-                <a class="button" href="{{ $p.RelPermalink }}">{{ $cta }}</a>
-              </div>
+              </article>
             </li>
           {{ end }}
         </ul>
 
         {{ if gt $pgr.TotalPages 1 }}
-          <nav class="res-pager" aria-label="分页导航">
+          <nav class="industries-listing__pager" aria-label="分页导航">
             {{ if $pgr.HasPrev }}
-              <a class="pager__btn" href="{{ $pgr.Prev.URL }}">上一页</a>
+              <a class="industries-listing__pager-btn" href="{{ $pgr.Prev.URL }}">{{ if eq $.Site.Language.Lang "zh" }}上一页{{ else }}Previous{{ end }}</a>
             {{ else }}
-              <a class="pager__btn is-disabled" aria-disabled="true" href="javascript:void(0)">上一页</a>
+              <span class="industries-listing__pager-btn is-disabled" aria-disabled="true">{{ if eq $.Site.Language.Lang "zh" }}上一页{{ else }}Previous{{ end }}</span>
             {{ end }}
 
             {{ range $pg := $pgr.Pagers }}
-              <a class="pager__num {{ if eq $pg.PageNumber $pgr.PageNumber }}is-active{{ end }}" href="{{ $pg.URL }}">{{ $pg.PageNumber }}</a>
+              <a class="industries-listing__pager-num {{ if eq $pg.PageNumber $pgr.PageNumber }}is-active{{ end }}" href="{{ $pg.URL }}">{{ $pg.PageNumber }}</a>
             {{ end }}
 
             {{ if $pgr.HasNext }}
-              <a class="pager__btn" href="{{ $pgr.Next.URL }}">下一页</a>
+              <a class="industries-listing__pager-btn" href="{{ $pgr.Next.URL }}">{{ if eq $.Site.Language.Lang "zh" }}下一页{{ else }}Next{{ end }}</a>
             {{ else }}
-              <a class="pager__btn is-disabled" aria-disabled="true" href="javascript:void(0)">下一页</a>
+              <span class="industries-listing__pager-btn is-disabled" aria-disabled="true">{{ if eq $.Site.Language.Lang "zh" }}下一页{{ else }}Next{{ end }}</span>
             {{ end }}
           </nav>
         {{ end }}
       </div>
 
-      <!-- 侧边栏：保持原有结构与类名 -->
-      <aside class="col-side is-flat">
+      <!-- 侧边栏：热门、分类、标签 -->
+      <aside class="industries-sidebar" aria-label="{{ if eq $.Site.Language.Lang "zh" }}行业案例侧边栏{{ else }}Industries sidebar{{ end }}">
         {{/* 热门文章：优先手动 popular:true，否则回退最新 */}}
         {{ $limit := or .Site.Params.blog.popular.limit 4 }}
         {{ $all := .CurrentSection.RegularPagesRecursive }}
         {{ $pp := where $all "Params.popular" true }}
         {{ if gt (len $pp) 0 }}{{ $pp = first $limit ($pp.ByDate.Reverse) }}{{ else }}{{ $pp = first $limit ($all.ByDate.Reverse) }}{{ end }}
         {{ if gt (len $pp) 0 }}
-          <section class="widget widget-popular">
-            <p class="widget-title">{{ if eq $.Site.Language.Lang "zh" }}热门文章{{ else }}Popular{{ end }}</p>
-            <ul class="popular-list">
+          <section class="industries-sidebar__widget industries-sidebar__widget--popular" aria-labelledby="industries-popular-heading">
+            <h2 class="industries-sidebar__heading" id="industries-popular-heading">{{ if eq $.Site.Language.Lang "zh" }}热门{{ else }}Popular{{ end }}</h2>
+            <ul class="industries-sidebar__list" role="list">
               {{ range $it := $pp }}
-                <li class="popular-item">
-                  <a class="popular-link" href="{{ $it.RelPermalink }}">
-                    <span class="ph ph--sm">
+                <li class="industries-sidebar__list-item">
+                  <a class="industries-sidebar__popular-link" href="{{ $it.RelPermalink }}">
+                    <span class="industries-sidebar__thumbnail">
                       {{ with $it.Params.cover_asset }}
                         {{ partial "picture.html" (dict
                           "ctx"   $it
                           "src"   .
                           "alt"   $it.Title
-                          "w"     (slice 84 168 252)
-                          "sizes" "84px"
-                          "class" "ph__img"
+                          "w"     (slice 168 252 336)
+                          "sizes" "96px"
+                          "class" "industries-sidebar__thumb-img"
                         ) }}
                       {{ else }}
-                        <span class="ph ph--empty" aria-hidden="true"></span>
+                        <span class="industries-sidebar__thumb-placeholder" aria-hidden="true"></span>
                       {{ end }}
                     </span>
-                    <span class="s">
-                      <span class="s2 clamp2">{{ $it.Title }}</span>
-                      <span class="s clamp1">
+                    <span class="industries-sidebar__text-group">
+                      <span class="industries-sidebar__item-title">{{ $it.Title }}</span>
+                      <span class="industries-sidebar__item-summary">
                         {{ with $it.Params.description }}{{ . }}{{ else }}{{ $it.Summary | plainify }}{{ end }}
                       </span>
                     </span>
@@ -159,33 +169,34 @@
         {{/* 栏目（Sections） */}}
         {{ $root := $.Site.GetPage "section" .Section }}
         {{ if and $root (gt (len $root.Sections) 0) }}
-          <section class="widget widget-sections">
-            <p class="widget-title">{{ if eq $.Site.Language.Lang "zh" }}栏目{{ else }}Sections{{ end }}</p>
-            <ul class="section-list">
-              <li class="section-item">
-                <a class="chip {{ if eq $.RelPermalink $root.RelPermalink }}is-active{{ end }}" href="{{ $root.RelPermalink }}">
-                  {{ if eq $.Site.Language.Lang "zh" }}全部{{ else }}All{{ end }}
-                  <span class="count">{{ len $root.RegularPagesRecursive }}</span>
+          <nav class="industries-sidebar__widget industries-sidebar__widget--sections" aria-labelledby="industries-sections-heading">
+            <h2 class="industries-sidebar__heading" id="industries-sections-heading">{{ if eq $.Site.Language.Lang "zh" }}分类{{ else }}Sections{{ end }}</h2>
+            <ul class="industries-sidebar__chips" role="list">
+              <li class="industries-sidebar__chip-item">
+                <a class="industries-sidebar__chip {{ if eq $.RelPermalink $root.RelPermalink }}is-active{{ end }}" href="{{ $root.RelPermalink }}">
+                  <span class="industries-sidebar__chip-label">{{ if eq $.Site.Language.Lang "zh" }}全部{{ else }}All{{ end }}</span>
+                  <span class="industries-sidebar__chip-count">{{ len $root.RegularPagesRecursive }}</span>
                 </a>
               </li>
               {{ range $sec := $root.Sections }}
-                <li class="section-item">
-                  <a class="chip {{ if eq $.RelPermalink $sec.RelPermalink }}is-active{{ end }}" href="{{ $sec.RelPermalink }}">
-                    {{ $sec.Title }} <span class="count">{{ len $sec.RegularPagesRecursive }}</span>
+                <li class="industries-sidebar__chip-item">
+                  <a class="industries-sidebar__chip {{ if eq $.RelPermalink $sec.RelPermalink }}is-active{{ end }}" href="{{ $sec.RelPermalink }}">
+                    <span class="industries-sidebar__chip-label">{{ $sec.Title }}</span>
+                    <span class="industries-sidebar__chip-count">{{ len $sec.RegularPagesRecursive }}</span>
                   </a>
                 </li>
               {{ end }}
             </ul>
-          </section>
+          </nav>
         {{ end }}
 
         {{/* 标签云 */}}
         {{ with site.Taxonomies.tags }}
-          <section class="widget widget-tags">
-            <p class="widget-title">Tags</p>
-            <div class="tag-cloud">
+          <section class="industries-sidebar__widget industries-sidebar__widget--tags" aria-labelledby="industries-tags-heading">
+            <h2 class="industries-sidebar__heading" id="industries-tags-heading">{{ if eq $.Site.Language.Lang "zh" }}标签{{ else }}Tags{{ end }}</h2>
+            <div class="industries-sidebar__tags">
               {{ range first 20 (sort . "Count" "desc") }}
-                <a class="chip" href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a>
+                <a class="industries-sidebar__tag" href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a>
               {{ end }}
             </div>
           </section>
