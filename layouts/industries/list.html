@@ -3,11 +3,11 @@
   <div class="container">
     <div class="layout layout--two"><!-- 修复：加 layout--two 触发布局 -->
 
-      <!-- 主列：文章列表（res-list 风格） -->
+      <!-- 主列：行业案例卡片布局 -->
       <div class="col-main">
         {{ $pgr := .Paginate (.RegularPagesRecursive.ByDate.Reverse) }}
 
-        <ul class="res-list" role="list">
+        <ul class="case-grid" role="list">
           {{ range $p := $pgr.Pages }}
             {{/* --------- 计算封面 --------- */}}
             {{ $cover := cond (isset $p.Params "cover_asset") $p.Params.cover_asset (cond (isset $p.Params "cover_image") $p.Params.cover_image (cond (isset $p.Params "cover") (index $p.Params "cover" "image") nil)) }}
@@ -16,80 +16,79 @@
             {{/* --------- CTA 文案：固定为“阅读” --------- */}}
             {{ $cta := "阅读" }}
 
-            <li class="res-row">
-              <div class="res-thumb" aria-hidden="true">
-                {{ with $cover }}
-                  {{ partial "picture.html" (dict
-                    "ctx"   $p
-                    "src"   .
-                    "alt"   $p.Title
-                    "w"     (slice 256 512 768)
-                    "sizes" "(max-width: 48rem) 100vw, 128px"
-                    "class" "res-thumb__img"
-                  ) }}
-                {{ else }}
-                  <img class="res-thumb__img" loading="lazy" alt=""
-                       src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23e5e7eb'/%3E%3C/svg%3E">
-                {{ end }}
-                {{/* —— 徽章整段删除（仅此两行） —— 
-                <span class="badge {{ $badgeClass }}">{{ $badgeLabel }}</span>
-                {{ if or $p.Params.gated $p.Params.locked }}<span class="badge badge--lock" title="下载需填写信息">🔒</span>{{ end }}
-                */}}
-              </div>
+            {{ $isZh := eq $.Site.Language.Lang "zh" }}
+            <li class="case-card">
+              <article class="case-card__inner">
+                <a class="case-card__media" href="{{ $p.RelPermalink }}">
+                  {{ with $cover }}
+                    {{ partial "picture.html" (dict
+                      "ctx"   $p
+                      "src"   .
+                      "alt"   $p.Title
+                      "w"     (slice 640 960 1280)
+                      "sizes" "(max-width: 64rem) 100vw, 480px"
+                      "class" "case-card__img"
+                    ) }}
+                  {{ else }}
+                    <span class="case-card__placeholder" aria-hidden="true"></span>
+                  {{ end }}
+                </a>
 
-              <div class="res-main">
-                <a class="res-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                <div class="case-card__content">
+                  <h2 class="case-card__title">
+                    <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                  </h2>
 
-                <p class="res-desc">
+                  {{- $desc := "" -}}
                   {{- with $p.Params.description -}}
-                    {{ . }}
+                    {{- $desc = . -}}
                   {{- else -}}
                     {{- $txt := $p.Summary | plainify -}}
                     {{- if lt (len $txt) 10 }}{{ $txt = (truncate 200 ($p.Plain | plainify)) }}{{ end -}}
-                    {{- $txt -}}
+                    {{- $desc = $txt -}}
                   {{- end -}}
-                </p>
+                  {{- if $desc }}
+                    <p class="case-card__desc">{{ $desc }}</p>
+                  {{- end }}
 
-                <!-- ======= .res-meta：按你的新规则重构 ======= -->
-                <div class="res-meta">
-                  {{/* 归一化分类：使用 front matter 的 categories（字符串） */}}
-                  {{ $cat := lower (printf "%v" $p.Params.categories) }}
-                  {{ $isDL := or (eq $cat "download") (eq $cat "downloads") }}
+                  <!-- ======= 案例元信息 ======= -->
+                  <dl class="case-card__meta">
+                    {{/* 归一化分类：使用 front matter 的 categories（字符串） */}}
+                    {{ $cat := lower (printf "%v" $p.Params.categories) }}
+                    {{ $isDL := or (eq $cat "download") (eq $cat "downloads") }}
+                    {{ $catLabelMap := dict "articles" "Articles" "download" "Download" "downloads" "Download" "news" "News" "faq" "FAQ" }}
+                    <dt>{{ if $isZh }}分类{{ else }}Category{{ end }}</dt>
+                    <dd>{{ or (index $catLabelMap $cat) $cat }}</dd>
 
-                  {{/* 分类显示标签映射（可按需改文字） */}}
-                  {{ $catLabelMap := dict "articles" "Articles" "download" "Download" "downloads" "Download" "news" "News" "faq" "FAQ" }}
-                  <span>分类：{{ or (index $catLabelMap $cat) $cat }}</span>
-
-                  {{/* articles/news/faq → 显示阅读时间（优先 reading；否则用 ReadingTime） */}}
-                  {{ if not $isDL }}
-                    {{ $rt := cond (gt $p.ReadingTime 0) (printf "%d 分钟" $p.ReadingTime) "" }}
-                    {{ with or $p.Params.reading $rt }}
-                      <span>阅读：{{ . }}</span>
+                    {{ if not $isDL }}
+                      {{ $rt := cond (gt $p.ReadingTime 0) (printf "%d %s" $p.ReadingTime (cond $isZh "分钟" "min")) "" }}
+                      {{ with or $p.Params.reading $rt }}
+                        <dt>{{ if $isZh }}阅读{{ else }}Read time{{ end }}</dt>
+                        <dd>{{ . }}</dd>
+                      {{ end }}
                     {{ end }}
-                  {{ end }}
 
-                  {{/* download → 显示文件大小 */}}
-                  {{ if $isDL }}
-                    {{ with $p.Params.file_size }}
-                      <span>文件：{{ . }}</span>
+                    {{ if $isDL }}
+                      {{ with $p.Params.file_size }}
+                        <dt>{{ if $isZh }}文件{{ else }}File size{{ end }}</dt>
+                        <dd>{{ . }}</dd>
+                      {{ end }}
                     {{ end }}
-                  {{ end }}
 
-                  {{/* 日期（使用 date；本地化格式） */}}
-                  <span>
-                    {{ if eq $.Site.Language.Lang "zh" }}
-                      发布：{{ ($p.Date | time).Format "2006-01-02" }}
-                    {{ else }}
-                      Published: {{ ($p.Date | time).Format "Jan 2, 2006" }}
-                    {{ end }}
-                  </span>
+                    <dt>{{ if $isZh }}发布{{ else }}Published{{ end }}</dt>
+                    <dd>
+                      {{ if $isZh }}
+                        {{ ($p.Date | time).Format "2006-01-02" }}
+                      {{ else }}
+                        {{ ($p.Date | time).Format "Jan 2, 2006" }}
+                      {{ end }}
+                    </dd>
+                  </dl>
+                  <!-- ======= 元信息结束 ======= -->
+
+                  <a class="case-card__cta button button--primary" href="{{ $p.RelPermalink }}">{{ if $isZh }}{{ $cta }}{{ else }}Read{{ end }}</a>
                 </div>
-                <!-- ======= 重构结束 ======= -->
-              </div>
-
-              <div class="res-cta">
-                <a class="button" href="{{ $p.RelPermalink }}">{{ $cta }}</a>
-              </div>
+              </article>
             </li>
           {{ end }}
         </ul>
