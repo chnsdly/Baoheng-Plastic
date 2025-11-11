@@ -32,7 +32,52 @@
     </div>
   </div>
 
-  <!-- 2) Stats：硬指标 -->
+  <!-- 2) 现场展示 -->
+  <div class="about__showcase">
+    <div class="container container--wide">
+      <div class="about-showcase">
+        <div class="about-showcase__grid">
+          <div class="about-showcase__content">
+            <p class="about-showcase__eyebrow">走进我们的生产现场</p>
+            <h2 class="about-showcase__title">现代化工厂与质控流程</h2>
+            <p class="about-showcase__lede">两万平米的工厂布局涵盖模具、注塑、吹塑与成品仓储，质检实验室与数字化看板帮助我们把控每一批次的性能指标。</p>
+            <ul class="about-showcase__meta" role="list">
+              <li class="about-showcase__meta-item">
+                <span class="about-showcase__meta-label">生产线</span>
+                <span class="about-showcase__meta-value">注塑 18 条 · 吹塑 6 条 · 滚塑 3 条</span>
+              </li>
+              <li class="about-showcase__meta-item">
+                <span class="about-showcase__meta-label">品质保障</span>
+                <span class="about-showcase__meta-value">力学测试 · 环境模拟 · 批次追溯</span>
+              </li>
+              <li class="about-showcase__meta-item">
+                <span class="about-showcase__meta-label">协同团队</span>
+                <span class="about-showcase__meta-value">工程、采购与客户成功三线联动</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-showcase__media" aria-label="工厂与团队掠影">
+            <figure class="about-showcase__figure about-showcase__figure--primary">
+              <img class="about-showcase__image" src="/images/about/factory-overview.svg" alt="工厂外观与仓储全景示意图" loading="lazy">
+              <figcaption class="about-showcase__caption">整洁有序的生产车间与仓储动线</figcaption>
+            </figure>
+            <div class="about-showcase__stack">
+              <figure class="about-showcase__figure about-showcase__figure--secondary">
+                <img class="about-showcase__image" src="/images/about/quality-lab.svg" alt="实验室质检人员进行材料测试的示意图" loading="lazy">
+                <figcaption class="about-showcase__caption">多维度性能与耐候测试</figcaption>
+              </figure>
+              <figure class="about-showcase__figure about-showcase__figure--secondary">
+                <img class="about-showcase__image" src="/images/about/team-collaboration.svg" alt="工程与销售团队协作的示意图" loading="lazy">
+                <figcaption class="about-showcase__caption">跨部门联合为客户提供解决方案</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3) Stats：硬指标 -->
   <div class="about__stats">
     <div class="container">
       <ul class="stats-grid" role="list">
@@ -56,7 +101,7 @@
     </div>
   </div>
 
-  <!-- 3) 能力矩阵 -->
+  <!-- 4) 能力矩阵 -->
   <div id="capabilities" class="about__capabilities">
     <div class="container">
       <div class="section-head">
@@ -108,7 +153,7 @@
     </div>
   </div>
 
-  <!-- 4) 合规与认证 -->
+  <!-- 5) 合规与认证 -->
   <div class="about__compliance">
     <div class="container container--narrow">
       <div class="section-head">
@@ -127,7 +172,7 @@
     </div>
   </div>
 
-  <!-- 5) 时间线/里程碑 -->
+  <!-- 6) 时间线/里程碑 -->
   <div class="about__timeline">
     <div class="container container--narrow">
       <div class="section-head">
@@ -158,7 +203,7 @@
     </div>
   </div>
 
-  <!-- 6) 全球足迹 -->
+  <!-- 7) 全球足迹 -->
   <div class="about__global">
     <div class="container">
       <div class="section-head">
@@ -303,6 +348,29 @@
 .chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border-w) solid var(--border); background: var(--card); color: var(--on-card); box-shadow: var(--shadow); }
 .chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
 .about__hero-cta { display: flex; gap: var(--gap); justify-content: center; }
+
+/* Showcase */
+.about__showcase { padding-block: calc(var(--space) * 6); background: linear-gradient(180deg, color-mix(in oklch, var(--brand) 12%, transparent), transparent); }
+.about-showcase { position: relative; }
+.about-showcase__grid { display: grid; gap: calc(var(--space) * 4); align-items: stretch; }
+@media (min-width: 64rem) { .about-showcase__grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); } }
+.about-showcase__content { background: var(--card); border-radius: var(--radius); border: var(--border-w) solid var(--border); padding: calc(var(--space) * 4); box-shadow: var(--shadow); display: grid; gap: calc(var(--space) * 2); align-content: start; }
+.about-showcase__eyebrow { font-size: var(--fs-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.about-showcase__title { margin: 0; font-size: var(--fs-4); letter-spacing: -0.01em; }
+.about-showcase__lede { margin: 0; color: var(--muted); }
+.about-showcase__meta { display: grid; gap: calc(var(--space) * 1.5); padding: 0; margin: 0; list-style: none; }
+.about-showcase__meta-item { display: grid; gap: calc(var(--space) * 0.5); }
+.about-showcase__meta-label { font-weight: 600; color: var(--on-surface); }
+.about-showcase__meta-value { color: var(--muted); }
+.about-showcase__media { display: grid; gap: calc(var(--space) * 2); }
+@media (min-width: 48rem) { .about-showcase__media { grid-template-columns: minmax(0, 1fr); } }
+.about-showcase__stack { display: grid; gap: calc(var(--space) * 2); }
+@media (min-width: 40rem) { .about-showcase__stack { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.about-showcase__figure { background: var(--card); border-radius: var(--radius); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); overflow: hidden; display: grid; gap: calc(var(--space) * 1.5); }
+.about-showcase__figure--primary { padding: calc(var(--space) * 1.5) calc(var(--space) * 1.5) calc(var(--space) * 2); }
+.about-showcase__figure--secondary { padding: calc(var(--space) * 1.25) calc(var(--space) * 1.25) calc(var(--space) * 1.75); }
+.about-showcase__image { border-radius: calc(var(--radius) * 0.8); }
+.about-showcase__caption { margin: 0; font-size: var(--fs-xs); color: var(--muted); text-align: center; }
 
 /* Stats */
 .about__stats { padding-block: calc(var(--space) * 6); }

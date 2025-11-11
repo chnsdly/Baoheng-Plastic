@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Quality laboratory illustration</title>
+  <desc id="desc">Stylised illustration of technicians testing plastic products in a laboratory.</desc>
+  <rect width="720" height="480" fill="#f5f7fb" />
+  <rect x="60" y="80" width="600" height="320" rx="20" fill="#dce4f2" />
+  <rect x="100" y="120" width="200" height="240" rx="16" fill="#fefeff" />
+  <rect x="420" y="120" width="200" height="240" rx="16" fill="#fefeff" />
+  <rect x="220" y="160" width="140" height="40" rx="12" fill="#9cb8e2" />
+  <rect x="340" y="220" width="140" height="40" rx="12" fill="#7fa1d7" />
+  <rect x="180" y="260" width="120" height="32" rx="8" fill="#b5caeb" />
+  <rect x="460" y="260" width="120" height="32" rx="8" fill="#b5caeb" />
+  <path d="M140 320h120l-20 60h-80z" fill="#7fa1d7" />
+  <path d="M460 320h120l-20 60h-80z" fill="#678ecb" />
+  <circle cx="200" cy="180" r="28" fill="#7fa1d7" opacity="0.7" />
+  <circle cx="480" cy="180" r="28" fill="#678ecb" opacity="0.7" />
+  <rect x="260" y="360" width="200" height="40" rx="12" fill="#4f74b6" />
+  <rect x="300" y="140" width="120" height="16" rx="8" fill="#678ecb" />
+  <rect x="300" y="180" width="120" height="16" rx="8" fill="#678ecb" opacity="0.7" />
+  <rect x="300" y="220" width="120" height="16" rx="8" fill="#678ecb" opacity="0.5" />
+  <rect x="300" y="260" width="120" height="16" rx="8" fill="#678ecb" opacity="0.3" />
+  <rect x="300" y="300" width="120" height="16" rx="8" fill="#678ecb" opacity="0.15" />
+</svg>

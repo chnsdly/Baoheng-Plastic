@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Team collaboration illustration</title>
+  <desc id="desc">Stylised illustration of a professional team collaborating around design boards.</desc>
+  <rect width="720" height="480" fill="#eef3fb" />
+  <rect x="80" y="100" width="560" height="320" rx="24" fill="#d2ddf1" />
+  <rect x="140" y="160" width="440" height="200" rx="20" fill="#ffffff" />
+  <rect x="180" y="200" width="160" height="120" rx="12" fill="#9ab8e4" />
+  <rect x="360" y="200" width="160" height="120" rx="12" fill="#6f93cf" />
+  <circle cx="260" cy="160" r="28" fill="#6f93cf" opacity="0.7" />
+  <circle cx="440" cy="160" r="28" fill="#4d79c0" opacity="0.7" />
+  <rect x="220" y="340" width="280" height="40" rx="16" fill="#4d79c0" />
+  <path d="M120 260c30-60 80-60 120 0" fill="none" stroke="#4d79c0" stroke-width="14" stroke-linecap="round" />
+  <path d="M480 260c30-60 80-60 120 0" fill="none" stroke="#4d79c0" stroke-width="14" stroke-linecap="round" />
+  <path d="M220 260h280" stroke="#1f4175" stroke-width="20" stroke-linecap="round" opacity="0.4" />
+</svg>
