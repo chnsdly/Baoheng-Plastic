@@ -32,7 +32,45 @@
     </div>
   </div>
 
-  <!-- 2) Stats：硬指标 -->
+  <!-- 2) 实景与团队展示 -->
+  <section class="about__story" aria-labelledby="about-story-title">
+    <div class="container container--wide">
+      <div class="about__story-layout">
+        <div class="about__story-copy">
+          <span class="about__story-tag">实景透明</span>
+          <h2 id="about-story-title">从工厂到团队的可信赖交付</h2>
+          <p class="about__story-lead">我们在山东临沂拥有自有工厂，打通模具、注塑、吹塑与质检流程。关键岗位由 8 年以上经验的工程与项目团队负责，确保海外客户能够看到每一个环节。</p>
+          <ul class="about__story-points">
+            <li class="about__story-point">24 小时设备联网监控，异常自动预警并推送到质控团队。</li>
+            <li class="about__story-point">独立实验室按 ASTM/EN 标准执行跌落、堆码、耐候测试。</li>
+            <li class="about__story-point">项目经理与技术支持双语沟通，协同客户进行模具试模与量产验收。</li>
+          </ul>
+        </div>
+        <ul class="about__story-gallery" role="list">
+          <li class="about__story-gallery-item about__story-gallery-item--highlight" role="listitem">
+            <figure class="about__story-figure">
+              <img src="/images/about-factory-floor.svg" alt="自动化注塑车间与托盘堆垛区域俯视图" loading="lazy">
+              <figcaption class="about__story-caption">自动化注塑产线实时采集产能与能耗数据，支持 OEM 批次追踪。</figcaption>
+            </figure>
+          </li>
+          <li class="about__story-gallery-item" role="listitem">
+            <figure class="about__story-figure">
+              <img src="/images/about-quality-lab.svg" alt="质量实验室正在进行材料与跌落测试" loading="lazy">
+              <figcaption class="about__story-caption">独立质检实验室覆盖原料、结构强度以及运输模拟测试。</figcaption>
+            </figure>
+          </li>
+          <li class="about__story-gallery-item" role="listitem">
+            <figure class="about__story-figure">
+              <img src="/images/about-team.svg" alt="工程与项目团队协同审阅模具方案" loading="lazy">
+              <figcaption class="about__story-caption">资深工程团队与项目经理联合响应，提供定制化设计与交付计划。</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Stats：硬指标 -->
   <div class="about__stats">
     <div class="container">
       <ul class="stats-grid" role="list">
@@ -56,7 +94,7 @@
     </div>
   </div>
 
-  <!-- 3) 能力矩阵 -->
+  <!-- 4) 能力矩阵 -->
   <div id="capabilities" class="about__capabilities">
     <div class="container">
       <div class="section-head">
@@ -108,7 +146,7 @@
     </div>
   </div>
 
-  <!-- 4) 合规与认证 -->
+  <!-- 5) 合规与认证 -->
   <div class="about__compliance">
     <div class="container container--narrow">
       <div class="section-head">
@@ -127,7 +165,7 @@
     </div>
   </div>
 
-  <!-- 5) 时间线/里程碑 -->
+  <!-- 6) 时间线/里程碑 -->
   <div class="about__timeline">
     <div class="container container--narrow">
       <div class="section-head">
@@ -158,7 +196,7 @@
     </div>
   </div>
 
-  <!-- 6) 全球足迹 -->
+  <!-- 7) 全球足迹 -->
   <div class="about__global">
     <div class="container">
       <div class="section-head">
@@ -292,6 +330,25 @@
 .section-head { text-align: center; margin-block: calc(var(--space) * 6) calc(var(--space) * 4); }
 .section-head h2 { font-size: var(--fs-4); margin: 0 0 calc(var(--space) * 1); }
 .section-head p { margin: 0; }
+
+/* Story */
+.about__story { padding-block: calc(var(--space) * 6); }
+.about__story-layout { display: grid; gap: calc(var(--space) * 4); align-items: center; }
+@media (min-width: 64rem) { .about__story-layout { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); } }
+.about__story-copy { display: grid; gap: calc(var(--space) * 3); }
+.about__story-tag { display: inline-flex; align-items: center; gap: calc(var(--space) * 0.75); padding: calc(var(--space) * 1) calc(var(--space) * 2); border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand) 18%, white 82%); color: var(--on-surface); font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; }
+.about__story-lead { margin: 0; color: var(--muted); font-size: var(--fs-1); }
+.about__story-points { list-style: none; padding: 0; margin: 0; display: grid; gap: calc(var(--space) * 2); }
+.about__story-point { position: relative; padding-left: calc(var(--space) * 3.5); color: var(--on-surface); }
+.about__story-point::before { content: ""; position: absolute; inset-inline-start: 0; inset-block-start: calc(var(--space) * 1.25); width: calc(var(--space) * 1.5); height: calc(var(--space) * 1.5); border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 calc(var(--space) * 0.5) color-mix(in oklch, var(--brand), transparent 70%); transform: translateY(-50%); }
+.about__story-gallery { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--gap); }
+.about__story-gallery-item { height: 100%; }
+.about__story-figure { display: flex; flex-direction: column; gap: calc(var(--space) * 2); height: 100%; background: var(--card); border: var(--border-w) solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.about__story-figure img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--surface); }
+.about__story-caption { margin: 0; padding: 0 calc(var(--space) * 3) calc(var(--space) * 3); color: var(--muted); font-size: var(--fs-xs); }
+.about__story-gallery-item--highlight .about__story-caption { font-size: var(--fs-1); color: var(--on-surface); }
+@media (min-width: 48rem) { .about__story-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; } }
+@media (min-width: 64rem) { .about__story-gallery-item--highlight { grid-row: span 2; } .about__story-gallery { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); } }
 
 /* Hero */
 .about__hero { background: linear-gradient(180deg, color-mix(in oklch, var(--brand) 20%, transparent), transparent), var(--surface); padding-block: calc(var(--space) * 6); }

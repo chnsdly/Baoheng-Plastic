@@ -1,0 +1,47 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Quality laboratory illustration</title>
+  <desc id="desc">Illustration of a quality laboratory with testing equipment, charts, and operators.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f9fafb" />
+      <stop offset="100%" stop-color="#f4f6f8" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" />
+  <rect x="60" y="280" width="480" height="12" rx="6" fill="#d8dee6" />
+  <g fill="#1f63a3" opacity="0.85">
+    <rect x="110" y="110" width="140" height="130" rx="16" />
+    <rect x="260" y="140" width="160" height="100" rx="16" />
+    <rect x="440" y="120" width="80" height="140" rx="16" />
+  </g>
+  <g fill="#ffffff">
+    <rect x="135" y="135" width="90" height="48" rx="10" />
+    <rect x="285" y="160" width="110" height="50" rx="10" />
+    <rect x="458" y="150" width="44" height="80" rx="12" />
+  </g>
+  <g fill="#667085">
+    <rect x="140" y="200" width="80" height="12" rx="6" />
+    <rect x="292" y="222" width="96" height="12" rx="6" />
+    <rect x="462" y="240" width="36" height="12" rx="6" />
+  </g>
+  <g fill="#1f63a3" opacity="0.35">
+    <path d="M120 270h120l-20 28H140z" />
+    <path d="M280 260h140l-25 38H305z" />
+  </g>
+  <g fill="#1f63a3" opacity="0.18">
+    <rect x="120" y="90" width="60" height="18" rx="9" />
+    <rect x="215" y="80" width="90" height="18" rx="9" />
+    <rect x="360" y="95" width="60" height="18" rx="9" />
+    <rect x="450" y="85" width="70" height="18" rx="9" />
+  </g>
+  <g fill="#2563eb" opacity="0.5">
+    <rect x="305" y="172" width="24" height="24" rx="6" />
+    <rect x="339" y="172" width="24" height="24" rx="6" />
+    <rect x="373" y="172" width="24" height="24" rx="6" />
+  </g>
+  <g fill="#1f63a3" opacity="0.5">
+    <rect x="150" y="150" width="50" height="8" rx="4" />
+    <rect x="300" y="180" width="90" height="8" rx="4" />
+    <rect x="468" y="188" width="24" height="8" rx="4" />
+  </g>
+</svg>
