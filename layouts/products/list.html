@@ -1,64 +1,76 @@
 {{ define "main" }}
-  <section>
-    <div class="container flow">
-      <h1>{{ .Title }}</h1>
-      {{ with .Content }}<div class="lead">{{ . }}</div>{{ end }}
+  <section class="product-list">
+    <div class="container product-list__container">
+      <header class="product-list__header">
+        <h1 class="product-list__title">{{ .Title }}</h1>
+        {{ with .Content }}
+          <div class="product-list__intro">{{ . }}</div>
+        {{ end }}
+      </header>
 
       {{ $pgr := .Paginate (.Pages.ByTitle) 12 }}
-      <div class="product-grid">
+      <div class="product-list__grid">
         {{ range $pgr.Pages }}
-          <article class="product-card">
-            <a href="{{ .RelPermalink }}">
-              {{ if .Params.featured_image_asset }}
-                {{ partial "picture.html" (dict
-                  "ctx" .
-                  "src" .Params.featured_image_asset
-                  "alt" .Title
-                  "w" (slice 640 960 1440)
-                  "sizes" ""
-                  "class" "rounded-xl"
-                  "fetch" ""
-                ) }}
-              {{ else }}
-                <img src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
-              {{ end }}
-              <h2>{{ .Title }}</h2>
-              {{ with .Params.summary }}<p class="muted">{{ . }}</p>{{ end }}
-              {{ with .Params.sku }}<p class="sku"><strong>SKU:</strong> {{ . }}</p>{{ end }}
+          <article class="product-list__card">
+            <a class="product-list__link" href="{{ .RelPermalink }}">
+              <figure class="product-list__media">
+                {{ if .Params.featured_image_asset }}
+                  {{ partial "picture.html" (dict
+                    "ctx" .
+                    "src" .Params.featured_image_asset
+                    "alt" .Title
+                    "w" (slice 640 960 1440)
+                    "sizes" "(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 100vw"
+                    "class" "product-list__image"
+                    "fetch" ""
+                  ) }}
+                {{ else }}
+                  <img class="product-list__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}' loading="lazy" decoding="async">
+                {{ end }}
+              </figure>
+              <div class="product-list__body">
+                <h2 class="product-list__name">{{ .Title }}</h2>
+                {{ with .Params.summary }}
+                  <p class="product-list__summary">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.sku }}
+                  <p class="product-list__meta"><span class="product-list__meta-label">SKU</span><span class="product-list__meta-value">{{ . }}</span></p>
+                {{ end }}
+              </div>
             </a>
           </article>
         {{ end }}
       </div>
+
       {{ if gt $pgr.TotalPages 1 }}
-      <nav class="pager" aria-label='{{ i18n "pagination_label" | default "Pagination" }}'>
-        {{ with $pgr.Prev }}
-          <a href="{{ .URL }}" rel="prev" class="pager-prev">{{ i18n "prev" | default "Prev" }}</a>
-        {{ else }}
-          <span class="pager-prev disabled" aria-disabled="true">{{ i18n "prev" | default "Prev" }}</span>
-        {{ end }}
-
-        <ul class="pager-list" role="list">
-          {{ range $p := $pgr.Pagers }}
-            {{ $isCurrent := eq $p.PageNumber $pgr.PageNumber }}
-            <li>
-              {{ if $isCurrent }}
-                <span class="pager-num current" aria-current="page" aria-label='{{ i18n "current_page" | default "Current page" }}'>{{ $p.PageNumber }}</span>
-              {{ else }}
-                <a class="pager-num" href="{{ $p.URL }}"
-                   aria-label='{{ i18n "go_to_page" (dict "n" $p.PageNumber) | default (printf "Go to page %d" $p.PageNumber) }}'>
-                  {{ $p.PageNumber }}
-                </a>
-              {{ end }}
-            </li>
+        <nav class="product-list__pagination" aria-label='{{ i18n "pagination_label" | default "Pagination" }}'>
+          {{ with $pgr.Prev }}
+            <a href="{{ .URL }}" rel="prev" class="product-list__pagination-button product-list__pagination-button--prev">{{ i18n "prev" | default "Prev" }}</a>
+          {{ else }}
+            <span class="product-list__pagination-button product-list__pagination-button--prev product-list__pagination-button--disabled" aria-disabled="true">{{ i18n "prev" | default "Prev" }}</span>
           {{ end }}
-        </ul>
 
-        {{ with $pgr.Next }}
-          <a href="{{ .URL }}" rel="next" class="pager-next">{{ i18n "next" | default "Next" }}</a>
-        {{ else }}
-          <span class="pager-next disabled" aria-disabled="true">{{ i18n "next" | default "Next" }}</span>
-        {{ end }}
-      </nav>
+          <ul class="product-list__pagination-list" role="list">
+            {{ range $p := $pgr.Pagers }}
+              {{ $isCurrent := eq $p.PageNumber $pgr.PageNumber }}
+              <li class="product-list__pagination-item">
+                {{ if $isCurrent }}
+                  <span class="product-list__pagination-page product-list__pagination-page--current" aria-current="page" aria-label='{{ i18n "current_page" | default "Current page" }}'>{{ $p.PageNumber }}</span>
+                {{ else }}
+                  <a class="product-list__pagination-page" href="{{ $p.URL }}" aria-label='{{ i18n "go_to_page" (dict "n" $p.PageNumber) | default (printf "Go to page %d" $p.PageNumber) }}'>
+                    {{ $p.PageNumber }}
+                  </a>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+
+          {{ with $pgr.Next }}
+            <a href="{{ .URL }}" rel="next" class="product-list__pagination-button product-list__pagination-button--next">{{ i18n "next" | default "Next" }}</a>
+          {{ else }}
+            <span class="product-list__pagination-button product-list__pagination-button--next product-list__pagination-button--disabled" aria-disabled="true">{{ i18n "next" | default "Next" }}</span>
+          {{ end }}
+        </nav>
       {{ end }}
     </div>
   </section>
