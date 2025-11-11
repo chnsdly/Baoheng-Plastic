@@ -1,119 +1,176 @@
-/* Products 列表网格与卡片（令牌版 · 精简） */
-.product-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: space(2);
-  margin-block-start: space(2);
+/* 产品列表页面 */
+.product-list {
+  padding-block: space(3) space(4);
+
+  &__container {
+    --flow-gap: space(3);
+  }
+
+  &__intro {
+    max-width: var(--container-narrow);
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: var(--fs-4);
+    color: var(--on-surface);
+  }
+
+  &__lead {
+    color: var(--muted);
+    font-size: var(--fs-1);
+  }
+
+  &__grid {
+    display: grid;
+    gap: space(2.5);
+    margin-block-start: space(3);
+    grid-template-columns: repeat(auto-fit, minmax(space(36), 1fr));
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card);
+    color: var(--on-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition:
+      transform var(--t-normal) var(--ease),
+      box-shadow var(--t-normal) var(--ease);
+  }
+
+  &__card-link {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+    block-size: 100%;
+    color: inherit;
+    text-decoration: none;
+    flex: 1;
+  }
+
+  &__card-media {
+    margin: 0;
+    inline-size: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  &__card-image {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: space(1);
+    padding: space(2.5);
+  }
+
+  &__card-title {
+    margin: 0;
+    font-size: var(--fs-2);
+    color: var(--on-card);
+  }
+
+  &__card-summary {
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--fs-1);
+  }
+
+  &__card-sku {
+    margin: 0;
+    margin-block-start: space(1);
+    font-size: var(--fs-xxs);
+    color: var(--on-card);
+  }
+
+  &__card-sku-label {
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  &__card-sku-value {
+    color: var(--on-card);
+  }
+
+  &__card:hover,
+  &__card:focus-within {
+    transform: translateY(calc(-1 * space(.5)));
+    box-shadow: var(--shadow);
+  }
+
+  &__card-link:focus-visible {
+    @include focus-ring();
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: space(1);
+    margin-block-start: space(3);
+  }
+
+  &__pagination-list {
+    display: flex;
+    gap: space(.7);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__pagination-item {
+    display: contents;
+  }
+
+  &__pagination-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-inline-size: space(5.5);
+    min-block-size: space(5.5);
+    padding-inline: space(1.5);
+    padding-block: space(.7);
+    border: var(--border-w) solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--on-surface);
+    text-decoration: none;
+    transition:
+      background-color var(--t-normal) var(--ease),
+      color var(--t-normal) var(--ease),
+      border-color var(--t-normal) var(--ease),
+      transform var(--t-fast) var(--ease);
+
+    &:hover {
+      transform: translateY(calc(-1 * space(.5)));
+      box-shadow: var(--shadow);
+    }
+
+    &:focus-visible {
+      @include focus-ring();
+    }
+
+    &--current {
+      background: var(--brand);
+      color: var(--on-brand);
+      border-color: transparent;
+    }
+
+    &--disabled {
+      opacity: .5;
+      pointer-events: none;
+    }
+  }
 }
-
-.product-card{
-  /* 建议：背景用 surface，而非 on-brand */
-  background: var(--card);             /* 原为 var(--on-brand) */
-  color: var(--on-surface);
-  overflow: hidden;
-  transition: transform var(--t-normal) var(--ease),
-              box-shadow var(--t-normal) var(--ease);
-}
-
-.product-card a{
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  padding-block-end: space(1.5);
-}
-
-/* 统一图片/图像容器样式，去重 */
-.product-card :is(picture, img){
-  display: block;
-  inline-size: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;      /* 需要铺满裁切就用 cover；不裁切可改 contain */
-}
-
-.product-card h3{
-  margin-block: space(1.2) space(.5);     /* .6rem .25rem */
-  font-size: var(--fs-1);
-}
-
-.product-card .muted{
-  margin-block: 0 space(.5);
-  color: var(--muted);
-  font-size: .95rem;                      /* 如需可换成令牌 */
-}
-
-.product-card .sku{
-  margin-block: 0;
-  color: var(--on-surface);
-  font-size: .9rem;                       /* 如需可换成令牌 */
-}
-
-/* 交互覆盖键盘与鼠标 */
-.product-card:hover,
-.product-card:focus-within{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
-
-
-
-
-/* ------------------------A11y 分页（tokenized）--------------------- */
-.pager{
-  display:flex;
-  align-items:center;
-  gap: space(1);
-  flex-wrap:wrap;
-}
-
-.pager a,
-.pager span{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-inline-size:44px;          /* 触达面积 */
-  min-block-size:44px;
-  padding: space(.7) space(1.2);
-  border: var(--border-w) solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  color: var(--on-surface);
-  text-decoration:none;
-  transition:
-    background-color var(--t-normal) var(--ease),
-    color var(--t-normal) var(--ease),
-    border-color var(--t-normal) var(--ease),
-    transform var(--t-fast) var(--ease);
-}
-
-.pager a:hover{
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
-}
-
-.pager a:focus-visible{ @include focus-ring(); }
-
-.pager .pager-list{
-  display:flex;
-  gap: space(.7);
-  list-style:none;
-  margin: 0 space(1);
-  padding: 0;
-}
-
-.pager .pager-num.current{
-  background: var(--brand);
-  color: var(--on-brand);
-  border-color: transparent;
-}
-
-.pager .disabled,
-.pager [aria-disabled="true"]{
-  opacity:.5;
-  pointer-events:none;
-}
-
-
-
 
 /* --------------------------------------产品详情布局---------------------------------- */
 .product-detail .product-hero .lead{
