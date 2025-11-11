@@ -209,7 +209,7 @@
   box-shadow: var(--shadow);
 }
 
-.stat__num { font-size: clamp(2rem, 1.2rem + 3vw, 3rem); letter-spacing: -0.02em; font-weight: 700; }
+.stat__num { font-size: var(--fs-5); letter-spacing: -0.02em; font-weight: 700; }
 
 .stat__label { color: var(--muted); margin-top: .25rem; }
 
