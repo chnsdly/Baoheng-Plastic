@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Factory overview illustration</title>
+  <desc id="desc">Simplified illustration of a modern plastic pallet manufacturing facility.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f1ff" />
+      <stop offset="1" stop-color="#f6f9ff" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a8ffd" />
+      <stop offset="1" stop-color="#6ec1ff" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)" />
+  <path d="M80 360h480v24H80z" fill="#c5d4ea" />
+  <path d="M96 216h176v144H96z" fill="#f0f4ff" stroke="#b0c3dd" stroke-width="4" />
+  <path d="M288 192h144v168H288z" fill="#f0f4ff" stroke="#b0c3dd" stroke-width="4" />
+  <path d="M448 168h96v192h-96z" fill="#f0f4ff" stroke="#b0c3dd" stroke-width="4" />
+  <path d="M120 240h48v80h-48zm72 0h48v80h-48zm120-24h40v96h-40zm72 0h40v96h-40zm112-24h40v120h-40z" fill="#3a8ffd" opacity="0.85" />
+  <path d="M288 160l48-32 48 32v32h-96z" fill="#3a8ffd" opacity="0.6" />
+  <path d="M448 136l40-28 40 28v32h-80z" fill="#3a8ffd" opacity="0.6" />
+  <path d="M160 168l64-44 64 44v48H160z" fill="#3a8ffd" opacity="0.5" />
+  <rect x="232" y="336" width="176" height="24" rx="12" fill="url(#accent)" opacity="0.8" />
+  <g fill="#7c8cab">
+    <circle cx="160" cy="360" r="12" />
+    <circle cx="208" cy="360" r="12" />
+    <circle cx="256" cy="360" r="12" />
+    <circle cx="304" cy="360" r="12" />
+    <circle cx="352" cy="360" r="12" />
+    <circle cx="400" cy="360" r="12" />
+    <circle cx="448" cy="360" r="12" />
+  </g>
+  <g fill="#f7fbff" stroke="#3a8ffd" stroke-width="3" opacity="0.9">
+    <rect x="120" y="120" width="48" height="32" rx="6" />
+    <rect x="408" y="96" width="64" height="32" rx="6" />
+    <rect x="496" y="112" width="32" height="24" rx="4" />
+  </g>
+</svg>

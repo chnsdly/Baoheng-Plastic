@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Quality lab illustration</title>
+  <desc id="desc">Stylized illustration of laboratory technicians inspecting plastic pallets.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4faff" />
+      <stop offset="1" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#29b6f6" />
+      <stop offset="1" stop-color="#0288d1" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)" />
+  <rect x="64" y="96" width="512" height="288" rx="24" fill="#eef3fb" stroke="#c1d3eb" stroke-width="4" />
+  <rect x="112" y="144" width="416" height="192" rx="20" fill="#ffffff" stroke="#d7e3f5" stroke-width="4" />
+  <path d="M160 256h128v48H160z" fill="#e3f2fd" stroke="#90caf9" stroke-width="3" />
+  <path d="M184 232h80v24h-80z" fill="#29b6f6" opacity="0.7" />
+  <path d="M304 208h160v104H304z" fill="#e3f2fd" stroke="#90caf9" stroke-width="3" />
+  <path d="M336 184h96v24h-96z" fill="#0288d1" opacity="0.6" />
+  <circle cx="196" cy="320" r="44" fill="#fff" stroke="#b0bec5" stroke-width="6" />
+  <circle cx="196" cy="320" r="24" fill="#29b6f6" opacity="0.7" />
+  <path d="M420 144c0-24 18-44 40-44s40 20 40 44-18 44-40 44-40-20-40-44z" fill="#c5e1ff" />
+  <path d="M452 128h16v64h-16z" fill="#0288d1" opacity="0.6" />
+  <path d="M376 328l40 56" stroke="#0288d1" stroke-width="10" stroke-linecap="round" />
+  <path d="M416 384l-48-32" stroke="#0288d1" stroke-width="10" stroke-linecap="round" />
+  <path d="M120 376l40-64" stroke="#0288d1" stroke-width="10" stroke-linecap="round" />
+  <path d="M160 312l-48 32" stroke="#0288d1" stroke-width="10" stroke-linecap="round" />
+  <rect x="256" y="112" width="128" height="32" rx="16" fill="url(#accent)" opacity="0.8" />
+</svg>
