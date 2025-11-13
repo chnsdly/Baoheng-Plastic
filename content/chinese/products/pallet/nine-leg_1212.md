@@ -1,7 +1,7 @@
 ---
-title: "1200 × 1200 × 140 毫米九脚可嵌套网格面托盘"
+title: "1212-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1212.jpg"
-sku: "1212"
+sku: ""
 product_type: "pallet"
 specs:
   dimensions: "1200 × 1200 × 140 毫米"
