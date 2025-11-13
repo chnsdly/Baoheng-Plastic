@@ -307,6 +307,80 @@
                 href="http://localhost:1313/products/pallet/nine-leg_0808/"
                 />
   </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_0909/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_0909/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/nine-leg_0909/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1006/</loc>
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1008/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1008/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/blow-molding_1008/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1008/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1008/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1008/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1008/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1008/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/nine-leg_1008/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1010/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1010/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/blow-molding_1010/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1010/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1010/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1010/"
+                />
+  </url><url>
     <loc>http://localhost:1313/products/pallet/nine-leg_1010/</loc>
     <xhtml:link
                 rel="alternate"
@@ -319,18 +393,28 @@
                 href="http://localhost:1313/products/pallet/nine-leg_1010/"
                 />
   </url><url>
-    <loc>http://localhost:1313/products/pallet/nine-leg_1006/</loc>
-  </url><url>
-    <loc>http://localhost:1313/products/pallet/nine-leg_1008/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/pallet/nine-leg_1008/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/products/pallet/nine-leg_1008/"
+                href="http://localhost:1313/products/pallet/blow-molding_1111/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1111/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1111/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1111/"
                 />
   </url><url>
     <loc>http://localhost:1313/products/pallet/nine-leg_1111/</loc>
@@ -345,40 +429,16 @@
                 href="http://localhost:1313/products/pallet/nine-leg_1111/"
                 />
   </url><url>
-    <loc>http://localhost:1313/products/pallet/nine-leg_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/pallet/nine-leg_1210/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/products/pallet/nine-leg_1210/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/pallet/nine-leg_1211/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/pallet/nine-leg_1211/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/pallet/nine-leg_1211/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/pallet/nine-leg_1212/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/pallet/nine-leg_1212/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/pallet/nine-leg_1212/"
+                href="http://localhost:1313/products/pallet/3-runner_1208/"
                 />
   </url><url>
     <loc>http://localhost:1313/products/pallet/nine-leg_1208/</loc>
@@ -393,6 +453,126 @@
                 href="http://localhost:1313/products/pallet/nine-leg_1208/"
                 />
   </url><url>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1210/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1210/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/blow-molding_1210/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1210/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1210/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1210/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1210/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1210/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/nine-leg_1210/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1211/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1211/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1211/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1211/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1211/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/nine-leg_1211/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1212/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1212/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/blow-molding_1212/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1212/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1212/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1212/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1212/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1212/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/nine-leg_1212/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1311/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1311/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/blow-molding_1311/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1311/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1311/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1311/"
+                />
+  </url><url>
     <loc>http://localhost:1313/products/pallet/nine-leg_1311/</loc>
     <xhtml:link
                 rel="alternate"
@@ -405,16 +585,28 @@
                 href="http://localhost:1313/products/pallet/nine-leg_1311/"
                 />
   </url><url>
-    <loc>http://localhost:1313/products/pallet/nine-leg_0909/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1412/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/pallet/nine-leg_0909/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1412/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/products/pallet/nine-leg_0909/"
+                href="http://localhost:1313/products/pallet/blow-molding_1412/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/3-runner_1412/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1412/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/3-runner_1412/"
                 />
   </url><url>
     <loc>http://localhost:1313/about/</loc>

@@ -1,6 +1,6 @@
 ---
 title: "0808-BP-OD9L14"
-summary: "Nine-Leg Nesting with Open Deck"
+summary: ""
 featured_image_asset: "/images/products/pallet/nine-leg_0808.jpg"
 sku: ""
 product_type: "pallet"
