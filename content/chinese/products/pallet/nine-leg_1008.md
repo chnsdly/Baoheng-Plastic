@@ -1,7 +1,7 @@
 ---
-title: "1000 × 800 × 140 毫米九脚可嵌套网格面托盘"
+title: "1008-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1008.jpg"
-sku: "1008"
+sku: ""
 product_type: "pallet"
 specs:
   dimensions: "1000 × 800 × 140 毫米"

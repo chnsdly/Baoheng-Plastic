@@ -1,7 +1,7 @@
 ---
-title: "1000 × 1000 × 140 mm Nine-Leg Nesting with Open Deck"
+title: "1010-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1010.jpg"
-sku: "1010"
+sku: ""
 product_type: "pallet"
 specs:
   dimensions: "1000 × 1000 × 140 mm"

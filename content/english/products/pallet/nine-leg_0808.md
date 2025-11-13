@@ -1,8 +1,8 @@
 ---
-title: "0808"
+title: "0808-BP-OD9L14"
 summary: "Nine-Leg Nesting with Open Deck"
 featured_image_asset: "/images/products/pallet/nine-leg_0808.jpg"
-sku: "0808"
+sku: ""
 product_type: "pallet"
 specs:
   dimensions: "800 × 800 × 140 mm"
