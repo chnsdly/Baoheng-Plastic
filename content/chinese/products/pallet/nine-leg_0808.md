@@ -7,7 +7,7 @@ specs:
   dimensions: "800 × 800 × 140 毫米"
   static_load: "1 吨"
   dynamic_load: "0.2 吨"
-  racking_load: "0.2 吨"
+  racking_load: ""
   weight: "3.5 千克"
   material: "HDPE"
   process: "注塑成型"

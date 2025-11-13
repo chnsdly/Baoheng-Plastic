@@ -8,7 +8,7 @@ specs:
   dimensions: "800 × 800 × 140 mm"
   static_load: "1 t"
   dynamic_load: "0.2 t"
-  racking_load: "0.2 t"
+  racking_load: ""
   weight: "3.5 kg"
   material: "HDPE"
   process: "Injection molding"
