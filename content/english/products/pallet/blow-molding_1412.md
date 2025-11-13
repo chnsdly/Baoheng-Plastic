@@ -1,24 +1,22 @@
 ---
-title: "1111-BP-OD3R15"
-featured_image_asset: "/images/products/pallet/3-runner_1111.jpg"
+title: "1412-BP-CD9L15B"
+featured_image_asset: "/images/products/pallet/blow-molding_1412.jpg"
 sku: ""
 product_type: "pallet"
 specs:
-  dimensions: "1100 × 1100 × 150 mm"
+  dimensions: "1400 × 1200 × 150 mm"
   static_load: "3 t"
   dynamic_load: "1 t"
-  racking_load: "1 t"
-  weight: "12.2 kg"
-  steel_pipes: "Supported"
+  racking_load: ""
+  weight: "15 kg"
   material: "HDPE/PP"
-  process: "Injection molding"
+  process: "Blow molding"
 specs_order:
   - dimensions
   - static_load
   - dynamic_load
   - racking_load
   - weight
-  - steel_pipes
   - material
   - process
 

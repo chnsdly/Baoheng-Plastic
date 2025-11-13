@@ -2,7 +2,7 @@
 title: "CNC Milling Machine X1"
 date: 2025-08-09
 draft: false
-sku: "SKU-X1-CNC"
+sku: ""
 weight: "1200 kg"
 dimensions: "2000 × 1500 × 1800 mm"
 featured_image_asset: "/images/products/cnc-machine.jpg"

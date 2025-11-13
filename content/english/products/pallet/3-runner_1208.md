@@ -1,7 +1,7 @@
 ---
 title: "1208-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1208.jpg"
-sku: "1208"
+sku: ""
 product_type: "pallet"
 specs:
   dimensions: "1200 × 800 × 150 mm"

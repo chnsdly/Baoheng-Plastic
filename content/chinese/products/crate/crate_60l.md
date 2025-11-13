@@ -1,7 +1,7 @@
 ---
 title: "crate60"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "SKU-X1-CNC"
+sku: ""
 product_type: "crate"
 specs:
   dimensions: "2000 × 1500 × 1800 mm"
