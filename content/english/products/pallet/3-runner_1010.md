@@ -1,0 +1,27 @@
+---
+title: "1010-BP-OD3R15"
+featured_image_asset: "/images/products/pallet/3-runner_1010.jpg"
+sku: "1010"
+product_type: "pallet"
+specs:
+  dimensions: "1000 × 1000 × 150 mm"
+  static_load: "1.5 t"
+  dynamic_load: "0.8 t"
+  racking_load: "1 t"
+  weight: "9.5 kg"
+  steel_pipes: "Supported"
+  material: "HDPE/PP"
+  process: "Injection molding"
+specs_order:
+  - dimensions
+  - static_load
+  - dynamic_load
+  - racking_load
+  - weight
+  - steel_pipes
+  - material
+  - process
+
+---
+
+{{< quote_request_button >}}
