@@ -1,7 +1,7 @@
 ---
 title: "1311-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1311.jpg"
-sku: "1311"
+sku: ""
 product_type: "pallet"
 specs:
   dimensions: "1300 × 1100 × 150 mm"
