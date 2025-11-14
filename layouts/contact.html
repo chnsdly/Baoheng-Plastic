@@ -1,4 +1,8 @@
 {{ define "main" }}
-<p class="container">{{ .Content }}</p>
-{{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+  <section class="container container--narrow contact-content">
+    {{ .Content }}
+  </section>
+  <section class="container container--narrow contact-form">
+    {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+  </section>
 {{ end }}
