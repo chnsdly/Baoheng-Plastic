@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Team collaboration illustration</title>
+  <desc id="desc">Illustration of engineering and customer success teams collaborating.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fef4ff" />
+      <stop offset="1" stop-color="#f8e6ff" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b388ff" />
+      <stop offset="1" stop-color="#7c4dff" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)" />
+  <path d="M96 360h448v32H96z" fill="#dfc7ff" />
+  <rect x="128" y="136" width="144" height="176" rx="24" fill="#ffffff" stroke="#d6c5ff" stroke-width="4" />
+  <rect x="368" y="120" width="160" height="208" rx="28" fill="#ffffff" stroke="#d6c5ff" stroke-width="4" />
+  <path d="M168 176h64v64h-64z" fill="#b388ff" opacity="0.7" />
+  <path d="M152 256h96v32h-96z" fill="#ede3ff" />
+  <path d="M400 160h96v48h-96z" fill="#e0d4ff" />
+  <path d="M392 232h112v56H392z" fill="#ede3ff" />
+  <circle cx="200" cy="320" r="40" fill="#b388ff" opacity="0.7" />
+  <circle cx="440" cy="320" r="44" fill="#7c4dff" opacity="0.7" />
+  <path d="M220 112h80l48 40h-80z" fill="#7c4dff" opacity="0.6" />
+  <path d="M300 112l60-40 60 40-60 40z" fill="#b388ff" opacity="0.6" />
+  <path d="M236 344l48 48" stroke="#7c4dff" stroke-width="10" stroke-linecap="round" />
+  <path d="M284 392l-60-20" stroke="#7c4dff" stroke-width="10" stroke-linecap="round" />
+  <path d="M452 344l48 48" stroke="#7c4dff" stroke-width="10" stroke-linecap="round" />
+  <path d="M500 392l-60-20" stroke="#7c4dff" stroke-width="10" stroke-linecap="round" />
+  <rect x="280" y="72" width="128" height="32" rx="16" fill="url(#accent)" opacity="0.8" />
+</svg>

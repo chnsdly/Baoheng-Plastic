@@ -32,6 +32,58 @@
     </div>
   </div>
 
+  <!-- 1.5) Factory showcase -->
+  <div class="about__showcase">
+    <div class="container">
+      <div class="about__showcase-inner">
+        <div class="about__showcase-copy">
+          <span class="about__showcase-eyebrow">走进保衡</span>
+          <h2 class="about__showcase-title">看见真实的生产与质控现场</h2>
+          <p class="about__showcase-body">我们的工厂位于山东临沂，拥有覆盖注塑、吹塑与滚塑的全流程产线，并以数字化质量管理系统支撑大批量交付。通过 24/7 监控与实验室验证，我们确保每一批塑料托盘都符合全球客户的严苛要求。</p>
+          <ul class="about__showcase-list" role="list">
+            <li class="about__showcase-list-item">
+              <span class="about__showcase-marker" aria-hidden="true"></span>
+              <div>
+                <p class="about__showcase-list-title">一体化生产园区</p>
+                <p class="about__showcase-list-text">注塑吨位覆盖 400–2800T，吹塑最大支持 1,000L，满足多行业规格需求。</p>
+              </div>
+            </li>
+            <li class="about__showcase-list-item">
+              <span class="about__showcase-marker" aria-hidden="true"></span>
+              <div>
+                <p class="about__showcase-list-title">品质与追溯标准化</p>
+                <p class="about__showcase-list-text">IQC、IPQC、OQC 三级检验，加密存档的批次数据，让交付过程透明可信。</p>
+              </div>
+            </li>
+            <li class="about__showcase-list-item">
+              <span class="about__showcase-marker" aria-hidden="true"></span>
+              <div>
+                <p class="about__showcase-list-title">客户共创空间</p>
+                <p class="about__showcase-list-text">工程团队与客户协作打样、优化结构设计，加速新品导入与认证。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="about__showcase-gallery">
+          <figure class="about__showcase-media about__showcase-media--primary">
+            <img src="/images/about/factory-overview.svg" alt="保衡塑料托盘工厂鸟瞰图" loading="lazy">
+            <figcaption class="about__showcase-caption">大型注塑工厂与智能仓储联动</figcaption>
+          </figure>
+          <div class="about__showcase-media-group">
+            <figure class="about__showcase-media about__showcase-media--secondary">
+              <img src="/images/about/quality-lab.svg" alt="质检实验室正在进行托盘测试" loading="lazy">
+              <figcaption class="about__showcase-caption">物性实验室实时记录测试数据</figcaption>
+            </figure>
+            <figure class="about__showcase-media about__showcase-media--secondary">
+              <img src="/images/about/team-collaboration.svg" alt="工程团队与客户协作进行产品设计" loading="lazy">
+              <figcaption class="about__showcase-caption">工程师与客户共创高可靠方案</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 2) Stats：硬指标 -->
   <div class="about__stats">
     <div class="container">
@@ -303,6 +355,28 @@
 .chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border-w) solid var(--border); background: var(--card); color: var(--on-card); box-shadow: var(--shadow); }
 .chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
 .about__hero-cta { display: flex; gap: var(--gap); justify-content: center; }
+
+/* Showcase */
+.about__showcase { padding-block: calc(var(--space) * 6); }
+.about__showcase-inner { display: grid; gap: calc(var(--space) * 5); align-items: center; }
+@media (min-width: 64rem) { .about__showcase-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.about__showcase-eyebrow { display: inline-flex; align-items: center; gap: var(--space); padding-inline: calc(var(--space) * 2); padding-block: var(--space); border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand) 12%, transparent); color: var(--brand); font-weight: 600; text-transform: uppercase; font-size: var(--fs-xs); }
+.about__showcase-title { margin: calc(var(--space) * 2) 0 calc(var(--space) * 2); font-size: var(--fs-4); }
+.about__showcase-body { margin: 0; color: var(--muted); max-width: 60ch; }
+.about__showcase-list { margin: calc(var(--space) * 4) 0 0; padding: 0; list-style: none; display: grid; gap: calc(var(--space) * 3); }
+.about__showcase-list-item { display: grid; grid-template-columns: auto 1fr; gap: calc(var(--space) * 3); align-items: start; }
+.about__showcase-marker { width: calc(var(--space) * 3); height: calc(var(--space) * 3); border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand) 20%, transparent); border: var(--border-w) solid color-mix(in oklch, var(--brand) 40%, white 60%); }
+.about__showcase-list-title { margin: 0 0 var(--space); font-weight: 600; }
+.about__showcase-list-text { margin: 0; color: var(--muted); }
+.about__showcase-gallery { display: grid; gap: calc(var(--space) * 3); }
+@media (min-width: 64rem) { .about__showcase-gallery { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: stretch; } }
+.about__showcase-media-group { display: grid; gap: calc(var(--space) * 3); }
+@media (min-width: 48rem) { .about__showcase-media-group { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.about__showcase-media { background: var(--card); border: var(--border-w) solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+.about__showcase-media img { width: 100%; height: auto; }
+.about__showcase-caption { margin: 0; padding: calc(var(--space) * 2) calc(var(--space) * 3); color: var(--muted); font-size: var(--fs-xs); }
+.about__showcase-media--primary .about__showcase-caption { font-size: var(--fs-1); color: var(--on-surface); font-weight: 600; }
+
 
 /* Stats */
 .about__stats { padding-block: calc(var(--space) * 6); }
