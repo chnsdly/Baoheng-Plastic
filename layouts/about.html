@@ -32,7 +32,42 @@
     </div>
   </div>
 
-  <!-- 2) Stats：硬指标 -->
+  <!-- 2) 实景与团队展示 -->
+  <section class="about__story" aria-labelledby="about-story-title">
+    <div class="container container--wide">
+      <div class="about__story-layout">
+        <div class="about__story-copy">
+          <span class="about__story-tag">实景透明</span>
+          <h2 id="about-story-title">从工厂到团队的可信赖交付</h2>
+          <p class="about__story-lead">我们在山东临沂拥有自有工厂，打通模具、注塑、吹塑与质检流程。关键岗位由 8 年以上经验的工程与项目团队负责，确保海外客户能够看到每一个环节。</p>
+          <ul class="about__story-points">
+            <li class="about__story-point">24 小时设备联网监控，异常自动预警并推送到质控团队。</li>
+            <li class="about__story-point">独立实验室按 ASTM/EN 标准执行跌落、堆码、耐候测试。</li>
+            <li class="about__story-point">项目经理与技术支持双语沟通，协同客户进行模具试模与量产验收。</li>
+          </ul>
+        </div>
+        <ul class="about__story-gallery" role="list">
+          <li class="about__story-gallery-item about__story-gallery-item--highlight" role="listitem">
+            <figure class="about__story-figure">
+              <img src="/images/about-factory-floor.svg" alt="自动化注塑车间与托盘堆垛区域俯视图" loading="lazy">
+            </figure>
+          </li>
+          <li class="about__story-gallery-item" role="listitem">
+            <figure class="about__story-figure">
+              <img src="/images/about-quality-lab.svg" alt="质量实验室正在进行材料与跌落测试" loading="lazy">
+            </figure>
+          </li>
+          <li class="about__story-gallery-item" role="listitem">
+            <figure class="about__story-figure">
+              <img src="/images/about-team.svg" alt="工程与项目团队协同审阅模具方案" loading="lazy">
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Stats：硬指标 -->
   <div class="about__stats">
     <div class="container">
       <ul class="stats-grid" role="list">
@@ -56,7 +91,7 @@
     </div>
   </div>
 
-  <!-- 3) 能力矩阵 -->
+  <!-- 4) 能力矩阵 -->
   <div id="capabilities" class="about__capabilities">
     <div class="container">
       <div class="section-head">
@@ -108,7 +143,7 @@
     </div>
   </div>
 
-  <!-- 4) 合规与认证 -->
+  <!-- 5) 合规与认证 -->
   <div class="about__compliance">
     <div class="container container--narrow">
       <div class="section-head">
@@ -127,7 +162,7 @@
     </div>
   </div>
 
-  <!-- 5) 时间线/里程碑 -->
+  <!-- 6) 时间线/里程碑 -->
   <div class="about__timeline">
     <div class="container container--narrow">
       <div class="section-head">
@@ -158,7 +193,7 @@
     </div>
   </div>
 
-  <!-- 6) 全球足迹 -->
+  <!-- 7) 全球足迹 -->
   <div class="about__global">
     <div class="container">
       <div class="section-head">
@@ -282,82 +317,5 @@
 }
 </script>
 
-<style>
-/*****************************
-  About Page Scoped Styles
-*****************************/
-.about { --gap: calc(var(--space) * 3); }
-.muted { color: var(--muted); }
-.small { font-size: var(--fs-1); }
-.section-head { text-align: center; margin-block: calc(var(--space) * 6) calc(var(--space) * 4); }
-.section-head h2 { font-size: var(--fs-4); margin: 0 0 calc(var(--space) * 1); }
-.section-head p { margin: 0; }
 
-/* Hero */
-.about__hero { background: linear-gradient(180deg, color-mix(in oklch, var(--brand) 20%, transparent), transparent), var(--surface); padding-block: calc(var(--space) * 6); }
-.about__hero-inner { max-width: var(--container-narrow); margin: 0 auto; text-align: center; }
-.about__hero-badge { display: inline-block; padding: .35rem .75rem; border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand), white 85%); color: var(--on-surface); border: var(--border-w) solid var(--border); font-size: .875rem; }
-.about__hero-title { font-size: var(--fs-5); margin: calc(var(--space) * 2) 0 calc(var(--space) * 2); letter-spacing: -0.02em; }
-.about__hero-sub { font-size: var(--fs-2); color: var(--muted); margin: 0 auto calc(var(--space) * 3); max-width: 60ch; }
-.about__hero-proof { display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center; margin-block: calc(var(--space) * 3) calc(var(--space) * 4); }
-.chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border-w) solid var(--border); background: var(--card); color: var(--on-card); box-shadow: var(--shadow); }
-.chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
-.about__hero-cta { display: flex; gap: var(--gap); justify-content: center; }
-
-/* Stats */
-.about__stats { padding-block: calc(var(--space) * 6); }
-.stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); list-style: none; padding: 0; margin: 0; }
-@media (min-width: 48rem) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
-.stat { text-align: center; padding: calc(var(--space) * 3); border-radius: var(--radius); background: var(--card); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); }
-.stat__num { font-size: clamp(2rem, 1.2rem + 3vw, 3rem); letter-spacing: -0.02em; font-weight: 700; }
-.stat__label { color: var(--muted); margin-top: .25rem; }
-
-/* Cards grid */
-.cards-grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
-@media (min-width: 48rem) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-.card { background: var(--card); color: var(--on-card); border: var(--border-w) solid var(--border); border-radius: var(--radius); padding: calc(var(--space) * 3); box-shadow: var(--shadow); }
-.card h3 { margin: 0 0 .5rem; font-size: var(--fs-3); letter-spacing: -0.01em; }
-.check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
-.check-list li { position: relative; padding-left: 1.5rem; }
-.check-list li::before { content: ""; position: absolute; left: 0; top: .5rem; width: .75rem; height: .75rem; border-radius: 50%; background: var(--brand); }
-
-/* Compliance */
-.about__compliance { padding-block: calc(var(--space) * 6); }
-.logos-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); list-style: none; padding: 0; margin: 0; }
-@media (min-width: 48rem) { .logos-grid { grid-template-columns: repeat(6, 1fr); } }
-.logo { display: grid; place-items: center; padding: 1rem; background: var(--card); border: var(--border-w) solid var(--border); border-radius: var(--radius); min-height: 72px; text-align: center; box-shadow: var(--shadow); font-weight: 600; }
-
-/* Timeline */
-.about__timeline { padding-block: calc(var(--space) * 6); }
-.timeline { --line: color-mix(in oklch, var(--brand), black 60%); list-style: none; padding: 0; margin: 0; position: relative; }
-.timeline li { display: grid; grid-template-columns: 6rem 1fr; gap: var(--gap); padding: calc(var(--space) * 2) 0; border-left: 2px solid var(--line); margin-left: 1rem; position: relative; }
-.timeline li::before { content: ""; position: absolute; left: -9px; top: calc(50% - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 2px var(--surface); }
-.tl__year { font-weight: 700; color: var(--muted); }
-.tl__content { color: var(--on-surface); }
-
-/* Global */
-.about__global { padding-block: calc(var(--space) * 6); }
-.global__grid { display: grid; grid-template-columns: 1fr; gap: var(--gap); }
-@media (min-width: 64rem) { .global__grid { grid-template-columns: 2fr 1fr; align-items: center; } }
-.global__map img { width: 100%; border-radius: var(--radius); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); }
-
-/* Clients */
-.about__clients { padding-block: calc(var(--space) * 6); }
-
-/* Sustainability */
-.about__sustain { padding-block: calc(var(--space) * 6); }
-
-/* FAQ */
-.about__faq { padding-block: calc(var(--space) * 6); }
-.about__faq details { border: var(--border-w) solid var(--border); border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); padding: 1rem 1.25rem; margin-bottom: 1rem; }
-.about__faq summary { cursor: pointer; font-weight: 600; }
-
-/* CTA */
-.about__cta { padding-block: calc(var(--space) * 8); background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--brand) 12%, transparent)); }
-.cta__box { display: grid; gap: var(--gap); align-items: center; background: var(--card); border-radius: var(--radius); border: var(--border-w) solid var(--border); padding: calc(var(--space) * 4); box-shadow: var(--shadow); }
-@media (min-width: 48rem) { .cta__box { grid-template-columns: 1fr auto; } }
-.cta__text h2 { margin: 0 0 .5rem; font-size: var(--fs-3); }
-.cta__text p { margin: 0; color: var(--muted); }
-.cta__actions { display: flex; flex-wrap: wrap; gap: var(--gap); }
-</style>
 {{ end }}
