@@ -56,6 +56,38 @@
     </div>
   </div>
 
+  <!-- 2.5) 视觉展示：厂区与团队 -->
+  <div class="about-gallery" aria-labelledby="about-gallery-heading">
+    <div class="container container--wide">
+      <div class="about-gallery__layout">
+        <div class="about-gallery__lead">
+          <p class="about-gallery__eyebrow">可视化我们的交付能力</p>
+          <h2 id="about-gallery-heading" class="about-gallery__title">从生产车间到技术团队的全流程把控</h2>
+          <p class="about-gallery__description">核心产线、实验室与工程师团队协同运转，确保塑料托盘与周边包装方案在每个环节都符合国际客户的安全与可靠性标准。</p>
+          <ul class="check-list about-gallery__list" role="list">
+            <li>注塑、吹塑车间 24/7 排产监控</li>
+            <li>实验室执行载荷、跌落与材料性能验证</li>
+            <li>跨部门项目小组提供定制化方案评审</li>
+          </ul>
+        </div>
+        <div class="about-gallery__grid">
+          <figure class="about-gallery__media about-gallery__media--primary">
+            <img src="{{ "images/about/factory-overview.svg" | relURL }}" alt="塑料制品工厂外观与生产设施" loading="lazy">
+            <figcaption class="about-gallery__caption">自有 20,000 m² 厂区覆盖模具、注塑与仓储</figcaption>
+          </figure>
+          <figure class="about-gallery__media about-gallery__media--secondary">
+            <img src="{{ "images/about/quality-lab.svg" | relURL }}" alt="质量实验室内工程师正在检查塑料托盘" loading="lazy">
+            <figcaption class="about-gallery__caption">实验室执行载荷与材料检测，维持 DPPM ≤350</figcaption>
+          </figure>
+          <figure class="about-gallery__media about-gallery__media--secondary">
+            <img src="{{ "images/about/team-collaboration.svg" | relURL }}" alt="工程团队围绕项目方案协作讨论" loading="lazy">
+            <figcaption class="about-gallery__caption">跨部门项目团队在 24 小时内响应定制需求</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 3) 能力矩阵 -->
   <div id="capabilities" class="about__capabilities">
     <div class="container">
@@ -303,6 +335,25 @@
 .chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border-w) solid var(--border); background: var(--card); color: var(--on-card); box-shadow: var(--shadow); }
 .chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
 .about__hero-cta { display: flex; gap: var(--gap); justify-content: center; }
+
+/* Gallery */
+.about-gallery { padding-block: calc(var(--space) * 6); background: color-mix(in oklch, var(--surface) 90%, white 10%); }
+.about-gallery__layout { display: grid; gap: calc(var(--space) * 4); align-items: center; }
+@media (min-width: 64rem) { .about-gallery__layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); } }
+.about-gallery__lead { display: grid; gap: calc(var(--space) * 2); }
+.about-gallery__eyebrow { margin: 0; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; }
+.about-gallery__title { margin: 0; font-size: var(--fs-4); letter-spacing: -0.01em; }
+.about-gallery__description { margin: 0; color: var(--muted); }
+.about-gallery__list { margin: 0; }
+.about-gallery__grid { display: grid; gap: calc(var(--space) * 2); }
+@media (min-width: 48rem) {
+  .about-gallery__grid { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: minmax(9rem, auto); }
+  .about-gallery__media--primary { grid-column: span 4; grid-row: span 2; }
+  .about-gallery__media--secondary { grid-column: span 2; }
+}
+.about-gallery__media { display: flex; flex-direction: column; border-radius: var(--radius); overflow: hidden; border: var(--border-w) solid var(--border); background: var(--card); box-shadow: var(--shadow); }
+.about-gallery__media img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; }
+.about-gallery__caption { margin: 0; padding: calc(var(--space) * 2); font-size: var(--fs-1); color: var(--muted); background: color-mix(in oklch, var(--card) 92%, white 8%); }
 
 /* Stats */
 .about__stats { padding-block: calc(var(--space) * 6); }
