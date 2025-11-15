@@ -551,5 +551,93 @@
     © 2025 Baoheng Plastic
   </div>
 </footer>
+  <div class="wa-fab"
+         data-wa
+         data-side="right"
+         style="--wa-size-desktop: 60px; --wa-size-mobile: 72px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
+         data-wa-href="https://wa.me/8617861616766">
+      <a class="wa-fab__btn" href="https://wa.me/8617861616766" target="_blank" rel="noopener"
+         aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+        <svg class="wa-fab__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          
+          <path fill="#FFFFFF" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.1-.472-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.173.198-.298.298-.497.099-.198.049-.372-.025-.521-.074-.148-.669-1.611-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.123-.272-.198-.57-.347zM12.005 2.003c-5.522 0-10.001 4.477-10.001 9.997 0 1.762.467 3.468 1.354 4.966L2 22l5.173-1.355c1.45.797 3.088 1.215 4.832 1.215 5.522 0 10.001-4.477 10.001-9.997S17.527 2.003 12.005 2.003z"/>
+        </svg>
+      </a>
+    </div>
+
+    <style>
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
+      .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+
+       
+      .wa-fab__btn {
+        width: var(--wa-size-desktop);
+        height: var(--wa-size-desktop);
+        display: inline-flex; align-items: center; justify-content: center;
+        background: #25D366; color: #fff; text-decoration: none;
+        border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,.15);
+        outline: none; transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+      }
+      .wa-fab__icon {
+        display: block;
+        width:  calc(var(--wa-size-desktop) * 0.56);
+        height: calc(var(--wa-size-desktop) * 0.56);
+      }
+
+      .wa-fab__btn:hover { background: #1faa56; transform: translateY(-1px); box-shadow: 0 10px 22px rgba(0,0,0,.18); }
+      .wa-fab__btn:active { transform: translateY(0); box-shadow: 0 6px 16px rgba(0,0,0,.14); }
+      .wa-fab__btn:focus-visible { box-shadow: 0 0 0 3px rgba(37,211,102,.35), 0 8px 20px rgba(0,0,0,.15); }
+
+       
+      @supports (padding: max(0px)) {
+        .wa-fab[data-side="right"] { right: max(var(--wa-offset-desktop), env(safe-area-inset-right)); }
+        .wa-fab[data-side="left"]  { left:  max(var(--wa-offset-desktop), env(safe-area-inset-left)); }
+        .wa-fab { bottom: max(var(--wa-offset-desktop), env(safe-area-inset-bottom)); }
+      }
+
+       
+      @media (max-width: 420px) {
+        .wa-fab { bottom: var(--wa-offset-mobile); }
+        .wa-fab[data-side="right"] { right: var(--wa-offset-mobile); }
+        .wa-fab[data-side="left"]  { left:  var(--wa-offset-mobile); }
+
+        @supports (padding: max(0px)) {
+          .wa-fab[data-side="right"] { right: max(var(--wa-offset-mobile), env(safe-area-inset-right)); }
+          .wa-fab[data-side="left"]  { left:  max(var(--wa-offset-mobile), env(safe-area-inset-left)); }
+          .wa-fab { bottom: max(var(--wa-offset-mobile), env(safe-area-inset-bottom)); }
+        }
+
+        .wa-fab__btn {
+          width: var(--wa-size-mobile);
+          height: var(--wa-size-mobile);
+        }
+        .wa-fab__icon {
+          width:  calc(var(--wa-size-mobile) * 0.56);
+          height: calc(var(--wa-size-mobile) * 0.56);
+        }
+      }
+    </style>
+
+    <script>
+      (function(){
+        var root = document.querySelector('[data-wa]');
+        if(!root) return;
+        var a = root.querySelector('.wa-fab__btn');
+        var baseHref = root.getAttribute('data-wa-href');
+
+        a.addEventListener('click', function(){
+          try{
+            var url = new URL(baseHref);
+            url.searchParams.delete('text'); 
+            a.setAttribute('href', url.toString());
+          }catch(e){}
+          
+          try{ window.dataLayer = window.dataLayer || []; window.dataLayer.push({event:'WhatsAppOpen', placement:'fab'}); }catch(e){}
+          try{ if(window.gtag) window.gtag('event','WhatsAppOpen',{placement:'fab'}); }catch(e){}
+          try{ if(window.fbq) window.fbq('trackCustom','WhatsAppOpen',{placement:'fab'}); }catch(e){}
+        });
+      })();
+    </script>
 </body>
 </html>

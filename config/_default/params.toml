@@ -15,3 +15,13 @@ turnstile_site_key = "0x4AAAAAAB43R0lGyzeXeIiK"
 # 热门文章数量
 [blog.popular]
   limit = 3  
+
+[whatsapp]
+enabled = true
+phone = "8617861616766"
+label = "Chat on WhatsApp" # 仅用于无障碍 aria-label / title 提示
+side = "right"              # "right" | "left"
+sizeDesktop = 60            # 桌面端按钮直径(px)
+sizeMobile  = 72            # 手机端按钮直径(px) → 手机更大
+offsetDesktop = 18          # 桌面端距边距离(px)
+offsetMobile  = 14          # 手机端距边距离(px)
