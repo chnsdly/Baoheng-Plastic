@@ -1,5 +1,5 @@
 {{ $prods := where site.RegularPages "Section" "products" }}
-{{ $featured := where $prods ".Params.featured" true | first 3 }}
+{{ $featured := where $prods ".Params.featured" true | first 8 }}
 
 <section class="home-featured">
   <div class="container">

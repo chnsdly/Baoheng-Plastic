@@ -1,6 +1,7 @@
 ---
 title: "1111-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1111.jpg"
+featured: true
 sku: ""
 product_type: "pallet"
 specs:

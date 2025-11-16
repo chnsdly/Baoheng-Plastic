@@ -1,6 +1,7 @@
 ---
 title: "1208-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1208.jpg"
+featured: true
 sku: ""
 product_type: "pallet"
 specs:

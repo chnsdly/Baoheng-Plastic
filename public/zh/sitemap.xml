@@ -2,86 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/zh/</loc>
-    <lastmod>2025-08-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/products/waste/cnc-milling-machine-x1-copy-2/</loc>
-    <lastmod>2025-08-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/waste/cnc-milling-machine-x1-copy-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/waste/cnc-milling-machine-x1-copy-2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/products/waste/cnc-milling-machine-x1-copy-3/</loc>
-    <lastmod>2025-08-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/waste/cnc-milling-machine-x1-copy-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/waste/cnc-milling-machine-x1-copy-3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/products/waste/cnc-milling-machine-x1-copy-4/</loc>
-    <lastmod>2025-08-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/waste/cnc-milling-machine-x1-copy-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/waste/cnc-milling-machine-x1-copy-4/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/products/waste/</loc>
-    <lastmod>2025-08-09T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/waste/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/waste/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh/products/</loc>
-    <lastmod>2025-08-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/"
-                />
-  </url><url>
     <loc>http://localhost:1313/zh/industries/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -106,6 +26,19 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh/resources/articles/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/resources/downloads/</loc>
@@ -1285,6 +1218,32 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh/products/crate/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/products/waste/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/waste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/waste/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh/products/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/%E6%A0%87%E7%AD%BE/</loc>

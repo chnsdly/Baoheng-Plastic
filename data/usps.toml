@@ -1,41 +1,42 @@
 ########## 英文 ##########
 [[en]]
-title = "ISO 9001 Factory"
-desc  = "Certified production and rigorous QA."
+title = "High-strength Material"
+desc  = "Virgin HDPE/PP material, impact and abrasion resistant"
 icon  = "images/icons/iso.jpg"
 
 [[en]]
-title = "Fast Lead Time"
-desc  = "Stocked parts, 2–4 weeks delivery."
+title = "Engineered Structure"
+desc  = "Reinforced grid design for balanced load distribution"
 icon  = "images/icons/iso.jpg"
 
 [[en]]
-title = "Global Support"
-desc  = "Service centers across key regions."
+title = "Multi-scenario Ready"
+desc  = "Suitable for warehouse racking and cold-chain logistics"
 icon  = "images/icons/iso.jpg"
 
 [[en]]
-title = "Customizable"
-desc  = "OEM/ODM and tailored specifications."
+title = "Flexible Customization"
+desc  = "OEM/ODM customization available"
 icon  = "images/icons/iso.jpg"
+
 
 ########## 中文 ##########
 [[zh]]
-title = "通过 ISO 9001 认证"
-desc  = "严格质量体系，批批可追溯。"
+title = "高强材质"
+desc  = "全新HDPE/PP原料，抗冲击耐磨损"
 icon  = "images/icons/iso.jpg"
 
 [[zh]]
-title = "交期快速"
-desc  = "常备物料，2–4 周可交付。"
+title = "科学结构"
+desc  = "加强筋网格设计，均衡承载分布"
 icon  = "images/icons/iso.jpg"
 
 [[zh]]
-title = "全球服务网络"
-desc  = "重点区域设有服务中心。"
+title = "多场景适配"
+desc  = "仓储货架，冷链物流"
 icon  = "images/icons/iso.jpg"
 
 [[zh]]
-title = "高度可定制"
-desc  = "支持 OEM/ODM 及参数定制。"
+title = "灵活定制"
+desc  = "支持 OEM/ODM 定制。"
 icon  = "images/icons/iso.jpg"

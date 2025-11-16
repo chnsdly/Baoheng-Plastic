@@ -578,7 +578,7 @@ body[data-drawer-open='true'] {
   /* 遮罩（基色+强度） */
   --hero-overlay-base: var(--on-brand);
   /* 遮罩基色，默认用全局品牌色 */
-  --hero-overlay-alpha: 0.3;
+  --hero-overlay-alpha: 0.2;
   /* 0~1 越大越暗 */
   --hero-overlay-angle: 0deg;
   /* 渐变角度 */
