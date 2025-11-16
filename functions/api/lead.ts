@@ -38,6 +38,7 @@ export const onRequestPost: PagesFunction<{
   const pageUrl = get("page_url");               // 也可换成 request.headers.get("Referer") 兜底
   const downloadSlug = get("download_slug");
   const consent = get("consent") || "no";
+  const lang = get("lang") || "en";
   const utm = (k: string) => get(k);
   const ua = request.headers.get("User-Agent") || "";
 
@@ -55,6 +56,8 @@ export const onRequestPost: PagesFunction<{
   ).run();
 
   // 5) 下载型：写票据 + Set-Cookie + 303 跳感谢页（带 ?dl=slug）
+  const thanksPath = lang === "en" ? "/thanks/" : `/${lang}/thanks/`;
+
   if (formType === "download" && downloadSlug) {
     const id = crypto.randomUUID();
     const expiresAt = new Date(Date.now() + 15 * 60 * 1000).toISOString();
@@ -64,7 +67,7 @@ export const onRequestPost: PagesFunction<{
       VALUES (?,?,?,?)
     `).bind(id, downloadSlug, now, expiresAt).run();
 
-    const url = new URL("/thanks/", request.url);
+    const url = new URL(thanksPath, request.url);
     url.searchParams.set("dl", downloadSlug);
 
     return new Response(null, {
@@ -79,6 +82,6 @@ export const onRequestPost: PagesFunction<{
   // 6) 联系表单：无票据，直接去 /thanks/
   return new Response(null, {
     status: 303,
-    headers: { "Location": new URL("/thanks/", request.url).toString() }
+    headers: { "Location": new URL(thanksPath, request.url).toString() }
   });
 };
