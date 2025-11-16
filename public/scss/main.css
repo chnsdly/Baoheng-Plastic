@@ -576,14 +576,14 @@ body[data-drawer-open='true'] {
   --hero-py: space(10);
   /* 上下内边距 */
   /* 遮罩（基色+强度） */
-  --hero-overlay-base: var(--brand);
+  --hero-overlay-base: var(--on-brand);
   /* 遮罩基色，默认用全局品牌色 */
-  --hero-overlay-alpha: .1;
+  --hero-overlay-alpha: 0.3;
   /* 0~1 越大越暗 */
   --hero-overlay-angle: 0deg;
   /* 渐变角度 */
   /* 文案与排版 */
-  --hero-text-color: var(--on-brand);
+  --hero-text-color: var(--on-surface);
   /* 文字颜色（图上通常用浅色） */
   --hero-content-max: 80ch;
   /* 文案最大宽度 */

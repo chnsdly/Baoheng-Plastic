@@ -6,12 +6,12 @@
   --hero-py: space(10);                 /* 上下内边距 */
 
   /* 遮罩（基色+强度） */
-  --hero-overlay-base: var(--brand);    /* 遮罩基色，默认用全局品牌色 */
-  --hero-overlay-alpha: .1;            /* 0~1 越大越暗 */
+  --hero-overlay-base: var(--on-brand);    /* 遮罩基色，默认用全局品牌色 */
+  --hero-overlay-alpha: 0.3;            /* 0~1 越大越暗 */
   --hero-overlay-angle: 0deg;           /* 渐变角度 */
 
   /* 文案与排版 */
-  --hero-text-color: var(--on-brand);   /* 文字颜色（图上通常用浅色） */
+  --hero-text-color: var(--on-surface);   /* 文字颜色（图上通常用浅色） */
   --hero-content-max: 80ch;             /* 文案最大宽度 */
   --hero-gap: calc(var(--space) * 5);                 /* 文案块垂直间距 */
   --hero-title-size: var(--fs-5);       /* 标题字号（用全局令牌） */

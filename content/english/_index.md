@@ -1,6 +1,6 @@
 ---
-title: "GlobalTech"
-hero_title: "宝恒垃圾桶宝恒塑料容器宝恒托盘"    
-hero_description: "为全球电动车提供安全、可靠、高性能的锂电池解决方案"
+title: "Baoheng Plastic"
+hero_title: "Efficient Flow, Lower Costs"    
+hero_description: "Keeping goods moving smoothly and every site clean and safe."
 hero_bg_asset: "images/hero-bg.jpg"
 ---
