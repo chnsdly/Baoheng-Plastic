@@ -1,235 +1,147 @@
 {{ define "main" }}
 <section class="about">
-  <!-- 1) Hero：价值主张 + 快速证明点 -->
+  {{- $hero := .Params.hero -}}
+  {{- with $hero }}
   <div class="about__hero">
     <div class="container container--wide">
       <div class="about__hero-inner">
-        <div class="about__hero-badge">制造商 · OEM/ODM · 出口</div>
-        <h1 class="about__hero-title">山东宝恒塑料制品有限公司</h1>
-        <p class="about__hero-sub">专注塑料托盘、周转箱/筐、垃圾桶等注塑/吹塑产品，全链路保障仓储、物流与环卫项目的稳定交付。</p>
+        {{- with .badge }}<div class="about__hero-badge">{{ . }}</div>{{ end }}
+        {{- with .title }}<h1 class="about__hero-title">{{ . }}</h1>{{ end }}
+        {{- with .subtitle }}<p class="about__hero-sub">{{ . }}</p>{{ end }}
+        {{- with .proofs }}
         <div class="about__hero-proof">
-          <div class="chip" title="成立时间">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 22V8l6-5 6 5v14H6zM9 22v-6h6v6"/></svg>
-            <span data-founded>2013 年投产，专注工业塑料制品</span>
+          {{- range . }}
+          <div class="chip"{{ with .title }} title="{{ . }}"{{ end }}>
+            {{- $icon := .icon -}}
+            {{- if eq $icon "founded" }}<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 22V8l6-5 6 5v14H6zM9 22v-6h6v6"/></svg>{{ end }}
+            {{- if eq $icon "plant" }}<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 3h18v4H3zM5 7h14v14H5z"/></svg>{{ end }}
+            {{- if eq $icon "coverage" }}<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c3 2 5 6 5 10s-2 8-5 10m0-20C9 4 7 8 7 12s2 8 5 10"/></svg>{{ end }}
+            <span>{{ .text }}</span>
           </div>
-          <div class="chip" title="工厂面积">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 3h18v4H3zM5 7h14v14H5z"/></svg>
-            <span data-plant>20,000 m² 工厂 · 20+ 台注/吹塑机</span>
-          </div>
-          <div class="chip" title="市场覆盖">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c3 2 5 6 5 10s-2 8-5 10m0-20C9 4 7 8 7 12s2 8 5 10"/></svg>
-            <span data-countries>交付 30+ 国家/地区项目</span>
-          </div>
+          {{- end }}
         </div>
+        {{- end }}
+        {{- with .cta }}
         <div class="about__hero-cta">
-          <a class="button button--primary" href="/contact" aria-label="获取报价">获取报价</a>
+          <a class="button button--primary" href="{{ .href }}" aria-label="{{ or .ariaLabel .label }}">{{ .label }}</a>
         </div>
+        {{- end }}
       </div>
     </div>
   </div>
+  {{- end }}
 
-  <!-- 2) Stats：硬指标 -->
+  {{- with .Params.stats }}
   <div class="about__stats">
     <div class="container">
       <ul class="stats-grid" role="list">
+        {{- range . }}
         <li class="stat">
-          <div class="stat__num" data-capacity>1.2M</div>
-          <div class="stat__label">年产塑料托盘/箱/桶（件）</div>
+          <div class="stat__num">{{ .num }}</div>
+          <div class="stat__label">{{ .label }}</div>
         </li>
-        <li class="stat">
-          <div class="stat__num" data-otd>98%</div>
-          <div class="stat__label">准时交付率（整柜 & 零担）</div>
-        </li>
-        <li class="stat">
-          <div class="stat__num" data-dppm><span aria-hidden="true">≤</span>350</div>
-          <div class="stat__label">批次不良数（百万件不良数）</div>
-        </li>
-        <li class="stat">
-          <div class="stat__num" data-repeat>73%</div>
-          <div class="stat__label">老客户年度复购率</div>
-        </li>
+        {{- end }}
       </ul>
     </div>
   </div>
+  {{- end }}
 
-  <!-- 3) 能力矩阵 -->
+  {{- $cap := .Params.capabilities -}}
+  {{- with $cap }}
   <div id="capabilities" class="about__capabilities">
     <div class="container">
       <div class="section-head">
-        <h2>制造能力</h2>
-        <p class="muted">模具 · 成型 · 材料 · 质控 · 交付</p>
+        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{- with .subtitle }}<p class="muted">{{ . }}</p>{{ end }}
       </div>
       <div class="cards-grid">
+        {{- range .cards }}
         <article class="card">
-          <h3>工艺</h3>
+          {{- with .title }}<h3>{{ . }}</h3>{{ end }}
+          {{- with .items }}
           <ul class="check-list">
-            <li>注塑（400–2800T），覆盖托盘、垃圾桶、周转箱</li>
-            <li>吹塑（最大 1,000L），用于轻量化托盘与水箱</li>
-            <li>滚塑（大型件），满足特殊形态与低批量需求</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>材料</h3>
-        <ul class="check-list">
-            <li>HDPE / PP 可选食品级与抗静电</li>
-            <li>HDPE+POE 抗冲改性，适配高周转工况</li>
-            <li>再生料占比最高 <span data-recycled>30%</span>，兼顾强度与成本</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>质量</h3>
-        <ul class="check-list">
-            <li>来料 IQC · 过程 IPQC · 出货 OQC</li>
-            <li>堆码/跌落/叉车/耐寒等模拟测试</li>
-            <li>批次追溯，标识生产日期与物料来源</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>模具与打样</h3>
-        <ul class="check-list">
-            <li>自有模具车间，可按托盘/箱型调整筋位与厚度</li>
-            <li>快速打样 <span data-samplelead>7–10</span> 天</li>
-            <li>颜色、Logo、标签位与条码区定制</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>履约/交付</h3>
-        <ul class="check-list">
-            <li>EXW/FOB/CIF/DDP，熟悉整柜、拼柜与散货包装</li>
-            <li>可嵌套设计与装载优化，降低物流成本</li>
-            <li>多语言支持，提供使用与堆码建议</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>项目管理</h3>
-        <ul class="check-list">
-            <li>按行业场景（冷链/仓配/环卫）匹配方案</li>
-            <li>节点透明的排期管理，重要节点可远程验货</li>
-            <li>售后与持续优化，支持重复备货与模具维护</li>
-        </ul>
-      </article>
+            {{- range . }}
+            <li>{{ . }}</li>
+            {{- end }}
+          </ul>
+          {{- end }}
+        </article>
+        {{- end }}
       </div>
     </div>
   </div>
+  {{- end }}
 
-  <!-- 5) 时间线/里程碑 -->
+  {{- $timeline := .Params.timeline -}}
+  {{- with $timeline }}
   <div class="about__timeline">
     <div class="container container--narrow">
       <div class="section-head">
-        <h2>我们的里程碑</h2>
+        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
       </div>
       <ol class="timeline" role="list">
+        {{- range .items }}
         <li>
-          <div class="tl__year">2013</div>
-          <div class="tl__content">公司成立，投产首批托盘与周转箱注塑产线。</div>
+          {{- with .year }}<div class="tl__year">{{ . }}</div>{{ end }}
+          {{- with .content }}<div class="tl__content">{{ . }}</div>{{ end }}
         </li>
-        <li>
-          <div class="tl__year">2016</div>
-          <div class="tl__content">新增吹塑产线，推出轻量化塑料托盘和户外垃圾桶。</div>
-        </li>
-        <li>
-          <div class="tl__year">2019</div>
-          <div class="tl__content">新工厂（20,000 m²）投用，出口覆盖 15+ 个国家。</div>
-        </li>
-        <li>
-          <div class="tl__year">2022</div>
-          <div class="tl__content">扩大模具车间与仓储，新增食品级与抗静电料线。</div>
-        </li>
-        <li>
-          <div class="tl__year">2025</div>
-          <div class="tl__content">质检数字化升级，服务 30+ 个国家客户。</div>
-        </li>
+        {{- end }}
       </ol>
     </div>
   </div>
+  {{- end }}
 
-  <!-- 6) 全球足迹 -->
+  {{- $global := .Params.global -}}
+  {{- with $global }}
   <div class="about__global">
     <div class="container">
       <div class="section-head">
-        <h2>全球客户的共同选择</h2>
-        <p class="muted">主要市场涵盖 美国/加拿大、欧盟、东南亚、中东与拉美，适配仓配、冷链、制造与环卫场景。</p>
+        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{- with .subtitle }}<p class="muted">{{ . }}</p>{{ end }}
       </div>
       <div class="global__grid">
         <div class="global__map" aria-hidden="true">
-          <!-- 使用你的静态世界地图图像或SVG -->
-          <img src="/images/world-map.jpg" alt="" loading="lazy">
+          {{- with .map }}<img src="{{ . }}" alt="{{ $global.mapAlt }}" loading="lazy">{{ end }}
         </div>
+        {{- with .highlights }}
         <div class="global__facts">
           <ul class="check-list">
-            <li>食品与饮料加工配送</li>
-            <li>仓储物流与自动化立库</li>
-            <li>医药与日化流通</li>
-            <li>零售商超与电商仓配</li>
-            <li>农业采收与基地配送</li>
-            <li>再生回收与废料分拣</li>
+            {{- range . }}
+            <li>{{ . }}</li>
+            {{- end }}
           </ul>
         </div>
+        {{- end }}
       </div>
     </div>
   </div>
+  {{- end }}
 
-  <!-- 8) 可持续 -->
+  {{- $sus := .Params.sustainability -}}
+  {{- with $sus }}
   <div class="about__sustain">
     <div class="container container--narrow">
       <div class="section-head">
-        <h2>可持续发展</h2>
+        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
       </div>
       <div class="cards-grid">
+        {{- range .cards }}
         <article class="card">
-          <h3>再生料</h3>
-          <p>最高 <span data-recycled-2>30%</span> 再生料，同时保持抗冲性能与循环使用寿命。</p>
+          {{- with .title }}<h3>{{ . }}</h3>{{ end }}
+          {{- with .content }}<p>{{ . }}</p>{{ end }}
         </article>
-        <article class="card">
-          <h3>能源与排放</h3>
-          <p>节能型注塑/吹塑设备，产品可嵌套设计减少运输占用。</p>
-        </article>
-        <article class="card">
-          <h3>循环使用</h3>
-          <p>产品支持多次周转与回收造粒，用于下一批托盘或周转箱生产。</p>
-        </article>
+        {{- end }}
       </div>
     </div>
   </div>
+  {{- end }}
 </section>
 
-<!-- JSON-LD：Organization（请用真实信息替换占位） -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Baoheng Plastic",
-  "legalName": "Shandong Baoheng Plastic Products Co., Ltd.",
-  "url": "https://www.baohengplastic.com/",
-  "logo": "https://www.baohengplastic.com/images/logo.png",
-  "foundingDate": "2013-01-01",
-  "founder": [{"@type":"Person","name":"Baoheng Founder"}],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Economic Development Zone",
-    "addressLocality": "Linyi",
-    "addressRegion": "Shandong",
-    "postalCode": "276000",
-    "addressCountry": "CN"
-  },
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "contactType": "sales",
-    "email": "sales@baohengplastic.com",
-    "telephone": "+86-000-0000",
-    "areaServed": "Worldwide",
-    "availableLanguage": ["en","es","fr","de","it","zh"]
-  }],
-  "sameAs": [
-    "https://www.linkedin.com/company/baohengplastic"
-  ]
-}
-</script>
+{{- with .Params.organization }}
+<script type="application/ld+json">{{ . | jsonify }}</script>
+{{- end }}
 
 <style>
-/*****************************
-  About Page Scoped Styles
-*****************************/
 .about { --gap: calc(var(--space) * 3); }
 .muted { color: var(--muted); }
 .small { font-size: var(--fs-1); }
@@ -237,7 +149,6 @@
 .section-head h2 { font-size: var(--fs-4); margin: 0 0 calc(var(--space) * 1); }
 .section-head p { margin: 0; }
 
-/* Hero */
 .about__hero { background: linear-gradient(180deg, color-mix(in oklch, var(--brand) 20%, transparent), transparent), var(--surface); padding-block: calc(var(--space) * 6); }
 .about__hero-inner { max-width: var(--container-narrow); margin: 0 auto; text-align: center; }
 .about__hero-badge { display: inline-block; padding: .35rem .75rem; border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand), white 85%); color: var(--on-surface); border: var(--border-w) solid var(--border); font-size: .875rem; }
@@ -248,7 +159,6 @@
 .chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
 .about__hero-cta { display: flex; gap: var(--gap); justify-content: center; }
 
-/* Stats */
 .about__stats { padding-block: calc(var(--space) * 6); }
 .stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); list-style: none; padding: 0; margin: 0; }
 @media (min-width: 48rem) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
@@ -256,7 +166,6 @@
 .stat__num { font-size: clamp(2rem, 1.2rem + 3vw, 3rem); letter-spacing: -0.02em; font-weight: 700; }
 .stat__label { color: var(--muted); margin-top: .25rem; }
 
-/* Cards grid */
 .cards-grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
 @media (min-width: 48rem) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
 .card { background: var(--card); color: var(--on-card); border: var(--border-w) solid var(--border); border-radius: var(--radius); padding: calc(var(--space) * 3); box-shadow: var(--shadow); }
@@ -265,21 +174,18 @@
 .check-list li { position: relative; padding-left: 1.5rem; }
 .check-list li::before { content: ""; position: absolute; left: 0; top: .5rem; width: .75rem; height: .75rem; border-radius: 50%; background: var(--brand); }
 
-  /* Timeline */
-  .about__timeline { padding-block: calc(var(--space) * 6); }
-  .timeline { --line: color-mix(in oklch, var(--brand), black 60%); list-style: none; padding: 0; margin: 0; position: relative; }
+.about__timeline { padding-block: calc(var(--space) * 6); }
+.timeline { --line: color-mix(in oklch, var(--brand), black 60%); list-style: none; padding: 0; margin: 0; position: relative; }
 .timeline li { display: grid; grid-template-columns: 6rem 1fr; gap: var(--gap); padding: calc(var(--space) * 2) 0; border-left: 2px solid var(--line); margin-left: 1rem; position: relative; }
 .timeline li::before { content: ""; position: absolute; left: -9px; top: calc(50% - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 2px var(--surface); }
 .tl__year { font-weight: 700; color: var(--muted); }
 .tl__content { color: var(--on-surface); }
 
-/* Global */
 .about__global { padding-block: calc(var(--space) * 6); }
 .global__grid { display: grid; grid-template-columns: 1fr; gap: var(--gap); }
 @media (min-width: 64rem) { .global__grid { grid-template-columns: 2fr 1fr; align-items: center; } }
 .global__map img { width: 100%; border-radius: var(--radius); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); }
 
-  /* Sustainability */
-  .about__sustain { padding-block: calc(var(--space) * 6); }
+.about__sustain { padding-block: calc(var(--space) * 6); }
 </style>
 {{ end }}
