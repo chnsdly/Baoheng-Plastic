@@ -16,10 +16,6 @@
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 3h18v4H3zM5 7h14v14H5z"/></svg>
             <span data-plant>工厂面积 20,000 m²</span>
           </div>
-          <div class="chip" title="认证">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6-5.5-3-5.5 3 1-6L3 8.9 9 8z"/></svg>
-            <span data-certs>ISO 9001/14001 · REACH/RoHS</span>
-          </div>
           <div class="chip" title="市场覆盖">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c3 2 5 6 5 10s-2 8-5 10m0-20C9 4 7 8 7 12s2 8 5 10"/></svg>
             <span data-countries>覆盖 30+ 个国家/地区</span>
@@ -104,26 +100,15 @@
             <li>多语言支持</li>
           </ul>
         </article>
+        <article class="card">
+          <h3>项目管理</h3>
+          <ul class="check-list">
+            <li>需求澄清与方案匹配</li>
+            <li>节点透明的排期管理</li>
+            <li>售后与持续优化</li>
+          </ul>
+        </article>
       </div>
-    </div>
-  </div>
-
-  <!-- 4) 合规与认证 -->
-  <div class="about__compliance">
-    <div class="container container--narrow">
-      <div class="section-head">
-        <h2>合规与认证</h2>
-        <p class="muted">我们符合全球在质量、环境与安全方面的标准。</p>
-      </div>
-      <ul class="logos-grid" role="list">
-        <li class="logo">ISO 9001</li>
-        <li class="logo">ISO 14001</li>
-        <li class="logo">REACH</li>
-        <li class="logo">RoHS</li>
-        <li class="logo">FDA（食品接触）</li>
-        <li class="logo">EN 840*</li>
-      </ul>
-      <p class="muted small">*适用于环卫垃圾桶等产品。</p>
     </div>
   </div>
 
@@ -206,47 +191,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 9) FAQ（采购关注） -->
-  <div class="about__faq">
-    <div class="container container--narrow">
-      <div class="section-head">
-        <h2>常见问题</h2>
-      </div>
-      <details>
-        <summary>你们的 MOQ 与打样政策是什么？</summary>
-        <p>标准 MOQ 取决于型号与颜色；打样 <span data-samplelead-2>7–10</span> 天，批量下单可退样品费。</p>
-      </details>
-      <details>
-        <summary>如何确保质量一致性？</summary>
-        <p>我们实施 IQC/IPQC/OQC，保持批次追溯，并可按需提供 COA；按规格执行堆码/跌落/叉车测试。</p>
-      </details>
-      <details>
-        <summary>是否支持定制（颜色、Logo、结构）？</summary>
-        <p>支持，包括色母、烫印，以及依托自有模具的结构定制。</p>
-      </details>
-      <details>
-        <summary>可支持哪些贸易术语与交付时间？</summary>
-        <p>支持 EXW/FOB/CIF/DDP；常规交期 <span data-leadtime-2>20–35</span> 天，取决于订单规模与模具情况。</p>
-      </details>
-    </div>
-  </div>
-
-  <!-- 10) 强CTA -->
-  <div class="about__cta">
-    <div class="container">
-      <div class="cta__box">
-        <div class="cta__text">
-          <h2>准备好获取专属报价了吗？</h2>
-          <p>告诉我们尺寸、载重与应用需求——我们将在 24 小时内给出匹配方案。</p>
-        </div>
-        <div class="cta__actions">
-          <a class="button button--primary" href="/contact">联系销售</a>
-          <a class="button" href="/downloads">下载规格</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- JSON-LD：Organization（请用真实信息替换占位） -->
@@ -321,15 +265,9 @@
 .check-list li { position: relative; padding-left: 1.5rem; }
 .check-list li::before { content: ""; position: absolute; left: 0; top: .5rem; width: .75rem; height: .75rem; border-radius: 50%; background: var(--brand); }
 
-/* Compliance */
-.about__compliance { padding-block: calc(var(--space) * 6); }
-.logos-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); list-style: none; padding: 0; margin: 0; }
-@media (min-width: 48rem) { .logos-grid { grid-template-columns: repeat(6, 1fr); } }
-.logo { display: grid; place-items: center; padding: 1rem; background: var(--card); border: var(--border-w) solid var(--border); border-radius: var(--radius); min-height: 72px; text-align: center; box-shadow: var(--shadow); font-weight: 600; }
-
-/* Timeline */
-.about__timeline { padding-block: calc(var(--space) * 6); }
-.timeline { --line: color-mix(in oklch, var(--brand), black 60%); list-style: none; padding: 0; margin: 0; position: relative; }
+  /* Timeline */
+  .about__timeline { padding-block: calc(var(--space) * 6); }
+  .timeline { --line: color-mix(in oklch, var(--brand), black 60%); list-style: none; padding: 0; margin: 0; position: relative; }
 .timeline li { display: grid; grid-template-columns: 6rem 1fr; gap: var(--gap); padding: calc(var(--space) * 2) 0; border-left: 2px solid var(--line); margin-left: 1rem; position: relative; }
 .timeline li::before { content: ""; position: absolute; left: -9px; top: calc(50% - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 2px var(--surface); }
 .tl__year { font-weight: 700; color: var(--muted); }
@@ -341,23 +279,7 @@
 @media (min-width: 64rem) { .global__grid { grid-template-columns: 2fr 1fr; align-items: center; } }
 .global__map img { width: 100%; border-radius: var(--radius); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); }
 
-/* Clients */
-.about__clients { padding-block: calc(var(--space) * 6); }
-
-/* Sustainability */
-.about__sustain { padding-block: calc(var(--space) * 6); }
-
-/* FAQ */
-.about__faq { padding-block: calc(var(--space) * 6); }
-.about__faq details { border: var(--border-w) solid var(--border); border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); padding: 1rem 1.25rem; margin-bottom: 1rem; }
-.about__faq summary { cursor: pointer; font-weight: 600; }
-
-/* CTA */
-.about__cta { padding-block: calc(var(--space) * 8); background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--brand) 12%, transparent)); }
-.cta__box { display: grid; gap: var(--gap); align-items: center; background: var(--card); border-radius: var(--radius); border: var(--border-w) solid var(--border); padding: calc(var(--space) * 4); box-shadow: var(--shadow); }
-@media (min-width: 48rem) { .cta__box { grid-template-columns: 1fr auto; } }
-.cta__text h2 { margin: 0 0 .5rem; font-size: var(--fs-3); }
-.cta__text p { margin: 0; color: var(--muted); }
-.cta__actions { display: flex; flex-wrap: wrap; gap: var(--gap); }
+  /* Sustainability */
+  .about__sustain { padding-block: calc(var(--space) * 6); }
 </style>
 {{ end }}
