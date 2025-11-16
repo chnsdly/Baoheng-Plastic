@@ -1,4 +1,128 @@
 ---
 title: "About Us"
 layout: "about"
+hero:
+  badge: "Manufacturer · OEM/ODM · Export"
+  title: "Shandong Baoheng Plastic Products Co., Ltd."
+  subtitle: "Specializing in injection- and blow-molded plastic pallets, bins/crates, and trash cans to keep warehousing, logistics, and sanitation projects on track."
+  proofs:
+    - icon: "founded"
+      text: "In production since 2013, focused on industrial plastics"
+    - icon: "plant"
+      text: "20,000 m² plant · 20+ injection/blow molding machines"
+    - icon: "coverage"
+      text: "Projects delivered to 30+ countries/regions"
+  cta:
+    href: "/english/contact"
+    label: "Get a Quote"
+    ariaLabel: "Get a Quote"
+stats:
+  - num: "1.2M"
+    label: "Annual output of pallets/bins/cans (pcs)"
+  - num: "98%"
+    label: "On-time delivery (FCL & LCL)"
+  - num: "≤350"
+    label: "Defects per million"
+  - num: "73%"
+    label: "Yearly repurchase rate from existing clients"
+capabilities:
+  title: "Manufacturing Capabilities"
+  subtitle: "Tooling · Molding · Materials · Quality · Fulfillment"
+  cards:
+    - title: "Processes"
+      items:
+        - "Injection molding (400–2800T) for pallets, bins, and trash cans"
+        - "Blow molding (up to 1,000L) for lightweight pallets and tanks"
+        - "Rotomolding for large parts and low-volume specials"
+    - title: "Materials"
+      items:
+        - "HDPE / PP options with food-grade and anti-static choices"
+        - "HDPE+POE impact modification for high-turnover scenarios"
+        - "Up to 30% recycled content balancing strength and cost"
+    - title: "Quality"
+      items:
+        - "IQC for incoming materials · IPQC in process · OQC before shipment"
+        - "Stacking, drop, forklift, and cold-resistance simulation tests"
+        - "Batch traceability with production date and material source"
+    - title: "Tooling & Sampling"
+      items:
+        - "In-house tooling shop to tune ribs and thickness by pallet/bin"
+        - "Rapid sampling in 7–10 days"
+        - "Custom colors, logos, label zones, and barcode areas"
+    - title: "Fulfillment"
+      items:
+        - "EXW/FOB/CIF/DDP with experience in full-container, consolidation, and bulk packaging"
+        - "Nestable designs and loading optimization to cut logistics cost"
+        - "Multilingual support with stacking and usage guidance"
+    - title: "Project Management"
+      items:
+        - "Scenario-based proposals for cold chain, warehousing, and sanitation"
+        - "Transparent schedules with remote inspection at key milestones"
+        - "After-sales support with replenishment and tooling upkeep"
+timeline:
+  title: "Milestones"
+  items:
+    - year: "2013"
+      content: "Company founded and first pallet/bin injection lines commissioned."
+    - year: "2016"
+      content: "Added blow molding lines and launched lightweight pallets and outdoor trash cans."
+    - year: "2019"
+      content: "New 20,000 m² plant online, exporting to 15+ countries."
+    - year: "2022"
+      content: "Expanded tooling shop and warehousing; added food-grade and anti-static material lines."
+    - year: "2025"
+      content: "Digital QA upgrades serving customers in 30+ countries."
+global:
+  title: "Chosen by Customers Worldwide"
+  subtitle: "Key markets include the US/Canada, EU, Southeast Asia, Middle East, and Latin America across warehousing, cold chain, manufacturing, and sanitation."
+  map: "/images/world-map.jpg"
+  mapAlt: "World map highlighting customer regions"
+  highlights:
+    - "Food and beverage processing and distribution"
+    - "Warehousing, logistics, and AS/RS"
+    - "Pharma and personal care distribution"
+    - "Retail and e-commerce fulfillment"
+    - "Agricultural harvesting and base distribution"
+    - "Recycling and waste sorting"
+sustainability:
+  title: "Sustainability"
+  cards:
+    - title: "Recycled Content"
+      content: "Up to 30% recycled resin while maintaining impact performance and service life."
+    - title: "Energy & Emissions"
+      content: "Energy-efficient injection/blow equipment with nestable designs to reduce transport footprint."
+    - title: "Circular Use"
+      content: "Products support multiple turns and pelletizing for the next batches of pallets or bins."
+organization:
+  "@context": "https://schema.org"
+  "@type": "Organization"
+  name: "Baoheng Plastic"
+  legalName: "Shandong Baoheng Plastic Products Co., Ltd."
+  url: "https://www.baohengplastic.com/"
+  logo: "https://www.baohengplastic.com/images/logo.png"
+  foundingDate: "2013-01-01"
+  founder:
+    - "Baoheng Founder"
+  address:
+    "@type": "PostalAddress"
+    streetAddress: "Economic Development Zone"
+    addressLocality: "Linyi"
+    addressRegion: "Shandong"
+    postalCode: "276000"
+    addressCountry: "CN"
+  contactPoint:
+    - "@type": "ContactPoint"
+      contactType: "sales"
+      email: "sales@baohengplastic.com"
+      telephone: "+86-000-0000"
+      areaServed: "Worldwide"
+      availableLanguage:
+        - "en"
+        - "es"
+        - "fr"
+        - "de"
+        - "it"
+        - "zh"
+  sameAs:
+    - "https://www.linkedin.com/company/baohengplastic"
 ---
