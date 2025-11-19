@@ -35,7 +35,7 @@
   /* 宽版：营销/视觉模块 */
   --container-narrow: 60rem;
   /* 窄版：以阅读为主 */
-  --header-height: 72px;
+  --header-height: 68px;
   /* 导航栏高度 */
   /* 字体与排版 */
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
@@ -295,7 +295,7 @@ body.header-hidden {
 .navbar__menu > ul {
   display: flex;
   align-items: center;
-  gap: calc(var(--space) * 2);
+  gap: var(--space);
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -309,7 +309,7 @@ body.header-hidden {
   gap: calc(var(--space) * 1);
   padding-block: calc(var(--space) * 1.5);
   padding-inline: calc(var(--space) * 2);
-  font-size: var(--fs-2);
+  font-size: var(--fs-1);
   color: var(--on-brand);
   /* 主题：品牌底上的前景色 */
   border-radius: var(--radius);
