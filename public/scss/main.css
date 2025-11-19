@@ -2,9 +2,9 @@
 /* ---------------------------- 主题变量：亮色基线 ---------------------------- */
 :root {
   /* 品牌色 & 基础语义色 */
-  --brand:        #174dff;
+  --brand:        #ffffff;
   /* 品牌色 */
-  --on-brand:     #ffffff;
+  --on-brand:     #000000;
   /* 品牌色上的文本/图标 */
   --surface:      #f4f6f8;
   /* 页面默认底色 */
@@ -571,14 +571,14 @@ body[data-drawer-open='true'] {
 /* ============================ 顶部变量（改这里） ============================ */
 .hero {
   /* 尺寸与间距 */
-  --hero-height: 52svh;
+  --hero-height: 60svh;
   /* 英雄区高度（100svh 可全屏） */
   --hero-py: space(10);
   /* 上下内边距 */
   /* 遮罩（基色+强度） */
   --hero-overlay-base: var(--on-brand);
   /* 遮罩基色，默认用全局品牌色 */
-  --hero-overlay-alpha: 0.2;
+  --hero-overlay-alpha: 0.1;
   /* 0~1 越大越暗 */
   --hero-overlay-angle: 0deg;
   /* 渐变角度 */

@@ -10,25 +10,32 @@ identifier = "products"
 weight = 10
 
   [[main]]
-  name = "托盘系列"
+  name = "塑料托盘"
   url = "/products/pallet/"
   identifier = "products-style"
   parent = "products"
   weight = 11
 
   [[main]]
-  name = "周转筐系列"
+  name = "周转筐"
   url = "/products/crate/"
   identifier = "products-load"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "垃圾桶系列"
+  name = "塑料容器"
+  url = "/products/container/"
+  identifier = "products-load2"
+  parent = "products"
+  weight = 13
+
+  [[main]]
+  name = "垃圾桶"
   url = "/products/waste/"
   identifier = "products-dimension"
   parent = "products"
-  weight = 13
+  weight = 14
 
 [[main]]
 name = "行业案例"

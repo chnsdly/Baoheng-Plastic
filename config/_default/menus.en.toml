@@ -10,25 +10,32 @@ identifier = "products"
 weight = 10
 
   [[main]]
-  name = "Pallets"
+  name = "Plastic Pallets"
   url = "/products/pallet/"
   identifier = "products-style"
   parent = "products"
   weight = 11
 
   [[main]]
-  name = "Crates"
+  name = "Plastic Crates"
   url = "/products/crate/"
   identifier = "products-load"
   parent = "products"
   weight = 12
 
   [[main]]
+  name = "Plastic Container"
+  url = "/products/container/"
+  identifier = "products-load2"
+  parent = "products"
+  weight = 13
+
+  [[main]]
   name = "Waste Bins"
   url = "/products/waste/"
   identifier = "products-dimension"
   parent = "products"
-  weight = 13
+  weight = 14
 
 [[main]]
 name = "Industries"

@@ -1262,6 +1262,18 @@
                 href="http://localhost:1313/zh/contact/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh/thanks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/thanks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/thanks/"
+                />
+  </url><url>
     <loc>http://localhost:1313/zh/products/pallet/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
