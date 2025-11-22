@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Baoheng Plastic</title>
-    <link>http://localhost:1313/resources/articles/</link>
-    <description>Recent content on Baoheng Plastic</description>
+    <title>Articles on Baoheng Plastic</title>
+    <link>http://localhost:1313/categories/articles/</link>
+    <description>Recent content in Articles on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/resources/articles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades</title>
       <link>http://localhost:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</link>

@@ -28,6 +28,9 @@
                 href="http://localhost:1313/resources/articles/"
                 />
   </url><url>
+    <loc>http://localhost:1313/categories/articles/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -71,6 +74,19 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/resources/faq/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/hdpe/</loc>
@@ -135,32 +151,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/industries/how-to-evaluate-product-quality/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/resources/articles/how-to-choose-pallets/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/resources/articles/how-to-choose-pallets/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/resources/articles/how-to-choose-pallets/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/resources/articles/how-to-evaluate-product-quality/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/resources/articles/how-to-evaluate-product-quality/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/resources/articles/how-to-evaluate-product-quality/"
                 />
   </url><url>
     <loc>http://localhost:1313/resources/downloads/product-quotation/</loc>
