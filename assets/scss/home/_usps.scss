@@ -43,11 +43,6 @@
   align-items: center;
 }
 
-.usps__item:not(:last-child) {
-  padding-bottom: space(2);
-  border-bottom: 1px solid color-mix(in oklab, var(--border), transparent 20%);
-}
-
 .usps__icon {
   width: 60px;
   height: 60px;
@@ -86,9 +81,14 @@
 @media (min-width: 64rem) {
   .usps__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: space(3);
+  }
+
+  .usps__item {
+    padding-inline-end: space(2.5);
   }
 
   .usps__item:not(:last-child) {
-    padding-bottom: space(2.5);
+    border-inline-end: 1px solid color-mix(in oklab, var(--border), transparent 20%);
   }
 }
