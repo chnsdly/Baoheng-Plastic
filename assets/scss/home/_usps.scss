@@ -28,90 +28,67 @@
   gap: space(3);
 }
 
-.usps__grid {
+.usps__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  gap: space(2);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: space(2.5);
 }
 
-.usps__card {
-  position: relative;
+.usps__item {
   display: grid;
+  grid-template-columns: auto 1fr;
   gap: space(1.5);
-  padding: space(2.5);
-  border-radius: calc(var(--radius) * 1.5);
-  background: color-mix(in oklab, rgba(255, 255, 255, 0.92), var(--card));
-  border: 1px solid color-mix(in oklab, var(--border), transparent 40%);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-  transition:
-    transform var(--t-normal) var(--ease),
-    box-shadow var(--t-normal) var(--ease),
-    border-color var(--t-normal) var(--ease);
+  align-items: center;
 }
 
-.usps__card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(120deg, color-mix(in oklab, var(--brand), transparent 40%), transparent 70%);
-  opacity: 0;
-  transition: opacity var(--t-normal) var(--ease);
-  pointer-events: none;
-}
-
-.usps__card:hover,
-.usps__card:focus-within {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
-  border-color: color-mix(in oklab, var(--brand), transparent 40%);
-}
-
-.usps__card:hover::before,
-.usps__card:focus-within::before {
-  opacity: 0.6;
+.usps__item:not(:last-child) {
+  padding-bottom: space(2);
+  border-bottom: 1px solid color-mix(in oklab, var(--border), transparent 20%);
 }
 
 .usps__icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
   display: inline-grid;
   place-items: center;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: var(--on-brand);
-  background: linear-gradient(135deg, #2563eb, #0ea5e9);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 10px 30px rgba(37, 99, 235, 0.25);
+  background: color-mix(in oklab, var(--brand), white 10%);
 }
 
-.usps__meta {
+.usps__content {
   display: grid;
-  gap: space(0.5);
+  gap: space(0.25);
 }
 
-.usps__count {
+.usps__title {
   margin: 0;
-  font-size: var(--fs-4);
-  font-weight: 800;
+  font-size: var(--fs-3);
+  font-weight: 700;
   color: #0f172a;
-  line-height: 1.1;
+}
+
+.usps__value {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: var(--fs-2);
 }
 
 .usps__suffix {
   margin-left: 6px;
-  font-size: var(--fs-2);
   color: var(--muted);
-}
-
-.usps__label {
-  margin: 0;
-  color: var(--muted);
-  font-weight: 600;
-  letter-spacing: 0.01em;
 }
 
 @media (min-width: 64rem) {
-  .usps__grid {
+  .usps__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .usps__item:not(:last-child) {
+    padding-bottom: space(2.5);
   }
 }
