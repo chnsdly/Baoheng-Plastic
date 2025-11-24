@@ -6,18 +6,15 @@ hero_bg_asset: "images/hero-bg.jpg"
 usps:
   enable: true
   items:
-    - icon: "fas fa-industry"
-      name: "Specialized manufacturing"
-      count: "15"
-      suffix: "years"
-    - icon: "fas fa-warehouse"
-      name: "Production bases"
-      count: "3"
-      suffix: "sites"
-    - icon: "fas fa-globe"
-      name: "Countries served"
-      count: "20"
-      suffix: "+"
+    - icon: "fas fa-certificate"
+      title: "ISO certification"
+      description: "Plant management aligns to ISO9001 and OHSAS18001 standards."
+    - icon: "fas fa-vial"
+      title: "SGS tested"
+      description: "SGS reports verify every resin is 100% food-grade virgin material."
+    - icon: "fas fa-truck-loading"
+      title: "Global logistics support"
+      description: "Export-ready supply keeps fleets equipped across 20+ countries."
 ---
 
 EFFICIENT FLOW, LOWER COSTS

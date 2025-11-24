@@ -10,8 +10,8 @@
           {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
         </div>
         <div class="usps__content">
-          <p class="usps__title">{{ .name }}</p>
-          <p class="usps__value">{{ .count }}{{ with .suffix }}<span class="usps__suffix">{{ . }}</span>{{ end }}</p>
+          <p class="usps__title">{{ .title }}</p>
+          <p class="usps__description">{{ .description }}</p>
         </div>
       </li>
       {{ end }}

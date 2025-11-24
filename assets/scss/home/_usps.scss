@@ -68,16 +68,10 @@
   color: #0f172a;
 }
 
-.usps__value {
+.usps__description {
   margin: 0;
   color: var(--muted);
-  font-weight: 600;
   font-size: var(--fs-2);
-}
-
-.usps__suffix {
-  margin-left: 6px;
-  color: var(--muted);
 }
 
 @media (min-width: 64rem) {
