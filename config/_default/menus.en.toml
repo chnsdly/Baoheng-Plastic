@@ -80,7 +80,7 @@ identifier = "resources"
 weight = 30
 
   [[main]]
-  name = "Blog"
+  name = "articles"
   url = "/resources/articles/"
   parent = "resources"
   weight = 31

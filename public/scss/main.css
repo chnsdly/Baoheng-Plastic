@@ -571,7 +571,7 @@ body[data-drawer-open='true'] {
 /* ============================ 顶部变量（改这里） ============================ */
 .hero {
   /* 尺寸与间距 */
-  --hero-height: 60svh;
+  --hero-height: 80svh;
   /* 英雄区高度（100svh 可全屏） */
   --hero-py: space(10);
   /* 上下内边距 */
@@ -1117,7 +1117,7 @@ body[data-drawer-open='true'] {
   height: auto; }
 
 .card {
-  background: var(--on-brand);
+  background: var(--brand);
   padding: calc(var(--space) * 2);
   /* 1rem */ }
 
