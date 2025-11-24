@@ -5,9 +5,18 @@
     radial-gradient(circle at 85% 10%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
     linear-gradient(135deg, color-mix(in oklab, #0f172a, white 90%), color-mix(in oklab, #0f172a, white 80%));
 
+  --usps-surface-fade: linear-gradient(
+    to bottom,
+    transparent 0%,
+    color-mix(in oklab, var(--surface), transparent 20%) 60%,
+    var(--surface) 100%
+  );
+
   position: relative;
   overflow: hidden;
-  background: var(--usps-surface);
+  background:
+    var(--usps-surface-fade),
+    var(--usps-surface);
   color: var(--on-surface);
   padding-block: space(5);
 }
@@ -17,7 +26,9 @@
   position: absolute;
   inset: 0;
   border-radius: calc(var(--radius) * 2);
-  background: var(--usps-surface);
+  background:
+    var(--usps-surface-fade),
+    var(--usps-surface);
   opacity: 0.25;
   pointer-events: none;
   mix-blend-mode: screen;
