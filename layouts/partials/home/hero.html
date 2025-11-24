@@ -23,11 +23,11 @@
       {{ with or .Params.hero_description (or .Description .Params.description) }}
         <p class="hero__desc">{{ . }}</p>
       {{ end }}
-      <div class="hero__actions">
+      <!-- <div class="hero__actions">
         <a class="button button--primary" href="{{ "products" | relLangURL }}">
           {{ i18n "view_products" | default "View products" }}
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>

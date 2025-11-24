@@ -578,7 +578,7 @@ body[data-drawer-open='true'] {
   /* 遮罩（基色+强度） */
   --hero-overlay-base: var(--on-brand);
   /* 遮罩基色，默认用全局品牌色 */
-  --hero-overlay-alpha: 0.1;
+  --hero-overlay-alpha: 0;
   /* 0~1 越大越暗 */
   --hero-overlay-angle: 0deg;
   /* 渐变角度 */
@@ -709,9 +709,14 @@ body[data-drawer-open='true'] {
     font-size: var(--fs-1); } }
 
 /* Home: USPs（令牌版） */
+.home-usps {
+  background: #ebebeb;
+  padding: sapce(2); }
+
 .usp-grid {
   display: grid;
   gap: calc(var(--space) * 2);
+  padding: 0 128px;
   padding-block: calc(var(--space) * 3);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
@@ -719,10 +724,7 @@ body[data-drawer-open='true'] {
   display: flex;
   align-items: flex-start;
   gap: calc(var(--space) * 1.5);
-  background: var(--card);
-  border-radius: var(--radius);
   padding: calc(var(--space) * 2);
-  box-shadow: var(--shadow);
   transition: transform var(--t-fast) var(--ease), box-shadow var(--t-normal) var(--ease); }
 
 .usp-card h3,
@@ -731,13 +733,8 @@ body[data-drawer-open='true'] {
   font-size: var(--fs-1); }
 
 .usp-icon img {
-  inline-size: 40px;
-  block-size: 40px; }
-
-.usp-icon .emoji {
-  font-size: var(--fs-4);
-  line-height: 1;
-  display: inline-block; }
+  inline-size: 100px;
+  block-size: 100px; }
 
 /* Home: Featured products */
 .home-featured .head {

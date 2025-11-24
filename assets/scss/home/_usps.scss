@@ -1,7 +1,12 @@
 /* Home: USPs（令牌版） */
+.home-usps {
+  background: #ebebeb;
+  padding: sapce(2);
+}
 .usp-grid {
   display: grid;
   gap: space(2); 
+  padding: 0 128px;
   padding-block: space(3); 
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
@@ -10,12 +15,7 @@
   display: flex;
   align-items: flex-start;
   gap: space(1.5); 
-
-  background: var(--card);
-  border-radius: var(--radius);
   padding: space(2); 
-  box-shadow: var(--shadow);
-
   transition:
     transform var(--t-fast) var(--ease),
     box-shadow var(--t-normal) var(--ease);
@@ -28,11 +28,6 @@
 }
 
 .usp-icon img {
-  inline-size: 40px;
-  block-size: 40px;
-}
-.usp-icon .emoji {
-  font-size: var(--fs-4); 
-  line-height: 1;
-  display: inline-block;
+  inline-size: 100px;
+  block-size: 100px;
 }
