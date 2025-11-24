@@ -1,5 +1,5 @@
-/* Home: USP / Fun facts */
-.home-usps {
+/* Home: USP */
+.usps {
   position: relative;
   overflow: hidden;
   background:
@@ -10,7 +10,7 @@
   padding-block: space(5);
 }
 
-.home-usps::after {
+.usps::after {
   content: "";
   position: absolute;
   inset: 16px;
@@ -21,60 +21,20 @@
   mix-blend-mode: screen;
 }
 
-.home-usps .container {
+.usps__container {
   position: relative;
   z-index: 1;
   display: grid;
   gap: space(3);
 }
 
-.funfacts-head {
-  text-align: center;
-  max-width: 44rem;
-  margin-inline: auto;
-  display: grid;
-  gap: space(1);
-  color: #0f172a;
-}
-
-.funfacts-head .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: space(1);
-  padding: space(1) space(1.5);
-  margin-inline: auto;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-size: var(--fs-xs);
-  color: var(--on-card);
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: var(--radius-pill);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-}
-
-.funfacts-title {
-  margin: 0;
-  font-size: var(--fs-4);
-  line-height: 1.3;
-  color: var(--on-card);
-}
-
-.funfacts-desc {
-  margin: 0;
-  font-size: var(--fs-2);
-  line-height: 1.6;
-  color: var(--muted);
-}
-
-.funfacts-grid {
+.usps__grid {
   display: grid;
   gap: space(2);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.funfact-card {
+.usps__card {
   position: relative;
   display: grid;
   gap: space(1.5);
@@ -89,7 +49,7 @@
     border-color var(--t-normal) var(--ease);
 }
 
-.funfact-card::before {
+.usps__card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -100,19 +60,19 @@
   pointer-events: none;
 }
 
-.funfact-card:hover,
-.funfact-card:focus-within {
+.usps__card:hover,
+.usps__card:focus-within {
   transform: translateY(-4px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
   border-color: color-mix(in oklab, var(--brand), transparent 40%);
 }
 
-.funfact-card:hover::before,
-.funfact-card:focus-within::before {
+.usps__card:hover::before,
+.usps__card:focus-within::before {
   opacity: 0.6;
 }
 
-.funfact-icon {
+.usps__icon {
   width: 64px;
   height: 64px;
   border-radius: 18px;
@@ -124,12 +84,12 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 10px 30px rgba(37, 99, 235, 0.25);
 }
 
-.funfact-meta {
+.usps__meta {
   display: grid;
   gap: space(0.5);
 }
 
-.funfact-count {
+.usps__count {
   margin: 0;
   font-size: var(--fs-4);
   font-weight: 800;
@@ -137,13 +97,13 @@
   line-height: 1.1;
 }
 
-.funfact-count span {
+.usps__suffix {
   margin-left: 6px;
   font-size: var(--fs-2);
   color: var(--muted);
 }
 
-.funfact-name {
+.usps__label {
   margin: 0;
   color: var(--muted);
   font-weight: 600;
@@ -151,18 +111,7 @@
 }
 
 @media (min-width: 64rem) {
-  .funfacts-grid {
+  .usps__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .funfacts-head {
-    text-align: left;
-    max-width: 48rem;
-    margin: 0;
-  }
-
-  .home-usps .container {
-    grid-template-columns: 1.1fr 1fr;
-    align-items: center;
   }
 }

@@ -1,24 +1,19 @@
-{{ $funfacts := .Params.funfacts }}
-{{ if and $funfacts $funfacts.enable }}
-<section class="home-usps">
-  <div class="container container--wide">
-    <div class="funfacts-head">
-      {{ with $funfacts.title }}<h2 class="funfacts-title">{{ . }}</h2>{{ end }}
-      {{ with $funfacts.description }}<p class="funfacts-desc">{{ . | safeHTML }}</p>{{ end }}
-    </div>
-
-    {{ with $funfacts.funfact_item }}
-    <div class="funfacts-grid">
+{{ $usps := .Params.usps }}
+{{ if and $usps $usps.enable }}
+<section class="usps">
+  <div class="container container--wide usps__container">
+    {{ with $usps.items }}
+    <div class="usps__grid">
       {{ range . }}
-      <div class="funfact-card">
-        <div class="funfact-icon">
-          {{ with .icon }}<i class="{{ . }}" aria-hidden="true"></i>{{ end }}
+      <article class="usps__card">
+        <div class="usps__icon" aria-hidden="true">
+          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
         </div>
-        <div class="funfact-meta">
-          <p class="funfact-count">{{ .count }}{{ with .suffix }}<span>{{ . }}</span>{{ end }}</p>
-          <p class="funfact-name">{{ .name }}</p>
+        <div class="usps__meta">
+          <p class="usps__count">{{ .count }}{{ with .suffix }}<span class="usps__suffix">{{ . }}</span>{{ end }}</p>
+          <p class="usps__label">{{ .name }}</p>
         </div>
-      </div>
+      </article>
       {{ end }}
     </div>
     {{ end }}

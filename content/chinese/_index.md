@@ -3,11 +3,9 @@ title: "Baoheng Plastic"
 hero_title: " "
 hero_description: " "
 hero_bg_asset: "images/hero-bg.jpg"
-funfacts:
+usps:
   enable: true
-  title: "宝恒托盘 · 全球制造实力"
-  description: "深耕塑料托盘制造领域，产品远销全球20余国<br>为国际供应链提供专业物流装备支持"
-  funfact_item:
+  items:
     - icon: "fas fa-industry"
       name: "专业制造经验"
       count: "15"

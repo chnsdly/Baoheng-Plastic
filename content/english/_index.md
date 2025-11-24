@@ -3,11 +3,9 @@ title: "Baoheng Plastic"
 hero_title: " "
 hero_description: " "
 hero_bg_asset: "images/hero-bg.jpg"
-funfacts:
+usps:
   enable: true
-  title: "Baoheng Pallets · Global Manufacturing Strength"
-  description: "Deep expertise in plastic pallet manufacturing, exporting to 20+ countries.<br>Trusted logistics equipment for international supply chains."
-  funfact_item:
+  items:
     - icon: "fas fa-industry"
       name: "Specialized manufacturing"
       count: "15"
