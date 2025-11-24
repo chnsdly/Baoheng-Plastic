@@ -1,33 +1,133 @@
-/* Home: USPs（令牌版） */
+/* Home: USPs（亮点与数据） */
 .home-usps {
-  background: #ebebeb;
-  padding: sapce(2);
+  position: relative;
+  background: radial-gradient(circle at 15% 20%, rgba(255,255,255,0.3), transparent 25%),
+              radial-gradient(circle at 85% 15%, rgba(255,255,255,0.2), transparent 28%),
+              linear-gradient(135deg, #0f172a 0%, #0b1120 50%, #0f172a 100%);
+  color: #e8edf7;
+  padding-block: space(6);
+  overflow: hidden;
 }
+
+.home-usps::after {
+  content: "";
+  position: absolute;
+  inset: 12% 5% auto auto;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 65%);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.usp-header {
+  max-width: 720px;
+  text-align: left;
+  margin: 0 auto space(4);
+}
+
+.usp-header h2 {
+  margin: 0 0 space(1);
+  font-size: var(--fs-4);
+  color: #f8fafc;
+}
+
+.usp-header p {
+  margin: 0;
+  color: rgba(232, 237, 247, 0.85);
+  font-size: var(--fs-1);
+}
+
 .usp-grid {
   display: grid;
-  gap: space(2); 
-  padding: 0 128px;
-  padding-block: space(3); 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: space(2);
 }
 
 .usp-card {
+  position: relative;
   display: flex;
+  gap: space(1.5);
   align-items: flex-start;
-  gap: space(1.5); 
-  padding: space(2); 
+  padding: space(2.5);
+  background: color-mix(in oklch, #111827, #ffffff 6%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
   transition:
-    transform var(--t-fast) var(--ease),
+    transform var(--t-normal) var(--ease),
+    border-color var(--t-normal) var(--ease),
     box-shadow var(--t-normal) var(--ease);
 }
 
-.usp-card h3,
-.usp-body h3 {
-  margin: 0.1rem 0 0.25rem;
-  font-size: var(--fs-1); 
+.usp-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.04));
+  mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
-.usp-icon img {
-  inline-size: 100px;
-  block-size: 100px;
+.usp-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+
+.usp-icon {
+  inline-size: 56px;
+  block-size: 56px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+  display: grid;
+  place-items: center;
+  color: #f8fafc;
+  flex: 0 0 56px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.14);
+}
+
+.usp-icon i {
+  font-size: 22px;
+}
+
+.usp-body {
+  display: grid;
+  gap: space(0.5);
+}
+
+.usp-count {
+  display: flex;
+  align-items: baseline;
+  gap: space(0.5);
+  color: #c7d2fe;
+  font-weight: 700;
+}
+
+.usp-count .count {
+  font-size: clamp(1.6rem, 1.4rem + 1vw, 2rem);
+}
+
+.usp-count .suffix {
+  font-size: var(--fs-1);
+  opacity: 0.8;
+}
+
+.usp-body h3 {
+  margin: 0;
+  font-size: var(--fs-2);
+  color: #f8fafc;
+}
+
+.usp-body p {
+  margin: 0;
+  color: rgba(232, 237, 247, 0.86);
+  font-size: var(--fs-1);
+}
+
+@include mq-up(md) {
+  .usp-header { text-align: center; }
 }

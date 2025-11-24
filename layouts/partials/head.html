@@ -4,6 +4,7 @@
   {{ $style = $style | minify | fingerprint }}
 {{ end }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dymI70bHgj8AxRkR271GGBqBP1ZiZsa1+l9I7ZIu68KPw5s9GMh4G6dkprdFM5lTyBC0bY4ty1cdq9VekGP5hQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 

@@ -1,20 +1,32 @@
-{{ $lang := .Site.Language.Lang }}
-{{ $list := (index site.Data.usps $lang) | default (slice) }}
-
+{{ $funfacts := .Params.funfacts }}
+{{ if and $funfacts $funfacts.enable }}
 <section class="home-usps">
-  <div class="usp-grid">
-    {{ range $list }}
-      <div class="usp-card">
-        <div class="usp-icon">
-          {{ with .icon }}
-          <img src="{{ . | relURL }}" alt="" aria-hidden="true">
-          {{ end }}
+  <div class="container container--wide">
+    <div class="usp-header">
+      {{ with $funfacts.title }}<h2>{{ . }}</h2>{{ end }}
+      {{ with $funfacts.description }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+
+    <div class="usp-grid" role="list">
+      {{ range $funfacts.funfact_item }}
+      <article class="usp-card" role="listitem">
+        <div class="usp-icon" aria-hidden="true">
+          {{ with .icon }}<i class="{{ . }}" aria-hidden="true"></i>{{ end }}
         </div>
         <div class="usp-body">
-          <h3>{{ .title }}</h3>
-          <p>{{ .desc }}</p>
+          {{- $hasCount := or .count .suffix -}}
+          {{ if $hasCount }}
+          <div class="usp-count" aria-hidden="true">
+            {{ with .count }}<span class="count">{{ . }}</span>{{ end }}
+            {{ with .suffix }}<span class="suffix">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          {{ with .name }}<h3>{{ . }}</h3>{{ end }}
+          {{ with .description }}<p>{{ . }}</p>{{ end }}
         </div>
-      </div>
-    {{ end }}
+      </article>
+      {{ end }}
+    </div>
   </div>
 </section>
+{{ end }}
