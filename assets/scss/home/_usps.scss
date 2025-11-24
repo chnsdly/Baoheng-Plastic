@@ -15,7 +15,7 @@
 .usps::after {
   content: "";
   position: absolute;
-  inset: 16px;
+  inset: 0;
   border-radius: calc(var(--radius) * 2);
   background: var(--usps-surface);
   opacity: 0.25;
