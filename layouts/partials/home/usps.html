@@ -1,20 +1,24 @@
-{{ $lang := .Site.Language.Lang }}
-{{ $list := (index site.Data.usps $lang) | default (slice) }}
-
-<section class="home-usps">
-  <div class="usp-grid">
-    {{ range $list }}
-      <div class="usp-card">
-        <div class="usp-icon">
-          {{ with .icon }}
-          <img src="{{ . | relURL }}" alt="" aria-hidden="true">
-          {{ end }}
+{{ $usps := .Params.usps }}
+{{ if and $usps $usps.enable }}
+<section class="usps">
+  <div class="container container--wide usps__container">
+    {{ with $usps.items }}
+    <div class="usps__list">
+      {{ range $index, $item := . }}
+      <article class="usps__item{{ if gt $index 0 }} usps__item--divided{{ end }}">
+        {{ with $item.icon }}
+        <div class="usps__icon" aria-hidden="true">
+          <i class="{{ . }}"></i>
         </div>
-        <div class="usp-body">
-          <h3>{{ .title }}</h3>
-          <p>{{ .desc }}</p>
+        {{ end }}
+        <div class="usps__content">
+          {{ with $item.title }}<h3 class="usps__title">{{ . }}</h3>{{ end }}
+          {{ with $item.description }}<p class="usps__text">{{ . }}</p>{{ end }}
         </div>
-      </div>
+      </article>
+      {{ end }}
+    </div>
     {{ end }}
   </div>
 </section>
+{{ end }}
