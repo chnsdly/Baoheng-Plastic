@@ -1,33 +1,70 @@
-/* Home: USPs（令牌版） */
-.home-usps {
+/* Home: USP */
+.usps {
   background: #ebebeb;
-  padding: sapce(2);
-}
-.usp-grid {
-  display: grid;
-  gap: space(2); 
-  padding: 0 128px;
-  padding-block: space(3); 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  color: var(--on-surface);
+  padding-block: space(3);
 }
 
-.usp-card {
+.usps__container {
+  display: grid;
+}
+
+.usps__list {
+  display: flex;
+  flex-direction: column;
+  gap: space(1.5);
+  max-width: 980px;
+  margin-inline: auto;
+  padding-inline: clamp(space(1.5), 4vw, space(3));
+}
+
+.usps__item {
   display: flex;
   align-items: flex-start;
-  gap: space(1.5); 
-  padding: space(2); 
-  transition:
-    transform var(--t-fast) var(--ease),
-    box-shadow var(--t-normal) var(--ease);
+  gap: space(1.25);
+  padding-block: space(1.25);
 }
 
-.usp-card h3,
-.usp-body h3 {
-  margin: 0.1rem 0 0.25rem;
-  font-size: var(--fs-1); 
+.usps__item--divided {
+  border-top: 1px solid color-mix(in oklab, var(--border), transparent 10%);
 }
 
-.usp-icon img {
-  inline-size: 100px;
-  block-size: 100px;
+.usps__icon {
+  flex: 0 0 78px;
+  inline-size: 78px;
+  block-size: 78px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: color-mix(in oklab, var(--brand), white 30%);
+  color: var(--on-brand);
+  font-size: 2rem;
+}
+
+.usps__content {
+  display: grid;
+  gap: space(0.25);
+}
+
+.usps__title {
+  margin: 0;
+  font-size: var(--fs-1);
+  color: #0f172a;
+}
+
+.usps__text {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (min-width: 64rem) {
+  .usps__list {
+    gap: space(2);
+  }
+
+  .usps__icon {
+    inline-size: 88px;
+    block-size: 88px;
+  }
 }
