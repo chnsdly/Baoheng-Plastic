@@ -8,9 +8,9 @@
   --usps-surface-fade: linear-gradient(
     to bottom,
     transparent 0%,
-    transparent 78%,
-    color-mix(in oklab, var(--surface), transparent 20%) 90%,
-    color-mix(in oklab, var(--surface), transparent 10%) 100%
+    transparent 86%,
+    color-mix(in oklab, var(--surface), transparent 35%) 94%,
+    color-mix(in oklab, var(--surface), transparent 15%) 100%
   );
 
   position: relative;
