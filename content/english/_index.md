@@ -17,30 +17,27 @@ usps:
       title: "Global logistics support"
       description: "Export-ready supply keeps fleets equipped across 20+ countries."
 ##########################################################
-products:
-  enable: false
+industries:
+  enable: true
   title: "Industry Applications"
   items:
     - title: "Warehousing & Logistics"
-      image: "images/products/pallet.jpg" 
+      image: "images/products/pallet.jpg"
 
     - title: "Cold Chain"
-      image: "images/products/pallet.jpg" 
+      image: "images/products/pallet.jpg"
 
     - title: "Food & Beverage"
       image: "images/products/pallet.jpg"
 
     - title: "Pharma & Healthcare"
       image: "images/products/pallet.jpg"
-      
+
     - title: "Chemicals"
       image: "images/products/pallet.jpg"
-      
+
     - title: "Manufacturing Plants"
       image: "images/products/pallet.jpg"
-
-
-
 ---
 
 EFFICIENT FLOW, LOWER COSTS
