@@ -5,7 +5,7 @@
   --clients-gap: #{space(2)};
   --clients-columns: 2;
 
-  padding-block: space(6);
+  padding-block: space(2);
   background-color: var(--surface-variant);
   color: var(--on-surface);
 
@@ -50,7 +50,7 @@
     display: flex;
     gap: var(--clients-gap);
     width: max-content;
-    animation: clients-marquee 28s linear infinite;
+    animation: clients-marquee 36s linear infinite;
     will-change: transform;
   }
 
