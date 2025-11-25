@@ -22,22 +22,28 @@ industries:
   title: "Industry Applications"
   items:
     - title: "Warehousing & Logistics"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "Cold Chain"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "Food & Beverage"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "Pharma & Healthcare"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "Chemicals"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "Manufacturing Plants"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
+
+    - title: "Chemicals"
+      image: "images/pallet.jpg"
+
+    - title: "Manufacturing Plants"
+      image: "images/pallet.jpg"
 ---
 
 EFFICIENT FLOW, LOWER COSTS

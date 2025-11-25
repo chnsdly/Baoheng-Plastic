@@ -22,22 +22,28 @@ industries:
   title: "多场景行业应用"
   items:
     - title: "仓储 / 物流中心"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "冷链与生鲜配送"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "食品饮料 / 快消品"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "医药 / 医疗耗材"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "化工 / 精细化工"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
 
     - title: "制造业与零部件工厂"
-      image: "images/products/pallet.jpg"
+      image: "images/pallet.jpg"
+
+    - title: "化工 / 精细化工"
+      image: "images/pallet.jpg"
+
+    - title: "制造业与零部件工厂"
+      image: "images/pallet.jpg"
 ---
 高效周转，成本更省
 让货物流转顺畅，现场整洁、安全
