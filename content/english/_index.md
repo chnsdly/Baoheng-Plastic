@@ -47,7 +47,7 @@ industries:
 ############################## FACTORY ##############################
 factory:
   enable: true
-  title: "Full Production Process: From Raw Materials to Finished Pallets"
+  title: "Full Production Process"
   description: "Strict material selection, large-scale injection molding, and consistent quality control ensure durable, reliable, and high-performance industrial plastic pallets."
 
   items:
