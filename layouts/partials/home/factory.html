@@ -17,19 +17,29 @@
           aria-labelledby="factory-item-{{ $index }}-title"
           aria-describedby="factory-item-{{ $index }}-content"
         >
-          {{ partial "picture.html" (dict
-            "ctx"   $
-            "src"   $item.image
-            "alt"   $item.title
-            "class" "factory__image"
-            "sizes" "(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            "w"     (slice 320 480 640 768 896 1024)
-            "lqip"  true
-          ) }}
-          <figcaption class="factory__overlay">
-            <h3 class="factory__item-title" id="factory-item-{{ $index }}-title">{{ $item.title }}</h3>
-            <p class="factory__item-text" id="factory-item-{{ $index }}-content">{{ $item.content }}</p>
-          </figcaption>
+          <div class="factory__card" role="presentation">
+            <div class="factory__side factory__side--front">
+              {{ partial "picture.html" (dict
+                "ctx"   $
+                "src"   $item.image
+                "alt"   $item.title
+                "class" "factory__image"
+                "sizes" "(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                "w"     (slice 320 480 640 768 896 1024)
+                "lqip"  true
+              ) }}
+              <div class="factory__front-overlay" aria-hidden="true">
+                <h3 class="factory__item-title">{{ $item.title }}</h3>
+                <p class="factory__hint">{{ i18n "hover_to_reveal" }}</p>
+              </div>
+            </div>
+            <figcaption class="factory__side factory__side--back">
+              <div class="factory__content">
+                <h3 class="factory__item-title" id="factory-item-{{ $index }}-title">{{ $item.title }}</h3>
+                <p class="factory__item-text" id="factory-item-{{ $index }}-content">{{ $item.content }}</p>
+              </div>
+            </figcaption>
+          </div>
         </figure>
       </article>
       {{ end }}
