@@ -20,7 +20,6 @@ usps:
 products:
   enable: false
   title: "多场景专用物流托盘"
-  description: "提供定制化高强度塑料托盘，满足各行业多元化搬运需求"
   items:
     - title: "仓储 / 物流中心"
       image: "images/products/pallet.jpg" 

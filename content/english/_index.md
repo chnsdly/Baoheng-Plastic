@@ -20,7 +20,6 @@ usps:
 products:
   enable: false
   title: "Industry Applications"
-  description: "High-strength plastic pallets for common industrial and logistics scenarios."
   items:
     - title: "Warehousing & Logistics"
       image: "images/products/pallet.jpg" 
