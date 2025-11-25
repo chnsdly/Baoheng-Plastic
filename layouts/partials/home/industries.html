@@ -1,0 +1,34 @@
+{{ $section := .Params.industries }}
+{{ if and $section $section.enable }}
+<section class="industries" aria-labelledby="home-industries-title">
+  <div class="industries__container container container--wide">
+    <header class="industries__header">
+      <h2 class="industries__title" id="home-industries-title">{{ $section.title }}</h2>
+    </header>
+
+    <div class="industries__grid" role="list">
+      {{ range $section.items }}
+      {{ $title := .title }}
+      <figure class="industries__card" role="listitem">
+        <div class="industries__media">
+          {{ with .image }}
+          {{ partial "picture.html" (dict
+            "ctx"   $
+            "src"   .
+            "alt"   $title
+            "class" "industries__image"
+            "sizes" "(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            "w"     (slice 320 480 640 768 960 1280)
+            "lqip"  true
+          ) }}
+          {{ else }}
+          <div class="industries__placeholder" aria-hidden="true"></div>
+          {{ end }}
+          <figcaption class="industries__label">{{ $title }}</figcaption>
+        </div>
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
