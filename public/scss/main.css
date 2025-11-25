@@ -783,6 +783,83 @@ body[data-drawer-open='true'] {
   .usps__item:not(:last-child) {
     border-inline-end: 1px solid color-mix(in oklab, var(--border), transparent 20%); } }
 
+.factory {
+  padding-block: calc(var(--space) * 6);
+  background-color: var(--surface);
+  color: var(--on-surface); }
+  .factory__header {
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: calc(var(--space) * 4);
+    max-width: 60ch; }
+  .factory__title {
+    margin: 0;
+    font-size: var(--fs-4);
+    font-weight: 700;
+    letter-spacing: 0.01em; }
+  .factory__description {
+    margin: calc(var(--space) * 2) 0 0;
+    font-size: var(--fs-1);
+    color: color-mix(in srgb, var(--on-surface) 80%, transparent); }
+  .factory__grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: calc(var(--space) * 2); }
+    @media (min-width: 48rem) {
+      .factory__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 64rem) {
+      .factory__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .factory__item {
+    list-style: none; }
+  .factory__media {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background-color: var(--card);
+    aspect-ratio: 5 / 3;
+    isolation: isolate;
+    outline: none; }
+    .factory__media:focus-visible {
+      box-shadow: 0 0 0 3px var(--brand-primary), var(--shadow); }
+    .factory__media:hover .factory__overlay, .factory__media:focus-visible .factory__overlay {
+      opacity: 1;
+      visibility: visible; }
+    .factory__media picture {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%; }
+  .factory__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+  .factory__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(var(--space) * 1);
+    padding: calc(var(--space) * 3);
+    background: color-mix(in srgb, var(--on-surface) 80%, transparent);
+    color: var(--surface);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 180ms ease-in-out, visibility 180ms ease-in-out; }
+  .factory__item-title {
+    margin: 0;
+    font-size: var(--fs-2);
+    font-weight: 700;
+    text-align: center; }
+  .factory__item-text {
+    margin: 0;
+    font-size: var(--fs-1);
+    text-align: center; }
+
 .industries {
   padding-block: calc(var(--space) * 6);
   background-color: var(--surface);
@@ -798,7 +875,7 @@ body[data-drawer-open='true'] {
   .industries__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: calc(var(--space) * 3); }
+    gap: calc(var(--space) * 2); }
     @media (min-width: 48rem) {
       .industries__grid {
         grid-template-columns: repeat(3, minmax(0, 1fr)); } }
@@ -838,7 +915,7 @@ body[data-drawer-open='true'] {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: flex-end;
-  gap: 12px;
+  gap: calc(var(--space) * 2);
   margin-top: calc(var(--space) * 4);
   margin-bottom: calc(var(--space) * 2); }
 
@@ -857,21 +934,16 @@ body[data-drawer-open='true'] {
   color: var(--on-brand);
   text-decoration: none; }
 
-/* Featured 产品网格：桌面三列、平板两列、手机一列 */
 .home-featured .product-grid {
   display: grid;
-  gap: clamp(12px, 2vw, 20px);
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: stretch; }
-
-@media (max-width: 1024px) {
-  .home-featured .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-
-@media (max-width: 640px) {
-  .home-featured .product-grid {
-    grid-template-columns: 1fr; } }
-
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(var(--space) * 2); }
+  @media (min-width: 48rem) {
+    .home-featured .product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 64rem) {
+    .home-featured .product-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 /* 等高产品卡（无按钮版） */
 .product-card.eq {
   display: flex;

@@ -3,7 +3,7 @@
   display:grid;
   grid-template-columns:1fr auto 1fr;
   align-items:flex-end;
-  gap:12px;
+  gap: space(2);
   margin-top:space(4);
   margin-bottom:space(2);
 }
@@ -23,18 +23,18 @@
   text-decoration:none;
 }
 
-/* Featured 产品网格：桌面三列、平板两列、手机一列 */
 .home-featured .product-grid{
-  display:grid;
-  gap:clamp(12px,2vw,20px);
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  align-items:stretch;
-}
-@media (max-width:1024px){
-  .home-featured .product-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
-}
-@media (max-width:640px){
-  .home-featured .product-grid{ grid-template-columns:1fr; }
+  display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: space(2);
+
+    @include mq-up(md) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include mq-up(lg) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 /* 等高产品卡（无按钮版） */
