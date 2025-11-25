@@ -44,6 +44,29 @@ industries:
 
     - title: "Manufacturing Plants"
       image: "images/pallet.jpg"
+############################## CLIENTS ##############################
+clients:
+  enable: true
+  title: "Client Case Highlights"
+  description: "Real-world pallet deployments across cold chain, export logistics, and automated warehouses."
+  items:
+    - image: "images/pallet.jpg"
+      alt: "Cold chain client case"
+
+    - image: "images/pallet.jpg"
+      alt: "Export logistics client case"
+
+    - image: "images/pallet.jpg"
+      alt: "Automated warehouse client case"
+
+    - image: "images/pallet.jpg"
+      alt: "Healthcare logistics client case"
+
+    - image: "images/pallet.jpg"
+      alt: "FMCG warehousing client case"
+
+    - image: "images/pallet.jpg"
+      alt: "Manufacturing plant client case"
 ############################## FACTORY ##############################
 factory:
   enable: true
