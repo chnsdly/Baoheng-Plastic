@@ -1,0 +1,45 @@
+{{ $clients := .Params.clients }}
+{{ if and $clients $clients.enable }}
+<section class="clients" aria-labelledby="clients-title">
+  <div class="container container--wide">
+    <div class="clients__header">
+      <h2 class="clients__title" id="clients-title">{{ $clients.title }}</h2>
+      {{ with $clients.description }}
+      <p class="clients__description">{{ . }}</p>
+      {{ end }}
+    </div>
+    <div class="clients__carousel" aria-label="{{ $clients.title }}">
+      <div class="clients__viewport">
+        <div class="clients__track">
+          {{ range $index, $item := $clients.items }}
+          <figure class="clients__item">
+            {{ partial "picture.html" (dict
+              "ctx"   $
+              "src"   $item.image
+              "alt"   (or $item.alt (printf "%s %d" $clients.title (add $index 1)))
+              "class" "clients__image"
+              "sizes" "(max-width: 576px) 80vw, (max-width: 1024px) 45vw, 25vw"
+              "w"     (slice 320 480 640 768 1024)
+              "lqip"  true
+            ) }}
+          </figure>
+          {{ end }}
+          {{ range $index, $item := $clients.items }}
+          <figure class="clients__item">
+            {{ partial "picture.html" (dict
+              "ctx"   $
+              "src"   $item.image
+              "alt"   (or $item.alt (printf "%s %d" $clients.title (add $index 1)))
+              "class" "clients__image"
+              "sizes" "(max-width: 576px) 80vw, (max-width: 1024px) 45vw, 25vw"
+              "w"     (slice 320 480 640 768 1024)
+              "lqip"  true
+            ) }}
+          </figure>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

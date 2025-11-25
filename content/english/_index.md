@@ -44,6 +44,28 @@ industries:
 
     - title: "Manufacturing Plants"
       image: "images/pallet.jpg"
+clients:
+  enable: true
+  title: "Client Showcase"
+  description: "Real-world case photos from partners across logistics, cold chain, food, and manufacturing."
+  items:
+    - image: "images/pallet.jpg"
+      alt: "Food logistics warehouse"
+
+    - image: "images/factory-800480.jpg"
+      alt: "Automated injection workshop"
+
+    - image: "images/hero-bg.jpg"
+      alt: "Sorting center operations"
+
+    - image: "images/hero-bg2.JPG"
+      alt: "Cold chain staging area"
+
+    - image: "images/hero-bg111.jpg"
+      alt: "Chemical goods storage"
+
+    - image: "images/world-map.jpg"
+      alt: "Global delivery coverage"
 ############################## FACTORY ##############################
 factory:
   enable: true

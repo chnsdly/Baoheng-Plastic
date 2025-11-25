@@ -44,6 +44,28 @@ industries:
 
     - title: "制造业与零部件工厂"
       image: "images/pallet.jpg"
+clients:
+  enable: true
+  title: "客户案例展示"
+  description: "不同行业的客户现场案例，展现产品在实际场景中的可靠表现。"
+  items:
+    - image: "images/pallet.jpg"
+      alt: "食品仓储案例"
+
+    - image: "images/factory-800480.jpg"
+      alt: "自动化注塑产线"
+
+    - image: "images/hero-bg.jpg"
+      alt: "物流分拣中心"
+
+    - image: "images/hero-bg2.JPG"
+      alt: "冷链仓储作业"
+
+    - image: "images/hero-bg111.jpg"
+      alt: "化工品堆码"
+
+    - image: "images/world-map.jpg"
+      alt: "全球配送网络"
 ############################## FACTORY ##############################
 factory:
   enable: true
