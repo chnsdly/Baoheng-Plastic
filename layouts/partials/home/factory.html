@@ -1,26 +1,39 @@
-{{ $industries := .Params.factory }}
+{{ $factory := .Params.factory }}
 {{ if $factory.enable }}
-<section class="factory">
+<section class="factory" aria-labelledby="factory-title">
   <div class="container container--wide">
-    <div class="industries__header">
-      <h2 class="industries__title">{{ $industries.title }}</h2>
-      <p class="industries__description">{{ $industries.title }}</p>
+    <div class="factory__header">
+      <h2 class="factory__title" id="factory-title">{{ $factory.title }}</h2>
+      {{ with $factory.description }}
+      <p class="factory__description">{{ . }}</p>
+      {{ end }}
     </div>
-    <div class="industries__grid">
-      {{ range $industries.items }}
-      <article class="industries__item">
-        <div class="industries__media">
+    <div class="factory__grid">
+      {{ range $index, $item := $factory.items }}
+      <article class="factory__item">
+        <figure
+          class="factory__media"
+          tabindex="0"
+          aria-labelledby="factory-item-{{ $index }}-title"
+          aria-describedby="factory-item-{{ $index }}-content"
+        >
           {{ partial "picture.html" (dict
             "ctx"   $
-            "src"   .image
-            "alt"   .title
-            "class" "industries__image"
+            "src"   $item.image
+            "alt"   $item.title
+            "class" "factory__image"
             "sizes" "(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 25vw"
             "w"     (slice 320 480 640 768 896 1024)
             "lqip"  true
           ) }}
-        </div>
+          <figcaption class="factory__overlay">
+            <h3 class="factory__item-title" id="factory-item-{{ $index }}-title">{{ $item.title }}</h3>
+            <p class="factory__item-text" id="factory-item-{{ $index }}-content">{{ $item.content }}</p>
+          </figcaption>
+        </figure>
       </article>
       {{ end }}
     </div>
   </div>
+</section>
+{{ end }}
