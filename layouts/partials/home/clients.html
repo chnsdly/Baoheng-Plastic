@@ -1,0 +1,46 @@
+{{ $clients := .Params.clients }}
+{{ if $clients.enable }}
+<section class="clients" aria-labelledby="clients-title">
+  <div class="container container--wide">
+    <header class="clients__header">
+      <div class="clients__headline">
+        <h2 id="clients-title" class="clients__title">{{ $clients.title }}</h2>
+        {{ with $clients.description }}
+        <p class="clients__description">{{ . }}</p>
+        {{ end }}
+      </div>
+    </header>
+
+    <div class="clients__carousel" role="region" aria-roledescription="carousel" aria-labelledby="clients-title">
+      <div class="clients__track" aria-live="off">
+        {{ range $clients.items }}
+        <figure class="clients__slide">
+          {{ partial "picture.html" (dict
+            "ctx"   $
+            "src"   .image
+            "alt"   (.alt | default $clients.title)
+            "class" "clients__image"
+            "sizes" "(max-width: 576px) 80vw, (max-width: 1024px) 33vw, 25vw"
+            "w"     (slice 320 480 640 768 960)
+            "lqip"  true
+          ) }}
+        </figure>
+        {{ end }}
+        {{ range $clients.items }}
+        <figure class="clients__slide clients__slide--clone">
+          {{ partial "picture.html" (dict
+            "ctx"   $
+            "src"   .image
+            "alt"   (.alt | default $clients.title)
+            "class" "clients__image"
+            "sizes" "(max-width: 576px) 80vw, (max-width: 1024px) 33vw, 25vw"
+            "w"     (slice 320 480 640 768 960)
+            "lqip"  true
+          ) }}
+        </figure>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

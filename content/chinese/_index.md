@@ -44,6 +44,29 @@ industries:
 
     - title: "制造业与零部件工厂"
       image: "images/pallet.jpg"
+############################## CLIENTS ##############################
+clients:
+  enable: true
+  title: "客户案例展示"
+  description: "真实客户现场的托盘应用，覆盖冷链配送、跨境出口以及自动化仓储。"
+  items:
+    - image: "images/pallet.jpg"
+      alt: "冷链配送客户案例"
+
+    - image: "images/pallet.jpg"
+      alt: "跨境出口客户案例"
+
+    - image: "images/pallet.jpg"
+      alt: "自动化立库客户案例"
+
+    - image: "images/pallet.jpg"
+      alt: "医药物流客户案例"
+
+    - image: "images/pallet.jpg"
+      alt: "快消品仓储客户案例"
+
+    - image: "images/pallet.jpg"
+      alt: "制造业工厂客户案例"
 ############################## FACTORY ##############################
 factory:
   enable: true
