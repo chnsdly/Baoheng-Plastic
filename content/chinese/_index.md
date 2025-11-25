@@ -17,28 +17,27 @@ usps:
       title: "全球物流保障"
       description: "出口配套能力覆盖 20+ 国家，满足跨境运输需求。"
 ##########################################################
-products:
-  enable: false
-  title: "多场景专用物流托盘"
+industries:
+  enable: true
+  title: "多场景行业应用"
   items:
     - title: "仓储 / 物流中心"
-      image: "images/products/pallet.jpg" 
+      image: "images/products/pallet.jpg"
 
     - title: "冷链与生鲜配送"
-      image: "images/products/pallet.jpg" 
+      image: "images/products/pallet.jpg"
 
     - title: "食品饮料 / 快消品"
       image: "images/products/pallet.jpg"
 
     - title: "医药 / 医疗耗材"
       image: "images/products/pallet.jpg"
-      
+
     - title: "化工 / 精细化工"
       image: "images/products/pallet.jpg"
-      
+
     - title: "制造业与零部件工厂"
       image: "images/products/pallet.jpg"
-
 ---
 高效周转，成本更省
 让货物流转顺畅，现场整洁、安全
