@@ -1,0 +1,26 @@
+{{ $industries := .Params.factory }}
+{{ if $factory.enable }}
+<section class="factory">
+  <div class="container container--wide">
+    <div class="industries__header">
+      <h2 class="industries__title">{{ $industries.title }}</h2>
+      <p class="industries__description">{{ $industries.title }}</p>
+    </div>
+    <div class="industries__grid">
+      {{ range $industries.items }}
+      <article class="industries__item">
+        <div class="industries__media">
+          {{ partial "picture.html" (dict
+            "ctx"   $
+            "src"   .image
+            "alt"   .title
+            "class" "industries__image"
+            "sizes" "(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            "w"     (slice 320 480 640 768 896 1024)
+            "lqip"  true
+          ) }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>

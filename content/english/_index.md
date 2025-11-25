@@ -44,6 +44,26 @@ industries:
 
     - title: "Manufacturing Plants"
       image: "images/pallet.jpg"
+############################## FACTORY ##############################
+factory:
+  enable: true
+  title: "Full Production Process: From Raw Materials to Finished Pallets"
+  description: "Strict material selection, large-scale injection molding, and consistent quality control ensure durable, reliable, and high-performance industrial plastic pallets."
+
+  items:
+    - title: "Reliable Material System"
+      content: "Made with premium HDPE/PP virgin resins and functional modifiers, providing high toughness, impact resistance, low-temperature durability, and chemical resistance as the foundation for pallet performance."
+      image: "images/factory-800480.jpg"
+
+    - title: "Large-Scale Manufacturing"
+      content: "Multiple large injection molding lines running 24/7, supported by automated auxiliary equipment, cooling systems, and mold-temperature control. Each batch follows process inspections and barcode traceability for consistent quality."
+      image: "images/factory-800480.jpg"
+
+    - title: "Finished Products & Inventory"
+      content: "Full range of pallets including flat-top, three-runner, full-perimeter, double-faced, cold-chain, and chemical pallets. Strong inventory capability and customization options such as colors, logos, and steel-reinforced structures."
+      image: "images/factory-800480.jpg"
+
+
 ---
 
 EFFICIENT FLOW, LOWER COSTS
