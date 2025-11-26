@@ -1,0 +1,197 @@
+/* Home: CTA */
+.cta {
+  --cta-surface:
+    radial-gradient(circle at 20% 20%, color-mix(in oklab, var(--brand), transparent 82%), transparent 35%),
+    radial-gradient(circle at 85% 10%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
+    linear-gradient(135deg, color-mix(in oklab, #0f172a, white 90%), color-mix(in oklab, #0f172a, white 80%));
+  --cta-glow: color-mix(in srgb, var(--brand), transparent 90%);
+  --cta-ink: var(--on-surface);
+  --cta-border: color-mix(in oklab, var(--border), transparent 35%);
+
+  position: relative;
+  isolation: isolate;
+  background: var(--cta-surface);
+  color: var(--cta-ink);
+  padding-block: clamp(3rem, 6vw, 5.5rem);
+  overflow: hidden;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(180% 120% at 12% 20%, var(--cta-glow), transparent 42%),
+    radial-gradient(120% 110% at 86% 14%, var(--cta-glow), transparent 36%);
+  pointer-events: none;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta__grid {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+@media (min-width: 64rem) {
+  .cta__grid { grid-template-columns: 1.05fr 1fr; }
+}
+
+.cta__intro {
+  display: grid;
+  gap: space(2);
+  align-content: center;
+}
+
+.cta__eyebrow {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--on-surface) 70%, transparent);
+  font-size: var(--fs-xs);
+}
+
+.cta__title {
+  margin: 0;
+  font-size: var(--fs-4);
+  color: color-mix(in oklab, #0f172a, var(--on-surface));
+}
+
+.cta__desc {
+  margin: 0;
+  color: color-mix(in oklab, var(--muted) 75%, transparent);
+  font-size: var(--fs-2);
+  max-inline-size: 62ch;
+}
+
+.cta__meta {
+  margin: 0;
+  color: color-mix(in oklab, var(--muted) 60%, transparent);
+  font-size: var(--fs-1);
+}
+
+.cta__contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: space(1.25);
+}
+
+.cta__contact-item {
+  display: grid;
+  gap: space(0.5);
+  padding: space(1.25);
+  border-radius: calc(var(--radius) * 1.15);
+  border: 1px solid var(--cta-border);
+  background: color-mix(in oklab, var(--surface), white 8%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.cta__label {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: space(1);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: color-mix(in oklab, var(--muted) 65%, transparent);
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+}
+
+.cta__value {
+  margin: 0;
+  font-size: var(--fs-1);
+  color: color-mix(in oklab, var(--on-surface) 90%, transparent);
+}
+
+.cta__contact-item a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.cta__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
+  background: color-mix(in oklab, var(--brand), white 78%);
+  color: color-mix(in oklab, var(--brand), #0f172a 15%);
+}
+
+.cta__icon svg {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+.cta__form {
+  align-self: center;
+}
+
+.cta__card {
+  background: #ffffff;
+  color: var(--on-surface);
+  border-radius: calc(var(--radius) * 1.5);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
+}
+
+.cta__form-head {
+  display: grid;
+  gap: space(1);
+  margin-block-end: space(1.5);
+}
+
+.cta__pill {
+  margin: 0;
+  align-self: start;
+  display: inline-flex;
+  gap: space(1);
+  align-items: center;
+  padding: space(1) space(1.5);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--brand), #0ea5e9 55%);
+  color: var(--on-brand);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-size: var(--fs-xs);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.cta__form-title {
+  margin: 0;
+  font-size: var(--fs-3);
+  letter-spacing: -0.01em;
+}
+
+.cta__form-desc {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cta .lead-form {
+  margin: 0;
+  background: color-mix(in srgb, #f8fafc, white 10%);
+  padding: 0;
+}
+
+.cta .lead-form button {
+  background: #0f172a;
+  color: #f8fafc;
+  padding-inline: 1.4rem;
+}
+
+@media (max-width: 48rem) {
+  .cta__contact-item { padding: space(1.25); }
+  .cta__card { padding: space(2); }
+}
