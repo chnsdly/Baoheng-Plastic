@@ -1,9 +1,12 @@
 /* Home: CTA */
 .cta {
-  --cta-surface: linear-gradient(120deg, #0c1220, #0f172a 55%, #0c1220);
-  --cta-glow: color-mix(in srgb, #38bdf8, transparent 88%);
-  --cta-ink: #e5edf5;
-  --cta-border: color-mix(in srgb, #94a3b8, transparent 50%);
+  --cta-surface:
+    radial-gradient(circle at 20% 20%, color-mix(in oklab, var(--brand), transparent 82%), transparent 35%),
+    radial-gradient(circle at 85% 10%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
+    linear-gradient(135deg, color-mix(in oklab, #0f172a, white 90%), color-mix(in oklab, #0f172a, white 80%));
+  --cta-glow: color-mix(in srgb, var(--brand), transparent 90%);
+  --cta-ink: var(--on-surface);
+  --cta-border: color-mix(in oklab, var(--border), transparent 35%);
 
   position: relative;
   isolation: isolate;
@@ -49,26 +52,26 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: color-mix(in srgb, #e0f2fe, transparent 18%);
+  color: color-mix(in oklab, var(--on-surface) 70%, transparent);
   font-size: var(--fs-xs);
 }
 
 .cta__title {
   margin: 0;
   font-size: var(--fs-4);
-  color: #ffffff;
+  color: color-mix(in oklab, #0f172a, var(--on-surface));
 }
 
 .cta__desc {
   margin: 0;
-  color: color-mix(in srgb, #dce7f5, transparent 16%);
+  color: color-mix(in oklab, var(--muted) 75%, transparent);
   font-size: var(--fs-2);
   max-inline-size: 62ch;
 }
 
 .cta__meta {
   margin: 0;
-  color: color-mix(in srgb, #e0f2fe, transparent 10%);
+  color: color-mix(in oklab, var(--muted) 60%, transparent);
   font-size: var(--fs-1);
 }
 
@@ -86,8 +89,8 @@
   padding: space(1.25);
   border-radius: calc(var(--radius) * 1.15);
   border: 1px solid var(--cta-border);
-  background: color-mix(in srgb, #0f172a, white 8%);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+  background: color-mix(in oklab, var(--surface), white 8%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .cta__label {
@@ -97,7 +100,7 @@
   gap: space(1);
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #cbd5f5;
+  color: color-mix(in oklab, var(--muted) 65%, transparent);
   text-transform: uppercase;
   font-size: var(--fs-xs);
 }
@@ -105,7 +108,7 @@
 .cta__value {
   margin: 0;
   font-size: var(--fs-1);
-  color: #f8fafc;
+  color: color-mix(in oklab, var(--on-surface) 90%, transparent);
 }
 
 .cta__contact-item a {
@@ -120,9 +123,9 @@
   inline-size: 2.25rem;
   block-size: 2.25rem;
   border-radius: 999px;
-  border: 1px solid var(--cta-border);
-  background: color-mix(in srgb, #0ea5e9, transparent 88%);
-  color: #7dd3fc;
+  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
+  background: color-mix(in oklab, var(--brand), white 78%);
+  color: color-mix(in oklab, var(--brand), #0f172a 15%);
 }
 
 .cta__icon svg {
