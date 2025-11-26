@@ -1,4 +1,4 @@
-{{- /* smart-picture.html — 优化后的图片组件 */ -}}
+{{- /* smart-picture.html — 优化后的图片组件（WebP + JPEG 版） */ -}}
 {{- /* ---- 输入参数 ----
   ctx:    页面（文章）上下文，一般传入 .
   src:    源图路径（相对 assets/ 目录）
@@ -37,12 +37,10 @@
     {{- $finalWidths = slice $fallbackWidth -}}
   {{- end -}}
 
-  {{- /* 2) 生成多种格式（AVIF / WebP / JPEG）资源 */ -}}
-  {{- $avifImgs := slice -}}
+  {{- /* 2) 生成 WebP / JPEG 资源 */ -}}
   {{- $webpImgs := slice -}}
   {{- $jpegImgs := slice -}}
   {{- range $finalWidths -}}
-    {{- $avifImgs = $avifImgs | append ($orig.Resize (printf "%dx q64 avif" .)) -}}
     {{- $webpImgs = $webpImgs | append ($orig.Resize (printf "%dx q82 webp" .)) -}}
     {{- $jpegImgs = $jpegImgs | append ($orig.Resize (printf "%dx q80 jpg"  .)) -}}
   {{- end -}}
@@ -63,9 +61,6 @@
   {{- end -}}
 
   <picture{{ if $pictureStyle }} style="{{ $pictureStyle }}"{{ end }}>
-    <source type="image/avif"
-            srcset="{{ range $i, $img := $avifImgs }}{{ if gt $i 0}}, {{ end }}{{ $img.RelPermalink }} {{ (index $finalWidths $i) }}w{{ end }}"
-            sizes="{{ $sizes }}">
     <source type="image/webp"
             srcset="{{ range $i, $img := $webpImgs }}{{ if gt $i 0}}, {{ end }}{{ $img.RelPermalink }} {{ (index $finalWidths $i) }}w{{ end }}"
             sizes="{{ $sizes }}">
