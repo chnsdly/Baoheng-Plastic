@@ -7,6 +7,19 @@ logo = "images/logo.png"
 
 turnstile_site_key = "0x4AAAAAACBC7FiXCfcn5h5j"
 
+[cta]
+title_en = "Ready for reliable plastic manufacturing support?"
+title_zh = "期待与您合作，定制可靠的塑胶解决方案"
+subtitle_en = "Share your requirements and we'll respond within one business day."
+subtitle_zh = "留下您的需求，我们将在一个工作日内回复。"
+highlight_en = "Tell us about your project."
+highlight_zh = "告诉我们您的项目。"
+
+  [cta.contact]
+  phone = "+1-800-555-0199"
+  email = "sales@globaltech-industries.com"
+  address = "中国临沂市响河工业园"
+
 # 社交媒体链接
 [social]
   linkedin = "https://linkedin.com/company/globaltech"

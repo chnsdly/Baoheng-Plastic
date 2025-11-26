@@ -1,0 +1,51 @@
+<section class="home-cta" aria-labelledby="home-cta-title">
+  <div class="container container--wide home-cta__inner">
+    {{ $cta := .Site.Params.cta }}
+    {{ $lang := .Site.Language.Lang }}
+    {{ $title := $cta.title_en | default "Ready to build something better together?" }}
+    {{ if eq $lang "zh" }}{{ $title = $cta.title_zh | default "期待与您合作，定制可靠的塑胶解决方案" }}{{ end }}
+    {{ $subtitle := $cta.subtitle_en | default "Share your project requirements and we'll respond within one business day." }}
+    {{ if eq $lang "zh" }}{{ $subtitle = $cta.subtitle_zh | default "留下您的需求，我们将在一个工作日内回复。" }}{{ end }}
+    {{ $highlight := $cta.highlight_en | default "Tell us about your project." }}
+    {{ if eq $lang "zh" }}{{ $highlight = $cta.highlight_zh | default "告诉我们您的项目。" }}{{ end }}
+
+    {{ $contact := $cta.contact }}
+    {{ $phone := default .Site.Params.contact_phone $contact.phone }}
+    {{ $email := default .Site.Params.contact_email $contact.email }}
+    {{ $address := default .Site.Params.contact_address $contact.address }}
+
+    <div class="home-cta__content">
+      <p class="home-cta__kicker">{{ if eq $lang "zh" }}随时与我们沟通{{ else }}We're here to help{{ end }}</p>
+      <h2 id="home-cta-title">{{ $title }}</h2>
+      <p class="home-cta__desc">{{ $subtitle }}</p>
+
+      <div class="home-cta__panel">
+        <div class="home-cta__highlight">{{ $highlight }}</div>
+        <dl class="home-cta__contacts">
+          {{ with $phone }}
+          <div class="home-cta__contact-item">
+            <dt>{{ if eq $lang "zh" }}电话{{ else }}Phone{{ end }}</dt>
+            <dd><a href="tel:{{ . }}">{{ . }}</a></dd>
+          </div>
+          {{ end }}
+          {{ with $email }}
+          <div class="home-cta__contact-item">
+            <dt>{{ if eq $lang "zh" }}邮箱{{ else }}Email{{ end }}</dt>
+            <dd><a href="mailto:{{ . }}">{{ . }}</a></dd>
+          </div>
+          {{ end }}
+          {{ with $address }}
+          <div class="home-cta__contact-item">
+            <dt>{{ if eq $lang "zh" }}地址{{ else }}Address{{ end }}</dt>
+            <dd>{{ . }}</dd>
+          </div>
+          {{ end }}
+        </dl>
+      </div>
+    </div>
+
+    <div class="home-cta__form">
+      {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+    </div>
+  </div>
+</section>
