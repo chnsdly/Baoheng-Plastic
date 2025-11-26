@@ -19,8 +19,6 @@
         <p class="cta__eyebrow">{{ i18n "cta_eyebrow" | default "Talk with a specialist" }}</p>
         <h2 id="cta-title" class="cta__title">{{ i18n "cta_title" | default "Ready to design your next plastic pallet?" }}</h2>
         <p class="cta__desc">{{ i18n "cta_subtitle" | default "Tell us how your pallets need to perform and we will reply within one business day." }}</p>
-        <p class="cta__meta">{{ i18n "cta_response" | default "Dedicated export team · No spam · Detailed follow-up" }}</p>
-
         <ul class="cta__contact" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
           {{ with $phone }}
           <li class="cta__contact-item">
@@ -61,9 +59,7 @@
       <div class="cta__form">
         <div class="cta__card" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
           <div class="cta__form-head">
-            <p class="cta__pill">{{ i18n "cta_form_pill" | default "Tell us about your shipment" }}</p>
             <h3 class="cta__form-title">{{ i18n "cta_form_title" | default "Get a tailored quote" }}</h3>
-            <p class="cta__form-desc">{{ i18n "cta_form_desc" | default "Share your target load, route conditions, and timeline. Our engineers will match the right pallet design." }}</p>
           </div>
           {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" $params.turnstile_site_key) }}
         </div>
