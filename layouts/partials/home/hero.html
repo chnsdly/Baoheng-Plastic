@@ -4,11 +4,11 @@
     {{ partial "picture.html" (dict
       "ctx"   $
       "src"   .Params.hero_bg_asset
-      "alt"   ""
+      "alt"   ".Title"
       "class" "hero__img"
       "fetch" "high"
       "sizes" "100vw"
-      "w"     (slice 1920)
+      "w"     (slice 640 960 1440 1920 2560)
       "lqip"  true
     ) }}
   </div>
