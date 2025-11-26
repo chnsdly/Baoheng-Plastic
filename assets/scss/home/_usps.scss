@@ -46,12 +46,12 @@
 }
 
 .usps__icon {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   border-radius: 16px;
   display: inline-grid;
   place-items: center;
-  font-size: 1.5rem;
+  font-size: 5rem;
   color: var(--on-brand);
   background: color-mix(in oklab, var(--brand), white 10%);
 }

@@ -1,8 +1,8 @@
 <header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h">
   <!-- 背景层 -->
   <div class="hero__bg" aria-hidden="true">
-    {{ partial "picture.html" (dict
-      "ctx"   $
+    {{ partial "smart-picture.html" (dict
+      "ctx"   .
       "src"   .Params.hero_bg_asset
       "alt"   ".Title"
       "class" "hero__img"

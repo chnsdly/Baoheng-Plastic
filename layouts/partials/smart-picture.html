@@ -1,0 +1,87 @@
+{{- /* smart-picture.html — 优化后的图片组件 */ -}}
+{{- /* ---- 输入参数 ----
+  ctx:    页面（文章）上下文，一般传入 .
+  src:    源图路径（相对 assets/ 目录）
+  alt:    替代文本（默认使用页面标题）
+  w:      目标宽度列表，默认 [480, 768, 1200, 1600]
+  sizes:  响应式 sizes 属性，默认 "100vw"
+  class:  附加的 class 类名
+  fetch:  "", "high" 或 "low" —— 请求优先级。"high" 将自动设置为 eager 加载（高优先级），"low" 则标记为低优先级
+  loading: 可选，手动指定 "lazy" 或 "eager"，不指定则根据 fetch 默认（high时为eager，否则lazy）
+  lqip:   布尔值，是否启用低清晰度占位图（默认 true）
+*/ -}}
+{{- $p       := .ctx -}}
+{{- $src     := .src -}}
+{{- $alt     := .alt | default $p.Title -}}
+{{- $sizes   := .sizes | default "100vw" -}}
+{{- $cls     := .class | default "" -}}
+{{- $fetch   := .fetch | default "" -}}
+{{- $loading := .loading | default (cond (eq $fetch "high") "eager" "lazy") -}}
+{{- $lqip    := .lqip | default true -}}
+{{- $widthsRequested := .w | default (slice 480 768 1200 1600) -}}
+
+{{- $orig := resources.Get $src -}}
+{{- if $orig -}}
+  {{- /* 1) 处理宽度列表：去重、排序，过滤超出原图宽度的值，避免图像被放大 */ -}}
+  {{- $uniqueWidths := sort (uniq $widthsRequested) -}}
+  {{- $finalWidths := slice -}}
+  {{- range $uniqueWidths -}}
+    {{- if le . $orig.Width -}}
+      {{- $finalWidths = $finalWidths | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if eq (len $finalWidths) 0 -}}
+    {{- /* 没有合适的宽度时：在原图宽度和预设上限1200中取较小值作为后备 */ -}}
+    {{- $maxFallback := 1200 -}}
+    {{- $fallbackWidth := cond (lt $orig.Width $maxFallback) $orig.Width $maxFallback -}}
+    {{- $finalWidths = slice $fallbackWidth -}}
+  {{- end -}}
+
+  {{- /* 2) 生成多种格式（AVIF / WebP / JPEG）资源 */ -}}
+  {{- $avifImgs := slice -}}
+  {{- $webpImgs := slice -}}
+  {{- $jpegImgs := slice -}}
+  {{- range $finalWidths -}}
+    {{- $avifImgs = $avifImgs | append ($orig.Resize (printf "%dx q64 avif" .)) -}}
+    {{- $webpImgs = $webpImgs | append ($orig.Resize (printf "%dx q82 webp" .)) -}}
+    {{- $jpegImgs = $jpegImgs | append ($orig.Resize (printf "%dx q80 jpg"  .)) -}}
+  {{- end -}}
+  {{- $tiny := cond $lqip ($orig.Resize "24x webp") nil -}}
+
+  {{- /* 3) 获取最大生成图的尺寸用于 width/height 属性和 aspect-ratio 样式，防止 CLS */ -}}
+  {{- $largestJpeg := index $jpegImgs (sub (len $jpegImgs) 1) -}}
+  {{- $W := $largestJpeg.Width -}}
+  {{- $H := $largestJpeg.Height -}}
+
+  {{- /* LQIP 背景占位样式，仅在启用时应用 */ -}}
+  {{- $pictureStyle := "" -}}
+  {{- if $lqip -}}
+    {{- $pictureStyle = "display:block;" -}}
+    {{- if $tiny -}}
+      {{- $pictureStyle = print $pictureStyle "background:#f3f4f6 url('" $tiny.RelPermalink "') center/cover no-repeat;" -}}
+    {{- end -}}
+  {{- end -}}
+
+  <picture{{ if $pictureStyle }} style="{{ $pictureStyle }}"{{ end }}>
+    <source type="image/avif"
+            srcset="{{ range $i, $img := $avifImgs }}{{ if gt $i 0}}, {{ end }}{{ $img.RelPermalink }} {{ (index $finalWidths $i) }}w{{ end }}"
+            sizes="{{ $sizes }}">
+    <source type="image/webp"
+            srcset="{{ range $i, $img := $webpImgs }}{{ if gt $i 0}}, {{ end }}{{ $img.RelPermalink }} {{ (index $finalWidths $i) }}w{{ end }}"
+            sizes="{{ $sizes }}">
+    <img src="{{ $largestJpeg.RelPermalink }}"
+         srcset="{{ range $i, $img := $jpegImgs }}{{ if gt $i 0}}, {{ end }}{{ $img.RelPermalink }} {{ (index $finalWidths $i) }}w{{ end }}"
+         sizes="{{ $sizes }}"
+         alt="{{ $alt }}"
+         width="{{ $W }}" height="{{ $H }}"
+         style="aspect-ratio: {{ $W }}/{{ $H }};"
+         loading="{{ $loading }}"
+         decoding='{{ if eq $loading "eager" }}auto{{ else }}async{{ end }}'
+         {{ if or (eq $fetch "high") (eq $fetch "low") }}fetchpriority="{{ $fetch }}"{{ end }}
+         class="{{ $cls }}">
+  </picture>
+{{- else -}}
+  {{- /* 找不到资源时：使用占位图作为后备，不写定宽高 */ -}}
+  <img src='{{ $p.Params.featured_image | default "/images/placeholder.jpg" | relURL }}'
+       alt='{{ $alt }}' loading='lazy' decoding='async' class='{{ $cls }}'>
+{{- end -}}

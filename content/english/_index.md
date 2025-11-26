@@ -14,7 +14,7 @@ usps:
       title: "SGS tested"
       description: "SGS reports verify every resin is 100% food-grade virgin material."
     - icon: "fas fa-truck-loading"
-      title: "Global logistics support"
+      title: "Global logistics"
       description: "Export-ready supply keeps fleets equipped across 20+ countries."
 ##########################################################
 industries:

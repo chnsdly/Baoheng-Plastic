@@ -14,7 +14,7 @@ usps:
       title: "SGS 检测"
       description: "SGS 检测报告证明原材料均为食品级全新原料。"
     - icon: "fas fa-truck-loading"
-      title: "全球物流保障"
+      title: "物流保障"
       description: "出口配套能力覆盖 20+ 国家，满足跨境运输需求。"
 ##########################################################
 industries:
