@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Product Catalog on Baoheng Plastic</title>
-    <link>https://wwww.baohengplastic.com/products/waste/</link>
+    <link>http://localhost:1313/products/waste/</link>
     <description>Recent content in Our Product Catalog on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="https://wwww.baohengplastic.com/products/waste/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/products/waste/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

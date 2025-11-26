@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Downloads on Baoheng Plastic</title>
-    <link>https://wwww.baohengplastic.com/categories/downloads/</link>
+    <link>http://localhost:1313/categories/downloads/</link>
     <description>Recent content in Downloads on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wwww.baohengplastic.com/categories/downloads/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/downloads/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>怎么选择托盘</title>
-      <link>https://wwww.baohengplastic.com/resources/downloads/product-quotation/</link>
+      <link>http://localhost:1313/resources/downloads/product-quotation/</link>
       <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://wwww.baohengplastic.com/resources/downloads/product-quotation/</guid>
+      <guid>http://localhost:1313/resources/downloads/product-quotation/</guid>
       <description>&lt;p&gt;Short preview paragraph here. The full article can be longer&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

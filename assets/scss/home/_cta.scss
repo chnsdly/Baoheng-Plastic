@@ -80,7 +80,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: space(1.25);
+  gap: space(3);
 }
 
 .cta__contact-item {
@@ -90,7 +90,6 @@
   border-radius: calc(var(--radius) * 1.15);
   border: 1px solid var(--cta-border);
   background: color-mix(in oklab, var(--surface), white 8%);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .cta__label {

@@ -40,6 +40,7 @@
 /* 等高产品卡（无按钮版） */
 .product-card.eq{
   display:flex;
+  box-shadow: var(--shadow);
   flex-direction:column;
   background:#fff;
   border:1px solid #e5e7eb;
