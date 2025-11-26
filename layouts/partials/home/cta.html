@@ -1,0 +1,73 @@
+{{ $site := .Site }}
+{{ $params := $site.Params }}
+{{ $phone := $params.contact_phone }}
+{{ $email := $params.contact_email }}
+{{ $address := $params.contact_address }}
+{{ $phoneHref := "" }}
+{{ if $phone }}
+  {{ $phoneHref = printf "tel:%s" (replaceRE "[^\\d+]" "" $phone) }}
+{{ end }}
+{{ $emailHref := "" }}
+{{ if $email }}
+  {{ $emailHref = printf "mailto:%s" $email }}
+{{ end }}
+
+<section class="cta" aria-labelledby="cta-title">
+  <div class="container container--wide">
+    <div class="cta__grid">
+      <div class="cta__intro">
+        <p class="cta__eyebrow">{{ i18n "cta_eyebrow" | default "Talk with a specialist" }}</p>
+        <h2 id="cta-title" class="cta__title">{{ i18n "cta_title" | default "Ready to design your next plastic pallet?" }}</h2>
+        <p class="cta__desc">{{ i18n "cta_subtitle" | default "Tell us how your pallets need to perform and we will reply within one business day." }}</p>
+        <p class="cta__meta">{{ i18n "cta_response" | default "Dedicated export team · No spam · Detailed follow-up" }}</p>
+
+        <ul class="cta__contact" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
+          {{ with $phone }}
+          <li class="cta__contact-item">
+            <p class="cta__label">
+              <span class="cta__icon" aria-hidden="true">📞</span>
+              {{ i18n "phone" | default "Phone" }}
+            </p>
+            <p class="cta__value">
+              <a href="{{ $phoneHref }}">{{ . }}</a>
+            </p>
+          </li>
+          {{ end }}
+
+          {{ with $email }}
+          <li class="cta__contact-item">
+            <p class="cta__label">
+              <span class="cta__icon" aria-hidden="true">✉️</span>
+              {{ i18n "email" | default "Email" }}
+            </p>
+            <p class="cta__value">
+              <a href="{{ $emailHref }}">{{ . }}</a>
+            </p>
+          </li>
+          {{ end }}
+
+          {{ with $address }}
+          <li class="cta__contact-item">
+            <p class="cta__label">
+              <span class="cta__icon" aria-hidden="true">📍</span>
+              {{ i18n "address_title" | default "Address" }}
+            </p>
+            <p class="cta__value">{{ . }}</p>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="cta__form">
+        <div class="cta__card" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
+          <div class="cta__form-head">
+            <p class="cta__pill">{{ i18n "cta_form_pill" | default "Tell us about your shipment" }}</p>
+            <h3 class="cta__form-title">{{ i18n "cta_form_title" | default "Get a tailored quote" }}</h3>
+            <p class="cta__form-desc">{{ i18n "cta_form_desc" | default "Share your target load, route conditions, and timeline. Our engineers will match the right pallet design." }}</p>
+          </div>
+          {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" $params.turnstile_site_key) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
