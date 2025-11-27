@@ -790,8 +790,7 @@ body[data-drawer-open='true'] {
   .factory__header {
     text-align: center;
     margin-inline: auto;
-    margin-bottom: calc(var(--space) * 4);
-    max-width: 60ch; }
+    margin-bottom: calc(var(--space) * 4); }
   .factory__title {
     margin: 0;
     font-size: var(--fs-4);
