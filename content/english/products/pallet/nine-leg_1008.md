@@ -3,6 +3,8 @@ title: "1008-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1008.jpg"
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Nestable Plastic Pallets"
 specs:
   dimensions: "1000 × 800 × 140 mm"
   static_load: "1 t"
@@ -19,7 +21,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

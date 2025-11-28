@@ -4,6 +4,8 @@ featured_image_asset: "/images/products/pallet/nine-leg_1210.jpg"
 featured: true
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Nestable Plastic Pallets"
 specs:
   dimensions: "1200 × 1000 × 140 mm"
   static_load: "2 t"
@@ -20,7 +22,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

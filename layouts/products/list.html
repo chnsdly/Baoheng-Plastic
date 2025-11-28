@@ -1,18 +1,28 @@
 {{ define "main" }}
   <section class="product-listing">
     <div class="container flow product-listing__inner">
-      {{ $pgr := .Paginate (.Pages.ByTitle) 12 }}
+      {{ $allProducts := .Pages }}
       {{ $productMenus := slice }}
+      {{ $selectedCategory := default "" (index .Request.Params "category") }}
+      {{ if eq (printf "%T" $selectedCategory) "[]string" }}
+        {{ $selectedCategory = index $selectedCategory 0 }}
+      {{ end }}
+      {{ $currentType := "" }}
+      {{ with first 1 $allProducts }}
+        {{ $currentType = (index . 0).Params.product_type }}
+      {{ end }}
+
+      {{ if $selectedCategory }}
+        {{ $allProducts = where $allProducts "Params.pallet_category" "intersect" (slice $selectedCategory) }}
+      {{ end }}
+
+      {{ $pgr := .Paginate ($allProducts.ByTitle) 12 }}
+
       {{ with where .Site.Menus.main "Identifier" "products" }}
         {{ with index . 0 }}
           {{ $productMenus = sort .Children "Weight" }}
         {{ end }}
       {{ end }}
-      {{ $currentType := "" }}
-      {{ with first 1 $pgr.Pages }}
-        {{ $currentType = (index . 0).Params.product_type }}
-      {{ end }}
-
       <div class="product-listing__layout">
         <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
           <div class="product-sidebar__header">
@@ -22,15 +32,17 @@
           <ul class="product-sidebar__list" role="list">
             {{ range $productMenus }}
               {{ $menuName := .Name }}
-              {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
+              {{ $menuURL := .URL | relLangURL }}
+              {{ $langPages := where $.Site.RegularPages "Lang" $.Lang }}
+              {{ $matchingPages := where $langPages "Params.product_type" $menuName }}
               {{ $categories := slice }}
               {{ range $matchingPages }}
-                {{ with .Params.pallet_category }}
-                  {{ $catVal := . }}
-                  {{ if eq (printf "%T" $catVal) "string" }}
-                    {{ $categories = $categories | append $catVal }}
+                {{ $catVal := .Params.pallet_category }}
+                {{ with $catVal }}
+                  {{ if eq (printf "%T" .) "string" }}
+                    {{ $categories = $categories | append . }}
                   {{ else }}
-                    {{ range $catVal }}
+                    {{ range . }}
                       {{ $categories = $categories | append . }}
                     {{ end }}
                   {{ end }}
@@ -38,14 +50,16 @@
               {{ end }}
               {{ $categories = uniq (sort $categories) }}
               {{ $hasChildren := gt (len $categories) 0 }}
-              {{ $isActive := hasPrefix $.RelPermalink .URL | or (eq $currentType $menuName) }}
+              {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $currentType $menuName) }}
               <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
-                <a class="product-sidebar__link" href="{{ .URL }}">{{ $menuName }}</a>
+                <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
                 {{ if $hasChildren }}
                   <ul class="product-sidebar__submenu" role="list">
                     {{ range $categories }}
+                      {{ $isCatCurrent := eq $selectedCategory . }}
+                      {{ $link := printf "%s?category=%s" $menuURL (urlquery .) }}
                       <li class="product-sidebar__subitem">
-                        <span class="product-sidebar__sublink">{{ . }}</span>
+                        <a class="product-sidebar__sublink{{ if $isCatCurrent }} product-sidebar__sublink--active{{ end }}" href="{{ $link }}"{{ if $isCatCurrent }} aria-current="true"{{ end }}>{{ . }}</a>
                       </li>
                     {{ end }}
                   </ul>
