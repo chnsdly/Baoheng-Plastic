@@ -1,7 +1,9 @@
 {{ define "main" }}
   <section class="product-listing">
     <div class="container flow product-listing__inner">
-      {{ $pgr := .Paginate (.Pages.ByTitle) 12 }}
+      {{ $pageSize := 12 }}
+      {{ $allPages := .Pages.ByTitle }}
+      {{ $pgr := .Paginate $allPages $pageSize }}
       {{ $productMenus := slice }}
       {{ with where .Site.Menus.main "Identifier" "products" }}
         {{ with index . 0 }}
@@ -63,10 +65,11 @@
             {{ with .Content }}<div class="product-listing__intro">{{ . }}</div>{{ end }}
           </header>
 
-          <div class="product-listing__grid">
-            {{ range $pgr.Pages }}
+          <div class="product-listing__grid" data-current-page="{{ $pgr.PageNumber }}" data-page-size="{{ $pgr.PageSize }}">
+            {{ range $index, $page := $allPages }}
+              {{ $pageNumber := add 1 (div $index $pageSize) }}
               {{ $pageCats := slice }}
-              {{ with .Params.pallet_category }}
+              {{ with $page.Params.pallet_category }}
                 {{ $catVal := . }}
                 {{ if eq (printf "%T" $catVal) "string" }}
                   {{ $pageCats = $pageCats | append $catVal }}
@@ -77,26 +80,26 @@
                 {{ end }}
               {{ end }}
               {{ $pageCats = uniq $pageCats }}
-              <article class="product-listing__card" data-categories="{{ delimit $pageCats "|" }}">
-                <a class="product-listing__card-link" href="{{ .RelPermalink }}">
+              <article class="product-listing__card" data-categories="{{ delimit $pageCats "|" }}" data-page="{{ $pageNumber }}">
+                <a class="product-listing__card-link" href="{{ $page.RelPermalink }}">
                   <figure class="product-listing__media">
-                    {{ if .Params.featured_image_asset }}
+                    {{ if $page.Params.featured_image_asset }}
                       {{ partial "picture.html" (dict
-                        "ctx" .
-                        "src" .Params.featured_image_asset
-                        "alt" .Title
+                        "ctx" $page
+                        "src" $page.Params.featured_image_asset
+                        "alt" $page.Title
                         "w" (slice 640 960 1440)
                         "sizes" "(min-width: 64rem) 320px, (min-width: 48rem) 45vw, 90vw"
                         "class" "product-listing__image"
                         "fetch" ""
                       ) }}
                     {{ else }}
-                      <img class="product-listing__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
+                      <img class="product-listing__image" src='{{ $page.Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ $page.Title }}'>
                     {{ end }}
                   </figure>
                   <div class="product-listing__content">
-                    <h2 class="product-listing__card-title">{{ .Title }}</h2>
-                    {{ with .Params.summary }}<p class="product-listing__summary">{{ . }}</p>{{ end }}
+                    <h2 class="product-listing__card-title">{{ $page.Title }}</h2>
+                    {{ with $page.Params.summary }}<p class="product-listing__summary">{{ . }}</p>{{ end }}
                   </div>
                 </a>
               </article>
@@ -143,12 +146,15 @@
       const activeCategory = params.get('category') || '';
       const cards = document.querySelectorAll('.product-listing__card');
       const links = document.querySelectorAll('.product-sidebar__sublink');
+      const grid = document.querySelector('.product-listing__grid');
+      const currentPage = Number(grid?.dataset.currentPage || '1');
 
       const toggleCards = (category) => {
         cards.forEach((card) => {
           const list = (card.dataset.categories || '').split('|').filter(Boolean);
-          const matches = !category || list.includes(category);
-          card.style.display = matches ? '' : 'none';
+          const matchesCategory = !category || list.includes(category);
+          const matchesPage = category ? true : Number(card.dataset.page) === currentPage;
+          card.style.display = matchesCategory && matchesPage ? '' : 'none';
         });
 
         links.forEach((link) => {
