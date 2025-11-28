@@ -1,7 +1,8 @@
 {{ define "main" }}
   <section class="product-listing">
     <div class="container flow product-listing__inner">
-      {{ $pgr := .Paginate (.Pages.ByTitle) 12 }}
+      {{ $allProducts := .Pages.ByTitle }}
+      {{ $pgr := .Paginate $allProducts 12 }}
       {{ $productMenus := slice }}
       {{ with where .Site.Menus.main "Identifier" "products" }}
         {{ with index . 0 }}
@@ -63,8 +64,13 @@
             {{ with .Content }}<div class="product-listing__intro">{{ . }}</div>{{ end }}
           </header>
 
+          {{ $visiblePermalinks := slice }}
+          {{ range $pgr.Pages }}
+            {{ $visiblePermalinks = $visiblePermalinks | append .Permalink }}
+          {{ end }}
+
           <div class="product-listing__grid">
-            {{ range $pgr.Pages }}
+            {{ range $allProducts }}
               {{ $pageCats := slice }}
               {{ with .Params.pallet_category }}
                 {{ $catVal := . }}
@@ -77,7 +83,8 @@
                 {{ end }}
               {{ end }}
               {{ $pageCats = uniq $pageCats }}
-              <article class="product-listing__card" data-categories="{{ delimit $pageCats "|" }}">
+              {{ $isVisibleByDefault := in $visiblePermalinks .Permalink }}
+              <article class="product-listing__card{{ if not $isVisibleByDefault }} product-listing__card--extra{{ end }}" data-categories="{{ delimit $pageCats "|" }}" data-default-visible="{{ if $isVisibleByDefault }}true{{ else }}false{{ end }}" style="{{ if not $isVisibleByDefault }}display:none;{{ end }}">
                 <a class="product-listing__card-link" href="{{ .RelPermalink }}">
                   <figure class="product-listing__media">
                     {{ if .Params.featured_image_asset }}
@@ -143,11 +150,13 @@
       const activeCategory = params.get('category') || '';
       const cards = document.querySelectorAll('.product-listing__card');
       const links = document.querySelectorAll('.product-sidebar__sublink');
+      const pager = document.querySelector('.product-listing__pager');
 
       const toggleCards = (category) => {
         cards.forEach((card) => {
           const list = (card.dataset.categories || '').split('|').filter(Boolean);
-          const matches = !category || list.includes(category);
+          const defaultVisible = card.dataset.defaultVisible === 'true';
+          const matches = category ? list.includes(category) : defaultVisible;
           card.style.display = matches ? '' : 'none';
         });
 
@@ -160,6 +169,9 @@
             link.removeAttribute('aria-current');
           }
         });
+        if (pager) {
+          pager.style.display = category ? 'none' : '';
+        }
       };
 
       links.forEach((link) => {
