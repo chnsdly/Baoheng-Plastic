@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/3-runner_1211.jpg"
 sku: ""
 product_type: "塑料托盘"
 pallet_category:
-  - "Rackable Pallets"
+  - "可上架塑料托盘"
 specs:
   dimensions: "1200 × 1100 × 150 毫米"
   static_load: "3 吨"

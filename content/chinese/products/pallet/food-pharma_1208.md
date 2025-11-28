@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/food-pharma_1208.jpg"
 sku: ""
 product_type: "塑料托盘"
 pallet_category:
-  - "Food & Pharma Pallets"
+  - "食品和医药塑料托盘"
 specs:
   dimensions: "1200 × 800 × 160 毫米"
   static_load: "2 吨"

@@ -5,7 +5,7 @@ featured: true
 sku: ""
 product_type: "塑料托盘"
 pallet_category:
-  - "Rackable Pallets"
+  - "可上架塑料托盘"
 specs:
   dimensions: "1100 × 1100 × 150 毫米"
   static_load: "3 吨"

@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/perimeter-base_1311.jpg"
 sku: ""
 product_type: "塑料托盘"
 pallet_category:
-  - "Stackable Pallets"
+  - "可堆叠塑料托盘"
 specs:
   dimensions: "1300 × 1100 × 150 毫米"
   static_load: "3 吨"
