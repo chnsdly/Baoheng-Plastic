@@ -4,6 +4,8 @@ featured_image_asset: "/images/products/pallet/3-runner_1010.jpg"
 featured: true
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Rackable Plastic Pallets"
 specs:
   dimensions: "1000 × 1000 × 150 mm"
   static_load: "1.5 t"
@@ -22,7 +24,6 @@ specs_order:
   - steel_pipes
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}
