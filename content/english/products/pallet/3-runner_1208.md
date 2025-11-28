@@ -4,6 +4,8 @@ featured_image_asset: "/images/products/pallet/3-runner_1208.jpg"
 featured: true
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Rackable Plastic Pallets"
 specs:
   dimensions: "1200 × 800 × 150 mm"
   static_load: "1.5 t"

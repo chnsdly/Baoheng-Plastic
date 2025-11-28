@@ -3,6 +3,8 @@ title: "1210-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1210.jpg"
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Rackable Plastic Pallets"
 specs:
   dimensions: "1200 × 1000 × 150 mm"
   static_load: "3 t"
