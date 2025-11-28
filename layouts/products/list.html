@@ -141,16 +141,59 @@
     document.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
       const activeCategory = params.get('category') || '';
-      const cards = document.querySelectorAll('.product-listing__card');
       const links = document.querySelectorAll('.product-sidebar__sublink');
+      const grid = document.querySelector('.product-listing__grid');
+      const pagination = document.querySelector('.product-listing__pager');
 
-      const toggleCards = (category) => {
-        cards.forEach((card) => {
-          const list = (card.dataset.categories || '').split('|').filter(Boolean);
-          const matches = !category || list.includes(category);
-          card.style.display = matches ? '' : 'none';
+      if (!grid) return;
+
+      const cards = Array.from(document.querySelectorAll('.product-listing__card'));
+      const cardData = cards.map((card) => ({
+        html: card.outerHTML,
+        categories: (card.dataset.categories || '').split('|').filter(Boolean),
+      }));
+
+      const pageLinks = new Set();
+      document.querySelectorAll('.product-listing__pager-number').forEach((link) => {
+        if (link.href) {
+          pageLinks.add(link.href);
+        }
+      });
+
+      let allCardsLoaded = false;
+
+      const loadAllCards = async () => {
+        if (allCardsLoaded || pageLinks.size === 0) return;
+
+        const parser = new DOMParser();
+        const currentUrl = window.location.href.replace(/\/$/, '');
+
+        const tasks = Array.from(pageLinks).map(async (url) => {
+          const normalizedUrl = url.replace(/\/$/, '');
+          if (normalizedUrl === currentUrl) return;
+
+          try {
+            const response = await fetch(url);
+            if (!response.ok) return;
+
+            const html = await response.text();
+            const doc = parser.parseFromString(html, 'text/html');
+            doc.querySelectorAll('.product-listing__card').forEach((card) => {
+              cardData.push({
+                html: card.outerHTML,
+                categories: (card.dataset.categories || '').split('|').filter(Boolean),
+              });
+            });
+          } catch (error) {
+            console.error('Failed to load products from', url, error);
+          }
         });
 
+        await Promise.all(tasks);
+        allCardsLoaded = true;
+      };
+
+      const updateActiveLink = (category) => {
         links.forEach((link) => {
           const isActive = category && link.dataset.category === category;
           link.classList.toggle('product-sidebar__sublink--active', isActive);
@@ -162,24 +205,54 @@
         });
       };
 
+      const renderCards = (category) => {
+        const matchedCards = cardData.filter(({ categories }) => {
+          return !category || categories.includes(category);
+        });
+
+        grid.innerHTML = '';
+        matchedCards.forEach(({ html }) => {
+          grid.insertAdjacentHTML('beforeend', html);
+        });
+
+        if (pagination) {
+          pagination.style.display = category ? 'none' : '';
+        }
+      };
+
+      const applyCategory = async (category, { updateUrl = true } = {}) => {
+        if (!category) {
+          if (updateUrl) {
+            const url = new URL(window.location.href);
+            url.searchParams.delete('category');
+            window.location.href = url.toString();
+          }
+          return;
+        }
+
+        await loadAllCards();
+
+        if (updateUrl) {
+          const url = new URL(window.location.href);
+          url.searchParams.set('category', category);
+          window.history.replaceState({}, '', url.toString());
+        }
+
+        updateActiveLink(category);
+        renderCards(category);
+      };
+
       links.forEach((link) => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
           const category = link.dataset.category || '';
-          const url = new URL(window.location.href);
-
-          if (category) {
-            url.searchParams.set('category', category);
-          } else {
-            url.searchParams.delete('category');
-          }
-
-          window.history.replaceState({}, '', url.toString());
-          toggleCards(category);
+          applyCategory(category);
         });
       });
 
-      toggleCards(activeCategory);
+      if (activeCategory) {
+        applyCategory(activeCategory, { updateUrl: false });
+      }
     });
   </script>
 {{ end }}
