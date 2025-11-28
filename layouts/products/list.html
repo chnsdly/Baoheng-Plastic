@@ -1,73 +1,124 @@
 {{ define "main" }}
   <section class="product-listing">
     <div class="container flow product-listing__inner">
-      <header class="product-listing__header">
-        <h1 class="product-listing__title">{{ .Title }}</h1>
-        {{ with .Content }}<div class="product-listing__intro">{{ . }}</div>{{ end }}
-      </header>
-
       {{ $pgr := .Paginate (.Pages.ByTitle) 12 }}
-      <div class="product-listing__grid">
-        {{ range $pgr.Pages }}
-          <article class="product-listing__card">
-            <a class="product-listing__card-link" href="{{ .RelPermalink }}">
-              <figure class="product-listing__media">
-                {{ if .Params.featured_image_asset }}
-                  {{ partial "picture.html" (dict
-                    "ctx" .
-                    "src" .Params.featured_image_asset
-                    "alt" .Title
-                    "w" (slice 640 960 1440)
-                    "sizes" "(min-width: 64rem) 320px, (min-width: 48rem) 45vw, 90vw"
-                    "class" "product-listing__image"
-                    "fetch" ""
-                  ) }}
-                {{ else }}
-                  <img class="product-listing__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
-                {{ end }}
-              </figure>
-              <div class="product-listing__content">
-                <h2 class="product-listing__card-title">{{ .Title }}</h2>
-                {{ with .Params.summary }}<p class="product-listing__summary">{{ . }}</p>{{ end }}
-                {{ with .Params.sku }}
-                  <p class="product-listing__meta"><span class="product-listing__meta-label">SKU</span> {{ . }}</p>
-                {{ end }}
-              </div>
-            </a>
-          </article>
-        {{ end }}
-      </div>
-      {{ if gt $pgr.TotalPages 1 }}
-      <nav class="product-listing__pager" aria-label='{{ i18n "pagination_label" | default "Pagination" }}'>
-        {{ with $pgr.Prev }}
-          <a href="{{ .URL }}" rel="prev" class="product-listing__pager-button">{{ i18n "prev" | default "Prev" }}</a>
-        {{ else }}
-          <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "prev" | default "Prev" }}</span>
-        {{ end }}
-
-        <ul class="product-listing__pager-list" role="list">
-          {{ range $p := $pgr.Pagers }}
-            {{ $isCurrent := eq $p.PageNumber $pgr.PageNumber }}
-            <li class="product-listing__pager-item">
-              {{ if $isCurrent }}
-                <span class="product-listing__pager-number product-listing__pager-number--current" aria-current="page" aria-label='{{ i18n "current_page" | default "Current page" }}'>{{ $p.PageNumber }}</span>
-              {{ else }}
-                <a class="product-listing__pager-number" href="{{ $p.URL }}"
-                   aria-label='{{ i18n "go_to_page" (dict "n" $p.PageNumber) | default (printf "Go to page %d" $p.PageNumber) }}'>
-                  {{ $p.PageNumber }}
-                </a>
-              {{ end }}
-            </li>
-          {{ end }}
-        </ul>
-
-        {{ with $pgr.Next }}
-          <a href="{{ .URL }}" rel="next" class="product-listing__pager-button">{{ i18n "next" | default "Next" }}</a>
-        {{ else }}
-          <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "next" | default "Next" }}</span>
-        {{ end }}
-      </nav>
+      {{ $productMenus := sort (where .Site.Menus.main "Parent" "products") "Weight" }}
+      {{ $currentType := "" }}
+      {{ with first 1 $pgr.Pages }}
+        {{ $currentType = (index . 0).Params.product_type }}
       {{ end }}
+
+      <div class="product-listing__layout">
+        <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
+          <div class="product-sidebar__header">
+            <p class="product-sidebar__eyebrow">{{ i18n "browse_products" | default "Browse catalog" }}</p>
+            <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
+          </div>
+          <ul class="product-sidebar__list" role="list">
+            {{ range $productMenus }}
+              {{ $menuName := .Name }}
+              {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
+              {{ $categories := slice }}
+              {{ range $matchingPages }}
+                {{ with .Params.pallet_category }}
+                  {{ $catVal := . }}
+                  {{ if eq (printf "%T" $catVal) "string" }}
+                    {{ $categories = $categories | append $catVal }}
+                  {{ else }}
+                    {{ range $catVal }}
+                      {{ $categories = $categories | append . }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ $categories = uniq (sort $categories) }}
+              {{ $hasChildren := gt (len $categories) 0 }}
+              {{ $isActive := hasPrefix $.RelPermalink .URL | or (eq $currentType $menuName) }}
+              <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
+                <a class="product-sidebar__link" href="{{ .URL }}">{{ $menuName }}</a>
+                {{ if $hasChildren }}
+                  <ul class="product-sidebar__submenu" role="list">
+                    {{ range $categories }}
+                      <li class="product-sidebar__subitem">
+                        <span class="product-sidebar__sublink">{{ . }}</span>
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </aside>
+
+        <div class="product-listing__body">
+          <header class="product-listing__header">
+            <h1 class="product-listing__title">{{ .Title }}</h1>
+            {{ with .Content }}<div class="product-listing__intro">{{ . }}</div>{{ end }}
+          </header>
+
+          <div class="product-listing__grid">
+            {{ range $pgr.Pages }}
+              <article class="product-listing__card">
+                <a class="product-listing__card-link" href="{{ .RelPermalink }}">
+                  <figure class="product-listing__media">
+                    {{ if .Params.featured_image_asset }}
+                      {{ partial "picture.html" (dict
+                        "ctx" .
+                        "src" .Params.featured_image_asset
+                        "alt" .Title
+                        "w" (slice 640 960 1440)
+                        "sizes" "(min-width: 64rem) 320px, (min-width: 48rem) 45vw, 90vw"
+                        "class" "product-listing__image"
+                        "fetch" ""
+                      ) }}
+                    {{ else }}
+                      <img class="product-listing__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
+                    {{ end }}
+                  </figure>
+                  <div class="product-listing__content">
+                    <h2 class="product-listing__card-title">{{ .Title }}</h2>
+                    {{ with .Params.summary }}<p class="product-listing__summary">{{ . }}</p>{{ end }}
+                    {{ with .Params.sku }}
+                      <p class="product-listing__meta"><span class="product-listing__meta-label">SKU</span> {{ . }}</p>
+                    {{ end }}
+                  </div>
+                </a>
+              </article>
+            {{ end }}
+          </div>
+          {{ if gt $pgr.TotalPages 1 }}
+          <nav class="product-listing__pager" aria-label='{{ i18n "pagination_label" | default "Pagination" }}'>
+            {{ with $pgr.Prev }}
+              <a href="{{ .URL }}" rel="prev" class="product-listing__pager-button">{{ i18n "prev" | default "Prev" }}</a>
+            {{ else }}
+              <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "prev" | default "Prev" }}</span>
+            {{ end }}
+
+            <ul class="product-listing__pager-list" role="list">
+              {{ range $p := $pgr.Pagers }}
+                {{ $isCurrent := eq $p.PageNumber $pgr.PageNumber }}
+                <li class="product-listing__pager-item">
+                  {{ if $isCurrent }}
+                    <span class="product-listing__pager-number product-listing__pager-number--current" aria-current="page" aria-label='{{ i18n "current_page" | default "Current page" }}'>{{ $p.PageNumber }}</span>
+                  {{ else }}
+                    <a class="product-listing__pager-number" href="{{ $p.URL }}"
+                       aria-label='{{ i18n "go_to_page" (dict "n" $p.PageNumber) | default (printf "Go to page %d" $p.PageNumber) }}'>
+                      {{ $p.PageNumber }}
+                    </a>
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+
+            {{ with $pgr.Next }}
+              <a href="{{ .URL }}" rel="next" class="product-listing__pager-button">{{ i18n "next" | default "Next" }}</a>
+            {{ else }}
+              <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "next" | default "Next" }}</span>
+            {{ end }}
+          </nav>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </section>
 {{ end }}
