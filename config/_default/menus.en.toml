@@ -4,7 +4,7 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "产品"
+name = "Products"
 url = "/products/"
 identifier = "products"
 weight = 10

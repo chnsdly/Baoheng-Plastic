@@ -19,8 +19,7 @@
   height: var(--header-height);
   padding-inline: calc(var(--space) * 3);
 
-  background-color: var(--brand);
-  background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
+  background-color: #ffffff;
 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);

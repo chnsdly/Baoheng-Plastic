@@ -2,7 +2,7 @@
 /* ---------------------------- 主题变量：亮色基线 ---------------------------- */
 :root {
   /* 品牌色 & 基础语义色 */
-  --brand:        #ffffff;
+  --brand:        #1279e8;
   /* 品牌色 */
   --on-brand:     #000000;
   /* 品牌色上的文本/图标 */
@@ -29,10 +29,10 @@
   /* 焦点环/选区色（高对比度） */
   --layer-alpha: 1;
   /* 透明度调节 */
-  --container:        72rem;
-  /* 默认：常规页面 */
   --container-wide:   80rem;
   /* 宽版：营销/视觉模块 */
+  --container:        72rem;
+  /* 默认：常规页面 */
   --container-narrow: 60rem;
   /* 窄版：以阅读为主 */
   --header-height: 68px;
@@ -254,8 +254,7 @@ input, button, select, textarea {
   z-index: var(--z-header);
   height: var(--header-height);
   padding-inline: calc(var(--space) * 3);
-  background-color: var(--brand);
-  background-color: rgb(from var(--brand) r g b / var(--layer-alpha));
+  background-color: #ffffff;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: var(--header-transition); }
