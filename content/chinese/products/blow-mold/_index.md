@@ -1,6 +1,6 @@
 ---
 title: "吹塑可嵌套塑料托盘"
-description: "轻量化吹塑托盘，适合出口与周转配送。"
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8

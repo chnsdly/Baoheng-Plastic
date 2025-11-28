@@ -1,6 +1,6 @@
 ---
 title: "Plastic Crates & Boxes"
-description: "Durable plastic crates and totes for warehouse picking and line-side storage."
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8

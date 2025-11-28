@@ -1,6 +1,6 @@
 ---
 title: "Plastic Waste Bins"
-description: "Mobile waste bins with secure lids for facilities, campuses, and public areas."
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8

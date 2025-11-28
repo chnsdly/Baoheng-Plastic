@@ -1,6 +1,6 @@
 ---
 title: "可折叠塑料托盘箱"
-description: "折叠式托盘箱，回程节省空间且保持强度。"
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8

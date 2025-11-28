@@ -1,6 +1,6 @@
 ---
 title: "大型散装容器"
-description: "重载散装容器，适用于液体、散料与大件物资。"
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8

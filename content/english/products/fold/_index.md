@@ -1,6 +1,6 @@
 ---
 title: "Foldable Pallet Boxes"
-description: "Collapsible pallet boxes that save space on return trips without sacrificing strength."
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8
