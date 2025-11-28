@@ -1,8 +1,8 @@
 ---
-title: "Our Product Catalog"
-description: "Explore high-performance industrial machinery designed for reliability and throughput."
+title: "Plastic Waste Bins"
+description: "Two-wheel and four-wheel bins engineered for municipal collection, campuses, and industrial sites."
 sitemap:
   changefreq: "weekly"
-  priority: 0.8
+  priority: 0.7
 ---
-Below is a selection of our core equipment for global manufacturers.
+Select the right bin capacity, wheel set, and lid style to support clean, efficient waste streams.

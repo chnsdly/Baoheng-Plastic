@@ -1,8 +1,8 @@
 ---
-title: "Our Product Catalog"
-description: "Explore high-performance industrial machinery designed for reliability and throughput."
+title: "塑料垃圾桶"
+description: "两轮与四轮垃圾桶，服务市政收运、园区与工厂的分类投放。"
 sitemap:
   changefreq: "weekly"
-  priority: 0.8
+  priority: 0.7
 ---
-Below is a selection of our core equipment for global manufacturers.
+提供多容量、多颜色方案，支持国际标准提升机构。
