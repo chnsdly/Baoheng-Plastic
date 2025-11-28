@@ -148,19 +148,18 @@
 
 .product-listing__header{
   display: grid;
-  gap: space(1.5);
-  max-inline-size: var(--container-narrow);
-  margin-inline: auto;
+  gap: space(.75);
+  inline-size: 100%;
+  padding: space(1) space(1.5);
+  background: color-mix(in srgb, var(--brand) 10%, var(--surface));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
 }
 
 .product-listing__title{
   margin: 0;
   font-size: var(--fs-3);
-  display: inline-block;
-  padding: space(.75) space(1.25);
-  background: color-mix(in srgb, var(--brand) 12%, var(--surface));
   color: var(--on-card);
-  border-radius: var(--radius-sm);
   font-weight: 800;
 }
 
