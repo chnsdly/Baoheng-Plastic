@@ -1,7 +1,6 @@
 ---
 title: "1210-BM-RK"
 featured_image_asset: "/images/products/pallet/blow-molding_1210.jpg"
-sku: "1210-BM-RK"
 product_type: "Nestable Blow-Mold Pallets"
 specs:
   dimensions: "1200 × 1000 × 160 mm"

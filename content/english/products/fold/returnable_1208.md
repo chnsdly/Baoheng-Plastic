@@ -1,7 +1,6 @@
 ---
 title: "1208-FB Returnable Box"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-1208-FB"
 product_type: "Foldable Pallet Boxes"
 specs:
   dimensions: "1200 × 800 × 850 mm"

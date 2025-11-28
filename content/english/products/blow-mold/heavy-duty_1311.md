@@ -1,7 +1,6 @@
 ---
 title: "1311-BM-HD"
 featured_image_asset: "/images/products/pallet/blow-molding_1311.jpg"
-sku: "1311-BM-HD"
 product_type: "Nestable Blow-Mold Pallets"
 specs:
   dimensions: "1300 × 1100 × 170 mm"

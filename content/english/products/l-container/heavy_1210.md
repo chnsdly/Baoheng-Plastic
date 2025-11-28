@@ -1,7 +1,6 @@
 ---
 title: "1210-LC Heavy-Duty Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-1210-LC"
 product_type: "Large Bulk Containers"
 specs:
   dimensions: "1210 × 1010 × 760 mm"

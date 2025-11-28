@@ -1,7 +1,6 @@
 ---
 title: "1006-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1006.jpg"
-sku: ""
 product_type: "Plastic Pallet"
 specs:
   dimensions: "1000 × 600 × 140 mm"

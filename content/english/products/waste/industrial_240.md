@@ -1,7 +1,6 @@
 ---
 title: "240L Industrial Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-240-WB"
 product_type: "Plastic Waste Bins"
 specs:
   capacity: "240 L"
