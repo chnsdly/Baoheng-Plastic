@@ -2,7 +2,7 @@
 title: "1311-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1311.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "Plastic Pallet"
 specs:
   dimensions: "1300 × 1100 × 140 mm"
   static_load: "2 t"

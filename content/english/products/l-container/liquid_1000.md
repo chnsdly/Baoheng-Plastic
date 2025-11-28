@@ -2,7 +2,7 @@
 title: "1000-LC Liquid Tote"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-1000-LC"
-product_type: "l-container"
+product_type: "Large Bulk Containers"
 specs:
   dimensions: "1200 × 1000 × 1160 mm"
   internal_volume: "1000 L"

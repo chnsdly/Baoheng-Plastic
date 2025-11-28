@@ -2,7 +2,7 @@
 title: "1208-FB 回程托盘箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-1208-FB"
-product_type: "fold"
+product_type: "可折叠塑料托盘箱"
 specs:
   dimensions: "1200 × 800 × 850 mm"
   folded_height: "320 mm"

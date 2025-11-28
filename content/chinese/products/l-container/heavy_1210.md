@@ -2,7 +2,7 @@
 title: "1210-LC 重载大箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-1210-LC"
-product_type: "l-container"
+product_type: "大型散装容器"
 specs:
   dimensions: "1210 × 1010 × 760 mm"
   internal_volume: "700 L"

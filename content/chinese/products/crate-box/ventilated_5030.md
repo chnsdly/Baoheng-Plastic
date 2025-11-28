@@ -2,7 +2,7 @@
 title: "5030-VC 透气箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-5030-VC"
-product_type: "crate-box"
+product_type: "塑料筐/箱"
 specs:
   dimensions: "500 × 300 × 260 mm"
   internal_dimensions: "465 × 265 × 245 mm"

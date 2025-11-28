@@ -2,7 +2,7 @@
 title: "1008-BP-CD9L15B"
 featured_image_asset: "/images/products/pallet/blow-molding_1008.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "塑料托盘"
 specs:
   dimensions: "1000 × 800 × 150 毫米"
   static_load: "1 吨"

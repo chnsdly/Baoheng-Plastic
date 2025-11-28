@@ -2,7 +2,7 @@
 title: "1311-BP-CDDF15B"
 featured_image_asset: "/images/products/pallet/df_blow-molding_1311.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "Plastic Pallet"
 specs:
   dimensions: "1300 × 1100 × 150 mm"
   static_load: "5 t"

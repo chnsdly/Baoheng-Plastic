@@ -2,7 +2,7 @@
 title: "1111-BP-CD9L15B"
 featured_image_asset: "/images/products/pallet/blow-molding_1111.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "Plastic Pallet"
 specs:
   dimensions: "1100 × 1100 × 150 mm"
   static_load: "3 t"

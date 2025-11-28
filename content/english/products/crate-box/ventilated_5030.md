@@ -2,7 +2,7 @@
 title: "5030-VC Ventilated Crate"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-5030-VC"
-product_type: "crate-box"
+product_type: "Plastic Crates & Boxes"
 specs:
   dimensions: "500 × 300 × 260 mm"
   internal_dimensions: "465 × 265 × 245 mm"

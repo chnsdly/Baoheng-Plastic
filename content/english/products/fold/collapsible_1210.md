@@ -2,7 +2,7 @@
 title: "1210-FB Collapsible Box"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-1210-FB"
-product_type: "fold"
+product_type: "Foldable Pallet Boxes"
 specs:
   dimensions: "1200 × 1000 × 975 mm"
   folded_height: "360 mm"

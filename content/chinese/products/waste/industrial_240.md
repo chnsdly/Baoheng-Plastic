@@ -2,7 +2,7 @@
 title: "240L 工业垃圾桶"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-240-WB"
-product_type: "waste"
+product_type: "塑料垃圾桶"
 specs:
   capacity: "240 L"
   dimensions: "580 × 730 × 1090 mm"

@@ -2,7 +2,7 @@
 title: "1208-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base_1208.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "Plastic Pallet"
 specs:
   dimensions: "1200 × 800 × 150 mm"
   static_load: "3 t"

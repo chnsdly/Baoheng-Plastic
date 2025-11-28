@@ -2,7 +2,7 @@
 title: "120L Urban Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-120-WB"
-product_type: "waste"
+product_type: "Plastic Waste Bins"
 specs:
   capacity: "120 L"
   dimensions: "480 × 550 × 950 mm"

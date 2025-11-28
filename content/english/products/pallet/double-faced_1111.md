@@ -2,7 +2,7 @@
 title: "1111-PB-ODDF15I"
 featured_image_asset: "/images/products/pallet/double-faced_1111.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "Plastic Pallet"
 specs:
   dimensions: "1100 × 1100 × 150 mm"
   static_load: "5 t"

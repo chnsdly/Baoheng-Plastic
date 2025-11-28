@@ -2,7 +2,7 @@
 title: "1412-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1412.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "塑料托盘"
 specs:
   dimensions: "1400 × 1200 × 150 毫米"
   static_load: "3 吨"
