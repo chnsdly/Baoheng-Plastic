@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/nine-leg_1008.jpg"
 sku: ""
 product_type: "塑料托盘"
 pallet_category:
-  - "Nestable Pallets"
+  - "可嵌套塑料托盘"
 specs:
   dimensions: "1000 × 800 × 140 毫米"
   static_load: "1 吨"
