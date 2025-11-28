@@ -3,6 +3,9 @@ title: "1111-PB-ODDF15I"
 featured_image_asset: "/images/products/pallet/double-faced_1111.jpg"
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Stackable Pallets"
+  - "Heavy-Duty Pallets"
 specs:
   dimensions: "1100 × 1100 × 150 毫米"
   static_load: "5 吨"
@@ -19,7 +22,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

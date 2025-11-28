@@ -4,6 +4,9 @@ featured_image_asset: "/images/products/pallet/double-faced_1311.jpg"
 featured: true
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Stackable Pallets"
+  - "Heavy-Duty Pallets"
 specs:
   dimensions: "1300 × 1100 × 150 毫米"
   static_load: "6 吨"
@@ -20,7 +23,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

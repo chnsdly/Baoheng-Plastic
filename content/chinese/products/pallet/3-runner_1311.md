@@ -3,6 +3,8 @@ title: "1311-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1311.jpg"
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Rackable Pallets"
 specs:
   dimensions: "1300 × 1100 × 150 毫米"
   static_load: "3 吨"
@@ -21,7 +23,6 @@ specs_order:
   - steel_pipes
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

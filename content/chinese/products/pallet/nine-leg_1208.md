@@ -4,6 +4,8 @@ featured_image_asset: "/images/products/pallet/nine-leg_1208.jpg"
 featured: true
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Nestable Pallets"
 specs:
   dimensions: "1200 × 800 × 140 毫米"
   static_load: "1.5 吨"
@@ -20,7 +22,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

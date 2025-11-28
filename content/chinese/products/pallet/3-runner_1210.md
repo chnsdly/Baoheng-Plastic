@@ -5,6 +5,8 @@ featured_image: "/images/cnc-machine.jpg"
 featured: true
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Rackable Pallets"
 specs:
   dimensions: "1200 × 1000 × 150 毫米"
   static_load: "3 吨"
@@ -23,7 +25,6 @@ specs_order:
   - steel_pipes
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}

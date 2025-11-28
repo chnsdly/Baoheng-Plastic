@@ -3,6 +3,8 @@ title: "1210-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base_1210.jpg"
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Stackable Pallets"
 specs:
   dimensions: "1200 × 1000 × 150 毫米"
   static_load: "3 吨"
@@ -19,7 +21,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}
