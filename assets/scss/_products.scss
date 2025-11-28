@@ -33,7 +33,9 @@
 .product-sidebar__header{
   display: grid;
   gap: space(.3);
+  padding-bottom: space(.8);
   margin-bottom: space(1.5);
+  border-bottom: 1px solid var(--border);
 }
 
 .product-sidebar__eyebrow{
@@ -153,7 +155,11 @@
 
 .product-listing__title{
   margin: 0;
-  font-size: var(--fs-4);
+  padding: space(1) space(1.25);
+  font-size: var(--fs-3);
+  color: var(--on-card);
+  background: color-mix(in srgb, var(--brand) 12%, var(--surface));
+  border-radius: var(--radius-sm);
 }
 
 .product-listing__intro{
