@@ -12,30 +12,40 @@ weight = 10
   [[main]]
   name = "塑料托盘"
   url = "/products/pallet/"
-  identifier = "products-style"
   parent = "products"
   weight = 11
 
   [[main]]
-  name = "周转筐"
-  url = "/products/crate/"
-  identifier = "products-load"
+  name = "吹塑可嵌套塑料托盘"
+  url = "/products/blow-mold/"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "塑料容器"
-  url = "/products/container/"
-  identifier = "products-load2"
+  name = "塑料筐/箱"
+  url = "/products/crate-box/"
   parent = "products"
   weight = 13
 
+  
   [[main]]
-  name = "垃圾桶"
+  name = "可折叠塑料托盘箱"
+  url = "/products/fold/"
+  parent = "products"
+  weight = 14
+
+  [[main]]
+  name = "大型散装容器"
+  url = "/products/l-container/"
+  parent = "products"
+  weight = 15
+
+  [[main]]
+  name = "塑料垃圾桶"
   url = "/products/waste/"
   identifier = "products-dimension"
   parent = "products"
-  weight = 14
+  weight = 16
 
 [[main]]
 name = "行业案例"

@@ -124,7 +124,7 @@
   border-radius: 999px;
   border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
   background: color-mix(in oklab, var(--brand), white 78%);
-  color: color-mix(in oklab, var(--brand), #0f172a 15%);
+  color: var(--on-brand);
 }
 
 .cta__icon svg {
