@@ -1,7 +1,6 @@
 ---
 title: "0808-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_0808.jpg"
-sku: ""
 product_type: "塑料托盘"
 pallet_category:
   - "可嵌套塑料托盘"

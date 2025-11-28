@@ -1,7 +1,6 @@
 ---
 title: "6040-SC 可堆叠箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-6040-SC"
 product_type: "塑料筐/箱"
 specs:
   dimensions: "600 × 400 × 330 mm"

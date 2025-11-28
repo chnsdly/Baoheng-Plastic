@@ -1,7 +1,6 @@
 ---
 title: "1208-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base_1208.jpg"
-sku: ""
 product_type: "Plastic Pallet"
 pallet_category:
   - "Stackable Plastic Pallets"

@@ -2,7 +2,6 @@
 title: "1008-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1008.jpg"
 featured: true
-sku: ""
 product_type: "Plastic Pallet"
 pallet_category:
   - "Rackable Plastic Pallets"

@@ -1,7 +1,6 @@
 ---
 title: "食品和医药塑料托盘"
 featured_image_asset: "/images/products/pallet/food-pharma_1208.jpg"
-sku: ""
 product_type: "塑料托盘"
 pallet_category:
   - "食品和医药塑料托盘"

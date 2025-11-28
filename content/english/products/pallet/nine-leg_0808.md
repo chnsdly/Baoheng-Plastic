@@ -2,7 +2,6 @@
 title: "0808-BP-OD9L14"
 summary: ""
 featured_image_asset: "/images/products/pallet/nine-leg_0808.jpg"
-sku: ""
 product_type: "Plastic Pallet"
 pallet_category:
   - "Nestable Plastic Pallets"

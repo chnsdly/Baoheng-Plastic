@@ -1,7 +1,6 @@
 ---
 title: "1212-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base_1212.jpg"
-sku: ""
 product_type: "塑料托盘"
 pallet_category:
   - "可堆叠塑料托盘"

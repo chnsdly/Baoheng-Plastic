@@ -1,7 +1,6 @@
 ---
 title: "1111-BP-CDDF15B"
 featured_image_asset: "/images/products/pallet/df_blow-molding_1111.jpg"
-sku: ""
 product_type: "塑料托盘"
 specs:
   dimensions: "1100 × 1100 × 150 毫米"

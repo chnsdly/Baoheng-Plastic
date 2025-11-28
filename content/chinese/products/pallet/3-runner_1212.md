@@ -1,7 +1,6 @@
 ---
 title: "1212-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1212.jpg"
-sku: ""
 product_type: "塑料托盘"
 pallet_category:
   - "可上架塑料托盘"

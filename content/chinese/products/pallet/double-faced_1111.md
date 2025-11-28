@@ -1,7 +1,6 @@
 ---
 title: "1111-PB-ODDF15I"
 featured_image_asset: "/images/products/pallet/double-faced_1111.jpg"
-sku: ""
 product_type: "塑料托盘"
 pallet_category:
   - "可堆叠塑料托盘"

@@ -1,7 +1,6 @@
 ---
 title: "660L Mega Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-660-WB"
 product_type: "Plastic Waste Bins"
 specs:
   capacity: "660 L"

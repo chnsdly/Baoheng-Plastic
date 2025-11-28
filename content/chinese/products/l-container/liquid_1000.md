@@ -1,7 +1,6 @@
 ---
 title: "1000-LC 液体托"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-1000-LC"
 product_type: "大型散装容器"
 specs:
   dimensions: "1200 × 1000 × 1160 mm"

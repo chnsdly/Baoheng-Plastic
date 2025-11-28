@@ -1,7 +1,6 @@
 ---
 title: "120L 城市环卫桶"
 featured_image_asset: "/images/products/cnc-machine.jpg"
-sku: "BH-120-WB"
 product_type: "塑料垃圾桶"
 specs:
   capacity: "120 L"

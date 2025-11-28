@@ -97,9 +97,6 @@
                   <div class="product-listing__content">
                     <h2 class="product-listing__card-title">{{ .Title }}</h2>
                     {{ with .Params.summary }}<p class="product-listing__summary">{{ . }}</p>{{ end }}
-                    {{ with .Params.sku }}
-                      <p class="product-listing__meta"><span class="product-listing__meta-label">SKU</span> {{ . }}</p>
-                    {{ end }}
                   </div>
                 </a>
               </article>
