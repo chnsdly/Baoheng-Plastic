@@ -48,7 +48,7 @@
                     {{ range $categories }}
                       <li class="product-sidebar__subitem">
                         {{ $categoryParam := urlquery . }}
-                        <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $.RelPermalink $categoryParam }}">{{ . }}</a>
+                        <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $menuURL $categoryParam }}">{{ . }}</a>
                       </li>
                     {{ end }}
                   </ul>
@@ -176,8 +176,14 @@
 
       links.forEach((link) => {
         link.addEventListener('click', (event) => {
-          event.preventDefault();
           const category = link.dataset.category || '';
+          const linkUrl = new URL(link.href, window.location.origin);
+
+          if (linkUrl.pathname !== window.location.pathname) {
+            return;
+          }
+
+          event.preventDefault();
           const url = new URL(window.location.href);
 
           if (category) {
