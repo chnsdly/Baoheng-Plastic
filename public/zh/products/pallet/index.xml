@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>我们的产品目录 on Baoheng Plastic</title>
+    <title>塑料托盘 on Baoheng Plastic</title>
     <link>http://localhost:1313/zh/products/pallet/</link>
-    <description>Recent content in 我们的产品目录 on Baoheng Plastic</description>
+    <description>Recent content in 塑料托盘 on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/zh/products/pallet/index.xml" rel="self" type="application/rss+xml" />
@@ -489,6 +489,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/zh/products/pallet/df_blow-molding_1616/</guid>
       <description>&lt;a class=&#34;cta-button&#34;&#xA;   href=&#39;http://localhost:1313/zh/contact-us?product=1616-BP-CDDF15B&#39;&#xA;   data-gtag=&#34;click_quote&#34;&#xA;   data-product=&#34;1616-BP-CDDF15B&#34;&gt;&#xA;  获取报价&#xA;&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>食品和医药塑料托盘</title>
+      <link>http://localhost:1313/zh/products/pallet/food-pharma_1208/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/products/pallet/food-pharma_1208/</guid>
+      <description>&lt;a class=&#34;cta-button&#34;&#xA;   href=&#39;http://localhost:1313/zh/contact-us?product=%E9%A3%9F%E5%93%81%E5%92%8C%E5%8C%BB%E8%8D%AF%E5%A1%91%E6%96%99%E6%89%98%E7%9B%98&#39;&#xA;   data-gtag=&#34;click_quote&#34;&#xA;   data-product=&#34;食品和医药塑料托盘&#34;&gt;&#xA;  获取报价&#xA;&lt;/a&gt;</description>
     </item>
   </channel>
 </rss>

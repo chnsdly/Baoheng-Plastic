@@ -314,6 +314,18 @@
                 href="http://localhost:1313/products/pallet/nine-leg_0909/"
                 />
   </url><url>
+    <loc>http://localhost:1313/products/l-container/liquid_1000/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/l-container/liquid_1000/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/l-container/liquid_1000/"
+                />
+  </url><url>
     <loc>http://localhost:1313/products/pallet/cd_6-leg_1005/</loc>
     <xhtml:link
                 rel="alternate"
@@ -556,6 +568,42 @@
                 href="http://localhost:1313/products/pallet/double-faced_1111/"
                 />
   </url><url>
+    <loc>http://localhost:1313/products/fold/mega_1140/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/fold/mega_1140/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/fold/mega_1140/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/l-container/bulk_1200/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/l-container/bulk_1200/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/l-container/bulk_1200/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/blow-mold/lightweight_1208/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/blow-mold/lightweight_1208/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/blow-mold/lightweight_1208/"
+                />
+  </url><url>
     <loc>http://localhost:1313/products/pallet/cd_9-leg_1208/</loc>
     <xhtml:link
                 rel="alternate"
@@ -602,6 +650,42 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/products/pallet/perimeter-base_1208/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/fold/returnable_1208/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/fold/returnable_1208/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/fold/returnable_1208/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/waste/urban_120/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/waste/urban_120/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/waste/urban_120/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/blow-mold/rackable_1210/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/blow-mold/rackable_1210/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/blow-mold/rackable_1210/"
                 />
   </url><url>
     <loc>http://localhost:1313/products/pallet/cd_9-leg_1210/</loc>
@@ -674,6 +758,30 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/products/pallet/perimeter-base_1210/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/fold/collapsible_1210/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/fold/collapsible_1210/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/fold/collapsible_1210/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/l-container/heavy_1210/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/l-container/heavy_1210/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/l-container/heavy_1210/"
                 />
   </url><url>
     <loc>http://localhost:1313/products/pallet/double-faced_1210/</loc>
@@ -854,6 +962,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/products/pallet/spill_130130-30/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/blow-mold/heavy-duty_1311/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/blow-mold/heavy-duty_1311/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/blow-mold/heavy-duty_1311/"
                 />
   </url><url>
     <loc>http://localhost:1313/products/pallet/blow-molding_1311/</loc>
@@ -1048,6 +1168,66 @@
                 href="http://localhost:1313/products/pallet/df_blow-molding_1616/"
                 />
   </url><url>
+    <loc>http://localhost:1313/products/waste/industrial_240/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/waste/industrial_240/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/waste/industrial_240/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/crate-box/ventilated_5030/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/crate-box/ventilated_5030/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/crate-box/ventilated_5030/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/crate-box/stackable_6040/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/crate-box/stackable_6040/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/crate-box/stackable_6040/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/crate-box/euro_6428/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/crate-box/euro_6428/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/crate-box/euro_6428/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/waste/mega_660/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/waste/mega_660/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/waste/mega_660/"
+                />
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1072,162 +1252,60 @@
                 href="http://localhost:1313/resources/downloads/baoheng/"
                 />
   </url><url>
-    <loc>http://localhost:1313/products/crate/crate_30l-copy-2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_30l-copy-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_30l-copy-2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_30l-copy-3/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_30l-copy-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_30l-copy-3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_30l-copy-4/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_30l-copy-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_30l-copy-4/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_30l-copy-5/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_30l-copy-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_30l-copy-5/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_30l-copy/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_30l-copy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_30l-copy/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_30l/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_30l/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_30l/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_60l-copy-2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_60l-copy-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_60l-copy-2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_60l-copy-3/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_60l-copy-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_60l-copy-3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_60l-copy-4/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_60l-copy-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_60l-copy-4/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_60l-copy-5/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_60l-copy-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_60l-copy-5/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_60l-copy/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_60l-copy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_60l-copy/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/crate_60l/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/crate_60l/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/products/crate/crate_60l/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/products/crate/</loc>
+    <loc>http://localhost:1313/products/fold/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh/products/crate/"
+                href="http://localhost:1313/zh/products/fold/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/products/crate/"
+                href="http://localhost:1313/products/fold/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/l-container/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/l-container/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/l-container/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/blow-mold/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/blow-mold/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/blow-mold/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/crate-box/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/crate-box/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/crate-box/"
                 />
   </url><url>
     <loc>http://localhost:1313/products/pallet/</loc>

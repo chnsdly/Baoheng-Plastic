@@ -1,6 +1,6 @@
 ---
-title: "我们的产品目录"
-description: "以下是我们的所有产品"
+title: "塑料托盘"
+description: ""
 sitemap:
   changefreq: "weekly"
   priority: 0.8

@@ -1,5 +1,5 @@
 ---
-title: "Our Product Catalog"
+title: "Plastic Pallet"
 description: "Explore high-performance industrial machinery designed for reliability and throughput."
 sitemap:
   changefreq: "weekly"
