@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="product-listing">
     <div class="container flow product-listing__inner">
-      {{ $pgr := .Paginate (.Pages.ByTitle) 12 }}
+      {{ $pages := .Pages.ByTitle }}
       {{ $productMenus := slice }}
       {{ with where .Site.Menus.main "Identifier" "products" }}
         {{ with index . 0 }}
@@ -9,7 +9,7 @@
         {{ end }}
       {{ end }}
       {{ $currentType := "" }}
-      {{ with first 1 $pgr.Pages }}
+      {{ with first 1 $pages }}
         {{ $currentType = (index . 0).Params.product_type }}
       {{ end }}
 
@@ -64,7 +64,7 @@
           </header>
 
           <div class="product-listing__grid">
-            {{ range $pgr.Pages }}
+            {{ range $pages }}
               {{ $pageCats := slice }}
               {{ with .Params.pallet_category }}
                 {{ $catVal := . }}
@@ -102,37 +102,6 @@
               </article>
             {{ end }}
           </div>
-          {{ if gt $pgr.TotalPages 1 }}
-          <nav class="product-listing__pager" aria-label='{{ i18n "pagination_label" | default "Pagination" }}'>
-            {{ with $pgr.Prev }}
-              <a href="{{ .URL }}" rel="prev" class="product-listing__pager-button">{{ i18n "prev" | default "Prev" }}</a>
-            {{ else }}
-              <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "prev" | default "Prev" }}</span>
-            {{ end }}
-
-            <ul class="product-listing__pager-list" role="list">
-              {{ range $p := $pgr.Pagers }}
-                {{ $isCurrent := eq $p.PageNumber $pgr.PageNumber }}
-                <li class="product-listing__pager-item">
-                  {{ if $isCurrent }}
-                    <span class="product-listing__pager-number product-listing__pager-number--current" aria-current="page" aria-label='{{ i18n "current_page" | default "Current page" }}'>{{ $p.PageNumber }}</span>
-                  {{ else }}
-                    <a class="product-listing__pager-number" href="{{ $p.URL }}"
-                       aria-label='{{ i18n "go_to_page" (dict "n" $p.PageNumber) | default (printf "Go to page %d" $p.PageNumber) }}'>
-                      {{ $p.PageNumber }}
-                    </a>
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-
-            {{ with $pgr.Next }}
-              <a href="{{ .URL }}" rel="next" class="product-listing__pager-button">{{ i18n "next" | default "Next" }}</a>
-            {{ else }}
-              <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "next" | default "Next" }}</span>
-            {{ end }}
-          </nav>
-          {{ end }}
         </div>
       </div>
     </div>
