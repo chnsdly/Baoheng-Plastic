@@ -114,11 +114,11 @@ body.header-hidden {
   border-radius: var(--radius);
   transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease);
   white-space: nowrap;       /* 强制链接不换行 */
+  text-decoration: none;
 }
 
 .navbar__menu a:hover {
-  background-color: unquote("rgb(from var(--on-brand) r g b / 15%)");
-  text-decoration: none;
+  background-color: var(--brand)
 }
 
 .navbar__menu a.is-active {
