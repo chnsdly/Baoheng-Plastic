@@ -32,6 +32,118 @@
   grid-template-columns: repeat(auto-fit, minmax(calc(var(--space) * 36), 1fr));
 }
 
+.product-listing__layout{
+  display: grid;
+  gap: space(2.5);
+  align-items: start;
+}
+
+.product-listing__results{ display: grid; gap: space(2.5); }
+
+.product-nav{
+  border: var(--border-w) solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-soft);
+  padding: space(2);
+  position: sticky;
+  top: calc(var(--space) * 6);
+  display: grid;
+  gap: space(1.5);
+}
+
+.product-nav__header{ display: grid; gap: space(.5); }
+
+.product-nav__eyebrow{
+  margin: 0;
+  font-size: var(--fs-xs);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.product-nav__title{
+  margin: 0;
+  font-size: var(--fs-2);
+}
+
+.product-nav__hint{
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--fs-0);
+}
+
+.product-nav__list,
+.product-nav__submenu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: space(.5);
+}
+
+.product-nav__item{
+  position: relative;
+  border-radius: calc(var(--radius) * .8);
+  transition: background-color var(--t-fast) var(--ease);
+}
+
+.product-nav__item:hover,
+.product-nav__item:focus-within{ background: color-mix(in srgb, var(--surface) 70%, transparent); }
+
+.product-nav__link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: space(1);
+  padding: space(1.25) space(1.5);
+  color: var(--on-surface);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.product-nav__link:focus-visible{ @include focus-ring(); }
+
+.product-nav__chevron{
+  font-size: var(--fs-2);
+  line-height: 1;
+  color: var(--muted);
+}
+
+.product-nav__submenu{
+  display: none;
+  padding-inline-start: space(1.5);
+  border-inline-start: var(--border-w) dashed var(--border);
+}
+
+.product-nav__item:hover > .product-nav__submenu,
+.product-nav__item:focus-within > .product-nav__submenu{
+  display: grid;
+}
+
+.product-nav__sublink{
+  display: flex;
+  align-items: center;
+  gap: space(.75);
+  padding: space(.75) space(1.25);
+  border-radius: calc(var(--radius) * .7);
+  color: var(--muted);
+  text-decoration: none;
+  transition:
+    background-color var(--t-fast) var(--ease),
+    color var(--t-fast) var(--ease),
+    transform var(--t-fast) var(--ease);
+}
+
+.product-nav__sublink:hover,
+.product-nav__sublink:focus-visible{
+  color: var(--on-surface);
+  background: var(--surface);
+  transform: translateX(space(.5));
+}
+
+.product-nav__sublink:focus-visible{ @include focus-ring(); }
+
 .product-listing__card{
   background: var(--card);
   border-radius: var(--radius);
@@ -122,6 +234,7 @@
 @include mq-up(md){
   .product-listing__inner{ gap: space(4); }
   .product-listing__header{ text-align: center; justify-self: center; }
+  .product-listing__layout{ grid-template-columns: minmax(calc(var(--space) * 18), 22rem) 1fr; }
 }
 
 /* ------------------------A11y 分页（tokenized）--------------------- */
