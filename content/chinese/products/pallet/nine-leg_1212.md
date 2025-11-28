@@ -3,6 +3,8 @@ title: "1212-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1212.jpg"
 sku: ""
 product_type: "塑料托盘"
+pallet_category:
+  - "Nestable Pallets"
 specs:
   dimensions: "1200 × 1200 × 140 毫米"
   static_load: "2 吨"
@@ -19,7 +21,6 @@ specs_order:
   - weight
   - material
   - process
-
 ---
 
 {{< quote_request_button >}}
