@@ -1283,7 +1283,6 @@ body[data-drawer-open='true'] {
 
 .product-sidebar {
   background: var(--card);
-  border: var(--border-w) solid var(--border);
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   padding: calc(var(--space) * 2);
@@ -1398,7 +1397,6 @@ body[data-drawer-open='true'] {
   gap: calc(var(--space) * 0.75);
   inline-size: 100%;
   padding: calc(var(--space) * 1) calc(var(--space) * 1.5);
-  background: color-mix(in srgb, var(--brand) 60%, var(--surface));
   box-shadow: var(--shadow);
   border-radius: var(--radius); }
 
@@ -1431,7 +1429,6 @@ body[data-drawer-open='true'] {
 
 .product-listing__media {
   border-radius: var(--radius);
-  border: 1px solid var(--border);
   box-shadow: var(--shadow);
   margin: 0;
   aspect-ratio: 4 / 3;

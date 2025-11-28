@@ -21,7 +21,6 @@
 
 .product-sidebar{
   background: var(--card);
-  border: var(--border-w) solid var(--border);
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   padding: space(2);
@@ -148,7 +147,6 @@
   gap: space(.75);
   inline-size: 100%;
   padding: space(1) space(1.5);
-  background: color-mix(in srgb, var(--brand) 60%, var(--surface));
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   
