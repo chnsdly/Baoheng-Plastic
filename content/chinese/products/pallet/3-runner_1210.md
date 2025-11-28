@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/3-runner_1210.jpg"
 featured_image: "/images/cnc-machine.jpg"
 featured: true
 sku: ""
-product_type: "pallet"
+product_type: "塑料托盘"
 specs:
   dimensions: "1200 × 1000 × 150 毫米"
   static_load: "3 吨"

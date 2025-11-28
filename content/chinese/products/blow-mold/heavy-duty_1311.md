@@ -2,7 +2,7 @@
 title: "1311-BM-HD"
 featured_image_asset: "/images/products/pallet/blow-molding_1311.jpg"
 sku: "1311-BM-HD"
-product_type: "blow-mold"
+product_type: "吹塑可嵌套塑料托盘"
 specs:
   dimensions: "1300 × 1100 × 170 mm"
   static_load: "6 t"

@@ -2,7 +2,7 @@
 title: "1208-BM-NL"
 featured_image_asset: "/images/products/pallet/blow-molding_1208.jpg"
 sku: "1208-BM-NL"
-product_type: "blow-mold"
+product_type: "Nestable Blow-Mold Pallets"
 specs:
   dimensions: "1200 × 800 × 150 mm"
   static_load: "3 t"

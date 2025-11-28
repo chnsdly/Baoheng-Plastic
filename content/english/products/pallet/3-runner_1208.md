@@ -3,7 +3,7 @@ title: "1208-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1208.jpg"
 featured: true
 sku: ""
-product_type: "pallet"
+product_type: "Plastic Pallet"
 specs:
   dimensions: "1200 × 800 × 150 mm"
   static_load: "1.5 t"

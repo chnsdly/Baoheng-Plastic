@@ -2,7 +2,7 @@
 title: "1210-BM-RK"
 featured_image_asset: "/images/products/pallet/blow-molding_1210.jpg"
 sku: "1210-BM-RK"
-product_type: "blow-mold"
+product_type: "吹塑可嵌套塑料托盘"
 specs:
   dimensions: "1200 × 1000 × 160 mm"
   static_load: "5 t"

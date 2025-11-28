@@ -2,7 +2,7 @@
 title: "660L 四轮垃圾箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-660-WB"
-product_type: "waste"
+product_type: "塑料垃圾桶"
 specs:
   capacity: "660 L"
   dimensions: "1250 × 770 × 1220 mm"

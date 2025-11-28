@@ -2,7 +2,7 @@
 title: "6040-SC Stackable Crate"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 sku: "BH-6040-SC"
-product_type: "crate-box"
+product_type: "Plastic Crates & Boxes"
 specs:
   dimensions: "600 × 400 × 330 mm"
   internal_dimensions: "565 × 365 × 315 mm"

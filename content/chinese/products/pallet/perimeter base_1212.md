@@ -2,7 +2,7 @@
 title: "1212-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base_1212.jpg"
 sku: ""
-product_type: "pallet"
+product_type: "塑料托盘"
 specs:
   dimensions: "1200 × 1200 × 150 毫米"
   static_load: "3 吨"
