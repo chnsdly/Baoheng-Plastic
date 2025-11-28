@@ -1,8 +1,8 @@
 ---
-title: "Our Product Catalog"
-description: "Explore high-performance industrial machinery designed for reliability and throughput."
+title: "塑料垃圾桶"
+description: "带盖移动垃圾桶，适用于工厂、园区与公共区域。"
 sitemap:
   changefreq: "weekly"
   priority: 0.8
 ---
-Below is a selection of our core equipment for global manufacturers.
+耐候桶体和灵活脚轮，满足日常清运、保洁与分类回收需求。

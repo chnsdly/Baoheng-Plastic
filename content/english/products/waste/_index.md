@@ -1,8 +1,8 @@
 ---
-title: "Our Product Catalog"
-description: "Explore high-performance industrial machinery designed for reliability and throughput."
+title: "Plastic Waste Bins"
+description: "Mobile waste bins with secure lids for facilities, campuses, and public areas."
 sitemap:
   changefreq: "weekly"
   priority: 0.8
 ---
-Below is a selection of our core equipment for global manufacturers.
+Weather-resistant carts designed for daily collection routes, indoor housekeeping, and recycling programs.
