@@ -3,6 +3,8 @@ title: "1212-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base_1212.jpg"
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Stackable Plastic Pallets"
 specs:
   dimensions: "1200 × 1200 × 150 mm"
   static_load: "3 t"

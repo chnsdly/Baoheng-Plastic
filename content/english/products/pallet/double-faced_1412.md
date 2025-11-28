@@ -3,6 +3,9 @@ title: "1412-PB-ODDF15I"
 featured_image_asset: "/images/products/pallet/double-faced_1412.jpg"
 sku: ""
 product_type: "Plastic Pallet"
+pallet_category:
+  - "Stackable Plastic Pallets"
+  - "Heavy-Duty Plastic Pallets"
 specs:
   dimensions: "1400 × 1200 × 150 mm"
   static_load: "6 t"

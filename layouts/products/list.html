@@ -38,14 +38,16 @@
               {{ end }}
               {{ $categories = uniq (sort $categories) }}
               {{ $hasChildren := gt (len $categories) 0 }}
-              {{ $isActive := hasPrefix $.RelPermalink .URL | or (eq $currentType $menuName) }}
+              {{ $menuURL := .URL | relLangURL }}
+              {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $currentType $menuName) }}
               <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
-                <a class="product-sidebar__link" href="{{ .URL }}">{{ $menuName }}</a>
+                <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
                 {{ if $hasChildren }}
                   <ul class="product-sidebar__submenu" role="list">
                     {{ range $categories }}
                       <li class="product-sidebar__subitem">
-                        <span class="product-sidebar__sublink">{{ . }}</span>
+                        {{ $categoryParam := urlquery . }}
+                        <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $.RelPermalink $categoryParam }}">{{ . }}</a>
                       </li>
                     {{ end }}
                   </ul>
@@ -63,7 +65,19 @@
 
           <div class="product-listing__grid">
             {{ range $pgr.Pages }}
-              <article class="product-listing__card">
+              {{ $pageCats := slice }}
+              {{ with .Params.pallet_category }}
+                {{ $catVal := . }}
+                {{ if eq (printf "%T" $catVal) "string" }}
+                  {{ $pageCats = $pageCats | append $catVal }}
+                {{ else }}
+                  {{ range $catVal }}
+                    {{ $pageCats = $pageCats | append . }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ $pageCats = uniq $pageCats }}
+              <article class="product-listing__card" data-categories="{{ delimit $pageCats "|" }}">
                 <a class="product-listing__card-link" href="{{ .RelPermalink }}">
                   <figure class="product-listing__media">
                     {{ if .Params.featured_image_asset }}
@@ -126,4 +140,49 @@
       </div>
     </div>
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const activeCategory = params.get('category') || '';
+      const cards = document.querySelectorAll('.product-listing__card');
+      const links = document.querySelectorAll('.product-sidebar__sublink');
+
+      const toggleCards = (category) => {
+        cards.forEach((card) => {
+          const list = (card.dataset.categories || '').split('|').filter(Boolean);
+          const matches = !category || list.includes(category);
+          card.style.display = matches ? '' : 'none';
+        });
+
+        links.forEach((link) => {
+          const isActive = category && link.dataset.category === category;
+          link.classList.toggle('product-sidebar__sublink--active', isActive);
+          if (isActive) {
+            link.setAttribute('aria-current', 'true');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      };
+
+      links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const category = link.dataset.category || '';
+          const url = new URL(window.location.href);
+
+          if (category) {
+            url.searchParams.set('category', category);
+          } else {
+            url.searchParams.delete('category');
+          }
+
+          window.history.replaceState({}, '', url.toString());
+          toggleCards(category);
+        });
+      });
+
+      toggleCards(activeCategory);
+    });
+  </script>
 {{ end }}

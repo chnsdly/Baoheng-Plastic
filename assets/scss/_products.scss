@@ -121,6 +121,20 @@
   font-size: var(--fs-xs);
   border-radius: var(--radius-sm);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
+  text-decoration: none;
+  transition: background var(--t-normal) var(--ease), color var(--t-normal) var(--ease);
+}
+
+.product-sidebar__sublink:hover,
+.product-sidebar__sublink:focus-visible{
+  color: var(--on-card);
+  background: color-mix(in srgb, var(--brand) 12%, var(--card));
+}
+
+.product-sidebar__sublink--active{
+  color: var(--on-card);
+  background: color-mix(in srgb, var(--brand) 18%, var(--card));
+  box-shadow: var(--shadow-sm);
 }
 
 .product-sidebar__item--has-children:hover .product-sidebar__submenu,
