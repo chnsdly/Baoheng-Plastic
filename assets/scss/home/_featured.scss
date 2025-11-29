@@ -49,8 +49,8 @@
   transition:transform .15s ease, box-shadow .15s ease;
 }
 .product-card.eq:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(0,0,0,.06);
+  transform: translateY(calc(var(--space) * -0.75));
+  transform: scale(1.04);
 }
 
 /* 封面图：按比例显示，不再压扁 */
@@ -74,7 +74,8 @@
 }
 .product-card.eq .card-body h3{
   margin:.15rem 0 .2rem;      /* ← 标题顶部更紧凑（原 .1/.25） */
-  font-size:1.05rem;
+  font-size:var(--fs-1);
+  font-weight: 400;
   line-height:1.35;
   text-align:center;
 }

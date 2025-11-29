@@ -478,17 +478,18 @@
   <main>
     
 
-<header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h">
-  
+<header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h" data-hero-slider>
   <div class="hero__bg" aria-hidden="true">
-    <picture style="ZgotmplZ">
+    <div class="hero__slides">
+        <div class="hero__slide is-active" data-hero-slide>
+          <picture style="ZgotmplZ">
     <source type="image/webp"
             srcset="/images/hero-bg_hu_871460d42ddeb663.webp 640w, /images/hero-bg_hu_977e5c2c28086358.webp 960w, /images/hero-bg_hu_fd6869ba829d32b9.webp 1440w, /images/hero-bg_hu_bba0b7de032bd84.webp 1920w"
             sizes="100vw">
     <img src="/images/hero-bg_hu_8ad3059ae3d1a968.jpg"
          srcset="/images/hero-bg_hu_95fe6533f62ef57a.jpg 640w, /images/hero-bg_hu_4ec6e82dfb95ace0.jpg 960w, /images/hero-bg_hu_f71e374452dc17bd.jpg 1440w, /images/hero-bg_hu_8ad3059ae3d1a968.jpg 1920w"
          sizes="100vw"
-         alt=".Title"
+         alt="塑料托盘整齐码垛，准备出口运输"
          width="1920" height="790"
          style="aspect-ratio: 1920/790;"
          loading="eager"
@@ -496,10 +497,55 @@
          fetchpriority="high"
          class="hero__img">
   </picture>
+        </div>
+        <div class="hero__slide" data-hero-slide>
+          <picture style="ZgotmplZ">
+    <source type="image/webp"
+            srcset="/images/hero-bg2_hu_cb4e12c0ccf7b33e.webp 640w, /images/hero-bg2_hu_8057fbc48af614d2.webp 960w, /images/hero-bg2_hu_e6992775d4fed7b6.webp 1440w, /images/hero-bg2_hu_731d9d830605375b.webp 1920w"
+            sizes="100vw">
+    <img src="/images/hero-bg2_hu_f3317691b56d812d.JPG"
+         srcset="/images/hero-bg2_hu_f5a0de4185e3d094.JPG 640w, /images/hero-bg2_hu_8235d59031539f7.JPG 960w, /images/hero-bg2_hu_876178929b7e6780.JPG 1440w, /images/hero-bg2_hu_f3317691b56d812d.JPG 1920w"
+         sizes="100vw"
+         alt="工厂自动线装载塑料托盘"
+         width="1920" height="775"
+         style="aspect-ratio: 1920/775;"
+         loading="lazy"
+         decoding='async'
+         
+         class="hero__img">
+  </picture>
+        </div>
+        <div class="hero__slide" data-hero-slide>
+          <picture style="ZgotmplZ">
+    <source type="image/webp"
+            srcset="/images/hero-bg111_hu_5aa0658e3811b30a.webp 640w, /images/hero-bg111_hu_d813dfa32cd9e280.webp 960w, /images/hero-bg111_hu_9bc66dd655270de9.webp 1440w, /images/hero-bg111_hu_453cca7865f9b5ad.webp 1920w"
+            sizes="100vw">
+    <img src="/images/hero-bg111_hu_3e204eb69bc02d7.jpg"
+         srcset="/images/hero-bg111_hu_14ab715853eb61ae.jpg 640w, /images/hero-bg111_hu_74f59411bccd531a.jpg 960w, /images/hero-bg111_hu_9e490a2ec6efe13c.jpg 1440w, /images/hero-bg111_hu_3e204eb69bc02d7.jpg 1920w"
+         sizes="100vw"
+         alt="塑料托盘在仓库货架上使用"
+         width="1920" height="1021"
+         style="aspect-ratio: 1920/1021;"
+         loading="lazy"
+         decoding='async'
+         
+         class="hero__img">
+  </picture>
+        </div>
+    </div>
   </div>
 
   
   <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__nav" data-hero-nav>
+      <button class="hero__control hero__control--prev" type="button" data-hero-prev aria-label="Previous slide">&#8249;</button>
+      <div class="hero__dots" data-hero-dots>
+          <button class="hero__dot is-active" type="button" data-hero-dot="0" aria-label="Go to slide 1"></button>
+          <button class="hero__dot" type="button" data-hero-dot="1" aria-label="Go to slide 2"></button>
+          <button class="hero__dot" type="button" data-hero-dot="2" aria-label="Go to slide 3"></button>
+      </div>
+      <button class="hero__control hero__control--next" type="button" data-hero-next aria-label="Next slide">&#8250;</button>
+    </div>
 
   
   <div class="hero__inner container">
@@ -512,6 +558,49 @@
     </div>
   </div>
 </header>
+<script>
+  (() => {
+    const slider = document.querySelector('[data-hero-slider]');
+    if (!slider) return;
+
+    const slides = Array.from(slider.querySelectorAll('[data-hero-slide]'));
+    if (slides.length <= 1) return;
+
+    const dots = Array.from(slider.querySelectorAll('[data-hero-dot]'));
+    const prevBtn = slider.querySelector('[data-hero-prev]');
+    const nextBtn = slider.querySelector('[data-hero-next]');
+    let activeIndex = 0;
+    let timer;
+
+    const setActive = (index) => {
+      slides[activeIndex].classList.remove('is-active');
+      dots[activeIndex]?.classList.remove('is-active');
+
+      activeIndex = (index + slides.length) % slides.length;
+
+      slides[activeIndex].classList.add('is-active');
+      dots[activeIndex]?.classList.add('is-active');
+    };
+
+    const next = () => setActive(activeIndex + 1);
+    const prev = () => setActive(activeIndex - 1);
+
+    const stop = () => timer && clearInterval(timer);
+    const start = () => {
+      stop();
+      timer = setInterval(next, 5000);
+    };
+
+    nextBtn?.addEventListener('click', () => { next(); start(); });
+    prevBtn?.addEventListener('click', () => { prev(); start(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { setActive(i); start(); }));
+
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+
+    start();
+  })();
+</script>
 
 
 <section class="usps">
@@ -594,7 +683,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/3-runner_1010/">1010-BP-OD3R15</a></h3>
-          
         </div>
       </article>
       
@@ -625,7 +713,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/3-runner_1111/">1111-BP-OD3R15</a></h3>
-          
         </div>
       </article>
       
@@ -656,7 +743,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/nine-leg_1111/">1111-BP-OD9L14</a></h3>
-          
         </div>
       </article>
       
@@ -687,7 +773,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/nine-leg_1208/">1208-BP-OD9L14</a></h3>
-          
         </div>
       </article>
       
@@ -718,7 +803,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/cd_9-leg_1210/">1210-BP-CD9L14I</a></h3>
-          
         </div>
       </article>
       
@@ -749,7 +833,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/3-runner_1210/">1210-BP-OD3R15</a></h3>
-          
         </div>
       </article>
       
@@ -780,7 +863,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/nine-leg_1210/">1210-BP-OD9L14</a></h3>
-          
         </div>
       </article>
       
@@ -811,7 +893,6 @@
 
         <div class="card-body">
           <h3 class="clamp2"><a href="/zh/products/pallet/double-faced_1311/">1311-PB-ODDF15I</a></h3>
-          
         </div>
       </article>
       
@@ -1646,11 +1727,14 @@
         display: block;
         width:  calc(var(--wa-size-desktop) * 0.56);
         height: calc(var(--wa-size-desktop) * 0.56);
+        filter: drop-shadow(0 1px 1px rgba(0,0,0,.08));
+        transition: transform .15s ease, filter .15s ease;
       }
 
       .wa-fab__btn:hover { background: #1faa56; transform: translateY(-1px); box-shadow: 0 10px 22px rgba(0,0,0,.18); }
       .wa-fab__btn:active { transform: translateY(0); box-shadow: 0 6px 16px rgba(0,0,0,.14); }
       .wa-fab__btn:focus-visible { box-shadow: 0 0 0 3px rgba(37,211,102,.35), 0 8px 20px rgba(0,0,0,.15); }
+      .wa-fab__btn:hover .wa-fab__icon { transform: scale(1.05); filter: drop-shadow(0 2px 2px rgba(0,0,0,.12)); }
 
        
       @supports (padding: max(0px)) {

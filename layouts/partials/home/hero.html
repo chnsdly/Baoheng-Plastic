@@ -86,7 +86,7 @@
     const stop = () => timer && clearInterval(timer);
     const start = () => {
       stop();
-      timer = setInterval(next, 7000);
+      timer = setInterval(next, 5000);
     };
 
     nextBtn?.addEventListener('click', () => { next(); start(); });

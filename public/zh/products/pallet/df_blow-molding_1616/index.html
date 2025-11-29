@@ -1104,6 +1104,8 @@
 
           <div class="product-overview__body">
             
+              <p class="product-overview__description">加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。</p>
+            
 
             <div class="product-overview__actions">
               <a class="button button--primary product-overview__cta" href="/zh/contact">获取报价</a>
@@ -1137,7 +1139,7 @@
         <section class="product-details" aria-labelledby="product-details-heading">
           <div class="product-details__header">
             <h2 class="product-details__title" id="product-details-heading">产品详情</h2>
-            
+            <p class="product-details__intro">为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。</p>
           </div>
 
           <div class="product-details__specs">
@@ -1164,10 +1166,64 @@
           </div>
 
           
+            <div class="product-details__gallery" aria-label="产品图集">
+              
+                
+                
+                  <figure class="product-details__figure">
+                    <picture style='display:block;background:#f3f4f6 url("/images/products/pallet/3-runner_1008_hu_8211683d70f3a3dd.webp") center/cover no-repeat;'>
+    <source type="image/avif"
+            srcset='/images/products/pallet/3-runner_1008_hu_1adf565a178ec60d.jpg 640w'
+            sizes="(max-width: 64rem) 100vw, 50vw">
+    <source type="image/webp"
+            srcset='/images/products/pallet/3-runner_1008_hu_58ade0e4a79dd27.webp 640w'
+            sizes="(max-width: 64rem) 100vw, 50vw">
+    <img
+      src='/images/products/pallet/3-runner_1008_hu_c6f63679825fe958.jpg'
+      srcset='/images/products/pallet/3-runner_1008_hu_c6f63679825fe958.jpg 640w'
+      sizes='(max-width: 64rem) 100vw, 50vw'
+      alt='1008-BP-OD3R15 托盘俯视图'
+      width='640' height='480'
+      style='aspect-ratio: 640/480;'
+      loading='lazy'
+      decoding='async'class='product-details__image'
+    >
+    <noscript><img src='/images/products/pallet/3-runner_1008_hu_c6f63679825fe958.jpg' alt='1008-BP-OD3R15 托盘俯视图' width='640' height='480' class='product-details__image'></noscript>
+  </picture>
+                  </figure>
+                
+              
+                
+                
+                  <figure class="product-details__figure">
+                    <picture style='display:block;background:#f3f4f6 url("/images/products/pallet/3-runner_1008_hu_8211683d70f3a3dd.webp") center/cover no-repeat;'>
+    <source type="image/avif"
+            srcset='/images/products/pallet/3-runner_1008_hu_1adf565a178ec60d.jpg 640w'
+            sizes="(max-width: 64rem) 100vw, 50vw">
+    <source type="image/webp"
+            srcset='/images/products/pallet/3-runner_1008_hu_58ade0e4a79dd27.webp 640w'
+            sizes="(max-width: 64rem) 100vw, 50vw">
+    <img
+      src='/images/products/pallet/3-runner_1008_hu_c6f63679825fe958.jpg'
+      srcset='/images/products/pallet/3-runner_1008_hu_c6f63679825fe958.jpg 640w'
+      sizes='(max-width: 64rem) 100vw, 50vw'
+      alt='1008-BP-OD3R15 托盘仓储场景'
+      width='640' height='480'
+      style='aspect-ratio: 640/480;'
+      loading='lazy'
+      decoding='async'class='product-details__image'
+    >
+    <noscript><img src='/images/products/pallet/3-runner_1008_hu_c6f63679825fe958.jpg' alt='1008-BP-OD3R15 托盘仓储场景' width='640' height='480' class='product-details__image'></noscript>
+  </picture>
+                  </figure>
+                
+              
+            </div>
+          
 
           <div class="product-details__form">
-            
-            
+            <h3 class="product-details__form-title">告诉我们您的载荷与周转需求</h3>
+            <p class="product-details__form-description">说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。</p>
             
 
 
@@ -1310,11 +1366,14 @@
         display: block;
         width:  calc(var(--wa-size-desktop) * 0.56);
         height: calc(var(--wa-size-desktop) * 0.56);
+        filter: drop-shadow(0 1px 1px rgba(0,0,0,.08));
+        transition: transform .15s ease, filter .15s ease;
       }
 
       .wa-fab__btn:hover { background: #1faa56; transform: translateY(-1px); box-shadow: 0 10px 22px rgba(0,0,0,.18); }
       .wa-fab__btn:active { transform: translateY(0); box-shadow: 0 6px 16px rgba(0,0,0,.14); }
       .wa-fab__btn:focus-visible { box-shadow: 0 0 0 3px rgba(37,211,102,.35), 0 8px 20px rgba(0,0,0,.15); }
+      .wa-fab__btn:hover .wa-fab__icon { transform: scale(1.05); filter: drop-shadow(0 2px 2px rgba(0,0,0,.12)); }
 
        
       @supports (padding: max(0px)) {

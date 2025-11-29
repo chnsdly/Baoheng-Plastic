@@ -1301,11 +1301,14 @@
         display: block;
         width:  calc(var(--wa-size-desktop) * 0.56);
         height: calc(var(--wa-size-desktop) * 0.56);
+        filter: drop-shadow(0 1px 1px rgba(0,0,0,.08));
+        transition: transform .15s ease, filter .15s ease;
       }
 
       .wa-fab__btn:hover { background: #1faa56; transform: translateY(-1px); box-shadow: 0 10px 22px rgba(0,0,0,.18); }
       .wa-fab__btn:active { transform: translateY(0); box-shadow: 0 6px 16px rgba(0,0,0,.14); }
       .wa-fab__btn:focus-visible { box-shadow: 0 0 0 3px rgba(37,211,102,.35), 0 8px 20px rgba(0,0,0,.15); }
+      .wa-fab__btn:hover .wa-fab__icon { transform: scale(1.05); filter: drop-shadow(0 2px 2px rgba(0,0,0,.12)); }
 
        
       @supports (padding: max(0px)) {
