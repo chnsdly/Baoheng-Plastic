@@ -2,6 +2,13 @@
 {{ if and $usps $usps.enable }}
 <section class="usps">
   <div class="container container--wide usps__container">
+    <div class="usps__header">
+      <p class="usps__eyebrow">{{ i18n "usps_eyebrow" }}</p>
+      <div class="usps__headline">
+        <h2 class="usps__heading">{{ default (i18n "usps_heading") $usps.heading }}</h2>
+        <p class="usps__subtitle">{{ default (i18n "usps_subtitle") $usps.subtitle }}</p>
+      </div>
+    </div>
     {{ with $usps.items }}
     <ul class="usps__list">
       {{ range . }}
