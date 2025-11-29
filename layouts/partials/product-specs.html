@@ -47,7 +47,10 @@
     {{- $label := (i18n (printf "spec.label.%s" $norm)) | default (humanize $key) -}}
     {{- $type := printf "%T" $value -}}
     {{- $val := cond (or (eq $type "[]string") (eq $type "[]interface {}")) (delimit $value ", ") $value -}}
-    <li><strong>{{ $label }}:</strong> {{ $val }}</li>
+    <li class="spec-list__item">
+      <span class="spec-list__label">{{ $label }}</span>
+      <span class="spec-list__value">{{ $val }}</span>
+    </li>
     {{- end -}}
     {{- end -}}
   </ul>
