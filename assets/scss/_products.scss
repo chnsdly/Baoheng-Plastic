@@ -434,7 +434,6 @@
   display: flex;
   gap: space(.75);
   align-items: center;
-  box-shadow: var(--shadow);
 }
 
 .product-overview__social{
@@ -444,17 +443,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: var(--border-w) solid var(--border);
-  color: var(--muted);
-  box-shadow: var(--shadow-sm, 0 1px 2px rgba(0,0,0,.06));
-  transition: transform var(--t-fast) var(--ease), background var(--t-normal) var(--ease), color var(--t-normal) var(--ease);
+  border: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  transition: transform var(--t-fast) var(--ease);
 }
 
 .product-overview__social:hover,
 .product-overview__social:focus-visible{
   transform: translateY(-2px);
-  background: color-mix(in srgb, var(--brand) 12%, var(--card));
-  color: var(--on-card);
 }
 
 .product-overview__social svg{
