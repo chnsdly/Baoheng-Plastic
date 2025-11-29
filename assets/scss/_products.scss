@@ -510,27 +510,51 @@
   padding: 0;
   margin: 0;
   display: grid;
-  gap: space(.75);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 0;
+  border-radius: var(--radius);
+  border: var(--border-w) solid var(--border);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--surface) 96%, var(--card)),
+    color-mix(in srgb, var(--surface) 90%, var(--card))
+  );
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 .spec-list li{
   display: grid;
-  grid-template-columns: minmax(8rem, 1fr) 1.2fr;
+  grid-template-columns: minmax(9.5rem, .95fr) 1.35fr;
   align-items: start;
-  gap: space(.6);
-  padding: space(.9) space(1);
-  border: var(--border-w) solid var(--border);
-  border-radius: var(--radius-sm);
-  background: color-mix(in srgb, var(--surface) 82%, var(--card));
-  box-shadow: var(--shadow);
+  gap: space(.8);
+  padding: space(1.1) space(1.25);
+  position: relative;
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+}
+.spec-list li:nth-child(odd){
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+}
+.spec-list li + li::before{
+  content: "";
+  position: absolute;
+  inset-inline: space(1.25);
+  inset-block-start: 0;
+  block-size: var(--border-w);
+  background: color-mix(in srgb, var(--border) 85%, transparent);
 }
 .spec-list strong{
   font-size: var(--fs-xs);
-  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--muted) 90%, var(--on-card));
+  border-inline-end: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
+  padding-inline-end: space(.85);
+  margin-inline-end: space(.5);
 }
 .spec-list li span,
 .spec-list li :not(strong){
   color: var(--on-card);
+  line-height: 1.6;
 }
 
 .product-details__gallery{
