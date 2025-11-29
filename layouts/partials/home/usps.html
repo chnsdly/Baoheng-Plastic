@@ -2,16 +2,27 @@
 {{ if and $usps $usps.enable }}
 <section class="usps">
   <div class="container container--wide usps__container">
+    <div class="usps__header">
+      {{ with or $usps.eyebrow "Baoheng Advantage" }}<p class="usps__eyebrow">{{ . }}</p>{{ end }}
+      {{ with or $usps.title "Engineered for dependable logistics" }}<h2 class="usps__headline">{{ . }}</h2>{{ end }}
+      {{ with or $usps.subtitle "Built-to-last pallets, audited materials, and delivery support that keeps your supply chain moving." }}
+      <p class="usps__subtitle">{{ . }}</p>
+      {{ end }}
+    </div>
+
     {{ with $usps.items }}
     <ul class="usps__list">
       {{ range . }}
       <li class="usps__item">
-        <div class="usps__icon" aria-hidden="true">
-          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
-        </div>
-        <div class="usps__content">
-          <p class="usps__title">{{ .title }}</p>
-          <p class="usps__description">{{ .description }}</p>
+        <div class="usps__card">
+          <div class="usps__icon" aria-hidden="true">
+            {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+          </div>
+          <div class="usps__content">
+            <p class="usps__label">{{ or $usps.item_label "Signature strength" }}</p>
+            <p class="usps__title">{{ .title }}</p>
+            <p class="usps__description">{{ .description }}</p>
+          </div>
         </div>
       </li>
       {{ end }}

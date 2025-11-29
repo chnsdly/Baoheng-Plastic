@@ -13,6 +13,10 @@ hero_slides:
 ##########################################################
 usps:
   enable: true
+  eyebrow: "为现代供应链而生"
+  title: "全球信赖的高精度塑料托盘"
+  subtitle: "自有工厂、可追溯原料与出口级物流支持，确保车队更可靠、更洁净、随时出发。"
+  item_label: "核心优势"
   items:
     - icon: "fas fa-certificate"
       title: "ISO认证"
