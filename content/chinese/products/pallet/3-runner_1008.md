@@ -4,11 +4,10 @@ featured_image_asset: "/images/products/pallet/3-runner_1008.jpg"
 product_type: "塑料托盘"
 pallet_category:
   - "可上架塑料托盘"
-summary: "1000×800 毫米可上架塑料托盘，适合狭窄货架与洁净场景。"
-hero_description: "加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。"
+hero_description: "加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"
-detail_intro: "为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。"
+detail_intro: "为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。"
 detail_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "1008-BP-OD3R15 托盘俯视图"
