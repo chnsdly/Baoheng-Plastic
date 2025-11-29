@@ -2,7 +2,7 @@
 {{- $specs := $p.Params.specs -}}
 
 <section class="card">
-  <h2>{{ i18n "spec.heading" }}</h2>
+  <h2 class="spec-list__heading">{{ i18n "spec.heading" }}</h2>
 
   {{- if $specs -}}
   {{- $order := slice -}}
@@ -38,7 +38,7 @@
   {{- end -}}
 
   {{- if gt (len $entries) 0 -}}
-  <ul class="spec-list">
+  <ul class="spec-list" role="list">
     {{- range $entries -}}
     {{- $key := .key -}}
     {{- $value := .value -}}
@@ -47,7 +47,10 @@
     {{- $label := (i18n (printf "spec.label.%s" $norm)) | default (humanize $key) -}}
     {{- $type := printf "%T" $value -}}
     {{- $val := cond (or (eq $type "[]string") (eq $type "[]interface {}")) (delimit $value ", ") $value -}}
-    <li><strong>{{ $label }}:</strong> {{ $val }}</li>
+    <li class="spec-list__item">
+      <span class="spec-list__label">{{ $label }}</span>
+      <span class="spec-list__value">{{ $val }}</span>
+    </li>
     {{- end -}}
     {{- end -}}
   </ul>
