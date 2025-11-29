@@ -1,40 +1,216 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<div class="container">
-<article class="product-detail">
-  <header class="product-hero">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
-  </header>
-
-  <div class="product-layout">
-    <div class="product-gallery">
-      {{ if .Params.featured_image_asset }}
-      {{ partial "picture.html" (dict
-      "ctx" .
-      "src" .Params.featured_image_asset
-      "alt" .Title
-      "w" (slice 640 960 1440)
-      "sizes" "(max-width: 900px) 100vw, 720px"
-      "class" "rounded-xl"
-      "fetch" ""
-      ) }}
-      {{ else }}
-      <img src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
+  {{ $productMenus := slice }}
+  {{ with where .Site.Menus.main "Identifier" "products" }}
+    {{ with index . 0 }}
+      {{ $productMenus = sort .Children "Weight" }}
+    {{ end }}
+  {{ end }}
+  {{ $currentType := .Params.product_type }}
+  {{ $currentCategories := slice }}
+  {{ with .Params.pallet_category }}
+    {{ $catVal := . }}
+    {{ if eq (printf "%T" $catVal) "string" }}
+      {{ $currentCategories = $currentCategories | append $catVal }}
+    {{ else }}
+      {{ range $catVal }}
+        {{ $currentCategories = $currentCategories | append . }}
       {{ end }}
+    {{ end }}
+  {{ end }}
 
+  <section class="product-single">
+    <div class="container product-single__container">
+      <div class="product-single__grid">
+        <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
+          <div class="product-sidebar__header">
+            <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
+          </div>
+          <ul class="product-sidebar__list" role="list">
+            {{ range $productMenus }}
+              {{ $menuName := .Name }}
+              {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
+              {{ $categories := slice }}
+              {{ range $matchingPages }}
+                {{ with .Params.pallet_category }}
+                  {{ $catVal := . }}
+                  {{ if eq (printf "%T" $catVal) "string" }}
+                    {{ $categories = $categories | append $catVal }}
+                  {{ else }}
+                    {{ range $catVal }}
+                      {{ $categories = $categories | append . }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ $categories = uniq (sort $categories) }}
+              {{ $hasChildren := gt (len $categories) 0 }}
+              {{ $menuURL := .URL | relLangURL }}
+              {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $currentType $menuName) }}
+              <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
+                <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
+                {{ if $hasChildren }}
+                  <ul class="product-sidebar__submenu" role="list">
+                    {{ range $categories }}
+                      {{ $categoryParam := urlquery . }}
+                      {{ $isCurrentCategory := in $currentCategories . }}
+                      <li class="product-sidebar__subitem">
+                        <a class="product-sidebar__sublink{{ if $isCurrentCategory }} product-sidebar__sublink--active{{ end }}" data-category="{{ . }}" href="{{ printf "%s?category=%s" $menuURL $categoryParam }}">{{ . }}</a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </aside>
+
+        <div class="product-single__content">
+          <header class="product-single__header">
+            <div class="product-single__heading">
+              {{ with (or .Params.product_type (i18n "product_menu" | default "Products")) }}<p class="product-single__eyebrow">{{ . }}</p>{{ end }}
+              <h1 class="product-single__title">{{ .Title }}</h1>
+              {{ with .Params.summary }}<p class="product-single__lede">{{ . }}</p>{{ end }}
+            </div>
+
+            <div class="product-single__hero">
+              <div class="product-single__visual">
+                {{ if .Params.featured_image_asset }}
+                  {{ partial "picture.html" (dict
+                    "ctx" .
+                    "src" .Params.featured_image_asset
+                    "alt" .Title
+                    "w" (slice 720 960 1280)
+                    "sizes" "(min-width: 64rem) 640px, (min-width: 48rem) 50vw, 100vw"
+                    "class" "product-single__image"
+                    "fetch" ""
+                  ) }}
+                {{ else }}
+                  <img class="product-single__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
+                {{ end }}
+              </div>
+
+              <div class="product-single__info">
+                {{ with (or .Params.hero_blurb .Params.summary) }}<p class="product-single__description">{{ . }}</p>{{ end }}
+                <div class="product-single__actions">
+                  <a class="button button--primary product-single__cta" href="{{ relLangURL "contact" }}">{{ .Params.quote_label | default "Get a Quote" }}</a>
+                  {{ $social := .Params.social_links }}
+                  {{ if $social }}
+                  <ul class="product-single__social" role="list" aria-label="Social links">
+                    {{ range $platform := (slice "linkedin" "twitter" "youtube" "facebook") }}
+                      {{ $href := index $social $platform }}
+                      {{ if $href }}
+                        <li class="product-single__social-item">
+                          <a class="product-single__social-link" href="{{ $href }}" target="_blank" rel="noopener" aria-label="{{ title $platform }}">
+                            {{- partial "svg/social.html" $platform -}}
+                          </a>
+                        </li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <section class="product-single__details">
+            {{ $detailHeading := .Params.detail_heading | default "产品详情" }}
+            {{ with $detailHeading }}<h2 class="product-single__section-title">{{ . }}</h2>{{ end }}
+            {{ with .Params.detail_summary }}<p class="product-single__section-lede">{{ . }}</p>{{ end }}
+
+            <div class="product-single__spec-card">
+              {{ partial "product-specs.html" . }}
+            </div>
+
+            {{ with .Params.detail_images }}
+              <div class="product-single__media-pair">
+                {{ range first 2 . }}
+                  {{ $src := cond (reflect.IsMap .) (index . "src") . }}
+                  {{ $alt := cond (reflect.IsMap .) (default $.Title (index . "alt")) $.Title }}
+                  <figure class="product-single__media-item">
+                    {{ if $src }}
+                      {{ partial "picture.html" (dict
+                        "ctx" $.
+                        "src" $src
+                        "alt" $alt
+                        "w" (slice 720 960 1280)
+                        "sizes" "(min-width: 64rem) 34vw, (min-width: 48rem) 50vw, 100vw"
+                        "class" "product-single__detail-image"
+                        "fetch" ""
+                      ) }}
+                    {{ end }}
+                  </figure>
+                {{ end }}
+              </div>
+            {{ end }}
+
+            <div class="product-single__form">
+              {{ with .Params.form_title }}<h3 class="product-single__form-title">{{ . }}</h3>{{ end }}
+              {{ with .Params.form_copy }}<p class="product-single__form-copy">{{ . }}</p>{{ end }}
+              {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-
-    <aside class="product-specs card">
-      {{ partial "product-specs.html" . }}
-    </aside>
-
-  </div>
-
-  <section class="product-content">
-    {{ .Content }}
   </section>
-</article>
-</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const activeCategory = params.get('category') || '';
+      const cards = document.querySelectorAll('.product-listing__card');
+      const links = document.querySelectorAll('.product-sidebar__sublink');
+      const pager = document.querySelector('.product-listing__pager');
+
+      const toggleCards = (category) => {
+        cards.forEach((card) => {
+          const list = (card.dataset.categories || '').split('|').filter(Boolean);
+          const defaultVisible = card.dataset.defaultVisible === 'true';
+          const matches = category ? list.includes(category) : defaultVisible;
+          card.style.display = matches ? '' : 'none';
+        });
+
+        links.forEach((link) => {
+          const isActive = category && link.dataset.category === category;
+          link.classList.toggle('product-sidebar__sublink--active', isActive);
+          if (isActive) {
+            link.setAttribute('aria-current', 'true');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+        if (pager) {
+          pager.style.display = category ? 'none' : '';
+        }
+      };
+
+      links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          const category = link.dataset.category || '';
+          const linkUrl = new URL(link.href, window.location.origin);
+
+          if (linkUrl.pathname !== window.location.pathname) {
+            return;
+          }
+
+          event.preventDefault();
+          const url = new URL(window.location.href);
+
+          if (category) {
+            url.searchParams.set('category', category);
+          } else {
+            url.searchParams.delete('category');
+          }
+
+          window.history.replaceState({}, '', url.toString());
+          toggleCards(category);
+        });
+      });
+
+      toggleCards(activeCategory);
+    });
+  </script>
 {{ end }}
