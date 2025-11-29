@@ -3,6 +3,13 @@ title: "Baoheng Plastic"
 hero_title: " "
 hero_description: " "
 hero_bg_asset: "images/hero-bg.jpg"
+hero_slides:
+  - image: "images/hero-bg.jpg"
+    alt: "仓储使用的塑料托盘"
+  - image: "images/hero-bg2.JPG"
+    alt: "出口堆码的塑料托盘"
+  - image: "images/hero-bg111.jpg"
+    alt: "塑料托盘注塑生产线"
 ##########################################################
 usps:
   enable: true

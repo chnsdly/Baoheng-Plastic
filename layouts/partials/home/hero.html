@@ -1,33 +1,110 @@
+{{- $slides := .Params.hero_slides -}}
+{{- if or (not $slides) (eq (len $slides) 0) -}}
+  {{- $fallback := .Params.hero_bg_asset | default "images/hero-bg.jpg" -}}
+  {{- $slides = slice (dict "image" $fallback) -}}
+{{- end -}}
+
 <header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h">
-  <!-- 背景层 -->
-  <div class="hero__bg" aria-hidden="true">
-    {{ partial "smart-picture.html" (dict
-      "ctx"   .
-      "src"   .Params.hero_bg_asset
-      "alt"   ".Title"
-      "class" "hero__img"
-      "fetch" "high"
-      "sizes" "100vw"
-      "w"     (slice 640 960 1440 1920 2560)
-      "lqip"  true
-    ) }}
+  <div class="hero__carousel" data-hero-carousel>
+    <div class="hero__slides">
+      {{- range $index, $slide := $slides -}}
+        {{- $image := or (index $slide "image") (index $slide "asset") -}}
+        {{- $alt := or (index $slide "alt") $.Title -}}
+        <div class="hero__slide{{ if eq $index 0 }} is-active{{ end }}" data-hero-slide aria-hidden="{{ not (eq $index 0) }}">
+          <div class="hero__bg" aria-hidden="true">
+            {{ partial "smart-picture.html" (dict
+              "ctx"   $.
+              "src"   $image
+              "alt"   $alt
+              "class" "hero__img"
+              "fetch" "high"
+              "sizes" "100vw"
+              "w"     (slice 640 960 1440 1920 2560)
+              "lqip"  true
+            ) }}
+          </div>
+        </div>
+      {{- end -}}
+    </div>
   </div>
 
-  <!-- 遮罩层（与 bg 同级，避免被包进去） -->
   <div class="hero__overlay" aria-hidden="true"></div>
 
-  <!-- 内容层 -->
   <div class="hero__inner container">
     <div class="hero__content">
       <h1 id="hero-h">{{ with .Params.hero_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
       {{ with or .Params.hero_description (or .Description .Params.description) }}
         <p class="hero__desc">{{ . }}</p>
       {{ end }}
-      <!-- <div class="hero__actions">
-        <a class="button button--primary" href="{{ "products" | relLangURL }}">
-          {{ i18n "view_products" | default "View products" }}
-        </a>
-      </div> -->
     </div>
+
+    {{- if gt (len $slides) 1 -}}
+      <div class="hero__controls" aria-label="Hero image carousel controls">
+        <div class="hero__arrows">
+          <button class="hero__arrow" type="button" data-hero-prev aria-label="Previous slide">‹</button>
+          <button class="hero__arrow" type="button" data-hero-next aria-label="Next slide">›</button>
+        </div>
+        <div class="hero__dots" role="tablist" aria-label="Hero slide selector">
+          {{- range $index, $_ := $slides -}}
+            <button class="hero__dot{{ if eq $index 0 }} is-active{{ end }}" type="button" data-hero-dot aria-label="Go to slide {{ add $index 1 }}"></button>
+          {{- end -}}
+        </div>
+      </div>
+    {{- end -}}
   </div>
 </header>
+
+{{- if gt (len $slides) 1 -}}
+  <script>
+    (() => {
+      const hero = document.currentScript?.previousElementSibling || document.querySelector('.hero--home');
+      if (!hero) return;
+      const slides = Array.from(hero.querySelectorAll('[data-hero-slide]'));
+      if (slides.length <= 1) return;
+
+      const dots = Array.from(hero.querySelectorAll('[data-hero-dot]'));
+      const prevBtn = hero.querySelector('[data-hero-prev]');
+      const nextBtn = hero.querySelector('[data-hero-next]');
+      const autoplayDelay = 7500;
+      let current = 0;
+      let timer;
+
+      const showSlide = (index) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, idx) => {
+          const active = idx === current;
+          slide.classList.toggle('is-active', active);
+          slide.setAttribute('aria-hidden', String(!active));
+        });
+        dots.forEach((dot, idx) => dot.classList.toggle('is-active', idx === current));
+      };
+
+      const next = () => showSlide(current + 1);
+      const prev = () => showSlide(current - 1);
+
+      const resetTimer = () => {
+        clearInterval(timer);
+        timer = setInterval(next, autoplayDelay);
+      };
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          showSlide(idx);
+          resetTimer();
+        });
+      });
+
+      prevBtn?.addEventListener('click', () => {
+        prev();
+        resetTimer();
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        next();
+        resetTimer();
+      });
+
+      resetTimer();
+    })();
+  </script>
+{{- end -}}
