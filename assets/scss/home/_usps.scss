@@ -6,11 +6,11 @@
     linear-gradient(135deg, color-mix(in oklab, #0b1224, white 88%), color-mix(in oklab, #0b1224, white 78%));
 
   position: relative;
-  overflow: hidden;
   isolation: isolate;
-  background: var(--usps-surface);
-  color: var(--on-surface);
+  overflow: hidden;
   padding-block: space(6);
+  color: var(--on-surface);
+  background: var(--usps-surface);
 }
 
 .usps::after {
@@ -20,72 +20,30 @@
   border-radius: calc(var(--radius) * 3);
   background: radial-gradient(circle at 20% 30%, color-mix(in oklab, white, transparent 60%), transparent 50%);
   opacity: 0.55;
-  pointer-events: none;
   mix-blend-mode: screen;
+  pointer-events: none;
 }
 
 .usps__container {
   position: relative;
   z-index: 1;
-  display: grid;
-  gap: space(4);
-}
-
-.usps__header {
-  display: grid;
-  gap: space(1);
-  align-items: start;
-  max-width: 780px;
-}
-
-.usps__eyebrow {
-  margin: 0;
-  display: inline-flex;
-  width: fit-content;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  background: color-mix(in oklab, var(--brand), transparent 72%);
-  color: var(--on-brand);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.88rem;
-}
-
-.usps__headline {
-  display: grid;
-  gap: space(0.75);
-}
-
-.usps__heading {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  letter-spacing: -0.01em;
-  color: #0f172a;
-}
-
-.usps__subtitle {
-  margin: 0;
-  color: color-mix(in oklab, #0f172a, white 22%);
-  font-size: 1.05rem;
-  line-height: 1.6;
 }
 
 .usps__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   gap: space(2.5);
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .usps__item {
   position: relative;
-  padding: space(1.75);
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: space(1.25);
   align-items: center;
+  gap: space(1.25);
+  padding: space(1.75);
   border-radius: calc(var(--radius) * 1.5);
   background: color-mix(in oklab, white, transparent 12%);
   box-shadow:
@@ -99,8 +57,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: inherit;
   padding: 1px;
+  border-radius: inherit;
   background: linear-gradient(135deg, color-mix(in oklab, var(--brand), transparent 15%), transparent 70%);
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
@@ -115,11 +73,11 @@
 }
 
 .usps__icon {
+  display: inline-grid;
+  place-items: center;
   width: 88px;
   height: 88px;
   border-radius: 22px;
-  display: inline-grid;
-  place-items: center;
   font-size: 2.75rem;
   color: white;
   background: linear-gradient(135deg, color-mix(in oklab, var(--brand), #22d3ee 20%), #1e293b);
@@ -133,17 +91,17 @@
 
 .usps__title {
   margin: 0;
-  font-size: var(--fs-3);
-  font-weight: 800;
   color: #0f172a;
+  font-weight: 800;
   letter-spacing: -0.01em;
+  font-size: var(--fs-3);
 }
 
 .usps__description {
   margin: 0;
   color: color-mix(in oklab, #0f172a, white 40%);
-  font-size: 1rem;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 @media (min-width: 64rem) {
