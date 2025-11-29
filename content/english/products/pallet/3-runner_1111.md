@@ -24,6 +24,17 @@ specs_order:
   - material
   - process
 
+hero_description: "A durable rackable pallet that keeps loads stable across automated lines, store backrooms, and export shipping lanes. Its reinforced runners support repeated use without compromising cleanliness."
+contact_cta_label: "Request a quote"
+contact_cta_link: "/contact"
+detail_intro: "Designed for retailers and 3PLs that need a compact footprint without sacrificing rack performance, the 1008-BP-OD3R15 pairs dense material with reinforced steel options to maintain deck stiffness."
+detail_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Top deck of the 1008-BP-OD3R15 pallet"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 pallet staged for warehouse use"
+form_title: "Tell us about your load requirements"
+form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
 
 {{< quote_request_button >}}
