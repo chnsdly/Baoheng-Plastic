@@ -13,6 +13,10 @@ hero_slides:
 ##########################################################
 usps:
   enable: true
+  eyebrow: "Built for modern supply chains"
+  title: "Precision plastic pallets trusted worldwide"
+  subtitle: "A dedicated factory, audited materials, and export-ready logistics keep your fleet reliable, clean, and ready for the next shipment."
+  item_label: "Signature strength"
   items:
     - icon: "fas fa-certificate"
       title: "ISO certification"
