@@ -457,9 +457,13 @@
   color: var(--on-card);
 }
 
-.product-overview__social svg{
+.product-overview__social svg,
+.product-overview__social img{
   inline-size: 18px;
   block-size: 18px;
+}
+
+.product-overview__social svg{
   fill: currentColor;
 }
 
