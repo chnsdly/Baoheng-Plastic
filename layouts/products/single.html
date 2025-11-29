@@ -65,9 +65,7 @@
         {{ $gallery := .Params.detail_gallery }}
 
         <header class="product-single__header">
-          <p class="product-single__eyebrow">{{ .Params.product_type }}</p>
           <h1 class="product-single__title">{{ .Title }}</h1>
-          {{ with .Params.summary }}<p class="product-single__summary">{{ . }}</p>{{ end }}
         </header>
 
         <div class="product-overview">
