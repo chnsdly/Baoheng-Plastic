@@ -13,6 +13,9 @@ hero_slides:
 ##########################################################
 usps:
   enable: true
+  eyebrow: "价值支柱"
+  title: "为关键物流而生"
+  description: "每一个托盘都能在自动化、跨境运输与食品级要求下保持稳健表现。"
   items:
     - icon: "fas fa-certificate"
       title: "ISO认证"
