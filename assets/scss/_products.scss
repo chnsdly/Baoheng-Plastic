@@ -74,11 +74,12 @@
   gap: space(1);
   inline-size: 100%;
   color: var(--on-card);
-  
+
   font-weight: 700;
   padding: space(1) space(1.25);
   border-radius: inherit;
   position: relative;
+  text-decoration: none;
 }
 
 .product-sidebar__link::after{
@@ -100,6 +101,9 @@
   transform: rotate(45deg);
   opacity: .7;
 }
+
+.product-sidebar__link:hover,
+.product-sidebar__link:focus-visible{ text-decoration: none; }
 
 .product-sidebar__link .product-sidebar__sublink:hover
 .product-sidebar__link .product-sidebar__sublink:focus-within{
@@ -145,6 +149,7 @@
 .product-sidebar__sublink:focus-visible{
   color: var(--on-card);
   background: color-mix(in srgb, var(--brand) 12%, var(--card));
+  text-decoration: none;
 }
 
 .product-sidebar__sublink--active{
@@ -501,18 +506,34 @@
   border: var(--border-w) solid var(--border);
 }
 
+.spec-list__heading{ margin-top: 0; }
+
 .spec-list{
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  gap: space(1);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
-.spec-list li{
-  padding: space(.7) 0;
-  border-bottom: var(--border-w) dashed var(--border);
+
+.spec-list__item{
+  display: grid;
+  gap: space(.35);
+  padding: space(1.25);
+  border-radius: var(--radius-sm);
+  border: 1px dashed color-mix(in srgb, var(--border) 70%, transparent);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
 }
-.spec-list li:last-child{
-  border-bottom: 0;
+
+.spec-list__label{
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
+
+.spec-list__value{ color: var(--on-card); }
 
 .product-details__gallery{
   display: grid;
@@ -558,6 +579,8 @@
 .product-details__form .lead-form{
   display: grid;
   gap: space(1);
+  max-width: none;
+  margin-inline: 0;
 }
 
 .product-details__form .lead-form label{
