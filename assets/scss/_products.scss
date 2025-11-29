@@ -91,7 +91,14 @@
   transition: transform var(--t-fast) var(--ease), opacity var(--t-fast) var(--ease);
 }
 
-.product-sidebar__item--has-children .product-sidebar__link::after{ transform: rotate(45deg); }
+.product-sidebar__item--has-children > .product-sidebar__link::after{ transform: rotate(-45deg); }
+
+.product-sidebar__item--has-children:hover > .product-sidebar__link::after,
+.product-sidebar__item--has-children:focus-within > .product-sidebar__link::after,
+.product-sidebar__item--current > .product-sidebar__link::after{
+  transform: rotate(45deg);
+  opacity: .7;
+}
 
 .product-sidebar__link .product-sidebar__sublink:hover
 .product-sidebar__link .product-sidebar__sublink:focus-within{
@@ -105,9 +112,19 @@
 }
 
 .product-sidebar__submenu{
-  display: none;
+  display: grid;
+  gap: space(.25);
   padding-inline-start: space(1.25);
-  margin-bottom: space(.6);
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition:
+    max-height var(--t-slow) var(--ease),
+    opacity var(--t-slow) var(--ease),
+    visibility var(--t-slow) var(--ease),
+    margin var(--t-slow) var(--ease);
 }
 
 .product-sidebar__subitem + .product-sidebar__subitem{ margin-top: space(.35); }
@@ -138,8 +155,10 @@
 .product-sidebar__item--has-children:hover .product-sidebar__submenu,
 .product-sidebar__item--has-children:focus-within .product-sidebar__submenu,
 .product-sidebar__item--current .product-sidebar__submenu{
-  display: grid;
-  gap: space(.25);
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: space(.6);
 }
 
 .product-listing__header{
