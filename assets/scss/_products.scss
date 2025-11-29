@@ -463,6 +463,12 @@
   fill: currentColor;
 }
 
+.product-overview__social img{
+  inline-size: 18px;
+  block-size: 18px;
+  display: block;
+}
+
 .product-details{
   display: grid;
   gap: space(2.25);
