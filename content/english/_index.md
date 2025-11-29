@@ -13,6 +13,9 @@ hero_slides:
 ##########################################################
 usps:
   enable: true
+  eyebrow: "Value pillars"
+  title: "Engineered for nonstop, mission-critical flow"
+  description: "Every pallet is designed to perform under automation, global shipping, and food-grade compliance without compromise."
   items:
     - icon: "fas fa-certificate"
       title: "ISO certification"

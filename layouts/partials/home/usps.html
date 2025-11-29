@@ -1,11 +1,23 @@
 {{ $usps := .Params.usps }}
 {{ if and $usps $usps.enable }}
-<section class="usps">
+{{ $title := or $usps.title "Engineered for nonstop, mission-critical flow" }}
+{{ $eyebrow := or $usps.eyebrow "Why Baoheng Plastic" }}
+{{ $lede := or $usps.description "A modern pallet platform built for automation, safety, and every global lane you serve." }}
+<section class="usps" aria-labelledby="usps-heading">
+  <div class="usps__glow" aria-hidden="true"></div>
   <div class="container container--wide usps__container">
+    <div class="usps__intro">
+      <p class="usps__eyebrow">{{ $eyebrow }}</p>
+      <div class="usps__heading">
+        <h2 class="usps__title-main" id="usps-heading">{{ $title }}</h2>
+        <p class="usps__lede">{{ $lede }}</p>
+      </div>
+    </div>
     {{ with $usps.items }}
     <ul class="usps__list">
       {{ range . }}
       <li class="usps__item">
+        <div class="usps__halo" aria-hidden="true"></div>
         <div class="usps__icon" aria-hidden="true">
           {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
         </div>

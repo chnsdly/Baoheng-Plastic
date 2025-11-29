@@ -1,26 +1,27 @@
 /* Home: USP */
 .usps {
   --usps-surface:
-    radial-gradient(circle at 20% 20%, color-mix(in oklab, var(--brand), transparent 82%), transparent 35%),
-    radial-gradient(circle at 85% 10%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
-    linear-gradient(135deg, color-mix(in oklab, #0f172a, white 90%), color-mix(in oklab, #0f172a, white 80%));
+    radial-gradient(circle at 15% 15%, color-mix(in oklab, var(--brand), transparent 82%), transparent 38%),
+    radial-gradient(circle at 90% 20%, color-mix(in oklab, #0ea5e9, transparent 80%), transparent 45%),
+    linear-gradient(135deg, color-mix(in oklab, #0f172a, white 85%), color-mix(in oklab, #0f172a, white 72%));
 
   position: relative;
   overflow: hidden;
   background: var(--usps-surface);
   color: var(--on-surface);
-  padding-block: space(5);
+  padding-block: space(5.5);
+  isolation: isolate;
 }
 
-.usps::after {
-  content: "";
+.usps__glow {
   position: absolute;
   inset: 0;
-  border-radius: calc(var(--radius) * 2);
-  background: var(--usps-surface);
-  opacity: 0.25;
-  pointer-events: none;
-  mix-blend-mode: screen;
+  background:
+    radial-gradient(circle at 25% 55%, color-mix(in oklab, var(--brand), transparent 70%), transparent 38%),
+    radial-gradient(circle at 78% 35%, color-mix(in oklab, #22d3ee, transparent 78%), transparent 42%);
+  opacity: 0.7;
+  filter: blur(32px);
+  z-index: 0;
 }
 
 .usps__container {
@@ -30,42 +31,115 @@
   gap: space(3);
 }
 
+.usps__intro {
+  display: grid;
+  gap: space(1);
+  align-items: start;
+  max-width: 960px;
+}
+
+.usps__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: space(0.75);
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  width: fit-content;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background: color-mix(in oklab, var(--brand), transparent 82%);
+  color: color-mix(in oklab, var(--on-brand), #0b1221 35%);
+  box-shadow: 0 20px 60px color-mix(in oklab, #0ea5e9, transparent 75%);
+}
+
+.usps__heading {
+  display: grid;
+  gap: space(0.75);
+}
+
+.usps__title-main {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  color: #0b1221;
+}
+
+.usps__lede {
+  margin: 0;
+  max-width: 60ch;
+  color: color-mix(in oklab, #0f172a, transparent 15%);
+  font-size: var(--fs-2);
+}
+
 .usps__list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: space(2.5);
+  gap: space(1.5);
 }
 
 .usps__item {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: space(1.5);
   align-items: center;
+  padding: space(1.5);
+  border-radius: calc(var(--radius) * 1.5);
+  background: color-mix(in oklab, #ffffff, #e2e8f0 20%);
+  border: 1px solid color-mix(in oklab, var(--border), transparent 15%);
+  box-shadow:
+    0 20px 80px color-mix(in oklab, #0f172a, transparent 88%),
+    0 1px 0 color-mix(in oklab, #ffffff, transparent 60%);
+  overflow: hidden;
+}
+
+.usps__halo {
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle, color-mix(in oklab, var(--brand), transparent 80%), transparent 60%);
+  opacity: 0;
+  transition: opacity 180ms ease;
+  z-index: 0;
+}
+
+.usps__item:hover .usps__halo {
+  opacity: 0.45;
 }
 
 .usps__icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 16px;
+  width: 104px;
+  height: 104px;
+  border-radius: 18px;
   display: inline-grid;
   place-items: center;
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: var(--on-brand);
-  background: color-mix(in oklab, var(--brand), white 10%);
+  background: linear-gradient(135deg, color-mix(in oklab, var(--brand), white 6%), color-mix(in oklab, #22d3ee, white 16%));
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, #ffffff, transparent 35%),
+    0 10px 40px color-mix(in oklab, var(--brand), transparent 78%);
+  position: relative;
+  z-index: 1;
 }
 
 .usps__content {
   display: grid;
-  gap: space(0.25);
+  gap: space(0.35);
+  position: relative;
+  z-index: 1;
 }
 
 .usps__title {
   margin: 0;
   font-size: var(--fs-3);
-  font-weight: 700;
-  color: #0f172a;
+  font-weight: 800;
+  color: #0b1221;
+  letter-spacing: -0.01em;
 }
 
 .usps__description {
@@ -74,17 +148,19 @@
   font-size: var(--fs-2);
 }
 
+@media (min-width: 48rem) {
+  .usps__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 64rem) {
   .usps__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: space(3);
+    column-gap: space(2.5);
   }
 
   .usps__item {
-    padding-inline-end: space(2.5);
-  }
-
-  .usps__item:not(:last-child) {
-    border-inline-end: 1px solid color-mix(in oklab, var(--border), transparent 20%);
+    padding: space(2);
   }
 }
