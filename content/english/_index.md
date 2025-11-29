@@ -79,7 +79,15 @@ clients:
 factory:
   enable: true
   title: "Baoheng Pallet – Specialist in Plastic Pallet Manufacturing"
-  description: "We are a manufacturing factory dedicated to the R&D and production of plastic pallets, serving warehousing, logistics, packaging, cold chain, food, chemical, agricultural and other industries over the long term. Our pallets are made from high-quality virgin HDPE/PP materials and produced in one piece through advanced injection-moulding. With optimised structural design, they offer high load capacity and a service life that far exceeds the industry average.We operate 15 large injection machines and can supply a wide range of standard sizes and load ratings to meet general application needs. With strong in-house mould development capabilities, we also support customised solutions, including dimensions, colours, logo branding and steel-reinforced designs.Our professional team provides one-on-one support from model selection through to mass production and final delivery. Baoheng plastic pallets are compatible with forklifts, racking systems and automated warehouses, ensuring reliable performance under load. We help customers improve handling efficiency, reduce total logistics costs, and achieve a more efficient logistics operation."
+  description: |
+    Baoheng builds plastic pallets that look clean on the floor and stay rigid under pressure. Every piece is moulded from premium HDPE/PP and tuned for automated warehouses, racking, forklifts, and export-ready logistics.
+
+    Our engineers work beside production: 15 large injection lines, barcode-traced batches, and an in-house mould team that can tailor sizing, colours, logos, and steel reinforcement while keeping lead times tight.
+
+  highlights:
+    - 15 large-tonnage injection lines running with 24/7 quality control
+    - In-house mould studio for custom sizing, colours, logos, and steel inserts
+    - Ready-to-ship inventory plus tailored builds for racking and automation
 
   items:
     - title: "Reliable Material System"

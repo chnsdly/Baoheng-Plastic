@@ -5,7 +5,14 @@
     <div class="factory__header">
       <h2 class="factory__title" id="factory-title">{{ $factory.title }}</h2>
       {{ with $factory.description }}
-      <p class="factory__description">{{ . }}</p>
+      <div class="factory__description">{{ . | markdownify }}</div>
+      {{ end }}
+      {{ with $factory.highlights }}
+      <ul class="factory__highlights" role="list">
+        {{ range . }}
+        <li class="factory__pill">{{ . }}</li>
+        {{ end }}
+      </ul>
       {{ end }}
     </div>
     <div class="factory__grid">
