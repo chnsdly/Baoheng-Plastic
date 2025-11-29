@@ -1,20 +1,43 @@
-<header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h">
-  <!-- 背景层 -->
+<header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h" data-hero-slider>
+  {{- $slides := .Params.hero_slides -}}
+  {{- if not $slides }}
+    {{- $slides = slice (dict "src" .Params.hero_bg_asset "alt" .Title) -}}
+  {{- end -}}
+
+  <!-- 背景层：轮播大图 -->
   <div class="hero__bg" aria-hidden="true">
-    {{ partial "smart-picture.html" (dict
-      "ctx"   .
-      "src"   .Params.hero_bg_asset
-      "alt"   ".Title"
-      "class" "hero__img"
-      "fetch" "high"
-      "sizes" "100vw"
-      "w"     (slice 640 960 1440 1920 2560)
-      "lqip"  true
-    ) }}
+    <div class="hero__slides">
+      {{- range $i, $slide := $slides }}
+        <div class="hero__slide{{ if eq $i 0 }} is-active{{ end }}" data-hero-slide>
+          {{ partial "smart-picture.html" (dict
+            "ctx"   .
+            "src"   $slide.src
+            "alt"   ($slide.alt | default $.Title)
+            "class" "hero__img"
+            "fetch" (cond (eq $i 0) "high" "")
+            "sizes" "100vw"
+            "w"     (slice 640 960 1440 1920 2560)
+            "lqip"  true
+          ) }}
+        </div>
+      {{- end }}
+    </div>
   </div>
 
   <!-- 遮罩层（与 bg 同级，避免被包进去） -->
   <div class="hero__overlay" aria-hidden="true"></div>
+
+  {{- if gt (len $slides) 1 }}
+    <div class="hero__nav" data-hero-nav>
+      <button class="hero__control hero__control--prev" type="button" data-hero-prev aria-label="Previous slide">&#8249;</button>
+      <div class="hero__dots" data-hero-dots>
+        {{- range $i, $_ := $slides }}
+          <button class="hero__dot{{ if eq $i 0 }} is-active{{ end }}" type="button" data-hero-dot="{{ $i }}" aria-label="Go to slide {{ add $i 1 }}"></button>
+        {{- end }}
+      </div>
+      <button class="hero__control hero__control--next" type="button" data-hero-next aria-label="Next slide">&#8250;</button>
+    </div>
+  {{- end }}
 
   <!-- 内容层 -->
   <div class="hero__inner container">
@@ -31,3 +54,49 @@
     </div>
   </div>
 </header>
+
+{{- if gt (len $slides) 1 }}
+<script>
+  (() => {
+    const slider = document.querySelector('[data-hero-slider]');
+    if (!slider) return;
+
+    const slides = Array.from(slider.querySelectorAll('[data-hero-slide]'));
+    if (slides.length <= 1) return;
+
+    const dots = Array.from(slider.querySelectorAll('[data-hero-dot]'));
+    const prevBtn = slider.querySelector('[data-hero-prev]');
+    const nextBtn = slider.querySelector('[data-hero-next]');
+    let activeIndex = 0;
+    let timer;
+
+    const setActive = (index) => {
+      slides[activeIndex].classList.remove('is-active');
+      dots[activeIndex]?.classList.remove('is-active');
+
+      activeIndex = (index + slides.length) % slides.length;
+
+      slides[activeIndex].classList.add('is-active');
+      dots[activeIndex]?.classList.add('is-active');
+    };
+
+    const next = () => setActive(activeIndex + 1);
+    const prev = () => setActive(activeIndex - 1);
+
+    const stop = () => timer && clearInterval(timer);
+    const start = () => {
+      stop();
+      timer = setInterval(next, 7000);
+    };
+
+    nextBtn?.addEventListener('click', () => { next(); start(); });
+    prevBtn?.addEventListener('click', () => { prev(); start(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { setActive(i); start(); }));
+
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+
+    start();
+  })();
+</script>
+{{- end }}
