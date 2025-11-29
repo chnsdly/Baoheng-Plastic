@@ -2,1374 +2,1374 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.5.183:1313/resources/articles/</loc>
+    <loc>http://localhost:1313/resources/articles/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/articles/"
+                href="http://localhost:1313/zh/resources/articles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/articles/"
+                href="http://localhost:1313/resources/articles/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/categories/articles/</loc>
+    <loc>http://localhost:1313/categories/articles/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.5.183:1313/</loc>
-    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://192.168.5.183:1313/"
-                />
-  </url><url>
-    <loc>http://192.168.5.183:1313/categories/</loc>
-    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.5.183:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"
+                href="http://localhost:1313/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/tags/hdpe/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/</loc>
+    <loc>http://localhost:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/"
+                href="http://localhost:1313/zh/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/"
+                href="http://localhost:1313/resources/articles/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/tags/</loc>
+    <loc>http://localhost:1313/tags/hdpe/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.5.183:1313/tags/testing/</loc>
+    <loc>http://localhost:1313/resources/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/resources/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/resources/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.5.183:1313/industries/</loc>
+    <loc>http://localhost:1313/tags/testing/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/industries/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/industries/"
+                href="http://localhost:1313/zh/industries/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/industries/"
+                href="http://localhost:1313/industries/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/categories/downloads/</loc>
+    <loc>http://localhost:1313/categories/downloads/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/downloads/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/downloads/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/downloads/"
-                />
-  </url><url>
-    <loc>http://192.168.5.183:1313/resources/faq/</loc>
+    <loc>http://localhost:1313/resources/downloads/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/faq/"
+                href="http://localhost:1313/zh/resources/downloads/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/faq/"
+                href="http://localhost:1313/resources/downloads/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/categories/news/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.5.183:1313/resources/news/</loc>
+    <loc>http://localhost:1313/resources/faq/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/news/"
+                href="http://localhost:1313/zh/resources/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/news/"
+                href="http://localhost:1313/resources/faq/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/industries/how-to-choose-pallets/</loc>
+    <loc>http://localhost:1313/categories/news/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/resources/news/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/industries/how-to-choose-pallets/"
+                href="http://localhost:1313/zh/resources/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/industries/how-to-choose-pallets/"
+                href="http://localhost:1313/resources/news/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/industries/how-to-evaluate-product-quality/</loc>
+    <loc>http://localhost:1313/industries/how-to-choose-pallets/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/industries/how-to-evaluate-product-quality/"
+                href="http://localhost:1313/zh/industries/how-to-choose-pallets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/industries/how-to-evaluate-product-quality/"
+                href="http://localhost:1313/industries/how-to-choose-pallets/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/downloads/product-quotation/</loc>
+    <loc>http://localhost:1313/industries/how-to-evaluate-product-quality/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/downloads/product-quotation/"
+                href="http://localhost:1313/zh/industries/how-to-evaluate-product-quality/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/downloads/product-quotation/"
+                href="http://localhost:1313/industries/how-to-evaluate-product-quality/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/faq/what-materials-made-of/</loc>
+    <loc>http://localhost:1313/resources/downloads/product-quotation/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/faq/what-materials-made-of/"
+                href="http://localhost:1313/zh/resources/downloads/product-quotation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/faq/what-materials-made-of/"
+                href="http://localhost:1313/resources/downloads/product-quotation/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/faq/what-types-of-plastic-pallets/</loc>
+    <loc>http://localhost:1313/resources/faq/what-materials-made-of/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/faq/what-types-of-plastic-pallets/"
+                href="http://localhost:1313/zh/resources/faq/what-materials-made-of/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/faq/what-types-of-plastic-pallets/"
+                href="http://localhost:1313/resources/faq/what-materials-made-of/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/news/china-pallets/</loc>
+    <loc>http://localhost:1313/resources/faq/what-types-of-plastic-pallets/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/news/china-pallets/"
+                href="http://localhost:1313/zh/resources/faq/what-types-of-plastic-pallets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/news/china-pallets/"
+                href="http://localhost:1313/resources/faq/what-types-of-plastic-pallets/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/news/plastic-pallets-market/</loc>
+    <loc>http://localhost:1313/resources/news/china-pallets/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/resources/news/plastic-pallets-market/"
+                href="http://localhost:1313/zh/resources/news/china-pallets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/news/plastic-pallets-market/"
+                href="http://localhost:1313/resources/news/china-pallets/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/spill_068068/</loc>
+    <loc>http://localhost:1313/resources/news/plastic-pallets-market/</loc>
+    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/spill_068068/"
+                href="http://localhost:1313/zh/resources/news/plastic-pallets-market/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/spill_068068/"
+                href="http://localhost:1313/resources/news/plastic-pallets-market/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/print_080060/</loc>
+    <loc>http://localhost:1313/products/pallet/spill_068068/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/print_080060/"
+                href="http://localhost:1313/zh/products/pallet/spill_068068/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/print_080060/"
+                href="http://localhost:1313/products/pallet/spill_068068/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/print_080063/</loc>
+    <loc>http://localhost:1313/products/pallet/print_080060/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/print_080063/"
+                href="http://localhost:1313/zh/products/pallet/print_080060/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/print_080063/"
+                href="http://localhost:1313/products/pallet/print_080060/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_6-leg_0804/</loc>
+    <loc>http://localhost:1313/products/pallet/print_080063/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_6-leg_0804/"
+                href="http://localhost:1313/zh/products/pallet/print_080063/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_6-leg_0804/"
+                href="http://localhost:1313/products/pallet/print_080063/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_0806/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_6-leg_0804/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_0806/"
+                href="http://localhost:1313/zh/products/pallet/cd_6-leg_0804/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_0806/"
+                href="http://localhost:1313/products/pallet/cd_6-leg_0804/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_0808/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_0806/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_0808/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_0806/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_0808/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_0806/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_0808/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_0808/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_0808/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_0808/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_0808/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_0808/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_0909/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_0808/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_0909/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_0808/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_0909/"
+                href="http://localhost:1313/products/pallet/nine-leg_0808/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/l-container/liquid_1000/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_0909/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/l-container/liquid_1000/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_0909/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/l-container/liquid_1000/"
+                href="http://localhost:1313/products/pallet/nine-leg_0909/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_6-leg_1005/</loc>
+    <loc>http://localhost:1313/products/l-container/liquid_1000/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_6-leg_1005/"
+                href="http://localhost:1313/zh/products/l-container/liquid_1000/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_6-leg_1005/"
+                href="http://localhost:1313/products/l-container/liquid_1000/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_6-leg_1006/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_6-leg_1005/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_6-leg_1006/"
+                href="http://localhost:1313/zh/products/pallet/cd_6-leg_1005/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_6-leg_1006/"
+                href="http://localhost:1313/products/pallet/cd_6-leg_1005/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1006/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_6-leg_1006/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1006/"
+                href="http://localhost:1313/zh/products/pallet/cd_6-leg_1006/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1006/"
+                href="http://localhost:1313/products/pallet/cd_6-leg_1006/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1006/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1006/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1006/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1006/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1006/</loc>
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1008/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1008/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1008/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1008/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1008/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1008/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1008/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1008/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1008/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1008/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1008/"
+                href="http://localhost:1313/products/pallet/blow-molding_1008/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1008/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1008/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1008/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1008/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1008/"
+                href="http://localhost:1313/products/pallet/3-runner_1008/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1008/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1008/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1008/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1008/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1008/"
+                href="http://localhost:1313/products/pallet/nine-leg_1008/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1010/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1010/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1010/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1010/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1010/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1010/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1010/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1010/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1010/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1010/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1010/"
+                href="http://localhost:1313/products/pallet/blow-molding_1010/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1010/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1010/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1010/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1010/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1010/"
+                href="http://localhost:1313/products/pallet/3-runner_1010/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1010/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1010/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1010/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1010/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1010/"
+                href="http://localhost:1313/products/pallet/nine-leg_1010/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/print_105075/</loc>
+    <loc>http://localhost:1313/products/pallet/print_105075/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/print_105075/"
+                href="http://localhost:1313/zh/products/pallet/print_105075/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/print_105075/"
+                href="http://localhost:1313/products/pallet/print_105075/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/print_105076/</loc>
+    <loc>http://localhost:1313/products/pallet/print_105076/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/print_105076/"
+                href="http://localhost:1313/zh/products/pallet/print_105076/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/print_105076/"
+                href="http://localhost:1313/products/pallet/print_105076/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1111/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1111/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1111/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1111/"
+                href="http://localhost:1313/products/pallet/blow-molding_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1111/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1111/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1111/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1111/"
+                href="http://localhost:1313/products/pallet/3-runner_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1111/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1111/"
+                href="http://localhost:1313/products/pallet/nine-leg_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1111/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1111/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/double-faced_1111/</loc>
+    <loc>http://localhost:1313/products/pallet/double-faced_1111/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/double-faced_1111/"
+                href="http://localhost:1313/zh/products/pallet/double-faced_1111/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/double-faced_1111/"
+                href="http://localhost:1313/products/pallet/double-faced_1111/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/fold/mega_1140/</loc>
+    <loc>http://localhost:1313/products/fold/mega_1140/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/fold/mega_1140/"
+                href="http://localhost:1313/zh/products/fold/mega_1140/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/fold/mega_1140/"
+                href="http://localhost:1313/products/fold/mega_1140/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/l-container/bulk_1200/</loc>
+    <loc>http://localhost:1313/products/l-container/bulk_1200/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/l-container/bulk_1200/"
+                href="http://localhost:1313/zh/products/l-container/bulk_1200/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/l-container/bulk_1200/"
+                href="http://localhost:1313/products/l-container/bulk_1200/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/blow-mold/lightweight_1208/</loc>
+    <loc>http://localhost:1313/products/blow-mold/lightweight_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/blow-mold/lightweight_1208/"
+                href="http://localhost:1313/zh/products/blow-mold/lightweight_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/blow-mold/lightweight_1208/"
+                href="http://localhost:1313/products/blow-mold/lightweight_1208/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1208/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1208/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1208/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1208/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1208/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1208/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1208/"
+                href="http://localhost:1313/products/pallet/3-runner_1208/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1208/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1208/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1208/"
+                href="http://localhost:1313/products/pallet/nine-leg_1208/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1208/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1208/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1208/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1208/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/fold/returnable_1208/</loc>
+    <loc>http://localhost:1313/products/fold/returnable_1208/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/fold/returnable_1208/"
+                href="http://localhost:1313/zh/products/fold/returnable_1208/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/fold/returnable_1208/"
+                href="http://localhost:1313/products/fold/returnable_1208/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/waste/urban_120/</loc>
+    <loc>http://localhost:1313/products/waste/urban_120/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/waste/urban_120/"
+                href="http://localhost:1313/zh/products/waste/urban_120/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/waste/urban_120/"
+                href="http://localhost:1313/products/waste/urban_120/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/blow-mold/rackable_1210/</loc>
+    <loc>http://localhost:1313/products/blow-mold/rackable_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/blow-mold/rackable_1210/"
+                href="http://localhost:1313/zh/products/blow-mold/rackable_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/blow-mold/rackable_1210/"
+                href="http://localhost:1313/products/blow-mold/rackable_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1210/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1210/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1210/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1210/"
+                href="http://localhost:1313/products/pallet/blow-molding_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1210/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1210/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1210/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1210/"
+                href="http://localhost:1313/products/pallet/3-runner_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1210/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1210/"
+                href="http://localhost:1313/products/pallet/nine-leg_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1210/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1210/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/fold/collapsible_1210/</loc>
+    <loc>http://localhost:1313/products/fold/collapsible_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/fold/collapsible_1210/"
+                href="http://localhost:1313/zh/products/fold/collapsible_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/fold/collapsible_1210/"
+                href="http://localhost:1313/products/fold/collapsible_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/l-container/heavy_1210/</loc>
+    <loc>http://localhost:1313/products/l-container/heavy_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/l-container/heavy_1210/"
+                href="http://localhost:1313/zh/products/l-container/heavy_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/l-container/heavy_1210/"
+                href="http://localhost:1313/products/l-container/heavy_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/double-faced_1210/</loc>
+    <loc>http://localhost:1313/products/pallet/double-faced_1210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/double-faced_1210/"
+                href="http://localhost:1313/zh/products/pallet/double-faced_1210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/double-faced_1210/"
+                href="http://localhost:1313/products/pallet/double-faced_1210/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1211/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1211/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1211/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1211/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1211/"
+                href="http://localhost:1313/products/pallet/3-runner_1211/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1211/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1211/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1211/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1211/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1211/"
+                href="http://localhost:1313/products/pallet/nine-leg_1211/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1211/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1211/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1211/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1211/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1211/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1211/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/cd_9-leg_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/cd_9-leg_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/cd_9-leg_1212/"
+                href="http://localhost:1313/zh/products/pallet/cd_9-leg_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/cd_9-leg_1212/"
+                href="http://localhost:1313/products/pallet/cd_9-leg_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1212/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1212/"
+                href="http://localhost:1313/products/pallet/blow-molding_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1212/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1212/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1212/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1212/"
+                href="http://localhost:1313/products/pallet/3-runner_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1212/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1212/"
+                href="http://localhost:1313/products/pallet/nine-leg_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1212/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1212/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/double-faced_1212/</loc>
+    <loc>http://localhost:1313/products/pallet/double-faced_1212/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/double-faced_1212/"
+                href="http://localhost:1313/zh/products/pallet/double-faced_1212/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/double-faced_1212/"
+                href="http://localhost:1313/products/pallet/double-faced_1212/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/spill_130068-15/</loc>
+    <loc>http://localhost:1313/products/pallet/spill_130068-15/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/spill_130068-15/"
+                href="http://localhost:1313/zh/products/pallet/spill_130068-15/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/spill_130068-15/"
+                href="http://localhost:1313/products/pallet/spill_130068-15/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/spill_130068-30/</loc>
+    <loc>http://localhost:1313/products/pallet/spill_130068-30/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/spill_130068-30/"
+                href="http://localhost:1313/zh/products/pallet/spill_130068-30/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/spill_130068-30/"
+                href="http://localhost:1313/products/pallet/spill_130068-30/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/spill_130130-15/</loc>
+    <loc>http://localhost:1313/products/pallet/spill_130130-15/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/spill_130130-15/"
+                href="http://localhost:1313/zh/products/pallet/spill_130130-15/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/spill_130130-15/"
+                href="http://localhost:1313/products/pallet/spill_130130-15/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/spill_130130-30/</loc>
+    <loc>http://localhost:1313/products/pallet/spill_130130-30/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/spill_130130-30/"
+                href="http://localhost:1313/zh/products/pallet/spill_130130-30/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/spill_130130-30/"
+                href="http://localhost:1313/products/pallet/spill_130130-30/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/blow-mold/heavy-duty_1311/</loc>
+    <loc>http://localhost:1313/products/blow-mold/heavy-duty_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/blow-mold/heavy-duty_1311/"
+                href="http://localhost:1313/zh/products/blow-mold/heavy-duty_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/blow-mold/heavy-duty_1311/"
+                href="http://localhost:1313/products/blow-mold/heavy-duty_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1311/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1311/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1311/"
+                href="http://localhost:1313/products/pallet/blow-molding_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1311/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1311/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1311/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1311/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1311/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1311/"
+                href="http://localhost:1313/products/pallet/3-runner_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/nine-leg_1311/</loc>
+    <loc>http://localhost:1313/products/pallet/nine-leg_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/nine-leg_1311/"
+                href="http://localhost:1313/zh/products/pallet/nine-leg_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/nine-leg_1311/"
+                href="http://localhost:1313/products/pallet/nine-leg_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1311/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1311/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1311/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/double-faced_1311/</loc>
+    <loc>http://localhost:1313/products/pallet/double-faced_1311/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/double-faced_1311/"
+                href="http://localhost:1313/zh/products/pallet/double-faced_1311/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/double-faced_1311/"
+                href="http://localhost:1313/products/pallet/double-faced_1311/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/blow-molding_1412/</loc>
+    <loc>http://localhost:1313/products/pallet/blow-molding_1412/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/blow-molding_1412/"
+                href="http://localhost:1313/zh/products/pallet/blow-molding_1412/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/blow-molding_1412/"
+                href="http://localhost:1313/products/pallet/blow-molding_1412/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1412/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1412/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1412/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1412/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1412/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1412/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/3-runner_1412/</loc>
+    <loc>http://localhost:1313/products/pallet/3-runner_1412/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/3-runner_1412/"
+                href="http://localhost:1313/zh/products/pallet/3-runner_1412/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/3-runner_1412/"
+                href="http://localhost:1313/products/pallet/3-runner_1412/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/perimeter-base_1412/</loc>
+    <loc>http://localhost:1313/products/pallet/perimeter-base_1412/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/perimeter-base_1412/"
+                href="http://localhost:1313/zh/products/pallet/perimeter-base_1412/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/perimeter-base_1412/"
+                href="http://localhost:1313/products/pallet/perimeter-base_1412/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/double-faced_1412/</loc>
+    <loc>http://localhost:1313/products/pallet/double-faced_1412/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/double-faced_1412/"
+                href="http://localhost:1313/zh/products/pallet/double-faced_1412/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/double-faced_1412/"
+                href="http://localhost:1313/products/pallet/double-faced_1412/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1512/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1512/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1512/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1512/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1512/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1512/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1513/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1513/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1513/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1513/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1513/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1513/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1515/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1515/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1515/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1515/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1515/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1515/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1614/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1614/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1614/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1614/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1614/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1614/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/df_blow-molding_1616/</loc>
+    <loc>http://localhost:1313/products/pallet/df_blow-molding_1616/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/df_blow-molding_1616/"
+                href="http://localhost:1313/zh/products/pallet/df_blow-molding_1616/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/df_blow-molding_1616/"
+                href="http://localhost:1313/products/pallet/df_blow-molding_1616/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/waste/industrial_240/</loc>
+    <loc>http://localhost:1313/products/waste/industrial_240/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/waste/industrial_240/"
+                href="http://localhost:1313/zh/products/waste/industrial_240/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/waste/industrial_240/"
+                href="http://localhost:1313/products/waste/industrial_240/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/crate-box/ventilated_5030/</loc>
+    <loc>http://localhost:1313/products/crate-box/ventilated_5030/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/crate-box/ventilated_5030/"
+                href="http://localhost:1313/zh/products/crate-box/ventilated_5030/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/crate-box/ventilated_5030/"
+                href="http://localhost:1313/products/crate-box/ventilated_5030/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/crate-box/stackable_6040/</loc>
+    <loc>http://localhost:1313/products/crate-box/stackable_6040/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/crate-box/stackable_6040/"
+                href="http://localhost:1313/zh/products/crate-box/stackable_6040/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/crate-box/stackable_6040/"
+                href="http://localhost:1313/products/crate-box/stackable_6040/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/crate-box/euro_6428/</loc>
+    <loc>http://localhost:1313/products/crate-box/euro_6428/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/crate-box/euro_6428/"
+                href="http://localhost:1313/zh/products/crate-box/euro_6428/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/crate-box/euro_6428/"
+                href="http://localhost:1313/products/crate-box/euro_6428/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/waste/mega_660/</loc>
+    <loc>http://localhost:1313/products/waste/mega_660/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/waste/mega_660/"
+                href="http://localhost:1313/zh/products/waste/mega_660/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/waste/mega_660/"
+                href="http://localhost:1313/products/waste/mega_660/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/about/"
+                href="http://localhost:1313/zh/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/about/"
+                href="http://localhost:1313/about/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/resources/downloads/baoheng/</loc>
+    <loc>http://localhost:1313/resources/downloads/baoheng/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/resources/downloads/baoheng/"
+                href="http://localhost:1313/resources/downloads/baoheng/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/resources/downloads/baoheng/"
+                href="http://localhost:1313/resources/downloads/baoheng/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/fold/</loc>
+    <loc>http://localhost:1313/products/fold/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/fold/"
+                href="http://localhost:1313/zh/products/fold/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/fold/"
+                href="http://localhost:1313/products/fold/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/l-container/</loc>
+    <loc>http://localhost:1313/products/l-container/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/l-container/"
+                href="http://localhost:1313/zh/products/l-container/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/l-container/"
+                href="http://localhost:1313/products/l-container/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/blow-mold/</loc>
+    <loc>http://localhost:1313/products/blow-mold/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/blow-mold/"
+                href="http://localhost:1313/zh/products/blow-mold/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/blow-mold/"
+                href="http://localhost:1313/products/blow-mold/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/crate-box/</loc>
+    <loc>http://localhost:1313/products/crate-box/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/crate-box/"
+                href="http://localhost:1313/zh/products/crate-box/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/crate-box/"
+                href="http://localhost:1313/products/crate-box/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/pallet/</loc>
+    <loc>http://localhost:1313/products/pallet/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/pallet/"
+                href="http://localhost:1313/zh/products/pallet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/pallet/"
+                href="http://localhost:1313/products/pallet/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/waste/</loc>
+    <loc>http://localhost:1313/products/waste/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/waste/"
+                href="http://localhost:1313/zh/products/waste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/waste/"
+                href="http://localhost:1313/products/waste/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/products/</loc>
+    <loc>http://localhost:1313/products/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/products/"
+                href="http://localhost:1313/zh/products/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/products/"
+                href="http://localhost:1313/products/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/thanks/</loc>
+    <loc>http://localhost:1313/thanks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/thanks/"
+                href="http://localhost:1313/zh/thanks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/thanks/"
+                href="http://localhost:1313/thanks/"
                 />
   </url><url>
-    <loc>http://192.168.5.183:1313/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://192.168.5.183:1313/zh/contact/"
+                href="http://localhost:1313/zh/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://192.168.5.183:1313/contact/"
+                href="http://localhost:1313/contact/"
                 />
   </url>
 </urlset>

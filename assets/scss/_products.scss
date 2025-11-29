@@ -58,6 +58,7 @@
 }
 .product-sidebar__list{
   margin-top: calc(var(--space) * 2);
+  text-decoration: none;
 }
 .product-sidebar__item{
   border-radius: var(--radius-sm);
@@ -73,7 +74,7 @@
   gap: space(1);
   inline-size: 100%;
   color: var(--on-card);
-  text-decoration: none;
+  
   font-weight: 700;
   padding: space(1) space(1.25);
   border-radius: inherit;
