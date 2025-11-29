@@ -60,6 +60,10 @@
   margin-top: calc(var(--space) * 2);
   text-decoration: none;
 }
+.product-sidebar a:hover,
+.product-sidebar a:focus-visible{
+  text-decoration: none;
+}
 .product-sidebar__item{
   border-radius: var(--radius-sm);
   transition: background-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
@@ -505,13 +509,55 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: var(--border-w) solid color-mix(in srgb, var(--border) 70%, transparent);
+  background: color-mix(in srgb, var(--surface) 94%, var(--card));
+  box-shadow: var(--shadow-sm);
 }
 .spec-list li{
-  padding: space(.7) 0;
-  border-bottom: var(--border-w) dashed var(--border);
+  display: grid;
+  grid-template-columns: minmax(10rem, .42fr) 1fr;
+  align-items: start;
+  gap: space(.75);
+  padding: space(1.1) space(1.25);
+  position: relative;
 }
-.spec-list li:last-child{
-  border-bottom: 0;
+.spec-list li + li{ border-top: 1px solid color-mix(in srgb, var(--border) 78%, transparent); }
+.spec-list li::before{
+  content: '';
+  position: absolute;
+  inset-block: space(.8);
+  inset-inline-start: 0;
+  inline-size: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--brand) 65%, transparent), color-mix(in srgb, var(--brand) 30%, transparent));
+}
+.spec-list strong{
+  font-size: var(--fs-sm);
+  color: var(--on-card);
+  letter-spacing: .01em;
+  font-weight: 700;
+  padding-inline-start: space(.75);
+  padding-inline-end: space(.9);
+  border-inline-end: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+.spec-list li span,
+.spec-list li :not(strong){
+  color: var(--muted-strong);
+  line-height: 1.6;
+}
+.spec-list li span{ color: var(--on-card); }
+
+@media (max-width: 720px){
+  .spec-list li{ grid-template-columns: 1fr; }
+  .spec-list strong{
+    border-inline-end: none;
+    padding-inline-end: 0;
+    padding-inline-start: space(1.25);
+  }
 }
 
 .product-details__gallery{
@@ -558,6 +604,10 @@
 .product-details__form .lead-form{
   display: grid;
   gap: space(1);
+  max-width: none;
+  margin-inline: 0;
+  width: 100%;
+  margin-block-start: 0;
 }
 
 .product-details__form .lead-form label{
