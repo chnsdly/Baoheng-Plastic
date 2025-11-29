@@ -13,6 +13,13 @@ hero_slides:
 ##########################################################
 usps:
   enable: true
+  eyebrow: "Signature advantages"
+  title: "The pallet partner built for mission-critical logistics"
+  description: "Independent certifications, food-grade materials, and global fulfillment keep every load protected."
+  spotlight:
+    - "ISO9001 & OHSAS18001 audited"
+    - "Food-grade resin traceability"
+    - "Export-ready across 20+ countries"
   items:
     - icon: "fas fa-certificate"
       title: "ISO certification"

@@ -13,6 +13,13 @@ hero_slides:
 ##########################################################
 usps:
   enable: true
+  eyebrow: "核心优势"
+  title: "为什么全球客户选择宝恒托盘"
+  description: "认证、材料与交付全链路把控，让跨境与高频周转都能放心上阵。"
+  spotlight:
+    - "ISO 与 OHSAS 双认证管理"
+    - "食品级全新原料可追溯"
+    - "出口配套覆盖 20+ 国家"
   items:
     - icon: "fas fa-certificate"
       title: "ISO认证"
