@@ -3,6 +3,13 @@ title: "Baoheng Plastic"
 hero_title: " "
 hero_description: " "
 hero_bg_asset: "images/hero-bg.jpg"
+hero_slides:
+  - image: "images/hero-bg.jpg"
+    alt: "Warehouse-ready plastic pallets"
+  - image: "images/hero-bg2.JPG"
+    alt: "Plastic pallet stacks for export"
+  - image: "images/hero-bg111.jpg"
+    alt: "Injection molding line for pallets"
 ##########################################################
 usps:
   enable: true
