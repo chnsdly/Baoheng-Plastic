@@ -2,12 +2,34 @@
 {{ if and $usps $usps.enable }}
 <section class="usps">
   <div class="container container--wide usps__container">
+    <div class="usps__header">
+      {{ with $usps.eyebrow }}
+      <p class="usps__eyebrow">{{ . }}</p>
+      {{ end }}
+
+      <div class="usps__headline-group">
+        <h2 class="usps__headline">{{ default "为什么选择宝恒" $usps.title }}</h2>
+        {{ with (default "经过验证的认证、材料与交付体系，让每一批托盘都值得信赖。" $usps.description) }}
+        <p class="usps__lead">{{ . }}</p>
+        {{ end }}
+      </div>
+
+      {{ with $usps.spotlight }}
+      <div class="usps__spotlight" aria-label="Highlights">
+        {{ range . }}
+        <span class="usps__pill">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
     {{ with $usps.items }}
-    <ul class="usps__list">
+    <ul class="usps__list" role="list">
       {{ range . }}
       <li class="usps__item">
+        <div class="usps__glow" aria-hidden="true"></div>
         <div class="usps__icon" aria-hidden="true">
-          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+          {{ with .icon }}<i class="{{ . }}" aria-hidden="true"></i>{{ end }}
         </div>
         <div class="usps__content">
           <p class="usps__title">{{ .title }}</p>
