@@ -10,6 +10,8 @@
     text-align: center;
     margin-inline: auto;
     margin-bottom: space(4);
+    max-inline-size: 78ch;
+    text-wrap: balance;
   }
 
   &__title {
@@ -23,6 +25,10 @@
     margin: space(2) 0 0;
     font-size: var(--fs-1);
     color: color-mix(in srgb, var(--on-surface) 80%, transparent);
+    line-height: 1.75;
+    max-inline-size: 70ch;
+    margin-inline: auto;
+    text-wrap: balance;
   }
 
   &__grid {
