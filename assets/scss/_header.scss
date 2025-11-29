@@ -129,7 +129,7 @@ body.header-hidden {
 .navbar__menu .dropdown-arrow {
   width: 16px;
   height: 16px;
-  transition: transform var(--t-normal) var(--ease);
+  transition: transform var(--t-slow) var(--ease);
 }
 
 .navbar__menu li:hover>a .dropdown-arrow {

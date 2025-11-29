@@ -42,7 +42,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .product-sidebar__title{
@@ -240,7 +240,7 @@
 .product-listing__card-title{
   margin: 0;
   text-align: center;
-  font-size: var(--fs-1);
+  font-size: var(--fs-xs);
   color: var(--on-card);
   font-weight: 400;
 }
