@@ -12,6 +12,7 @@ turnstile_site_key = "0x4AAAAAACBC7FiXCfcn5h5j"
   linkedin = "https://linkedin.com/company/globaltech"
   twitter = "https://twitter.com/globaltech"
   facebook = "https://facebook.com/globaltech"
+  youtube = "https://www.youtube.com/@globaltech"
 
 # 热门文章数量
 [blog.popular]
