@@ -1,12 +1,13 @@
 /* Home: CTA */
 .cta {
   --cta-surface:
-    radial-gradient(circle at 20% 20%, color-mix(in oklab, var(--brand), transparent 82%), transparent 35%),
-    radial-gradient(circle at 85% 10%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
-    linear-gradient(135deg, color-mix(in oklab, #0f172a, white 90%), color-mix(in oklab, #0f172a, white 80%));
-  --cta-glow: color-mix(in srgb, var(--brand), transparent 90%);
+    radial-gradient(circle at 18% 16%, color-mix(in oklab, var(--brand), transparent 80%), transparent 36%),
+    radial-gradient(circle at 88% 8%, color-mix(in oklab, #22d3ee, transparent 80%), transparent 44%),
+    linear-gradient(135deg, color-mix(in oklab, #0f172a 85%, white), color-mix(in oklab, #0f172a 75%, white));
+  --cta-glow: color-mix(in srgb, var(--brand), transparent 88%);
   --cta-ink: var(--on-surface);
-  --cta-border: color-mix(in oklab, var(--border), transparent 35%);
+  --cta-border: color-mix(in oklab, var(--border), transparent 25%);
+  --cta-glass: color-mix(in oklab, var(--surface), white 12%);
 
   position: relative;
   isolation: isolate;
@@ -26,6 +27,25 @@
   pointer-events: none;
 }
 
+.cta::after {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: calc(var(--radius) * 2);
+  background: linear-gradient(
+      120deg,
+      color-mix(in oklab, var(--brand) 35%, transparent) 0%,
+      transparent 25%,
+      transparent 75%,
+      color-mix(in oklab, #22d3ee 35%, transparent)
+    ),
+    radial-gradient(circle at 50% 50%, color-mix(in oklab, #94a3b8, transparent 90%), transparent 60%);
+  opacity: 0.25;
+  filter: blur(1px);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .cta .container {
   position: relative;
   z-index: 1;
@@ -33,7 +53,7 @@
 
 .cta__grid {
   display: grid;
-  gap: clamp(2rem, 4vw, 3rem);
+  gap: clamp(2rem, 4vw, 3.5rem);
   align-items: stretch;
 }
 
@@ -43,8 +63,15 @@
 
 .cta__intro {
   display: grid;
-  gap: space(2);
+  gap: space(1.5);
   align-content: center;
+}
+
+.cta__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: space(1);
 }
 
 .cta__eyebrow {
@@ -52,14 +79,19 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--on-surface) 70%, transparent);
+  color: color-mix(in oklab, var(--on-surface) 80%, transparent);
   font-size: var(--fs-xs);
+  background: color-mix(in oklab, var(--surface), white 25%);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.85rem;
+  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
 }
 
 .cta__title {
   margin: 0;
-  font-size: var(--fs-4);
+  font-size: clamp(var(--fs-3), 3vw, var(--fs-5));
   color: color-mix(in oklab, #0f172a, var(--on-surface));
+  letter-spacing: -0.01em;
 }
 
 .cta__desc {
@@ -71,8 +103,42 @@
 
 .cta__meta {
   margin: 0;
-  color: color-mix(in oklab, var(--muted) 60%, transparent);
+  color: color-mix(in oklab, var(--muted) 70%, transparent);
   font-size: var(--fs-1);
+  padding: 0.65rem 0.9rem;
+  border-radius: calc(var(--radius) * 1.15);
+  background: color-mix(in oklab, var(--cta-glass), transparent 4%);
+  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 5%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cta__chips {
+  display: flex;
+  gap: space(1);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta__chip {
+  margin: 0;
+  display: inline-flex;
+  gap: space(0.5);
+  align-items: center;
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(120deg, color-mix(in oklab, var(--brand), #0ea5e9 45%), color-mix(in oklab, var(--brand), white 25%));
+  color: var(--on-brand);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-size: var(--fs-xs);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.cta__chip--ghost {
+  background: color-mix(in oklab, var(--cta-glass), white 8%);
+  color: color-mix(in oklab, var(--on-surface) 75%, transparent);
+  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 5%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .cta__contact {
@@ -80,16 +146,31 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: space(3);
+  gap: space(1.5);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .cta__contact-item {
   display: grid;
-  gap: space(0.5);
-  padding: space(1.25);
-  border-radius: calc(var(--radius) * 1.15);
+  gap: space(0.35);
+  padding: space(1.4);
+  border-radius: calc(var(--radius) * 1.2);
   border: 1px solid var(--cta-border);
-  background: color-mix(in oklab, var(--surface), white 8%);
+  background: color-mix(in oklab, var(--cta-glass), white 16%);
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.cta__contact-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--brand), transparent 60%), transparent 70%);
+  opacity: 0.25;
+  pointer-events: none;
 }
 
 .cta__label {
@@ -108,11 +189,14 @@
   margin: 0;
   font-size: var(--fs-1);
   color: color-mix(in oklab, var(--on-surface) 90%, transparent);
+  letter-spacing: 0.01em;
 }
 
 .cta__contact-item a {
   color: inherit;
   font-weight: 700;
+  text-decoration-color: color-mix(in oklab, var(--brand), transparent 30%);
+  text-underline-offset: 0.2em;
 }
 
 .cta__icon {
@@ -123,7 +207,7 @@
   block-size: 2.25rem;
   border-radius: 999px;
   border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
-  background: color-mix(in oklab, var(--brand), white 78%);
+  background: linear-gradient(145deg, color-mix(in oklab, var(--brand), white 40%), color-mix(in oklab, #22d3ee, white 60%));
   color: var(--on-brand);
 }
 
@@ -137,12 +221,25 @@
 }
 
 .cta__card {
-  background: #ffffff;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(160deg, color-mix(in oklab, #ffffff, #f8fafc 40%), color-mix(in oklab, #e2e8f0, white 65%));
   color: var(--on-surface);
   border-radius: calc(var(--radius) * 1.5);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
   border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
+}
+
+.cta__card::before {
+  content: "";
+  position: absolute;
+  inset: -12% -18% auto;
+  block-size: 60%;
+  background: radial-gradient(circle at 20% 40%, color-mix(in srgb, var(--brand), transparent 65%), transparent 55%);
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .cta__form-head {
