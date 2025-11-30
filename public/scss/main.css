@@ -255,7 +255,7 @@ input, button, select, textarea {
   right: 0;
   z-index: var(--z-header);
   height: var(--header-height);
-  padding-inline: calc(var(--space) * 3);
+  padding-inline: calc(var(--space) * 2);
   box-shadow: var(--shadow);
   background-color: #ffffff;
   -webkit-backdrop-filter: blur(10px);
@@ -875,12 +875,12 @@ body[data-drawer-open='true'] {
     margin-bottom: calc(var(--space) * 4); }
   .factory__title {
     margin: 0;
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
     font-weight: 700;
     letter-spacing: 0.01em; }
   .factory__description {
     margin: calc(var(--space) * 2) 0 0;
-    font-size: var(--fs-1);
+    font-size: var(--fs-xs);
     color: color-mix(in srgb, var(--on-surface) 80%, transparent); }
   .factory__grid {
     display: grid;
@@ -986,7 +986,7 @@ body[data-drawer-open='true'] {
     margin-bottom: calc(var(--space) * 4); }
   .industries__title {
     margin: 0;
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
     font-weight: 700;
     letter-spacing: 0.01em; }
   .industries__grid {
@@ -1047,7 +1047,7 @@ body[data-drawer-open='true'] {
     max-width: 48rem; }
   .clients__title {
     margin: 0;
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
     font-weight: 700;
     letter-spacing: 0.01em; }
   .clients__description {
@@ -1101,7 +1101,7 @@ body[data-drawer-open='true'] {
 .home-featured .head h2 {
   grid-column: 1 / 4;
   margin: 0;
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   font-weight: 700;
   letter-spacing: 0.01em;
   text-align: center; }

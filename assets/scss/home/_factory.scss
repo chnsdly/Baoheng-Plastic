@@ -14,14 +14,14 @@
 
   &__title {
     margin: 0;
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
     font-weight: 700;
     letter-spacing: 0.01em;
   }
 
   &__description {
     margin: space(2) 0 0;
-    font-size: var(--fs-1);
+    font-size: var(--fs-xs);
     color: color-mix(in srgb, var(--on-surface) 80%, transparent);
   }
 

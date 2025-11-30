@@ -1,7 +1,7 @@
 {{ $factory := .Params.factory }}
 {{ if $factory.enable }}
 <section class="factory" aria-labelledby="factory-title">
-  <div class="container container--wide">
+  <div class="container">
     <div class="factory__header">
       <h2 class="factory__title" id="factory-title">{{ $factory.title }}</h2>
       {{ with $factory.description }}
