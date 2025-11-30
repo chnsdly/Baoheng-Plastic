@@ -1189,7 +1189,7 @@ body[data-drawer-open='true'] {
   isolation: isolate;
   background: var(--cta-surface);
   color: var(--cta-ink);
-  padding-block: clamp(3rem, 6vw, 5.5rem);
+  padding-block: 3rem;
   overflow: hidden; }
 
 .cta::before {
@@ -1210,12 +1210,11 @@ body[data-drawer-open='true'] {
 
 @media (min-width: 64rem) {
   .cta__grid {
-    grid-template-columns: 1.05fr 1fr; } }
+    grid-template-columns: 1fr 2fr; } }
 
 .cta__intro {
   display: grid;
-  gap: calc(var(--space) * 2);
-  align-content: center; }
+  gap: calc(var(--space) * 2); }
 
 .cta__eyebrow {
   margin: 0;
@@ -1227,7 +1226,7 @@ body[data-drawer-open='true'] {
 
 .cta__title {
   margin: 0;
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   color: color-mix(in oklab, #0f172a, var(--on-surface)); }
 
 .cta__desc {
@@ -1250,11 +1249,10 @@ body[data-drawer-open='true'] {
 
 .cta__contact-item {
   display: grid;
-  gap: calc(var(--space) * 0.5);
-  padding: calc(var(--space) * 1.25);
-  border-radius: calc(var(--radius) * 1.15);
-  border: 1px solid var(--cta-border);
-  background: color-mix(in oklab, var(--surface), white 8%); }
+  grid-template-columns: auto 1fr;
+  gap: calc(var(--space) * 0.75) calc(var(--space) * 1.25);
+  align-items: center;
+  padding-block: calc(var(--space) * 1.25); }
 
 .cta__label {
   margin: 0;
@@ -1270,11 +1268,12 @@ body[data-drawer-open='true'] {
 .cta__value {
   margin: 0;
   font-size: var(--fs-1);
-  color: color-mix(in oklab, var(--on-surface) 90%, transparent); }
+  color: color-mix(in oklab, var(--on-surface) 90%, transparent);
+  font-weight: 700; }
 
 .cta__contact-item a {
   color: inherit;
-  font-weight: 700; }
+  font-weight: 500; }
 
 .cta__icon {
   display: inline-flex;
@@ -1299,7 +1298,7 @@ body[data-drawer-open='true'] {
   color: var(--on-surface);
   border-radius: calc(var(--radius) * 1.5);
   padding: clamp(1.5rem, 3vw, 2.25rem);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--shadow);
   border: 1px solid color-mix(in srgb, var(--border), transparent 20%); }
 
 .cta__form-head {
