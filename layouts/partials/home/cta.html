@@ -16,9 +16,16 @@
   <div class="container container--wide">
     <div class="cta__grid">
       <div class="cta__intro">
-        <p class="cta__eyebrow">{{ i18n "cta_eyebrow" | default "Talk with a specialist" }}</p>
+        <div class="cta__header">
+          <p class="cta__eyebrow">{{ i18n "cta_eyebrow" | default "Talk with a specialist" }}</p>
+          <div class="cta__chips" aria-hidden="true">
+            <span class="cta__chip">Precision pallet design</span>
+            <span class="cta__chip cta__chip--ghost">Avg. response in <strong>24h</strong></span>
+          </div>
+        </div>
         <h2 id="cta-title" class="cta__title">{{ i18n "cta_title" | default "Ready to design your next plastic pallet?" }}</h2>
         <p class="cta__desc">{{ i18n "cta_subtitle" | default "Tell us how your pallets need to perform and we will reply within one business day." }}</p>
+        <p class="cta__meta">Trusted by logistics leaders for tailored, durable pallet solutions with dedicated engineer support.</p>
         <ul class="cta__contact" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
           {{ with $phone }}
           <li class="cta__contact-item">
