@@ -1,29 +1,54 @@
 /* Home: CTA */
 .cta {
   --cta-surface:
-    radial-gradient(circle at 20% 20%, color-mix(in oklab, var(--brand), transparent 82%), transparent 35%),
-    radial-gradient(circle at 85% 10%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
-    linear-gradient(135deg, color-mix(in oklab, #0f172a, white 90%), color-mix(in oklab, #0f172a, white 80%));
-  --cta-glow: color-mix(in srgb, var(--brand), transparent 90%);
+    radial-gradient(circle at 18% 12%, color-mix(in oklab, var(--brand), transparent 78%), transparent 30%),
+    radial-gradient(circle at 72% 16%, color-mix(in oklab, #7c3aed, transparent 75%), transparent 35%),
+    radial-gradient(circle at 88% 82%, color-mix(in oklab, var(--brand), transparent 80%), transparent 40%),
+    linear-gradient(145deg, color-mix(in oklab, #0b162c, white 90%), color-mix(in oklab, #0b162c, white 82%));
+  --cta-gridline: color-mix(in oklab, var(--border), transparent 70%);
   --cta-ink: var(--on-surface);
-  --cta-border: color-mix(in oklab, var(--border), transparent 35%);
+  --cta-border: color-mix(in oklab, var(--border), transparent 30%);
 
   position: relative;
   isolation: isolate;
   background: var(--cta-surface);
   color: var(--cta-ink);
-  padding-block: clamp(3rem, 6vw, 5.5rem);
+  padding-block: clamp(3.25rem, 6vw, 6rem);
   overflow: hidden;
 }
 
-.cta::before {
+.cta::before,
+.cta::after {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(180% 120% at 12% 20%, var(--cta-glow), transparent 42%),
-    radial-gradient(120% 110% at 86% 14%, var(--cta-glow), transparent 36%);
   pointer-events: none;
+}
+
+.cta::before {
+  background:
+    radial-gradient(140% 120% at 12% 18%, color-mix(in oklab, var(--brand), transparent 86%), transparent 48%),
+    radial-gradient(130% 120% at 92% 12%, color-mix(in oklab, #a855f7, transparent 82%), transparent 42%),
+    radial-gradient(120% 120% at 78% 86%, color-mix(in oklab, #0ea5e9, transparent 85%), transparent 45%);
+  mix-blend-mode: screen;
+}
+
+.cta::after {
+  background: repeating-linear-gradient(
+      90deg,
+      color-mix(in oklab, var(--cta-gridline), transparent 35%) 0,
+      color-mix(in oklab, var(--cta-gridline), transparent 35%) 1px,
+      transparent 1px,
+      transparent 120px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      color-mix(in oklab, var(--cta-gridline), transparent 35%) 0,
+      color-mix(in oklab, var(--cta-gridline), transparent 35%) 1px,
+      transparent 1px,
+      transparent 120px
+    );
+  opacity: 0.6;
 }
 
 .cta .container {
@@ -33,7 +58,7 @@
 
 .cta__grid {
   display: grid;
-  gap: clamp(2rem, 4vw, 3rem);
+  gap: clamp(2.5rem, 5vw, 3.5rem);
   align-items: stretch;
 }
 
@@ -43,23 +68,33 @@
 
 .cta__intro {
   display: grid;
-  gap: space(2);
+  gap: space(2.25);
   align-content: center;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border-radius: calc(var(--radius) * 1.6);
+  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
+  background: color-mix(in oklab, var(--surface), transparent 5%);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 color-mix(in oklab, var(--cta-border), transparent 25%);
+  backdrop-filter: blur(10px);
 }
 
 .cta__eyebrow {
   margin: 0;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--on-surface) 70%, transparent);
+  color: color-mix(in oklab, var(--on-surface) 72%, transparent);
   font-size: var(--fs-xs);
 }
 
 .cta__title {
   margin: 0;
-  font-size: var(--fs-4);
+  font-size: clamp(var(--fs-3), 4vw, var(--fs-5));
+  line-height: 1.1;
   color: color-mix(in oklab, #0f172a, var(--on-surface));
+  text-shadow: 0 12px 50px rgba(0, 0, 0, 0.35);
 }
 
 .cta__desc {
@@ -67,6 +102,7 @@
   color: color-mix(in oklab, var(--muted) 75%, transparent);
   font-size: var(--fs-2);
   max-inline-size: 62ch;
+  line-height: 1.6;
 }
 
 .cta__meta {
@@ -80,16 +116,26 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: space(3);
+  gap: space(2);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .cta__contact-item {
   display: grid;
   gap: space(0.5);
-  padding: space(1.25);
-  border-radius: calc(var(--radius) * 1.15);
+  padding: space(1.5);
+  border-radius: calc(var(--radius) * 1.25);
   border: 1px solid var(--cta-border);
-  background: color-mix(in oklab, var(--surface), white 8%);
+  background: color-mix(in oklab, var(--surface), white 12%);
+  box-shadow: 0 12px 28px rgba(4, 6, 20, 0.28);
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.cta__contact-item:hover,
+.cta__contact-item:focus-within {
+  transform: translateY(-4px);
+  border-color: color-mix(in oklab, var(--brand), transparent 40%);
+  box-shadow: 0 18px 40px rgba(4, 6, 20, 0.35);
 }
 
 .cta__label {
@@ -98,8 +144,8 @@
   align-items: center;
   gap: space(1);
   font-weight: 700;
-  letter-spacing: 0.04em;
-  color: color-mix(in oklab, var(--muted) 65%, transparent);
+  letter-spacing: 0.08em;
+  color: color-mix(in oklab, var(--muted) 68%, transparent);
   text-transform: uppercase;
   font-size: var(--fs-xs);
 }
@@ -107,7 +153,7 @@
 .cta__value {
   margin: 0;
   font-size: var(--fs-1);
-  color: color-mix(in oklab, var(--on-surface) 90%, transparent);
+  color: color-mix(in oklab, var(--on-surface) 92%, transparent);
 }
 
 .cta__contact-item a {
@@ -119,17 +165,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: 2.25rem;
-  block-size: 2.25rem;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
   border-radius: 999px;
   border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
-  background: color-mix(in oklab, var(--brand), white 78%);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.65), transparent 55%),
+    color-mix(in oklab, var(--brand), white 75%);
   color: var(--on-brand);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.28);
 }
 
 .cta__icon svg {
-  inline-size: 1.25rem;
-  block-size: 1.25rem;
+  inline-size: 1.3rem;
+  block-size: 1.3rem;
 }
 
 .cta__form {
@@ -137,18 +186,32 @@
 }
 
 .cta__card {
+  position: relative;
   background: #ffffff;
   color: var(--on-surface);
-  border-radius: calc(var(--radius) * 1.5);
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
-  border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
+  border-radius: calc(var(--radius) * 1.8);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.2),
+    0 1px 0 color-mix(in oklab, var(--border), transparent 15%);
+  border: 1px solid color-mix(in srgb, var(--border), transparent 15%);
+  overflow: hidden;
+}
+
+.cta__card::before {
+  content: "";
+  position: absolute;
+  inset: 1.2rem;
+  border-radius: inherit;
+  border: 1px solid color-mix(in oklab, var(--brand), transparent 70%);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .cta__form-head {
   display: grid;
-  gap: space(1);
-  margin-block-end: space(1.5);
+  gap: space(0.75);
+  margin-block-end: space(2);
 }
 
 .cta__pill {
@@ -159,18 +222,21 @@
   align-items: center;
   padding: space(1) space(1.5);
   border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--brand), #0ea5e9 55%);
+  background: linear-gradient(120deg, color-mix(in srgb, var(--brand), #0ea5e9 35%), #14b8a6);
   color: var(--on-brand);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   font-size: var(--fs-xs);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.48),
+    0 10px 25px rgba(20, 184, 166, 0.32);
 }
 
 .cta__form-title {
   margin: 0;
   font-size: var(--fs-3);
   letter-spacing: -0.01em;
+  color: color-mix(in oklab, #0f172a, var(--on-surface));
 }
 
 .cta__form-desc {
@@ -180,17 +246,19 @@
 
 .cta .lead-form {
   margin: 0;
-  background: color-mix(in srgb, #f8fafc, white 10%);
+  background: color-mix(in srgb, #f8fafc, white 6%);
   padding: 0;
 }
 
 .cta .lead-form button {
-  background: #0f172a;
+  background: linear-gradient(120deg, #0f172a, color-mix(in oklab, var(--brand), #0f172a 18%));
   color: #f8fafc;
-  padding-inline: 1.4rem;
+  padding-inline: 1.6rem;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.25);
 }
 
 @media (max-width: 48rem) {
+  .cta__intro { padding: space(1.25); }
   .cta__contact-item { padding: space(1.25); }
   .cta__card { padding: space(2); }
 }
