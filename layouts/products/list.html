@@ -14,10 +14,22 @@
         {{ $currentType = (index . 0).Params.product_type }}
       {{ end }}
 
+      {{ $menuLabel := i18n "product_menu" | default "Products" }}
+      {{ $toggleOpenLabel := cond (eq $.Site.Language.Lang "zh") "收起目录" "Hide menu" }}
+      {{ $toggleClosedLabel := cond (eq $.Site.Language.Lang "zh") "浏览产品目录" "Browse products" }}
+
       <div class="product-listing__layout">
-        <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
+        <div class="product-sidebar__mobile-bar">
+          <button class="product-sidebar__toggle" type="button" aria-expanded="false" aria-controls="product-sidebar">
+            <span class="product-sidebar__toggle-icon" aria-hidden="true">☰</span>
+            <span class="product-sidebar__toggle-text" data-open-text="{{ $toggleOpenLabel }}" data-close-text="{{ $toggleClosedLabel }}">{{ $toggleClosedLabel }}</span>
+          </button>
+        </div>
+        <div class="product-sidebar__overlay" hidden></div>
+        <aside id="product-sidebar" class="product-sidebar" tabindex="-1" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
           <div class="product-sidebar__header">
-            <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
+            <h2 class="product-sidebar__title">{{ $menuLabel }}</h2>
+            <button class="product-sidebar__close" type="button" aria-label='{{ if eq $.Site.Language.Lang "zh" }}关闭产品目录{{ else }}Close product menu{{ end }}'>×</button>
           </div>
           <ul class="product-sidebar__list" role="list">
             {{ range $productMenus }}
@@ -149,6 +161,88 @@
       const cards = document.querySelectorAll('.product-listing__card');
       const links = document.querySelectorAll('.product-sidebar__sublink');
       const pager = document.querySelector('.product-listing__pager');
+      const sidebar = document.querySelector('.product-sidebar');
+      const sidebarOverlay = document.querySelector('.product-sidebar__overlay');
+      const toggleButtons = document.querySelectorAll('.product-sidebar__toggle');
+      const closeButtons = document.querySelectorAll('.product-sidebar__close');
+      const sidebarLinks = document.querySelectorAll('.product-sidebar a');
+      const desktopMedia = window.matchMedia('(min-width: 48rem)');
+
+      const setToggleLabel = (isOpen) => {
+        toggleButtons.forEach((btn) => {
+          const textEl = btn.querySelector('.product-sidebar__toggle-text');
+          if (textEl) {
+            const openText = textEl.dataset.openText || textEl.textContent;
+            const closeText = textEl.dataset.closeText || textEl.textContent;
+            textEl.textContent = isOpen ? openText : closeText;
+          }
+        });
+      };
+
+      const syncSidebarState = (isOpen) => {
+        if (!sidebar) return;
+
+        sidebar.classList.toggle('is-open', isOpen);
+        sidebar.setAttribute('aria-hidden', (!isOpen && !desktopMedia.matches) ? 'true' : 'false');
+        toggleButtons.forEach((btn) => btn.setAttribute('aria-expanded', String(isOpen)));
+
+        if (sidebarOverlay) {
+          sidebarOverlay.classList.toggle('is-active', isOpen);
+          if (isOpen) {
+            sidebarOverlay.removeAttribute('hidden');
+          } else {
+            sidebarOverlay.setAttribute('hidden', 'true');
+          }
+        }
+
+        document.body.classList.toggle('product-sidebar-open', isOpen && !desktopMedia.matches);
+        setToggleLabel(isOpen);
+
+        if (isOpen && !desktopMedia.matches) {
+          sidebar.focus({ preventScroll: true });
+        }
+      };
+
+      const closeSidebar = () => syncSidebarState(false);
+
+      toggleButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const isOpen = sidebar?.classList.contains('is-open');
+          syncSidebarState(!isOpen);
+        });
+      });
+
+      closeButtons.forEach((btn) => btn.addEventListener('click', closeSidebar));
+      sidebarOverlay?.addEventListener('click', closeSidebar);
+
+      desktopMedia.addEventListener('change', (event) => {
+        if (event.matches) {
+          sidebar?.classList.remove('is-open');
+          sidebar?.removeAttribute('aria-hidden');
+          sidebarOverlay?.setAttribute('hidden', 'true');
+          document.body.classList.remove('product-sidebar-open');
+          setToggleLabel(false);
+          toggleButtons.forEach((btn) => btn.setAttribute('aria-expanded', 'false'));
+        } else {
+          closeSidebar();
+        }
+      });
+
+      document.addEventListener('keyup', (event) => {
+        if (event.key === 'Escape') {
+          closeSidebar();
+        }
+      });
+
+      sidebarLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          if (!desktopMedia.matches) {
+            closeSidebar();
+          }
+        });
+      });
+
+      syncSidebarState(false);
 
       const toggleCards = (category) => {
         cards.forEach((card) => {
