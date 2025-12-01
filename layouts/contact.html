@@ -1,8 +1,95 @@
 {{ define "main" }}
-  <section class="container container--narrow contact-content">
-    {{ .Content }}
+  <section class="contact-hero">
+    <div class="container container--wide">
+      <div class="contact-hero__grid contact-hero__grid--balanced">
+        <div class="contact-hero__intro">
+          <p class="contact-hero__eyebrow">Trusted manufacturing partner</p>
+          <h1 class="contact-hero__headline">One conversation to move from idea to shipment</h1>
+          <div class="contact-hero__lede">{{ .Content }}</div>
+          <ul class="contact-hero__highlights">
+            <li>Material pairing that balances clarity, durability, and cost for your use case.</li>
+            <li>Tooling, sampling, and production overseen by a dedicated plastics specialist.</li>
+            <li>Global logistics support with consistent quality checks before every shipment.</li>
+          </ul>
+          <div class="contact-hero__assurance">
+            <div>
+              <p class="contact-hero__assurance-title">We respond within one business day.</p>
+              <p class="contact-hero__assurance-text">Share a few project notes and we’ll propose dimensions, materials, and next steps—no obligation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-hero__card contact-hero__card--framed">
+          <p class="contact-hero__badge">{{ .Site.Params.company_name }}</p>
+          <div class="contact-hero__card-body flow">
+            <div class="contact-hero__card-copy">
+              <p class="contact-hero__card-title">Talk to a plastics specialist</p>
+              <p class="contact-hero__card-text">Call or email us directly — we’ll align materials, dimensions, and timelines before we start tooling.</p>
+            </div>
+            <div class="contact-hero__actions">
+              <a class="button button--primary" href="mailto:{{ .Site.Params.contact_email }}">Email {{ .Site.Params.contact_email }}</a>
+              <a class="button" href="tel:{{ .Site.Params.contact_phone }}">Call {{ .Site.Params.contact_phone }}</a>
+            </div>
+            <div class="contact-hero__meta contact-hero__meta--list">
+              <div class="contact-hero__meta-item">
+                <p class="contact-hero__meta-label">Email</p>
+                <a class="contact-hero__meta-value" href="mailto:{{ .Site.Params.contact_email }}">{{ .Site.Params.contact_email }}</a>
+              </div>
+              <div class="contact-hero__meta-item">
+                <p class="contact-hero__meta-label">Phone</p>
+                <a class="contact-hero__meta-value" href="tel:{{ .Site.Params.contact_phone }}">{{ .Site.Params.contact_phone }}</a>
+              </div>
+              <div class="contact-hero__meta-item">
+                <p class="contact-hero__meta-label">Address</p>
+                <p class="contact-hero__meta-value">{{ .Site.Params.contact_address }}</p>
+              </div>
+              <div class="contact-hero__meta-item">
+                <p class="contact-hero__meta-label">Working hours</p>
+                <p class="contact-hero__meta-value">{{ .Site.Params.business_hours }}</p>
+              </div>
+              <div class="contact-hero__meta-item contact-hero__meta-item--social">
+                <p class="contact-hero__meta-label">Social</p>
+                <div class="contact-social">
+                  {{ $icons := dict "linkedin" "linkedin" "twitter" "x" "facebook" "facebook" "youtube" "youtube" }}
+                  {{ $order := slice "linkedin" "twitter" "facebook" "youtube" }}
+                  {{ range $order }}
+                    {{ $value := index $.Site.Params.social . }}
+                    {{ with $value }}
+                      {{ with index $icons . }}
+                        <a class="contact-social__link" href="{{ $value }}" target="_blank" rel="noopener" aria-label="{{ . }}">
+                          <img src="{{ printf "%simages/icons/%s.svg" ("/" | relURL) . }}" alt="{{ . }} icon" loading="lazy">
+                        </a>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="container container--narrow contact-form">
-    {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+
+  <section class="contact-intake">
+    <div class="container container--wide">
+      <div class="contact-intake__shell">
+        <div class="contact-intake__header">
+          <p class="contact-intake__eyebrow">Project intake</p>
+          <h2>Share your brief</h2>
+          <p>Tell us about your packaging size, material, usage, and timeline. We’ll return a tailored proposal with samples if needed.</p>
+        </div>
+        <div class="contact-intake__form">
+          {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+        </div>
+        <div class="contact-intake__footer">
+          <div>
+            <p class="contact-intake__note-title">What happens next?</p>
+            <p class="contact-intake__note">An engineer reviews your details, shares material options, and sets up sampling. We keep every update in one thread.</p>
+          </div>
+          <div class="contact-intake__note contact-intake__note--pill">Response within one business day.</div>
+        </div>
+      </div>
+    </div>
   </section>
 {{ end }}
