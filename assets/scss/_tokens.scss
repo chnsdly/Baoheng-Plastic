@@ -178,7 +178,7 @@ input, button, select, textarea { font: inherit; color: inherit; }
   max-width: var(--container);
   width: 100%;
   margin-inline: auto;
-  padding-inline: space(2);
+  padding-inline: space(1);
 }
 /* 定义要在 .container 后面使用，保证能覆盖 */
 .container--wide    { --container: var(--container-wide); }
