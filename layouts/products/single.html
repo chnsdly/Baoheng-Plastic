@@ -11,7 +11,14 @@
 
   <section class="product-single">
     <div class="container product-single__container">
-      <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
+      <button class="product-sidebar__toggle" type="button" aria-expanded="false" aria-controls="product-sidebar">
+        <span>{{ i18n "product_menu" | default "Products" }}</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 13.414L16.95 8.464l1.414 1.414L12 16.778 5.636 9.878 7.05 8.464z" />
+        </svg>
+      </button>
+      <div class="product-sidebar__backdrop" hidden aria-hidden="true"></div>
+      <aside id="product-sidebar" class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
         <div class="product-sidebar__header">
           <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
         </div>
@@ -154,6 +161,60 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('product-sidebar');
+      const toggleButton = document.querySelector('.product-sidebar__toggle');
+      const backdrop = document.querySelector('.product-sidebar__backdrop');
+      const desktopQuery = window.matchMedia('(min-width: 48rem)');
+
+      const closeSidebar = () => {
+        if (!sidebar) return;
+        sidebar.classList.remove('product-sidebar--open');
+        document.body.classList.remove('product-sidebar-open');
+        toggleButton?.setAttribute('aria-expanded', 'false');
+        if (backdrop) backdrop.hidden = true;
+      };
+
+      const openSidebar = () => {
+        if (!sidebar) return;
+        sidebar.classList.add('product-sidebar--open');
+        document.body.classList.add('product-sidebar-open');
+        toggleButton?.setAttribute('aria-expanded', 'true');
+        if (backdrop) backdrop.hidden = false;
+        const firstLink = sidebar.querySelector('a');
+        firstLink?.focus({ preventScroll: true });
+      };
+
+      const toggleSidebar = () => {
+        if (sidebar?.classList.contains('product-sidebar--open')) {
+          closeSidebar();
+        } else {
+          openSidebar();
+        }
+      };
+
+      toggleButton?.addEventListener('click', toggleSidebar);
+      backdrop?.addEventListener('click', closeSidebar);
+
+      sidebar?.addEventListener('click', (event) => {
+        if (desktopQuery.matches) return;
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        const link = target.closest('.product-sidebar__link, .product-sidebar__sublink');
+        if (link) closeSidebar();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeSidebar();
+        }
+      });
+
+      desktopQuery.addEventListener('change', (event) => {
+        if (event.matches) {
+          closeSidebar();
+        }
+      });
+
       const params = new URLSearchParams(window.location.search);
       const activeCategory = params.get('category') || '';
       const cards = document.querySelectorAll('.product-listing__card');
