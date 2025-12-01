@@ -78,7 +78,11 @@
   font-weight: 500;
   text-decoration: none;
   color: var(--on-card, var(--on-surface));
-  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   &:hover { text-decoration: underline; }
 }
 .res-desc {
@@ -92,6 +96,37 @@
   gap: .75rem 1.25rem;
   color: var(--muted, #667085);
   font-size: var(--fs-xxs);
+}
+
+/* =============== 侧边栏 =============== */
+.popular-list,
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-list {
+  display: grid;
+  gap: .75rem;
+}
+
+.popular-link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .75rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.popular-item .ph__img {
+  border-radius: var(--radius, 10px);
+  display: block;
+}
+
+.popular-link .s2 {
+  color: var(--on-surface);
 }
 
 /* 分页 */
