@@ -1,8 +1,145 @@
 {{ define "main" }}
-  <section class="container container--narrow contact-content">
-    {{ .Content }}
+  {{ $params := .Site.Params }}
+  {{ $social := $params.social }}
+  {{ $addressMap := cond (ne $params.contact_address "") (printf "https://www.google.com/maps/search/?api=1&query=%s" ($params.contact_address | urlquery)) "" }}
+  <section class="contact-hero">
+    <div class="container contact-hero__grid">
+      <div class="contact-hero__copy">
+        <p class="contact-hero__eyebrow">{{ i18n "contact_us" | default "Contact us" }}</p>
+        <h1 class="contact-hero__title">{{ .Title }}</h1>
+        <div class="contact-hero__desc">{{ .Content }}</div>
+        <div class="contact-hero__badges">
+          {{ with $params.company_name }}
+            <span class="contact-hero__pill">{{ . }}</span>
+          {{ end }}
+          {{ with $params.business_hours }}
+            <span class="contact-hero__pill contact-hero__pill--ghost">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+      <div class="contact-hero__highlights" aria-label="Key contact details">
+        {{ with $params.contact_phone }}
+          <article class="contact-highlight">
+            <div class="contact-highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path d="M7.2 3.8c.26-.73 1.05-1.13 1.8-.94l2.05.51c.67.17 1.13.79 1.08 1.48l-.18 2.42a1.46 1.46 0 01-.5.95l-1.06.94a9.54 9.54 0 003.72 3.72l.94-1.06c.25-.28.59-.46.96-.5l2.41-.19a1.5 1.5 0 011.49 1.08l.52 2.04a1.5 1.5 0 01-.93 1.8l-1.94.69c-.47.17-.99.16-1.45-.03-2.52-1.04-4.67-2.65-6.45-4.83-1.77-2.2-2.95-4.69-3.52-7.46a1.5 1.5 0 01.2-1.02z" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="contact-highlight__content">
+              <p class="contact-highlight__label">Direct line</p>
+              <a class="contact-highlight__value" href="tel:{{ . }}">{{ . }}</a>
+              <p class="contact-highlight__hint">Talk with a plastics specialist right away.</p>
+            </div>
+          </article>
+        {{ end }}
+        {{ with $params.contact_email }}
+          <article class="contact-highlight">
+            <div class="contact-highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11A2.5 2.5 0 0117.5 20h-11A2.5 2.5 0 014 17.5v-11zm2.66-.5l4.84 3.62a1.01 1.01 0 001.19 0L17.52 6H6.66zM18 8.08l-3.72 2.8a3 3 0 01-3.56 0L7 8.08V17h11V8.08z" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="contact-highlight__content">
+              <p class="contact-highlight__label">Email</p>
+              <a class="contact-highlight__value" href="mailto:{{ . }}">{{ . }}</a>
+              <p class="contact-highlight__hint">Drop us the specs—files and drawings welcome.</p>
+            </div>
+          </article>
+        {{ end }}
+        {{ with $params.contact_address }}
+          <article class="contact-highlight">
+            <div class="contact-highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path d="M12 2a7 7 0 00-7 7c0 4.39 4.56 9.64 6.2 11.34.43.45 1.18.45 1.61 0C14.44 18.64 19 13.39 19 9a7 7 0 00-7-7zm0 3a4 4 0 110 8 4 4 0 010-8z" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="contact-highlight__content">
+              <p class="contact-highlight__label">Visit</p>
+              {{ if $addressMap }}
+                <a class="contact-highlight__value" href="{{ $addressMap }}" target="_blank" rel="noreferrer">{{ . }}</a>
+              {{ else }}
+                <p class="contact-highlight__value">{{ . }}</p>
+              {{ end }}
+              {{ with $params.business_hours }}
+                <p class="contact-highlight__hint">Open {{ . }}</p>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
   </section>
-  <section class="container container--narrow contact-form">
-    {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+
+  <section class="container contact-grid">
+    <div class="contact-grid__info">
+      <div class="contact-card">
+        <p class="contact-card__eyebrow">Partnership-first</p>
+        <h2 class="contact-card__title">Precision plastics, delivered globally.</h2>
+        <p class="contact-card__desc">Tell us about the pallets, totes, or custom builds you need. Our engineers respond quickly with samples, drawings, and timelines crafted for your supply chain.</p>
+        <ul class="contact-list" aria-label="Contact details">
+          {{ with $params.contact_phone }}
+            <li>
+              <span class="contact-list__label">Call</span>
+              <a class="contact-list__value" href="tel:{{ . }}">{{ . }}</a>
+            </li>
+          {{ end }}
+          {{ with $params.contact_email }}
+            <li>
+              <span class="contact-list__label">Email</span>
+              <a class="contact-list__value" href="mailto:{{ . }}">{{ . }}</a>
+            </li>
+          {{ end }}
+          {{ with $params.contact_address }}
+            <li>
+              <span class="contact-list__label">Address</span>
+              {{ if $addressMap }}
+                <a class="contact-list__value" href="{{ $addressMap }}" target="_blank" rel="noreferrer">{{ . }}</a>
+              {{ else }}
+                <span class="contact-list__value">{{ . }}</span>
+              {{ end }}
+            </li>
+          {{ end }}
+          {{ with $params.business_hours }}
+            <li>
+              <span class="contact-list__label">Hours</span>
+              <span class="contact-list__value">{{ . }}</span>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="contact-social">
+        <div class="contact-social__head">
+          <p class="contact-card__eyebrow">Follow our journey</p>
+          <h3 class="contact-social__title">Connect with Baoheng</h3>
+          <p class="contact-social__desc">Factory footage, customer case studies, and engineering notes from our team.</p>
+        </div>
+        <ul class="contact-social__list" aria-label="Social media">
+          {{ $icons := dict "linkedin" "linkedin.svg" "twitter" "x.svg" "facebook" "facebook.svg" "youtube" "youtube.svg" }}
+          {{ range $name, $url := $social }}
+            {{ if $url }}
+              {{ $icon := index $icons $name }}
+              <li class="contact-social__item">
+                <a href="{{ $url }}" target="_blank" rel="noreferrer" aria-label="{{ humanize $name }}">
+                  {{ with $icon }}
+                    <img src="{{ printf "/images/icons/%s" . }}" alt="{{ humanize $name }} icon" loading="lazy" />
+                  {{ end }}
+                  <span>{{ humanize $name }}</span>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-grid__form" aria-label="Contact form">
+      <div class="contact-card contact-card--form">
+        <p class="contact-card__eyebrow">Start a project</p>
+        <h2 class="contact-card__title">We reply within one business day.</h2>
+        <p class="contact-card__desc">Already know what you need? Upload specs in the message field and we will assign an engineer immediately.</p>
+        {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" $params.turnstile_site_key) }}
+      </div>
+    </div>
   </section>
 {{ end }}
