@@ -14,7 +14,7 @@
     <div class="clients__carousel" role="region" aria-roledescription="carousel" aria-labelledby="clients-title">
       <div class="clients__track" aria-live="off">
         {{ range $clients.items }}
-        <figure class="clients__slide">
+        <div class="clients__slide">
           {{ partial "picture.html" (dict
             "ctx"   $
             "src"   .image
@@ -24,10 +24,10 @@
             "w"     (slice 320 480 640 768 960)
             "lqip"  true
           ) }}
-        </figure>
+        </div>
         {{ end }}
         {{ range $clients.items }}
-        <figure class="clients__slide clients__slide--clone">
+        <div class="clients__slide clients__slide--clone">
           {{ partial "picture.html" (dict
             "ctx"   $
             "src"   .image
@@ -37,7 +37,7 @@
             "w"     (slice 320 480 640 768 960)
             "lqip"  true
           ) }}
-        </figure>
+        </div>
         {{ end }}
       </div>
     </div>

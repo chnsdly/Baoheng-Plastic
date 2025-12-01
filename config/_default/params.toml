@@ -1,8 +1,10 @@
 # 全局参数
-company_name = "Baoheng Plastic"
+company_name = "Shandong Baoheng Plastic Co., Ltd."
 contact_email = "weibenlong6@gmail.com"
 contact_phone = "+86 178 6161 6766"
 contact_address = "Xianghe Industrial Park, Linyi City, Shandong, China"
+business_hours: "Mon–Sat, 8:30–17:30 (GMT+8)"
+
 logo = "images/logo.png"
 
 turnstile_site_key = "0x4AAAAAACBC7FiXCfcn5h5j"

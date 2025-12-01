@@ -57,7 +57,7 @@
   &__slide {
     flex: 0 0 calc((100% - (var(--clients-gap) * (var(--clients-columns) - 1))) / var(--clients-columns));
     max-width: clamp(12rem, 25vw, 18rem);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
     background-color: var(--card);
     overflow: hidden;
@@ -88,3 +88,4 @@
     animation: none;
   }
 }
+
