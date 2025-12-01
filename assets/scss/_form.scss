@@ -1,4 +1,8 @@
 /* === lead-form — Token 原生版（不新建自定义变量） === */
+.contact-content{
+  max-width: 720px;
+  padding-top: space(2);
+}
 .lead-form{
   display: grid;
   grid-template-columns: 1fr;
@@ -7,7 +11,10 @@
   margin-inline: auto;
   color: var(--on-surface);
   box-sizing: border-box; /* 防止外层无内边距时被撑到边 */
-  margin-block-start: space(4);
+  padding: space(4);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin-block: space(4);
 }
 
 .lead-form *{ min-width: 0; } /* 防止长内容把容器撑爆 */

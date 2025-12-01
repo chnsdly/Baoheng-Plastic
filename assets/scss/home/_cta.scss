@@ -12,7 +12,7 @@
   isolation: isolate;
   background: var(--cta-surface);
   color: var(--cta-ink);
-  padding-block: 3rem;
+  padding-block: space(4);
   overflow: hidden;
 }
 
@@ -33,17 +33,23 @@
 
 .cta__grid {
   display: grid;
-  gap: clamp(2rem, 4vw, 3rem);
+  gap: space(2);
   align-items: stretch;
 }
 
 @media (min-width: 64rem) {
-  .cta__grid { grid-template-columns: 1fr 2fr; }
+  .cta__grid { grid-template-columns: 3fr 5fr; }
 }
 
 .cta__intro {
   display: grid;
   gap: space(2);
+  background: var(--card);
+  color: var(--on-card);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--shadow);
+  border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
 }
 
 .cta__eyebrow {
@@ -79,7 +85,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: space(3);
+  gap: space(2);
 }
 
 .cta__contact-item {
@@ -136,9 +142,9 @@
 }
 
 .cta__card {
-  background: #ffffff;
-  color: var(--on-surface);
-  border-radius: calc(var(--radius) * 1.5);
+  background: var(--card);
+  color: var(--on-card);
+  border-radius: var(--radius);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: var(--shadow);
   border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
@@ -179,7 +185,6 @@
 
 .cta .lead-form {
   margin: 0;
-  background: color-mix(in srgb, #f8fafc, white 10%);
   padding: 0;
 }
 

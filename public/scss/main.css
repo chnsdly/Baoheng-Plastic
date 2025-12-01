@@ -1189,7 +1189,7 @@ body[data-drawer-open='true'] {
   isolation: isolate;
   background: var(--cta-surface);
   color: var(--cta-ink);
-  padding-block: 3rem;
+  padding-block: calc(var(--space) * 4);
   overflow: hidden; }
 
 .cta::before {
@@ -1205,16 +1205,22 @@ body[data-drawer-open='true'] {
 
 .cta__grid {
   display: grid;
-  gap: clamp(2rem, 4vw, 3rem);
+  gap: calc(var(--space) * 2);
   align-items: stretch; }
 
 @media (min-width: 64rem) {
   .cta__grid {
-    grid-template-columns: 1fr 2fr; } }
+    grid-template-columns: 3fr 5fr; } }
 
 .cta__intro {
   display: grid;
-  gap: calc(var(--space) * 2); }
+  gap: calc(var(--space) * 2);
+  background: var(--card);
+  color: var(--on-card);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--shadow);
+  border: 1px solid color-mix(in srgb, var(--border), transparent 20%); }
 
 .cta__eyebrow {
   margin: 0;
@@ -1245,7 +1251,7 @@ body[data-drawer-open='true'] {
   padding: 0;
   list-style: none;
   display: grid;
-  gap: calc(var(--space) * 3); }
+  gap: calc(var(--space) * 2); }
 
 .cta__contact-item {
   display: grid;
@@ -1294,9 +1300,9 @@ body[data-drawer-open='true'] {
   align-self: center; }
 
 .cta__card {
-  background: #ffffff;
-  color: var(--on-surface);
-  border-radius: calc(var(--radius) * 1.5);
+  background: var(--card);
+  color: var(--on-card);
+  border-radius: var(--radius);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: var(--shadow);
   border: 1px solid color-mix(in srgb, var(--border), transparent 20%); }
@@ -1332,7 +1338,6 @@ body[data-drawer-open='true'] {
 
 .cta .lead-form {
   margin: 0;
-  background: color-mix(in srgb, #f8fafc, white 10%);
   padding: 0; }
 
 .cta .lead-form button {
@@ -2213,6 +2218,7 @@ body[data-drawer-open='true'] {
   grid-template-columns: 1fr;
   /* 小屏单列 */
   gap: clamp(1rem, 2vw, 2rem);
+  margin-block: calc(var(--space) * 4);
   /* 让列从顶部对齐，避免侧栏被内容撑下去 */
   align-items: start;
   /* 防止子元素设置的宽度把容器挤爆 */ }
@@ -2567,6 +2573,10 @@ body[data-drawer-open='true'] {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0), 0 0 0 calc($offset + 2px) var(--focus); }
 
 /* === lead-form — Token 原生版（不新建自定义变量） === */
+.contact-content {
+  max-width: 720px;
+  padding-top: calc(var(--space) * 2); }
+
 .lead-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -2576,7 +2586,10 @@ body[data-drawer-open='true'] {
   color: var(--on-surface);
   box-sizing: border-box;
   /* 防止外层无内边距时被撑到边 */
-  margin-block-start: calc(var(--space) * 4); }
+  padding: calc(var(--space) * 4);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin-block: calc(var(--space) * 4); }
 
 .lead-form * {
   min-width: 0; }

@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr; /* 小屏单列 */
   gap: clamp(1rem, 2vw, 2rem);
+  margin-block: space(4);
 
   /* 让列从顶部对齐，避免侧栏被内容撑下去 */
   align-items: start;
