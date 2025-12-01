@@ -38,16 +38,12 @@
   gap: calc(var(--space) * 2);
   grid-template-columns: 92px 1fr auto;
   align-items: center;
-
-  background: var(--card, var(--surface));
+  border-bottom: 1px solid var(--border);
   color: var(--on-card, var(--on-surface));
-  border-radius: var(--radius, 10px);
-  box-shadow: var(--shadow, 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.08));
-  padding: calc(var(--space, .5rem) * 2);
+  padding-block: space(2);
 
   @media (min-width: 48rem) {
     grid-template-columns: 128px 1fr auto;
-    padding: calc(var(--space) * 2);
   }
 
   @media (max-width: 39.99rem) {
@@ -79,11 +75,10 @@
 }
 .res-title {
   font-size: var(--fs-1);
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   color: var(--on-card, var(--on-surface));
   display: inline-block;
-
   &:hover { text-decoration: underline; }
 }
 .res-desc {
@@ -97,22 +92,6 @@
   gap: .75rem 1.25rem;
   color: var(--muted, #667085);
   font-size: var(--fs-xxs);
-}
-
-/* CTA */
-.res-cta {
-  display: flex;
-  gap: .75rem;
-  align-items: center;
-
-  .button {
-    min-width: 120px;
-    justify-content: center;
-  }
-
-  @media (max-width: 39.99rem) {
-    justify-self: start;
-  }
 }
 
 /* 分页 */
