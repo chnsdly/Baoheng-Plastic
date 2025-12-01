@@ -38,9 +38,9 @@
               </div>
 
               <div class="res-main">
-                <a class="res-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                <a class="res-title clamp1" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
 
-                <p class="res-desc">
+                <p class="res-desc clamp2">
                   {{- with $p.Params.description -}}
                     {{ . }}
                   {{- else -}}
@@ -140,10 +140,7 @@
                       {{ end }}
                     </span>
                     <span class="s">
-                      <span class="s2 clamp2">{{ $it.Title }}</span>
-                      <span class="s clamp1">
-                        {{ with $it.Params.description }}{{ . }}{{ else }}{{ $it.Summary | plainify }}{{ end }}
-                      </span>
+                      <span class="s2 clamp2 popular-title">{{ $it.Title }}</span>
                     </span>
                   </a>
                 </li>

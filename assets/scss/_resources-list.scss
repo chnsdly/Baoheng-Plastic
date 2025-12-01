@@ -94,6 +94,59 @@
   font-size: var(--fs-xxs);
 }
 
+/* 侧边栏统一移除默认圆点，并保持间距 */
+.col-side {
+  display: grid;
+  gap: space(3);
+}
+
+.col-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 热门文章样式调整 */
+.popular-list {
+  display: grid;
+  gap: space(2);
+}
+
+.popular-link {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: space(1);
+  align-items: center;
+  text-decoration: none;
+  color: var(--on-surface);
+}
+
+.popular-link:hover .popular-title,
+.popular-link:focus-visible .popular-title {
+  text-decoration: underline;
+}
+
+.ph {
+  display: block;
+  overflow: hidden;
+  border-radius: calc(var(--radius, 10px) - 2px);
+  background: #e5e7eb;
+}
+
+.ph__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius, 10px) - 2px);
+}
+
+.popular-title {
+  color: var(--on-surface);
+  font-weight: 600;
+  display: block;
+}
+
 /* 分页 */
 .res-pager {
   display: flex; justify-content: center; align-items: center;
