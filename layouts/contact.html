@@ -1,28 +1,6 @@
 {{ define "main" }}
   <section class="contact-hero">
     <div class="container container--wide contact-hero__grid">
-      <div class="contact-hero__intro">
-        <p class="contact-hero__eyebrow">We respond within one business day</p>
-        <h1>{{ .Title }}</h1>
-        <div class="contact-hero__lede flow">
-          {{ .Content }}
-          <ul class="contact-hero__highlights">
-            <li>Dedicated account manager for your project</li>
-            <li>Rapid prototyping for packaging that fits your line</li>
-            <li>Global logistics support from Shandong to your doorstep</li>
-          </ul>
-        </div>
-        <div class="contact-hero__meta">
-          <div>
-            <p class="contact-hero__meta-label">Headquartered at</p>
-            <p class="contact-hero__meta-value">{{ .Site.Params.contact_address }}</p>
-          </div>
-          <div>
-            <p class="contact-hero__meta-label">Local time</p>
-            <p class="contact-hero__meta-value">{{ .Site.Params.business_hours }}</p>
-          </div>
-        </div>
-      </div>
       <div class="contact-hero__card">
         <p class="contact-hero__badge">{{ .Site.Params.company_name }}</p>
         <div class="contact-hero__card-body flow">
@@ -33,6 +11,16 @@
           <div class="contact-hero__actions">
             <a class="button button--primary" href="tel:{{ .Site.Params.contact_phone }}">Call {{ .Site.Params.contact_phone }}</a>
             <a class="button" href="mailto:{{ .Site.Params.contact_email }}">Email {{ .Site.Params.contact_email }}</a>
+          </div>
+          <div class="contact-hero__meta">
+            <div>
+              <p class="contact-hero__meta-label">Headquartered at</p>
+              <p class="contact-hero__meta-value">Xianghe Industrial Park, Linyi City, Shandong, China</p>
+            </div>
+            <div>
+              <p class="contact-hero__meta-label">Working hours</p>
+              <p class="contact-hero__meta-value">Mon–Sat, 8:30–17:30 (GMT+8)</p>
+            </div>
           </div>
           <div class="contact-hero__contacts">
             <div>
@@ -72,40 +60,6 @@
         </div>
         <div class="contact-panel__body">
           {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
-        </div>
-      </div>
-      <div class="contact-panel contact-panel--info">
-        <div class="contact-panel__header">
-          <p class="contact-panel__eyebrow">Ways to reach us</p>
-          <h2>We make it easy to start</h2>
-        </div>
-        <div class="contact-panel__body">
-          <div class="contact-details">
-            <div class="contact-details__item">
-              <h3>Address</h3>
-              <p>{{ .Site.Params.contact_address }}</p>
-            </div>
-            <div class="contact-details__item">
-              <h3>Working hours</h3>
-              <p>{{ .Site.Params.business_hours }}</p>
-            </div>
-            <div class="contact-details__item">
-              <h3>Call</h3>
-              <p>{{ .Site.Params.contact_phone }}</p>
-            </div>
-            <div class="contact-details__item">
-              <h3>Email</h3>
-              <p>{{ .Site.Params.contact_email }}</p>
-            </div>
-          </div>
-          <div class="contact-assurance">
-            <h3>What happens next</h3>
-            <ul>
-              <li>We clarify specs and share packaging options within 24 hours.</li>
-              <li>Samples or drawings are provided before tooling.</li>
-              <li>Full logistics support from Shandong to your destination.</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
