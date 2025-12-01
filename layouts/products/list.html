@@ -15,11 +15,15 @@
       {{ end }}
 
       <div class="product-listing__layout">
-        <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
+        <aside class="product-sidebar" data-expanded="true" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
           <div class="product-sidebar__header">
             <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
+            <button class="product-sidebar__toggle" type="button" aria-expanded="true" aria-controls="product-sidebar-nav">
+              <span class="product-sidebar__toggle-label">{{ i18n "browse_categories" | default "Browse categories" }}</span>
+              <span class="product-sidebar__toggle-icon" aria-hidden="true"></span>
+            </button>
           </div>
-          <ul class="product-sidebar__list" role="list">
+          <ul class="product-sidebar__list" id="product-sidebar-nav" role="list">
             {{ range $productMenus }}
               {{ $menuName := .Name }}
               {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
@@ -144,11 +148,47 @@
   </section>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.querySelector('.product-sidebar');
+      const sidebarList = document.querySelector('.product-sidebar__list');
+      const sidebarToggle = document.querySelector('.product-sidebar__toggle');
+      const desktopMedia = window.matchMedia('(min-width: 48rem)');
+
       const params = new URLSearchParams(window.location.search);
       const activeCategory = params.get('category') || '';
       const cards = document.querySelectorAll('.product-listing__card');
       const links = document.querySelectorAll('.product-sidebar__sublink');
       const pager = document.querySelector('.product-listing__pager');
+
+      const syncSidebar = (expanded) => {
+        if (!sidebar || !sidebarList || !sidebarToggle) return;
+        const shouldExpand = desktopMedia.matches ? true : expanded;
+
+        sidebar.dataset.expanded = shouldExpand ? 'true' : 'false';
+        sidebarList.hidden = !shouldExpand;
+        sidebarToggle.setAttribute('aria-expanded', shouldExpand);
+        sidebarToggle.classList.toggle('product-sidebar__toggle--active', shouldExpand);
+      };
+
+      const handleViewportChange = () => {
+        syncSidebar(desktopMedia.matches ? true : sidebar?.dataset.expanded === 'true');
+      };
+
+      sidebarToggle?.addEventListener('click', () => {
+        const next = sidebar?.dataset.expanded !== 'true';
+        syncSidebar(next);
+
+        if (next && !desktopMedia.matches) {
+          sidebar?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      desktopMedia.addEventListener('change', handleViewportChange);
+
+      if (!desktopMedia.matches) {
+        sidebar?.setAttribute('data-expanded', 'false');
+      }
+
+      handleViewportChange();
 
       const toggleCards = (category) => {
         cards.forEach((card) => {
@@ -192,6 +232,11 @@
 
           window.history.replaceState({}, '', url.toString());
           toggleCards(category);
+
+          if (!desktopMedia.matches) {
+            sidebar?.setAttribute('data-expanded', 'false');
+            syncSidebar(false);
+          }
         });
       });
 
