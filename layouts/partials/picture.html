@@ -3,11 +3,11 @@
   ctx:   页面上下文（一般传 .）
   src:   源图路径（相对 assets/）
   alt:   ALT 文本（默认页标题）
-  w:     目标宽度切片，默认 (480,768,1200,1600)
+  w:     目标宽度切片，默认 (480,960,1440)
   sizes: HTML sizes，默认 100vw
   class: 额外类名
   fetch: "", "high", "low"；high 会自动切 eager
-  lqip:  true/false，是否启用 24px 背景占位
+  lqip:  true/false，是否启用 24px 背景占位（默认关闭以加快构建）
 */ -}}
 
 {{- $p      := .ctx -}}
@@ -17,8 +17,13 @@
 {{- $cls    := .class | default "" -}}
 {{- $fetch  := .fetch | default "" -}}                         {{/* "high" | "low" | "" */}}
 {{- $loading:= .loading | default (cond (eq $fetch "high") "eager" "lazy") -}}
-{{- $lqip   := .lqip | default true -}}
-{{- $w      := .w | default (slice 480 768 1200 1600) -}}
+{{- $lqip   := .lqip | default false -}}
+{{- /*
+     限制默认生成的尺寸和格式，避免开发环境每次启动都要重新处理过多图片。
+     这里仅生成 WebP + JPEG 的 3 个常用宽度（480/960/1440），默认关闭 LQIP，
+     能将单图派生数量从 13 张降到 7 张，显著缩短 Hugo 首次/冷缓存启动时间。
+*/ -}}
+{{- $w      := .w | default (slice 480 960 1440) -}}
 
 {{- $orig := resources.Get $src -}}
 {{- if $orig -}}
@@ -38,10 +43,9 @@
   {{- end -}}
   {{- $w = $ok -}}
 
-  {{- /* 2) 生成三种格式（质量平衡）：AVIF/WebP/JPEG */ -}}
-  {{- $avif := slice -}}{{- $webp := slice -}}{{- $jpeg := slice -}}
+  {{- /* 2) 生成格式：WebP + JPEG（舍弃 AVIF 以减少处理开销） */ -}}
+  {{- $webp := slice -}}{{- $jpeg := slice -}}
   {{- range $w -}}
-    {{- $avif = $avif | append ($orig.Resize (printf "%dx q62 avif" .)) -}}
     {{- $webp = $webp | append ($orig.Resize (printf "%dx q80 webp" .)) -}}
     {{- $jpeg = $jpeg | append ($orig.Resize (printf "%dx q82 jpg"  .)) -}}
   {{- end -}}
@@ -53,9 +57,6 @@
   {{- $H := $largest.Height -}}
 
   <picture{{ if $lqip }} style='display:block;{{ if $tiny }}background:#f3f4f6 url("{{ $tiny.RelPermalink }}") center/cover no-repeat;{{ end }}'{{ end }}>
-    <source type="image/avif"
-            srcset='{{ range $i, $im := $avif }}{{ if $i }}, {{ end }}{{ $im.RelPermalink }} {{ (index $w $i) }}w{{ end }}'
-            sizes="{{ $sizes }}">
     <source type="image/webp"
             srcset='{{ range $i, $im := $webp }}{{ if $i }}, {{ end }}{{ $im.RelPermalink }} {{ (index $w $i) }}w{{ end }}'
             sizes="{{ $sizes }}">
