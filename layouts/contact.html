@@ -1,8 +1,107 @@
 {{ define "main" }}
-  <section class="container container--narrow contact-content">
-    {{ .Content }}
-  </section>
-  <section class="container container--narrow contact-form">
-    {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+  {{ $params := .Site.Params }}
+  {{ $social := $params.social }}
+  {{ $socialLinks := slice
+    (dict "key" "linkedin" "label" "LinkedIn" "icon" "images/icons/linkedin.svg")
+    (dict "key" "twitter"  "label" "X (Twitter)" "icon" "images/icons/x.svg")
+    (dict "key" "youtube"  "label" "YouTube" "icon" "images/icons/youtube.svg")
+    (dict "key" "facebook" "label" "Facebook" "icon" "images/icons/facebook.svg")
+  }}
+
+  <section class="contact-page">
+    <div class="contact-hero container container--wide">
+      <div class="contact-hero__intro">
+        <p class="contact-hero__eyebrow">{{ i18n "contact_us" | default "Contact us" }}</p>
+        <h1 class="contact-hero__title">{{ .Title }}</h1>
+        <div class="contact-hero__summary">
+          {{ .Content }}
+        </div>
+        <div class="contact-hero__chips">
+          {{ with $params.company_name }}<span class="chip chip--ghost">{{ . }}</span>{{ end }}
+          {{ with $params.business_hours }}<span class="chip chip--ghost">{{ . }}</span>{{ end }}
+          <span class="chip chip--accent">{{ i18n "cta_get_quote" | default "Replies within 24 hours" }}</span>
+        </div>
+        <div class="contact-hero__social" aria-label="{{ i18n "follow_us" | default "Follow us" }}">
+          {{ range $socialLinks }}
+            {{ $url := index $social .key }}
+            {{ if $url }}
+              <a class="contact-hero__social-link" href="{{ $url }}" target="_blank" rel="noreferrer noopener">
+                <span class="contact-hero__social-icon">
+                  <img src='{{ .icon | relURL }}' alt="" width="24" height="24" loading="lazy" decoding="async">
+                </span>
+                <span class="contact-hero__social-label">{{ .label }}</span>
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-grid container container--wide">
+      <div class="contact-panel contact-panel--details">
+        <p class="contact-panel__eyebrow">{{ i18n "contact_us" | default "Contact us" }}</p>
+        <h2 class="contact-panel__title">{{ i18n "contact_us" | default "We are ready to help" }}</h2>
+        <p class="contact-panel__lede">{{ i18n "contact_us" | default "Share your challenges, project scale, or timeline. Our specialists will tailor solutions and arrange samples fast." }}</p>
+        <div class="contact-list" aria-label="{{ i18n "contact_us" | default "Contact details" }}">
+          {{ with $params.contact_phone }}
+            <div class="contact-list__item">
+              <div class="contact-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M6.18 4.8c.37-.6.98-.97 1.67-.99l.2-.01c.69-.02 1.31.32 1.64.9l1.1 1.9c.37.64.28 1.45-.23 1.99l-.65.68c.9 1.7 2.26 3.06 3.96 3.96l.68-.65c.54-.51 1.35-.6 1.99-.23l1.9 1.1c.58.33.92.95.9 1.64l-.01.2c-.02.69-.39 1.3-.99 1.67-.76.48-1.71.7-2.67.7-.92 0-1.87-.19-2.79-.58-2.06-.87-3.95-2.77-4.82-4.82-.78-1.86-.72-3.76.16-5.05Z"/></svg>
+              </div>
+              <div class="contact-list__content">
+                <p class="contact-list__label">{{ i18n "contact_phone" | default "Phone" }}</p>
+                <a href="tel:{{ . }}" class="contact-list__value">{{ . }}</a>
+                <p class="contact-list__hint">{{ i18n "cta_get_quote" | default "Direct line to our engineering team" }}</p>
+              </div>
+            </div>
+          {{ end }}
+          {{ with $params.contact_email }}
+            <div class="contact-list__item">
+              <div class="contact-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M4.5 5h15a1.5 1.5 0 0 1 1.5 1.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11A1.5 1.5 0 0 1 4.5 5Zm0 1.5v.22L12 11l7.5-4.28V6.5h-15ZM19.5 9 12 13.28 4.5 9v8.5h15V9Z"/></svg>
+              </div>
+              <div class="contact-list__content">
+                <p class="contact-list__label">Email</p>
+                <a href="mailto:{{ . }}" class="contact-list__value">{{ . }}</a>
+                <p class="contact-list__hint">We respond within one business day.</p>
+              </div>
+            </div>
+          {{ end }}
+          {{ with $params.contact_address }}
+            <div class="contact-list__item">
+              <div class="contact-list__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M12 2.5a7 7 0 0 1 7 7c0 1.7-.58 3.18-1.58 4.53-.97 1.32-2.32 2.6-3.66 3.9l-.53.52-.95.94-.28.28-.28-.28-.95-.94-.53-.52c-1.34-1.3-2.69-2.58-3.66-3.9A7.28 7.28 0 0 1 5 9.5a7 7 0 0 1 7-7Zm0 1.5a5.5 5.5 0 0 0-5.5 5.5c0 1.3.44 2.5 1.3 3.65.85 1.15 2.04 2.36 3.36 3.64l.84.82.84-.82c1.32-1.28 2.51-2.5 3.36-3.64.86-1.14 1.3-2.34 1.3-3.65A5.5 5.5 0 0 0 12 4Zm0 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/></svg>
+              </div>
+              <div class="contact-list__content">
+                <p class="contact-list__label">{{ i18n "address" | default "Address" }}</p>
+                <p class="contact-list__value">{{ . }}</p>
+                {{ with $params.business_hours }}<p class="contact-list__hint">{{ . }}</p>{{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+        <div class="contact-kpis" aria-label="{{ i18n "contact_us" | default "Support highlights" }}">
+          <div class="contact-kpis__item">
+            <p class="contact-kpis__value">24h</p>
+            <p class="contact-kpis__label">Average response time</p>
+          </div>
+          <div class="contact-kpis__item">
+            <p class="contact-kpis__value">140+</p>
+            <p class="contact-kpis__label">Global partners served</p>
+          </div>
+          <div class="contact-kpis__item">
+            <p class="contact-kpis__value">7/6</p>
+            <p class="contact-kpis__label">Weekday availability</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-panel contact-panel--form">
+        <div class="contact-panel__badge">{{ i18n "cta_get_quote" | default "Start your project" }}</div>
+        <h2 class="contact-panel__title">{{ i18n "contact_us" | default "Tell us what you need" }}</h2>
+        <p class="contact-panel__lede">{{ i18n "contact_us" | default "Upload specifications, volumes, or timelines—our engineers will tailor the right plastic pallets and packaging for you." }}</p>
+        {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" $params.turnstile_site_key) }}
+      </div>
+    </div>
   </section>
 {{ end }}
