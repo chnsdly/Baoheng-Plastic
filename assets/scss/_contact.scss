@@ -1,0 +1,260 @@
+.contact-page {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2.5rem, 4vw, 4rem) 0 clamp(3.5rem, 6vw, 6rem);
+  background: radial-gradient(120% 80% at 20% 20%, color-mix(in oklab, var(--brand) 15%, transparent) 0%, transparent 60%),
+    radial-gradient(120% 80% at 80% 0%, color-mix(in oklab, var(--brand) 12%, transparent) 0%, transparent 70%),
+    var(--surface);
+}
+
+.contact-hero {
+  position: relative;
+  padding: clamp(1rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 3rem);
+}
+
+.contact-hero__intro {
+  max-width: 44rem;
+  background: color-mix(in oklab, var(--card) 96%, var(--surface));
+  border-radius: clamp(14px, 2vw, 18px);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow);
+  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+}
+
+.contact-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .75rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in oklab, var(--brand) 14%, transparent);
+  color: var(--on-surface);
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  margin: 0 0 .5rem;
+}
+
+.contact-hero__title {
+  margin: 0 0 .4rem;
+  font-size: clamp(2rem, 2vw + 1.4rem, 3rem);
+  letter-spacing: -.02em;
+}
+
+.contact-hero__summary {
+  color: var(--muted);
+  font-size: var(--fs-1);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.contact-hero__summary p { margin: 0; }
+
+.contact-hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .55rem .9rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  border: 1px solid transparent;
+  background: color-mix(in oklab, var(--card) 90%, var(--surface));
+}
+
+.chip--ghost { border-color: color-mix(in oklab, var(--border) 70%, transparent); }
+.chip--accent {
+  background: var(--brand);
+  color: var(--on-brand);
+  box-shadow: 0 14px 40px -20px color-mix(in oklab, var(--brand) 60%, transparent);
+}
+
+.contact-hero__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.contact-hero__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem .85rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+  background: color-mix(in oklab, var(--card) 92%, var(--surface));
+  color: inherit;
+  text-decoration: none;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+
+.contact-hero__social-link:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.contact-hero__social-icon {
+  inline-size: 32px;
+  block-size: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in oklab, var(--brand) 12%, var(--surface));
+}
+
+.contact-grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.4rem);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.contact-panel {
+  background: var(--card);
+  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+  border-radius: clamp(14px, 2vw, 18px);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: .8rem;
+}
+
+.contact-panel__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .4rem .8rem;
+  background: color-mix(in oklab, var(--brand) 18%, transparent);
+  color: var(--on-surface);
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.contact-panel__eyebrow {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.contact-panel__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 1.4rem + 1vw, 2.1rem);
+  letter-spacing: -.01em;
+}
+
+.contact-panel__lede {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-list__item {
+  display: grid;
+  gap: .65rem;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  padding: .85rem;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+  background: color-mix(in oklab, var(--card) 94%, var(--surface));
+}
+
+.contact-list__icon {
+  inline-size: 44px;
+  block-size: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in oklab, var(--brand) 16%, transparent);
+  color: var(--brand);
+}
+
+.contact-list__icon svg { width: 22px; height: 22px; fill: currentColor; }
+
+.contact-list__label {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: var(--fs-xs);
+}
+
+.contact-list__value {
+  margin: 0;
+  font-weight: 700;
+  color: var(--on-surface);
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.contact-list__value:hover { text-decoration: underline; }
+
+.contact-list__hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--fs-xs);
+}
+
+.contact-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: .9rem;
+  padding: .2rem;
+}
+
+.contact-kpis__item {
+  background: color-mix(in oklab, var(--brand) 16%, transparent);
+  border-radius: var(--radius);
+  padding: .9rem .95rem;
+  text-align: left;
+}
+
+.contact-kpis__value {
+  margin: 0;
+  font-size: var(--fs-3);
+  font-weight: 800;
+}
+
+.contact-kpis__label {
+  margin: .2rem 0 0;
+  color: var(--muted);
+  font-size: var(--fs-xs);
+}
+
+.contact-panel--form .lead-form {
+  margin: 0;
+  background: color-mix(in oklab, var(--card) 95%, var(--surface));
+}
+
+@media (max-width: 720px) {
+  .contact-hero__intro,
+  .contact-panel { padding: clamp(1.25rem, 5vw, 1.6rem); }
+
+  .contact-hero__chips { gap: .45rem; }
+
+  .chip { font-size: 0.85rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-hero__social-link,
+  .contact-panel { transition: none; }
+}
