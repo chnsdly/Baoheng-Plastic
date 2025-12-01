@@ -4,6 +4,7 @@
       {{ $allProducts := .Pages.ByTitle }}
       {{ $pgr := .Paginate $allProducts 12 }}
       {{ $productMenus := slice }}
+      {{ $sidebarToggleLabel := cond (eq $.Site.Language.Lang "zh") "浏览产品分类" "Browse categories" }}
       {{ with where .Site.Menus.main "Identifier" "products" }}
         {{ with index . 0 }}
           {{ $productMenus = sort .Children "Weight" }}
@@ -18,43 +19,46 @@
         <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
           <div class="product-sidebar__header">
             <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
+            <button class="product-sidebar__toggle" type="button" aria-expanded="false" aria-controls="product-sidebar-panel">{{ $sidebarToggleLabel }}<span class="product-sidebar__toggle-icon" aria-hidden="true"></span></button>
           </div>
-          <ul class="product-sidebar__list" role="list">
-            {{ range $productMenus }}
-              {{ $menuName := .Name }}
-              {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
-              {{ $categories := slice }}
-              {{ range $matchingPages }}
-                {{ with .Params.pallet_category }}
-                  {{ $catVal := . }}
-                  {{ if eq (printf "%T" $catVal) "string" }}
-                    {{ $categories = $categories | append $catVal }}
-                  {{ else }}
-                    {{ range $catVal }}
-                      {{ $categories = $categories | append . }}
+          <div class="product-sidebar__panel" id="product-sidebar-panel">
+            <ul class="product-sidebar__list" role="list">
+              {{ range $productMenus }}
+                {{ $menuName := .Name }}
+                {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
+                {{ $categories := slice }}
+                {{ range $matchingPages }}
+                  {{ with .Params.pallet_category }}
+                    {{ $catVal := . }}
+                    {{ if eq (printf "%T" $catVal) "string" }}
+                      {{ $categories = $categories | append $catVal }}
+                    {{ else }}
+                      {{ range $catVal }}
+                        {{ $categories = $categories | append . }}
+                      {{ end }}
                     {{ end }}
                   {{ end }}
                 {{ end }}
+                {{ $categories = uniq (sort $categories) }}
+                {{ $hasChildren := gt (len $categories) 0 }}
+                {{ $menuURL := .URL | relLangURL }}
+                {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $currentType $menuName) }}
+                <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
+                  <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
+                  {{ if $hasChildren }}
+                    <ul class="product-sidebar__submenu" role="list">
+                      {{ range $categories }}
+                        <li class="product-sidebar__subitem">
+                          {{ $categoryParam := urlquery . }}
+                          <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $menuURL $categoryParam }}">{{ . }}</a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </li>
               {{ end }}
-              {{ $categories = uniq (sort $categories) }}
-              {{ $hasChildren := gt (len $categories) 0 }}
-              {{ $menuURL := .URL | relLangURL }}
-              {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $currentType $menuName) }}
-              <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
-                <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
-                {{ if $hasChildren }}
-                  <ul class="product-sidebar__submenu" role="list">
-                    {{ range $categories }}
-                      <li class="product-sidebar__subitem">
-                        {{ $categoryParam := urlquery . }}
-                        <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $menuURL $categoryParam }}">{{ . }}</a>
-                      </li>
-                    {{ end }}
-                  </ul>
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
+            </ul>
+          </div>
         </aside>
 
         <div class="product-listing__body">
@@ -149,6 +153,10 @@
       const cards = document.querySelectorAll('.product-listing__card');
       const links = document.querySelectorAll('.product-sidebar__sublink');
       const pager = document.querySelector('.product-listing__pager');
+      const sidebar = document.querySelector('.product-sidebar');
+      const sidebarToggle = document.querySelector('.product-sidebar__toggle');
+      const sidebarPanel = document.querySelector('.product-sidebar__panel');
+      const desktopQuery = window.matchMedia('(min-width: 48rem)');
 
       const toggleCards = (category) => {
         cards.forEach((card) => {
@@ -196,6 +204,31 @@
       });
 
       toggleCards(activeCategory);
+
+      const syncSidebarState = () => {
+        if (!sidebar || !sidebarToggle || !sidebarPanel) return;
+        const isDesktop = desktopQuery.matches;
+        const shouldBeOpen = isDesktop || sidebar.classList.contains('is-open');
+
+        sidebar.classList.toggle('is-open', shouldBeOpen);
+        sidebarToggle.setAttribute('aria-expanded', shouldBeOpen ? 'true' : 'false');
+        sidebarPanel.hidden = !shouldBeOpen && !isDesktop;
+      };
+
+      if (sidebar && sidebarToggle && sidebarPanel) {
+        sidebar.classList.toggle('is-open', desktopQuery.matches);
+        syncSidebarState();
+
+        sidebarToggle.addEventListener('click', () => {
+          sidebar.classList.toggle('is-open');
+          syncSidebarState();
+        });
+
+        desktopQuery.addEventListener('change', () => {
+          sidebar.classList.toggle('is-open', desktopQuery.matches);
+          syncSidebarState();
+        });
+      }
     });
   </script>
 {{ end }}

@@ -31,7 +31,9 @@
 
 .product-sidebar__header{
   display: grid;
-  gap: space(.3);
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: space(.75);
   padding-bottom: space(1.5);
   border-bottom: 1px solid var(--border);
 }
@@ -49,6 +51,38 @@
   margin: 0;
   font-size: var(--fs-2);
   color: var(--on-card);
+}
+
+.product-sidebar__toggle{
+  display: none;
+  align-items: center;
+  gap: space(.5);
+  padding: space(.6) space(.9);
+  border-radius: var(--radius-sm);
+  border: var(--border-w) solid var(--border);
+  background: var(--surface);
+  color: var(--on-card);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color var(--t-normal) var(--ease), color var(--t-normal) var(--ease), transform var(--t-fast) var(--ease);
+}
+
+.product-sidebar__toggle:hover,
+.product-sidebar__toggle:focus-visible{
+  background: color-mix(in srgb, var(--brand) 10%, var(--card));
+  color: var(--on-card);
+  transform: translateY(-1px);
+}
+
+.product-sidebar__toggle:focus-visible{ @include focus-ring(); }
+
+.product-sidebar__toggle-icon{
+  inline-size: .75rem;
+  block-size: .75rem;
+  border-inline-end: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform var(--t-fast) var(--ease);
 }
 
 .product-sidebar__list,
@@ -165,6 +199,8 @@
   visibility: visible;
   margin-bottom: space(.6);
 }
+
+.product-sidebar__panel{ margin-top: 0; }
 
 .product-listing__header{
   display: grid;
@@ -289,6 +325,53 @@
   }
   .product-listing__grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .product-listing__header{ text-align: left; justify-self: stretch; }
+}
+
+@media (max-width: 47.99rem){
+  .product-sidebar{
+    position: relative;
+    top: auto;
+  }
+
+  .product-sidebar__toggle{ display: inline-flex; }
+
+  .product-sidebar__panel{
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    margin-top: 0;
+    transition:
+      max-height var(--t-slow) var(--ease),
+      opacity var(--t-slow) var(--ease),
+      visibility var(--t-slow) var(--ease),
+      margin var(--t-slow) var(--ease),
+      transform var(--t-slow) var(--ease);
+    transform: translateY(-6px);
+  }
+
+  .product-sidebar.is-open .product-sidebar__panel{
+    max-height: 1200px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: calc(var(--space) * 1.25);
+    transform: translateY(0);
+  }
+
+  .product-sidebar.is-open .product-sidebar__toggle-icon{ transform: rotate(-135deg); }
+}
+
+@include mq-up(md){
+  .product-sidebar__panel{
+    max-height: none;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .product-sidebar__toggle-icon{ transform: rotate(45deg); }
 }
 
 /* ------------------------A11y 分页（tokenized）--------------------- */
