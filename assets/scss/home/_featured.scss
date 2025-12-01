@@ -26,7 +26,7 @@
 .home-featured .product-grid{
   display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: space(2);
+    gap: space(1);
 
     @include mq-up(md) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
