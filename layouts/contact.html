@@ -1,8 +1,100 @@
 {{ define "main" }}
-  <section class="container container--narrow contact-content">
-    {{ .Content }}
+  {{ $params := .Site.Params }}
+  <section class="contact-hero">
+    <div class="container container--wide">
+      <div class="contact-hero__grid">
+        <div class="contact-hero__intro">
+          <p class="contact-hero__eyebrow">Direct line to {{ $params.company_name }}</p>
+          <h1>{{ or .Title "Contact us" }}</h1>
+          <div class="contact-hero__copy">{{ .Content | markdownify }}</div>
+          <div class="contact-hero__chips">
+            <span class="contact-chip">Response within 24 hours</span>
+            <span class="contact-chip">Design, molding &amp; delivery in one team</span>
+            {{ with $params.business_hours }}<span class="contact-chip">{{ . }}</span>{{ end }}
+          </div>
+          <div class="contact-hero__actions">
+            {{ with $params.contact_phone }}
+              <a class="button button--primary" href="tel:{{ replace . " " "" }}">Call {{ . }}</a>
+            {{ end }}
+            {{ with $params.contact_email }}
+              <a class="button" href="mailto:{{ . }}">Email our specialists</a>
+            {{ end }}
+          </div>
+        </div>
+        <div class="contact-hero__card">
+          <div class="contact-card">
+            <p class="contact-card__eyebrow">Head office</p>
+            <h3>{{ $params.company_name }}</h3>
+            <ul class="contact-card__list">
+              {{ with $params.contact_address }}
+                <li>
+                  <span class="contact-card__label">Address</span>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query={{ urlquery . }}" target="_blank" rel="noreferrer">{{ . }}</a>
+                </li>
+              {{ end }}
+              {{ with $params.contact_phone }}
+                <li>
+                  <span class="contact-card__label">Phone</span>
+                  <a href="tel:{{ replace . " " "" }}">{{ . }}</a>
+                </li>
+              {{ end }}
+              {{ with $params.contact_email }}
+                <li>
+                  <span class="contact-card__label">Email</span>
+                  <a href="mailto:{{ . }}">{{ . }}</a>
+                </li>
+              {{ end }}
+              {{ with $params.business_hours }}
+                <li>
+                  <span class="contact-card__label">Business hours</span>
+                  <span>{{ . }}</span>
+                </li>
+              {{ end }}
+            </ul>
+            {{ with $params.social }}
+              {{ $iconMap := dict "linkedin" "linkedin.svg" "twitter" "x.svg" "facebook" "facebook.svg" "youtube" "youtube.svg" }}
+              <div class="contact-card__social">
+                <span class="contact-card__label">Follow us</span>
+                <div class="contact-social">
+                  {{ range $name, $url := . }}
+                    {{ $icon := or (index $iconMap $name) (printf "%s.svg" $name) }}
+                    <a class="contact-social__link" href="{{ $url }}" target="_blank" rel="noreferrer" aria-label="{{ $name }}">
+                      <img src="/images/icons/{{ $icon }}" alt="{{ $name }} icon" loading="lazy" />
+                    </a>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="container container--narrow contact-form">
+
+  <section class="contact-panels container">
+    <div class="contact-panel">
+      <p class="contact-panel__eyebrow">Sales &amp; partnerships</p>
+      <h3>Co-engineered logistics solutions</h3>
+      <p>Collaborate with our engineers to tailor pallets for food, pharma, automotive, and cold-chain programs. Transparent pricing, export-ready documentation, and attentive follow-up on every shipment.</p>
+    </div>
+    <div class="contact-panel">
+      <p class="contact-panel__eyebrow">Project readiness</p>
+      <h3>Specification-first guidance</h3>
+      <p>Share load requirements, racking details, and sustainability goals. We’ll validate the materials, tooling, and testing plan before production so you can move from prototype to rollout with confidence.</p>
+    </div>
+    <div class="contact-panel">
+      <p class="contact-panel__eyebrow">Aftercare</p>
+      <h3>Global support with real people</h3>
+      <p>Expect proactive updates, bilingual coordination, and dedicated contacts for quality assurance and logistics. We stay with you long after the first container lands.</p>
+    </div>
+  </section>
+
+  <section class="contact-form container container--narrow">
+    <div class="contact-form__header">
+      <p class="contact-form__eyebrow">Tell us about your project</p>
+      <h2>We’ll design the right pallet together</h2>
+      <p>Outline your application, target markets, and delivery timeline. Our team will respond within one business day with tailored recommendations and next steps.</p>
+    </div>
     {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
   </section>
 {{ end }}
