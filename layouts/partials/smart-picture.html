@@ -3,12 +3,12 @@
   ctx:    页面（文章）上下文，一般传入 .
   src:    源图路径（相对 assets/ 目录）
   alt:    替代文本（默认使用页面标题）
-  w:      目标宽度列表，默认 [480, 768, 1200, 1600]
+  w:      目标宽度列表，默认 [480, 960, 1440]
   sizes:  响应式 sizes 属性，默认 "100vw"
   class:  附加的 class 类名
   fetch:  "", "high" 或 "low" —— 请求优先级。"high" 将自动设置为 eager 加载（高优先级），"low" 则标记为低优先级
   loading: 可选，手动指定 "lazy" 或 "eager"，不指定则根据 fetch 默认（high时为eager，否则lazy）
-  lqip:   布尔值，是否启用低清晰度占位图（默认 true）
+  lqip:   布尔值，是否启用低清晰度占位图（默认 false，避免额外缩略图加工）
 */ -}}
 {{- $p       := .ctx -}}
 {{- $src     := .src -}}
@@ -17,8 +17,8 @@
 {{- $cls     := .class | default "" -}}
 {{- $fetch   := .fetch | default "" -}}
 {{- $loading := .loading | default (cond (eq $fetch "high") "eager" "lazy") -}}
-{{- $lqip    := .lqip | default true -}}
-{{- $widthsRequested := .w | default (slice 480 768 1200 1600) -}}
+{{- $lqip    := .lqip | default false -}}
+{{- $widthsRequested := .w | default (slice 480 960 1440) -}}
 
 {{- $orig := resources.Get $src -}}
 {{- if $orig -}}
