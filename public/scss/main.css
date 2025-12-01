@@ -1269,7 +1269,7 @@ body[data-drawer-open='true'] {
   margin: 0;
   font-size: var(--fs-1);
   color: color-mix(in oklab, var(--on-surface) 90%, transparent);
-  font-weight: 700; }
+  font-weight: 500; }
 
 .cta__contact-item a {
   color: inherit;
