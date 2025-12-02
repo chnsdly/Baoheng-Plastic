@@ -1,11 +1,11 @@
 ---
-title: "1010-BP-CD9L15B"
-featured_image_asset: "/images/products/pallet/blow-molding_1010.jpg"
+title: "1208-BP-CD9L15B"
+featured_image_asset: "/images/products/pallet/blow-molding_1208.jpg"
 product_type: "Plastic Pallet"
 specs:
-  dimensions: "1000 × 1000 × 150 mm"
+  dimensions: "1200 × 800 × 150 mm"
   static_load: "1 t"
-  dynamic_load: "0.7 t"
+  dynamic_load: "1 t"
   racking_load: ""
   weight: "9 kg"
   material: "HDPE/PP"

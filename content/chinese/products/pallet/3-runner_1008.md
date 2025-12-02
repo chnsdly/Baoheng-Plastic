@@ -3,7 +3,7 @@ title: "1008-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner_1008.jpg"
 product_type: "塑料托盘"
 pallet_category:
-  - "可上架塑料托盘"
+  - ""
 hero_description: "可上架塑料托盘，采用HDPE/PP全新料，大型精密模具一体成型，我们的工程师将会根据您的具体货物与使用场景，为您推荐最合适的塑料托盘，欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"

@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/3-runner_1010.jpg"
 featured: true
 product_type: "塑料托盘"
 pallet_category:
-  - "可上架塑料托盘"
+  - ""
 specs:
   dimensions: "1000 × 1000 × 150 毫米"
   static_load: "1.5 吨"
