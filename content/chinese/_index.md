@@ -61,22 +61,25 @@ clients:
   description: "真实客户现场的托盘应用，覆盖冷链配送、跨境出口以及自动化仓储。"
   items:
     - image: "images/home/clients-1.jpg"
-      alt: "冷链配送客户案例"
+      alt: ""
 
     - image: "images/home/clients-2.jpg"
-      alt: "跨境出口客户案例"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "自动化立库客户案例"
+    - image: "images/home/clients-3.jpg"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "医药物流客户案例"
+    - image: "images/home/clients-4.jpg"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "快消品仓储客户案例"
+    - image: "images/home/clients-5.jpg"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "制造业工厂客户案例"
+    - image: "images/home/clients-6.jpg"
+      alt: ""
+
+    - image: "images/home/clients-7.jpg"
+      alt: ""
 ############################## FACTORY ##############################
 factory:
   enable: true

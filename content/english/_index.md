@@ -59,22 +59,25 @@ clients:
   description: "Real-world pallet deployments across cold chain, export logistics, and automated warehouses."
   items:
     - image: "images/home/clients-1.jpg"
-      alt: "Cold chain client case"
+      alt: ""
 
     - image: "images/home/clients-2.jpg"
-      alt: "Export logistics client case"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "Automated warehouse client case"
+    - image: "images/home/clients-3.jpg"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "Healthcare logistics client case"
+    - image: "images/home/clients-4.jpg"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "FMCG warehousing client case"
+    - image: "images/home/clients-5.jpg"
+      alt: ""
 
-    - image: "images/home/clients-1.jpg"
-      alt: "Manufacturing plant client case"
+    - image: "images/home/clients-6.jpg"
+      alt: ""
+
+    - image: "images/home/clients-7.jpg"
+      alt: ""
 ############################## FACTORY ##############################
 factory:
   enable: true
