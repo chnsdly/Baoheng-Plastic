@@ -19,11 +19,11 @@
   z-index: 1;
   display: grid;
   gap: clamp(2rem, 4vw, 3rem);
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-hero__grid--balanced {
-  grid-template-columns: repeat(2, minmax(340px, 1fr));
+  grid-template-columns: minmax(380px, 1.15fr) minmax(320px, .95fr);
 }
 
 .contact-hero__intro {
@@ -34,7 +34,8 @@
   box-shadow: 0 20px 40px color-mix(in oklab, var(--brand) 10%, transparent);
   display: grid;
   gap: clamp(1rem, 2vw, 1.5rem);
-  align-content: center;
+  align-content: start;
+  height: 100%;
 }
 
 .contact-hero__eyebrow {
@@ -130,6 +131,8 @@
   overflow: hidden;
   display: grid;
   gap: 1rem;
+  height: 100%;
+  grid-template-rows: auto 1fr;
 }
 
 .contact-form-card__header {
@@ -160,7 +163,8 @@
 
 .contact-hero__form {
   display: grid;
-  align-content: start;
+  align-content: stretch;
+  height: 100%;
 }
 
 @media (max-width: 960px) {
