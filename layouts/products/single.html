@@ -126,7 +126,11 @@
         <section class="product-details" aria-labelledby="product-details-heading">
           <div class="product-details__header">
             <h2 class="product-details__title" id="product-details-heading">{{ $detailHeading }}</h2>
-            {{ with $detailIntro }}<p class="product-details__intro">{{ . }}</p>{{ end }}
+            {{ with $detailIntro }}
+              <div class="product-details__intro">
+                {{ . | markdownify }}
+              </div>
+            {{ end }}
           </div>
 
           <div class="product-details__specs">
