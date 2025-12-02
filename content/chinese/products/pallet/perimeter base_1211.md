@@ -25,6 +25,20 @@ hero_description: "加固三条纵梁保持货物稳定，兼顾自动化线体�
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"
 detail_intro: "为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。为零售与第三方仓储提供紧凑尺寸的上架方案，密度材料可选加钢管，帮助在载货架上保持面板刚性。"
+display_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 托盘俯视图"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "防滑筋细节"
+  - image_asset: "/images/products/pallet/perimeter-base_1211.jpg"
+    alt: "1211-BP-ODPB15I 转角结构"
+scenario_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 托盘仓储场景"
+  - image_asset: "/images/products/pallet/perimeter-base_1211.jpg"
+    alt: "框架边托盘在货架上应用"
+  - image_asset: "/images/products/pallet/perimeter-base_1211.jpg"
+    alt: "托盘堆叠出口备货"
 detail_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "1008-BP-OD3R15 托盘俯视图"

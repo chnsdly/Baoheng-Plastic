@@ -67,6 +67,11 @@
         {{ $ctaHref := .Params.contact_cta_link | default $contactURL }}
         {{ $socials := site.Params.social }}
         {{ $gallery := .Params.detail_gallery }}
+        {{ $displayGallery := .Params.display_gallery }}
+        {{ if and (not $displayGallery) $gallery }}
+          {{ $displayGallery = first 3 $gallery }}
+        {{ end }}
+        {{ $scenarioGallery := .Params.scenario_gallery | default $gallery }}
 
         <header class="product-single__header">
           <h1 class="product-single__title">{{ .Title }}</h1>
@@ -133,20 +138,48 @@
             {{ end }}
           </div>
 
+          {{ if $displayGallery }}
+            {{ $galleryItems := first 3 $displayGallery }}
+            {{ $primary := index $galleryItems 0 }}
+            <div class="product-showcase" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
+              {{ with $primary }}
+                {{ $asset := .image_asset | default .image }}
+                {{ if $asset }}
+                  <figure class="product-showcase__figure product-showcase__figure--primary">
+                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 60vw" "class" "product-showcase__image" "fetch" "") }}
+                  </figure>
+                {{ end }}
+              {{ end }}
+
+              <div class="product-showcase__stack">
+                {{ range after 1 $galleryItems }}
+                  {{ $asset := .image_asset | default .image }}
+                  {{ if $asset }}
+                    <figure class="product-showcase__figure product-showcase__figure--secondary">
+                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 40vw" "class" "product-showcase__image" "fetch" "") }}
+                    </figure>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+
           <div class="product-details__specs">
             {{ partial "product-specs.html" . }}
           </div>
 
-          {{ if $gallery }}
-            <div class="product-details__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              {{ range $gallery }}
-                {{ $asset := .image_asset | default .image }}
-                {{ if $asset }}
-                  <figure class="product-details__figure">
-                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "product-details__image" "fetch" "") }}
-                  </figure>
+          {{ if $scenarioGallery }}
+            <div class="product-scenarios" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
+              <div class="product-scenarios__gallery">
+                {{ range $scenarioGallery }}
+                  {{ $asset := .image_asset | default .image }}
+                  {{ if $asset }}
+                    <figure class="product-scenarios__figure">
+                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "product-scenarios__image" "fetch" "") }}
+                    </figure>
+                  {{ end }}
                 {{ end }}
-              {{ end }}
+              </div>
             </div>
           {{ end }}
 
