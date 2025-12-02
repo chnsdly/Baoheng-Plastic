@@ -25,6 +25,20 @@ hero_description: "A durable rackable pallet that keeps loads stable across auto
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: "Designed for retailers and 3PLs that need a compact footprint without sacrificing rack performance, the 1008-BP-OD3R15 pairs dense material with reinforced steel options to maintain deck stiffness."
+display_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Top deck of the 1008-BP-OD3R15 pallet"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Pallet detail showing non-slip ribs"
+  - image_asset: "/images/products/pallet/perimeter-base_1211.jpg"
+    alt: "Corner block detail of 1211-BP-ODPB15I"
+scenario_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 pallet staged for warehouse use"
+  - image_asset: "/images/products/pallet/perimeter-base_1211.jpg"
+    alt: "Perimeter-base pallet in rack environment"
+  - image_asset: "/images/products/pallet/perimeter-base_1211.jpg"
+    alt: "Pallet stacked for export preparation"
 detail_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "Top deck of the 1008-BP-OD3R15 pallet"
