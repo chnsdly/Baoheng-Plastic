@@ -138,15 +138,39 @@
           </div>
 
           {{ if $gallery }}
+            {{ $primary := index $gallery 0 }}
+            {{ $secondary := cond (gt (len $gallery) 1) (index $gallery 1) nil }}
+            {{ $tertiary := cond (gt (len $gallery) 2) (index $gallery 2) nil }}
+
             <div class="product-details__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              {{ range $gallery }}
+              {{ with $primary }}
                 {{ $asset := .image_asset | default .image }}
                 {{ if $asset }}
-                  <figure class="product-details__figure">
-                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "product-details__image" "fetch" "") }}
+                  <figure class="product-details__figure product-details__figure--primary">
+                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 60vw" "class" "product-details__image" "fetch" "") }}
                   </figure>
                 {{ end }}
               {{ end }}
+
+              <div class="product-details__gallery-stack">
+                {{ with $secondary }}
+                  {{ $asset := .image_asset | default .image }}
+                  {{ if $asset }}
+                    <figure class="product-details__figure product-details__figure--stack">
+                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 40vw" "class" "product-details__image" "fetch" "") }}
+                    </figure>
+                  {{ end }}
+                {{ end }}
+
+                {{ with $tertiary }}
+                  {{ $asset := .image_asset | default .image }}
+                  {{ if $asset }}
+                    <figure class="product-details__figure product-details__figure--stack">
+                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 40vw" "class" "product-details__image" "fetch" "") }}
+                    </figure>
+                  {{ end }}
+                {{ end }}
+              </div>
             </div>
           {{ end }}
 
