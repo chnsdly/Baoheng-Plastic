@@ -15,8 +15,16 @@ detail_intro: |-
   2. The plastic pallets are one-piece molded with no weak points. They are easy to clean, moisture-resistant, low-temperature resistant and resistant to acids and alkalis, and comply with international logistics and transportation standards.
   
   3. With very high load capacity, the pallets offer a dynamic load of 1,500 kg for safe handling in transit and a static load of 6,000 kg, certified for heavy-duty racking storage. They last significantly longer than wooden pallets, require no fumigation for export, and meet strict safety standards.
-  
+
   4. We have specialized in plastic pallet manufacturing for over 20 years, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery.
+
+showcase_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Hero view of the 1008-BP-OD3R15 pallet"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 pallet from the front"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Detail angle of the 1008-BP-OD3R15 pallet"
 
 detail_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
