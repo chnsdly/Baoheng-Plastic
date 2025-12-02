@@ -4,7 +4,7 @@ featured_image_asset: "/images/products/pallet/3-runner_1008.jpg"
 featured: true
 product_type: "Plastic Pallet"
 pallet_category:
-  - "Rackable Plastic Pallets"
+  - ""
 summary: "Rackable 1000 × 800 mm plastic pallet built for tight aisles and hygienic handling."
 hero_description: "Rackable plastic pallets made from 100% virgin HDPE/PP using large precision one-piece molds. Our engineers will recommend the most suitable pallet based on your specific goods and application scenario. Contact us for a customized quotation."
 contact_cta_label: "Request a quote"
