@@ -1,8 +1,57 @@
 {{ define "main" }}
-  <section class="container container--narrow contact-content">
-    {{ .Content }}
-  </section>
-  <section class="container container--narrow contact-form">
-    {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+  <section class="contact-hero">
+    <div class="contact-hero__backdrop" aria-hidden="true"></div>
+    <div class="container container--wide contact-hero__grid contact-hero__grid--balanced">
+      <div class="contact-hero__intro">
+        <p class="contact-hero__eyebrow">{{ .Site.Params.company_name }}</p>
+        <h1 class="contact-hero__headline">Speak with a plastics partner who ships on schedule</h1>
+        <p class="contact-hero__lede">Share what you need to pack and how fast you need to launch. We’ll align specs, materials, and tooling so production never slips.</p>
+
+        <div class="contact-hero__meta contact-hero__meta--list">
+          <div class="contact-hero__meta-row">
+            <p class="contact-hero__meta-label">Email</p>
+            <p class="contact-hero__meta-value">{{ .Site.Params.contact_email }}</p>
+          </div>
+          <div class="contact-hero__meta-row">
+            <p class="contact-hero__meta-label">Phone</p>
+            <p class="contact-hero__meta-value">{{ .Site.Params.contact_phone }}</p>
+          </div>
+          <div class="contact-hero__meta-row">
+            <p class="contact-hero__meta-label">Address</p>
+            <p class="contact-hero__meta-value">{{ .Site.Params.contact_address }}</p>
+          </div>
+          <div class="contact-hero__meta-row">
+            <p class="contact-hero__meta-label">Working hours</p>
+            <p class="contact-hero__meta-value">{{ .Site.Params.business_hours }}</p>
+          </div>
+          <div class="contact-hero__meta-row contact-hero__meta-row--social">
+            <p class="contact-hero__meta-label">Social</p>
+            <div class="contact-social">
+              {{ $icons := dict "linkedin" "linkedin" "twitter" "x" "facebook" "facebook" "youtube" "youtube" }}
+              {{ range $key, $value := .Site.Params.social }}
+                {{ with index $icons $key }}
+                  <a class="contact-social__link" href="{{ $value }}" target="_blank" rel="noopener" aria-label="{{ $key }}">
+                    <img src="{{ printf "%simages/icons/%s.svg" ("/" | relURL) . }}" alt="{{ $key }} icon" loading="lazy">
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-hero__form">
+        <div class="contact-form-card">
+          <div class="contact-form-card__header">
+            <p class="contact-panel__eyebrow">Project intake</p>
+            <h2>Share your brief</h2>
+            <p>Tell us about your packaging size, material, usage, and timeline. We’ll return a tailored proposal with samples if needed.</p>
+          </div>
+          <div class="contact-form-card__body">
+            {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 {{ end }}
