@@ -2,9 +2,10 @@
 title: "提交成功"
 robots: "noindex, nofollow"
 ---
-
-<p>感谢您的提交。</p>
-<a id="dl-btn" href="#" class="button" hidden>立即下载</a>
+<div class="container container--narrow">
+  <p>感谢您的提交。</p>
+  <a id="dl-btn" href="#" class="button" hidden>立即下载</a>
+</div>
 
 <script>
   // 根据 URL 查询参数 ?dl=slug 拼出下载地址
