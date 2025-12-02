@@ -30,6 +30,20 @@ detail_gallery:
     alt: "1008-BP-OD3R15 pallet staged for warehouse use"
   - image_asset: "/images/products/pallet/blow-molding_1208.jpg"
     alt: "Detail view of 1208-BP-CD9L15B"
+showcase_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Top deck of the 1008-BP-OD3R15 pallet"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 pallet staged for warehouse use"
+  - image_asset: "/images/products/pallet/blow-molding_1208.jpg"
+    alt: "Detail view of 1208-BP-CD9L15B"
+scenario_gallery:
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "Top deck of the 1008-BP-OD3R15 pallet"
+  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
+    alt: "1008-BP-OD3R15 pallet staged for warehouse use"
+  - image_asset: "/images/products/pallet/blow-molding_1208.jpg"
+    alt: "Detail view of 1208-BP-CD9L15B"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
