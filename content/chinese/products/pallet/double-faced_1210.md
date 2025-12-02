@@ -31,6 +31,8 @@ detail_gallery:
     alt: "1008-BP-OD3R15 托盘俯视图"
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "1008-BP-OD3R15 托盘仓储场景"
+  - image_asset: "/images/products/pallet/double-faced_1210.jpg"
+    alt: "1210-PB-ODDF15I 细节图"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"
 ---
