@@ -41,7 +41,7 @@ industries:
     - title: "医疗耗材"
       image: "images/home/industries-4.jpg"
 
-    - title: "精细化工"
+    - title: "化工原料"
       image: "images/home/industries-5.jpg"
 
     - title: "制造与零部件"
