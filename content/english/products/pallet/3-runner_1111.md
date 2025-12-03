@@ -7,11 +7,11 @@ product_type: "Plastic Pallet"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/pallet/3-runner/1111-industry-1.jpg"
+  - image_asset: "/images/products/pallet/3-runner/industry-3r-1.jpg"
     alt: "1111-BP-OD3R15 showcase 1"
-  - image_asset: "/images/products/pallet/3-runner/1111-industry-2.jpg"
+  - image_asset: "/images/products/pallet/3-runner/industry-3r-2.jpg"
     alt: "1111-BP-OD3R15 showcase 2"
-  - image_asset: "/images/products/pallet/3-runner/1111-industry-3.jpg"
+  - image_asset: "/images/products/pallet/3-runner/industry-3r-3.jpg"
     alt: "1111-BP-OD3R15 showcase 3"
 
 specs:
