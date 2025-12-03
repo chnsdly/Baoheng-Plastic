@@ -25,6 +25,7 @@ specs:
   weight: "65 kg"
   material: "HDPE + anti-UV"
   base_style: "Perimeter runner"
+  container_loading: "320"
 specs_order:
   - dimensions
   - internal_volume
@@ -33,6 +34,7 @@ specs_order:
   - weight
   - material
   - base_style
+  - container_loading
 
 ---
 Impact-resistant container for metal parts, casting components, and heavy recyclables.

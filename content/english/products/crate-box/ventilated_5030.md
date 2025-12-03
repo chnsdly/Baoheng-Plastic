@@ -24,6 +24,7 @@ specs:
   weight: "2.1 kg"
   material: "PP food-grade"
   ventilation: "Perforated sides and base"
+  container_loading: "320"
 specs_order:
   - dimensions
   - internal_dimensions
@@ -31,6 +32,7 @@ specs_order:
   - weight
   - material
   - ventilation
+  - container_loading
 
 ---
 Breathable crate for produce, bakery trays, and fast-cooling workflows.

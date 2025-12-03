@@ -24,6 +24,7 @@ specs:
   lid: "Twin hinged lids"
   weight: "42 kg"
   material: "HDPE + galvanized steel axle"
+  container_loading: "320"
 specs_order:
   - capacity
   - dimensions
@@ -31,6 +32,7 @@ specs_order:
   - lid
   - weight
   - material
+  - container_loading
 
 ---
 Four-wheel roll-out bin for malls, food plants, and centralized collection points.

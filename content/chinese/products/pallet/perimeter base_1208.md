@@ -13,6 +13,7 @@ specs:
   weight: "10 千克"
   material: "HDPE/PP"
   process: "注塑"
+  container_loading: "320"
 specs_order:
   - dimensions
   - static_load
@@ -21,6 +22,7 @@ specs_order:
   - weight
   - material
   - process
+  - container_loading
 
 hero_description: "加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。加固三条纵梁保持货物稳定，兼顾自动化线体、门店后仓与出口运输的耐用度。"
 contact_cta_label: "获取报价"
