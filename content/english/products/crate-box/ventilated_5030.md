@@ -1,7 +1,22 @@
 ---
+
 title: "5030-VC Ventilated Crate"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Plastic Crates & Boxes"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "5030-VC Ventilated Crate showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "5030-VC Ventilated Crate showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "5030-VC Ventilated Crate showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "5030-VC Ventilated Crate industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "5030-VC Ventilated Crate industry use 2"
+
 specs:
   dimensions: "500 × 300 × 260 mm"
   internal_dimensions: "465 × 265 × 245 mm"
@@ -16,6 +31,7 @@ specs_order:
   - weight
   - material
   - ventilation
+
 ---
 Breathable crate for produce, bakery trays, and fast-cooling workflows.
 

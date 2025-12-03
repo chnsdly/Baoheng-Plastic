@@ -1,7 +1,22 @@
 ---
+
 title: "240L 工业垃圾桶"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "塑料垃圾桶"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L 工业垃圾桶 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L 工业垃圾桶 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L 工业垃圾桶 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L 工业垃圾桶 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L 工业垃圾桶 行业场景2"
+
 specs:
   capacity: "240 L"
   dimensions: "580 × 730 × 1090 mm"
@@ -16,6 +31,7 @@ specs_order:
   - lid
   - weight
   - material
+
 ---
 重载收集桶，适合工厂、仓库与回收站。
 

@@ -1,7 +1,22 @@
 ---
+
 title: "1000-LC Liquid Tote"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Large Bulk Containers"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC Liquid Tote showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC Liquid Tote showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC Liquid Tote showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC Liquid Tote industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC Liquid Tote industry use 2"
+
 specs:
   dimensions: "1200 × 1000 × 1160 mm"
   internal_volume: "1000 L"
@@ -18,6 +33,7 @@ specs_order:
   - weight
   - material
   - valve
+
 ---
 Closed-wall tote for liquid ingredients, concentrates, and recycling streams.
 

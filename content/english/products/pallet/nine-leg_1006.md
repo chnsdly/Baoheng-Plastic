@@ -1,7 +1,16 @@
 ---
+
 title: "1006-BP-OD9L14"
 featured_image_asset: "/images/products/pallet/nine-leg_1006.jpg"
 product_type: "Plastic Pallet"
+showcase_gallery:
+  - image_asset: "/images/products/pallet/nine-leg_1006.jpg"
+    alt: "1006-BP-OD9L14 showcase 1"
+  - image_asset: "/images/products/pallet/nine-leg_1006.jpg"
+    alt: "1006-BP-OD9L14 showcase 2"
+  - image_asset: "/images/products/pallet/nine-leg_1006.jpg"
+    alt: "1006-BP-OD9L14 showcase 3"
+
 specs:
   dimensions: "1000 × 600 × 140 mm"
   static_load: "0.8 t"
@@ -24,14 +33,13 @@ contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: "Designed for retailers and 3PLs that need a compact footprint without sacrificing rack performance, the 1008-BP-OD3R15 pairs dense material with reinforced steel options to maintain deck stiffness."
 industry_gallery:
-  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
-    alt: "Top deck of the 1008-BP-OD3R15 pallet"
-  - image_asset: "/images/products/pallet/3-runner_1008.jpg"
-    alt: "1008-BP-OD3R15 pallet staged for warehouse use"
   - image_asset: "/images/products/pallet/nine-leg_1006.jpg"
-    alt: "Detail view of 1006-BP-OD9L14"
+    alt: "1006-BP-OD9L14 industry use 1"
+  - image_asset: "/images/products/pallet/nine-leg_1006.jpg"
+    alt: "1006-BP-OD9L14 industry use 2"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
+
 ---
 
 {{< quote_request_button >}}

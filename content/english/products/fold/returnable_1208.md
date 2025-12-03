@@ -1,7 +1,22 @@
 ---
+
 title: "1208-FB Returnable Box"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Foldable Pallet Boxes"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1208-FB Returnable Box showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1208-FB Returnable Box showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1208-FB Returnable Box showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1208-FB Returnable Box industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1208-FB Returnable Box industry use 2"
+
 specs:
   dimensions: "1200 × 800 × 850 mm"
   folded_height: "320 mm"
@@ -18,6 +33,7 @@ specs_order:
   - dynamic_load
   - weight
   - material
+
 ---
 Space-saving foldable pallet box sized for Euro conveyors and shuttle systems.
 

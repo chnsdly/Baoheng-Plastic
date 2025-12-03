@@ -1,7 +1,22 @@
 ---
+
 title: "1210-FB Collapsible Box"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Foldable Pallet Boxes"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB Collapsible Box showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB Collapsible Box showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB Collapsible Box showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB Collapsible Box industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB Collapsible Box industry use 2"
+
 specs:
   dimensions: "1200 × 1000 × 975 mm"
   folded_height: "360 mm"
@@ -18,6 +33,7 @@ specs_order:
   - dynamic_load
   - weight
   - material
+
 ---
 Full-perimeter pallet box with drop door for easy picking and return logistics.
 
