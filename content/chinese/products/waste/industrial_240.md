@@ -24,6 +24,7 @@ specs:
   lid: "翻盖带前抓手"
   weight: "12.5 kg"
   material: "HDPE"
+  container_loading: "320"
 specs_order:
   - capacity
   - dimensions
@@ -31,6 +32,7 @@ specs_order:
   - lid
   - weight
   - material
+  - container_loading
 
 ---
 重载收集桶，适合工厂、仓库与回收站。

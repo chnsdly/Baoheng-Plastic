@@ -25,6 +25,7 @@ specs:
   dynamic_load: "1.5 t"
   weight: "62 kg"
   material: "HDPE + 钢销"
+  container_loading: "320"
 specs_order:
   - dimensions
   - folded_height
@@ -33,6 +34,7 @@ specs_order:
   - dynamic_load
   - weight
   - material
+  - container_loading
 
 ---
 全周边结构，带侧门，方便拣货与回程折叠。

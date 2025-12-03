@@ -42,6 +42,7 @@ specs:
   steel_pipes: "Supported"
   material: "HDPE/PP"
   process: "Injection molding"
+  container_loading: "320"
 specs_order:
   - dimensions
   - static_load
@@ -51,6 +52,7 @@ specs_order:
   - steel_pipes
   - material
   - process
+  - container_loading
 
 
 ---

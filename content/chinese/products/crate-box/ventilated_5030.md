@@ -24,6 +24,7 @@ specs:
   weight: "2.1 kg"
   material: "食品级 PP"
   ventilation: "四面及箱底开孔"
+  container_loading: "320"
 specs_order:
   - dimensions
   - internal_dimensions
@@ -31,6 +32,7 @@ specs_order:
   - weight
   - material
   - ventilation
+  - container_loading
 
 ---
 适用于果蔬、烘焙等需要快速散热排水的场景。

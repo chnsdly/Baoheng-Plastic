@@ -24,6 +24,7 @@ specs:
   weight: "2.8 kg"
   material: "PP with label area"
   stacking_height: "5 layers"
+  container_loading: "320"
 specs_order:
   - dimensions
   - internal_dimensions
@@ -31,6 +32,7 @@ specs_order:
   - weight
   - material
   - stacking_height
+  - container_loading
 
 ---
 Rigid Euro-style crate for line-side storage and conveyor handling.

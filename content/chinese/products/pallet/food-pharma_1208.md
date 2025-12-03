@@ -14,6 +14,7 @@ specs:
   steel_pipes: "支持"
   material: "食品级 HDPE/PP"
   process: "注塑"
+  container_loading: "320"
 specs_order:
   - dimensions
   - static_load
@@ -23,6 +24,7 @@ specs_order:
   - steel_pipes
   - material
   - process
+  - container_loading
 
 description: "适用于食品、医药和其他对卫生要求严格的行业，支持标准货架存储和频繁清洗。"
 

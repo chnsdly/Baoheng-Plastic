@@ -24,6 +24,7 @@ specs:
   lid: "双开上盖"
   weight: "42 kg"
   material: "HDPE + 镀锌钢轴"
+  container_loading: "320"
 specs_order:
   - capacity
   - dimensions
@@ -31,6 +32,7 @@ specs_order:
   - lid
   - weight
   - material
+  - container_loading
 
 ---
 四轮滚动式垃圾箱，适用于商场、食品厂和集中收集点。

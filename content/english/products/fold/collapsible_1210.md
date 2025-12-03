@@ -25,6 +25,7 @@ specs:
   dynamic_load: "1.5 t"
   weight: "62 kg"
   material: "HDPE + steel pins"
+  container_loading: "320"
 specs_order:
   - dimensions
   - folded_height
@@ -33,6 +34,7 @@ specs_order:
   - dynamic_load
   - weight
   - material
+  - container_loading
 
 ---
 Full-perimeter pallet box with drop door for easy picking and return logistics.
