@@ -16,7 +16,6 @@ specs:
   steel_pipes: "支持"
   material: "HDPE/PP"
   process: "注塑"
-  container_loading: "320"
 specs_order:
   - dimensions
   - static_load
@@ -26,7 +25,6 @@ specs_order:
   - steel_pipes
   - material
   - process
-  - container_loading
 
 hero_description: "可上架塑料托盘，采用HDPE/PP全新料，大型精密模具一体成型，我们的工程师将会根据您的具体货物与使用场景，为您推荐最合适的塑料托盘，欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"

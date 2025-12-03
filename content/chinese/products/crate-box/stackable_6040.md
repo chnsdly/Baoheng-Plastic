@@ -24,7 +24,6 @@ specs:
   weight: "2.8 kg"
   material: "PP 带标签位"
   stacking_height: "可叠放5层"
-  container_loading: "320"
 specs_order:
   - dimensions
   - internal_dimensions
@@ -32,7 +31,6 @@ specs_order:
   - weight
   - material
   - stacking_height
-  - container_loading
 
 ---
 欧标周转箱，适配线边拣选与输送系统。

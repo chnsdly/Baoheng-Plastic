@@ -19,7 +19,6 @@ specs:
   weight: "19 kg"
   material: "HDPE/PP"
   process: "Blow molding"
-  container_loading: "320"
 specs_order:
   - dimensions
   - static_load
@@ -28,7 +27,6 @@ specs_order:
   - weight
   - material
   - process
-  - container_loading
 
 hero_description: "A durable rackable pallet that keeps loads stable across automated lines, store backrooms, and export shipping lanes. Its reinforced runners support repeated use without compromising cleanliness."
 contact_cta_label: "Request a quote"

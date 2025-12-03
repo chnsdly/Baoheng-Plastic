@@ -24,7 +24,6 @@ specs:
   lid: "Hinged lid with front grip"
   weight: "12.5 kg"
   material: "HDPE"
-  container_loading: "320"
 specs_order:
   - capacity
   - dimensions
@@ -32,7 +31,6 @@ specs_order:
   - lid
   - weight
   - material
-  - container_loading
 
 ---
 Heavy-duty collection cart for factories, warehouses, and recycling stations.

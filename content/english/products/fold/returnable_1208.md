@@ -25,7 +25,6 @@ specs:
   dynamic_load: "1.2 t"
   weight: "48 kg"
   material: "HDPE"
-  container_loading: "320"
 specs_order:
   - dimensions
   - folded_height
@@ -34,7 +33,6 @@ specs_order:
   - dynamic_load
   - weight
   - material
-  - container_loading
 
 ---
 Space-saving foldable pallet box sized for Euro conveyors and shuttle systems.

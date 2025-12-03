@@ -24,7 +24,6 @@ specs:
   lid: "Flat lid with seal"
   weight: "9.5 kg"
   material: "HDPE UV-resistant"
-  container_loading: "320"
 specs_order:
   - capacity
   - dimensions
@@ -32,7 +31,6 @@ specs_order:
   - lid
   - weight
   - material
-  - container_loading
 
 ---
 Two-wheel waste cart sized for campuses, hotels, and light commercial routes.

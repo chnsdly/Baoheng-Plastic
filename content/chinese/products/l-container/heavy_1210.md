@@ -25,7 +25,6 @@ specs:
   weight: "65 kg"
   material: "HDPE 防紫外"
   base_style: "周边连体滑板"
-  container_loading: "320"
 specs_order:
   - dimensions
   - internal_volume
@@ -34,7 +33,6 @@ specs_order:
   - weight
   - material
   - base_style
-  - container_loading
 
 ---
 抗冲击重载箱，适合金属件、铸件和重废料。

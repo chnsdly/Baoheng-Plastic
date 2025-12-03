@@ -24,7 +24,6 @@ specs:
   lid: "平盖带密封条"
   weight: "9.5 kg"
   material: "HDPE 抗紫外"
-  container_loading: "320"
 specs_order:
   - capacity
   - dimensions
@@ -32,7 +31,6 @@ specs_order:
   - lid
   - weight
   - material
-  - container_loading
 
 ---
 双轮垃圾桶，适合校园、酒店及轻型清运路线。

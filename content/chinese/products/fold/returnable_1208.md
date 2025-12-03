@@ -25,7 +25,6 @@ specs:
   dynamic_load: "1.2 t"
   weight: "48 kg"
   material: "HDPE"
-  container_loading: "320"
 specs_order:
   - dimensions
   - folded_height
@@ -34,7 +33,6 @@ specs_order:
   - dynamic_load
   - weight
   - material
-  - container_loading
 
 ---
 欧标尺寸折叠箱，匹配输送线和穿梭车系统。
