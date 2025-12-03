@@ -50,5 +50,6 @@ weight = "重量"
 process = "生产工艺"
 color = "颜色"
 steel_pipes = "钢管"
+container_loading = "集装箱装载量"
 
 
