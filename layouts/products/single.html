@@ -134,14 +134,14 @@
             {{ end }}
           </div>
 
-          {{ with $industryGallery }}
-            {{ $industryItems := first 4 . }}
-            <div class="product-details__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              {{ range $industryItems }}
+          {{ with $showcaseGallery }}
+            {{ $showcaseItems := first 4 . }}
+            <div class="showcase__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
+              {{ range $showcaseItems }}
                 {{ $asset := .image_asset | default .image }}
                 {{ if $asset }}
-                  <figure class="product-details__figure">
-                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "product-details__image" "fetch" "") }}
+                  <figure class="showcase__figure">
+                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "showcase__image" "fetch" "") }}
                   </figure>
                 {{ end }}
               {{ end }}
@@ -152,26 +152,26 @@
             {{ partial "product-specs.html" . }}
           </div>
 
-          {{ with $showcaseGallery }}
+          {{ with $industryGallery }}
             {{ $galleryItems := first 3 . }}
             {{ $primary := index $galleryItems 0 }}
-            <div class="product-showcase" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              <div class="product-showcase__gallery">
+            <div class="industry-gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
+              <div class="industry-gallery__gallery">
                 {{ with $primary }}
                   {{ $asset := .image_asset | default .image }}
                   {{ if $asset }}
-                    <figure class="product-showcase__figure product-showcase__figure--primary">
-                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 60vw" "class" "product-showcase__image" "fetch" "") }}
+                    <figure class="industry-gallery__figure industry-gallery__figure--primary">
+                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 60vw" "class" "industry-gallery__image" "fetch" "") }}
                     </figure>
                   {{ end }}
                 {{ end }}
 
-                <div class="product-showcase__stack">
+                <div class="industry-gallery__stack">
                   {{ range after 1 $galleryItems }}
                     {{ $asset := .image_asset | default .image }}
                     {{ if $asset }}
-                      <figure class="product-showcase__figure product-showcase__figure--secondary">
-                        {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 40vw" "class" "product-showcase__image" "fetch" "") }}
+                      <figure class="industry-gallery__figure industry-gallery__figure--secondary">
+                        {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 40vw" "class" "industry-gallery__image" "fetch" "") }}
                       </figure>
                     {{ end }}
                   {{ end }}
