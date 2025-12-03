@@ -36,7 +36,7 @@ showcase_gallery:
     alt: "食品和医药塑料托盘 托盘角度图"
   - image_asset: "/images/products/pallet/food-pharma_1208.jpg"
     alt: "食品和医药塑料托盘 托盘细节展示"
-detail_gallery:
+industry_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "1008-BP-OD3R15 托盘俯视图"
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"

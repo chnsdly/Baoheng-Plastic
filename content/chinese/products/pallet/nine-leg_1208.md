@@ -33,7 +33,7 @@ showcase_gallery:
     alt: "1208-BP-OD9L14 托盘角度图"
   - image_asset: "/images/products/pallet/nine-leg_1208.jpg"
     alt: "1208-BP-OD9L14 托盘细节展示"
-detail_gallery:
+industry_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "1008-BP-OD3R15 托盘俯视图"
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"

@@ -66,9 +66,8 @@
         {{ $ctaLabel := .Params.contact_cta_label | default (i18n "cta_get_quote" | default "Get a quote") }}
         {{ $ctaHref := .Params.contact_cta_link | default $contactURL }}
         {{ $socials := site.Params.social }}
-        {{ $gallery := .Params.detail_gallery }}
-        {{ $showcaseGallery := .Params.showcase_gallery | default $gallery }}
-        {{ $useCaseGallery := .Params.use_case_gallery | default $gallery }}
+        {{ $industryGallery := .Params.industry_gallery | default .Params.detail_gallery }}
+        {{ $showcaseGallery := .Params.showcase_gallery | default $industryGallery }}
 
         <header class="product-single__header">
           <h1 class="product-single__title">{{ .Title }}</h1>
@@ -167,9 +166,10 @@
             {{ partial "product-specs.html" . }}
           </div>
 
-          {{ with $useCaseGallery }}
+          {{ with $industryGallery }}
+            {{ $industryItems := first 2 . }}
             <div class="product-details__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              {{ range . }}
+              {{ range $industryItems }}
                 {{ $asset := .image_asset | default .image }}
                 {{ if $asset }}
                   <figure class="product-details__figure">

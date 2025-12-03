@@ -36,7 +36,7 @@ detail_intro: |-
   
   4. We have specialized in plastic pallet manufacturing for over 20 years, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery.
 
-detail_gallery:
+industry_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "Top deck of the 1008-BP-OD3R15 pallet"
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"

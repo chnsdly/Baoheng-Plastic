@@ -34,7 +34,7 @@ showcase_gallery:
     alt: "1311-PB-ODDF15I 托盘角度图"
   - image_asset: "/images/products/pallet/double-faced_1311.jpg"
     alt: "1311-PB-ODDF15I 托盘细节展示"
-detail_gallery:
+industry_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "1008-BP-OD3R15 托盘俯视图"
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"

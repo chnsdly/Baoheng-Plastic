@@ -26,7 +26,7 @@ showcase_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "Detail angle of the 1008-BP-OD3R15 pallet"
 
-detail_gallery:
+industry_gallery:
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
     alt: "Top deck of the 1008-BP-OD3R15 pallet"
   - image_asset: "/images/products/pallet/3-runner_1008.jpg"
