@@ -515,6 +515,8 @@
   min-inline-size: clamp(10rem, 20vw, 14rem);
   justify-content: center;
   box-shadow: var(--shadow);
+  color: #ffffff;
+  font-size: var(--fs-2);
 }
 
 .product-overview__socials{
@@ -637,7 +639,7 @@
 .product-details__gallery{
   display: grid;
   gap: space(1.25);
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: 1fr 1fr;
 }
 
 .product-details__figure{

@@ -39,16 +39,20 @@ detail_intro: |-
 
   4. 我们20年来专注于塑料托盘制造，服务于1000多家中大型企业，确保品质，按时发货。
 showcase_gallery:
-  - image_asset: "/images/products/pallet/3-runner_1111.jpg"
+  - image_asset: "/images/products/pallet/3-runner/1111-industry-1.jpg"
     alt: "1111-BP-OD3R15 展示1"
-  - image_asset: "/images/products/pallet/3-runner_1111.jpg"
+  - image_asset: "/images/products/pallet/3-runner/1111-industry-2.jpg"
     alt: "1111-BP-OD3R15 展示2"
-  - image_asset: "/images/products/pallet/3-runner_1111.jpg"
+  - image_asset: "/images/products/pallet/3-runner/1111-industry-3.jpg"
     alt: "1111-BP-OD3R15 展示3"
 industry_gallery:
-  - image_asset: "/images/products/pallet/3-runner_1111.jpg"
+  - image_asset: "/images/products/pallet/3-runner/1111-showcase-11.jpg"
     alt: "1111-BP-OD3R15 行业场景1"
-  - image_asset: "/images/products/pallet/3-runner_1111.jpg"
+  - image_asset: "/images/products/pallet/3-runner/1111-showcase-12.jpg"
+    alt: "1111-BP-OD3R15 行业场景2"
+  - image_asset: "/images/products/pallet/3-runner/1111-showcase-13.jpg"
+    alt: "1111-BP-OD3R15 行业场景1"
+  - image_asset: "/images/products/pallet/3-runner/1111-showcase-14.jpg"
     alt: "1111-BP-OD3R15 行业场景2"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"

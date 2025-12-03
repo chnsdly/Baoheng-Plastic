@@ -134,6 +134,24 @@
             {{ end }}
           </div>
 
+          {{ with $industryGallery }}
+            {{ $industryItems := first 4 . }}
+            <div class="product-details__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
+              {{ range $industryItems }}
+                {{ $asset := .image_asset | default .image }}
+                {{ if $asset }}
+                  <figure class="product-details__figure">
+                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "product-details__image" "fetch" "") }}
+                  </figure>
+                {{ end }}
+              {{ end }}
+            </div>
+          {{ end }}
+
+          <div class="product-details__specs">
+            {{ partial "product-specs.html" . }}
+          </div>
+
           {{ with $showcaseGallery }}
             {{ $galleryItems := first 3 . }}
             {{ $primary := index $galleryItems 0 }}
@@ -159,24 +177,6 @@
                   {{ end }}
                 </div>
               </div>
-            </div>
-          {{ end }}
-
-          <div class="product-details__specs">
-            {{ partial "product-specs.html" . }}
-          </div>
-
-          {{ with $industryGallery }}
-            {{ $industryItems := first 2 . }}
-            <div class="product-details__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              {{ range $industryItems }}
-                {{ $asset := .image_asset | default .image }}
-                {{ if $asset }}
-                  <figure class="product-details__figure">
-                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "product-details__image" "fetch" "") }}
-                  </figure>
-                {{ end }}
-              {{ end }}
             </div>
           {{ end }}
 
