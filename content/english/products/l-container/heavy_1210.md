@@ -1,7 +1,22 @@
 ---
+
 title: "1210-LC Heavy-Duty Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Large Bulk Containers"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC Heavy-Duty Bin showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC Heavy-Duty Bin showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC Heavy-Duty Bin showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC Heavy-Duty Bin industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC Heavy-Duty Bin industry use 2"
+
 specs:
   dimensions: "1210 × 1010 × 760 mm"
   internal_volume: "700 L"
@@ -18,6 +33,7 @@ specs_order:
   - weight
   - material
   - base_style
+
 ---
 Impact-resistant container for metal parts, casting components, and heavy recyclables.
 

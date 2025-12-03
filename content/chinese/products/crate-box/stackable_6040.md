@@ -1,7 +1,22 @@
 ---
+
 title: "6040-SC 可堆叠箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "塑料筐/箱"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC 可堆叠箱 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC 可堆叠箱 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC 可堆叠箱 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC 可堆叠箱 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC 可堆叠箱 行业场景2"
+
 specs:
   dimensions: "600 × 400 × 330 mm"
   internal_dimensions: "565 × 365 × 315 mm"
@@ -16,6 +31,7 @@ specs_order:
   - weight
   - material
   - stacking_height
+
 ---
 欧标周转箱，适配线边拣选与输送系统。
 

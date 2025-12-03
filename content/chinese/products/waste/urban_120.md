@@ -1,7 +1,22 @@
 ---
+
 title: "120L 城市环卫桶"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "塑料垃圾桶"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L 城市环卫桶 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L 城市环卫桶 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L 城市环卫桶 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L 城市环卫桶 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L 城市环卫桶 行业场景2"
+
 specs:
   capacity: "120 L"
   dimensions: "480 × 550 × 950 mm"
@@ -16,6 +31,7 @@ specs_order:
   - lid
   - weight
   - material
+
 ---
 双轮垃圾桶，适合校园、酒店及轻型清运路线。
 

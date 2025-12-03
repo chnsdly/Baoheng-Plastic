@@ -1,7 +1,22 @@
 ---
+
 title: "240L Industrial Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Plastic Waste Bins"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L Industrial Bin showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L Industrial Bin showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L Industrial Bin showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L Industrial Bin industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "240L Industrial Bin industry use 2"
+
 specs:
   capacity: "240 L"
   dimensions: "580 × 730 × 1090 mm"
@@ -16,6 +31,7 @@ specs_order:
   - lid
   - weight
   - material
+
 ---
 Heavy-duty collection cart for factories, warehouses, and recycling stations.
 

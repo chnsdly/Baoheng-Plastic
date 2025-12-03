@@ -1,7 +1,22 @@
 ---
+
 title: "660L 四轮垃圾箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "塑料垃圾桶"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L 四轮垃圾箱 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L 四轮垃圾箱 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L 四轮垃圾箱 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L 四轮垃圾箱 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L 四轮垃圾箱 行业场景2"
+
 specs:
   capacity: "660 L"
   dimensions: "1250 × 770 × 1220 mm"
@@ -16,6 +31,7 @@ specs_order:
   - lid
   - weight
   - material
+
 ---
 四轮滚动式垃圾箱，适用于商场、食品厂和集中收集点。
 

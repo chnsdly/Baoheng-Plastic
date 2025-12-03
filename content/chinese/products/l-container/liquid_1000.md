@@ -1,7 +1,22 @@
 ---
+
 title: "1000-LC 液体托"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "大型散装容器"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC 液体托 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC 液体托 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC 液体托 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC 液体托 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1000-LC 液体托 行业场景2"
+
 specs:
   dimensions: "1200 × 1000 × 1160 mm"
   internal_volume: "1000 L"
@@ -18,6 +33,7 @@ specs_order:
   - weight
   - material
   - valve
+
 ---
 密闭式大桶，适用于液体原料、浓缩液及回收物料。
 

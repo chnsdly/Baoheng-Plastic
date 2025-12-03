@@ -1,7 +1,22 @@
 ---
+
 title: "6040-SC Stackable Crate"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Plastic Crates & Boxes"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC Stackable Crate showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC Stackable Crate showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC Stackable Crate showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC Stackable Crate industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "6040-SC Stackable Crate industry use 2"
+
 specs:
   dimensions: "600 × 400 × 330 mm"
   internal_dimensions: "565 × 365 × 315 mm"
@@ -16,6 +31,7 @@ specs_order:
   - weight
   - material
   - stacking_height
+
 ---
 Rigid Euro-style crate for line-side storage and conveyor handling.
 

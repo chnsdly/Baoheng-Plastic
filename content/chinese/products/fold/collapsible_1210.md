@@ -1,7 +1,22 @@
 ---
+
 title: "1210-FB 折叠托盘箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "可折叠塑料托盘箱"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB 折叠托盘箱 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB 折叠托盘箱 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB 折叠托盘箱 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB 折叠托盘箱 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-FB 折叠托盘箱 行业场景2"
+
 specs:
   dimensions: "1200 × 1000 × 975 mm"
   folded_height: "360 mm"
@@ -18,6 +33,7 @@ specs_order:
   - dynamic_load
   - weight
   - material
+
 ---
 全周边结构，带侧门，方便拣货与回程折叠。
 

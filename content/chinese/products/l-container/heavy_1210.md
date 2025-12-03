@@ -1,7 +1,22 @@
 ---
+
 title: "1210-LC 重载大箱"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "大型散装容器"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC 重载大箱 展示1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC 重载大箱 展示2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC 重载大箱 展示3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC 重载大箱 行业场景1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "1210-LC 重载大箱 行业场景2"
+
 specs:
   dimensions: "1210 × 1010 × 760 mm"
   internal_volume: "700 L"
@@ -18,6 +33,7 @@ specs_order:
   - weight
   - material
   - base_style
+
 ---
 抗冲击重载箱，适合金属件、铸件和重废料。
 

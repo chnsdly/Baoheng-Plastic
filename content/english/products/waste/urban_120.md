@@ -1,7 +1,22 @@
 ---
+
 title: "120L Urban Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Plastic Waste Bins"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L Urban Bin showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L Urban Bin showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L Urban Bin showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L Urban Bin industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "120L Urban Bin industry use 2"
+
 specs:
   capacity: "120 L"
   dimensions: "480 × 550 × 950 mm"
@@ -16,6 +31,7 @@ specs_order:
   - lid
   - weight
   - material
+
 ---
 Two-wheel waste cart sized for campuses, hotels, and light commercial routes.
 

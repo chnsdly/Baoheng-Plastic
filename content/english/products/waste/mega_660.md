@@ -1,7 +1,22 @@
 ---
+
 title: "660L Mega Bin"
 featured_image_asset: "/images/products/cnc-machine.jpg"
 product_type: "Plastic Waste Bins"
+showcase_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L Mega Bin showcase 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L Mega Bin showcase 2"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L Mega Bin showcase 3"
+
+industry_gallery:
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L Mega Bin industry use 1"
+  - image_asset: "/images/products/cnc-machine.jpg"
+    alt: "660L Mega Bin industry use 2"
+
 specs:
   capacity: "660 L"
   dimensions: "1250 × 770 × 1220 mm"
@@ -16,6 +31,7 @@ specs_order:
   - lid
   - weight
   - material
+
 ---
 Four-wheel roll-out bin for malls, food plants, and centralized collection points.
 
