@@ -25,7 +25,6 @@ specs:
   weight: "70 kg"
   material: "Food-grade HDPE"
   valve: "2-inch discharge"
-  container_loading: "320"
 specs_order:
   - dimensions
   - internal_volume
@@ -34,7 +33,6 @@ specs_order:
   - weight
   - material
   - valve
-  - container_loading
 
 ---
 Closed-wall tote for liquid ingredients, concentrates, and recycling streams.

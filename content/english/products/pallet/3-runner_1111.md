@@ -25,7 +25,6 @@ specs:
   steel_pipes: "Supported"
   material: "HDPE/PP"
   process: "Injection molding"
-  container_loading: "320"
 specs_order:
   - dimensions
   - static_load
@@ -35,7 +34,6 @@ specs_order:
   - steel_pipes
   - material
   - process
-  - container_loading
 
 hero_description: "Rackable plastic pallets made from 100% virgin HDPE/PP using large precision one-piece molds. Our engineers will recommend the most suitable pallet based on your specific goods and application scenario. Contact us for a customized quotation."
 contact_cta_label: "Request a quote"

@@ -25,7 +25,6 @@ specs:
   weight: "70 kg"
   material: "食品级 HDPE"
   valve: "2 英寸排液口"
-  container_loading: "320"
 specs_order:
   - dimensions
   - internal_volume
@@ -34,7 +33,6 @@ specs_order:
   - weight
   - material
   - valve
-  - container_loading
 
 ---
 密闭式大桶，适用于液体原料、浓缩液及回收物料。
