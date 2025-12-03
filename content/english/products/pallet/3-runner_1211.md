@@ -1,16 +1,18 @@
 ---
 
 title: "1211-BP-OD3R15"
-featured_image_asset: "/images/products/pallet/3-runner_1211.jpg"
+featured_image_asset: "/images/products/pallet/3-runner/1211-hero.jpg"
 product_type: "Plastic Pallet"
 pallet_category:
   - ""
 showcase_gallery:
-  - image_asset: "/images/products/pallet/3-runner_1211.jpg"
+  - image_asset: "/images/products/pallet/3-runner/1211-showcase.jpg"
     alt: "1211-BP-OD3R15 showcase 1"
-  - image_asset: "/images/products/pallet/3-runner_1211.jpg"
+  - image_asset: "/images/products/pallet/3-runner/showcase-1.jpg"
     alt: "1211-BP-OD3R15 showcase 2"
-  - image_asset: "/images/products/pallet/3-runner_1211.jpg"
+  - image_asset: "/images/products/pallet/3-runner/showcase-2.jpg"
+    alt: "1211-BP-OD3R15 showcase 3"
+  - image_asset: "/images/products/pallet/3-runner/showcase-3.jpg"
     alt: "1211-BP-OD3R15 showcase 3"
 
 specs:
@@ -47,10 +49,12 @@ detail_intro: |-
   4. We have specialized in plastic pallet manufacturing for over 20 years, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery.
 
 industry_gallery:
-  - image_asset: "/images/products/pallet/3-runner_1211.jpg"
+  - image_asset: "/images/products/pallet/3-runner/industry-1.jpg"
     alt: "1211-BP-OD3R15 industry use 1"
-  - image_asset: "/images/products/pallet/3-runner_1211.jpg"
+  - image_asset: "/images/products/pallet/3-runner/industry-2.jpg"
     alt: "1211-BP-OD3R15 industry use 2"
+  - image_asset: "/images/products/pallet/3-runner/industry-3.jpg"
+    alt: "1211-BP-OD3R15 industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 
