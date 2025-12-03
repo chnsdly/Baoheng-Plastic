@@ -1,7 +1,7 @@
 ---
 
 title: "1111-BP-OD3R15"
-featured_image_asset: "/images/products/pallet/3-runner_1111.jpg"
+featured_image_asset: "/images/products/pallet/3-runner/1111-hero.jpg"
 featured: true
 product_type: "塑料托盘"
 pallet_category:
