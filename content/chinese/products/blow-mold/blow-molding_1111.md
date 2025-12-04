@@ -1,15 +1,17 @@
 ---
 
 title: "1111-BP-CD9L15B"
-featured_image_asset: "/images/products/pallet/blow-molding_1111.jpg"
+featured_image_asset: "/images/products/blow-molded/1111-hero.jpg"
 product_type: "塑料托盘"
 showcase_gallery:
-  - image_asset: "/images/products/pallet/blow-molding_1111.jpg"
+  - image_asset: "/images/products/blow-molded/1111-showcase.jpg"
     alt: "1111-BP-CD9L15B 展示1"
-  - image_asset: "/images/products/pallet/blow-molding_1111.jpg"
+  - image_asset: "/images/products/blow-molded/showcase-1.jpg"
     alt: "1111-BP-CD9L15B 展示2"
-  - image_asset: "/images/products/pallet/blow-molding_1111.jpg"
+  - image_asset: "/images/products/blow-molded/showcase-2.jpg"
     alt: "1111-BP-CD9L15B 展示3"
+  - image_asset: "/images/products/blow-molded/showcase-3.jpg"
+    alt: "1111-BP-CD9L15B 展示4"
 
 specs:
   dimensions: "1100 × 1100 × 150 毫米"
@@ -41,10 +43,12 @@ detail_intro: |-
   4. 我们20年来专注于塑料托盘制造，服务于1000多家中大型企业，确保品质，按时发货。欢迎您代理我们的产品。
 
 industry_gallery:
-  - image_asset: "/images/products/pallet/blow-molding_1111.jpg"
+  - image_asset: "/images/products/blow-molded/industry-1.jpg"
     alt: "1111-BP-CD9L15B 行业场景1"
-  - image_asset: "/images/products/pallet/blow-molding_1111.jpg"
+  - image_asset: "/images/products/blow-molded/industry-2.jpg"
     alt: "1111-BP-CD9L15B 行业场景2"
+  - image_asset: "/images/products/blow-molded/industry-3.jpg"
+    alt: "1111-BP-CD9L15B 行业场景3"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"
 
