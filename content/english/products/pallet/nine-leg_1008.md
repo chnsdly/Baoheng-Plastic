@@ -30,10 +30,14 @@ specs_order:
   - material
   - process
 
-hero_description: "A durable rackable pallet that keeps loads stable across automated lines, store backrooms, and export shipping lanes. Its reinforced runners support repeated use without compromising cleanliness."
+hero_description: "Grid-deck 9-leg plastic pallets are one-piece injection molded from virgin HDPE/PP, with a nine-leg support layout for reliable load-bearing. Lightweight and durable, they offer four-way fork entry to simplify handling and improve warehouse space utilization. Contact us for a tailored quotation."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: "Designed for retailers and 3PLs that need a compact footprint without sacrificing rack performance, the 1008-BP-OD3R15 pairs dense material with reinforced steel options to maintain deck stiffness."
+detail_intro: |
+  1. These pallets feature a lightweight design that makes them easy to handle. The 9-leg structure supports four-way forklift entry and is widely used in food processing, pharmaceuticals, fresh food distribution and carton packaging. With a high cost-performance ratio, they are an economical choice at about one third the weight of wooden pallets, reducing operator fatigue and significantly improving handling and turnover efficiency.
+  2. The pallets stack securely: the upper pallet nests smoothly into the base of the lower pallet, saving up to 70% of storage space for empty pallets.
+  3. These pallets are water-, moisture- and corrosion-resistant, insect-proof and easy to clean. They require no fumigation for export and contain no splinters or exposed nails, helping protect both goods and personnel.
+  4 .For over 20 years, we have specialized in manufacturing plastic pallets, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery, and we welcome you to partner with us as a distributor.
 industry_gallery:
   - image_asset: "/images/products/pallet/nine-leg_1008.jpg"
     alt: "1008-BP-OD9L14 industry use 1"
