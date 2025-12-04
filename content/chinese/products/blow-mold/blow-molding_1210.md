@@ -28,7 +28,7 @@ specs_order:
   - material
   - process
 
-hero_description: "网格九脚托盘，采用HDPE/PP全新料生产而成，一体注塑成型，九脚分布式支撑，增强承重。托盘轻便耐用，四向插取，方便操作，可提升仓库空间利用率和搬运效率。 欢迎咨询，获取您的专属报价。"
+hero_description: "吹塑九脚托盘，采用HDPE/PP全新料生产而成，一体吹塑成型，九脚分布式支撑，增强承重。托盘轻便耐用，四向插取，方便操作，可提升仓库空间利用率和搬运效率。 欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"
 detail_intro: |-

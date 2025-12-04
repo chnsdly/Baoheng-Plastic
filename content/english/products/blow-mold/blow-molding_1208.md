@@ -28,7 +28,7 @@ specs_order:
   - material
   - process
 
-hero_description: "Grid-deck 9-leg plastic pallets are one-piece injection molded from virgin HDPE/PP, with a nine-leg support layout for reliable load-bearing. Lightweight and durable, they offer four-way fork entry to simplify handling and improve warehouse space utilization. Contact us for a tailored quotation."
+hero_description: "Blow-molded 9-leg plastic pallets are made from virgin HDPE/PP with a one-piece blow-molded construction and a nine-leg layout for reliable load-bearing. Lightweight and durable, they offer four-way fork entry to simplify handling and improve warehouse space utilization. Contact us for a tailored quotation."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: |-
