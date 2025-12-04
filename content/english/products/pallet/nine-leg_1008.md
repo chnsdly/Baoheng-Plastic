@@ -1,17 +1,20 @@
 ---
 
 title: "1008-BP-OD9L14"
-featured_image_asset: "/images/products/pallet/nine-leg_1008.jpg"
+featured_image_asset: "/images/products/pallet/nine-leg/1008-hero.jpg"
 product_type: "Plastic Pallet"
 pallet_category:
   - "Nestable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/pallet/nine-leg_1008.jpg"
+  - image_asset: "/images/products/pallet/nine-leg/1008-showcase.jpg"
     alt: "1008-BP-OD9L14 showcase 1"
-  - image_asset: "/images/products/pallet/nine-leg_1008.jpg"
+  - image_asset: "/images/products/pallet/nine-leg/showcase-1.jpg"
     alt: "1008-BP-OD9L14 showcase 2"
-  - image_asset: "/images/products/pallet/nine-leg_1008.jpg"
+  - image_asset: "/images/products/pallet/nine-leg/showcase-2.jpg"
     alt: "1008-BP-OD9L14 showcase 3"
+  - image_asset: "/images/products/pallet/nine-leg/showcase-3.jpg"
+    alt: "1008-BP-OD9L14 showcase 3"
+
 
 specs:
   dimensions: "1000 × 800 × 140 mm"
@@ -43,10 +46,12 @@ detail_intro: |-
   4. For over 20 years, we have specialized in manufacturing plastic pallets, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery, and we welcome you to partner with us as a distributor.
 
 industry_gallery:
-  - image_asset: "/images/products/pallet/nine-leg_1008.jpg"
+  - image_asset: "/images/products/pallet/nine-leg/industry-1.jpg"
     alt: "1008-BP-OD9L14 industry use 1"
-  - image_asset: "/images/products/pallet/nine-leg_1008.jpg"
+  - image_asset: "/images/products/pallet/nine-leg/industry-2.jpg"
     alt: "1008-BP-OD9L14 industry use 2"
+  - image_asset: "/images/products/pallet/nine-leg/industry-3.jpg"
+    alt: "1008-BP-OD9L14 industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 
