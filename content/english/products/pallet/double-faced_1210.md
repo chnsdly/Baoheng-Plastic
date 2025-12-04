@@ -31,10 +31,18 @@ specs_order:
   - material
   - process
 
-hero_description: "A durable rackable pallet that keeps loads stable across automated lines, store backrooms, and export shipping lanes. Its reinforced runners support repeated use without compromising cleanliness."
+hero_description: "This double-sided, stackable pallet features a fully integrated design with reinforced ribs on both surfaces, providing maximum protection and high load capacity for heavy goods. Usable on both sides, it offers extended service life and reliable performance. Contact us for a custom quotation."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: "Designed for retailers and 3PLs that need a compact footprint without sacrificing rack performance, the 1008-BP-OD3R15 pairs dense material with reinforced steel options to maintain deck stiffness."
+detail_intro: |-
+  1. This pallet is made from virgin HDPE/PP with a fully symmetrical, double-sided structure and reinforced rib design. With no joints or welds, it is built to handle heavy loads and is ideal for automotive components, heavy metals, chemical materials, large equipment and high-bay warehouse storage.
+
+  2. The dense grid deck provides strong performance, with a dynamic load capacity of 1.5–2.5 tons and a static load capacity of 6–8 tons, supporting frequent forklift operations.
+
+  3. Both sides can be used interchangeably, helping reduce pallet damage and save budget. The four-way forklift entry ensures convenient and durable handling.
+
+  4. For over 20 years, we have specialized in manufacturing plastic pallets, serving more than 1,000 medium and large enterprises. We guarantee stable quality and on-time delivery, and we welcome you to become our distribution partner.
+
 industry_gallery:
   - image_asset: "/images/products/pallet/double-faced_1210.jpg"
     alt: "1210-PB-ODDF15I industry use 1"
