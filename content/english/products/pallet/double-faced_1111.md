@@ -1,17 +1,19 @@
 ---
 
 title: "1111-PB-ODDF15I"
-featured_image_asset: "/images/products/pallet/double-faced_1111.jpg"
+featured_image_asset: "/images/products/pallet/double-faced/1111-hero.jpg"
 product_type: "Plastic Pallet"
 pallet_category:
   - "Stackable Plastic Pallets"
   - "Heavy-Duty Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/pallet/double-faced_1111.jpg"
+  - image_asset: "/images/products/pallet/double-faced/1111-showcase.jpg"
     alt: "1111-PB-ODDF15I showcase 1"
-  - image_asset: "/images/products/pallet/double-faced_1111.jpg"
+  - image_asset: "/images/products/pallet/double-faced/showcase-1.jpg"
     alt: "1111-PB-ODDF15I showcase 2"
-  - image_asset: "/images/products/pallet/double-faced_1111.jpg"
+  - image_asset: "/images/products/pallet/double-faced/showcase-2.jpg"
+    alt: "1111-PB-ODDF15I showcase 3"
+  - image_asset: "/images/products/pallet/double-faced/showcase-3.jpg"
     alt: "1111-PB-ODDF15I showcase 3"
 
 specs:
@@ -44,10 +46,12 @@ detail_intro: |-
   4. For over 20 years, we have specialized in manufacturing plastic pallets, serving more than 1,000 medium and large enterprises. We guarantee stable quality and on-time delivery, and we welcome you to become our distribution partner.
 
 industry_gallery:
-  - image_asset: "/images/products/pallet/double-faced_1111.jpg"
+  - image_asset: "/images/products/pallet/double-faced/industry-1.jpg"
     alt: "1111-PB-ODDF15I industry use 1"
-  - image_asset: "/images/products/pallet/double-faced_1111.jpg"
+  - image_asset: "/images/products/pallet/double-faced/industry-2.jpg"
     alt: "1111-PB-ODDF15I industry use 2"
+  - image_asset: "/images/products/pallet/double-faced/industry-3.jpg"
+    alt: "1111-PB-ODDF15I industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 
