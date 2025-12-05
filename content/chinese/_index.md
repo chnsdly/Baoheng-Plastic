@@ -27,7 +27,7 @@ usps:
 # 中文版
 industries: 
   enable: true
-  title: "多场景行业应用"
+  title: "客户案例展示"
   items:
     - title: "仓储物流"
       image: "images/home/industries-1.jpg"

@@ -26,7 +26,7 @@ usps:
 ##########################################################
 industries: 
   enable: true
-  title: "Industry Applications"
+  title: "Client Case Highlights"
   items:
     - title: "Warehousing & Logistics"
       image: "images/home/industries-1.jpg"
