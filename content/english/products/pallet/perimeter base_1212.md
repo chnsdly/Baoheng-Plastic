@@ -32,10 +32,17 @@ specs_order:
   - material
   - process
 
-hero_description: "A durable rackable pallet that keeps loads stable across automated lines, store backrooms, and export shipping lanes. Its reinforced runners support repeated use without compromising cleanliness."
+hero_description: "A three-runner pallet with a robust cross-reinforced base and one-piece molded construction, engineered to deliver stable support and high impact resistance for heavy-duty loads. Designed for frequent forklift operations, offering strong load capacity, long service life, and reliable performance in warehouses and racking systems. Contact us to get your personalized quote."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: "Designed for retailers and 3PLs that need a compact footprint without sacrificing rack performance, the 1008-BP-OD3R15 pairs dense material with reinforced steel options to maintain deck stiffness."
+detail_intro: |-
+  1. This three-runner pallet is manufactured with brand-new HDPE/PP material and molded in one piece. The reinforced cross-runner structure provides stable load support with no joints or welds, making it suitable for heavy-duty applications such as automotive parts, metal components, chemical materials, large equipment, and high-bay racking systems.
+
+  2. The pallet features a dense grid surface with optimized force distribution. Dynamic load capacity reaches 1.5–2.5 tons, and static load capacity reaches 6–8 tons, meeting the requirements of frequent forklift handling and racking storage.
+
+  3. The stable three-runner base is rack-compatible and supports four-way forklift entry, improving material-handling efficiency while offering durability and lower overall operating costs.
+
+  4. With 20 years of expertise in plastic pallet manufacturing, we have served more than 1,000 medium and large enterprises, ensuring consistent quality and on-time delivery. We welcome you to partner with us.
 industry_gallery:
   - image_asset: "/images/products/pallet/perimeter-base/industry-1.jpg"
     alt: "1212-BP-ODPB15I industry use 1"
