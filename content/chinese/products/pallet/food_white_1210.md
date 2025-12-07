@@ -41,11 +41,11 @@ detail_intro: |-
 showcase_gallery:
   - image_asset: "/images/products/pallet/food/1210-white-showcase.jpg"
     alt: "1210-BP-OD3R15 展示1"
-  - image_asset: "/images/products/pallet/food/showcase-1.jpg"
+  - image_asset: "/images/products/pallet/food/showcase-white-1.jpg"
     alt: "1210-BP-OD3R15 展示2"
-  - image_asset: "/images/products/pallet/food/showcase-2.jpg"
+  - image_asset: "/images/products/pallet/food/showcase-white-2.jpg"
     alt: "1210-BP-OD3R15 展示3"
-  - image_asset: "/images/products/pallet/food/showcase-3.jpg"
+  - image_asset: "/images/products/pallet/food/showcase-white-3.jpg"
     alt: "1210-BP-OD3R15 展示3"
 industry_gallery:
   - image_asset: "/images/products/pallet/food/industry-1.jpg"
