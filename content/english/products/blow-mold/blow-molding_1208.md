@@ -2,7 +2,7 @@
 
 title: "1208-BP-CD9L15B"
 featured_image_asset: "/images/products/blow-molded/1208-hero.jpg"
-product_type: "Plastic Pallet"
+product_type: "Nestable Blow-Mold Pallets"
 showcase_gallery:
   - image_asset: "/images/products/blow-molded/1208-showcase.jpg"
     alt: "1208-BP-CD9L15B showcase 1"

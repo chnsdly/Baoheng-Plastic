@@ -1,19 +1,19 @@
 ---
 
-title: "1210-BF-FPBSSDD80B"
-featured_image_asset: "/images/products/fold/SSDD80B-hero.jpg"
-product_type: "Plastic Pallet"
+title: "1210-BF-FPBSS80B"
+featured_image_asset: "/images/products/fold/SS80B-hero.jpg"
+product_type: "Foldable Pallet Boxes"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/fold/SSDD80B-showcase.jpg"
-    alt: "1210-BF-FPBSSDD80B showcase 1"
+  - image_asset: "/images/products/fold/SS80B-showcase.jpg"
+    alt: "1210-BF-FPBSS80B showcase 1"
   - image_asset: "/images/products/fold/showcase-1.jpg"
-    alt: "1210-BF-FPBSSDD80B showcase 2"
+    alt: "1210-BF-FPBSS80B showcase 2"
   - image_asset: "/images/products/fold/showcase-2.jpg"
-    alt: "1210-BF-FPBSSDD80B showcase 3"
+    alt: "1210-BF-FPBSS80B showcase 3"
   - image_asset: "/images/products/fold/showcase-3.jpg"
-    alt: "1210-BF-FPBSSDD80B showcase 3"
+    alt: "1210-BF-FPBSS80B showcase 3"
 
 specs:
   dimensions: "1200 x 1000 x 800 mm"
@@ -48,11 +48,11 @@ detail_intro: |-
 
 industry_gallery:
   - image_asset: "/images/products/fold/industry-1.jpg"
-    alt: "1210-BF-FPBSSDD80B industry use 1"
+    alt: "1210-BF-FPBSS80B industry use 1"
   - image_asset: "/images/products/fold/industry-2.jpg"
-    alt: "1210-BF-FPBSSDD80B industry use 2"
+    alt: "1210-BF-FPBSS80B industry use 2"
   - image_asset: "/images/products/fold/industry-3.jpg"
-    alt: "1210-BF-FPBSSDD80B industry use 1"
+    alt: "1210-BF-FPBSS80B industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 
