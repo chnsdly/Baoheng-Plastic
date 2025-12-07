@@ -1,7 +1,7 @@
 ---
 
 title: "1210-BF-FPBVSDD76A"
-featured_image_asset: "/images/products/fold/VSDD76A-hero.jpg"
+featured_image_asset: "/images/products/fold/vsdd76a-hero.jpg"
 featured_image: "/images/cnc-machine.jpg"
 featured: true
 product_type: "可折叠塑料托盘箱"
@@ -38,7 +38,7 @@ detail_intro: |-
 
     4. 我们20年来专注于塑料托盘制造，服务于1000多家中大型企业，确保品质，按时发货。
 showcase_gallery:
-  - image_asset: "/images/products/fold/VSDD76A-showcase.jpg"
+  - image_asset: "/images/products/fold/vsdd76a-showcase.jpg"
     alt: "1210-BF-FPBVSDD76A 展示1"
   - image_asset: "/images/products/fold/showcase-1.jpg"
     alt: "1210-BF-FPBVSDD76A 展示2"

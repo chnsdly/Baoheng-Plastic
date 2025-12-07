@@ -1,12 +1,12 @@
 ---
 
 title: "1210-BF-FPBSSDD80B"
-featured_image_asset: "/images/products/fold/SSDD80B-hero.jpg"
+featured_image_asset: "/images/products/fold/ssdd80b-hero.jpg"
 product_type: "Foldable Pallet Boxes"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/fold/SSDD80B-showcase.jpg"
+  - image_asset: "/images/products/fold/ssdd80b-showcase.jpg"
     alt: "1210-BF-FPBSSDD80B showcase 1"
   - image_asset: "/images/products/fold/showcase-1.jpg"
     alt: "1210-BF-FPBSSDD80B showcase 2"

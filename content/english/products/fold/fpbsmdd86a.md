@@ -1,12 +1,12 @@
 ---
 
 title: "1210-BF-FPBSMDD86A"
-featured_image_asset: "/images/products/fold/SMDD86A-hero.jpg"
+featured_image_asset: "/images/products/fold/smdd86a-hero.jpg"
 product_type: "Foldable Pallet Boxes"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/fold/SMDD86A-showcase.jpg"
+  - image_asset: "/images/products/fold/smdd86a-showcase.jpg"
     alt: "1210-BF-FPBSMDD86A showcase 1"
   - image_asset: "/images/products/fold/showcase-1.jpg"
     alt: "1210-BF-FPBSMDD86A showcase 2"

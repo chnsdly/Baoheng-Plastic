@@ -1,12 +1,12 @@
 ---
 
 title: "1210-BF-FPBSMDD98A"
-featured_image_asset: "/images/products/fold/SMDD98A-hero.jpg"
+featured_image_asset: "/images/products/fold/smdd98a-hero.jpg"
 product_type: "Foldable Pallet Boxes"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/fold/SMDD98A-showcase.jpg"
+  - image_asset: "/images/products/fold/smdd98a-showcase.jpg"
     alt: "1210-BF-FPBSMDD98A showcase 1"
   - image_asset: "/images/products/fold/showcase-1.jpg"
     alt: "1210-BF-FPBSMDD98A showcase 2"
