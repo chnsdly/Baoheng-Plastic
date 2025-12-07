@@ -2,7 +2,7 @@
 
 title: "1311-BP-CD9L15B"
 featured_image_asset: "/images/products/blow-molded/1311-hero.jpg"
-product_type: "塑料托盘"
+product_type: "吹塑可嵌套塑料托盘"
 showcase_gallery:
   - image_asset: "/images/products/blow-molded/1311-showcase.jpg"
     alt: "1311-BP-CD9L15B 展示1"

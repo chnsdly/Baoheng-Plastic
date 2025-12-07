@@ -1,14 +1,14 @@
 ---
 
-title: "1210-BF-FPBSM60A"
-featured_image_asset: "/images/products/fold/SM60A-hero.jpg"
+title: "1210-BF-FPBSSDD80A"
+featured_image_asset: "/images/products/fold/SSDD80A-hero.jpg"
 featured_image: "/images/cnc-machine.jpg"
 featured: true
-product_type: "塑料托盘"
+product_type: "可折叠塑料托盘箱"
 pallet_category:
   - "可上架塑料托盘"
 specs:
-  dimensions: "1200 x 1000 x 600 毫米"
+  dimensions: "1200 x 1000 x 800 毫米"
   static_load: "4 吨"
   dynamic_load: "1 吨"
   racking_load: "0.7 吨"
@@ -38,21 +38,21 @@ detail_intro: |-
 
     4. 我们20年来专注于塑料托盘制造，服务于1000多家中大型企业，确保品质，按时发货。
 showcase_gallery:
-  - image_asset: "/images/products/fold/SM60A-showcase.jpg"
-    alt: "1210-BF-FPBSM60A 展示1"
+  - image_asset: "/images/products/fold/SSDD80A-showcase.jpg"
+    alt: "1210-BF-FPBSSDD80A 展示1"
   - image_asset: "/images/products/fold/showcase-1.jpg"
-    alt: "1210-BF-FPBSM60A 展示2"
+    alt: "1210-BF-FPBSSDD80A 展示2"
   - image_asset: "/images/products/fold/showcase-2.jpg"
-    alt: "1210-BF-FPBSM60A 展示3"
+    alt: "1210-BF-FPBSSDD80A 展示3"
   - image_asset: "/images/products/fold/showcase-3.jpg"
-    alt: "1210-BF-FPBSM60A 展示3"
+    alt: "1210-BF-FPBSSDD80A 展示3"
 industry_gallery:
   - image_asset: "/images/products/fold/industry-1.jpg"
-    alt: "1210-BF-FPBSM60A 行业场景1"
+    alt: "1210-BF-FPBSSDD80A 行业场景1"
   - image_asset: "/images/products/fold/industry-2.jpg"
-    alt: "1210-BF-FPBSM60A 行业场景2"
+    alt: "1210-BF-FPBSSDD80A 行业场景2"
   - image_asset: "/images/products/fold/industry-3.jpg"
-    alt: "1210-BF-FPBSM60A 行业场景1"
+    alt: "1210-BF-FPBSSDD80A 行业场景1"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"
 
