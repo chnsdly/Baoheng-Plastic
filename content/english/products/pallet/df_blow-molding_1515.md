@@ -2,7 +2,7 @@
 
 title: "1515-BP-CDDF15B"
 featured_image_asset: "/images/products/pallet/df_blow-molding_1515.jpg"
-product_type: "Plastic Pallet"
+product_type: ""
 showcase_gallery:
   - image_asset: "/images/products/pallet/df_blow-molding_1515.jpg"
     alt: "1515-BP-CDDF15B showcase 1"
