@@ -33,18 +33,17 @@ specs_order:
   - material
   - process
 
-hero_description: "Rackable plastic pallets made from 100% virgin HDPE/PP using large precision one-piece molds. Our engineers will recommend the most suitable pallet based on your specific goods and application scenario. Contact us for a customized quotation."
+hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. These pallets are suitable for racking and stacking, and compatible with hand pallet jacks, electric forklifts and automated high-bay warehouses. They are widely used in food, chemical, cold chain and warehouse logistics industries, meeting most storage and transportation needs.
-
-    2. The plastic pallets are one-piece molded with no weak points. They are easy to clean, moisture-resistant, low-temperature resistant and resistant to acids and alkalis, and comply with international logistics and transportation standards.
-
-    3. With very high load capacity, the pallets offer a dynamic load of 1,500 kg for safe handling in transit and a static load of 6,000 kg, certified for heavy-duty racking storage. They last significantly longer than wooden pallets, require no fumigation for export, and meet strict safety standards.
-
-    4. We have specialized in plastic pallet manufacturing for over 20 years, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery.
-
+  1. These foldable pallet boxes support stacking storage and are compatible with pallet jacks, forklifts, and automated warehouses. They are widely used in food processing, cold-chain distribution, chemicals, warehousing, logistics, and manufacturing, meeting the needs of bulk materials and packaged goods in storage and transportation.
+  
+  2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
+  
+  3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
+  
+  4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
 industry_gallery:
   - image_asset: "/images/products/fold/industry-1.jpg"
     alt: "1210-BF-FPBSSDD80A industry use 1"
