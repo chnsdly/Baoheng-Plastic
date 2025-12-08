@@ -3,8 +3,7 @@
 title: "1210-BF-FPBSM60A"
 featured_image_asset: "/images/products/fold/sm60a-hero.jpg"
 product_type: "Foldable Pallet Boxes"
-pallet_category:
-  - "Rackable Plastic Pallets"
+pallet_category: []
 showcase_gallery:
   - image_asset: "/images/products/fold/sm60a-showcase.jpg"
     alt: "1210-BF-FPBSM60A showcase 1"

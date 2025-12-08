@@ -5,8 +5,7 @@ featured_image_asset: "/images/products/fold/ss80b-hero.jpg"
 featured_image: "/images/cnc-machine.jpg"
 featured: true
 product_type: "可折叠塑料托盘箱"
-pallet_category:
-  - "可上架塑料托盘"
+pallet_category: []
 specs:
   dimensions: "1200 x 1000 x 800 毫米"
   static_load: "4 吨"

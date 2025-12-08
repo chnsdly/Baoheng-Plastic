@@ -3,8 +3,7 @@
 title: "1210-BF-FPBVSDD81A"
 featured_image_asset: "/images/products/fold/vsdd81a-hero.jpg"
 product_type: "Foldable Pallet Boxes"
-pallet_category:
-  - "Rackable Plastic Pallets"
+pallet_category: []
 showcase_gallery:
   - image_asset: "/images/products/fold/vsdd81a-showcase.jpg"
     alt: "1210-BF-FPBVSDD76A showcase 1"
