@@ -8,9 +8,9 @@ pallet_category:
 showcase_gallery:
   - image_asset: "/images/products/pallet/food/1210-blue-showcase.jpg"
     alt: "1210-BP-OD3R15 showcase 1"
-  - image_asset: "/images/products/pallet/food/showcase-1.jpg"
+  - image_asset: "/images/products/pallet/food/showcase-blue-1.jpg"
     alt: "1210-BP-OD3R15 showcase 2"
-  - image_asset: "/images/products/pallet/food/showcase-2.jpg"
+  - image_asset: "/images/products/pallet/food/showcase-blue-2.jpg"
     alt: "1210-BP-OD3R15 showcase 3"
   - image_asset: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210-BP-OD3R15 showcase 3"

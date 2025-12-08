@@ -45,9 +45,9 @@ showcase_gallery:
     alt: "1210-BP-OD3R15 展示2"
   - image_asset: "/images/products/pallet/food/showcase-green-2.jpg"
     alt: "1210-BP-OD3R15 展示3"
-  - image_asset: "/images/products/pallet/food/showcase-green-3.jpg"
+  - image_asset: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210-BP-OD3R15 展示3"
-industry_gallery:
+industry_gallery-false:
   - image_asset: "/images/products/pallet/food/industry-1.jpg"
     alt: "1210-BP-OD3R15 行业场景1"
   - image_asset: "/images/products/pallet/food/industry-2.jpg"
