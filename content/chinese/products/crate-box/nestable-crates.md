@@ -27,6 +27,12 @@ showcase_gallery:
     alt: "nestable-crates 展示3"
   - image_asset: "/images/products/crate-box/nestable-crates-3.jpg"
     alt: "nestable-crates 展示4"
+  - image_asset: "/images/products/crate-box/nestable-crates-1.jpg"
+    alt: "nestable-crates 展示2"
+  - image_asset: "/images/products/crate-box/nestable-crates-2.jpg"
+    alt: "nestable-crates 展示3"
+  - image_asset: "/images/products/crate-box/nestable-crates-3.jpg"
+    alt: "nestable-crates 展示4"
 industry_gallery:
   - image_asset: "/images/products/crate-box/nestable-crates-industry-1.jpg"
     alt: "nestable-crates 行业场景1"
