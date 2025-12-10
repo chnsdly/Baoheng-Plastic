@@ -133,6 +133,34 @@
             {{ end }}
           </div>
 
+          {{ with $.Params.product_showcase }}
+            {{ $showcaseConfig := . }}
+            {{ $isEnabled := cond (isset $showcaseConfig "enable") $showcaseConfig.enable true }}
+            {{ if and $isEnabled $showcaseConfig.items }}
+              {{ $headingID := printf "product-showcase-title-%s" $.File.ContentBaseName }}
+              <section class="product-showcase" aria-labelledby="{{ $headingID }}">
+                <div class="product-showcase__header">
+                  <div class="product-showcase__headline">
+                    {{ with $showcaseConfig.title }}<h3 id="{{ $headingID }}" class="product-showcase__title">{{ . }}</h3>{{ end }}
+                    {{ with $showcaseConfig.description }}<p class="product-showcase__description">{{ . }}</p>{{ end }}
+                  </div>
+                </div>
+
+                <div class="product-showcase__grid" role="list">
+                  {{ range $showcaseConfig.items }}
+                    {{ $asset := .image_asset | default .image | default .imag }}
+                    {{ if $asset }}
+                      <figure class="product-showcase__item" role="listitem">
+                        {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "class" "product-showcase__image" "sizes" "(max-width: 64rem) 100vw, 33vw" "w" (slice 320 480 640 768 960)) }}
+                        {{ with .title }}<figcaption class="product-showcase__label">{{ . }}</figcaption>{{ end }}
+                      </figure>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </section>
+            {{ end }}
+          {{ end }}
+
           {{ with $showcaseGallery }}
             {{ $showcaseItems := first 4 . }}
             <div class="showcase__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
