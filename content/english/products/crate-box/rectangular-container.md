@@ -4,34 +4,36 @@ title: "rectangular-container"
 featured_image_asset: "/images/products/crate-box/rectangular-container-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/rectangular-container.jpg"
-    alt: "rectangular-container showcase 1"
-  - image_asset: "/images/products/crate-box/rectangular-container-1.jpg"
-    alt: "rectangular-container showcase 2"
-  - image_asset: "/images/products/crate-box/rectangular-container-2.jpg"
-    alt: "rectangular-container showcase 3"
-  - image_asset: "/images/products/crate-box/rectangular-container-3.jpg"
-    alt: "rectangular-container showcase 4"
 
-hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
+hero_description: "This multi-purpose plastic tote is molded from virgin HDPE for a lightweight yet robust structure. It is ideal for washing, sorting and temporarily holding items in kitchens, workshops and storage areas."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. These foldable pallet boxes support stacking storage and are compatible with pallet jacks, forklifts, and automated warehouses. They are widely used in food processing, cold-chain distribution, chemicals, warehousing, logistics, and manufacturing, meeting the needs of bulk materials and packaged goods in storage and transportation.
+  Made from food-grade HDPE, this utility bin offers excellent impact resistance and long service life. The smooth inner surface is easy to rinse and helps prevent residue and odors. Its open, box-shaped design allows quick access to contents, making it suitable for handling fruits and vegetables, ingredients, small parts, tools and other everyday items. Reinforced rims provide a secure grip, and the bins can be stacked or nested to save floor and shelf space. Resistant to low temperatures and common cleaning agents, it is a practical choice for back-of-house kitchens, processing rooms, retail handling and household use.
 
-  2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
+product_showcase:
+  enable: true
+  title: "Product List"
+  items:
+  - title: "260-BRT"
+    image: "/images/products/crate-box/rectangular-container-260.jpg"
+    alt: "rectangular-container"
+  - title: "330-BRT"
+    image: "/images/products/crate-box/rectangular-container-330.jpg"
+    alt: "rectangular-container"
+  - title: "370-BRT"
+    image: "/images/products/crate-box/rectangular-container-370.jpg"
+    alt: "rectangular-container"
+  - title: "400-BRT"
+    image: "/images/products/crate-box/rectangular-container-400.jpg"
+    alt: "rectangular-container"
+  - title: "495-BRT"
+    image: "/images/products/crate-box/rectangular-container-495.jpg"
+    alt: "rectangular-container"
+  - title: "550-BRT"
+    image: "/images/products/crate-box/rectangular-container-550.jpg"
+    alt: "rectangular-container"
 
-  3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
-
-  4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
-industry_gallery:
-  - image_asset: "/images/products/crate-box/rectangular-container-industry-1.jpg"
-    alt: "rectangular-container industry use 1"
-  - image_asset: "/images/products/crate-box/rectangular-container-industry-2.jpg"
-    alt: "rectangular-container industry use 2"
-  - image_asset: "/images/products/crate-box/rectangular-container-industry-3.jpg"
-    alt: "rectangular-container industry use 3"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 

@@ -7,33 +7,35 @@ featured: true
 product_type: "板条箱"
 pallet_category: []
 
-hero_description: "可折叠卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。可大幅降低回空运输体积，适合循环周转。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
+hero_description: "多功能塑料周转箱采用全新 HDPE 一体成型，轻便结实，可用于清洗、分拣、暂存物料，适合厨房、车间与仓储等多种场景。"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"
 detail_intro: |-
-  1. 这些可折叠卡板箱支持堆垛存储，可匹配叉车、堆高机及自动化立体仓库使用，广泛应用于食品加工、冷链生鲜、化工原料、仓储物流、制造等行业，满足大多数散装物料与包装货物的安全运输与存储需求。
+  周转箱选用食品级 HDPE 注塑成型，抗冲击、不易开裂，内壁光滑易清洗，减少残留与异味。方形开口设计，方便取放物料，可用于蔬果、食材、零部件、工具等小批量周转与暂存。箱口加厚，握持更牢靠，可叠放或嵌套存放，减少占地空间。耐低温、耐常见清洁剂，适合厨房后场、加工车间、商超分拣与家庭使用。
 
-  2. 箱体一体成型结构坚固，无薄弱拼缝，耐冲击、易清洗、耐潮湿与低温环境，并具备良好的耐酸碱化学性能，符合国际物流周转标准。折叠设计可显著减少仓储与回空费用，是各类企业降本增效的理想选择。
+product_showcase:
+  enable: true
+  title: "产品列表"
+  items:
+  - title: "260-BRT"
+    image: "/images/products/crate-box/rectangular-container-260.jpg"
+    alt: "rectangular-container"
+  - title: "330-BRT"
+    image: "/images/products/crate-box/rectangular-container-330.jpg"
+    alt: "rectangular-container"
+  - title: "370-BRT"
+    image: "/images/products/crate-box/rectangular-container-370.jpg"
+    alt: "rectangular-container"
+  - title: "400-BRT"
+    image: "/images/products/crate-box/rectangular-container-400.jpg"
+    alt: "rectangular-container"
+  - title: "495-BRT"
+    image: "/images/products/crate-box/rectangular-container-495.jpg"
+    alt: "rectangular-container"
+  - title: "550-BRT"
+    image: "/images/products/crate-box/rectangular-container-550.jpg"
+    alt: "rectangular-container"
 
-  3. 超强承重表现，动态负载可达 1,000–1,500 公斤，静态负载可达 4,000–6,000 公斤，经过多项堆码测试与结构耐久验证。比木质箱体更耐用，更安全，出口无需熏蒸，符合严格的全球运输标准。
-
-  4. 我们深耕塑料制品制造 20 年，服务超过 1000 家中大型企业，保证产品品质与交期，为您的供应链提供稳定可靠的支持。
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/rectangular-container.jpg"
-    alt: "rectangular-container 展示1"
-  - image_asset: "/images/products/crate-box/rectangular-container-1.jpg"
-    alt: "rectangular-container 展示2"
-  - image_asset: "/images/products/crate-box/rectangular-container-2.jpg"
-    alt: "rectangular-container 展示3"
-  - image_asset: "/images/products/crate-box/rectangular-container-3.jpg"
-    alt: "rectangular-container 展示4"
-industry_gallery:
-  - image_asset: "/images/products/crate-box/rectangular-container-industry-1.jpg"
-    alt: "rectangular-container 行业场景1"
-  - image_asset: "/images/products/crate-box/rectangular-container-industry-2.jpg"
-    alt: "rectangular-container 行业场景2"
-  - image_asset: "/images/products/crate-box/rectangular-container-industry-3.jpg"
-    alt: "rectangular-container 行业场景3"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"
 
