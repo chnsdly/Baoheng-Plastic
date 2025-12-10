@@ -25,6 +25,42 @@ detail_intro: |-
   3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
 
   4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
+
+product_showcase:
+  enable: true
+  title: "Product List"
+  items:
+    - title: "368-BDT"
+      imag: "/images/products/crate-box/drying-trays-368.jpg"
+      alt: "drying-trays 展示1"
+    - title: "540-BDT"
+      image: "/images/products/crate-box/drying-trays-540.jpg"
+      alt: "drying-trays 展示1"
+    - title: "580-BDT"
+      image: "/images/products/crate-box/drying-trays-580.jpg"
+      alt: "drying-trays 展示1"
+    - title: "600-BDT"
+      image: "/images/products/crate-box/drying-trays-600.jpg"
+      alt: "drying-trays 展示1"
+    - title: "630-BDT"
+      image: "/images/products/crate-box/drying-trays-630.jpg"
+      alt: "drying-trays 展示1"
+    - title: "720-BDT"
+      image: "/images/products/crate-box/drying-trays-720.jpg"
+      alt: "drying-trays 展示1"
+    - title: "740-BDT"
+      image: "/images/products/crate-box/drying-trays-740.jpg"
+      alt: "drying-trays 展示1"
+    - title: "810-BDT"
+      image: "/images/products/crate-box/drying-trays-810.jpg"
+      alt: "drying-trays 展示1"
+    - title: "880-BDT"
+      image: "/images/products/crate-box/drying-trays-880.jpg"
+      alt: "drying-trays 展示1"
+    - title: "900-BDT"
+      image: "/images/products/crate-box/drying-trays900.jpg"
+      alt: "drying-trays 展示1"
+
 industry_gallery:
   - image_asset: "/images/products/crate-box/drying-trays-industry-1.jpg"
     alt: "drying-trays industry use 1"
