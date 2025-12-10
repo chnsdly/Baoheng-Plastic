@@ -45,11 +45,11 @@ detail_intro: |-
 
   4. With 20 years of experience in plastic manufacturing, we have served over 1,000 medium and large enterprises, ensuring product quality and on-time delivery to support your supply chain.
 industry_gallery:
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-industry-1.jpg"
+  - image_asset: "/images/products/l-container/industry-1.jpg"
     alt: "1210-fpbss75-grey industry use 1"
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-industry-2.jpg"
+  - image_asset: "/images/products/l-container/industry-2.jpg"
     alt: "1210-fpbss75-grey industry use 2"
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-industry-3.jpg"
+  - image_asset: "/images/products/l-container/industry-3.jpg"
     alt: "1210-fpbss75-grey industry use 3"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
