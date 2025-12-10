@@ -4,10 +4,6 @@ title: "100l-waste"
 featured_image_asset: "/images/products/waste/100l-waste-hero.jpg"
 product_type: "塑料垃圾桶"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/waste/100l-waste-showcase.jpg"
-    alt: "100l-waste 展示"
-
 hero_description: "环卫塑料垃圾桶采用耐候 HDPE 一体注塑成型，桶身加厚且搭配静音脚轮，适用于街道、社区和园区的垃圾收集与分类，可按需求选择容量与颜色以匹配既有清运体系。"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"

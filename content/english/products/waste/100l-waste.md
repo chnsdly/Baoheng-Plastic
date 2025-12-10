@@ -4,10 +4,6 @@ title: "100l-waste"
 featured_image_asset: "/images/products/waste/100l-waste-hero.jpg"
 product_type: "Plastic Waste Bins"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/waste/100l-waste-showcase.jpg"
-    alt: "100l-waste showcase"
-
 hero_description: "These municipal plastic waste bins are molded from weather-resistant HDPE with reinforced walls and quiet casters, ideal for street, residential, and campus collection. Multiple capacities and color options make them easy to integrate with existing hauling systems."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
