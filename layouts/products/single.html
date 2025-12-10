@@ -67,6 +67,7 @@
         {{ $socials := site.Params.social }}
         {{ $industryGallery := .Params.industry_gallery | default .Params.detail_gallery }}
         {{ $showcaseGallery := .Params.showcase_gallery | default $industryGallery }}
+        {{ $productShowcase := .Params.product_showcase }}
 
         <header class="product-single__header">
           <h1 class="product-single__title">{{ .Title }}</h1>
@@ -132,6 +133,47 @@
               </div>
             {{ end }}
           </div>
+
+          {{ with $productShowcase }}
+            {{ if .enable }}
+              <section class="product-showcase-grid" aria-labelledby="product-showcase-title">
+                <div class="product-showcase-grid__header">
+                  <div class="product-showcase-grid__headline">
+                    {{ with .title }}
+                      <h3 id="product-showcase-title" class="product-showcase-grid__title">{{ . }}</h3>
+                    {{ end }}
+                    {{ with .description }}
+                      <p class="product-showcase-grid__description">{{ . }}</p>
+                    {{ end }}
+                  </div>
+                </div>
+
+                {{ with .items }}
+                  <div class="product-showcase-grid__items" role="list">
+                    {{ range . }}
+                      {{ $asset := .image_asset | default .image | default .imag }}
+                      {{ if $asset }}
+                        <figure class="product-showcase-grid__item" role="listitem">
+                          {{ partial "picture.html" (dict
+                            "ctx"   $
+                            "src"   $asset
+                            "alt"   (.alt | default .title | default $.Title)
+                            "class" "product-showcase-grid__image"
+                            "sizes" "(max-width: 48rem) 100vw, (max-width: 72rem) 33vw, 30vw"
+                            "w"     (slice 320 480 640 768 960)
+                            "lqip"  true
+                          ) }}
+                          {{ with .title }}
+                            <figcaption class="product-showcase-grid__label">{{ . }}</figcaption>
+                          {{ end }}
+                        </figure>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </section>
+            {{ end }}
+          {{ end }}
 
           {{ with $showcaseGallery }}
             {{ $showcaseItems := first 4 . }}
