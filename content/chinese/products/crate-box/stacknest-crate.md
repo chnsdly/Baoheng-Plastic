@@ -1,6 +1,6 @@
 ---
 
-title: "stacknest-crate"
+title: "可堆叠可嵌套周转筐"
 featured_image_asset: "/images/products/crate-box/stacknest-crate-hero.jpg"
 featured_image: "/images/products/crate-box/stacknest-crate.jpg"
 featured: true

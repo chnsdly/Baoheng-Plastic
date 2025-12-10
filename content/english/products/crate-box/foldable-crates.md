@@ -4,27 +4,23 @@ title: "foldable-crates"
 featured_image_asset: "/images/products/crate-box/foldable-crates-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/foldable-crates.jpg"
-    alt: "foldable-crates showcase 1"
-  - image_asset: "/images/products/crate-box/foldable-crates-1.jpg"
-    alt: "foldable-crates showcase 2"
-  - image_asset: "/images/products/crate-box/foldable-crates-2.jpg"
-    alt: "foldable-crates showcase 3"
-  - image_asset: "/images/products/crate-box/foldable-crates-3.jpg"
-    alt: "foldable-crates showcase 4"
 
-hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
+hero_description: "This collapsible plastic crate is made from virgin HDPE and features a smart latch design that opens and closes with a simple pull-and-lock motion. When folded, its height is reduced to about one-sixth of the original, dramatically saving storage and return transport space."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. These foldable pallet boxes support stacking storage and are compatible with pallet jacks, forklifts, and automated warehouses. They are widely used in food processing, cold-chain distribution, chemicals, warehousing, logistics, and manufacturing, meeting the needs of bulk materials and packaged goods in storage and transportation.
+  The folding crate is molded from impact-resistant HDPE for a strong, rigid structure that resists deformation in daily use. Ventilated side walls provide airflow and drainage, making it suitable for fresh produce, supermarket distribution, industrial parts and general logistics. Integrated corner latches link the panels together so the crate can be quickly opened or collapsed with a single pull and push, without any tools. Once folded, the crate’s height is only about one-sixth of its full size, allowing compact nesting and multi-layer stacking. This significantly reduces empty-trip volume and warehouse footprint, making it ideal for high-frequency circulation and cost-conscious, space-efficient logistics operations.
 
-  2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
-
-  3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
-
-  4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
+product_showcase:
+  enable: true
+  title: "Product List"
+  items:
+  - title: "28-BF"
+    image: "/images/products/crate-box/foldable-crates-28.jpg"
+    alt: "stacknest-crate"
+  - title: "31-BF"
+    image: "/images/products/crate-box/foldable-crates-31.jpg"
+    alt: "stacknest-crate"
 industry_gallery:
   - image_asset: "/images/products/crate-box/foldable-crates-industry-1.jpg"
     alt: "foldable-crates industry use 1"

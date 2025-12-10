@@ -1,32 +1,27 @@
 ---
 
-title: "foldable-crates"
+title: "折叠周转箱"
 featured_image_asset: "/images/products/crate-box/foldable-crates-hero.jpg"
 featured_image: "/images/products/crate-box/foldable-crates.jpg"
 featured: true
 product_type: "板条箱"
 pallet_category: []
 
-hero_description: "可折叠卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。可大幅降低回空运输体积，适合循环周转。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
+hero_description: "这款折叠塑料周转筐采用全新 HDPE 一体成型，卡口拉合即可完成开合，折叠后高度约为原来的 1/6，大幅节省仓储与运输空间"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"
 detail_intro: |-
-  1. 这些可折叠卡板箱支持堆垛存储，可匹配叉车、堆高机及自动化立体仓库使用，广泛应用于食品加工、冷链生鲜、化工原料、仓储物流、制造等行业，满足大多数散装物料与包装货物的安全运输与存储需求。
-
-  2. 箱体一体成型结构坚固，无薄弱拼缝，耐冲击、易清洗、耐潮湿与低温环境，并具备良好的耐酸碱化学性能，符合国际物流周转标准。折叠设计可显著减少仓储与回空费用，是各类企业降本增效的理想选择。
-
-  3. 超强承重表现，动态负载可达 1,000–1,500 公斤，静态负载可达 4,000–6,000 公斤，经过多项堆码测试与结构耐久验证。比木质箱体更耐用，更安全，出口无需熏蒸，符合严格的全球运输标准。
-
-  4. 我们深耕塑料制品制造 20 年，服务超过 1000 家中大型企业，保证产品品质与交期，为您的供应链提供稳定可靠的支持。
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/foldable-crates.jpg"
-    alt: "foldable-crates 展示1"
-  - image_asset: "/images/products/crate-box/foldable-crates-1.jpg"
-    alt: "foldable-crates 展示2"
-  - image_asset: "/images/products/crate-box/foldable-crates-2.jpg"
-    alt: "foldable-crates 展示3"
-  - image_asset: "/images/products/crate-box/foldable-crates-3.jpg"
-    alt: "foldable-crates 展示4"
+  折叠筐主体选用耐冲击 HDPE，结构稳固不易变形，筐壁网格设计通风排水，适用于生鲜配送、商超分拣、工厂物料周转等多种场景。四侧卡口联动设计，通过简单的拉合动作即可完成展开与折叠，无需额外工具，操作高效省力。折叠后高度仅为原来的约 1/6，可层层堆叠，显著降低回空体积和仓储成本，适合高频周转与精细化管理的物流体系。
+product_showcase:
+  enable: true
+  title: "产品列表"
+  items:
+  - title: "28-BF"
+    image: "/images/products/crate-box/foldable-crates-28.jpg"
+    alt: "stacknest-crate"
+  - title: "31-BF"
+    image: "/images/products/crate-box/foldable-crates-31.jpg"
+    alt: "stacknest-crate"
 industry_gallery:
   - image_asset: "/images/products/crate-box/foldable-crates-industry-1.jpg"
     alt: "foldable-crates 行业场景1"
