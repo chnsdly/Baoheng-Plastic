@@ -8,8 +8,6 @@ hero_slides:
     alt: "Stacked plastic pallets ready for export shipping"
   - src: "images/hero-bg2.JPG"
     alt: "Automated line loading plastic pallets at the factory"
-  - src: "images/hero-bg111.jpg"
-    alt: "Plastic pallets in use across warehouse storage racks"
 ##########################################################
 usps:
   enable: true
