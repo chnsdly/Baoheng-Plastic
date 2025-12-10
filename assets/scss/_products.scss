@@ -716,6 +716,79 @@
   gap: space(1.25);
 }
 
+.product-showcase-grid{
+  --product-showcase-columns: 1;
+  margin-block: space(2);
+  padding: space(2);
+  background: var(--surface-variant);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--on-surface);
+  display: grid;
+  gap: space(1.75);
+
+  &__header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__headline{
+    max-width: 42rem;
+    display: grid;
+    gap: space(.75);
+  }
+
+  &__title{
+    margin: 0;
+    font-size: var(--fs-2);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  &__description{
+    margin: 0;
+    color: var(--on-surface-variant);
+    line-height: 1.6;
+  }
+
+  &__items{
+    display: grid;
+    gap: space(1.25);
+    grid-template-columns: repeat(var(--product-showcase-columns), minmax(0, 1fr));
+  }
+
+  &__item{
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background: var(--card);
+    border: var(--border-w) solid color-mix(in srgb, var(--border) 85%, transparent);
+  }
+
+  &__image{
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+
+  &__label{
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    padding: space(.75) space(1);
+    background: color-mix(in srgb, var(--surface) 72%, transparent);
+    color: var(--on-surface);
+    font-weight: 700;
+    text-align: start;
+    letter-spacing: 0.01em;
+  }
+}
+
 .product-details__form-title{
   margin: 0;
   font-size: var(--fs-2);
@@ -778,5 +851,15 @@
   .product-showcase__stack,
   .industry-gallery__stack{
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .product-showcase-grid{
+    --product-showcase-columns: 2;
+  }
+}
+
+@include mq-up(lg){
+  .product-showcase-grid{
+    --product-showcase-columns: 3;
   }
 }
