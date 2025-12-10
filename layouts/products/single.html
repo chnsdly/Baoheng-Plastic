@@ -147,9 +147,11 @@
             </div>
           {{ end }}
 
-          <div class="product-details__specs">
-            {{ partial "product-specs.html" . }}
-          </div>
+          {{ if .Params.specs }}
+            <div class="product-details__specs">
+              {{ partial "product-specs.html" . }}
+            </div>
+          {{ end }}
 
           {{ with $industryGallery }}
             {{ $galleryItems := first 3 . }}
