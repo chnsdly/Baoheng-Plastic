@@ -4,7 +4,7 @@ title: "1210-fpbss75-blue"
 featured_image_asset: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
 product_type: "Large Bulk Containers"
 pallet_category: []
-showcase_gallery:
+showcase_gallery1:
   - image_asset: "/images/products/l-container/1210-fpbss75-blue-showcase.jpg"
     alt: "1210-fpbss75-blue showcase 1"
   - image_asset: "/images/products/l-container/1210-fpbss75-blue-showcase-2.jpg"
