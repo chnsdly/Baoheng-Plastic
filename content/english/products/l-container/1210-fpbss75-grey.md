@@ -4,16 +4,6 @@ title: "1210-fpbss75-grey"
 featured_image_asset: "/images/products/l-container/1210-fpbss75-grey-hero.jpg"
 product_type: "Large Bulk Containers"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-showcase.jpg"
-    alt: "1210-fpbss75-grey showcase 1"
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-showcase-2.jpg"
-    alt: "1210-fpbss75-grey showcase 2"
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-showcase-3.jpg"
-    alt: "1210-fpbss75-grey showcase 3"
-  - image_asset: "/images/products/l-container/1210-fpbss75-grey-showcase-4.jpg"
-    alt: "1210-fpbss75-grey showcase 4"
-
 specs:
   dimensions: "1200 x 1000 x 760 mm"
   static_load: "4 t"
