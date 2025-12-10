@@ -18,6 +18,25 @@ detail_intro: |-
   3. 超强承重表现，动态负载可达 1,000–1,500 公斤，静态负载可达 4,000–6,000 公斤，经过多项堆码测试与结构耐久验证。比木质箱体更耐用，更安全，出口无需熏蒸，符合严格的全球运输标准。
 
   4. 我们深耕塑料制品制造 20 年，服务超过 1000 家中大型企业，保证产品品质与交期，为您的供应链提供稳定可靠的支持。
+
+product_showcase:
+  - image_asset: "/images/products/crate-box/drying-trays.jpg"
+    alt: "drying-trays 展示1"
+  - image_asset: "/images/products/crate-box/drying-trays-1.jpg"
+    alt: "drying-trays 展示2"
+  - image_asset: "/images/products/crate-box/drying-trays-2.jpg"
+    alt: "drying-trays 展示3"
+  - image_asset: "/images/products/crate-box/drying-trays-3.jpg"
+    alt: "drying-trays 展示4"
+  - image_asset: "/images/products/crate-box/drying-trays.jpg"
+    alt: "drying-trays 展示1"
+  - image_asset: "/images/products/crate-box/drying-trays-1.jpg"
+    alt: "drying-trays 展示2"
+  - image_asset: "/images/products/crate-box/drying-trays-2.jpg"
+    alt: "drying-trays 展示3"
+  - image_asset: "/images/products/crate-box/drying-trays-3.jpg"
+    alt: "drying-trays 展示4"
+    
 showcase_gallery:
   - image_asset: "/images/products/crate-box/drying-trays.jpg"
     alt: "drying-trays 展示1"
