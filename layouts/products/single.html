@@ -133,6 +133,41 @@
             {{ end }}
           </div>
 
+          {{ with .Params.product_showcase }}
+            {{ if and .enable .items }}
+              {{ $productShowcaseTitle := .title | default (i18n "product_gallery" | default "Product gallery") }}
+              <section class="product-showcase-grid" aria-labelledby="product-showcase-title">
+                <header class="product-showcase-grid__header">
+                  <h3 id="product-showcase-title" class="product-showcase-grid__title">{{ $productShowcaseTitle }}</h3>
+                  {{ with .description }}
+                    <p class="product-showcase-grid__description">{{ . }}</p>
+                  {{ end }}
+                </header>
+                <div class="product-showcase-grid__list" role="list">
+                  {{ range .items }}
+                    {{ $asset := .image_asset | default .image | default .imag }}
+                    {{ if $asset }}
+                      <figure class="product-showcase-grid__item" role="listitem">
+                        {{ partial "picture.html" (dict
+                          "ctx" $ 
+                          "src" $asset 
+                          "alt" (.alt | default $.Title) 
+                          "w" (slice 320 480 640 768 960) 
+                          "sizes" "(max-width: 48rem) 100vw, 33vw" 
+                          "class" "product-showcase-grid__image" 
+                          "fetch" ""
+                        ) }}
+                        {{ with .title }}
+                          <figcaption class="product-showcase-grid__caption">{{ . }}</figcaption>
+                        {{ end }}
+                      </figure>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </section>
+            {{ end }}
+          {{ end }}
+
           {{ with $showcaseGallery }}
             {{ $showcaseItems := first 4 . }}
             <div class="showcase__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
