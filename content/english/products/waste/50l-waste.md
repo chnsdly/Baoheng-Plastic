@@ -8,25 +8,6 @@ showcase_gallery:
   - image_asset: "/images/products/waste/50l-waste-showcase.jpg"
     alt: "50l-waste showcase"
 
-specs:
-  dimensions: ""
-  static_load: ""
-  dynamic_load: ""
-  racking_load: ""
-  weight: ""
-  steel_pipes: ""
-  material: ""
-  process: ""
-specs_order:
-  - dimensions
-  - static_load
-  - dynamic_load
-  - racking_load
-  - weight
-  - steel_pipes
-  - material
-  - process
-
 hero_description: "These municipal plastic waste bins are molded from weather-resistant HDPE with reinforced walls and quiet casters, ideal for street, residential, and campus collection. Multiple capacities and color options make them easy to integrate with existing hauling systems."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
@@ -36,6 +17,13 @@ detail_intro: |-
   2. Options include a foot pedal, lid lock, drain plug, or RFID tag, and the bin is compatible with lifter combs for efficient tipping. Reinforced axles and low-noise wheels roll smoothly to reduce operator effort.
 
   3. Suitable for municipal sanitation, residential communities, campuses, industrial parks, and scenic areas. Supports color coding, logo printing, and sorting streams such as recyclables, organics, and residual waste.
+industry_gallery:
+  - image_asset: "/images/products/waste/industry-1.jpg"
+    alt: "industry use 1"
+  - image_asset: "/images/products/waste/industry-2.jpg"
+    alt: "industry use 2"
+  - image_asset: "/images/products/waste/industry-3.jpg"
+    alt: "industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 
