@@ -58,7 +58,7 @@ product_showcase:
       image: "/images/products/crate-box/drying-trays-880.jpg"
       alt: "drying-trays 展示1"
     - title: "900-BDT"
-      image: "/images/products/crate-box/drying-trays900.jpg"
+      image: "/images/products/crate-box/drying-trays-900.jpg"
       alt: "drying-trays 展示1"
 
 industry_gallery:
