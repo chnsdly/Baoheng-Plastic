@@ -1,38 +1,41 @@
 ---
 
-title: "nestable-crates"
+title: "可嵌套周转筐"
 featured_image_asset: "/images/products/crate-box/nestable-crates-hero.jpg"
 featured_image: "/images/products/crate-box/nestable-crates.jpg"
 featured: true
 product_type: "板条箱"
 pallet_category: []
 
-hero_description: "可折叠卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。可大幅降低回空运输体积，适合循环周转。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
+hero_description: "这款可嵌套塑料周转筐采用耐用 PP/HDPE 材料，网眼透气结构，坚固轻便，适用于各类仓储、物流、食品加工与日常搬运场景，多尺寸多颜色可选。"
 contact_cta_label: "获取报价"
 contact_cta_link: "/zh/contact"
 detail_intro: |-
-  1. 这些可折叠卡板箱支持堆垛存储，可匹配叉车、堆高机及自动化立体仓库使用，广泛应用于食品加工、冷链生鲜、化工原料、仓储物流、制造等行业，满足大多数散装物料与包装货物的安全运输与存储需求。
+  周转筐采用高强度全新料注塑成型，结构稳定，不易变形，网眼设计通风排水，适用于水果蔬菜、食品加工、商超配送、工厂物料周转等多种场景。可嵌套回空，大幅节省仓储与运输空间，多尺寸、多颜色可定制，手柄圆润，搬运舒适，整体易清洗、耐低温、耐腐蚀，满足高频使用的耐用需求。
 
-  2. 箱体一体成型结构坚固，无薄弱拼缝，耐冲击、易清洗、耐潮湿与低温环境，并具备良好的耐酸碱化学性能，符合国际物流周转标准。折叠设计可显著减少仓储与回空费用，是各类企业降本增效的理想选择。
+product_showcase:
+  enable: true
+  title: "产品列表"
+  items:
+    - title: "555-BNC"
+      imag: "/images/products/crate-box/nestable-crates-555.jpg"
+      alt: "nestable-crates"
+    - title: "600-BNC"
+      image: "/images/products/crate-box/nestable-crates-600.jpg"
+      alt: "nestable-crates"
+    - title: "650-BNC"
+      image: "/images/products/crate-box/nestable-crates-650.jpg"
+      alt: "nestable-crates"
+    - title: "680-BNC"
+      image: "/images/products/crate-box/nestable-crates-680.jpg"
+      alt: "nestable-crates"
+    - title: "740-BNC"
+      image: "/images/products/crate-box/nestable-crates-740.jpg"
+      alt: "nestable-crates"
+    - title: "820-BNC"
+      image: "/images/products/crate-box/nestable-crates-820.jpg"
+      alt: "nestable-crates"
 
-  3. 超强承重表现，动态负载可达 1,000–1,500 公斤，静态负载可达 4,000–6,000 公斤，经过多项堆码测试与结构耐久验证。比木质箱体更耐用，更安全，出口无需熏蒸，符合严格的全球运输标准。
-
-  4. 我们深耕塑料制品制造 20 年，服务超过 1000 家中大型企业，保证产品品质与交期，为您的供应链提供稳定可靠的支持。
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/nestable-crates.jpg"
-    alt: "nestable-crates 展示1"
-  - image_asset: "/images/products/crate-box/nestable-crates-1.jpg"
-    alt: "nestable-crates 展示2"
-  - image_asset: "/images/products/crate-box/nestable-crates-2.jpg"
-    alt: "nestable-crates 展示3"
-  - image_asset: "/images/products/crate-box/nestable-crates-3.jpg"
-    alt: "nestable-crates 展示4"
-  - image_asset: "/images/products/crate-box/nestable-crates-1.jpg"
-    alt: "nestable-crates 展示2"
-  - image_asset: "/images/products/crate-box/nestable-crates-2.jpg"
-    alt: "nestable-crates 展示3"
-  - image_asset: "/images/products/crate-box/nestable-crates-3.jpg"
-    alt: "nestable-crates 展示4"
 industry_gallery:
   - image_asset: "/images/products/crate-box/nestable-crates-industry-1.jpg"
     alt: "nestable-crates 行业场景1"

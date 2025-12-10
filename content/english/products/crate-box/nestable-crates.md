@@ -4,27 +4,36 @@ title: "nestable-crates"
 featured_image_asset: "/images/products/crate-box/nestable-crates-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/nestable-crates.jpg"
-    alt: "nestable-crates showcase 1"
-  - image_asset: "/images/products/crate-box/nestable-crates-1.jpg"
-    alt: "nestable-crates showcase 2"
-  - image_asset: "/images/products/crate-box/nestable-crates-2.jpg"
-    alt: "nestable-crates showcase 3"
-  - image_asset: "/images/products/crate-box/nestable-crates-3.jpg"
-    alt: "nestable-crates showcase 4"
 
-hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
+hero_description: "This stackable plastic crate is made from durable PP/HDPE and features a ventilated mesh design. It is lightweight, strong, easy to handle, and suitable for storage, logistics, food processing, and general material handling. Available in multiple sizes and colors."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. These foldable pallet boxes support stacking storage and are compatible with pallet jacks, forklifts, and automated warehouses. They are widely used in food processing, cold-chain distribution, chemicals, warehousing, logistics, and manufacturing, meeting the needs of bulk materials and packaged goods in storage and transportation.
+  Made with high-strength virgin material, this crate is injection-molded for excellent rigidity and durability. The mesh structure provides ventilation and drainage, making it ideal for fruits and vegetables, food processing, supermarket distribution, and factory material turnover. Its stackable/nestable design saves space during return transport, while multiple size and color options support diverse applications. Smooth handles ensure comfortable carrying, and the crate is easy to clean, resistant to low temperatures and chemicals, and built to withstand heavy-duty, high-frequency use.
 
-  2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
+product_showcase:
+  enable: true
+  title: "Product List"
+  items:
+    - title: "555-BNC"
+      imag: "/images/products/crate-box/nestable-crates-555.jpg"
+      alt: "nestable-crates"
+    - title: "600-BNC"
+      image: "/images/products/crate-box/nestable-crates-600.jpg"
+      alt: "nestable-crates"
+    - title: "650-BNC"
+      image: "/images/products/crate-box/nestable-crates-650.jpg"
+      alt: "nestable-crates"
+    - title: "680-BNC"
+      image: "/images/products/crate-box/nestable-crates-680.jpg"
+      alt: "nestable-crates"
+    - title: "740-BNC"
+      image: "/images/products/crate-box/nestable-crates-740.jpg"
+      alt: "nestable-crates"
+    - title: "820-BNC"
+      image: "/images/products/crate-box/nestable-crates-820.jpg"
+      alt: "nestable-crates"
 
-  3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
-
-  4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
 industry_gallery:
   - image_asset: "/images/products/crate-box/nestable-crates-industry-1.jpg"
     alt: "nestable-crates industry use 1"
