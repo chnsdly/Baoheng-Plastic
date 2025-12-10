@@ -5,18 +5,13 @@ featured_image_asset: "/images/products/crate-box/drying-trays-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
 
-hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
+hero_description: "Shallow single-freeze/air-drying trays are molded from virgin HDPE/PP with precision tooling. The ventilated grid speeds up chilling and drainage, making them ideal for seafood, meat, dough, fruits and vegetables during freezing, drying, and in-process staging. Our engineers will match the right size to your line hygiene needs—contact us for a tailored quote."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. These foldable pallet boxes support stacking storage and are compatible with pallet jacks, forklifts, and automated warehouses. They are widely used in food processing, cold-chain distribution, chemicals, warehousing, logistics, and manufacturing, meeting the needs of bulk materials and packaged goods in storage and transportation.
+  These low-profile mesh trays can be stacked directly or paired with carts and racks, spanning lengths from a few dozen centimeters up to around 900 mm to move smoothly through freezers, drying rooms, and processing lines. Smooth reinforced rims prevent warping, support stable stacking, and keep ingredients or packaged items ventilated for quick draining.
 
-  2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
-
-  3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
-
-  4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
-
+  The one-piece body is low-temperature tolerant, easy to sanitize, and resistant to acids and alkalis for high-frequency reuse. Color, mesh, and size options can be customized to align with your workflow zoning and fast turnarounds.
 product_showcase:
   enable: true
   title: "Product List"
