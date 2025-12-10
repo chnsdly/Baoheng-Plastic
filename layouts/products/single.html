@@ -65,8 +65,8 @@
         {{ $ctaLabel := .Params.contact_cta_label | default (i18n "cta_get_quote" | default "Get a quote") }}
         {{ $ctaHref := .Params.contact_cta_link | default $contactURL }}
         {{ $socials := site.Params.social }}
-        {{ $industryGallery := .Params.industry_gallery | default .Params.detail_gallery }}
-        {{ $showcaseGallery := .Params.showcase_gallery | default $industryGallery }}
+        {{ $industryGallery := .Params.industry_gallery }}
+        {{ $showcaseGallery := .Params.showcase_gallery }}
         {{ $productShowcase := .Params.product_showcase }}
 
         <header class="product-single__header">
