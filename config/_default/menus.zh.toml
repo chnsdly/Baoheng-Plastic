@@ -22,7 +22,7 @@ weight = 10
   weight = 12
 
   [[main]]
-  name = "塑料筐/箱"
+  name = "板条箱"
   url = "/products/crate-box/"
   parent = "products"
   weight = 13

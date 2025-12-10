@@ -4,15 +4,6 @@ title: "drying-trays"
 featured_image_asset: "/images/products/crate-box/drying-trays-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/drying-trays.jpg"
-    alt: "drying-trays showcase 1"
-  - image_asset: "/images/products/crate-box/drying-trays-1.jpg"
-    alt: "drying-trays showcase 2"
-  - image_asset: "/images/products/crate-box/drying-trays-2.jpg"
-    alt: "drying-trays showcase 3"
-  - image_asset: "/images/products/crate-box/drying-trays-3.jpg"
-    alt: "drying-trays showcase 4"
 
 hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
 contact_cta_label: "Request a quote"

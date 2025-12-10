@@ -1,6 +1,6 @@
 ---
 
-title: "drying-trays"
+title: "单冻器"
 featured_image_asset: "/images/products/crate-box/drying-trays-hero.jpg"
 featured_image: "/images/products/crate-box/drying-trays.jpg"
 featured: true
@@ -53,16 +53,7 @@ product_showcase:
     - title: "900-BDT"
       image: "/images/products/crate-box/drying-trays-900.jpg"
       alt: "drying-trays 展示1"
-    
-showcase_gallery:
-  - image_asset: "/images/products/crate-box/drying-trays.jpg"
-    alt: "drying-trays 展示1"
-  - image_asset: "/images/products/crate-box/drying-trays-1.jpg"
-    alt: "drying-trays 展示2"
-  - image_asset: "/images/products/crate-box/drying-trays-2.jpg"
-    alt: "drying-trays 展示3"
-  - image_asset: "/images/products/crate-box/drying-trays-3.jpg"
-    alt: "drying-trays 展示4"
+
 industry_gallery:
   - image_asset: "/images/products/crate-box/drying-trays-industry-1.jpg"
     alt: "drying-trays 行业场景1"
