@@ -13,7 +13,7 @@ async ({ request, env }) => {
   // 2) 查询最近线索
   const rows = await env.DB.prepare(`
     SELECT
-      created_at, form_type, name, email, company, country, message,
+      created_at, form_type, name, email, company, country, phone, message,
       page_url, utm_source, utm_medium, utm_campaign, utm_term, utm_content
     FROM leads
     ORDER BY datetime(created_at) DESC
@@ -23,7 +23,7 @@ async ({ request, env }) => {
   // 3) CSV 导出
   if (format === "csv") {
     const headers = [
-      "created_at","form_type","name","email","company","country","message",
+      "created_at","form_type","name","email","company","country","phone","message",
       "page_url","utm_source","utm_medium","utm_campaign","utm_term","utm_content"
     ];
     const escape = (v: any) => {
