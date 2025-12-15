@@ -95,13 +95,14 @@
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
     <ul>
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+      {{ range $index, $item := .Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" $item) ($current.HasMenuCurrent "main" $item) }}
+      {{ $submenuId := printf "drawer-submenu-%d" $index }}
       <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-        <ul class="submenu">
-          {{ range .Children }}
+        <a href="{{ $item.URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}{{ if $item.HasChildren }} has-children{{ end }}" {{ if $item.HasChildren }}data-submenu="{{ $submenuId }}"{{ end }}>{{ $item.Name }}</a>
+        {{ if $item.HasChildren }}
+        <ul class="submenu" id="{{ $submenuId }}">
+          {{ range $item.Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
           {{ end }}
@@ -206,14 +207,35 @@
     // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerMenu = document.querySelector('.drawer__menu');
+    const rootMenuList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
+    const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
+
+    const showRootMenu = () => {
+      if (rootMenuList) rootMenuList.classList.remove('is-hidden');
+      submenus.forEach((menu) => menu.classList.remove('is-active'));
+    };
+
+    const showSubmenu = (submenuId) => {
+      const target = drawerMenu ? drawerMenu.querySelector(`#${submenuId}`) : null;
+      if (!target) return;
+
+      if (rootMenuList) rootMenuList.classList.add('is-hidden');
+      submenus.forEach((menu) => {
+        if (menu === target) menu.classList.add('is-active');
+        else menu.classList.remove('is-active');
+      });
+    };
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
       if (drawerToggler) drawerToggler.classList.add('open');
+      showRootMenu();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
       if (drawerToggler) drawerToggler.classList.remove('open');
+      showRootMenu();
     };
 
     if (drawerToggler) {
@@ -228,6 +250,17 @@
         }
       });
     }
+
+    const parentMenuLinks = drawerMenu ? drawerMenu.querySelectorAll('a.has-children') : [];
+    parentMenuLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const submenuId = link.getAttribute('data-submenu');
+        if (submenuId) {
+          showSubmenu(submenuId);
+        }
+      });
+    });
 
     if (drawerOverlay) {
       drawerOverlay.addEventListener('click', closeDrawer);

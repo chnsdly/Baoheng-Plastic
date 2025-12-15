@@ -323,12 +323,20 @@ body[data-drawer-open='true'] {
 .drawer__menu {
   flex-grow: 1;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .drawer__menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--space) * 2);
+  width: 100%;
 }
 
 .drawer__menu a {
@@ -339,6 +347,8 @@ body[data-drawer-open='true'] {
   border-radius: var(--radius);
   text-decoration: none;
   transition: background-color var(--t-normal) var(--ease);
+  text-align: center;
+  width: 100%;
 }
 
 .drawer__menu a:hover,
@@ -349,13 +359,23 @@ body[data-drawer-open='true'] {
 
 /* 移动端子菜单样式 */
 .drawer__menu .submenu {
-  padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+  padding: 0;
+  margin: 0;
+  display: none;
+  gap: calc(var(--space) * 2);
+}
+
+.drawer__menu .submenu.is-active {
+  display: flex;
 }
 
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
   padding-block: calc(var(--space) * 2);
+}
+
+.drawer__menu > ul.is-hidden {
+  display: none;
 }
 
 .drawer__footer {
