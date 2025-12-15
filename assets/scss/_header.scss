@@ -281,13 +281,14 @@ body.header-hidden {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  width: auto;
+  max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   z-index: var(--z-modal);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -307,7 +308,7 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -325,9 +326,14 @@ body[data-drawer-open='true'] {
 }
 
 .drawer__menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: calc(var(--space) * 2);
+  text-align: center;
 }
 
 .drawer__menu a {
@@ -348,13 +354,21 @@ body[data-drawer-open='true'] {
 
 /* 移动端子菜单样式 */
 .drawer__menu .submenu {
-  padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+  padding-left: 0;
+  margin-top: 0;
+  display: none;
 }
 
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
   padding-block: calc(var(--space) * 2);
+}
+
+.drawer__menu .submenu.is-visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .drawer__footer {

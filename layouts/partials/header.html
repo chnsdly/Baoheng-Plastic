@@ -144,6 +144,9 @@
     const header = document.getElementById('site-header');
     const body = document.body;
     const bodyHiddenClass = 'header-hidden';
+    const drawerMenu = document.querySelector('.drawer__menu');
+    const topMenuList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
+    const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
 
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
@@ -207,13 +210,32 @@
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
 
+    const resetDrawerMenu = () => {
+      if (topMenuList) {
+        topMenuList.style.display = '';
+      }
+      if (submenus.length) {
+        submenus.forEach((submenu) => submenu.classList.remove('is-visible'));
+      }
+    };
+
+    const showSubmenu = (submenu) => {
+      if (topMenuList) {
+        topMenuList.style.display = 'none';
+      }
+      submenus.forEach((item) => item.classList.remove('is-visible'));
+      submenu.classList.add('is-visible');
+    };
+
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
       if (drawerToggler) drawerToggler.classList.add('open');
+      resetDrawerMenu();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
       if (drawerToggler) drawerToggler.classList.remove('open');
+      resetDrawerMenu();
     };
 
     if (drawerToggler) {
@@ -238,5 +260,19 @@
         closeDrawer();
       }
     });
+
+    if (topMenuList) {
+      topMenuList.querySelectorAll(':scope > li').forEach((item) => {
+        const trigger = item.querySelector(':scope > a');
+        const submenu = item.querySelector(':scope > .submenu');
+
+        if (trigger && submenu) {
+          trigger.addEventListener('click', (event) => {
+            event.preventDefault();
+            showSubmenu(submenu);
+          });
+        }
+      });
+    }
   });
 </script>
