@@ -269,7 +269,10 @@ body.header-hidden {
         */
 .drawer-overlay {
   position: fixed;
-  inset: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: var(--header-height);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: var(--z-overlay);
   opacity: 0;
@@ -279,19 +282,21 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: var(--header-height);
+  left: 0;
   right: 0;
-  bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  height: calc(100vh - var(--header-height));
+  width: auto;
+  max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   z-index: var(--z-modal);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
   padding: calc(var(--space) * 4);
+  border-top: var(--border-w) solid var(--border);
 }
 
 body[data-drawer-open='true'] {
@@ -307,7 +312,7 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -330,6 +335,17 @@ body[data-drawer-open='true'] {
   margin: 0;
 }
 
+.drawer__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--space) * 2);
+}
+
+.drawer__menu-item a {
+  flex: 1 1 auto;
+}
+
 .drawer__menu a {
   display: block;
   padding: calc(var(--space) * 3) calc(var(--space) * 2);
@@ -349,12 +365,45 @@ body[data-drawer-open='true'] {
 /* 移动端子菜单样式 */
 .drawer__menu .submenu {
   padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+  margin: 0;
+  display: none;
+}
+
+.drawer__menu .submenu.is-open {
+  display: block;
 }
 
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
   padding-block: calc(var(--space) * 2);
+}
+
+.submenu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid unquote("rgb(from var(--on-brand) r g b / 25%)");
+  color: var(--on-brand);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--t-normal) var(--ease), transform var(--t-normal) var(--ease);
+}
+
+.submenu-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.submenu-toggle[aria-expanded='true'] {
+  background-color: unquote("rgb(from var(--on-brand) r g b / 15%)");
+}
+
+.submenu-toggle[aria-expanded='true'] svg {
+  transform: rotate(180deg);
 }
 
 .drawer__footer {
