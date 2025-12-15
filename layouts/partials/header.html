@@ -88,24 +88,31 @@
 
 <div class="drawer-overlay" id="drawer-overlay"></div>
 <aside class="drawer" id="drawer">
-  <div class="drawer__header">
-    <span class="sr-only">Menu</span>
-  </div>
-
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
     <ul>
       {{ range .Site.Menus.main }}
       {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
+      {{ $submenuID := printf "submenu-%s" (or .Identifier (.Name | urlize)) }}
+      {{ $isOpen := and .HasChildren $active }}
+      <li class="drawer__item{{ if .HasChildren }} has-children{{ end }}{{ if $active }} is-active{{ end }}{{ if $isOpen }} is-open{{ end }}">
         {{ if .HasChildren }}
-        <ul class="submenu">
+        <button class="drawer__menu-toggle" type="button" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}" aria-controls="{{ $submenuID }}" data-target="{{ $submenuID }}">
+          <span>{{ .Name }}</span>
+          <svg class="drawer__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <ul class="drawer__submenu" id="{{ $submenuID }}" {{ if not $active }}hidden{{ end }}>
           {{ range .Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-          <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
+          <li>
+            <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a>
+          </li>
           {{ end }}
         </ul>
+        {{ else }}
+        <a class="drawer__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         {{ end }}
       </li>
       {{ end }}
@@ -113,28 +120,31 @@
   </nav>
 
   {{ if hugo.IsMultilingual }}
-  <div class="drawer__footer">
-    <div class="lang-switcher">
+  <div class="drawer__languages">
+    <label class="sr-only" for="drawer-language-select">{{ i18n "languages" | default "Languages" }}</label>
+    <select id="drawer-language-select" class="drawer__language-select">
       {{ $currentPage := . }}
       {{ $translations := $currentPage.AllTranslations }}
       {{ $homeTranslations := $.Site.Home.AllTranslations }}
       {{ range $.Site.Languages }}
       {{ $lang := . }}
+      {{ $target := "" }}
       {{ if eq $lang.Lang $.Site.Language.Lang }}
-      <a class="lang-switcher__button" href="{{ $currentPage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+        {{ $target = $currentPage.RelPermalink }}
       {{ else }}
-      {{ with (where $translations "Language.Lang" $lang.Lang) }}
-      {{ $translatedPage := index . 0 }}
-      <a class="lang-switcher__button" href="{{ $translatedPage.RelPermalink }}">{{ $lang.LanguageName }}</a>
-      {{ else }}
-      {{ with (where $homeTranslations "Language.Lang" $lang.Lang) }}
-      {{ $homePage := index . 0 }}
-      <a class="lang-switcher__button" href="{{ $homePage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+        {{ with (where $translations "Language.Lang" $lang.Lang) }}
+          {{ $translatedPage := index . 0 }}
+          {{ $target = $translatedPage.RelPermalink }}
+        {{ else }}
+          {{ with (where $homeTranslations "Language.Lang" $lang.Lang) }}
+            {{ $homePage := index . 0 }}
+            {{ $target = $homePage.RelPermalink }}
+          {{ end }}
+        {{ end }}
       {{ end }}
+      <option value="{{ $target }}" {{ if eq $lang.Lang $.Site.Language.Lang }}selected{{ end }}>{{ $lang.LanguageName }}</option>
       {{ end }}
-      {{ end }}
-      {{ end }}
-    </div>
+    </select>
   </div>
   {{ end }}
 </aside>
@@ -203,9 +213,10 @@
       handleSmartHeader();
     }
 
-    // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
+    // --- 2. 抽屉 (Drawer) 逻辑 ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawer = document.getElementById('drawer');
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
@@ -238,5 +249,43 @@
         closeDrawer();
       }
     });
+
+    if (drawer) {
+      const submenuToggles = drawer.querySelectorAll('.drawer__menu-toggle');
+      const submenuLinks = drawer.querySelectorAll('.drawer__submenu a, .drawer__link');
+      const languageSelect = document.getElementById('drawer-language-select');
+
+      submenuToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => {
+          const targetId = toggle.getAttribute('data-target');
+          const submenu = targetId ? drawer.querySelector(`#${targetId}`) : null;
+          const parent = toggle.closest('.drawer__item');
+          const isOpen = parent?.classList.toggle('is-open') ?? false;
+
+          toggle.setAttribute('aria-expanded', String(isOpen));
+
+          if (submenu) {
+            if (isOpen) {
+              submenu.removeAttribute('hidden');
+            } else {
+              submenu.setAttribute('hidden', 'true');
+            }
+          }
+        });
+      });
+
+      submenuLinks.forEach((link) => {
+        link.addEventListener('click', closeDrawer);
+      });
+
+      if (languageSelect) {
+        languageSelect.addEventListener('change', (event) => {
+          const target = event.target;
+          if (!(target instanceof HTMLSelectElement)) return;
+          const destination = target.value;
+          if (destination) window.location.href = destination;
+        });
+      }
+    }
   });
 </script>
