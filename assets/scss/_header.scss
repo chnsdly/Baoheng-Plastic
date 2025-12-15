@@ -269,7 +269,10 @@ body.header-hidden {
         */
 .drawer-overlay {
   position: fixed;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: var(--header-height);
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: var(--z-overlay);
   opacity: 0;
@@ -279,15 +282,15 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: var(--header-height);
+  left: 0;
   right: 0;
   bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  width: 100%;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   z-index: var(--z-modal);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -307,7 +310,7 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -340,6 +343,53 @@ body[data-drawer-open='true'] {
   transition: background-color var(--t-normal) var(--ease);
 }
 
+.drawer__item {
+  border-bottom: var(--border-w) solid var(--border);
+  padding-block: calc(var(--space) * 1.5);
+}
+
+.drawer__item:last-child {
+  border-bottom: none;
+}
+
+.drawer__item-header {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space) * 2);
+}
+
+.drawer__item.has-children .drawer__item-header {
+  justify-content: space-between;
+}
+
+.drawer__item-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--on-brand);
+  border-radius: var(--radius);
+  transition: background-color var(--t-normal) var(--ease), transform var(--t-normal) var(--ease);
+}
+
+.drawer__item-toggle:hover,
+.drawer__item-toggle:focus-visible {
+  background-color: unquote("rgb(from var(--on-brand) r g b / 10%)");
+}
+
+.drawer__item-toggle svg {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--t-normal) var(--ease);
+}
+
+.drawer__item.is-open .drawer__item-toggle svg {
+  transform: rotate(180deg);
+}
+
 .drawer__menu a:hover,
 .drawer__menu a.is-active {
   background-color: var(--brand);
@@ -349,12 +399,16 @@ body[data-drawer-open='true'] {
 /* 移动端子菜单样式 */
 .drawer__menu .submenu {
   padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+  margin-top: calc(var(--space) * 1);
 }
 
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
   padding-block: calc(var(--space) * 2);
+}
+
+.drawer__menu .submenu[hidden] {
+  display: none;
 }
 
 .drawer__footer {
