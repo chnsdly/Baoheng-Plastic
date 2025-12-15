@@ -318,6 +318,30 @@ body[data-drawer-open='true'] {
   margin-bottom: calc(var(--space) * 6);
 }
 
+.drawer__close {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--on-brand);
+  border-radius: var(--radius);
+  transition: background-color var(--t-normal) var(--ease), color var(--t-normal) var(--ease);
+}
+
+.drawer__close:hover,
+.drawer__close:focus-visible {
+  background-color: unquote("rgb(from var(--on-brand) r g b / 12%)");
+  outline: none;
+}
+
+.drawer__close svg {
+  width: 24px;
+  height: 24px;
+}
+
 
 .drawer__menu {
   flex-grow: 1;
@@ -346,12 +370,57 @@ body[data-drawer-open='true'] {
   color: var(--on-brand);
 }
 
-/* 移动端子菜单样式 */
-.drawer__menu .submenu {
-  padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+.drawer__menu li.has-children {
+  border-radius: var(--radius);
 }
 
+.drawer__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--space) * 2);
+}
+
+.drawer__submenu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--on-brand);
+  transition: background-color var(--t-normal) var(--ease), transform var(--t-normal) var(--ease);
+}
+
+.drawer__submenu-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.drawer__submenu-toggle:hover,
+.drawer__submenu-toggle:focus-visible {
+  background-color: unquote("rgb(from var(--on-brand) r g b / 12%)");
+  outline: none;
+}
+
+.drawer__menu .submenu {
+  padding-left: calc(var(--space) * 3);
+  margin: 0;
+  list-style: none;
+  border-left: var(--border-w) solid unquote("rgb(from var(--on-brand) r g b / 22%)");
+}
+
+.drawer__menu .submenu[hidden] {
+  display: none;
+}
+
+.drawer__menu li.is-open > .drawer__menu-item .drawer__submenu-toggle {
+  transform: rotate(180deg);
+}
+
+/* 移动端子菜单样式 */
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
   padding-block: calc(var(--space) * 2);
