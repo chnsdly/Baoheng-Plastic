@@ -54,7 +54,7 @@ industries:
 clients:
   enable: true
   title: "Together with Our Customers"
-  description: "Real-world pallet deployments across cold chain, export logistics, and automated warehouses."
+  description: "Capturing real moments with our customers, reflecting the trust and progress behind every collaboration."
   items:
     - image: "images/home/clients-1.jpg"
       alt: ""

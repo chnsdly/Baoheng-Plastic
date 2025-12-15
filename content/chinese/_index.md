@@ -56,7 +56,7 @@ industries:
 clients:
   enable: true
   title: "与客户同行"
-  description: "真实客户现场的托盘应用，覆盖冷链配送、跨境出口以及自动化仓储。"
+  description: "记录与客户互动的真实瞬间，见证每一次合作的信任与进展。"
   items:
     - image: "images/home/clients-1.jpg"
       alt: ""
