@@ -281,13 +281,14 @@ body.header-hidden {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  width: auto;
+  max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   z-index: var(--z-modal);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -307,7 +308,7 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
