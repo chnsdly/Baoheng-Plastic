@@ -88,24 +88,29 @@
 
 <div class="drawer-overlay" id="drawer-overlay"></div>
 <aside class="drawer" id="drawer">
-  <div class="drawer__header">
-    <span class="sr-only">Menu</span>
-  </div>
-
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
-    <ul>
+    <ul class="drawer__list">
       {{ range .Site.Menus.main }}
       {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
+      <li class="drawer__item {{ if .HasChildren }}drawer__item--has-children{{ end }} {{ if and .HasChildren $active }}is-open{{ end }}">
         {{ if .HasChildren }}
+        <button class="drawer__link" type="button" aria-expanded="{{ if and .HasChildren $active }}true{{ else }}false{{ end }}">
+          <span>{{ .Name }}</span>
+          <svg class="drawer__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
         <ul class="submenu">
           {{ range .Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
+        {{ else }}
+        <a href="{{ .URL | relLangURL }}" class="drawer__link {{ if $active }}is-active{{ end }}">{{ .Name }}</a>
         {{ end }}
       </li>
       {{ end }}
@@ -113,28 +118,29 @@
   </nav>
 
   {{ if hugo.IsMultilingual }}
-  <div class="drawer__footer">
-    <div class="lang-switcher">
+  <div class="drawer__language">
+    <label class="sr-only" for="drawer-language">{{ i18n "switchLang" | default "Language" }}</label>
+    <select id="drawer-language" class="drawer__language-select">
       {{ $currentPage := . }}
       {{ $translations := $currentPage.AllTranslations }}
       {{ $homeTranslations := $.Site.Home.AllTranslations }}
       {{ range $.Site.Languages }}
       {{ $lang := . }}
       {{ if eq $lang.Lang $.Site.Language.Lang }}
-      <a class="lang-switcher__button" href="{{ $currentPage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+      <option value="{{ $currentPage.RelPermalink }}" selected>{{ $lang.LanguageName }}</option>
       {{ else }}
       {{ with (where $translations "Language.Lang" $lang.Lang) }}
       {{ $translatedPage := index . 0 }}
-      <a class="lang-switcher__button" href="{{ $translatedPage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+      <option value="{{ $translatedPage.RelPermalink }}">{{ $lang.LanguageName }}</option>
       {{ else }}
       {{ with (where $homeTranslations "Language.Lang" $lang.Lang) }}
       {{ $homePage := index . 0 }}
-      <a class="lang-switcher__button" href="{{ $homePage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+      <option value="{{ $homePage.RelPermalink }}">{{ $lang.LanguageName }}</option>
       {{ end }}
       {{ end }}
       {{ end }}
       {{ end }}
-    </div>
+    </select>
   </div>
   {{ end }}
 </aside>
@@ -206,6 +212,7 @@
     // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawer = document.getElementById('drawer');
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
@@ -238,5 +245,46 @@
         closeDrawer();
       }
     });
+
+    // --- 3. Drawer submenu toggle ---
+    if (drawer) {
+      const toggles = drawer.querySelectorAll('.drawer__item--has-children .drawer__link');
+
+      toggles.forEach((button) => {
+        const parent = button.closest('.drawer__item--has-children');
+        const submenu = parent ? parent.querySelector('.submenu') : null;
+
+        const isInitiallyOpen = parent?.classList.contains('is-open');
+        const initialExpanded = isInitiallyOpen ? 'true' : 'false';
+
+        button.setAttribute('aria-expanded', initialExpanded);
+
+        if (submenu) {
+          submenu.style.maxHeight = isInitiallyOpen ? `${submenu.scrollHeight}px` : '0px';
+        }
+
+        button.addEventListener('click', () => {
+          const isOpen = parent?.classList.toggle('is-open');
+          const expanded = isOpen ? 'true' : 'false';
+
+          button.setAttribute('aria-expanded', expanded);
+
+          if (submenu) {
+            submenu.style.maxHeight = isOpen ? `${submenu.scrollHeight}px` : '0px';
+          }
+        });
+      });
+    }
+
+    // --- 4. Language switcher ---
+    const languageSelect = document.getElementById('drawer-language');
+    if (languageSelect) {
+      languageSelect.addEventListener('change', (event) => {
+        const target = event.target;
+        if (target && target.value) {
+          window.location.href = target.value;
+        }
+      });
+    }
   });
 </script>
