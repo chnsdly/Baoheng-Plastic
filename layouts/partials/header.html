@@ -203,13 +203,25 @@
       handleSmartHeader();
     }
 
-    // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
+    // --- 2. 抽屉 (Drawer) 逻辑 ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerMenu = document.querySelector('.drawer__menu');
+    const topLevelList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
+
+    const resetDrawerMenuView = () => {
+      if (topLevelList) topLevelList.classList.remove('is-hidden');
+      if (drawerMenu) {
+        drawerMenu.querySelectorAll('.submenu').forEach((submenu) => {
+          submenu.classList.remove('is-active');
+        });
+      }
+    };
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
       if (drawerToggler) drawerToggler.classList.add('open');
+      resetDrawerMenuView();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
@@ -230,12 +242,34 @@
     }
 
     if (drawerOverlay) {
-      drawerOverlay.addEventListener('click', closeDrawer);
+      drawerOverlay.addEventListener('click', () => {
+        closeDrawer();
+        resetDrawerMenuView();
+      });
+    }
+
+    if (topLevelList) {
+      topLevelList.querySelectorAll(':scope > li > a').forEach((link) => {
+        const parentLi = link.parentElement;
+        const submenu = parentLi ? parentLi.querySelector('.submenu') : null;
+
+        if (submenu) {
+          link.addEventListener('click', (event) => {
+            event.preventDefault();
+            topLevelList.classList.add('is-hidden');
+            if (drawerMenu) {
+              drawerMenu.querySelectorAll('.submenu').forEach((sub) => sub.classList.remove('is-active'));
+            }
+            submenu.classList.add('is-active');
+          });
+        }
+      });
     }
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && body.getAttribute('data-drawer-open') === 'true') {
         closeDrawer();
+        resetDrawerMenuView();
       }
     });
   });
