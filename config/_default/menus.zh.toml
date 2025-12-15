@@ -5,6 +5,7 @@ weight = 1
 
 [[main]]
 name = "产品"
+url = "#"
 identifier = "products"
 weight = 10
 
@@ -48,7 +49,7 @@ weight = 10
 
 [[main]]
 name = "行业案例"
-url = "/industries/"
+url = "#"
 identifier = "industries"
 weight = 20
 
@@ -84,7 +85,7 @@ weight = 20
 
 [[main]]
 name = "资源中心"
-url = "/resources/"
+url = "#"
 identifier = "resources"
 weight = 30
 
