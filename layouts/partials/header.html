@@ -95,13 +95,24 @@
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
     <ul>
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-        <ul class="submenu">
-          {{ range .Children }}
+      {{ range $index, $item := .Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" $item) ($current.HasMenuCurrent "main" $item) }}
+      {{ $submenuID := printf "submenu-%d" $index }}
+      <li class="drawer__item {{ if $item.HasChildren }}has-children{{ end }}">
+        <div class="drawer__item-header">
+          <a href="{{ $item.URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ $item.Name }}</a>
+          {{ if $item.HasChildren }}
+          <button class="drawer__item-toggle" type="button" aria-expanded="false" aria-controls="{{ $submenuID }}">
+            <span class="sr-only">Toggle {{ $item.Name }}</span>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M5.25 7.75L10 12.25L14.75 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          {{ end }}
+        </div>
+        {{ if $item.HasChildren }}
+        <ul class="submenu" id="{{ $submenuID }}" hidden>
+          {{ range $item.Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
           {{ end }}
@@ -237,6 +248,23 @@
       if (event.key === 'Escape' && body.getAttribute('data-drawer-open') === 'true') {
         closeDrawer();
       }
+    });
+
+    const submenuToggles = document.querySelectorAll('.drawer__item-toggle');
+
+    submenuToggles.forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const parent = toggle.closest('.drawer__item');
+        const submenuId = toggle.getAttribute('aria-controls');
+        const submenu = submenuId ? document.getElementById(submenuId) : null;
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+        if (submenu) {
+          toggle.setAttribute('aria-expanded', String(!isExpanded));
+          submenu.toggleAttribute('hidden');
+          parent?.classList.toggle('is-open', !isExpanded);
+        }
+      });
     });
   });
 </script>
