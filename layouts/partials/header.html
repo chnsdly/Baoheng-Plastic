@@ -97,15 +97,25 @@
     <ul>
       {{ range .Site.Menus.main }}
       {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
+      {{ $submenuID := printf "drawer-submenu-%s" (.Identifier | default (.Name | urlize)) }}
+      <li class="drawer__item {{ if .HasChildren }}has-children{{ end }}">
         {{ if .HasChildren }}
-        <ul class="submenu">
+        <div class="drawer__item-header">
+          <a href="{{ .URL | relLangURL }}" class="drawer__link {{ if $active }}is-active{{ end }}">{{ .Name }}</a>
+          <button class="drawer__submenu-toggle" type="button" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}" aria-controls="{{ $submenuID }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <ul class="drawer__submenu {{ if $active }}is-open{{ end }}" id="{{ $submenuID }}">
           {{ range .Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
+        {{ else }}
+        <a href="{{ .URL | relLangURL }}" class="drawer__link {{ if $active }}is-active{{ end }}">{{ .Name }}</a>
         {{ end }}
       </li>
       {{ end }}
@@ -144,6 +154,7 @@
     const header = document.getElementById('site-header');
     const body = document.body;
     const bodyHiddenClass = 'header-hidden';
+    const drawer = document.getElementById('drawer');
 
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
@@ -238,5 +249,25 @@
         closeDrawer();
       }
     });
+
+    if (drawer) {
+      const submenuToggles = drawer.querySelectorAll('[data-submenu-toggle], .drawer__submenu-toggle');
+
+      submenuToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => {
+          const targetId = toggle.getAttribute('aria-controls');
+          if (!targetId) return;
+
+          const submenu = document.getElementById(targetId);
+          const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+          const nextExpanded = !isExpanded;
+
+          toggle.setAttribute('aria-expanded', nextExpanded);
+          if (submenu) {
+            submenu.classList.toggle('is-open', nextExpanded);
+          }
+        });
+      });
+    }
   });
 </script>
