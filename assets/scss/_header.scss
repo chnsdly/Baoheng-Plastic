@@ -281,17 +281,19 @@ body.header-hidden {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  left: 0;
+  width: 100%;
+  max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   z-index: var(--z-modal);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
   padding: calc(var(--space) * 4);
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 body[data-drawer-open='true'] {
@@ -307,7 +309,7 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
