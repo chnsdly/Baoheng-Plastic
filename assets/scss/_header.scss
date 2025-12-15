@@ -281,13 +281,14 @@ body.header-hidden {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  width: auto;
+  max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   z-index: var(--z-modal);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -307,7 +308,7 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -322,21 +323,27 @@ body[data-drawer-open='true'] {
 .drawer__menu {
   flex-grow: 1;
   overflow-y: auto;
+  text-align: center;
 }
 
 .drawer__menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--space) * 1.5);
 }
 
 .drawer__menu a {
   display: block;
-  padding: calc(var(--space) * 3) calc(var(--space) * 2);
+  padding: calc(var(--space) * 2.5) calc(var(--space) * 2);
   font-size: var(--fs-2);
   color: var(--on-brand);
   border-radius: var(--radius);
   text-decoration: none;
+  text-align: center;
   transition: background-color var(--t-normal) var(--ease);
 }
 
@@ -346,15 +353,44 @@ body[data-drawer-open='true'] {
   color: var(--on-brand);
 }
 
-/* 移动端子菜单样式 */
-.drawer__menu .submenu {
-  padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+.menu-level {
+  width: 100%;
 }
 
-.drawer__menu .submenu a {
+.menu-level--root.is-hidden {
+  display: none;
+}
+
+.menu-level--submenu {
+  display: none;
+}
+
+.menu-level--submenu.is-active {
+  display: flex;
+}
+
+.menu-level--submenu a {
   font-size: var(--fs-1);
   padding-block: calc(var(--space) * 2);
+}
+
+.menu-level__back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--space) * 0.5);
+  padding: calc(var(--space) * 1.5) calc(var(--space) * 2);
+  background: transparent;
+  border: var(--border-w) solid var(--on-brand);
+  color: var(--on-brand);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--fs-1);
+}
+
+.menu-level__back-button:hover {
+  background-color: var(--brand);
+  color: var(--on-brand);
 }
 
 .drawer__footer {

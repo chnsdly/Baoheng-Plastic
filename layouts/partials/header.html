@@ -94,22 +94,36 @@
 
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
-    <ul>
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+    <ul class="menu-level menu-level--root" data-menu-level="root">
+      {{ range $index, $item := .Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" $item) ($current.HasMenuCurrent "main" $item) }}
+      {{ $submenuId := printf "submenu-%d" $index }}
       <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-        <ul class="submenu">
-          {{ range .Children }}
-          {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-          <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
+        <a
+          href="{{ $item.URL | relLangURL }}"
+          class="{{ if $active }}is-active{{ end }}"
+          {{ if $item.HasChildren }}data-menu-target="{{ $submenuId }}"{{ end }}
+        >{{ $item.Name }}</a>
       </li>
       {{ end }}
     </ul>
+
+    {{ range $index, $item := .Site.Menus.main }}
+    {{ if $item.HasChildren }}
+    {{ $submenuId := printf "submenu-%d" $index }}
+    <ul class="menu-level menu-level--submenu" data-menu-level="submenu" id="{{ $submenuId }}">
+      <li class="menu-level__back">
+        <button type="button" class="menu-level__back-button" data-menu-back>{{ i18n "back" | default "Back" }}</button>
+      </li>
+      {{ range $item.Children }}
+      {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+      <li>
+        <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
   </nav>
 
   {{ if hugo.IsMultilingual }}
@@ -206,12 +220,23 @@
     // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerMenu = document.querySelector('.drawer__menu');
+    const rootMenu = drawerMenu?.querySelector('[data-menu-level="root"]');
+    const submenus = drawerMenu ? Array.from(drawerMenu.querySelectorAll('[data-menu-level="submenu"]')) : [];
+
+    const resetMenuLevels = () => {
+      if (rootMenu) rootMenu.classList.remove('is-hidden');
+      submenus.forEach((menu) => menu.classList.remove('is-active'));
+      if (drawerMenu) drawerMenu.setAttribute('data-state', 'root');
+    };
 
     const openDrawer = () => {
+      resetMenuLevels();
       body.setAttribute('data-drawer-open', 'true');
       if (drawerToggler) drawerToggler.classList.add('open');
     };
     const closeDrawer = () => {
+      resetMenuLevels();
       body.setAttribute('data-drawer-open', 'false');
       if (drawerToggler) drawerToggler.classList.remove('open');
     };
@@ -226,6 +251,32 @@
           // 打开抽屉
           openDrawer();
         }
+      });
+    }
+
+    const showSubmenu = (submenuId) => {
+      if (!submenuId || !rootMenu) return;
+      rootMenu.classList.add('is-hidden');
+      submenus.forEach((menu) => menu.classList.toggle('is-active', menu.id === submenuId));
+      if (drawerMenu) drawerMenu.setAttribute('data-state', 'submenu');
+    };
+
+    if (rootMenu) {
+      rootMenu.querySelectorAll('[data-menu-target]').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const target = link.getAttribute('data-menu-target');
+          showSubmenu(target);
+        });
+      });
+    }
+
+    if (drawerMenu) {
+      drawerMenu.querySelectorAll('[data-menu-back]').forEach((backButton) => {
+        backButton.addEventListener('click', (event) => {
+          event.preventDefault();
+          resetMenuLevels();
+        });
       });
     }
 
