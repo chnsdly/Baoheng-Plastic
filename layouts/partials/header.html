@@ -77,7 +77,8 @@
       </div>
       {{ end }}
 
-      <button class="navbar__toggler" id="drawer-toggler" aria-label="Open menu">
+      <button class="navbar__toggler" id="drawer-toggler" aria-label="Open menu" aria-expanded="false"
+        aria-controls="drawer" aria-haspopup="true">
         <span class="toggler-bar"></span>
         <span class="toggler-bar"></span>
         <span class="toggler-bar"></span>
@@ -86,10 +87,20 @@
   </nav>
 </header>
 
-<div class="drawer-overlay" id="drawer-overlay"></div>
-<aside class="drawer" id="drawer">
+<div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" tabindex="-1">
   <div class="drawer__header">
-    <span class="sr-only">Menu</span>
+    <a href="{{ "/" | relLangURL }}" class="drawer__brand" aria-label="Go to homepage">
+      <img src='{{ (.Site.Params.logo | default "images/logo.png") | relURL }}' width="160" height="54"
+        alt='{{ .Site.Params.company_name | default .Site.Title }}'>
+    </a>
+    <button class="drawer__close" type="button" aria-label="Close menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5"
+        stroke="currentColor" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+    </button>
   </div>
 
   <nav class="drawer__menu" aria-label="Mobile navigation">
@@ -97,10 +108,23 @@
     <ul>
       {{ range .Site.Menus.main }}
       {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
+      {{ $identifier := default .Name .Identifier }}
+      {{ $submenuID := printf "submenu-%s" (urlize $identifier) }}
+      <li class="{{ if .HasChildren }}has-children{{ end }}">
+        <div class="drawer__item">
+          <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
+          {{ if .HasChildren }}
+          <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="{{ $submenuID }}">
+            <span class="sr-only">Toggle {{ .Name }} submenu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+              stroke-width="1.5" aria-hidden="true">
+              <path d="M6 8l4 4 4-4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          {{ end }}
+        </div>
         {{ if .HasChildren }}
-        <ul class="submenu">
+        <ul class="submenu" id="{{ $submenuID }}">
           {{ range .Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
@@ -144,7 +168,8 @@
     const header = document.getElementById('site-header');
     const body = document.body;
     const bodyHiddenClass = 'header-hidden';
-
+    const drawer = document.getElementById('drawer');
+    
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
       let lastScrollY = window.scrollY;     // 上一次滚动位置
@@ -206,14 +231,39 @@
     // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerClose = document.querySelector('.drawer__close');
+    const mobileMenu = document.querySelector('.drawer__menu');
+    const focusableSelectors = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+    let lastFocusedElement = null;
+    let focusableEls = [];
+    let firstFocusableEl = null;
+    let lastFocusableEl = null;
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
-      if (drawerToggler) drawerToggler.classList.add('open');
+      if (drawerToggler) {
+        drawerToggler.classList.add('open');
+        drawerToggler.setAttribute('aria-expanded', 'true');
+      }
+      if (!drawer) return;
+
+      drawer.setAttribute('aria-hidden', 'false');
+      lastFocusedElement = document.activeElement;
+      focusableEls = Array.from(drawer.querySelectorAll(focusableSelectors));
+      firstFocusableEl = focusableEls[0];
+      lastFocusableEl = focusableEls[focusableEls.length - 1];
+      if (firstFocusableEl) firstFocusableEl.focus();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
-      if (drawerToggler) drawerToggler.classList.remove('open');
+      if (drawerToggler) {
+        drawerToggler.classList.remove('open');
+        drawerToggler.setAttribute('aria-expanded', 'false');
+      }
+      if (!drawer) return;
+
+      drawer.setAttribute('aria-hidden', 'true');
+      if (lastFocusedElement) lastFocusedElement.focus({ preventScroll: true });
     };
 
     if (drawerToggler) {
@@ -233,8 +283,55 @@
       drawerOverlay.addEventListener('click', closeDrawer);
     }
 
+    if (drawerClose) {
+      drawerClose.addEventListener('click', closeDrawer);
+    }
+
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && body.getAttribute('data-drawer-open') === 'true') {
+      const isDrawerOpen = body.getAttribute('data-drawer-open') === 'true';
+      if (!isDrawerOpen) return;
+
+      if (event.key === 'Escape') {
+        closeDrawer();
+      }
+
+      if (event.key === 'Tab' && focusableEls.length) {
+        if (event.shiftKey && document.activeElement === firstFocusableEl) {
+          event.preventDefault();
+          lastFocusableEl.focus();
+        } else if (!event.shiftKey && document.activeElement === lastFocusableEl) {
+          event.preventDefault();
+          firstFocusableEl.focus();
+        }
+      }
+    });
+
+    const toggleSubmenu = (button) => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      const parentItem = button.closest('li');
+      const submenu = parentItem ? parentItem.querySelector('.submenu') : null;
+
+      if (submenu) {
+        button.setAttribute('aria-expanded', String(!expanded));
+        parentItem.classList.toggle('is-open', !expanded);
+        submenu.hidden = expanded;
+      }
+    };
+
+    if (mobileMenu) {
+      mobileMenu.querySelectorAll('.submenu-toggle').forEach((btn) => {
+        const parentItem = btn.closest('li');
+        const submenu = parentItem ? parentItem.querySelector('.submenu') : null;
+        if (submenu) {
+          submenu.hidden = true;
+        }
+        btn.addEventListener('click', () => toggleSubmenu(btn));
+      });
+    }
+
+    const mobileMedia = window.matchMedia('(max-width: 1023.98px)');
+    mobileMedia.addEventListener('change', (event) => {
+      if (!event.matches && body.getAttribute('data-drawer-open') === 'true') {
         closeDrawer();
       }
     });

@@ -318,6 +318,41 @@ body[data-drawer-open='true'] {
   margin-bottom: calc(var(--space) * 6);
 }
 
+.drawer__brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.drawer__brand img {
+  height: auto;
+  max-width: 100%;
+}
+
+.drawer__close {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: var(--border-w) solid transparent;
+  background: transparent;
+  color: var(--on-brand);
+  transition: background-color var(--t-normal) var(--ease), color var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
+}
+
+.drawer__close:hover,
+.drawer__close:focus-visible {
+  background-color: unquote("rgb(from var(--on-brand) r g b / 12%)");
+  border-color: unquote("rgb(from var(--on-brand) r g b / 24%)");
+  outline: none;
+}
+
+.drawer__close svg {
+  width: 20px;
+  height: 20px;
+}
+
 
 .drawer__menu {
   flex-grow: 1;
@@ -328,6 +363,13 @@ body[data-drawer-open='true'] {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.drawer__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--space) * 2);
 }
 
 .drawer__menu a {
@@ -348,13 +390,58 @@ body[data-drawer-open='true'] {
 
 /* 移动端子菜单样式 */
 .drawer__menu .submenu {
-  padding-left: calc(var(--space) * 4);
-  margin-top: calc(var(--space) * -1);
+  padding-left: calc(var(--space) * 2);
+  margin: 0;
+  display: grid;
+  gap: calc(var(--space) * 1);
 }
 
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
-  padding-block: calc(var(--space) * 2);
+  padding-block: calc(var(--space) * 1.5);
+}
+
+.drawer__menu li.has-children {
+  border-bottom: var(--border-w) solid unquote("rgb(from var(--on-brand) r g b / 10%)");
+}
+
+.submenu-toggle {
+  background: none;
+  border: var(--border-w) solid unquote("rgb(from var(--on-brand) r g b / 15%)");
+  color: var(--on-brand);
+  border-radius: var(--radius-round);
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--t-normal) var(--ease), transform var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
+}
+
+.submenu-toggle:hover,
+.submenu-toggle:focus-visible {
+  background-color: unquote("rgb(from var(--on-brand) r g b / 12%)");
+  outline: none;
+}
+
+.submenu-toggle svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(0deg);
+  transition: transform var(--t-normal) var(--ease);
+}
+
+.drawer__menu li.is-open > .drawer__item .submenu-toggle svg {
+  transform: rotate(180deg);
+}
+
+.drawer__menu li.is-open > .submenu {
+  display: grid;
+  padding-bottom: calc(var(--space) * 2);
+}
+
+.drawer__menu li:not(.is-open) > .submenu {
+  display: none;
 }
 
 .drawer__footer {
