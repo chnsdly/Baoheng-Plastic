@@ -95,13 +95,24 @@
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
     <ul>
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-        <ul class="submenu">
-          {{ range .Children }}
+      {{ range $index, $menu := .Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" $menu) ($current.HasMenuCurrent "main" $menu) }}
+      {{ $submenuID := printf "submenu-%s-%d" (anchorize $menu.Name) $index }}
+      <li class="{{ if $menu.HasChildren }}has-children{{ end }}">
+        <div class="drawer__menu-item">
+          <a href="{{ $menu.URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">{{ $menu.Name }}</a>
+          {{ if $menu.HasChildren }}
+          <button class="submenu-toggle" type="button" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}" aria-controls="{{ $submenuID }}">
+            <span class="sr-only">Toggle {{ $menu.Name }} submenu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          {{ end }}
+        </div>
+        {{ if $menu.HasChildren }}
+        <ul class="submenu {{ if $active }}is-open{{ end }}" id="{{ $submenuID }}">
+          {{ range $menu.Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
           {{ end }}
@@ -206,6 +217,7 @@
     // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawer = document.getElementById('drawer');
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
@@ -231,6 +243,30 @@
 
     if (drawerOverlay) {
       drawerOverlay.addEventListener('click', closeDrawer);
+    }
+
+    if (drawer) {
+      const drawerMenu = drawer.querySelector('.drawer__menu');
+      if (drawerMenu) {
+        const submenuToggles = drawerMenu.querySelectorAll('.submenu-toggle');
+
+        submenuToggles.forEach((toggle) => {
+          const submenuId = toggle.getAttribute('aria-controls');
+          const submenu = submenuId ? document.getElementById(submenuId) : null;
+
+          const setExpanded = (expanded) => {
+            toggle.setAttribute('aria-expanded', String(expanded));
+            if (submenu) {
+              submenu.classList.toggle('is-open', expanded);
+            }
+          };
+
+          toggle.addEventListener('click', () => {
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            setExpanded(!isExpanded);
+          });
+        });
+      }
     }
 
     document.addEventListener('keydown', (event) => {
