@@ -55,7 +55,7 @@ industries:
 ############################## CLIENTS ##############################
 clients:
   enable: true
-  title: "客户案例展示"
+  title: "与客户同行"
   description: "真实客户现场的托盘应用，覆盖冷链配送、跨境出口以及自动化仓储。"
   items:
     - image: "images/home/clients-1.jpg"

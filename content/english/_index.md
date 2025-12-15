@@ -53,7 +53,7 @@ industries:
 ############################## CLIENTS ##############################
 clients:
   enable: true
-  title: "Client Case Highlights"
+  title: "Together with Our Customers"
   description: "Real-world pallet deployments across cold chain, export logistics, and automated warehouses."
   items:
     - image: "images/home/clients-1.jpg"
