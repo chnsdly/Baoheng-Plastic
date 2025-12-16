@@ -1,7 +1,7 @@
 # 全局参数
 company_name = "Shandong Baoheng Plastic Co., Ltd."
 contact_email = "weibenlong6@gmail.com"
-contact_phone = "+86 178 6161 6766"
+contact_phone = "+86 13325077372"
 contact_address = "Xianghe Industrial Park, Linyi City, Shandong, China"
 business_hours = "Mon–Sat, 8:30–17:30 (GMT+8)"
 
@@ -22,7 +22,7 @@ turnstile_site_key = "0x4AAAAAACBC7FiXCfcn5h5j"
 
 [whatsapp]
 enabled = true
-phone = "8617861616766"
+phone = "8613325077372"
 label = "Chat on WhatsApp" # 仅用于无障碍 aria-label / title 提示
 side = "right"              # "right" | "left"
 sizeDesktop = 60            # 桌面端按钮直径(px)
