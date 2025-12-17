@@ -335,13 +335,13 @@ body[data-drawer-open='true'] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: calc(var(--space) * 2);
+  gap: var(--space);
   width: 100%;
 }
 
 .drawer__menu a {
   display: block;
-  padding: calc(var(--space) * 3) calc(var(--space) * 2);
+  padding: calc(var(--space) * 2) calc(var(--space) * 1.5);
   font-size: var(--fs-2);
   color: var(--on-brand);
   border-radius: var(--radius);
@@ -362,7 +362,7 @@ body[data-drawer-open='true'] {
   padding: 0;
   margin: 0;
   display: none;
-  gap: calc(var(--space) * 2);
+  gap: var(--space);
 }
 
 .drawer__menu .submenu.is-active {
@@ -371,7 +371,7 @@ body[data-drawer-open='true'] {
 
 .drawer__menu .submenu a {
   font-size: var(--fs-1);
-  padding-block: calc(var(--space) * 2);
+  padding-block: calc(var(--space) * 1.5);
 }
 
 .drawer__menu > ul.is-hidden {
