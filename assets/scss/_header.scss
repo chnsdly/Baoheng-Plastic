@@ -374,6 +374,23 @@ body[data-drawer-open='true'] {
   padding-block: calc(var(--space) * 2);
 }
 
+.drawer__menu > ul.is-showing-submenu {
+  width: 100%;
+  gap: 0;
+}
+
+.drawer__menu > ul.is-showing-submenu > li {
+  width: 100%;
+}
+
+.drawer__menu > ul.is-showing-submenu > li:not(.is-submenu-active) {
+  display: none;
+}
+
+.drawer__menu > ul.is-showing-submenu > li.is-submenu-active > a {
+  display: none;
+}
+
 .drawer__menu > ul.is-hidden {
   display: none;
 }
