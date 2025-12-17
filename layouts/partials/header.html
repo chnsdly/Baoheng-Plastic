@@ -210,9 +210,11 @@
     const drawerMenu = document.querySelector('.drawer__menu');
     const rootMenuList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
     const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
+    const submenuParents = drawerMenu ? drawerMenu.querySelectorAll('li') : [];
 
     const showRootMenu = () => {
       if (rootMenuList) rootMenuList.classList.remove('is-hidden');
+      submenuParents.forEach((item) => item.classList.remove('submenu-visible'));
       submenus.forEach((menu) => menu.classList.remove('is-active'));
     };
 
@@ -221,6 +223,9 @@
       if (!target) return;
 
       if (rootMenuList) rootMenuList.classList.add('is-hidden');
+      submenuParents.forEach((item) => item.classList.remove('submenu-visible'));
+      const parent = target.closest('li');
+      if (parent) parent.classList.add('submenu-visible');
       submenus.forEach((menu) => {
         if (menu === target) menu.classList.add('is-active');
         else menu.classList.remove('is-active');

@@ -375,7 +375,25 @@ body[data-drawer-open='true'] {
 }
 
 .drawer__menu > ul.is-hidden {
+  display: flex;
+}
+
+.drawer__menu > ul.is-hidden > li {
   display: none;
+}
+
+.drawer__menu > ul.is-hidden > li.submenu-visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drawer__menu > ul.is-hidden > li.submenu-visible > a {
+  display: none;
+}
+
+.drawer__menu > ul.is-hidden > li.submenu-visible .submenu.is-active {
+  display: flex;
 }
 
 .drawer__footer {
