@@ -212,19 +212,31 @@
     const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
 
     const showRootMenu = () => {
-      if (rootMenuList) rootMenuList.classList.remove('is-hidden');
+      if (rootMenuList) {
+        rootMenuList.classList.remove('is-hidden', 'is-showing-submenu');
+        const rootItems = rootMenuList.querySelectorAll('li');
+        rootItems.forEach((item) => item.classList.remove('is-submenu-active'));
+      }
       submenus.forEach((menu) => menu.classList.remove('is-active'));
     };
 
-    const showSubmenu = (submenuId) => {
+    const showSubmenu = (submenuId, parentLink) => {
       const target = drawerMenu ? drawerMenu.querySelector(`#${submenuId}`) : null;
       if (!target) return;
 
-      if (rootMenuList) rootMenuList.classList.add('is-hidden');
+      if (rootMenuList) {
+        rootMenuList.classList.add('is-showing-submenu');
+        const rootItems = rootMenuList.querySelectorAll('li');
+        rootItems.forEach((item) => item.classList.remove('is-submenu-active'));
+      }
+
       submenus.forEach((menu) => {
         if (menu === target) menu.classList.add('is-active');
         else menu.classList.remove('is-active');
       });
+
+      const parentItem = parentLink ? parentLink.closest('li') : null;
+      if (parentItem) parentItem.classList.add('is-submenu-active');
     };
 
     const openDrawer = () => {
@@ -257,7 +269,7 @@
         event.preventDefault();
         const submenuId = link.getAttribute('data-submenu');
         if (submenuId) {
-          showSubmenu(submenuId);
+          showSubmenu(submenuId, link);
         }
       });
     });
