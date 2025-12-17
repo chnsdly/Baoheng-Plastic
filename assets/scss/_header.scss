@@ -374,10 +374,6 @@ body[data-drawer-open='true'] {
   padding-block: calc(var(--space) * 2);
 }
 
-.drawer__menu > ul.is-hidden {
-  display: none;
-}
-
 .drawer__footer {
   padding-top: calc(var(--space) * 4);
   margin-top: auto;

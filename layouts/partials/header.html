@@ -208,11 +208,9 @@
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
     const drawerMenu = document.querySelector('.drawer__menu');
-    const rootMenuList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
     const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
 
     const showRootMenu = () => {
-      if (rootMenuList) rootMenuList.classList.remove('is-hidden');
       submenus.forEach((menu) => menu.classList.remove('is-active'));
     };
 
@@ -220,7 +218,6 @@
       const target = drawerMenu ? drawerMenu.querySelector(`#${submenuId}`) : null;
       if (!target) return;
 
-      if (rootMenuList) rootMenuList.classList.add('is-hidden');
       submenus.forEach((menu) => {
         if (menu === target) menu.classList.add('is-active');
         else menu.classList.remove('is-active');
