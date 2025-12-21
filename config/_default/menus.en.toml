@@ -54,34 +54,47 @@ identifier = "industries"
 weight = 20
 
   [[main]]
-  name = "Cold Chain Logistics Solutions"
-  url = "/industries/cold-chain/"
+  name = "Warehousing"
+  url = "/industries/warehousing-logistics/"
   parent = "industries"
   weight = 21
 
   [[main]]
-  name = "High-Bay Racking Storage Solutions"
-  url = "/industries/warehousing/"
+  name = "Cold Chain"
+  url = "/industries/cold-chain-fresh/"
   parent = "industries"
   weight = 22
 
   [[main]]
-  name = "Export One-Way Pallets"
-  url = "/industries/export/"
+  name = "High Rack"
+  url = "/industries/high-bay-racking/"
   parent = "industries"
   weight = 23
 
   [[main]]
-  name = "Food-Grade Pallet Applications"
-  url = "/industries/food-grade/"
+  name = "Food & Beverage"
+  url = "/industries/food-beverage/"
   parent = "industries"
   weight = 24
 
   [[main]]
-  name = "Chemical & Hazardous Goods Storage"
-  url = "/industries/chemical/"
+  name = "Agriculture"
+  url = "/industries/agriculture/"
   parent = "industries"
   weight = 25
+
+  [[main]]
+  name = "Manufacturing"
+  url = "/industries/manufacturing-parts/"
+  parent = "industries"
+  weight = 26
+
+  [[main]]
+  name = "Chemicals"
+  url = "/industries/chemical-materials/"
+  parent = "industries"
+  weight = 27
+
 
 [[main]]
 name = "Resources"

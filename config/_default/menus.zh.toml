@@ -48,40 +48,53 @@ weight = 10
   weight = 16
 
 [[main]]
-name = "行业案例"
+name = "行业解决方案"
 url = "#"
 identifier = "industries"
 weight = 20
 
   [[main]]
-  name = "冷链物流解决方案"
-  url = "/industries/cold-chain/"
+  name = "仓储物流"
+  url = "/industries/warehousing-logistics/"
   parent = "industries"
   weight = 21
 
   [[main]]
-  name = "高位货架仓储方案"
-  url = "/industries/warehousing/"
+  name = "冷链生鲜"
+  url = "/industries/cold-chain-fresh/"
   parent = "industries"
   weight = 22
 
   [[main]]
-  name = "出口一次性托盘"
-  url = "/industries/export/"
+  name = "高位货架"
+  url = "/industries/high-bay-racking/"
   parent = "industries"
   weight = 23
 
   [[main]]
-  name = "食品级托盘应用"
-  url = "/industries/food-grade/"
+  name = "食品饮料"
+  url = "/industries/food-beverage/"
   parent = "industries"
   weight = 24
 
   [[main]]
-  name = "化工与危险品存储"
-  url = "/industries/chemical/"
+  name = "农业"
+  url = "/industries/agriculture/"
   parent = "industries"
   weight = 25
+
+  [[main]]
+  name = "制造与零部件"
+  url = "/industries/manufacturing-parts/"
+  parent = "industries"
+  weight = 26
+
+  [[main]]
+  name = "化工原料"
+  url = "/industries/chemical-materials/"
+  parent = "industries"
+  weight = 27
+
 
 [[main]]
 name = "资源中心"
