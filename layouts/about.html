@@ -46,6 +46,38 @@
   </div>
   {{- end }}
 
+  {{- $visuals := .Params.visuals -}}
+  {{- with $visuals }}
+  <div class="about__visuals">
+    <div class="container container--wide">
+      <div class="section-head">
+        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{- with .subtitle }}<p class="muted">{{ . }}</p>{{ end }}
+      </div>
+      <div class="visuals">
+        {{- range $i, $item := .items }}
+        <article class="visual{{ if eq (mod $i 2) 1 }} visual--reverse{{ end }}">
+          <div class="visual__image">
+            {{- with $item.image }}<img src="{{ . }}" alt="{{ $item.alt }}" loading="lazy">{{ end }}
+          </div>
+          <div class="visual__body">
+            {{- with $item.title }}<h3>{{ . }}</h3>{{ end }}
+            {{- with $item.copy }}<p class="muted">{{ . }}</p>{{ end }}
+            {{- with $item.bullets }}
+            <ul class="check-list check-list--tight">
+              {{- range . }}
+              <li>{{ . }}</li>
+              {{- end }}
+            </ul>
+            {{- end }}
+          </div>
+        </article>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+  {{- end }}
+
   {{- $cap := .Params.capabilities -}}
   {{- with $cap }}
   <div id="capabilities" class="about__capabilities">
@@ -165,6 +197,18 @@
 .stat { text-align: center; padding: calc(var(--space) * 3); border-radius: var(--radius); background: var(--card); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); }
 .stat__num { font-size: clamp(2rem, 1.2rem + 3vw, 3rem); letter-spacing: -0.02em; font-weight: 700; }
 .stat__label { color: var(--muted); margin-top: .25rem; }
+
+.about__visuals { padding-block: calc(var(--space) * 6); }
+.visuals { display: grid; gap: calc(var(--gap) * 1.5); }
+.visual { display: grid; gap: var(--gap); align-items: center; grid-template-columns: 1fr; }
+@media (min-width: 64rem) { .visual { grid-template-columns: 1.05fr 0.95fr; } }
+.visual--reverse .visual__image { order: 2; }
+.visual--reverse .visual__body { order: 1; }
+.visual__image img { width: 100%; display: block; border-radius: var(--radius); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); background: radial-gradient(circle at 25% 25%, color-mix(in oklch, var(--brand), white 70%), transparent 55%), var(--surface); }
+.visual__body h3 { margin: 0 0 .5rem; font-size: var(--fs-3); }
+.visual__body p { margin: 0 0 1rem; }
+.check-list--tight { gap: .35rem; }
+.check-list--tight li::before { top: .35rem; }
 
 .cards-grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
 @media (min-width: 48rem) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }

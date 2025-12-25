@@ -26,6 +26,36 @@ stats:
     label: "Defects per million"
   - num: "73%"
     label: "Yearly repurchase rate from existing clients"
+    
+visuals:
+  title: "In Pictures: How We Build and Deliver"
+  subtitle: "Factory floor readiness, QA labs, and container loading to keep projects on schedule."
+  items:
+    - title: "Factory floor readiness"
+      copy: "20,000 m² workshop with 400–2800T injection and 1,000L blow-molding lines to cover pallets, bins, and cans."
+      image: "/images/world-map.jpg"
+      alt: "Injection and blow molding factory floor"
+      bullets:
+        - "Dedicated lanes for pallets, crates, and sanitation SKUs"
+        - "Tooling team onsite to adjust ribs, thickness, and fit"
+        - "Color and logo changeovers handled on the same shift"
+    - title: "Quality and material testing"
+      copy: "Incoming resin checks, IPQC sampling, and simulated load tests keep every batch reliable."
+      image: "/images/world-map.jpg"
+      alt: "Quality lab testing pallets and bins"
+      bullets:
+        - "Impact, stacking, cold-room, and forklift trials"
+        - "Material traceability with production date and source"
+        - "Food-grade and anti-static options validated per run"
+    - title: "Container loading & logistics"
+      copy: "Packing plans optimized for consolidation, nested designs, and safe arrival at ports and warehouses."
+      image: "/images/world-map.jpg"
+      alt: "Pallets and crates staged for container loading"
+      bullets:
+        - "FOB/CIF/DDP experience with full-container and LCL"
+        - "Protective wrapping and palletization by SKU"
+        - "Shipment photos and loading reports for every release"
+
 capabilities:
   title: "Manufacturing Capabilities"
   subtitle: "Tooling · Molding · Materials · Quality · Fulfillment"
