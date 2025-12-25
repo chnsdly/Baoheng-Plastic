@@ -26,6 +26,34 @@ stats:
     label: "批次不良数（百万件不良数）"
   - num: "73%"
     label: "老客户年度复购率"
+visuals:
+  title: "图说生产与交付"
+  subtitle: "生产现场、质检实验室与装柜流程的关键环节。"
+  items:
+    - title: "工厂产线"
+      copy: "20,000 m² 厂房，400–2800T 注塑与 1,000L 吹塑覆盖托盘、周转箱和环卫桶。"
+      image: "/images/about/factory-floor.svg"
+      alt: "注塑与吹塑工厂车间"
+      bullets:
+        - "托盘/周转箱/环卫桶分线生产，切换快"
+        - "模具团队驻厂，随时调整筋位与壁厚"
+        - "颜色、Logo、标签区可同班切换"
+    - title: "材料与质检"
+      copy: "来料检测、制程抽检与模拟载荷试验，确保每一批次稳定。"
+      image: "/images/about/lab-testing.svg"
+      alt: "实验室质检托盘和周转箱"
+      bullets:
+        - "抗冲、堆码、冷库、叉车等模拟测试"
+        - "批次可追溯，标识生产日期与物料来源"
+        - "食品级与抗静电料线分批验证"
+    - title: "装柜与物流"
+      copy: "按拼柜/整柜制定装载方案，利用嵌套设计保障稳固与装载率。"
+      image: "/images/about/logistics.svg"
+      alt: "托盘与周转箱的装柜现场"
+      bullets:
+        - "熟悉 FOB/CIF/DDP 的整柜与零担交付"
+        - "按 SKU 缠膜打托，便于入仓与转运"
+        - "每票出货提供装柜照片与报告"
 capabilities:
   title: "制造能力"
   subtitle: "模具 · 成型 · 材料 · 质控 · 交付"
