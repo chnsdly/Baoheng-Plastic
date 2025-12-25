@@ -1,6 +1,7 @@
 ---
 title: "About Us"
 layout: "about"
+description: "Company profile of Baoheng Plastic, covering manufacturing capacity, materials, quality systems, and global project delivery."
 hero:
   badge: "Manufacturer · OEM/ODM · Export"
   title: "Shandong Baoheng Plastic Products Co., Ltd."

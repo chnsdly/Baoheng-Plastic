@@ -1,6 +1,6 @@
 ---
 title: "怎么选择托盘"
-description: "用于列表页摘要（不写则用 Summary/正文截断）"
+description: "选托盘时需要关注承载力、材料、适用环境和循环周转需求，本文给出关键参考。"
 layout: "resources/"
 cover_asset: "images/insights/hero.jpg"
 categories: "news" # articles | downloads | news | faq

@@ -1,6 +1,6 @@
 ---
-title: "怎么选择托盘"
-description: "用于列表页摘要（不写则用 Summary/正文截断）"
+title: "How to choose pallets"
+description: "Key considerations for selecting plastic pallets, including load ratings, material options, and usage environments."
 layout: "resources/"
 cover_asset: "images/insights/hero.jpg"
 categories: "news" # articles | downloads | news | faq

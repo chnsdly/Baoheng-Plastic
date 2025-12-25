@@ -1,5 +1,5 @@
 ---
-title: ""
-description: "Deep dives into pallet design, material handling trends, and best practices from our experts."
+title: "行业洞察"
+description: "托盘设计、物流搬运趋势以及行业最佳实践解读。"
 ---
 
