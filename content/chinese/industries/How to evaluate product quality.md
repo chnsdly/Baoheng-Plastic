@@ -1,6 +1,6 @@
 ---
-title: "怎么选择托盘"
-description: "用于列表页摘要（不写则用 Summary/正文截断）"
+title: "如何评估托盘质量"
+description: "从原料、注塑工艺到堆码和叉车测试，梳理判断塑料托盘质量的要点。"
 layout: "resources/"
 cover_asset: "images/insights/hero.jpg"
 categories: "news" # articles | downloads | news | faq

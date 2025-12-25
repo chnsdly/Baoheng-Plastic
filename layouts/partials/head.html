@@ -4,24 +4,56 @@
   {{ $style = $style | minify | fingerprint }}
 {{ end }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+{{ $description := .Description | default .Site.Params.description }}
+{{ $keywords := .Params.keywords | default .Site.Params.keywords }}
+{{ $image := "" }}
+{{ with .Params.images }}
+  {{ $image = (index . 0) | absURL }}
+{{ else }}
+  {{ $image = .Site.Params.default_image | absURL }}
+{{ end }}
+
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="description" content="{{ $description }}">
+<meta name="keywords" content="{{ delimit $keywords ", " }}">
+<meta name="author" content="{{ .Site.Params.company_name | default .Site.Title }}">
+<meta name="googlebot" content="index, follow">
+<meta name="bingbot" content="index, follow">
 
 <link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | relLangURL }}">
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
 {{ range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end }}
-{{/* 建议将 x-default 指向你的主站地址，而非当前页 */}}
-<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
 
-{{/* 灵活的爬虫控制 */}}
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}">
 <meta name="robots" content="{{ .Params.robots | default "index, follow" }}">
 
-{{/* 建议保留社交标签，这对品牌传播非常重要 */}}
 <meta property="og:title" content="{{ .Title | default .Site.Title }}">
-<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+<meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-{{ with .Params.images }}
-  <meta property="og:image" content="{{ index . 0 | absURL }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:alt" content="{{ .Title | default .Site.Title }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
+
+{{ with .Site.Params.organization }}
+  {{ $orgLogo := .logo | default ($image) }}
+  {{ if not (hasPrefix $orgLogo "http") }}
+    {{ $orgLogo = $orgLogo | absURL }}
+  {{ end }}
+  {{ $address := merge (dict "@type" "PostalAddress") (.address | default dict) }}
+  {{ $orgData := dict "@context" "https://schema.org" "@type" "Organization" "name" .name "legalName" .legalName "url" .url "logo" $orgLogo "telephone" .telephone "email" .email "address" $address }}
+  <script type="application/ld+json">{{ $orgData | jsonify }}</script>
 {{ end }}
+
+{{ $webSiteData := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "inLanguage" .Site.Language.Lang "potentialAction" (dict "@type" "SearchAction" "target" (printf "%s?search={query}" .Site.BaseURL) "query-input" "required name=query") }}
+<script type="application/ld+json">{{ $webSiteData | jsonify }}</script>

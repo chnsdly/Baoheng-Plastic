@@ -1,3 +1,9 @@
+---
+title: "Privacy Policy"
+description: "How Baoheng Plastic collects, uses, and protects personal information shared through website and lead forms."
+robots: "noindex, follow"
+---
+
 Effective Date: 2025-12-16
 Last Updated: 2025-12-16
 This Privacy Policy explains how [Company/Legal Entity Name] (“we”, “us”, “our”) collects and processes personal information via our website, online forms, Facebook/Meta Lead Ads (Instant Forms), and related communications.

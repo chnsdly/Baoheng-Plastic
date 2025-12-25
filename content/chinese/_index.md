@@ -1,5 +1,6 @@
 ---
 title: "Baoheng Plastic"
+description: "宝恒塑业生产注塑、吹塑塑料托盘及配套周转箱桶，满足仓储物流、冷链食品、制造等场景的高强度使用。"
 hero_title: " "
 hero_description: " "
 hero_bg_asset: "images/hero-bg.jpg"

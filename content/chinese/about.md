@@ -1,6 +1,7 @@
 ---
-title: "About Us"
+title: "关于我们"
 layout: "about"
+description: "宝恒塑业的制造能力、材料体系、质量控制与全球项目交付情况简介。"
 hero:
   badge: "制造商 · OEM/ODM · 出口"
   title: "山东宝恒塑料制品有限公司"
