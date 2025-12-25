@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title>Logistics and warehouse delivery</title>
+  <desc>Abstract illustration of pallets, crates, and trucks in a logistics hub.</desc>
+  <defs>
+    <linearGradient id="c1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="#0f172a" rx="24"/>
+  <rect x="28" y="44" width="584" height="272" rx="18" fill="#0b1224" stroke="#1d4ed8" stroke-width="4"/>
+  <rect x="56" y="164" width="196" height="128" rx="12" fill="#1d4ed8" opacity="0.85"/>
+  <rect x="76" y="188" width="156" height="76" rx="12" fill="#eff6ff"/>
+  <rect x="82" y="212" width="44" height="32" rx="8" fill="#3b82f6" opacity="0.9"/>
+  <rect x="138" y="212" width="44" height="32" rx="8" fill="#22d3ee" opacity="0.9"/>
+  <rect x="194" y="212" width="24" height="32" rx="6" fill="#0ea5e9" opacity="0.9"/>
+  <rect x="270" y="180" width="156" height="112" rx="16" fill="#0ea5e9" opacity="0.8"/>
+  <rect x="292" y="200" width="112" height="56" rx="12" fill="#e0f2fe"/>
+  <rect x="468" y="168" width="136" height="122" rx="16" fill="url(#c2)" stroke="#fb923c" stroke-width="4"/>
+  <rect x="492" y="192" width="92" height="58" rx="12" fill="#fdba74"/>
+  <path d="M52 152h532" stroke="#111827" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+  <path d="M92 148h180" stroke="#22d3ee" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <path d="M292 148h118" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <path d="M468 148h104" stroke="#f59e0b" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <rect x="80" y="72" width="480" height="52" rx="10" fill="#111827" stroke="#22d3ee" stroke-width="4"/>
+  <path d="M108 98h68" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+  <path d="M192 98h44" stroke="#a855f7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M254 98h92" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M360 98h156" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <rect x="64" y="298" width="512" height="12" rx="6" fill="url(#c1)" opacity="0.7"/>
+</svg>

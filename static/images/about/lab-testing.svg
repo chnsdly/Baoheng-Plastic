@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title>Quality lab testing pallets</title>
+  <desc>Abstract illustration of a quality laboratory with charts, gauges, and samples being tested.</desc>
+  <defs>
+    <linearGradient id="b1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="b2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#cbd5f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="#0b1224" rx="24"/>
+  <rect x="32" y="36" width="576" height="288" rx="18" fill="#0f172a" stroke="#22d3ee" stroke-width="4"/>
+  <rect x="60" y="76" width="200" height="140" rx="14" fill="#0ea5e9" opacity="0.8"/>
+  <rect x="76" y="94" width="168" height="104" rx="12" fill="#f8fafc"/>
+  <path d="M92 178c22-16 46-12 64 4s44 18 74-8" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="132" cy="146" r="14" fill="#22c55e" opacity="0.8"/>
+  <rect x="292" y="84" width="284" height="88" rx="12" fill="#111827" stroke="#a855f7" stroke-width="4"/>
+  <rect x="308" y="100" width="92" height="56" rx="10" fill="#1f2937" stroke="#22c55e" stroke-width="4"/>
+  <rect x="414" y="100" width="146" height="56" rx="10" fill="#1f2937" stroke="#22d3ee" stroke-width="4"/>
+  <path d="M332 128h44" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M444 120h78" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+  <path d="M444 138h52" stroke="#a855f7" stroke-width="6" stroke-linecap="round"/>
+  <rect x="96" y="236" width="160" height="72" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="4"/>
+  <rect x="116" y="256" width="120" height="32" rx="10" fill="#fbbf24" opacity="0.9"/>
+  <rect x="302" y="220" width="140" height="96" rx="14" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="4"/>
+  <rect x="332" y="244" width="80" height="48" rx="12" fill="#bae6fd"/>
+  <rect x="468" y="208" width="108" height="108" rx="18" fill="url(#b2)" stroke="#94a3b8" stroke-width="4"/>
+  <path d="M492 252c16-28 36-28 48 0" fill="none" stroke="#a855f7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M488 268c20 32 44 32 60 0" fill="none" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+  <path d="M480 286h104" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+  <rect x="52" y="52" width="96" height="10" rx="5" fill="url(#b1)" opacity="0.9"/>
+  <rect x="492" y="52" width="96" height="10" rx="5" fill="url(#b1)" opacity="0.9"/>
+</svg>
