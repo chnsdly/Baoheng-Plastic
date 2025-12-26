@@ -305,6 +305,12 @@
           langButton?.focus();
         }
       });
+
+      langSwitcher.addEventListener('mouseleave', () => {
+        if (langSwitcher.classList.contains('is-open')) {
+          closeLangSwitcher();
+        }
+      });
     }
 
     document.addEventListener('click', (event) => {
