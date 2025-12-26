@@ -2,6 +2,7 @@
 
 title: "1210-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base/1210-hero.jpg"
+featured: true
 product_type: "塑料托盘"
 pallet_category:
   - "可堆叠塑料托盘"

@@ -2,6 +2,7 @@
 
 title: "1210-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner/1210-hero.jpg"
+featured: true
 product_type: "Plastic Pallet"
 pallet_category:
   - "Rackable Plastic Pallets"

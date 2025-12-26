@@ -2,7 +2,6 @@
 
 title: "1311-PB-ODDF15I"
 featured_image_asset: "/images/products/pallet/double-faced/1311-hero.jpg"
-featured: true
 product_type: "塑料托盘"
 pallet_category:
   - "可堆叠塑料托盘"
