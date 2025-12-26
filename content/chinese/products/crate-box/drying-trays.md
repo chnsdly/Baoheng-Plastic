@@ -3,7 +3,6 @@
 title: "单冻器"
 featured_image_asset: "/images/products/crate-box/drying-trays-hero.jpg"
 featured_image: "/images/products/crate-box/drying-trays.jpg"
-featured: true
 product_type: "板条箱"
 pallet_category: []
 

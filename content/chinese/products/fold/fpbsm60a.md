@@ -3,7 +3,6 @@
 title: "1210-BF-FPBSM60A"
 featured_image_asset: "/images/products/fold/sm60a-hero.jpg"
 featured_image: "/images/cnc-machine.jpg"
-featured: true
 product_type: "可折叠塑料托盘箱"
 pallet_category: []
 specs:
