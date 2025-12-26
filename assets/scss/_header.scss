@@ -257,7 +257,6 @@ body.header-hidden {
   display: flex;
   align-items: center;
   gap: calc(var(--space) * 0.8);
-  background: color-mix(in srgb, var(--surface) 82%, var(--brand) 18%);
   border: var(--border-w) solid color-mix(in srgb, var(--brand) 35%, transparent);
   border-radius: calc(var(--radius) * 0.5);
   color: color-mix(in srgb, var(--on-surface) 88%, var(--on-brand) 12%);

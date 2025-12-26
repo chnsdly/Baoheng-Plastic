@@ -48,7 +48,7 @@ weight = 10
   weight = 16
 
 [[main]]
-name = "行业解决方案"
+name = "行业案例"
 url = "#"
 identifier = "industries"
 weight = 20
