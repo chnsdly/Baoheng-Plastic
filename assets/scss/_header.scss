@@ -139,7 +139,7 @@ body.header-hidden {
   left: calc(var(--space) * 1.4);
   right: calc(var(--space) * 1.4);
   bottom: calc(var(--space) * 0.5);
-  height: 3px;
+  height: 2px;
   border-radius: var(--radius-pill);
   background: linear-gradient(90deg, color-mix(in srgb, var(--brand) 86%, #7bc7ff 14%), color-mix(in srgb, var(--brand) 72%, #0039b8 28%));
   transform: scaleX(0);
@@ -167,8 +167,13 @@ body.header-hidden {
   @include dropdown-panel(left, 200px);
   list-style: none;
   display: grid;
-  gap: calc(var(--space) * 0.5);
+  gap: 0;
   border-radius: calc(var(--radius) * 1.2);
+}
+
+
+.dropdown-menu li + li {
+  border-top: var(--border-w) solid color-mix(in srgb, var(--border) 70%, transparent);
 }
 
 
