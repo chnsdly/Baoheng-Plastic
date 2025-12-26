@@ -128,11 +128,6 @@ body.header-hidden {
   position: relative;
 }
 
-.navbar__menu a:hover {
-  background-color: unquote("rgb(from var(--brand) r g b / 14%)");
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.05);
-}
-
 .navbar__menu a.is-active {
   font-weight: 600;
   background-color: unquote("rgb(from var(--on-brand) r g b / 20%)");
@@ -186,7 +181,7 @@ body.header-hidden {
 
 
 :is(.navbar__menu li:hover, .navbar__menu li:focus-within) > .dropdown-menu,
-:is(.lang-switcher:hover, .lang-switcher:focus-within, .lang-switcher.is-open) .lang-switcher__dropdown {
+:is(.lang-switcher.is-open) .lang-switcher__dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
