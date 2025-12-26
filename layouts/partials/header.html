@@ -11,12 +11,16 @@
     <nav class="navbar__menu" aria-label="Main navigation">
       {{ $current := . }}
       <ul>
-        {{ range .Site.Menus.main }}
-        {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-        <li class="{{ if .HasChildren }}has-dropdown{{ end }}">
-          <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">
-            <span>{{ .Name }}</span>
-            {{ if .HasChildren }}
+        {{ range $index, $item := .Site.Menus.main }}
+        {{ $active := or ($current.IsMenuCurrent "main" $item) ($current.HasMenuCurrent "main" $item) }}
+        {{ $submenuId := printf "navbar-dropdown-%d" $index }}
+        <li class="{{ if $item.HasChildren }}has-dropdown{{ end }} {{ if $active }}is-active{{ end }}">
+          <a href="{{ $item.URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}"
+            aria-haspopup="{{ if $item.HasChildren }}true{{ else }}false{{ end }}"
+            aria-expanded="{{ if and $item.HasChildren $active }}true{{ else }}false{{ end }}"
+            {{ if $item.HasChildren }}aria-controls="{{ $submenuId }}"{{ end }}>
+            <span>{{ $item.Name }}</span>
+            {{ if $item.HasChildren }}
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
               aria-hidden="true">
               <path fill-rule="evenodd"
@@ -26,12 +30,12 @@
             {{ end }}
           </a>
 
-          {{ if .HasChildren }}
-          <ul class="dropdown-menu">
-            {{ range .Children }}
+          {{ if $item.HasChildren }}
+          <ul class="dropdown-menu" id="{{ $submenuId }}" role="menu">
+            {{ range $item.Children }}
             {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
             <li>
-              <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a>
+              <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}" role="menuitem">{{ .Name }}</a>
             </li>
             {{ end }}
           </ul>
@@ -44,7 +48,7 @@
     <div class="navbar__actions">
       {{ if hugo.IsMultilingual }}
       <div class="lang-switcher">
-        <button class="lang-switcher__button">
+        <button class="lang-switcher__button" aria-haspopup="true" aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5"
             stroke="currentColor" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
@@ -204,7 +208,59 @@
       handleSmartHeader();
     }
 
-    // --- 2. 抽屉 (Drawer) 逻辑 (保持不变) ---
+    // --- 2. 桌面端下拉与语言切换无障碍增强 ---
+    const navDropdownItems = header ? header.querySelectorAll('.navbar__menu li.has-dropdown') : [];
+    navDropdownItems.forEach((item) => {
+      const trigger = item.querySelector('a');
+      const dropdown = item.querySelector('.dropdown-menu');
+      if (!trigger || !dropdown) return;
+
+      const setExpanded = (state) => {
+        trigger.setAttribute('aria-expanded', state ? 'true' : 'false');
+        item.classList.toggle('is-open', state);
+      };
+
+      const close = () => setExpanded(false);
+      const open = () => setExpanded(true);
+
+      item.addEventListener('mouseenter', open);
+      item.addEventListener('mouseleave', close);
+      trigger.addEventListener('focus', open);
+      trigger.addEventListener('blur', () => {
+        setTimeout(() => { if (!item.matches(':focus-within')) close(); }, 120);
+      });
+      dropdown.addEventListener('focusout', () => {
+        setTimeout(() => { if (!item.matches(':focus-within')) close(); }, 120);
+      });
+    });
+
+    const langSwitcher = document.querySelector('.lang-switcher');
+    const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
+    const langDropdown = langSwitcher ? langSwitcher.querySelector('.lang-switcher__dropdown') : null;
+
+    const setLangExpanded = (state) => {
+      if (!langSwitcher || !langButton) return;
+      langButton.setAttribute('aria-expanded', state ? 'true' : 'false');
+      langSwitcher.classList.toggle('is-open', state);
+    };
+
+    if (langSwitcher && langButton && langDropdown) {
+      langButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        const expanded = langButton.getAttribute('aria-expanded') === 'true';
+        setLangExpanded(!expanded);
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!langSwitcher.contains(event.target)) setLangExpanded(false);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setLangExpanded(false);
+      });
+    }
+
+    // --- 3. 抽屉 (Drawer) 逻辑 (保持不变) ---
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
     const drawerMenu = document.querySelector('.drawer__menu');
