@@ -2,8 +2,8 @@
 
 title: "1210-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/food/1210-blue-hero.jpg"
-featured_image: "/images/cnc-machine.jpg"
 featured: true
+featured_image: "/images/cnc-machine.jpg"
 product_type: "塑料托盘"
 pallet_category:
   - "食品和医药塑料托盘"

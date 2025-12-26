@@ -2,8 +2,8 @@
 
 title: "1210-BP-OD3R15"
 featured_image_asset: "/images/products/pallet/3-runner/1210-hero.jpg"
-featured_image: "/images/cnc-machine.jpg"
 featured: true
+featured_image: "/images/cnc-machine.jpg"
 product_type: "塑料托盘"
 pallet_category:
   - "可上架塑料托盘"
