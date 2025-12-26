@@ -3,7 +3,6 @@
 title: "1210-BF-FPBSS80B"
 featured_image_asset: "/images/products/fold/ss80b-hero.jpg"
 featured_image: "/images/cnc-machine.jpg"
-featured: true
 product_type: "可折叠塑料托盘箱"
 pallet_category: []
 specs:

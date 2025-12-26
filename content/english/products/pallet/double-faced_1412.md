@@ -2,6 +2,7 @@
 
 title: "1412-PB-ODDF15I"
 featured_image_asset: "/images/products/pallet/double-faced/1412-hero.jpg"
+featured: true
 product_type: "Plastic Pallet"
 pallet_category:
   - "Stackable Plastic Pallets"

@@ -2,6 +2,7 @@
 
 title: "1210-BP-ODPB15I"
 featured_image_asset: "/images/products/pallet/perimeter-base/1210-hero.jpg"
+featured: true
 product_type: "Plastic Pallet"
 pallet_category:
   - "Stackable Plastic Pallets"
