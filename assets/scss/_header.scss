@@ -257,11 +257,9 @@ body.header-hidden {
   position: relative;
   background: transparent;
   border: var(--border-w) solid transparent;
-  padding: calc(var(--space) * 0.9) calc(var(--space) * 1.2);
   border-radius: var(--radius-pill);
   color: color-mix(in srgb, var(--on-brand) 75%, var(--on-surface) 25%);
   font-size: var(--fs-0);
-  font-weight: 600;
   letter-spacing: 0.01em;
   text-transform: none;
   transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
