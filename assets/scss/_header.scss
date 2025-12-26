@@ -18,7 +18,7 @@
   right: 0;
   z-index: var(--z-header);
   height: var(--header-height);
-  padding-inline: calc(var(--space) * 2);
+  padding-inline: calc(var(--space) * 3.5);
   background: linear-gradient(120deg,
     color-mix(in srgb, var(--card) 92%, white 8%),
     color-mix(in srgb, var(--surface) 86%, white 14%));
@@ -55,6 +55,9 @@ body.header-hidden {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: calc(var(--space) * 1.5);
 }
 
 /* ******************** Logo无样式 ******************** */
@@ -91,7 +94,7 @@ body.header-hidden {
   justify-content: center;
   flex-wrap: nowrap;
   min-width: 0;
-  margin-inline: calc(var(--space) * 3); 
+  margin-inline: calc(var(--space) * 3);
 }
 
 .navbar__menu>ul {
@@ -184,13 +187,28 @@ body.header-hidden {
   transform: translateY(0);
 }
 
-:is(.dropdown-menu, .lang-switcher__dropdown) a {
+.dropdown-menu a {
+  display: block;
+  padding: calc(var(--space)) calc(var(--space) * 3);
+  color: var(--on-surface);
+  border-radius: var(--radius);
+  font-size: var(--fs-0);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color var(--t-normal) var(--ease),
+              color var(--t-normal) var(--ease);
+}
+
+.lang-switcher__dropdown a {
   display: block;
   padding: calc(var(--space)) calc(var(--space) * 3);
   color: var(--on-surface);
   border-radius: var(--radius);
   font-weight: 600;
   letter-spacing: 0.01em;
+  line-height: 1.2;
   text-decoration: none;
   transition: background-color var(--t-normal) var(--ease),
               color var(--t-normal) var(--ease);
@@ -231,7 +249,7 @@ body.header-hidden {
 .lang-switcher__button {
   display: flex;
   align-items: center;
-  gap: var(--space);
+  gap: calc(var(--space) * 0.8);
   background: color-mix(in srgb, var(--surface) 70%, var(--brand) 30%);
   border: var(--border-w) solid color-mix(in srgb, var(--brand) 35%, transparent);
   padding: calc(var(--space) * 1.25) calc(var(--space) * 1.5);
@@ -252,6 +270,16 @@ body.header-hidden {
   width: 20px;
   height: 20px;
   stroke-width: 1.6;
+}
+
+.lang-switcher__caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #111;
+  display: inline-block;
+  transform: translateY(1px);
 }
 
 .lang-switcher.is-open .lang-switcher__button {
@@ -413,11 +441,21 @@ body[data-drawer-open='true'] {
   padding: 0;
   margin: 0;
   display: none;
-  gap: var(--space);
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
 }
 
 .drawer__menu .submenu.is-active {
   display: flex;
+}
+
+.drawer__menu .submenu li {
+  width: 100%;
+}
+
+.drawer__menu .submenu li + li {
+  border-top: var(--border-w) solid color-mix(in srgb, var(--border) 80%, #d0d0d0 20%);
 }
 
 .drawer__menu .submenu a {
