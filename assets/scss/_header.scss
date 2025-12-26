@@ -3,13 +3,14 @@
   --burger-length: 30px;      /* 汉堡线长 */
   --burger-thickness: 3px;    /* 汉堡线粗 */
   --burger-gap: 6px;          /* 汉堡线间距 */
-  
-  --header-border-color: var(--border);
-  --header-shadow-scrolled: var(--shadow);
-  /* 关键修改：添加 transform 的过渡效果 */
-  --header-transition: background-color var(--t-normal) var(--ease), 
+
+  --header-border-color: color-mix(in srgb, var(--border) 70%, transparent);
+  --header-shadow-scrolled: 0 14px 35px rgba(0, 0, 0, 0.08);
+  --header-transition: background-color var(--t-normal) var(--ease),
                        border-color var(--t-normal) var(--ease),
+                       box-shadow var(--t-normal) var(--ease),
                        transform var(--t-normal) var(--ease);
+  --header-blur: 16px;
 
   position: fixed;
   top: 0;
@@ -18,11 +19,14 @@
   z-index: var(--z-header);
   height: var(--header-height);
   padding-inline: calc(var(--space) * 2);
+  background: linear-gradient(120deg,
+    color-mix(in srgb, var(--card) 92%, white 8%),
+    color-mix(in srgb, var(--surface) 86%, white 14%));
+  border-bottom: var(--border-w) solid var(--header-border-color);
   box-shadow: var(--shadow);
-  background-color: #ffffff;
 
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(var(--header-blur)) saturate(1.1);
+  backdrop-filter: blur(var(--header-blur)) saturate(1.1);
   transition: var(--header-transition);
 }
 
@@ -51,6 +55,10 @@ body.header-hidden {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: calc(var(--space) * 2.5);
+  gap: calc(var(--space) * 2);
 }
 
 /* ******************** Logo无样式 ******************** */
@@ -103,26 +111,51 @@ body.header-hidden {
   position: relative;
 }
 
-.navbar__menu a {
+.navbar__menu > ul > li > a {
   display: flex;
   align-items: center;
   gap: calc(var(--space) * 1);
-  padding-block: calc(var(--space) * 1.5);
-  padding-inline: calc(var(--space) * 2);
+  padding-block: calc(var(--space) * 1.2);
+  padding-inline: calc(var(--space) * 2.25);
   color: var(--on-brand);    /* 主题：品牌底上的前景色 */
   border-radius: var(--radius);
-  transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease);
   white-space: nowrap;       /* 强制链接不换行 */
   text-decoration: none;
+  position: relative;
 }
 
-.navbar__menu a:hover {
-  background-color: var(--brand)
+.navbar__menu > ul > li > a:hover {
+  background-color: unquote("rgb(from var(--brand) r g b / 14%)");
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.05);
 }
 
-.navbar__menu a.is-active {
-  font-weight: 600;
-  background-color: unquote("rgb(from var(--on-brand) r g b / 25%)");
+.navbar__menu > ul > li > a.is-active {
+  font-weight: 700;
+  background-color: unquote("rgb(from var(--on-brand) r g b / 20%)");
+}
+
+.navbar__menu > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--space) * 1.4);
+  right: calc(var(--space) * 1.4);
+  bottom: calc(var(--space) * 0.5);
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--brand) 86%, #7bc7ff 14%), color-mix(in srgb, var(--brand) 72%, #0039b8 28%));
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--t-normal) var(--ease);
+}
+
+.navbar__menu li:hover>a::after,
+.navbar__menu > ul > li > a.is-active::after {
+  transform: scaleX(1);
 }
 
 .navbar__menu .dropdown-arrow {
@@ -138,14 +171,23 @@ body.header-hidden {
 .dropdown-menu {
   @include dropdown-panel(left, 200px);
   list-style: none;
+  display: grid;
+  gap: calc(var(--space) * 0.5);
+  border-radius: calc(var(--radius) * 1.2);
+}
+
+.dropdown-menu a.is-active {
+  background-color: unquote("rgb(from var(--brand) r g b / 14%)");
+  color: var(--brand);
 }
 
 .lang-switcher__dropdown {
   @include dropdown-panel(right, 150px);
+  border-radius: calc(var(--radius) * 1.2);
 }
 
 :is(.navbar__menu li:hover, .navbar__menu li:focus-within) > .dropdown-menu,
-:is(.lang-switcher:hover, .lang-switcher:focus-within) .lang-switcher__dropdown {
+:is(.lang-switcher:hover, .lang-switcher:focus-within, .lang-switcher.is-open) .lang-switcher__dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -156,6 +198,9 @@ body.header-hidden {
   padding: calc(var(--space)) calc(var(--space) * 3);
   color: var(--on-surface);
   border-radius: var(--radius);
+  font-size: var(--fs-0);
+  font-weight: 600;
+  letter-spacing: 0.01em;
   text-decoration: none;
   transition: background-color var(--t-normal) var(--ease),
               color var(--t-normal) var(--ease);
@@ -196,22 +241,32 @@ body.header-hidden {
 .lang-switcher__button {
   display: flex;
   align-items: center;
-  gap: var(--space);
-  background: transparent;
-  border: none;
-  padding: var(--space) calc(var(--space) * 1);
-  border-radius: var(--radius);
-  color: var(--on-brand); 
-  transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease);
+  gap: calc(var(--space) * 0.75);
+  background: color-mix(in srgb, var(--surface) 70%, var(--brand) 30%);
+  border: var(--border-w) solid color-mix(in srgb, var(--brand) 35%, transparent);
+  padding: calc(var(--space) * 1.25) calc(var(--space) * 1.5);
+  border-radius: var(--radius-pill);
+  color: var(--on-brand);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
 }
 
 .lang-switcher__button:hover {
-  background-color: unquote("rgb(from var(--on-brand) r g b / 15%)");
+  background-color: unquote("rgb(from var(--brand) r g b / 15%)");
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.lang-switcher__button svg {
-  width: 20px;
-  height: 20px;
+.lang-switcher__chevron {
+  width: 12px;
+  height: 10px;
+  color: #111;
+}
+
+.lang-switcher.is-open .lang-switcher__button {
+  border-color: color-mix(in srgb, var(--brand) 55%, transparent);
+  background: unquote("rgb(from var(--brand) r g b / 18%)");
 }
 
 /* 汉堡按钮 (移动端) */
@@ -233,6 +288,12 @@ body.header-hidden {
   align-items: center;
   justify-content: center;
   gap: var(--burger-gap);                       /* 三条线之间的间距，和 margin 二选一 */
+}
+
+.navbar__menu a:focus-visible,
+.lang-switcher__button:focus-visible,
+.navbar__toggler:focus-visible {
+  @include focus-ring(3px);
 }
 
 /* 三条横线：用 currentColor 着色 */
@@ -367,6 +428,14 @@ body[data-drawer-open='true'] {
 
 .drawer__menu .submenu.is-active {
   display: flex;
+}
+
+.drawer__menu .submenu li {
+  width: 100%;
+}
+
+.drawer__menu .submenu li + li {
+  border-top: var(--border-w) solid color-mix(in srgb, var(--surface) 60%, #000 12%);
 }
 
 .drawer__menu .submenu a {

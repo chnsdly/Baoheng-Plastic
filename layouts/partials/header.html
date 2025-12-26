@@ -43,18 +43,14 @@
 
     <div class="navbar__actions">
       {{ if hugo.IsMultilingual }}
-      <div class="lang-switcher">
-        <button class="lang-switcher__button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5"
-            stroke="currentColor" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M2 12h20"></path>
-            <path d="M12 2a15.75 15.75 0 0 1 0 20"></path>
-            <path d="M12 2a15.75 15.75 0 0 0 0 20"></path>
-          </svg>
+      <div class="lang-switcher" data-behavior="toggle">
+        <button class="lang-switcher__button" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
           <span>{{ .Site.Language.LanguageName }}</span>
+          <svg class="lang-switcher__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 12" fill="currentColor" aria-hidden="true">
+            <path d="M2.5 2.5 10 9.5l7.5-7" />
+          </svg>
         </button>
-        <div class="lang-switcher__dropdown">
+        <div class="lang-switcher__dropdown" id="lang-menu" role="menu">
           {{ $currentPage := . }}
           {{ $translations := $currentPage.AllTranslations }}
           {{ $homeTranslations := $.Site.Home.AllTranslations }}
@@ -64,11 +60,11 @@
           {{ $lang := . }}
           {{ with (where $translations "Language.Lang" $lang.Lang) }}
           {{ $translatedPage := index . 0 }}
-          <a href="{{ $translatedPage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+          <a href="{{ $translatedPage.RelPermalink }}" role="menuitem">{{ $lang.LanguageName }}</a>
           {{ else }}
           {{ with (where $homeTranslations "Language.Lang" $lang.Lang) }}
           {{ $homePage := index . 0 }}
-          <a href="{{ $homePage.RelPermalink }}">{{ $lang.LanguageName }}</a>
+          <a href="{{ $homePage.RelPermalink }}" role="menuitem">{{ $lang.LanguageName }}</a>
           {{ end }}
           {{ end }}
           {{ end }}
@@ -77,7 +73,7 @@
       </div>
       {{ end }}
 
-      <button class="navbar__toggler" id="drawer-toggler" aria-label="Open menu">
+      <button class="navbar__toggler" id="drawer-toggler" aria-label="Open menu" type="button" aria-expanded="false">
         <span class="toggler-bar"></span>
         <span class="toggler-bar"></span>
         <span class="toggler-bar"></span>
@@ -145,6 +141,9 @@
     const header = document.getElementById('site-header');
     const body = document.body;
     const bodyHiddenClass = 'header-hidden';
+    const langSwitcher = document.querySelector('.lang-switcher');
+    const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
+    const langDropdown = langSwitcher ? langSwitcher.querySelector('.lang-switcher__dropdown') : null;
 
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
@@ -235,11 +234,13 @@
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
       if (drawerToggler) drawerToggler.classList.add('open');
+      if (drawerToggler) drawerToggler.setAttribute('aria-expanded', 'true');
       showRootMenu();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
       if (drawerToggler) drawerToggler.classList.remove('open');
+      if (drawerToggler) drawerToggler.setAttribute('aria-expanded', 'false');
       showRootMenu();
     };
 
@@ -274,6 +275,45 @@
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && body.getAttribute('data-drawer-open') === 'true') {
         closeDrawer();
+      }
+    });
+
+    // --- 3. 语言切换 (桌面) ---
+    const closeLangSwitcher = () => {
+      if (langSwitcher) langSwitcher.classList.remove('is-open');
+      if (langButton) langButton.setAttribute('aria-expanded', 'false');
+      if (langDropdown) langDropdown.setAttribute('data-open', 'false');
+    };
+
+    const openLangSwitcher = () => {
+      if (langSwitcher) langSwitcher.classList.add('is-open');
+      if (langButton) langButton.setAttribute('aria-expanded', 'true');
+      if (langDropdown) langDropdown.setAttribute('data-open', 'true');
+    };
+
+    if (langButton) {
+      langButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        const isOpen = langSwitcher?.classList.contains('is-open');
+        if (isOpen) closeLangSwitcher();
+        else openLangSwitcher();
+      });
+    }
+
+    if (langSwitcher) {
+      langSwitcher.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeLangSwitcher();
+          langButton?.focus();
+        }
+      });
+    }
+
+    document.addEventListener('click', (event) => {
+      if (!langSwitcher) return;
+      const target = event.target;
+      if (target instanceof Node && !langSwitcher.contains(target)) {
+        closeLangSwitcher();
       }
     });
   });
