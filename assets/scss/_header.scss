@@ -100,15 +100,11 @@ body {
 .navbar__menu a {
   display: flex;
   align-items: center;
-  gap: calc(var(--space) * 1);
-  padding-block: calc(var(--space) * 1.2);
-  padding-inline: calc(var(--space) * 2.25);
-  color: var(--on-brand);    /* 主题：品牌底上的前景色 */
-  border-radius: var(--radius);
+  gap: var(--space);
+  padding-block: space(1);
+  padding-inline: space(2);
+  color: var(--on-brand); 
   font-size: var(--fs-xs);
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-  transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease);
   white-space: nowrap;       /* 强制链接不换行 */
   text-decoration: none;
   position: relative;
