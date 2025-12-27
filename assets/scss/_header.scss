@@ -364,7 +364,7 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: calc(var(--header-height) - 1px);
   right: 0;
   left: 0;
   bottom: 0;
@@ -372,8 +372,14 @@ body.header-hidden {
   max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
+  border-top: none;
   z-index: var(--z-modal);
-  transform: translateY(-100%);
+  /*
+    注意：当 top 不是 0 时，元素的 height 计算不包含顶部偏移，
+    直接 translateY(-100%) 会残留 top 区域可见（导致导航栏被抽屉盖住）。
+    这里额外减去 top 值，确保关闭时完全移出视口。
+  */
+  transform: translateY(calc(-100% - var(--header-height) + 1px));
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
