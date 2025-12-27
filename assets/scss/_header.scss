@@ -354,7 +354,10 @@ body.header-hidden {
         */
 .drawer-overlay {
   position: fixed;
-  inset: 0;
+  top: calc(var(--header-height) - 1px);
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: var(--z-overlay);
   opacity: 0;
@@ -364,7 +367,7 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: calc(var(--header-height) - 1px);
   right: 0;
   left: 0;
   bottom: 0;
@@ -378,6 +381,7 @@ body.header-hidden {
   display: flex;
   flex-direction: column;
   padding: calc(var(--space) * 4);
+  border-top: 0;
 }
 
 body[data-drawer-open='true'] {
