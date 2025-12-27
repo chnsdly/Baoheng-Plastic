@@ -43,8 +43,7 @@
   box-shadow: var(--shadow);
   flex-direction:column;
   background:#fff;
-  border:1px solid #e5e7eb;
-  border-radius:12px;
+  border-radius:var(--radius);
   overflow:hidden;
   transition:transform .15s ease, box-shadow .15s ease;
 }
