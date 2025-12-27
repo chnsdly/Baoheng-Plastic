@@ -364,7 +364,7 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: calc(var(--header-height) - 1px);
+  top: calc(var(--header-height) + var(--border-w) - 1px);
   right: 0;
   left: 0;
   bottom: 0;
@@ -374,7 +374,7 @@ body.header-hidden {
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   border-top: none;
   z-index: var(--z-modal);
-  transform: translateY(calc(-100% - var(--header-height) + 1px));
+  transform: translateY(calc(-100% - var(--header-height) - var(--border-w) + 1px));
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -386,6 +386,7 @@ body[data-drawer-open='true'] {
 
   #site-header {
     z-index: calc(var(--z-modal) + 2); /* > drawer(1000) 和 overlay(900) */
+    border-bottom-color: transparent;
   }
 
   .drawer-overlay {
