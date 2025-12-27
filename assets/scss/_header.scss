@@ -1,4 +1,9 @@
 
+:root {
+  /* 记录包含描边在内的导航栏总高度，便于抽屉精确对齐 */
+  --header-stack-height: calc(var(--header-height) + var(--border-w));
+}
+
 .site-header {
   --burger-length: 30px;      /* 汉堡线长 */
   --burger-thickness: 3px;    /* 汉堡线粗 */
@@ -31,7 +36,7 @@
 }
 
 body {
-  --header-offset: var(--header-height);
+  --header-offset: var(--header-stack-height);
   padding-top: var(--header-offset);
   transition: padding-top var(--t-normal) var(--ease);
 }
@@ -364,7 +369,7 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: var(--header-height);
+  top: var(--header-stack-height);
   right: 0;
   left: 0;
   bottom: 0;
@@ -374,7 +379,7 @@ body.header-hidden {
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
   border-top: 0 !important;
   z-index: var(--z-modal);
-  transform: translateY(calc(-100% - var(--header-height)));
+  transform: translateY(calc(-100% - var(--header-stack-height)));
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -386,7 +391,8 @@ body[data-drawer-open='true'] {
 
   #site-header {
     z-index: calc(var(--z-modal) + 2); /* > drawer(1000) 和 overlay(900) */
-    border-bottom-color: transparent;
+    border-bottom: 0;
+    box-shadow: none;
   }
 
   .drawer-overlay {
