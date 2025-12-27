@@ -137,11 +137,24 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const header = document.getElementById('site-header');
+    const root = document.documentElement;
     const body = document.body;
     const bodyHiddenClass = 'header-hidden';
     const langSwitcher = document.querySelector('.lang-switcher');
     const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
     const langDropdown = langSwitcher ? langSwitcher.querySelector('.lang-switcher__dropdown') : null;
+
+    // 在运行时同步导航高度，确保抽屉定位与实际高度一致
+    const syncHeaderHeight = () => {
+      if (!header || !root) return;
+      const measuredHeight = header.getBoundingClientRect().height;
+      if (measuredHeight > 0) {
+        root.style.setProperty('--header-height', `${Math.round(measuredHeight)}px`);
+      }
+    };
+
+    syncHeaderHeight();
+    window.addEventListener('resize', syncHeaderHeight);
 
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
