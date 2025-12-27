@@ -142,6 +142,18 @@
     const langSwitcher = document.querySelector('.lang-switcher');
     const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
     const langDropdown = langSwitcher ? langSwitcher.querySelector('.lang-switcher__dropdown') : null;
+    const syncHeaderMetrics = () => {
+      if (!header) return;
+      const measured = Math.round(header.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--header-height', `${measured}px`);
+    };
+
+    syncHeaderMetrics();
+    if (header && 'ResizeObserver' in window) {
+      const resizeObserver = new ResizeObserver(syncHeaderMetrics);
+      resizeObserver.observe(header);
+    }
+    window.addEventListener('resize', syncHeaderMetrics);
 
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
@@ -233,12 +245,14 @@
       body.setAttribute('data-drawer-open', 'true');
       if (drawerToggler) drawerToggler.classList.add('open');
       if (drawerToggler) drawerToggler.setAttribute('aria-expanded', 'true');
+      syncHeaderMetrics();
       showRootMenu();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
       if (drawerToggler) drawerToggler.classList.remove('open');
       if (drawerToggler) drawerToggler.setAttribute('aria-expanded', 'false');
+      syncHeaderMetrics();
       showRootMenu();
     };
 

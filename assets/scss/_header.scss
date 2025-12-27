@@ -17,7 +17,8 @@
   left: 0;
   right: 0;
   z-index: var(--z-header);
-  height: var(--header-height);
+  height: auto;
+  min-height: var(--header-height);
   padding-inline: calc(var(--space) * 3.5);
   background: linear-gradient(120deg,
     color-mix(in srgb, var(--card) 92%, white 8%),
@@ -364,7 +365,7 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: var(--header-offset);
   right: 0;
   left: 0;
   bottom: 0;
@@ -372,8 +373,9 @@ body.header-hidden {
   max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
+  border-top: 0 !important;
   z-index: var(--z-modal);
-  transform: translateY(-100%);
+  transform: translateY(calc(-100% - var(--header-offset)));
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -385,6 +387,8 @@ body[data-drawer-open='true'] {
 
   #site-header {
     z-index: calc(var(--z-modal) + 2); /* > drawer(1000) 和 overlay(900) */
+    border-bottom: 0;
+    box-shadow: none;
   }
 
   .drawer-overlay {
@@ -392,9 +396,9 @@ body[data-drawer-open='true'] {
     visibility: visible;
   }
 
-  .drawer {
-    transform: translateY(0);
-  }
+    .drawer {
+      transform: translateY(0);
+    }
 }
 
 .drawer__header {
