@@ -138,6 +138,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const header = document.getElementById('site-header');
     const body = document.body;
+    const root = document.documentElement;
     const bodyHiddenClass = 'header-hidden';
     const langSwitcher = document.querySelector('.lang-switcher');
     const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
@@ -208,6 +209,23 @@
     const rootMenuList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
     const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
     const submenuParents = drawerMenu ? drawerMenu.querySelectorAll('li') : [];
+
+    const updateHeaderMetrics = () => {
+      if (!header) return;
+      const measured = header.getBoundingClientRect().height;
+      if (!measured) return;
+      const measuredPx = `${measured}px`;
+      root.style.setProperty('--header-height', measuredPx);
+      body.style.setProperty('--header-offset', measuredPx);
+    };
+
+    updateHeaderMetrics();
+    if (header) {
+      const resizeObserver = new ResizeObserver(updateHeaderMetrics);
+      resizeObserver.observe(header);
+    }
+    window.addEventListener('resize', updateHeaderMetrics);
+    window.addEventListener('orientationchange', updateHeaderMetrics);
 
     const showRootMenu = () => {
       if (rootMenuList) rootMenuList.classList.remove('is-hidden');
