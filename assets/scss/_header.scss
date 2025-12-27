@@ -354,7 +354,10 @@ body.header-hidden {
         */
 .drawer-overlay {
   position: fixed;
-  inset: 0;
+  top: calc(var(--header-height) - 1px);
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: var(--z-overlay);
   opacity: 0;
@@ -364,7 +367,7 @@ body.header-hidden {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: calc(var(--header-height) - 1px);
   right: 0;
   left: 0;
   bottom: 0;
@@ -385,6 +388,8 @@ body[data-drawer-open='true'] {
 
   #site-header {
     z-index: calc(var(--z-modal) + 2); /* > drawer(1000) 和 overlay(900) */
+    border-bottom-color: transparent;
+    box-shadow: none;
   }
 
   .drawer-overlay {
