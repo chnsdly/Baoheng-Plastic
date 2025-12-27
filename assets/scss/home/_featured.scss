@@ -72,8 +72,7 @@
 }
 .product-card.eq .card-body h3{
   margin:.15rem 0 .2rem;      /* ← 标题顶部更紧凑（原 .1/.25） */
-  font-size:var(--fs-1);
-  font-weight: 400;
+  font-size:var(--fs-xs);
   line-height:1.35;
   text-align:center;
 }
