@@ -173,13 +173,13 @@ body.header-hidden {
 
 
 .dropdown-menu li + li {
-  border-top: var(--border-w) solid color-mix(in srgb, var(--border) 70%, transparent);
+  border-top: var(--border-w) solid color-mix(in srgb, var(--border) 30%, transparent);
 }
 
 
 .lang-switcher__dropdown {
   @include dropdown-panel(right, 150px);
-  border-radius: calc(var(--radius) * 0.85);
+  border-radius: var(--radius);
   min-width: 100%;
   width: max-content;
 }
