@@ -368,12 +368,15 @@ body.header-hidden {
   right: 0;
   left: 0;
   bottom: 0;
+  --drawer-offset: calc(var(--header-height) - 1px);
   width: auto;
   max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
+  border-top: none;
   z-index: var(--z-modal);
-  transform: translateY(-100%);
+  transform: translateY(calc(-100% + var(--drawer-offset)));
+  pointer-events: none;
   transition: transform var(--t-normal) var(--ease);
   display: flex;
   flex-direction: column;
@@ -393,7 +396,8 @@ body[data-drawer-open='true'] {
   }
 
   .drawer {
-    transform: translateY(0);
+    transform: translateY(var(--drawer-offset));
+    pointer-events: auto;
   }
 }
 
