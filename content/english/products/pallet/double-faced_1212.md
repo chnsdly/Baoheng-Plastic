@@ -1,6 +1,6 @@
 ---
 
-title: "1212-PB-ODDF15I"
+title: "1212 open deck double-faced plastic pallet"
 featured_image_asset: "/images/products/pallet/double-faced/1212-hero.jpg"
 product_type: "Plastic Pallet"
 pallet_category:

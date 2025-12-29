@@ -1,19 +1,19 @@
 ---
 
-title: "1212-BP-OD3R15"
+title: "1212 open deck 3-runner plastic pallet"
 featured_image_asset: "/images/products/pallet/3-runner/1212-hero.jpg"
 product_type: "Plastic Pallet"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
   - image_asset: "/images/products/pallet/3-runner/1212-showcase.jpg"
-    alt: "1212-BP-OD3R15 showcase 1"
+    alt: "1212 open deck 3-runner plastic pallet showcase 1"
   - image_asset: "/images/products/pallet/3-runner/showcase-1.jpg"
-    alt: "1212-BP-OD3R15 showcase 2"
+    alt: "1212 open deck 3-runner plastic pallet showcase 2"
   - image_asset: "/images/products/pallet/3-runner/showcase-2.jpg"
-    alt: "1212-BP-OD3R15 showcase 3"
+    alt: "1212 open deck 3-runner plastic pallet showcase 3"
   - image_asset: "/images/products/pallet/3-runner/showcase-3.jpg"
-    alt: "1212-BP-OD3R15 showcase 3"
+    alt: "1212 open deck 3-runner plastic pallet showcase 3"
 
 specs:
   dimensions: "1200 × 1200 × 150 mm"
@@ -48,11 +48,11 @@ detail_intro: |-
 
 industry_gallery:
   - image_asset: "/images/products/pallet/3-runner/industry-1.jpg"
-    alt: "1212-BP-OD3R15 industry use 1"
+    alt: "1212 open deck 3-runner plastic pallet industry use 1"
   - image_asset: "/images/products/pallet/3-runner/industry-2.jpg"
-    alt: "1212-BP-OD3R15 industry use 2"
+    alt: "1212 open deck 3-runner plastic pallet industry use 2"
   - image_asset: "/images/products/pallet/3-runner/industry-3.jpg"
-    alt: "1212-BP-OD3R15 industry use 1"
+    alt: "1212 open deck 3-runner plastic pallet industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 
