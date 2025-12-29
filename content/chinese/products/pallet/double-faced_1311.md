@@ -1,6 +1,6 @@
 ---
 
-title: "1311-PB-ODDF15I"
+title: "1311-网格双面型塑料托盘"
 featured_image_asset: "/images/products/pallet/double-faced/1311-hero.jpg"
 product_type: "塑料托盘"
 pallet_category:
