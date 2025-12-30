@@ -1,59 +1,66 @@
-{{/* Hugo Pipes: 处理 SCSS, 压缩并添加指纹 */}}
-{{ $style := resources.Get "scss/main.scss" | toCSS }}
-{{ if hugo.IsProduction }}
-  {{ $style = $style | minify | fingerprint }}
-{{ end }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{- /* Hugo Pipes: SCSS -> CSS; production: minify + fingerprint (+SRI) */ -}}
+{{- $style := resources.Get "scss/main.scss" | toCSS -}}
+{{- if hugo.IsProduction -}}
+  {{- $style = $style | minify | fingerprint -}}
+{{- end -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}"
+{{- if and hugo.IsProduction $style.Data.Integrity -}} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{- end -}}>
 
-{{ $description := .Description | default .Site.Params.description }}
-{{ $keywords := .Params.keywords | default .Site.Params.keywords }}
-{{ $image := "" }}
-{{ with .Params.images }}
-  {{ $image = (index . 0) | absURL }}
-{{ else }}
-  {{ $image = .Site.Params.default_image | absURL }}
-{{ end }}
+{{- /* Page metadata */ -}}
+{{- $title := .Site.Title -}}
+{{- if not .IsHome -}}
+  {{- with .Title -}}
+    {{- $title = printf "%s | %s" . $.Site.Title -}}
+  {{- end -}}
+{{- end -}}
 
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+{{- $description := (.Description | default .Site.Params.description) | plainify | htmlEscape -}}
+
+{{- $image := "" -}}
+{{- with .Params.images -}}
+  {{- $image = (index . 0) | absURL -}}
+{{- else -}}
+  {{- with .Site.Params.default_image -}}
+    {{- $image = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $robots := .Params.robots | default "index, follow" -}}
+
+<title>{{ $title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ $description }}">
-<meta name="keywords" content="{{ delimit $keywords ", " }}">
 <meta name="author" content="{{ .Site.Params.company_name | default .Site.Title }}">
-<meta name="googlebot" content="index, follow">
-<meta name="bingbot" content="index, follow">
+<meta name="robots" content="{{ $robots }}">
 
 <link rel="canonical" href="{{ .Permalink }}">
+
+{{- /* RSS (optional; keep if you publish articles/news) */ -}}
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | relLangURL }}">
+
+{{- /* hreflang */ -}}
 <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
-{{ range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-{{ end }}
+{{- range .AllTranslations -}}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{- end -}}
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}">
-<meta name="robots" content="{{ .Params.robots | default "index, follow" }}">
-
-<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+{{- /* Open Graph */ -}}
+<meta property="og:title" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="{{ .Site.Language.Lang }}">
+{{- if $image -}}
 <meta property="og:image" content="{{ $image }}">
-<meta property="og:image:alt" content="{{ .Title | default .Site.Title }}">
+<meta property="og:image:alt" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
+{{- end -}}
 
+{{- /* Twitter Card (optional; harmless to keep) */ -}}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
 <meta name="twitter:description" content="{{ $description }}">
+{{- if $image -}}
 <meta name="twitter:image" content="{{ $image }}">
-
-{{ with .Site.Params.organization }}
-  {{ $orgLogo := .logo | default ($image) }}
-  {{ if not (hasPrefix $orgLogo "http") }}
-    {{ $orgLogo = $orgLogo | absURL }}
-  {{ end }}
-  {{ $address := merge (dict "@type" "PostalAddress") (.address | default dict) }}
-  {{ $orgData := dict "@context" "https://schema.org" "@type" "Organization" "name" .name "legalName" .legalName "url" .url "logo" $orgLogo "telephone" .telephone "email" .email "address" $address }}
-  <script type="application/ld+json">{{ $orgData | jsonify }}</script>
-{{ end }}
-
-{{ $webSiteData := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "inLanguage" .Site.Language.Lang "potentialAction" (dict "@type" "SearchAction" "target" (printf "%s?search={query}" .Site.BaseURL) "query-input" "required name=query") }}
-<script type="application/ld+json">{{ $webSiteData | jsonify }}</script>
+{{- end -}}
