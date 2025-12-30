@@ -3,10 +3,6 @@ languageCode = 'en-us'
 title = 'Baoheng Plastic'
 enableRobotsTXT = true
 
-[sitemap]
-  changefreq = 'weekly'
-  priority = 0.7
-
 [params]
   company_name = 'Baoheng Plastic'
   description = 'Baoheng Plastic manufactures injection- and blow-molded plastic pallets, bins, and sanitation products for warehousing, logistics, cold chain, food, and industrial clients worldwide.'
