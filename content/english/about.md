@@ -33,7 +33,7 @@ visuals:
   items:
     - title: "Factory floor readiness"
       copy: "20,000 m² workshop with 400–2800T injection and 1,000L blow-molding lines to cover pallets, bins, and cans."
-      image: "/images/world-map.jpg"
+      image: "/images/visuals-1.jpg"
       alt: "Injection and blow molding factory floor"
       bullets:
         - "Dedicated lanes for pallets, crates, and sanitation SKUs"
@@ -41,7 +41,7 @@ visuals:
         - "Color and logo changeovers handled on the same shift"
     - title: "Quality and material testing"
       copy: "Incoming resin checks, IPQC sampling, and simulated load tests keep every batch reliable."
-      image: "/images/world-map.jpg"
+      image: "/images/visuals-2.jpg"
       alt: "Quality lab testing pallets and bins"
       bullets:
         - "Impact, stacking, cold-room, and forklift trials"
@@ -49,7 +49,7 @@ visuals:
         - "Food-grade and anti-static options validated per run"
     - title: "Container loading & logistics"
       copy: "Packing plans optimized for consolidation, nested designs, and safe arrival at ports and warehouses."
-      image: "/images/world-map.jpg"
+      image: "/images/visuals-3.jpg"
       alt: "Pallets and crates staged for container loading"
       bullets:
         - "FOB/CIF/DDP experience with full-container and LCL"
