@@ -14,7 +14,7 @@ hero:
     - icon: "coverage"
       text: "交付 30+ 国家/地区项目"
   cta:
-    href: "/chinese/contact"
+    href: "/zh/contact"
     label: "获取报价"
     ariaLabel: "获取报价"
 stats:

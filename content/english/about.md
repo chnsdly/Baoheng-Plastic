@@ -14,7 +14,7 @@ hero:
     - icon: "coverage"
       text: "Projects delivered to 30+ countries/regions"
   cta:
-    href: "/english/contact"
+    href: "/contact"
     label: "Get a Quote"
     ariaLabel: "Get a Quote"
 stats:
