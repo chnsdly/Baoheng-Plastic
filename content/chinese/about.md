@@ -28,12 +28,12 @@ stats:
     label: "老客户年度复购率"
     
 visuals:
-  title: "图说生产与交付"
+  title: "生产与交付"
   subtitle: "生产现场、质检实验室与装柜流程的关键环节。"
   items:
     - title: "工厂产线"
       copy: "20,000 m² 厂房，400–2800T 注塑与 1,000L 吹塑覆盖托盘、周转箱和环卫桶。"
-      image: "/images/world-map.jpg"
+      image: "/images/visuals-1.jpg"
       alt: "注塑与吹塑工厂车间"
       bullets:
         - "托盘/周转箱/环卫桶分线生产，切换快"
@@ -41,7 +41,7 @@ visuals:
         - "颜色、Logo、标签区可同班切换"
     - title: "材料与质检"
       copy: "来料检测、制程抽检与模拟载荷试验，确保每一批次稳定。"
-      image: "/images/world-map.jpg"
+      image: "/images/visuals-2.jpg"
       alt: "实验室质检托盘和周转箱"
       bullets:
         - "抗冲、堆码、冷库、叉车等模拟测试"
@@ -49,7 +49,7 @@ visuals:
         - "食品级与抗静电料线分批验证"
     - title: "装柜与物流"
       copy: "按拼柜/整柜制定装载方案，利用嵌套设计保障稳固与装载率。"
-      image: "/images/world-map.jpg"
+      image: "/images/visuals-3.jpg"
       alt: "托盘与周转箱的装柜现场"
       bullets:
         - "熟悉 FOB/CIF/DDP 的整柜与零担交付"
@@ -109,12 +109,16 @@ global:
   map: "/images/world-map.jpg"
   mapAlt: "全球客户分布地图"
   highlights:
-    - "食品与饮料加工配送"
-    - "仓储物流与自动化立库"
-    - "医药与日化流通"
-    - "零售商超与电商仓配"
-    - "农业采收与基地配送"
-    - "再生回收与废料分拣"
+    - "食品饮料加工配送"
+    - "仓储物流与自动化"
+    - "医药日化流通"
+    - "零售电商仓配"
+    - "农业采收配送"
+    - "回收再生分拣"
+    - "冷链周转运输"
+    - "化工原料仓储"
+    - "制造业产线周转"
+    - "出口集装箱转运"
 sustainability:
   title: "可持续发展"
   cards:

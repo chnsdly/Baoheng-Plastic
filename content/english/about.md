@@ -28,7 +28,7 @@ stats:
     label: "Yearly repurchase rate from existing clients"
     
 visuals:
-  title: "In Pictures: How We Build and Deliver"
+  title: "How We Build and Deliver"
   subtitle: "Factory floor readiness, QA labs, and container loading to keep projects on schedule."
   items:
     - title: "Factory floor readiness"
@@ -109,12 +109,16 @@ global:
   map: "/images/world-map.jpg"
   mapAlt: "World map highlighting customer regions"
   highlights:
-    - "Food and beverage processing and distribution"
-    - "Warehousing, logistics, and AS/RS"
-    - "Pharma and personal care distribution"
-    - "Retail and e-commerce fulfillment"
-    - "Agricultural harvesting and base distribution"
-    - "Recycling and waste sorting"
+    - "Food & beverage processing & distribution"
+    - "Warehousing, logistics & automation (AS/RS)"
+    - "Pharma & FMCG distribution"
+    - "Retail & e-commerce fulfillment"
+    - "Agriculture harvest & delivery"
+    - "Recycling & waste sorting"
+    - "Cold chain handling & transport"
+    - "Chemical storage & handling"
+    - "Manufacturing in-plant handling"
+    - "Export shipping & port operations"
 sustainability:
   title: "Sustainability"
   cards:
