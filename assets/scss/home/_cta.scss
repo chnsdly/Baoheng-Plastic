@@ -183,17 +183,6 @@
   color: var(--muted);
 }
 
-.cta .lead-form {
-  margin: 0;
-  padding: 0;
-}
-
-.cta .lead-form button {
-  background: #0f172a;
-  color: #f8fafc;
-  padding-inline: 1.4rem;
-}
-
 @media (max-width: 48rem) {
   .cta__contact-item { padding: space(1.25); }
   .cta__card { padding: space(2); }

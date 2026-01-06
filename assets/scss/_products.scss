@@ -800,37 +800,6 @@
   color: var(--muted);
 }
 
-.product-details__form .lead-form{
-  display: grid;
-  gap: space(1);
-  max-width: none;
-  margin-inline: 0;
-  width: 100%;
-  margin-block-start: 0;
-}
-
-.product-details__form .lead-form label{
-  display: grid;
-  gap: space(.25);
-  color: var(--on-surface);
-}
-
-.product-details__form .lead-form input,
-.product-details__form .lead-form textarea{
-  inline-size: 100%;
-  padding: space(1);
-  border-radius: var(--radius-sm, 8px);
-  border: var(--border-w) solid var(--border);
-  background: var(--surface);
-  color: var(--on-surface);
-}
-
-.product-details__form .lead-form button{
-  justify-self: start;
-  @extend .button;
-  @extend .button--primary;
-}
-
 @include mq-up(md){
   .product-single__container{
     grid-template-columns: minmax(12rem, 18rem) 1fr;
