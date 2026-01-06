@@ -716,6 +716,11 @@
   gap: space(1.25);
 }
 
+.product-details__form .lead-form{
+  max-width: none;
+  margin: 0;
+}
+
 .product-showcase-grid{
   --product-showcase-columns: 1;
   margin-bottom: space(2);
