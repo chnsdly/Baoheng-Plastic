@@ -27,7 +27,7 @@
 }
 
 /* 输入与文本域 */
-.lead-form :is(input[type="text"], input[type="email"], input:not([type]), textarea){
+.lead-form :is(input[type="text"], input[type="email"], input[type="tel"], input:not([type]), textarea){
   appearance: none;
   border: var(--border-w) solid var(--border);
   background: var(--surface);
