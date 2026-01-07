@@ -200,6 +200,11 @@
 
           window.history.replaceState({}, '', url.toString());
           toggleCards(category);
+
+          if (!desktopQuery.matches && sidebar) {
+            sidebar.classList.remove('is-open');
+            syncSidebarState();
+          }
         });
       });
 
