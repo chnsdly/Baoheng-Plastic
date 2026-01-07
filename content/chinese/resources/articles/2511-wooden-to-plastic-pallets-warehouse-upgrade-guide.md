@@ -2,7 +2,7 @@
 title: "从木托盘到塑料托盘：仓储升级实用指南"
 description: "如果你正准备升级仓库、上货架，或者只是想少为托盘操心，这篇指南可以帮你在下一个托盘决策前，先看清全局。"
 layout: "resources/"
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/resources/articles-0.jpg"
 categories: "articles" # articles | downloads | news | faq
 tags: ["HDPE","Testing"]
 reading: "5 分钟"
