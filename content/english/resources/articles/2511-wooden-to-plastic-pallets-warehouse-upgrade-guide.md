@@ -2,7 +2,7 @@
 title: "From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades"
 description: "If you’re getting ready to upgrade your warehouse, add racking, or simply want fewer pallet headaches, this guide will help you see the big picture before you make your next pallet decision."
 layout: "resources/"
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/resources/articles-0.jpg"
 categories: "articles" # articles | downloads | news | faq
 tags: ["HDPE","Testing"]
 reading: "5 分钟"
