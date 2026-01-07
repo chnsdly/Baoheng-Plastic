@@ -1,7 +1,7 @@
 ---
 title: "East China 3PL E-commerce Hub: Standardizing Pallets to Boost Throughput"
 description: "A warehousing logistics case showing how pallet standardization and racking-load validation reduced damage and improved outbound speed."
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/industry/ware-1.jpg"
 date: 2025-02-10
 tags: ["Case Study", "Warehousing", "3PL", "Pallet Standardization"]
 ---

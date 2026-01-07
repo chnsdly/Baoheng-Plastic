@@ -1,7 +1,7 @@
 ---
 title: "华东3PL电商仓：托盘标准化提升周转效率的案例"
 description: "通过统一托盘规格与货架载荷核算，降低破损率并提升出库效率的仓储物流案例。"
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/industry/ware-1.jpg"
 date: 2025-02-10
 tags: ["案例", "仓储物流", "电商仓", "托盘标准化"]
 ---

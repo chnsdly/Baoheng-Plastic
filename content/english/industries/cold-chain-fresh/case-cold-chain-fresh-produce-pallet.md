@@ -1,7 +1,7 @@
 ---
 title: "North China Fresh Cold Chain: Plastic Pallets That Survived Temperature Swings"
 description: "A practical case of using washable, low-temperature plastic pallets for a regional cold-chain network to cut breakage and stabilize handling."
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/industry/cold-1.jpg"
 date: 2025-03-12
 tags: ["Case Study", "Cold Chain", "Fresh Produce", "Plastic Pallet"]
 ---

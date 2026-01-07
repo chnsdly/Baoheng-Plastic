@@ -1,7 +1,7 @@
 ---
 title: "South China Food & Beverage Hub: Washable Plastic Pallets That Steady Multi-Temperature Turns"
 description: "A realistic case of using color-coded, washable plastic pallets to reduce breakage and cross-contamination risks in a mixed beverage and chilled prepared-food network."
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/industry/food-1.jpg"
 date: 2025-05-23
 tags: ["Case Study", "Food & Beverage", "Plastic Pallet", "Cold Chain"]
 ---

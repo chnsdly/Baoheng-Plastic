@@ -1,7 +1,7 @@
 ---
 title: "华南食品饮料分拨中心：可洗塑料托盘稳定冷链周转的案例复盘"
 description: "在多温区、混合SKU的饮料与预制菜分拨中，用可洗塑料托盘与分色标识降低破损与串味风险的实践。"
-cover_asset: "images/insights/hero.jpg"
+cover_asset: "images/industry/food-1.jpg"
 date: 2025-05-23
 tags: ["案例", "食品饮料", "塑料托盘", "冷链周转"]
 ---
