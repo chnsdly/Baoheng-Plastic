@@ -46,6 +46,12 @@ body {
   padding-inline: calc(var(--space) * 1.5);
 }
 
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space) * 2);
+  min-width: 0;
+}
 
 /* ******************** Logo无样式 ******************** */
 
@@ -76,12 +82,9 @@ body {
 }
 
 .navbar__menu {
-  flex-grow: 1;
   display: flex;
-  justify-content: center;
   flex-wrap: nowrap;
   min-width: 0;
-  margin-inline: calc(var(--space) * 3); 
 }
 
 .navbar__menu>ul {
@@ -225,6 +228,34 @@ body {
   /* 确保右侧操作区不会收缩 */
   flex-shrink: 0;
   gap: calc(var(--space) * 2);
+}
+
+.navbar__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--space) * 0.9) calc(var(--space) * 2.2);
+  border-radius: calc(var(--radius) * 0.7);
+  background: var(--brand);
+  color: var(--on-brand);
+  font-size: var(--fs-xxs);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: transform var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease);
+}
+
+.navbar__cta:hover,
+.navbar__cta.is-active {
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--brand) 85%, #000 15%);
+  color: var(--on-brand);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+.navbar__cta:focus-visible {
+  @include focus-ring(3px);
 }
 
 /* 语言切换 */
@@ -484,7 +515,8 @@ body[data-drawer-open='true'] {
 @media (max-width: 1023.98px) {
 
   .navbar__menu,
-  .navbar__actions .lang-switcher {
+  .navbar__actions .lang-switcher,
+  .navbar__actions .navbar__cta {
     display: none;
   }
 
