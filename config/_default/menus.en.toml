@@ -5,7 +5,7 @@ identifier = "products"
 weight = 10
 
   [[main]]
-  name = "Plastic Pallet"
+  name = "Plastic Pallets"
   url = "/products/pallets/"
   parent = "products"
   weight = 11
