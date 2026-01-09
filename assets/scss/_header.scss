@@ -46,6 +46,12 @@ body {
   padding-inline: calc(var(--space) * 1.5);
 }
 
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space) * 3);
+  min-width: 0;
+}
 
 /* ******************** Logo无样式 ******************** */
 
@@ -76,12 +82,12 @@ body {
 }
 
 .navbar__menu {
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   min-width: 0;
-  margin-inline: calc(var(--space) * 3); 
+  margin-inline: 0;
 }
 
 .navbar__menu>ul {
@@ -225,6 +231,18 @@ body {
   /* 确保右侧操作区不会收缩 */
   flex-shrink: 0;
   gap: calc(var(--space) * 2);
+}
+
+.navbar__cta {
+  font-size: var(--fs-xxs);
+  min-block-size: 40px;
+  padding: space(1.5) space(2.5);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.navbar__cta:hover {
+  text-decoration: none;
 }
 
 /* 语言切换 */
@@ -484,7 +502,8 @@ body[data-drawer-open='true'] {
 @media (max-width: 1023.98px) {
 
   .navbar__menu,
-  .navbar__actions .lang-switcher {
+  .navbar__actions .lang-switcher,
+  .navbar__actions .navbar__cta {
     display: none;
   }
 
