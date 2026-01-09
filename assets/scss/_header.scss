@@ -46,6 +46,12 @@ body {
   padding-inline: calc(var(--space) * 1.5);
 }
 
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space) * 2.5);
+  min-width: 0;
+}
 
 /* ******************** Logo无样式 ******************** */
 
@@ -76,12 +82,10 @@ body {
 }
 
 .navbar__menu {
-  flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   min-width: 0;
-  margin-inline: calc(var(--space) * 3); 
 }
 
 .navbar__menu>ul {
@@ -227,6 +231,33 @@ body {
   gap: calc(var(--space) * 2);
 }
 
+.navbar__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--space) * 0.9) calc(var(--space) * 2.2);
+  border-radius: calc(var(--radius) * 0.6);
+  background: var(--brand);
+  color: var(--on-brand);
+  font-size: var(--fs-xxs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform var(--t-normal) var(--ease),
+              box-shadow var(--t-normal) var(--ease),
+              background-color var(--t-normal) var(--ease);
+}
+
+.navbar__cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.navbar__cta.is-active {
+  background: color-mix(in srgb, var(--brand) 85%, white 15%);
+}
+
 /* 语言切换 */
 .lang-switcher {
   position: relative;
@@ -294,6 +325,7 @@ body {
 }
 
 .navbar__menu a:focus-visible,
+.navbar__cta:focus-visible,
 .lang-switcher__button:focus-visible,
 .navbar__toggler:focus-visible {
   @include focus-ring(3px);

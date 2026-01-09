@@ -1,47 +1,56 @@
 <header class="site-header" id="site-header">
   <nav class="navbar">
+    {{ $current := . }}
+    {{ $quoteItems := where .Site.Menus.main "Identifier" "get-quote" }}
+    {{ $menuItems := where .Site.Menus.main "Identifier" "ne" "get-quote" }}
 
-    <div class="navbar__logo">
-      <a href="{{ "/" | relLangURL }}">
-        <img src='{{ (.Site.Params.logo | default "images/logo.png") | relURL }}' width="200" height="68"
-          alt='{{ .Site.Params.company_name | default .Site.Title }}'>
-      </a>
+    <div class="navbar__left">
+      <div class="navbar__logo">
+        <a href="{{ "/" | relLangURL }}">
+          <img src='{{ (.Site.Params.logo | default "images/logo.png") | relURL }}' width="200" height="68"
+            alt='{{ .Site.Params.company_name | default .Site.Title }}'>
+        </a>
+      </div>
+
+      <nav class="navbar__menu" aria-label="Main navigation">
+        <ul>
+          {{ range $menuItems }}
+          {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+          <li class="{{ if .HasChildren }}has-dropdown{{ end }}">
+            <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">
+              <span>{{ .Name }}</span>
+              {{ if .HasChildren }}
+              <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+              {{ end }}
+            </a>
+
+            {{ if .HasChildren }}
+            <ul class="dropdown-menu">
+              {{ range .Children }}
+              {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+              <li>
+                <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
     </div>
 
-    <nav class="navbar__menu" aria-label="Main navigation">
-      {{ $current := . }}
-      <ul>
-        {{ range .Site.Menus.main }}
-        {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-        <li class="{{ if .HasChildren }}has-dropdown{{ end }}">
-          <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">
-            <span>{{ .Name }}</span>
-            {{ if .HasChildren }}
-            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-              aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                clip-rule="evenodd" />
-            </svg>
-            {{ end }}
-          </a>
-
-          {{ if .HasChildren }}
-          <ul class="dropdown-menu">
-            {{ range .Children }}
-            {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-            <li>
-              <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
-          {{ end }}
-        </li>
-        {{ end }}
-      </ul>
-    </nav>
-
     <div class="navbar__actions">
+      {{ with $quoteItems }}
+      {{ $quoteItem := index . 0 }}
+      {{ $active := or ($current.IsMenuCurrent "main" $quoteItem) ($current.HasMenuCurrent "main" $quoteItem) }}
+      <a class="navbar__cta {{ if $active }}is-active{{ end }}" href="{{ $quoteItem.URL | relLangURL }}">{{ $quoteItem.Name }}</a>
+      {{ end }}
       {{ if hugo.IsMultilingual }}
       <div class="lang-switcher" data-behavior="toggle">
         <button class="lang-switcher__button" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
