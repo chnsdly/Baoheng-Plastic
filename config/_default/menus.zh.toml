@@ -1,140 +1,152 @@
 [[main]]
-name = "首页"
-url = "/"
-weight = 1
-
-[[main]]
 name = "产品"
-url = "#"
+url = "/products/"
 identifier = "products"
 weight = 10
 
   [[main]]
   name = "塑料托盘"
-  url = "/products/pallet/"
+  url = "/products/pallets/"
   parent = "products"
   weight = 11
 
   [[main]]
   name = "吹塑可嵌套塑料托盘"
-  url = "/products/blow-mold/"
+  url = "/products/blow-molded-pallets/"
   parent = "products"
   weight = 12
 
   [[main]]
   name = "板条箱"
-  url = "/products/crate-box/"
+  url = "/products/crates/"   # 具体看你产品真实英文再定
   parent = "products"
   weight = 13
 
-  
   [[main]]
   name = "可折叠塑料托盘箱"
-  url = "/products/fold/"
+  url = "/products/foldable-pallet-boxes/"
   parent = "products"
   weight = 14
 
   [[main]]
   name = "大型散装容器"
-  url = "/products/l-container/"
+  url = "/products/bulk-containers/"
   parent = "products"
   weight = 15
 
   [[main]]
   name = "塑料垃圾桶"
-  url = "/products/waste/"
-  identifier = "products-dimension"
+  url = "/products/waste-bins/"
   parent = "products"
   weight = 16
 
+
 [[main]]
-name = "行业案例"
-url = "#"
-identifier = "industries"
+name = "行业应用"
+url = "/applications/"
+identifier = "applications"
 weight = 20
 
   [[main]]
   name = "仓储物流"
-  url = "/industries/warehousing-logistics/"
-  parent = "industries"
+  url = "/applications/warehousing-logistics/"
+  parent = "applications"
   weight = 21
 
   [[main]]
   name = "冷链生鲜"
-  url = "/industries/cold-chain-fresh/"
-  parent = "industries"
+  url = "/applications/cold-chain-fresh/"
+  parent = "applications"
   weight = 22
 
   [[main]]
   name = "高位货架"
-  url = "/industries/high-bay-racking/"
-  parent = "industries"
+  url = "/applications/high-bay-racking/"
+  parent = "applications"
   weight = 23
 
   [[main]]
   name = "食品饮料"
-  url = "/industries/food-beverage/"
-  parent = "industries"
+  url = "/applications/food-beverage/"
+  parent = "applications"
   weight = 24
 
   [[main]]
   name = "农业"
-  url = "/industries/agriculture/"
-  parent = "industries"
+  url = "/applications/agriculture/"
+  parent = "applications"
   weight = 25
 
   [[main]]
   name = "制造与零部件"
-  url = "/industries/manufacturing-parts/"
-  parent = "industries"
+  url = "/applications/manufacturing-parts/"
+  parent = "applications"
   weight = 26
 
   [[main]]
   name = "化工原料"
-  url = "/industries/chemical-materials/"
-  parent = "industries"
+  url = "/applications/chemical-materials/"
+  parent = "applications"
   weight = 27
 
 
 [[main]]
-name = "资源中心"
-url = "#"
-identifier = "resources"
+name = "质量与制造"
+url = "/quality/"
+identifier = "quality"
 weight = 30
 
-  [[main]]
-  name = "博客"
-  url = "/resources/articles/"
-  parent = "resources"
-  weight = 31
+[[main]]
+name = "交付与支持"
+url = "/delivery/"
+identifier = "delivery"
+weight = 40
+
+
+[[main]]
+name = "资源中心"
+url = "/resources/"
+identifier = "resources"
+weight = 50
 
   [[main]]
-  name = "新闻动态"
-  url = "/resources/news/"
+  name = "案例库"
+  url = "/resources/case-studies/"
   parent = "resources"
-  weight = 32
+  weight = 51
+
+  [[main]]
+  name = "文章"
+  url = "/resources/insights/"
+  parent = "resources"
+  weight = 52
+
+  [[main]]
+  name = "选型/指南"
+  url = "/resources/guides/"
+  parent = "resources"
+  weight = 53
 
   [[main]]
   name = "下载中心"
   url = "/resources/downloads/"
   parent = "resources"
-  weight = 33
+  weight = 54
 
   [[main]]
   name = "常见问题"
   url = "/resources/faq/"
   parent = "resources"
-  weight = 34
+  weight = 55
+
+  [[main]]
+  name = "外贸术语表"
+  url = "/resources/glossary/"
+  parent = "resources"
+  weight = 56
 
 [[main]]
-name = "关于我们"
-url = "/about/"
-identifier = "about"
-weight = 40
-
-[[main]]
-name = "联系我们"
-url = "/contact/"
-identifier = "contact"
-weight = 50
-
+name = "获取报价"
+url = "/get-quote/"
+identifier = "get-quote"
+weight = 60

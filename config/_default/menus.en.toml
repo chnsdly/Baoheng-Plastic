@@ -1,139 +1,152 @@
 [[main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[main]]
 name = "Products"
-url = "#"
+url = "/products/"
 identifier = "products"
 weight = 10
 
   [[main]]
-  name = "Plastic Pallet"
-  url = "/products/pallet/"
+  name = "Plastic Pallets"
+  url = "/products/pallets/"
   parent = "products"
   weight = 11
 
   [[main]]
-  name = "Nestable Blow-Mold Pallets"
-  url = "/products/blow-mold/"
+  name = "Blow Molded Pallets"
+  url = "/products/blow-molded-pallets/"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "Plastic Crates & Boxes"
-  url = "/products/crate-box/"
+  name = "Crates & Boxes"
+  url = "/products/crates/"   # 具体看你产品真实英文再定
   parent = "products"
   weight = 13
 
-  
   [[main]]
   name = "Foldable Pallet Boxes"
-  url = "/products/fold/"
+  url = "/products/foldable-pallet-boxes/"
   parent = "products"
   weight = 14
 
   [[main]]
-  name = "Large Bulk Containers"
-  url = "/products/l-container/"
+  name = "Bulk Containers"
+  url = "/products/bulk-containers/"
   parent = "products"
   weight = 15
 
   [[main]]
-  name = "Plastic Waste Bins"
-  url = "/products/waste/"
-  identifier = "products-dimension"
+  name = "Waste Bins"
+  url = "/products/waste-bins/"
   parent = "products"
   weight = 16
 
+
 [[main]]
-name = "Industries"
-url = "#"
-identifier = "industries"
+name = "Applications"
+url = "/applications/"
+identifier = "applications"
 weight = 20
 
   [[main]]
-  name = "Warehousing"
-  url = "/industries/warehousing-logistics/"
-  parent = "industries"
+  name = "Warehousing Logistics"
+  url = "/applications/warehousing-logistics/"
+  parent = "applications"
   weight = 21
 
   [[main]]
-  name = "Cold Chain"
-  url = "/industries/cold-chain-fresh/"
-  parent = "industries"
+  name = "Cold Chain Fresh"
+  url = "/applications/cold-chain-fresh/"
+  parent = "applications"
   weight = 22
 
   [[main]]
-  name = "High Rack"
-  url = "/industries/high-bay-racking/"
-  parent = "industries"
+  name = "High Bay Racking"
+  url = "/applications/high-bay-racking/"
+  parent = "applications"
   weight = 23
 
   [[main]]
   name = "Food & Beverage"
-  url = "/industries/food-beverage/"
-  parent = "industries"
+  url = "/applications/food-beverage/"
+  parent = "applications"
   weight = 24
 
   [[main]]
   name = "Agriculture"
-  url = "/industries/agriculture/"
-  parent = "industries"
+  url = "/applications/agriculture/"
+  parent = "applications"
   weight = 25
 
   [[main]]
-  name = "Manufacturing"
-  url = "/industries/manufacturing-parts/"
-  parent = "industries"
+  name = "Manufacturing Parts"
+  url = "/applications/manufacturing-parts/"
+  parent = "applications"
   weight = 26
 
   [[main]]
-  name = "Chemicals"
-  url = "/industries/chemical-materials/"
-  parent = "industries"
+  name = "Chemical Materials"
+  url = "/applications/chemical-materials/"
+  parent = "applications"
   weight = 27
 
 
 [[main]]
-name = "Resources"
-url = "#"
-identifier = "resources"
+name = "Quality & Manufacturing"
+url = "/quality/"
+identifier = "quality"
 weight = 30
 
-  [[main]]
-  name = "articles"
-  url = "/resources/articles/"
-  parent = "resources"
-  weight = 31
+[[main]]
+name = "Delivery & Support"
+url = "/delivery/"
+identifier = "delivery"
+weight = 40
+
+
+[[main]]
+name = "Resources"
+url = "/resources/"
+identifier = "resources"
+weight = 50
 
   [[main]]
-  name = "News"
-  url = "/resources/news/"
+  name = "Case Studies"
+  url = "/resources/case-studies/"
   parent = "resources"
-  weight = 32
+  weight = 51
+
+  [[main]]
+  name = "Insights"
+  url = "/resources/insights/"
+  parent = "resources"
+  weight = 52
+
+  [[main]]
+  name = "Guides"
+  url = "/resources/guides/"
+  parent = "resources"
+  weight = 53
 
   [[main]]
   name = "Downloads"
   url = "/resources/downloads/"
   parent = "resources"
-  weight = 33
+  weight = 54
 
   [[main]]
   name = "FAQ"
   url = "/resources/faq/"
   parent = "resources"
-  weight = 34
+  weight = 55
+
+  [[main]]
+  name = "Glossary"
+  url = "/resources/glossary/"
+  parent = "resources"
+  weight = 56
 
 [[main]]
-name = "About Us"
-url = "/about/"
-identifier = "about"
-weight = 40
-
-[[main]]
-name = "Contact Us"
-url = "/contact/"
-identifier = "contact"
-weight = 50
+name = "Get Quote"
+url = "/get-quote/"
+identifier = "get-quote"
+weight = 60

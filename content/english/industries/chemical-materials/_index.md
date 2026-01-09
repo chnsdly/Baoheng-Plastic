@@ -1,4 +1,0 @@
----
-title: "Chemicals"
-description: ""
----
