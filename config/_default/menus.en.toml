@@ -5,19 +5,19 @@ identifier = "products"
 weight = 10
 
   [[main]]
-  name = "Plastic Pallets"
+  name = "Plastic Pallet"
   url = "/products/pallets/"
   parent = "products"
   weight = 11
 
   [[main]]
-  name = "Blow Molded Pallets"
+  name = "Nestable Blow-Mold Pallets"
   url = "/products/blow-molded-pallets/"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "Crates & Boxes"
+  name = "Plastic Crates & Boxes"
   url = "/products/crates/"   # 具体看你产品真实英文再定
   parent = "products"
   weight = 13
@@ -29,13 +29,13 @@ weight = 10
   weight = 14
 
   [[main]]
-  name = "Bulk Containers"
+  name = "Large Bulk Containers"
   url = "/products/bulk-containers/"
   parent = "products"
   weight = 15
 
   [[main]]
-  name = "Waste Bins"
+  name = "Plastic Waste Bins"
   url = "/products/waste-bins/"
   parent = "products"
   weight = 16
