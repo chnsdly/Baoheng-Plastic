@@ -1,24 +1,24 @@
 <header class="site-header" id="site-header">
-  <nav class="navbar">
-    <div class="navbar__left">
-      <div class="navbar__logo">
+  <nav class="site-header__nav">
+    <div class="site-header__group site-header__group--start">
+      <div class="site-header__logo">
         <a href="{{ "/" | relLangURL }}">
           <img src='{{ (.Site.Params.logo | default "images/logo.png") | relURL }}' width="200" height="68"
             alt='{{ .Site.Params.company_name | default .Site.Title }}'>
         </a>
       </div>
 
-      <nav class="navbar__menu" aria-label="Main navigation">
+      <nav class="site-header__menu" aria-label="Main navigation">
         {{ $current := . }}
-        <ul>
+        <ul class="site-header__menu-list">
           {{ range .Site.Menus.main }}
           {{ if ne .Identifier "get-quote" }}
           {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-          <li class="{{ if .HasChildren }}has-dropdown{{ end }}">
-            <a href="{{ .URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}">
-              <span>{{ .Name }}</span>
+          <li class="site-header__menu-item{{ if .HasChildren }} site-header__menu-item--has-children{{ end }}">
+            <a href="{{ .URL | relLangURL }}" class="site-header__menu-link{{ if $active }} site-header__menu-link--active{{ end }}">
+              <span class="site-header__menu-text">{{ .Name }}</span>
               {{ if .HasChildren }}
-              <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              <svg class="site-header__menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                 aria-hidden="true">
                 <path fill-rule="evenodd"
                   d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
@@ -28,11 +28,11 @@
             </a>
 
             {{ if .HasChildren }}
-            <ul class="dropdown-menu">
+            <ul class="site-header__submenu">
               {{ range .Children }}
               {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-              <li>
-                <a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a>
+              <li class="site-header__submenu-item">
+                <a href="{{ .URL | relLangURL }}" class="site-header__submenu-link{{ if $childActive }} site-header__submenu-link--active{{ end }}">{{ .Name }}</a>
               </li>
               {{ end }}
             </ul>
@@ -44,10 +44,10 @@
       </nav>
     </div>
 
-    <div class="navbar__actions">
+    <div class="site-header__actions">
       {{ $getQuoteItems := where .Site.Menus.main "Identifier" "get-quote" }}
       {{ with index $getQuoteItems 0 }}
-      <a class="navbar__cta button button--primary" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      <a class="site-header__cta button button--primary" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
       {{ end }}
       {{ if hugo.IsMultilingual }}
       <div class="lang-switcher" data-behavior="toggle">
@@ -78,34 +78,34 @@
       </div>
       {{ end }}
 
-      <button class="navbar__toggler" id="drawer-toggler" aria-label="Open menu" type="button" aria-expanded="false">
-        <span class="toggler-bar"></span>
-        <span class="toggler-bar"></span>
-        <span class="toggler-bar"></span>
+      <button class="site-header__toggle" id="drawer-toggler" aria-label="Open menu" type="button" aria-expanded="false">
+        <span class="site-header__toggle-bar"></span>
+        <span class="site-header__toggle-bar"></span>
+        <span class="site-header__toggle-bar"></span>
       </button>
     </div>
   </nav>
 </header>
 
-<div class="drawer-overlay" id="drawer-overlay"></div>
+<div class="drawer__overlay" id="drawer-overlay"></div>
 <aside class="drawer" id="drawer">
   <div class="drawer__header">
-    <span class="sr-only">Menu</span>
+    <span class="drawer__visually-hidden">Menu</span>
   </div>
 
   <nav class="drawer__menu" aria-label="Mobile navigation">
     {{ $current := . }}
-    <ul>
+    <ul class="drawer__menu-list">
       {{ range $index, $item := .Site.Menus.main }}
       {{ $active := or ($current.IsMenuCurrent "main" $item) ($current.HasMenuCurrent "main" $item) }}
       {{ $submenuId := printf "drawer-submenu-%d" $index }}
-      <li>
-        <a href="{{ $item.URL | relLangURL }}" class="{{ if $active }}is-active{{ end }}{{ if $item.HasChildren }} has-children{{ end }}" {{ if $item.HasChildren }}data-submenu="{{ $submenuId }}"{{ end }}>{{ $item.Name }}</a>
+      <li class="drawer__menu-item{{ if $item.HasChildren }} drawer__menu-item--has-children{{ end }}">
+        <a href="{{ $item.URL | relLangURL }}" class="drawer__menu-link{{ if $active }} drawer__menu-link--active{{ end }}{{ if $item.HasChildren }} drawer__menu-link--has-children{{ end }}" {{ if $item.HasChildren }}data-submenu="{{ $submenuId }}"{{ end }}>{{ $item.Name }}</a>
         {{ if $item.HasChildren }}
-        <ul class="submenu" id="{{ $submenuId }}">
+        <ul class="drawer__submenu" id="{{ $submenuId }}">
           {{ range $item.Children }}
           {{ $childActive := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-          <li><a href="{{ .URL | relLangURL }}" class="{{ if $childActive }}is-active{{ end }}">{{ .Name }}</a></li>
+          <li class="drawer__submenu-item"><a href="{{ .URL | relLangURL }}" class="drawer__submenu-link{{ if $childActive }} drawer__submenu-link--active{{ end }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -145,7 +145,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const header = document.getElementById('site-header');
     const body = document.body;
-    const bodyHiddenClass = 'header-hidden';
+    const bodyHiddenClass = 'page--header-hidden';
     const langSwitcher = document.querySelector('.lang-switcher');
     const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
     const langDropdown = langSwitcher ? langSwitcher.querySelector('.lang-switcher__dropdown') : null;
@@ -160,13 +160,13 @@
         const currentScrollY = window.scrollY;
 
         // 1. 处理 'is-scrolled' 样式 (背景/阴影变化)
-        if (currentScrollY > 10) header.classList.add('is-scrolled');
-        else header.classList.remove('is-scrolled');
+        if (currentScrollY > 10) header.classList.add('site-header--scrolled');
+        else header.classList.remove('site-header--scrolled');
 
         // 2. 处理 'is-hidden' 样式 (隐藏/显示)
         // 在页面顶部时，始终显示导航栏
         if (currentScrollY <= scrollThreshold) {
-          header.classList.remove('is-hidden');
+          header.classList.remove('site-header--hidden');
           body.classList.remove(bodyHiddenClass);
           lastScrollY = currentScrollY;
           return;
@@ -179,12 +179,12 @@
 
         // 向上滚动 (显示)
         if (currentScrollY < lastScrollY) {
-          header.classList.remove('is-hidden');
+          header.classList.remove('site-header--hidden');
           body.classList.remove(bodyHiddenClass);
         }
         // 向下滚动 (隐藏)
         else if (currentScrollY > lastScrollY) {
-          header.classList.add('is-hidden');
+          header.classList.add('site-header--hidden');
           body.classList.add(bodyHiddenClass);
         }
 
@@ -212,39 +212,39 @@
     const drawerToggler = document.getElementById('drawer-toggler');
     const drawerOverlay = document.getElementById('drawer-overlay');
     const drawerMenu = document.querySelector('.drawer__menu');
-    const rootMenuList = drawerMenu ? drawerMenu.querySelector(':scope > ul') : null;
-    const submenus = drawerMenu ? drawerMenu.querySelectorAll('.submenu') : [];
-    const submenuParents = drawerMenu ? drawerMenu.querySelectorAll('li') : [];
+    const rootMenuList = drawerMenu ? drawerMenu.querySelector(':scope > .drawer__menu-list') : null;
+    const submenus = drawerMenu ? drawerMenu.querySelectorAll('.drawer__submenu') : [];
+    const submenuParents = drawerMenu ? drawerMenu.querySelectorAll('.drawer__menu-item') : [];
 
     const showRootMenu = () => {
-      if (rootMenuList) rootMenuList.classList.remove('is-hidden');
-      submenuParents.forEach((item) => item.classList.remove('submenu-visible'));
-      submenus.forEach((menu) => menu.classList.remove('is-active'));
+      if (rootMenuList) rootMenuList.classList.remove('drawer__menu-list--hidden');
+      submenuParents.forEach((item) => item.classList.remove('drawer__menu-item--submenu-visible'));
+      submenus.forEach((menu) => menu.classList.remove('drawer__submenu--active'));
     };
 
     const showSubmenu = (submenuId) => {
       const target = drawerMenu ? drawerMenu.querySelector(`#${submenuId}`) : null;
       if (!target) return;
 
-      if (rootMenuList) rootMenuList.classList.add('is-hidden');
-      submenuParents.forEach((item) => item.classList.remove('submenu-visible'));
-      const parent = target.closest('li');
-      if (parent) parent.classList.add('submenu-visible');
+      if (rootMenuList) rootMenuList.classList.add('drawer__menu-list--hidden');
+      submenuParents.forEach((item) => item.classList.remove('drawer__menu-item--submenu-visible'));
+      const parent = target.closest('.drawer__menu-item');
+      if (parent) parent.classList.add('drawer__menu-item--submenu-visible');
       submenus.forEach((menu) => {
-        if (menu === target) menu.classList.add('is-active');
-        else menu.classList.remove('is-active');
+        if (menu === target) menu.classList.add('drawer__submenu--active');
+        else menu.classList.remove('drawer__submenu--active');
       });
     };
 
     const openDrawer = () => {
       body.setAttribute('data-drawer-open', 'true');
-      if (drawerToggler) drawerToggler.classList.add('open');
+      if (drawerToggler) drawerToggler.classList.add('site-header__toggle--open');
       if (drawerToggler) drawerToggler.setAttribute('aria-expanded', 'true');
       showRootMenu();
     };
     const closeDrawer = () => {
       body.setAttribute('data-drawer-open', 'false');
-      if (drawerToggler) drawerToggler.classList.remove('open');
+      if (drawerToggler) drawerToggler.classList.remove('site-header__toggle--open');
       if (drawerToggler) drawerToggler.setAttribute('aria-expanded', 'false');
       showRootMenu();
     };
@@ -262,7 +262,7 @@
       });
     }
 
-    const parentMenuLinks = drawerMenu ? drawerMenu.querySelectorAll('a.has-children') : [];
+    const parentMenuLinks = drawerMenu ? drawerMenu.querySelectorAll('.drawer__menu-link--has-children') : [];
     parentMenuLinks.forEach((link) => {
       link.addEventListener('click', (event) => {
         event.preventDefault();
@@ -285,13 +285,13 @@
 
     // --- 3. 语言切换 (桌面) ---
     const closeLangSwitcher = () => {
-      if (langSwitcher) langSwitcher.classList.remove('is-open');
+      if (langSwitcher) langSwitcher.classList.remove('lang-switcher--open');
       if (langButton) langButton.setAttribute('aria-expanded', 'false');
       if (langDropdown) langDropdown.setAttribute('data-open', 'false');
     };
 
     const openLangSwitcher = () => {
-      if (langSwitcher) langSwitcher.classList.add('is-open');
+      if (langSwitcher) langSwitcher.classList.add('lang-switcher--open');
       if (langButton) langButton.setAttribute('aria-expanded', 'true');
       if (langDropdown) langDropdown.setAttribute('data-open', 'true');
     };
@@ -299,7 +299,7 @@
     if (langButton) {
       langButton.addEventListener('click', (event) => {
         event.preventDefault();
-        const isOpen = langSwitcher?.classList.contains('is-open');
+        const isOpen = langSwitcher?.classList.contains('lang-switcher--open');
         if (isOpen) closeLangSwitcher();
         else openLangSwitcher();
       });
@@ -314,7 +314,7 @@
       });
 
       langSwitcher.addEventListener('mouseleave', () => {
-        if (langSwitcher.classList.contains('is-open')) {
+        if (langSwitcher.classList.contains('lang-switcher--open')) {
           closeLangSwitcher();
         }
       });
