@@ -114,6 +114,10 @@ body {
   position: relative;
 }
 
+.site-header__menu-link:hover {
+  text-decoration: none;
+}
+
 .site-header__menu-link--active {
   background-color: unquote("rgb(from var(--on-brand) r g b / 20%)");
 }
@@ -185,6 +189,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.2;
+  white-space: nowrap;
   text-decoration: none;
   transition: background-color var(--t-normal) var(--ease),
   color var(--t-normal) var(--ease);
