@@ -4,7 +4,6 @@
   --burger-thickness: 3px;    /* 汉堡线粗 */
   --burger-gap: 6px;          /* 汉堡线间距 */
 
-  --header-border-color: color-mix(in srgb, var(--border) 70%, transparent);
   --header-transition: background-color var(--t-normal) var(--ease),
                        border-color var(--t-normal) var(--ease),
                        box-shadow var(--t-normal) var(--ease),
@@ -107,7 +106,7 @@ body {
   align-items: center;
   gap: var(--space);
   padding-block: space(1);
-  padding-inline: space(2);
+  padding-inline: space(0.8);
   color: var(--on-brand); 
   font-size: var(--fs-xs);
   white-space: nowrap;       /* 强制链接不换行 */
