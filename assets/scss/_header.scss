@@ -4,12 +4,6 @@
   --burger-thickness: 3px;    /* 汉堡线粗 */
   --burger-gap: 6px;          /* 汉堡线间距 */
 
-  --header-transition: background-color var(--t-normal) var(--ease),
-                       border-color var(--t-normal) var(--ease),
-                       box-shadow var(--t-normal) var(--ease),
-                       transform var(--t-normal) var(--ease);
-  --header-blur: 16px;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +14,6 @@
     color-mix(in srgb, var(--card) 92%, white 8%),
     color-mix(in srgb, var(--surface) 86%, white 14%));
   box-shadow: var(--shadow);
-  transition: var(--header-transition);
 }
 
 body {
