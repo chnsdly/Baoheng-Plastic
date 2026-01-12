@@ -351,7 +351,7 @@ body {
 
 .drawer {
   position: fixed;
-  top: 0;
+  top: calc(var(--header-height) - 1px);
   right: 0;
   left: 0;
   bottom: 0;
@@ -359,6 +359,7 @@ body {
   max-width: none;
   background-color: var(--brand);
   background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
+  border-top: none;
   z-index: var(--z-modal);
   transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
