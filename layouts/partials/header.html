@@ -150,6 +150,18 @@
     const langButton = langSwitcher ? langSwitcher.querySelector('.lang-switcher__button') : null;
     const langDropdown = langSwitcher ? langSwitcher.querySelector('.lang-switcher__dropdown') : null;
 
+    const updateHeaderMetrics = () => {
+      if (!header) return;
+      const rect = header.getBoundingClientRect();
+      const styles = window.getComputedStyle(header);
+      const borderBottom = parseFloat(styles.borderBottomWidth) || 0;
+      document.documentElement.style.setProperty('--header-measured', `${rect.height}px`);
+      document.documentElement.style.setProperty('--drawer-overlap', `${borderBottom}px`);
+    };
+
+    updateHeaderMetrics();
+    window.addEventListener('resize', updateHeaderMetrics);
+
     // --- 1. 智能导航栏 (Smart Header) 逻辑 ---
     if (header) {
       let lastScrollY = window.scrollY;     // 上一次滚动位置
