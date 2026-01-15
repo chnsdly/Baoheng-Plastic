@@ -42,51 +42,51 @@ weight = 10
 
 
 [[main]]
-name = "行业应用"
-url = "/applications/"
-identifier = "applications"
+name = "选型指南"
+url = "/guide/"
+identifier = "guide"
 weight = 20
 
   [[main]]
   name = "仓储物流"
   url = "/applications/warehousing-logistics/"
-  parent = "applications"
+  parent = "guide"
   weight = 21
 
   [[main]]
   name = "冷链生鲜"
   url = "/applications/cold-chain-fresh/"
-  parent = "applications"
+  parent = "guide"
   weight = 22
 
   [[main]]
   name = "高位货架"
   url = "/applications/high-bay-racking/"
-  parent = "applications"
+  parent = "guide"
   weight = 23
 
   [[main]]
   name = "食品饮料"
   url = "/applications/food-beverage/"
-  parent = "applications"
+  parent = "guide"
   weight = 24
 
   [[main]]
   name = "农业"
   url = "/applications/agriculture/"
-  parent = "applications"
+  parent = "guide"
   weight = 25
 
   [[main]]
   name = "制造与零部件"
   url = "/applications/manufacturing-parts/"
-  parent = "applications"
+  parent = "guide"
   weight = 26
 
   [[main]]
   name = "化工原料"
   url = "/applications/chemical-materials/"
-  parent = "applications"
+  parent = "guide"
   weight = 27
 
 
@@ -120,12 +120,6 @@ weight = 50
   url = "/resources/insights/"
   parent = "resources"
   weight = 52
-
-  [[main]]
-  name = "选型/指南"
-  url = "/resources/guides/"
-  parent = "resources"
-  weight = 53
 
   [[main]]
   name = "下载中心"

@@ -42,51 +42,51 @@ weight = 10
 
 
 [[main]]
-name = "Applications"
-url = "/applications/"
-identifier = "applications"
+name = "Solutions Guide"
+url = "/guide/"
+identifier = "guide"
 weight = 20
 
   [[main]]
   name = "Warehousing Logistics"
   url = "/applications/warehousing-logistics/"
-  parent = "applications"
+  parent = "guide"
   weight = 21
 
   [[main]]
   name = "Cold Chain Fresh"
   url = "/applications/cold-chain-fresh/"
-  parent = "applications"
+  parent = "guide"
   weight = 22
 
   [[main]]
   name = "High Bay Racking"
   url = "/applications/high-bay-racking/"
-  parent = "applications"
+  parent = "guide"
   weight = 23
 
   [[main]]
   name = "Food & Beverage"
   url = "/applications/food-beverage/"
-  parent = "applications"
+  parent = "guide"
   weight = 24
 
   [[main]]
   name = "Agriculture"
   url = "/applications/agriculture/"
-  parent = "applications"
+  parent = "guide"
   weight = 25
 
   [[main]]
   name = "Manufacturing Parts"
   url = "/applications/manufacturing-parts/"
-  parent = "applications"
+  parent = "guide"
   weight = 26
 
   [[main]]
   name = "Chemical Materials"
   url = "/applications/chemical-materials/"
-  parent = "applications"
+  parent = "guide"
   weight = 27
 
 
