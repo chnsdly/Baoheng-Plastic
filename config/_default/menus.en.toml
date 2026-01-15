@@ -91,13 +91,13 @@ weight = 20
 
 
 [[main]]
-name = "Quality"
+name = "Quality & Capability"
 url = "/quality/"
 identifier = "quality"
 weight = 30
 
 [[main]]
-name = "Delivery"
+name = "How to Buy"
 url = "/delivery/"
 identifier = "delivery"
 weight = 40

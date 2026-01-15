@@ -91,13 +91,13 @@ weight = 20
 
 
 [[main]]
-name = "质量与制造"
+name = "质量制造"
 url = "/quality/"
 identifier = "quality"
 weight = 30
 
 [[main]]
-name = "交付与支持"
+name = "采购交付"
 url = "/delivery/"
 identifier = "delivery"
 weight = 40
