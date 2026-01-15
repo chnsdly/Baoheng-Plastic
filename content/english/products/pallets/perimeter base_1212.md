@@ -2,7 +2,7 @@
 
 title: "1212 open deck perimeter-base plastic pallet"
 featured_image_asset: "/images/products/pallet/perimeter-base/1212-hero.jpg"
-product_type: "Plastic Pallet"
+product_type: "Plastic Pallets"
 pallet_category:
   - "Stackable Plastic Pallets"
 showcase_gallery:

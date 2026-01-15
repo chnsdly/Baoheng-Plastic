@@ -3,7 +3,7 @@
 title: "1111 open deck 3-runner plastic pallet"
 featured_image_asset: "/images/products/pallet/3-runner/1111-hero.jpg"
 featured: true
-product_type: "Plastic Pallet"
+product_type: "Plastic Pallets"
 pallet_category:
   - "Rackable Plastic Pallets"
 showcase_gallery:
