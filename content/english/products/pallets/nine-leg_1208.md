@@ -2,7 +2,7 @@
 
 title: "1208 open deck 9-leg plastic pallet"
 featured_image_asset: "/images/products/pallet/nine-leg/1208-hero.jpg"
-product_type: "Plastic Pallet"
+product_type: "Plastic Pallets"
 pallet_category:
   - "Nestable Plastic Pallets"
 showcase_gallery:

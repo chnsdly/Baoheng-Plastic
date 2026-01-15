@@ -3,7 +3,7 @@
 title: "1210 food & medical plastic pallet"
 featured_image_asset: "/images/products/pallet/food/1210-blue-hero.jpg"
 featured: true
-product_type: "Plastic Pallet"
+product_type: "Plastic Pallets"
 pallet_category:
   - "Food & Pharmaceutical Pallets"
 showcase_gallery:

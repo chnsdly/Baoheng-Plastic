@@ -2,7 +2,7 @@
 
 title: "1111 open deck double-faced plastic pallet"
 featured_image_asset: "/images/products/pallet/double-faced/1111-hero.jpg"
-product_type: "Plastic Pallet"
+product_type: "Plastic Pallets"
 pallet_category:
   - "Stackable Plastic Pallets"
   - "Heavy-Duty Plastic Pallets"
