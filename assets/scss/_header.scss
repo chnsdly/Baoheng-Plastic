@@ -33,7 +33,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  max-width: 1200px;
   margin-inline: auto;
   padding-inline: calc(var(--space) * 1.5);
 }
@@ -100,7 +99,7 @@ body {
   gap: var(--space);
   padding-block: space(1);
   padding-inline: space(1);
-  color: var(--on-brand); 
+  color: #353535; 
   font-size: var(--fs-xs);
   white-space: nowrap;       /* 强制链接不换行 */
   text-decoration: none;
@@ -226,7 +225,8 @@ body {
 
 .navbar__cta {
   text-decoration: none;
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xs);
+  color: #ffffff;
   padding: space(1.5) space(3);
   box-shadow: none;
 }
@@ -246,11 +246,11 @@ body {
   gap: calc(var(--space) * 0.8);
   border: var(--border-w) solid color-mix(in srgb, var(--brand) 35%, transparent);
   border-radius: calc(var(--radius) * 0.5);
-  color: color-mix(in srgb, var(--on-surface) 88%, var(--on-brand) 12%);
+  color: #000000;
   font-size: var(--fs-xxs);
   letter-spacing: 0.01em;
   text-transform: none;
-  transition: color var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
+  background-color: #ffffff;
 }
 
 .lang-switcher__button:hover {
@@ -276,7 +276,7 @@ body {
 
 .lang-switcher.is-open .lang-switcher__button {
   border-color: color-mix(in srgb, var(--brand) 55%, transparent);
-  background: unquote("rgb(from var(--brand) r g b / 18%)");
+  background: #ffffff;
 }
 
 
