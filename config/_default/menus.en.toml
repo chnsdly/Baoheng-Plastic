@@ -42,64 +42,82 @@ weight = 10
 
 
 [[main]]
-name = "Solutions Guide"
-url = "/guide/"
-identifier = "guide"
+name = "Solutions"
+url = "/solutions/"
+identifier = "solutions"
 weight = 20
 
   [[main]]
-  name = "Warehousing Logistics"
-  url = "/applications/warehousing-logistics/"
-  parent = "guide"
+  name = "3PL & Warehousing"
+  url = "/solutions/3pl-warehousing/"
+  parent = "solutions"
   weight = 21
 
   [[main]]
-  name = "Cold Chain Fresh"
-  url = "/applications/cold-chain-fresh/"
-  parent = "guide"
+  name = "E-commerce Fulfillment"
+  url = "/solutions/ecommerce-fulfillment/"
+  parent = "solutions"
   weight = 22
 
   [[main]]
-  name = "High Bay Racking"
-  url = "/applications/high-bay-racking/"
-  parent = "guide"
+  name = "Food & Beverage"
+  url = "/solutions/food-beverage/"
+  parent = "solutions"
   weight = 23
 
   [[main]]
-  name = "Food & Beverage"
-  url = "/applications/food-beverage/"
-  parent = "guide"
+  name = "Chemical Industry"
+  url = "/solutions/chemical-industry/"
+  parent = "solutions"
   weight = 24
 
   [[main]]
-  name = "Agriculture"
-  url = "/applications/agriculture/"
-  parent = "guide"
+  name = "Cold Chain Logistics"
+  url = "/solutions/cold-chain-logistics/"
+  parent = "solutions"
   weight = 25
 
   [[main]]
-  name = "Manufacturing Parts"
-  url = "/applications/manufacturing-parts/"
-  parent = "guide"
+  name = "Pharmaceutical & Healthcare"
+  url = "/solutions/pharmaceutical-healthcare/"
+  parent = "solutions"
   weight = 26
 
   [[main]]
-  name = "Chemical Materials"
-  url = "/applications/chemical-materials/"
-  parent = "guide"
+  name = "Automotive Manufacturing"
+  url = "/solutions/automotive-manufacturing/"
+  parent = "solutions"
   weight = 27
+
+  [[main]]
+  name = "Agriculture & Agri-supply Chain"
+  url = "/solutions/agriculture-supply-chain/"
+  parent = "solutions"
+  weight = 28
+
+  [[main]]
+  name = "Retail & Wholesale"
+  url = "/solutions/retail-wholesale-distribution/"
+  parent = "solutions"
+  weight = 29
+
+  [[main]]
+  name = "Electronics & High-tech"
+  url = "/solutions/electronics-high-tech/"
+  parent = "solutions"
+  weight = 30
 
 
 [[main]]
-name = "Quality & Capability"
-url = "/quality/"
-identifier = "quality"
+name = "Manufacturing"
+url = "/Manufacturing/"
+identifier = "Manufacturing"
 weight = 30
 
 [[main]]
-name = "How to Buy"
-url = "/delivery/"
-identifier = "delivery"
+name = "Ordering Guide"
+url = "/ordering-guide/"
+identifier = "ordering-guide"
 weight = 40
 
 
@@ -140,7 +158,7 @@ weight = 50
   weight = 56
 
 [[main]]
-name = "Get Quote"
+name = "Get a Quote"
 url = "/get-quote/"
 identifier = "get-quote"
 weight = 60

@@ -1,5 +1,5 @@
 [[main]]
-name = "产品"
+name = "产品中心"
 url = "/products/"
 identifier = "products"
 weight = 10
@@ -42,69 +42,87 @@ weight = 10
 
 
 [[main]]
-name = "选型指南"
-url = "/guide/"
-identifier = "guide"
+name = "行业解决方案"
+url = "/solutions/"
+identifier = "solutions_zh"
 weight = 20
 
   [[main]]
-  name = "仓储物流"
-  url = "/applications/warehousing-logistics/"
-  parent = "guide"
+  name = "第三方物流 (3PL)"
+  url = "/solutions/3pl-warehousing/"
+  parent = "solutions_zh"
   weight = 21
 
   [[main]]
-  name = "冷链生鲜"
-  url = "/applications/cold-chain-fresh/"
-  parent = "guide"
+  name = "电商履约中心"
+  url = "/solutions/ecommerce-fulfillment/"
+  parent = "solutions_zh"
   weight = 22
 
   [[main]]
-  name = "高位货架"
-  url = "/applications/high-bay-racking/"
-  parent = "guide"
+  name = "食品与饮料"
+  url = "/solutions/food-beverage/"
+  parent = "solutions_zh"
   weight = 23
 
   [[main]]
-  name = "食品饮料"
-  url = "/applications/food-beverage/"
-  parent = "guide"
+  name = "化工行业"
+  url = "/solutions/chemical-industry/"
+  parent = "solutions_zh"
   weight = 24
 
   [[main]]
-  name = "农业"
-  url = "/applications/agriculture/"
-  parent = "guide"
+  name = "冷链物流"
+  url = "/solutions/cold-chain-logistics/"
+  parent = "solutions_zh"
   weight = 25
 
   [[main]]
-  name = "制造与零部件"
-  url = "/applications/manufacturing-parts/"
-  parent = "guide"
+  name = "医药与医疗"
+  url = "/solutions/pharmaceutical-healthcare/"
+  parent = "solutions_zh"
   weight = 26
 
   [[main]]
-  name = "化工原料"
-  url = "/applications/chemical-materials/"
-  parent = "guide"
+  name = "汽车制造"
+  url = "/solutions/automotive-manufacturing/"
+  parent = "solutions_zh"
   weight = 27
+
+  [[main]]
+  name = "农业供应链"
+  url = "/solutions/agriculture-supply-chain/"
+  parent = "solutions_zh"
+  weight = 28
+
+  [[main]]
+  name = "零售与批发配送"
+  url = "/solutions/retail-wholesale-distribution/"
+  parent = "solutions_zh"
+  weight = 29
+
+  [[main]]
+  name = "电子高新产业"
+  url = "/solutions/electronics-high-tech/"
+  parent = "solutions_zh"
+  weight = 30
 
 
 [[main]]
-name = "质量制造"
-url = "/quality/"
-identifier = "quality"
+name = "制造实力"
+url = "/Manufacturing/"
+identifier = "Manufacturing"
 weight = 30
 
 [[main]]
-name = "采购交付"
-url = "/delivery/"
-identifier = "delivery"
+name = "采购指南"
+url = "/ordering-guide/"
+identifier = "ordering-guide"
 weight = 40
 
 
 [[main]]
-name = "资源中心"
+name = "资讯中心"
 url = "/resources/"
 identifier = "resources"
 weight = 50
