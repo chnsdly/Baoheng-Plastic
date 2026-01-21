@@ -2,9 +2,11 @@
   <nav class="navbar">
     <div class="navbar__left">
       <div class="navbar__logo">
-        <a href="{{ "/" | relLangURL }}">
-          <img src='{{ (.Site.Params.logo | default "images/logo.png") | relURL }}' width="200" height="68"
-            alt='{{ .Site.Params.company_name | default .Site.Title }}'>
+        <a href="{{ " /" | relLangURL }}">
+          <img 
+            src='{{ .Site.Params.logo | relURL }}' 
+            width="200" height="68"
+            alt='{{ .Site.Params.company_name }}'>
         </a>
       </div>
 
