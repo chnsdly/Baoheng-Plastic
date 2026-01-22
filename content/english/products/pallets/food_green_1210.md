@@ -1,18 +1,18 @@
 ---
 
 title: "1210 food & medical plastic pallet"
-featured_image_asset: "/images/products/pallet/food/1210-green-hero.jpg"
+featured_image: "/images/products/pallet/food/1210-green-hero.jpg"
 product_type: "Plastic Pallets"
 pallet_category:
   - "Food & Pharmaceutical Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/pallet/food/1210-green-showcase.jpg"
+  - image: "/images/products/pallet/food/1210-green-showcase.jpg"
     alt: "1210 food & medical plastic pallet showcase 1"
-  - image_asset: "/images/products/pallet/food/showcase-green-1.jpg"
+  - image: "/images/products/pallet/food/showcase-green-1.jpg"
     alt: "1210 food & medical plastic pallet showcase 2"
-  - image_asset: "/images/products/pallet/food/showcase-green-2.jpg"
+  - image: "/images/products/pallet/food/showcase-green-2.jpg"
     alt: "1210 food & medical plastic pallet showcase 3"
-  - image_asset: "/images/products/pallet/food/showcase-3.jpg"
+  - image: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210 food & medical plastic pallet showcase 3"
 
 specs:
@@ -48,11 +48,11 @@ detail_intro: |-
 
 
 industry_gallery:
-  - image_asset: "/images/products/pallet/food/industry-1.jpg"
+  - image: "/images/products/pallet/food/industry-1.jpg"
     alt: "1210 food & medical plastic pallet industry use 1"
-  - image_asset: "/images/products/pallet/food/industry-2.jpg"
+  - image: "/images/products/pallet/food/industry-2.jpg"
     alt: "1210 food & medical plastic pallet industry use 2"
-  - image_asset: "/images/products/pallet/food/industry-3.jpg"
+  - image: "/images/products/pallet/food/industry-3.jpg"
     alt: "1210 food & medical plastic pallet industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

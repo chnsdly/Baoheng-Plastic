@@ -1,7 +1,7 @@
 ---
 title: "汽车零部件立体库：高位货架托盘选型与稳定性优化案例"
 description: "通过货架载与结构加固设计，解决高位货架挠度与AGV兼容问题。"
-cover_asset: "images/industry/high-1.jpg"
+cover_image: "images/industry/high-1.jpg"
 date: 2025-02-12
 tags: ["案例", "高位货架", "立体库", "汽车零部件"]
 ---

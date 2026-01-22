@@ -1,7 +1,7 @@
 ---
 
 title: "stacknest-crate"
-featured_image_asset: "/images/products/crate-box/stacknest-crate-hero.jpg"
+featured_image: "/images/products/crate-box/stacknest-crate-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
 

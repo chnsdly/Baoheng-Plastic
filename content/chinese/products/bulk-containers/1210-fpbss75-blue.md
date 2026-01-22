@@ -1,7 +1,7 @@
 ---
 
 title: "1210-fpbss75-blue"
-featured_image_asset: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
+featured_image: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
 featured_image: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
 product_type: "大型散装容器"
 pallet_category: []
@@ -36,11 +36,11 @@ detail_intro: |-
 
   4. 我们深耕塑料制品制造 20 年，服务超过 1000 家中大型企业，保证产品品质与交期，为您的供应链提供稳定可靠的支持。
 industry_gallery:
-  - image_asset: "/images/products/l-container/industry-1.jpg"
+  - image: "/images/products/l-container/industry-1.jpg"
     alt: "1210-fpbss75-blue 行业场景1"
-  - image_asset: "/images/products/l-container/industry-2.jpg"
+  - image: "/images/products/l-container/industry-2.jpg"
     alt: "1210-fpbss75-blue 行业场景2"
-  - image_asset: "/images/products/l-container/industry-3.jpg"
+  - image: "/images/products/l-container/industry-3.jpg"
     alt: "1210-fpbss75-blue 行业场景3"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"

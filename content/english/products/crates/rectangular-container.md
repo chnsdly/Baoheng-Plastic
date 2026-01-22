@@ -1,7 +1,7 @@
 ---
 
 title: "rectangular-container"
-featured_image_asset: "/images/products/crate-box/rectangular-container-hero.jpg"
+featured_image: "/images/products/crate-box/rectangular-container-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
 

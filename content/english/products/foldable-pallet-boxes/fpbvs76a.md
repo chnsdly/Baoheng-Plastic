@@ -1,17 +1,17 @@
 ---
 
 title: "1210-BF-FPBVS76A"
-featured_image_asset: "/images/products/fold/vs76a-hero.jpg"
+featured_image: "/images/products/fold/vs76a-hero.jpg"
 product_type: "Foldable Pallet Boxes"
 pallet_category: []
 showcase_gallery:
-  - image_asset: "/images/products/fold/vs76a-showcase.jpg"
+  - image: "/images/products/fold/vs76a-showcase.jpg"
     alt: "1210-BF-FPBVS76A showcase 1"
-  - image_asset: "/images/products/fold/showcase-1.jpg"
+  - image: "/images/products/fold/showcase-1.jpg"
     alt: "1210-BF-FPBVS76A showcase 2"
-  - image_asset: "/images/products/fold/showcase-2.jpg"
+  - image: "/images/products/fold/showcase-2.jpg"
     alt: "1210-BF-FPBVS76A showcase 3"
-  - image_asset: "/images/products/fold/showcase-3.jpg"
+  - image: "/images/products/fold/showcase-3.jpg"
     alt: "1210-BF-FPBVS76A showcase 3"
 
 specs:
@@ -45,11 +45,11 @@ detail_intro: |-
   
   4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
 industry_gallery:
-  - image_asset: "/images/products/fold/industry-1.jpg"
+  - image: "/images/products/fold/industry-1.jpg"
     alt: "1210-BF-FPBVS76A industry use 1"
-  - image_asset: "/images/products/fold/industry-2.jpg"
+  - image: "/images/products/fold/industry-2.jpg"
     alt: "1210-BF-FPBVS76A industry use 2"
-  - image_asset: "/images/products/fold/industry-3.jpg"
+  - image: "/images/products/fold/industry-3.jpg"
     alt: "1210-BF-FPBVS76A industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

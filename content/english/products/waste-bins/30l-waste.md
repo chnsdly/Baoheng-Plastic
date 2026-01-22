@@ -1,7 +1,7 @@
 ---
 
 title: "30l-waste"
-featured_image_asset: "/images/products/waste/30l-waste-hero.jpg"
+featured_image: "/images/products/waste/30l-waste-hero.jpg"
 product_type: "Plastic Waste Bins"
 pallet_category: []
 hero_description: "These municipal plastic waste bins are molded from weather-resistant HDPE with reinforced walls and quiet casters, ideal for street, residential, and campus collection. Multiple capacities and color options make them easy to integrate with existing hauling systems."
@@ -15,11 +15,11 @@ detail_intro: |-
   3. Suitable for municipal sanitation, residential communities, campuses, industrial parks, and scenic areas. Supports color coding, logo printing, and sorting streams such as recyclables, organics, and residual waste.
 
 industry_gallery:
-  - image_asset: "/images/products/waste/industry-1.jpg"
+  - image: "/images/products/waste/industry-1.jpg"
     alt: "industry use 1"
-  - image_asset: "/images/products/waste/industry-2.jpg"
+  - image: "/images/products/waste/industry-2.jpg"
     alt: "industry use 2"
-  - image_asset: "/images/products/waste/industry-3.jpg"
+  - image: "/images/products/waste/industry-3.jpg"
     alt: "industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

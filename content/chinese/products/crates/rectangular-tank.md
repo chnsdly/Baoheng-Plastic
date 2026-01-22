@@ -1,7 +1,7 @@
 ---
 
 title: "大型周转箱"
-featured_image_asset: "/images/products/crate-box/rectangular-tank-hero.jpg"
+featured_image: "/images/products/crate-box/rectangular-tank-hero.jpg"
 featured_image: "/images/products/crate-box/rectangular-tank.jpg"
 product_type: "板条箱"
 pallet_category: []
@@ -40,11 +40,11 @@ product_showcase:
 
 
 industry_gallery:
-  - image_asset: "/images/products/crate-box/rectangular-tank-industry-1.jpg"
+  - image: "/images/products/crate-box/rectangular-tank-industry-1.jpg"
     alt: "rectangular-tank 行业场景1"
-  - image_asset: "/images/products/crate-box/rectangular-tank-industry-2.jpg"
+  - image: "/images/products/crate-box/rectangular-tank-industry-2.jpg"
     alt: "rectangular-tank 行业场景2"
-  - image_asset: "/images/products/crate-box/rectangular-tank-industry-3.jpg"
+  - image: "/images/products/crate-box/rectangular-tank-industry-3.jpg"
     alt: "rectangular-tank 行业场景3"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"
