@@ -128,7 +128,7 @@ identifier = "resources"
 weight = 50
 
   [[main]]
-  name = "案例库"
+  name = "客户案例"
   url = "/resources/case-studies/"
   parent = "resources"
   weight = 51
