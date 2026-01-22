@@ -3,7 +3,6 @@
 title: "1210-食品与医用塑料托盘"
 featured_image: "/images/products/pallet/food/1210-blue-hero.jpg"
 featured: true
-featured_image: "/images/cnc-machine.jpg"
 product_type: "塑料托盘"
 pallet_category:
   - "食品和医药塑料托盘"

@@ -3,7 +3,6 @@
 title: "1210-网格川字型塑料托盘"
 featured_image: "/images/products/pallet/3-runner/1210-hero.jpg"
 featured: true
-featured_image: "/images/cnc-machine.jpg"
 product_type: "塑料托盘"
 pallet_category:
   - "可上架塑料托盘"

@@ -2,7 +2,6 @@
 
 title: "1210-BF-FPBVS80A"
 featured_image: "/images/products/fold/vs80a-hero.jpg"
-featured_image: "/images/cnc-machine.jpg"
 product_type: "可折叠塑料托盘箱"
 pallet_category: []
 specs:

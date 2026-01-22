@@ -2,7 +2,6 @@
 
 title: "1210-fpbvs75-grey"
 featured_image: "/images/products/l-container/1210-fpbvs75-grey-hero.jpg"
-featured_image: "/images/products/l-container/1210-fpbvs75-grey-hero.jpg"
 product_type: "大型散装容器"
 pallet_category: []
 specs:

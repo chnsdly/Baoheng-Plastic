@@ -2,7 +2,6 @@
 
 title: "折叠周转箱"
 featured_image: "/images/products/crate-box/foldable-crates-hero.jpg"
-featured_image: "/images/products/crate-box/foldable-crates.jpg"
 product_type: "板条箱"
 pallet_category: []
 

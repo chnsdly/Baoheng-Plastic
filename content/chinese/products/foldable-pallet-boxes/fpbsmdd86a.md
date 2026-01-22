@@ -2,7 +2,6 @@
 
 title: "1210-BF-FPBSMDD86A"
 featured_image: "/images/products/fold/smdd86a-hero.jpg"
-featured_image: "/images/cnc-machine.jpg"
 product_type: "可折叠塑料托盘箱"
 pallet_category: []
 specs:

@@ -2,7 +2,6 @@
 
 title: "可嵌套周转筐"
 featured_image: "/images/products/crate-box/nestable-crates-hero.jpg"
-featured_image: "/images/products/crate-box/nestable-crates.jpg"
 product_type: "板条箱"
 pallet_category: []
 

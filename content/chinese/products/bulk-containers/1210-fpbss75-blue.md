@@ -2,7 +2,6 @@
 
 title: "1210-fpbss75-blue"
 featured_image: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
-featured_image: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
 product_type: "大型散装容器"
 pallet_category: []
 specs:

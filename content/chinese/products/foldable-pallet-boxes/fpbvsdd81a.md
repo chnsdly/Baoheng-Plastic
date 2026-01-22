@@ -2,7 +2,6 @@
 
 title: "1210-BF-FPBVSDD81A"
 featured_image: "/images/products/fold/vsdd81a-hero.jpg"
-featured_image: "/images/cnc-machine.jpg"
 product_type: "可折叠塑料托盘箱"
 pallet_category: []
 specs:
