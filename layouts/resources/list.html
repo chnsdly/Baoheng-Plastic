@@ -10,7 +10,7 @@
         <ul class="res-list" role="list">
           {{ range $p := $pgr.Pages }}
             {{/* --------- 计算封面 --------- */}}
-            {{ $cover := cond (isset $p.Params "cover_asset") $p.Params.cover_asset (cond (isset $p.Params "cover_image") $p.Params.cover_image (cond (isset $p.Params "cover") (index $p.Params "cover" "image") nil)) }}
+            {{ $cover := cond (isset $p.Params "cover_image") $p.Params.cover_image (cond (isset $p.Params "cover") (index $p.Params "cover" "image") nil) }}
 
 
             {{/* --------- CTA 文案：固定为“阅读” --------- */}}
@@ -19,14 +19,7 @@
             <li class="res-row">
               <div class="res-thumb" aria-hidden="true">
                 {{ with $cover }}
-                  {{ partial "picture.html" (dict
-                    "ctx"   $p
-                    "src"   .
-                    "alt"   $p.Title
-                    "w"     (slice 256 512 768)
-                    "sizes" "(max-width: 48rem) 100vw, 128px"
-                    "class" "res-thumb__img"
-                  ) }}
+                  <img class="res-thumb__img" src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
                 {{ else }}
                   <img class="res-thumb__img" loading="lazy" alt=""
                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23e5e7eb'/%3E%3C/svg%3E">
@@ -126,15 +119,8 @@
                 <li class="popular-item">
                   <a class="popular-link" href="{{ $it.RelPermalink }}">
                     <span class="ph ph--sm">
-                      {{ with $it.Params.cover_asset }}
-                        {{ partial "picture.html" (dict
-                          "ctx"   $it
-                          "src"   .
-                          "alt"   $it.Title
-                          "w"     (slice 84 168 252)
-                          "sizes" "84px"
-                          "class" "ph__img"
-                        ) }}
+                      {{ with $it.Params.cover_image }}
+                        <img class="ph__img" src="{{ . | relURL }}" alt="{{ $it.Title }}" loading="lazy" decoding="async">
                       {{ else }}
                         <span class="ph ph--empty" aria-hidden="true"></span>
                       {{ end }}

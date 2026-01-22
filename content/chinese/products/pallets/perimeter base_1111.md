@@ -1,7 +1,7 @@
 ---
 
 title: "1111-网格田字型塑料托盘"
-featured_image_asset: "/images/products/pallet/perimeter-base/1111-hero.jpg"
+featured_image: "/images/products/pallet/perimeter-base/1111-hero.jpg"
 product_type: "塑料托盘"
 pallet_category:
   - "可堆叠塑料托盘"
@@ -34,20 +34,20 @@ detail_intro: |-
 
   4. 我们专注塑料托盘制造 20 年，已服务 1000 多家中大型企业，品质稳定，按时交付。欢迎您成为我们的合作伙伴。
 showcase_gallery:
-  - image_asset: "/images/products/pallet/perimeter-base/1111-showcase.jpg"
+  - image: "/images/products/pallet/perimeter-base/1111-showcase.jpg"
     alt: "1111-网格田字型塑料托盘 展示1"
-  - image_asset: "/images/products/pallet/perimeter-base/showcase-1.jpg"
+  - image: "/images/products/pallet/perimeter-base/showcase-1.jpg"
     alt: "1111-网格田字型塑料托盘 展示2"
-  - image_asset: "/images/products/pallet/perimeter-base/showcase-2.jpg"
+  - image: "/images/products/pallet/perimeter-base/showcase-2.jpg"
     alt: "1111-网格田字型塑料托盘 展示3"
-  - image_asset: "/images/products/pallet/perimeter-base/showcase-3.jpg"
+  - image: "/images/products/pallet/perimeter-base/showcase-3.jpg"
     alt: "1111-网格田字型塑料托盘 展示4"
 industry_gallery:
-  - image_asset: "/images/products/pallet/perimeter-base/industry-1.jpg"
+  - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
     alt: "1111-网格田字型塑料托盘 行业场景1"
-  - image_asset: "/images/products/pallet/perimeter-base/industry-2.jpg"
+  - image: "/images/products/pallet/perimeter-base/industry-2.jpg"
     alt: "1111-网格田字型塑料托盘 行业场景2"
-  - image_asset: "/images/products/pallet/perimeter-base/industry-3.jpg"
+  - image: "/images/products/pallet/perimeter-base/industry-3.jpg"
     alt: "1111-网格田字型塑料托盘 行业场景3"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"

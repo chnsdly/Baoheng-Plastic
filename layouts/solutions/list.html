@@ -17,7 +17,7 @@
         <ul class="industries-listing__items" role="list">
           {{ range $p := $pgr.Pages }}
             {{/* --------- 计算封面 --------- */}}
-            {{ $cover := cond (isset $p.Params "cover_asset") $p.Params.cover_asset (cond (isset $p.Params "cover_image") $p.Params.cover_image (cond (isset $p.Params "cover") (index $p.Params "cover" "image") nil)) }}
+            {{ $cover := cond (isset $p.Params "cover_image") $p.Params.cover_image (cond (isset $p.Params "cover") (index $p.Params "cover" "image") nil) }}
 
             {{/* --------- CTA 文案：固定为“阅读” --------- */}}
             {{ $cta := "阅读" }}
@@ -26,14 +26,7 @@
               <article class="industry-card">
                 <a class="industry-card__media" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}">
                   {{ with $cover }}
-                    {{ partial "picture.html" (dict
-                      "ctx"   $p
-                      "src"   .
-                      "alt"   $p.Title
-                      "w"     (slice 384 640 960)
-                      "sizes" "(max-width: 48rem) 100vw, 320px"
-                      "class" "industry-card__img"
-                    ) }}
+                    <img class="industry-card__img" src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
                   {{ else }}
                     <span class="industry-card__placeholder" aria-hidden="true"></span>
                   {{ end }}
@@ -140,15 +133,8 @@
                 <li class="industries-sidebar__list-item">
                   <a class="industries-sidebar__popular-link" href="{{ $it.RelPermalink }}">
                     <span class="industries-sidebar__thumbnail">
-                      {{ with $it.Params.cover_asset }}
-                        {{ partial "picture.html" (dict
-                          "ctx"   $it
-                          "src"   .
-                          "alt"   $it.Title
-                          "w"     (slice 168 252 336)
-                          "sizes" "96px"
-                          "class" "industries-sidebar__thumb-img"
-                        ) }}
+                      {{ with $it.Params.cover_image }}
+                        <img class="industries-sidebar__thumb-img" src="{{ . | relURL }}" alt="{{ $it.Title }}" loading="lazy" decoding="async">
                       {{ else }}
                         <span class="industries-sidebar__thumb-placeholder" aria-hidden="true"></span>
                       {{ end }}

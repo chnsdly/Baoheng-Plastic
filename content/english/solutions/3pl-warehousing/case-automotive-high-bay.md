@@ -1,7 +1,7 @@
 ---
 title: "Automotive Parts AS/RS: High-Bay Pallet Selection and Stability Optimization"
 description: "A high-bay racking case focusing on racking-load capacity, reinforcement design, and AGV compatibility."
-cover_asset: "images/industry/high-1.jpg"
+cover_image: "images/industry/high-1.jpg"
 date: 2025-02-12
 tags: ["Case Study", "High-Bay Racking", "AS/RS", "Automotive"]
 ---

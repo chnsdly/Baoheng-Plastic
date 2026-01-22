@@ -12,19 +12,7 @@
       {{ range $p := $featured }}
       <article class="product-card eq">
         <a class="media" href="{{ $p.RelPermalink }}">
-          {{ if $p.Params.featured_image_asset }}
-            {{ partial "picture.html" (dict
-              "ctx"   $p
-              "src"   $p.Params.featured_image_asset
-              "alt"   $p.Title
-              "w"     (slice 480 768 1200)
-              "sizes" "(max-width: 900px) 100vw, 320px"
-              "class" ""
-              "fetch" ""
-            ) }}
-          {{ else }}
-            <img src="{{ $p.Params.featured_image | default "/images/placeholder.jpg" | relURL }}" alt="{{ $p.Title }}">
-          {{ end }}
+          <img src="{{ $p.Params.featured_image | default "/images/placeholder.jpg" | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
         </a>
 
         <div class="card-body">

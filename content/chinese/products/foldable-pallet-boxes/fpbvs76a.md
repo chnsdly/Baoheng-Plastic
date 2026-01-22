@@ -1,7 +1,7 @@
 ---
 
 title: "1210-BF-FPBVS76A"
-featured_image_asset: "/images/products/fold/vs76a-hero.jpg"
+featured_image: "/images/products/fold/vs76a-hero.jpg"
 featured_image: "/images/cnc-machine.jpg"
 product_type: "可折叠塑料托盘箱"
 pallet_category: []
@@ -36,20 +36,20 @@ detail_intro: |-
   
   4. 我们深耕塑料制品制造 20 年，服务超过 1000 家中大型企业，保证产品品质与交期，为您的供应链提供稳定可靠的支持。
 showcase_gallery:
-  - image_asset: "/images/products/fold/vs76a-showcase.jpg"
+  - image: "/images/products/fold/vs76a-showcase.jpg"
     alt: "1210-BF-FPBVS76A 展示1"
-  - image_asset: "/images/products/fold/showcase-1.jpg"
+  - image: "/images/products/fold/showcase-1.jpg"
     alt: "1210-BF-FPBVS76A 展示2"
-  - image_asset: "/images/products/fold/showcase-2.jpg"
+  - image: "/images/products/fold/showcase-2.jpg"
     alt: "1210-BF-FPBVS76A 展示3"
-  - image_asset: "/images/products/fold/showcase-3.jpg"
+  - image: "/images/products/fold/showcase-3.jpg"
     alt: "1210-BF-FPBVS76A 展示3"
 industry_gallery:
-  - image_asset: "/images/products/fold/industry-1.jpg"
+  - image: "/images/products/fold/industry-1.jpg"
     alt: "1210-BF-FPBVS76A 行业场景1"
-  - image_asset: "/images/products/fold/industry-2.jpg"
+  - image: "/images/products/fold/industry-2.jpg"
     alt: "1210-BF-FPBVS76A 行业场景2"
-  - image_asset: "/images/products/fold/industry-3.jpg"
+  - image: "/images/products/fold/industry-3.jpg"
     alt: "1210-BF-FPBVS76A 行业场景1"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"

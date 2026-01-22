@@ -1,7 +1,7 @@
 ---
 
 title: "1210-食品与医用塑料托盘"
-featured_image_asset: "/images/products/pallet/food/1210-blue-hero.jpg"
+featured_image: "/images/products/pallet/food/1210-blue-hero.jpg"
 featured: true
 featured_image: "/images/cnc-machine.jpg"
 product_type: "塑料托盘"
@@ -39,20 +39,20 @@ detail_intro: |-
   4. 我们20年来专注于塑料托盘制造，服务于1000多家中大型企业，确保品质，按时发货。欢迎您代理我们的产品。
 
 showcase_gallery:
-  - image_asset: "/images/products/pallet/food/1210-blue-showcase.jpg"
+  - image: "/images/products/pallet/food/1210-blue-showcase.jpg"
     alt: "1210-食品与医用塑料托盘 展示1"
-  - image_asset: "/images/products/pallet/food/showcase-blue-1.jpg"
+  - image: "/images/products/pallet/food/showcase-blue-1.jpg"
     alt: "1210-食品与医用塑料托盘 展示2"
-  - image_asset: "/images/products/pallet/food/showcase-blue-2.jpg"
+  - image: "/images/products/pallet/food/showcase-blue-2.jpg"
     alt: "1210-食品与医用塑料托盘 展示3"
-  - image_asset: "/images/products/pallet/food/showcase-3.jpg"
+  - image: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210-食品与医用塑料托盘 展示3"
 industry_gallery-false:
-  - image_asset: "/images/products/pallet/food/industry-1.jpg"
+  - image: "/images/products/pallet/food/industry-1.jpg"
     alt: "1210-食品与医用塑料托盘 行业场景1"
-  - image_asset: "/images/products/pallet/food/industry-2.jpg"
+  - image: "/images/products/pallet/food/industry-2.jpg"
     alt: "1210-食品与医用塑料托盘 行业场景2"
-  - image_asset: "/images/products/pallet/food/industry-3.jpg"
+  - image: "/images/products/pallet/food/industry-3.jpg"
     alt: "1210-食品与医用塑料托盘 行业场景1"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"

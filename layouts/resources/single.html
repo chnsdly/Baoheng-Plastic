@@ -21,20 +21,12 @@
     </p>
   </header>
 
-  <!-- 封面：优先 assets/Page Bundle 的 cover_asset 或 featured_image_asset，其次 static 的 featured_image -->
-  {{ $src := or .Params.featured_image_asset .Params.cover_asset }}
+  <!-- 封面：使用 static 目录下的 cover_image 或 featured_image -->
+  {{ $src := or .Params.cover_image .Params.featured_image }}
   {{ if $src }}
-    {{ partial "picture.html" (dict
-      "ctx"   .
-      "src"   $src
-      "alt"   .Title
-      "w"     (slice 640 960 1440)
-      "sizes" "(max-width: 900px) 100vw, 720px"
-      "class" "rounded-xl"
-      "fetch" ""
-    ) }}
+    <img class="post-cover" src='{{ $src | relURL }}' alt='{{ .Title }}' loading="lazy" decoding="async">
   {{ else }}
-    <img class="post-cover" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
+    <img class="post-cover" src='{{ "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}' loading="lazy" decoding="async">
   {{ end }}
 
   <!-- 主体正文（不再包含目录） -->
@@ -99,14 +91,10 @@
         {{ range $p := $rel }}
           <article class="blog-card eq">
             <a class="media" href="{{ $p.RelPermalink }}">
-              {{ with $p.Params.cover_asset }}
-                {{ partial "picture.html" (dict "ctx" $p "src" . "alt" $p.Title "w" (slice 480 768 1200) "sizes" "(max-width: 900px) 100vw, 360px") }}
+              {{ with $p.Params.cover_image }}
+                <img src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
               {{ else }}
-                {{ with $p.Params.cover_image }}
-                  <img src="{{ . | relURL }}" alt="{{ $p.Title }}">
-                {{ else }}
-                  <div class="ph-media" aria-hidden="true"></div>
-                {{ end }}
+                <div class="ph-media" aria-hidden="true"></div>
               {{ end }}
             </a>
             <div class="card-body">

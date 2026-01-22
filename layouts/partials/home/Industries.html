@@ -9,15 +9,11 @@
       {{ range $industries.items }}
       <article class="industries__item">
         <div class="industries__media">
-          {{ partial "picture.html" (dict
-            "ctx"   $
-            "src"   .image
-            "alt"   .title
-            "class" "industries__image"
-            "sizes" "(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            "w"     (slice 320 480 640 680 768 896 1024)
-            "lqip"  true
-          ) }}
+          <img class="industries__image"
+               src="{{ .image | relURL }}"
+               alt="{{ .title }}"
+               loading="lazy"
+               decoding="async">
           <div class="industries__caption">
             <span class="industries__caption-text">{{ .title }}</span>
           </div>

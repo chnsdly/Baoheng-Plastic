@@ -90,19 +90,11 @@
               <article class="product-listing__card{{ if not $isVisibleByDefault }} product-listing__card--extra{{ end }}" data-categories="{{ delimit $pageCats "|" }}" data-default-visible="{{ if $isVisibleByDefault }}true{{ else }}false{{ end }}" style="{{ if not $isVisibleByDefault }}display:none;{{ end }}">
                 <a class="product-listing__card-link" href="{{ .RelPermalink }}">
                   <figure class="product-listing__media">
-                    {{ if .Params.featured_image_asset }}
-                      {{ partial "picture.html" (dict
-                        "ctx" .
-                        "src" .Params.featured_image_asset
-                        "alt" .Title
-                        "w" (slice 640 960 1440)
-                        "sizes" "(min-width: 64rem) 320px, (min-width: 48rem) 45vw, 90vw"
-                        "class" "product-listing__image"
-                        "fetch" ""
-                      ) }}
-                    {{ else }}
-                      <img class="product-listing__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
-                    {{ end }}
+                    <img class="product-listing__image"
+                         src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}'
+                         alt='{{ .Title }}'
+                         loading="lazy"
+                         decoding="async">
                   </figure>
                   <div class="product-listing__content">
                     <h2 class="product-listing__card-title">{{ .Title }}</h2>

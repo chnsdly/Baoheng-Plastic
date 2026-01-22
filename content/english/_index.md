@@ -3,7 +3,7 @@ title: "Baoheng Plastic"
 description: "Plastic pallet manufacturer delivering HDPE/PP pallets for warehousing, logistics, cold chain, and industrial applications."
 hero_title: " "
 hero_description: " "
-hero_bg_asset: "images/hero-bg.jpg"
+hero_bg: "images/hero-bg.jpg"
 hero_slides:
   - src: "images/hero-bg.jpg"
     alt: "Stacked plastic pallets ready for export shipping"

@@ -1,19 +1,19 @@
 ---
 
 title: "1210 open deck perimeter-base plastic pallet"
-featured_image_asset: "/images/products/pallet/perimeter-base/1210-hero.jpg"
+featured_image: "/images/products/pallet/perimeter-base/1210-hero.jpg"
 featured: true
 product_type: "Plastic Pallets"
 pallet_category:
   - "Stackable Plastic Pallets"
 showcase_gallery:
-  - image_asset: "/images/products/pallet/perimeter-base/1210-showcase.jpg"
+  - image: "/images/products/pallet/perimeter-base/1210-showcase.jpg"
     alt: "1210 open deck perimeter-base plastic pallet showcase 1"
-  - image_asset: "/images/products/pallet/perimeter-base/showcase-1.jpg"
+  - image: "/images/products/pallet/perimeter-base/showcase-1.jpg"
     alt: "1210 open deck perimeter-base plastic pallet showcase 2"
-  - image_asset: "/images/products/pallet/perimeter-base/showcase-2.jpg"
+  - image: "/images/products/pallet/perimeter-base/showcase-2.jpg"
     alt: "1210 open deck perimeter-base plastic pallet showcase 3"
-  - image_asset: "/images/products/pallet/perimeter-base/showcase-3.jpg"
+  - image: "/images/products/pallet/perimeter-base/showcase-3.jpg"
     alt: "1210 open deck perimeter-base plastic pallet showcase 4"
 
 specs:
@@ -45,11 +45,11 @@ detail_intro: |-
 
   4. With 20 years of expertise in plastic pallet manufacturing, we have served more than 1,000 medium and large enterprises, ensuring consistent quality and on-time delivery. We welcome you to partner with us.
 industry_gallery:
-  - image_asset: "/images/products/pallet/perimeter-base/industry-1.jpg"
+  - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
     alt: "1210 open deck perimeter-base plastic pallet industry use 1"
-  - image_asset: "/images/products/pallet/perimeter-base/industry-2.jpg"
+  - image: "/images/products/pallet/perimeter-base/industry-2.jpg"
     alt: "1210 open deck perimeter-base plastic pallet industry use 2"
-  - image_asset: "/images/products/pallet/perimeter-base/industry-3.jpg"
+  - image: "/images/products/pallet/perimeter-base/industry-3.jpg"
     alt: "1210 open deck perimeter-base plastic pallet industry use 3"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

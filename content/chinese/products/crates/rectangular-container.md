@@ -1,7 +1,7 @@
 ---
 
 title: "周转箱"
-featured_image_asset: "/images/products/crate-box/rectangular-container-hero.jpg"
+featured_image: "/images/products/crate-box/rectangular-container-hero.jpg"
 featured_image: "/images/products/crate-box/rectangular-container.jpg"
 product_type: "板条箱"
 pallet_category: []

@@ -1,7 +1,7 @@
 ---
 title: "华北生鲜冷链：塑料托盘稳定周转的真实案例"
 description: "为一家具备产地采购和城市配送的冷链企业，打造可清洗、抗低温的塑料托盘周转方案，降低破损与温控风险。"
-cover_asset: "images/industry/cold-1.jpg"
+cover_image: "images/industry/cold-1.jpg"
 date: 2025-03-12
 tags: ["案例", "冷链", "生鲜", "塑料托盘"]
 ---

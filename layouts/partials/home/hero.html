@@ -1,7 +1,7 @@
 <header class="hero hero--home hero--center hero--bleed" aria-labelledby="hero-h" data-hero-slider>
   {{- $slides := .Params.hero_slides -}}
   {{- if not $slides }}
-    {{- $slides = slice (dict "src" .Params.hero_bg_asset "alt" .Title) -}}
+    {{- $slides = slice (dict "src" .Params.hero_bg "alt" .Title) -}}
   {{- end -}}
 
   <!-- 背景层：轮播大图 -->
@@ -9,16 +9,12 @@
     <div class="hero__slides">
       {{- range $i, $slide := $slides }}
         <div class="hero__slide{{ if eq $i 0 }} is-active{{ end }}" data-hero-slide>
-          {{ partial "smart-picture.html" (dict
-            "ctx"   .
-            "src"   $slide.src
-            "alt"   ($slide.alt | default $.Title)
-            "class" "hero__img"
-            "fetch" (cond (eq $i 0) "high" "")
-            "sizes" "100vw"
-            "w"     (slice 640 960 1440 1920 2560)
-            "lqip"  true
-          ) }}
+          <img class="hero__img"
+               src="{{ $slide.src | relURL }}"
+               alt="{{ $slide.alt | default $.Title }}"
+               {{ if eq $i 0 }}fetchpriority="high"{{ end }}
+               loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}"
+               decoding="async">
         </div>
       {{- end }}
     </div>

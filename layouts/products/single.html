@@ -75,19 +75,11 @@
 
         <div class="product-overview">
           <figure class="product-overview__media">
-            {{ if .Params.featured_image_asset }}
-              {{ partial "picture.html" (dict
-                "ctx" .
-                "src" .Params.featured_image_asset
-                "alt" .Title
-                "w" (slice 640 960 1440)
-                "sizes" "(max-width: 64rem) 100vw, 60%"
-                "class" "product-overview__image"
-                "fetch" ""
-              ) }}
-            {{ else }}
-              <img class="product-overview__image" src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}'>
-            {{ end }}
+            <img class="product-overview__image"
+                 src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}'
+                 alt='{{ .Title }}'
+                 loading="lazy"
+                 decoding="async">
           </figure>
 
           <div class="product-overview__body">
@@ -151,18 +143,14 @@
                 {{ with .items }}
                   <div class="product-showcase-grid__items" role="list">
                     {{ range . }}
-                      {{ $asset := .image_asset | default .image | default .imag }}
+                      {{ $asset := .image | default .imag }}
                       {{ if $asset }}
                         <figure class="product-showcase-grid__item" role="listitem">
-                          {{ partial "picture.html" (dict
-                            "ctx"   $
-                            "src"   $asset
-                            "alt"   (.alt | default .title | default $.Title)
-                            "class" "product-showcase-grid__image"
-                            "sizes" "(max-width: 48rem) 100vw, (max-width: 72rem) 33vw, 30vw"
-                            "w"     (slice 320 480 640 768 960)
-                            "lqip"  true
-                          ) }}
+                          <img class="product-showcase-grid__image"
+                               src="{{ $asset | relURL }}"
+                               alt="{{ .alt | default .title | default $.Title }}"
+                               loading="lazy"
+                               decoding="async">
                           {{ with .title }}
                             <figcaption class="product-showcase-grid__label">{{ . }}</figcaption>
                           {{ end }}
@@ -179,10 +167,14 @@
             {{ $showcaseItems := first 4 . }}
             <div class="showcase__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
               {{ range $showcaseItems }}
-                {{ $asset := .image_asset | default .image }}
+                {{ $asset := .image }}
                 {{ if $asset }}
                   <figure class="showcase__figure">
-                    {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 50vw" "class" "showcase__image" "fetch" "") }}
+                    <img class="showcase__image"
+                         src="{{ $asset | relURL }}"
+                         alt="{{ .alt | default $.Title }}"
+                         loading="lazy"
+                         decoding="async">
                   </figure>
                 {{ end }}
               {{ end }}
@@ -201,20 +193,28 @@
             <div class="industry-gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
               <div class="industry-gallery__gallery">
                 {{ with $primary }}
-                  {{ $asset := .image_asset | default .image }}
+                  {{ $asset := .image }}
                   {{ if $asset }}
                     <figure class="industry-gallery__figure industry-gallery__figure--primary">
-                      {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 60vw" "class" "industry-gallery__image" "fetch" "") }}
+                      <img class="industry-gallery__image"
+                           src="{{ $asset | relURL }}"
+                           alt="{{ .alt | default $.Title }}"
+                           loading="lazy"
+                           decoding="async">
                     </figure>
                   {{ end }}
                 {{ end }}
 
                 <div class="industry-gallery__stack">
                   {{ range after 1 $galleryItems }}
-                    {{ $asset := .image_asset | default .image }}
+                    {{ $asset := .image }}
                     {{ if $asset }}
                       <figure class="industry-gallery__figure industry-gallery__figure--secondary">
-                        {{ partial "picture.html" (dict "ctx" $ "src" $asset "alt" (.alt | default $.Title) "w" (slice 640 960 1440) "sizes" "(max-width: 64rem) 100vw, 40vw" "class" "industry-gallery__image" "fetch" "") }}
+                        <img class="industry-gallery__image"
+                             src="{{ $asset | relURL }}"
+                             alt="{{ .alt | default $.Title }}"
+                             loading="lazy"
+                             decoding="async">
                       </figure>
                     {{ end }}
                   {{ end }}

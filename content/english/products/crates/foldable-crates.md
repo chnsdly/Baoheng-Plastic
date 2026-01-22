@@ -1,7 +1,7 @@
 ---
 
 title: "foldable-crates"
-featured_image_asset: "/images/products/crate-box/foldable-crates-hero.jpg"
+featured_image: "/images/products/crate-box/foldable-crates-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
 
@@ -22,11 +22,11 @@ product_showcase:
     image: "/images/products/crate-box/foldable-crates-31.jpg"
     alt: "stacknest-crate"
 industry_gallery:
-  - image_asset: "/images/products/crate-box/foldable-crates-industry-1.jpg"
+  - image: "/images/products/crate-box/foldable-crates-industry-1.jpg"
     alt: "foldable-crates industry use 1"
-  - image_asset: "/images/products/crate-box/foldable-crates-industry-2.jpg"
+  - image: "/images/products/crate-box/foldable-crates-industry-2.jpg"
     alt: "foldable-crates industry use 2"
-  - image_asset: "/images/products/crate-box/foldable-crates-industry-3.jpg"
+  - image: "/images/products/crate-box/foldable-crates-industry-3.jpg"
     alt: "foldable-crates industry use 3"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

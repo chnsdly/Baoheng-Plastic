@@ -1,7 +1,7 @@
 ---
 
 title: "rectangular-tank"
-featured_image_asset: "/images/products/crate-box/rectangular-tank-hero.jpg"
+featured_image: "/images/products/crate-box/rectangular-tank-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []
 
@@ -39,11 +39,11 @@ product_showcase:
 
 
 industry_gallery:
-  - image_asset: "/images/products/crate-box/rectangular-tank-industry-1.jpg"
+  - image: "/images/products/crate-box/rectangular-tank-industry-1.jpg"
     alt: "rectangular-tank industry use 1"
-  - image_asset: "/images/products/crate-box/rectangular-tank-industry-2.jpg"
+  - image: "/images/products/crate-box/rectangular-tank-industry-2.jpg"
     alt: "rectangular-tank industry use 2"
-  - image_asset: "/images/products/crate-box/rectangular-tank-industry-3.jpg"
+  - image: "/images/products/crate-box/rectangular-tank-industry-3.jpg"
     alt: "rectangular-tank industry use 3"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
