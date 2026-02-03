@@ -1,14 +1,14 @@
-/* Home: USP */
+/* Home: USP — 使用 tokens 统一品牌与背景 */
 .usps {
   --usps-surface:
     radial-gradient(circle at 15% 20%, color-mix(in oklab, var(--brand), transparent 70%), transparent 32%),
-    radial-gradient(circle at 85% 0%, color-mix(in oklab, #0ea5e9, transparent 70%), transparent 38%),
-    linear-gradient(135deg, color-mix(in oklab, #0b1224, white 88%), color-mix(in oklab, #0b1224, white 78%));
+    radial-gradient(circle at 85% 0%, color-mix(in oklab, var(--brand), transparent 70%), transparent 38%),
+    linear-gradient(135deg, color-mix(in oklab, var(--on-surface) 12%, var(--surface) 88%), color-mix(in oklab, var(--on-surface) 8%, var(--surface) 78%));
 
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding-block: space(4);
+  padding-block: var(--section-padding);
   color: var(--on-surface);
   background: var(--usps-surface);
 }
@@ -18,7 +18,7 @@
   position: absolute;
   inset: 0;
   border-radius: calc(var(--radius) * 3);
-  background: radial-gradient(circle at 20% 30%, color-mix(in oklab, white, transparent 60%), transparent 50%);
+  background: radial-gradient(circle at 20% 30%, color-mix(in oklab, var(--card), transparent 60%), transparent 50%);
   opacity: 0.55;
   mix-blend-mode: screen;
   pointer-events: none;
@@ -45,12 +45,12 @@
   gap: space(1.25);
   padding: space(1.75);
   border-radius: calc(var(--radius) * 1.5);
-  background: color-mix(in oklab, white, transparent 12%);
+  background: color-mix(in oklab, var(--card), transparent 12%);
   box-shadow:
-    0 10px 40px color-mix(in oklab, #0f172a, transparent 92%),
-    inset 0 1px 0 color-mix(in oklab, white, transparent 70%);
+    0 10px 40px color-mix(in oklab, var(--on-surface) 8%, transparent),
+    inset 0 1px 0 color-mix(in oklab, var(--card), transparent 30%);
   backdrop-filter: blur(8px);
-  transition: transform 200ms ease, box-shadow 200ms ease;
+  transition: transform var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease);
 }
 
 .usps__item::after {
@@ -69,7 +69,7 @@
   transform: translateY(-4px);
   box-shadow:
     0 12px 50px color-mix(in oklab, var(--brand), transparent 90%),
-    inset 0 1px 0 color-mix(in oklab, white, transparent 65%);
+    inset 0 1px 0 color-mix(in oklab, var(--card), transparent 35%);
 }
 
 .usps__icon {
@@ -77,11 +77,11 @@
   place-items: center;
   width: 88px;
   height: 88px;
-  border-radius: 22px;
+  border-radius: calc(var(--radius) * 2);
   font-size: 2.75rem;
-  color: white;
-  background: linear-gradient(135deg, color-mix(in oklab, var(--brand), #22d3ee 20%), #1e293b);
-  box-shadow: 0 12px 35px color-mix(in oklab, var(--brand), transparent 78%);
+  color: var(--on-brand);
+  background: linear-gradient(135deg, color-mix(in oklab, var(--brand), var(--card) 20%), color-mix(in oklab, var(--on-surface) 25%, var(--surface)));
+  box-shadow: var(--shadow-soft);
 }
 
 .usps__content {
@@ -91,17 +91,17 @@
 
 .usps__title {
   margin: 0;
-  color: #0f172a;
-  font-weight: 800;
+  color: var(--on-surface);
+  font-weight: var(--section-title-weight);
   letter-spacing: -0.01em;
-  font-size: var(--fs-3);
+  font-size: var(--section-title-size);
 }
 
 .usps__description {
   margin: 0;
-  color: color-mix(in oklab, #0f172a, white 40%);
-  line-height: 1.6;
-  font-size: 1rem;
+  color: var(--section-desc-color);
+  line-height: var(--line);
+  font-size: var(--section-desc-size);
 }
 
 @media (min-width: 64rem) {

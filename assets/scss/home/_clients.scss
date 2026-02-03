@@ -5,7 +5,7 @@
   --clients-gap: #{space(2)};
   --clients-columns: 2;
 
-  padding-block: space(2);
+  padding-block: var(--section-padding);
   background-color: var(--surface-variant);
   color: var(--on-surface);
 
@@ -29,14 +29,14 @@
 
   &__title {
     margin: 0;
-    font-size: var(--fs-3);
-    font-weight: 500;
+    font-size: var(--section-title-size);
+    font-weight: var(--section-title-weight);
   }
 
   &__description {
     margin: space(2) auto 0;
-    color: var(--on-surface-variant);
-    font-size: var(--fs-1);
+    color: var(--section-desc-color);
+    font-size: var(--section-desc-size);
   }
 
   &__carousel {

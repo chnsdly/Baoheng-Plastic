@@ -10,8 +10,8 @@
 .home-featured .head h2{
   grid-column:1 / 4;
   margin:0;
-  font-size:var(--fs-3);
-  font-weight:500;
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
   text-align:center;
 }
 .home-featured .more-link{
@@ -41,14 +41,14 @@
   display:flex;
   box-shadow: var(--shadow);
   flex-direction:column;
-  background:#fff;
-  border-radius:var(--radius);
+  background: var(--card);
+  border-radius: var(--radius);
   overflow:hidden;
-  transition:transform .15s ease, box-shadow .15s ease;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
 }
 .product-card.eq:hover{
-  transform: translateY(calc(var(--space) * -0.75));
-  transform: scale(1.04);
+  transform: translateY(calc(var(--space) * -0.75)) scale(1.02);
+  box-shadow: var(--shadow-soft);
 }
 
 /* 封面图：按比例显示，不再压扁 */
@@ -68,20 +68,20 @@
 /* 文本区：把标题与图片的间距拉近 */
 .product-card.eq .card-body{
   flex:1;
-  padding:10px 12px 12px;     /* ← 上内边距降低（原 12px） */
+  padding: space(1.25) space(1.5) space(1.5);
 }
 .product-card.eq .card-body h3{
-  margin:.15rem 0 .2rem;      /* ← 标题顶部更紧凑（原 .1/.25） */
-  font-size:var(--fs-xs);
-  line-height:1.35;
-  text-align:center;
+  margin: calc(var(--space) * 0.3) 0 calc(var(--space) * 0.4);
+  font-size: var(--fs-xs);
+  line-height: 1.35;
+  text-align: center;
 }
 .product-card.eq .card-body h3 a{
-  text-decoration:none;
-  color:inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .product-card.eq .card-body .muted{
-  color:#6b7280;
+  color: var(--muted);
 }
 
 /* 两行截断工具类（如你已有可忽略） */

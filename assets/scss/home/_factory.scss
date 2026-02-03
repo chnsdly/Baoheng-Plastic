@@ -2,7 +2,7 @@
 // Mirrors the Industries section spacing and typography while adding hover/focus overlays.
 
 .factory {
-  padding-block: space(6);
+  padding-block: var(--section-padding);
   background-color: var(--surface);
   color: var(--on-surface);
 
@@ -14,14 +14,14 @@
 
   &__title {
     margin: 0;
-    font-size: var(--fs-3);
-    font-weight: 500;
+    font-size: var(--section-title-size);
+    font-weight: var(--section-title-weight);
   }
 
   &__description {
     margin: space(2) 0 0;
-    font-size: var(--fs-1);
-    color: color-mix(in srgb, var(--on-surface) 80%, transparent);
+    font-size: var(--section-desc-size);
+    color: var(--section-desc-color);
   }
 
   &__grid {
@@ -55,7 +55,7 @@
     perspective: 1200px;
 
     &:focus-visible {
-      box-shadow: 0 0 0 3px var(--brand-primary), var(--shadow);
+      box-shadow: 0 0 0 3px var(--brand), var(--shadow);
     }
 
     &:hover .factory__card,
@@ -102,16 +102,16 @@
     justify-content: flex-end;
     gap: space(0.5);
     padding: space(2.5);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.55) 100%);
-    color: #f7fbff;
+    background: linear-gradient(180deg, transparent 35%, color-mix(in srgb, var(--on-surface) 55%, transparent) 100%);
+    color: var(--card);
     text-align: center;
     letter-spacing: 0.01em;
   }
 
   &__side--back {
     transform: rotateY(180deg);
-    background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.92));
-    color: #e2e8f0;
+    background: linear-gradient(145deg, color-mix(in srgb, var(--on-surface) 96%, var(--surface)), color-mix(in srgb, var(--on-surface) 92%, var(--surface)));
+    color: var(--card);
     align-items: center;
     justify-content: center;
   }
@@ -150,6 +150,6 @@
     font-size: var(--fs-0);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    opacity: 0.9;
+    color: var(--muted);
   }
 }

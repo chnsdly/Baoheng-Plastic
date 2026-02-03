@@ -3,16 +3,7 @@ languageCode = 'en-us'
 title = 'Baoheng Plastic'
 enableRobotsTXT = true
 
-[params]
-  company_name = 'Baoheng Plastic'
-  description = 'Baoheng Plastic manufactures injection- and blow-molded plastic pallets, bins, and sanitation products for warehousing, logistics, cold chain, food, and industrial clients worldwide.'
-  keywords = ['plastic pallets', 'injection molding pallets', 'logistics pallets', 'warehouse pallets', 'pallet manufacturer', 'Baoheng Plastic']
-  logo = 'images/logo.png'
-  default_image = 'images/home/factory-1.jpg'
-  phone = '+86-0539-0000000'
-  email = 'sales@baohengplastic.com'
-  address = 'Economic Development Zone, Linyi, Shandong, China'
-  organization = { name = 'Baoheng Plastic', legalName = 'Shandong Baoheng Plastic Products Co., Ltd.', url = 'https://www.baohengplastic.com/', logo = 'https://www.baohengplastic.com/images/logo.png', foundingDate = '2013-01-01', telephone = '+86-0539-0000000', email = 'sales@baohengplastic.com', address = { streetAddress = 'Economic Development Zone', addressLocality = 'Linyi', addressRegion = 'Shandong', postalCode = '276000', addressCountry = 'CN' } }
+# 站点级参数已统一到 config/_default/params.toml
 
 [languages]
   [languages.en]

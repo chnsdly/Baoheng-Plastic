@@ -1,8 +1,11 @@
+// -----------------------------------------------------------------------------
+// Site header: fixed bar, smart scroll hide, dropdowns, drawer, lang switcher
+// -----------------------------------------------------------------------------
 
 .site-header {
-  --burger-length: 30px;      /* 汉堡线长 */
-  --burger-thickness: 3px;    /* 汉堡线粗 */
-  --burger-gap: 6px;          /* 汉堡线间距 */
+  --burger-length: 28px;
+  --burger-thickness: 2.5px;
+  --burger-gap: 5px;
 
   position: fixed;
   top: 0;
@@ -10,22 +13,29 @@
   right: 0;
   z-index: var(--z-header);
   height: var(--header-height);
-  background: linear-gradient(120deg,
-    color-mix(in srgb, var(--card) 92%, white 8%),
-    color-mix(in srgb, var(--surface) 86%, white 14%));
-  box-shadow: var(--shadow);
+  background: color-mix(in srgb, var(--card) 96%, white 4%);
+  box-shadow: 0 1px 0 var(--border);
+  transition: transform var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease);
+
+  &.is-scrolled {
+    background: color-mix(in srgb, var(--card) 98%, white 2%);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    @supports (backdrop-filter: blur(8px)) {
+      background: color-mix(in srgb, var(--card) 85%, transparent);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  &.is-hidden {
+    transform: translateY(calc(-1 * var(--header-height)));
+  }
 }
 
-body {
-  --header-offset: var(--header-height);
-  padding-top: var(--header-offset);
-  transition: padding-top var(--t-normal) var(--ease);
-}
-
-
-/* 新增：向下滚动时隐藏导航栏的样式 */
-.site-header.is-hidden {
-  transform: translateY(calc(-1 * var(--header-height)));
+.navbar__wrap {
+  height: 100%;
+  margin-inline: auto;
+  padding-inline: calc(var(--space) * 1.5);
+  max-width: var(--container-wide);
 }
 
 .navbar {
@@ -33,8 +43,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin-inline: auto;
-  padding-inline: calc(var(--space) * 1.5);
+  gap: calc(var(--space) * 2);
 }
 
 .navbar__left {
@@ -42,287 +51,287 @@ body {
   align-items: center;
   gap: calc(var(--space) * 2.5);
   min-width: 0;
+  flex: 1;
 }
 
-/* ******************** Logo无样式 ******************** */
-
-/* ******************** 中部菜单区 ******************** */
-
-@mixin dropdown-panel($side: left, $width: 200px) {
-  position: absolute;
-  top: 100%;
-
-  @if $side == right {
-    right: 0;
-  } @else {
-    left: 0;
+.navbar__logo {
+  flex-shrink: 0;
+  a {
+    display: block;
+    line-height: 0;
   }
-
-  min-width: $width;
-  background-color: var(--surface);
-  box-shadow: var(--shadow);
-  border: var(--border-w) solid var(--border);
-  padding: var(--space);
-  margin-top: 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(var(--space));
-  transition: opacity var(--t-normal) var(--ease),
-              transform var(--t-normal) var(--ease),
-              visibility var(--t-normal) var(--ease);
+  img {
+    display: block;
+    height: auto;
+    max-height: calc(var(--header-height) - 12px);
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+  }
 }
 
+// ------------------------------ Desktop menu (ul = .navbar__menu) ------------------------------
 .navbar__menu {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  min-width: 0;
-  margin-inline: 0;
-}
-
-.navbar__menu>ul {
-  display: flex;
   align-items: center;
-  gap: var(--space);
+  gap: 0;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar__menu li {
+.navbar__item {
   position: relative;
 }
 
-.navbar__menu a {
-  display: flex;
+.navbar__link {
+  display: inline-flex;
   align-items: center;
-  gap: var(--space);
-  padding-block: space(1);
-  padding-inline: space(1);
-  color: #353535; 
+  gap: calc(var(--space) * 0.5);
+  padding: calc(var(--space) * 1.2) calc(var(--space) * 1.5);
+  min-height: 44px;
+  color: var(--on-surface);
   font-size: var(--fs-xs);
-  white-space: nowrap;       /* 强制链接不换行 */
+  font-weight: 500;
+  white-space: nowrap;
   text-decoration: none;
-  position: relative;
+  border-radius: var(--radius);
+  transition: color var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
+
+  &:hover {
+    color: var(--brand);
+  }
+  &.is-active {
+    color: var(--brand);
+    background-color: color-mix(in srgb, var(--brand) 12%, transparent);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--space) * 1);
+    right: calc(var(--space) * 1);
+    bottom: calc(var(--space) * 0.6);
+    height: 2px;
+    background: var(--brand);
+    border-radius: 1px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform var(--t-normal) var(--ease);
+  }
 }
 
-.navbar__menu a.is-active {
-  background-color: unquote("rgb(from var(--on-brand) r g b / 20%)");
-}
-
-.navbar__menu a::after {
-  content: "";
-  position: absolute;
-  left: calc(var(--space) * 1.4);
-  right: calc(var(--space) * 1.4);
-  bottom: calc(var(--space) * 0.5);
-  height: 2px;
-  background: var(--brand);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform var(--t-normal) var(--ease);
-}
-
-.navbar__menu li:hover>a::after,
-.navbar__menu a.is-active::after {
+.navbar__item:hover > .navbar__link::after,
+.navbar__link.is-active::after {
   transform: scaleX(1);
 }
 
-
-.navbar__menu .dropdown-arrow {
+.navbar__chevron {
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
-  transition: transform var(--t-slow) var(--ease);
+  opacity: 0.7;
+  transition: transform var(--t-normal) var(--ease);
 }
-
-.navbar__menu li:hover>a .dropdown-arrow {
+.navbar__item:hover > .navbar__link .navbar__chevron,
+.navbar__item:focus-within > .navbar__link .navbar__chevron {
   transform: rotate(180deg);
 }
 
+// Dropdown panel mixin
+@mixin dropdown-panel($side: left, $width: 200px) {
+  position: absolute;
+  top: 100%;
+  margin-top: 2px;
+  min-width: $width;
+  background: var(--card);
+  border: var(--border-w) solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: calc(var(--space) * 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity var(--t-normal) var(--ease), transform var(--t-normal) var(--ease), visibility var(--t-normal) var(--ease);
+  @if $side == right {
+    right: 0;
+  } @else {
+    left: 0;
+  }
+}
+
 .dropdown-menu {
-  @include dropdown-panel(left, 200px);
+  @include dropdown-panel(left, 220px);
   list-style: none;
   display: grid;
-  gap: 0;
-  border-radius: var(--radius);
+  gap: 2px;
 }
 
-
-.dropdown-menu li + li {
-  border-top: var(--border-w) solid color-mix(in srgb, var(--border) 30%, transparent);
-}
-
-
-.lang-switcher__dropdown {
-  @include dropdown-panel(right, 150px);
-  border-radius: var(--radius);
-  min-width: 100%;
-  width: max-content;
-}
-
-
-:is(.navbar__menu li:hover, .navbar__menu li:focus-within) > .dropdown-menu,
-:is(.lang-switcher.is-open) .lang-switcher__dropdown {
+.navbar__item:hover > .dropdown-menu,
+.navbar__item:focus-within > .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.dropdown-menu a {
+.dropdown-menu__link {
   display: block;
-  padding: calc(var(--space)) calc(var(--space) * 3);
+  padding: calc(var(--space) * 1) calc(var(--space) * 1.5);
+  min-height: 44px;
+  line-height: 1.3;
   color: var(--on-surface);
-  border-radius: var(--radius);
   font-size: var(--fs-xs);
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
   text-decoration: none;
-  transition: background-color var(--t-normal) var(--ease),
-  color var(--t-normal) var(--ease);
+  border-radius: calc(var(--radius) * 0.8);
+  transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+
+  &:hover {
+    background: color-mix(in srgb, var(--brand) 10%, transparent);
+    color: var(--brand);
+  }
+  &.is-active {
+    background: color-mix(in srgb, var(--brand) 14%, transparent);
+    color: var(--brand);
+    font-weight: 500;
+  }
 }
 
-.lang-switcher__dropdown a {
-  display: block;
-  padding: calc(var(--space) * 0.9) calc(var(--space) * 1.6);
-  color: var(--on-surface);
-  border-radius: var(--radius);
-  font-size: var(--fs-xxs);
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-  text-decoration: none;
-  transition: background-color var(--t-normal) var(--ease),
-              color var(--t-normal) var(--ease);
-}
-
-
-.lang-switcher__dropdown a { white-space: nowrap; }
-
-:is(.dropdown-menu, .lang-switcher__dropdown)::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: calc(var(--space) * 2);
-  top: calc(-1 * calc(var(--space) * 2));
-}
-
-:is(.dropdown-menu, .lang-switcher__dropdown) a:hover {
-  color: var(--brand);
-  text-decoration: none;
-}
-
-/* ******************** 右侧语言栏 ******************** */
-
+// ------------------------------ Actions: CTA + Lang + Toggler ------------------------------
 .navbar__actions {
   display: flex;
   align-items: center;
-  /* 确保右侧操作区不会收缩 */
   flex-shrink: 0;
-  gap: calc(var(--space) * 2);
+  gap: calc(var(--space) * 1.5);
 }
 
 .navbar__cta {
   text-decoration: none;
   font-size: var(--fs-xs);
-  color: #ffffff;
-  padding: space(1.5) space(3);
-  box-shadow: none;
+  font-weight: 500;
+  padding: calc(var(--space) * 1.2) calc(var(--space) * 2);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-normal) var(--ease);
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--brand) 40%, transparent);
+  }
 }
 
-.navbar__cta:hover {
-  text-decoration: none;
-}
-
-/* 语言切换 */
+// Lang switcher (desktop)
 .lang-switcher {
   position: relative;
 }
 
 .lang-switcher__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: calc(var(--space) * 0.8);
-  border: var(--border-w) solid color-mix(in srgb, var(--brand) 35%, transparent);
-  border-radius: calc(var(--radius) * 0.5);
-  color: #000000;
+  gap: calc(var(--space) * 0.6);
+  padding: calc(var(--space) * 0.8) calc(var(--space) * 1.2);
+  min-height: 44px;
+  border: var(--border-w) solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--on-surface);
   font-size: var(--fs-xxs);
-  letter-spacing: 0.01em;
-  text-transform: none;
-  background-color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+
+  &:hover {
+    border-color: var(--brand);
+    background: color-mix(in srgb, var(--brand) 8%, transparent);
+    color: var(--brand);
+  }
 }
 
-.lang-switcher__button:hover {
-  background-color: unquote("rgb(from var(--brand) r g b / 15%)");
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.lang-switcher__button svg {
-  width: 20px;
-  height: 20px;
-  stroke-width: 1.6;
-}
+.lang-switcher__label { white-space: nowrap; }
 
 .lang-switcher__caret {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid #111;
-  display: inline-block;
-  transform: translateY(1px);
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+  transition: transform var(--t-normal) var(--ease);
+}
+.lang-switcher.is-open .lang-switcher__caret {
+  transform: rotate(180deg);
 }
 
-.lang-switcher.is-open .lang-switcher__button {
-  border-color: color-mix(in srgb, var(--brand) 55%, transparent);
-  background: #ffffff;
+.lang-switcher__dropdown {
+  @include dropdown-panel(right, 140px);
+  min-width: 100%;
+  width: max-content;
+  pointer-events: none;
+}
+.lang-switcher.is-open .lang-switcher__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
+.lang-switcher__dropdown a {
+  display: block;
+  padding: calc(var(--space) * 0.9) calc(var(--space) * 1.2);
+  min-height: 40px;
+  line-height: 1.3;
+  color: var(--on-surface);
+  font-size: var(--fs-xxs);
+  text-decoration: none;
+  border-radius: calc(var(--radius) * 0.8);
+  white-space: nowrap;
+  transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
-/* 汉堡按钮 (移动端) */
+  &:hover {
+    background: color-mix(in srgb, var(--brand) 10%, transparent);
+    color: var(--brand);
+  }
+}
 
-
-
+// Hamburger
 .navbar__toggler {
   position: relative;
   width: 44px;
   height: 44px;
-  padding: 0;                     /* 关键：避免“长方形框” */
-  background: transparent;        /* 关键：去默认背景 */
-  border: none;                   /* 关键：去默认边框 */
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
   cursor: pointer;
-  color: var(--on-brand);         /* 三条线用 currentColor 继承这个颜色 */
-
-  display: none;                  /* 关键：用flex把三条线垂直堆起来 */
+  color: var(--on-surface);
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--burger-gap);                       /* 三条线之间的间距，和 margin 二选一 */
+  gap: var(--burger-gap);
+  transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+
+  &:hover {
+    background: color-mix(in srgb, var(--brand) 10%, transparent);
+    color: var(--brand);
+  }
 }
 
-.navbar__menu a:focus-visible,
-.lang-switcher__button:focus-visible,
-.navbar__toggler:focus-visible {
-  @include focus-ring(3px);
-}
-
-/* 三条横线：用 currentColor 着色 */
 .toggler-bar {
   display: block;
   width: var(--burger-length);
   height: var(--burger-thickness);
-  background-color: currentColor; 
-  border-radius: calc(var(--burger-thickness)/2);
+  background: currentColor;
+  border-radius: calc(var(--burger-thickness) / 2);
   transition: transform var(--t-normal) var(--ease), opacity var(--t-normal) var(--ease);
 }
 
-.navbar__toggler.open .toggler-bar{
-  position: absolute; left: 50%; top: 50%;
+.navbar__toggler.open .toggler-bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* 打开时汉堡变为X */
 .navbar__toggler.open .toggler-bar:nth-child(1) {
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -333,170 +342,249 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* 抽屉打开时，把 header 提到抽屉之上 */
+.navbar__link:focus-visible,
+.lang-switcher__button:focus-visible,
+.navbar__toggler:focus-visible,
+.dropdown-menu__link:focus-visible {
+  @include focus-ring(3px);
+}
 
+// ------------------------------ Body offset ------------------------------
+body {
+  --header-offset: var(--header-height);
+  padding-top: var(--header-offset);
+  transition: padding-top var(--t-normal) var(--ease);
+}
 
-/*
-        * 移动端抽屉样式 (Drawer)
-        */
+// ------------------------------ Drawer overlay ------------------------------
 .drawer-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.45);
   z-index: var(--z-overlay);
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--t-normal) var(--ease), visibility var(--t-normal) var(--ease);
 }
 
-.drawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  max-width: none;
-  background-color: var(--brand);
-  background-color: unquote("rgb(from var(--brand) r g b / var(--layer-alpha))");
-  z-index: var(--z-modal);
-  transform: translateY(-100%);
-  transition: transform var(--t-normal) var(--ease);
-  display: flex;
-  flex-direction: column;
-  padding: calc(var(--space) * 4);
-}
-
-body[data-drawer-open='true'] {
+body[data-drawer-open="true"] {
   overflow: hidden;
-
   #site-header {
-    z-index: calc(var(--z-modal) + 2); /* > drawer(1000) 和 overlay(900) */
+    z-index: calc(var(--z-modal) + 2);
   }
-
   .drawer-overlay {
     opacity: 1;
     visibility: visible;
   }
-
   .drawer {
     transform: translateY(0);
   }
 }
 
+// ------------------------------ Drawer (mobile menu) ------------------------------
+.drawer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--header-height) + var(--space) * 2) calc(var(--space) * 2) calc(var(--space) * 3);
+  transform: translateY(-100%);
+  transition: transform var(--t-normal) var(--ease);
+  overflow: hidden;
+
+  &[hidden] {
+    display: none !important;
+  }
+}
+
 .drawer__header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: calc(var(--space) * 6);
-}
-
-
-.drawer__menu {
-  flex-grow: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.drawer__menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: var(--space);
-  width: 100%;
+  margin-bottom: calc(var(--space) * 2);
+  min-height: 44px;
 }
 
-.drawer__menu a {
-  display: block;
-  padding: calc(var(--space) * 2) calc(var(--space) * 1.5);
-  font-size: var(--fs-2);
-  color: var(--on-brand);
-  border-radius: var(--radius);
-  text-decoration: none;
-  transition: background-color var(--t-normal) var(--ease);
-  text-align: center;
-  width: 100%;
-}
-
-.drawer__menu a:hover,
-.drawer__menu a.is-active {
-  background-color: var(--brand);
-  color: var(--on-brand);
-}
-
-/* 移动端子菜单样式 */
-.drawer__menu .submenu {
-  padding: 0;
-  margin: 0;
-  display: none;
-  flex-direction: column;
-  gap: 0;
-  width: 100%;
-}
-
-.drawer__menu .submenu.is-active {
-  display: flex;
-}
-
-.drawer__menu .submenu li {
-  width: 100%;
-}
-
-.drawer__menu .submenu a {
-  font-size: var(--fs-1);
-  padding-block: calc(var(--space) * 1.5);
-}
-
-
-.drawer__menu > ul.is-hidden {
-  display: flex;
-}
-
-.drawer__menu > ul.is-hidden > li {
-  display: none;
-}
-
-.drawer__menu > ul.is-hidden > li.submenu-visible {
-  display: flex;
-  flex-direction: column;
+.drawer__back {
+  display: inline-flex;
   align-items: center;
+  gap: calc(var(--space) * 0.8);
+  padding: calc(var(--space) * 1) calc(var(--space) * 1.5);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--on-surface);
+  font-size: var(--fs-1);
+  cursor: pointer;
+  transition: background-color var(--t-fast) var(--ease);
+  &[hidden] {
+    display: none !important;
+  }
+  &:hover {
+    background: color-mix(in srgb, var(--brand) 12%, transparent);
+    color: var(--brand);
+  }
 }
 
-.drawer__menu > ul.is-hidden > li.submenu-visible > a {
-  display: none;
+.drawer__title {
+  font-size: var(--fs-2);
+  font-weight: 600;
+  color: var(--on-surface);
 }
 
-.drawer__menu > ul.is-hidden > li.submenu-visible .submenu.is-active {
+.drawer__menu {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drawer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.drawer__item {
+  border-radius: var(--radius);
+}
+
+.drawer__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: calc(var(--space) * 1.5) calc(var(--space) * 1.5);
+  min-height: 52px;
+  color: var(--on-surface);
+  font-size: var(--fs-2);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: left;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+
+  &:hover {
+    background: color-mix(in srgb, var(--brand) 12%, transparent);
+    color: var(--brand);
+  }
+  &.is-active {
+    background: color-mix(in srgb, var(--brand) 14%, transparent);
+    color: var(--brand);
+  }
+  &.has-children {
+    cursor: pointer;
+  }
+}
+
+.drawer__chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: transform var(--t-normal) var(--ease);
+}
+.drawer__item:has(.drawer__submenu:not([hidden])) .drawer__chevron {
+  transform: rotate(90deg);
+}
+
+.drawer__submenu {
+  padding-left: calc(var(--space) * 2);
+  padding-bottom: calc(var(--space) * 1);
+  &[hidden] {
+    display: none !important;
+  }
+  &:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 calc(var(--space) * 1);
+    border-left: 2px solid var(--border);
+    margin-left: calc(var(--space) * 1.5);
+  }
+}
+
+.drawer__subitem {
+  margin: 0;
+}
+
+.drawer__sublink {
+  display: block;
+  padding: calc(var(--space) * 1.2) calc(var(--space) * 1.5);
+  min-height: 48px;
+  line-height: 1.4;
+  color: var(--on-surface);
+  font-size: var(--fs-1);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+
+  &:hover {
+    background: color-mix(in srgb, var(--brand) 10%, transparent);
+    color: var(--brand);
+  }
+  &.is-active {
+    color: var(--brand);
+    font-weight: 500;
+  }
 }
 
 .drawer__footer {
-  padding-top: calc(var(--space) * 4);
+  padding-top: calc(var(--space) * 2);
   margin-top: auto;
   border-top: var(--border-w) solid var(--border);
 }
 
-.drawer__footer .lang-switcher__button {
-  width: 100%;
-  justify-content: center;
+.lang-switcher--drawer {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space) * 1.5);
+  flex-wrap: wrap;
+  .lang-switcher__current {
+    font-size: var(--fs-1);
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .lang-switcher__link {
+    font-size: var(--fs-1);
+    color: var(--brand);
+    text-decoration: none;
+    font-weight: 500;
+    padding: calc(var(--space) * 0.5) 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-/*
-        * 响应式布局 (Responsive)
-        */
-@media (max-width: 1023.98px) {
-
-  .navbar__menu,
-  .navbar__actions .lang-switcher,
-  .navbar__cta {
-    display: none;
+// ------------------------------ Reduced motion ------------------------------
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-header.is-hidden,
+  .drawer,
+  .drawer-overlay,
+  .dropdown-menu,
+  .lang-switcher__dropdown {
+    transition-duration: 0.01ms;
   }
+}
 
+// ------------------------------ Responsive ------------------------------
+@media (max-width: 1023.98px) {
+  .navbar__menu,
+  .navbar__actions .lang-switcher:not(.lang-switcher--drawer),
+  .navbar__cta {
+    display: none !important;
+  }
   .navbar__toggler {
     display: flex;
   }

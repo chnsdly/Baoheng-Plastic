@@ -1,6 +1,6 @@
 /* -------------------------------- 产品列表 -------------------------------- */
 .product-listing{
-  padding-block: space(4);
+  padding-block: var(--section-padding);
   background: var(--surface);
 }
 
@@ -57,7 +57,7 @@
   display: none;
   align-items: center;
   gap: space(.5);
-  padding: space(.6) space(.9);
+  padding: space(0.6) space(0.9);
   border-radius: var(--radius-sm);
   border: var(--border-w) solid var(--border);
   background: var(--surface);
@@ -139,10 +139,9 @@
   opacity: .7;
 }
 
-.product-sidebar__link .product-sidebar__sublink:hover
-.product-sidebar__link .product-sidebar__sublink:focus-within{
+.product-sidebar__sublink:hover,
+.product-sidebar__sublink:focus-visible{
   background: color-mix(in srgb, var(--brand) 8%, var(--card));
-  box-shadow: var(--shadow-soft);
 }
 
 .product-sidebar__item--current > .product-sidebar__link{
@@ -170,7 +169,7 @@
 
 .product-sidebar__sublink{
   display: block;
-  padding: space(.6) space(.75);
+  padding: space(0.6) space(0.75);
   color: var(--muted);
   font-size: var(--fs-xs);
   border-radius: var(--radius-sm);
@@ -434,7 +433,7 @@
 }
 /* --------------------------------------产品详情---------------------------------- */
 .product-single{
-  padding-block: space(4);
+  padding-block: var(--section-padding);
 }
 
 .product-single__container{
@@ -515,7 +514,7 @@
   min-inline-size: clamp(10rem, 20vw, 14rem);
   justify-content: center;
   box-shadow: var(--shadow);
-  color: #ffffff;
+  color: var(--on-brand);
   font-size: var(--fs-2);
 }
 

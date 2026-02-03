@@ -2,7 +2,7 @@
 // Uses BEM naming and site design tokens for spacing, typography, and colors.
 
 .industries {
-  padding-block: space(6);
+  padding-block: var(--section-padding);
   background-color: var(--surface);
   color: var(--on-surface);
 
@@ -13,8 +13,8 @@
 
   &__title {
     margin: 0;
-    font-size: var(--fs-3);
-    font-weight: 500;
+    font-size: var(--section-title-size);
+    font-weight: var(--section-title-weight);
   }
 
   &__grid {
