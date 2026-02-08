@@ -1,5 +1,5 @@
 {{- /* Hugo Pipes: SCSS -> CSS; production: minify + fingerprint (+SRI) */ -}}
-{{- $style := resources.Get "scss/main.scss" | toCSS -}}
+{{- $style := resources.Get "scss/main.scss" | toCSS (dict "transpiler" "dartsass") -}}
 {{- if hugo.IsProduction -}}
   {{- $style = $style | minify | fingerprint -}}
 {{- end -}}
