@@ -1,0 +1,20 @@
+/* 1) 全局盒模型 */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 2) 文档基线（根字号、字体、颜色、背景等） */
+html {
+  font-size: var(--font-size);
+  scrollbar-gutter: stable;
+}
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  color: var(--on-surface);
+  background: var(--surface);
+  line-height: var(--line);
+  text-rendering: optimizeLegibility;
+}
+
+/* 3) 媒体自适应 */
+img, svg, video, canvas { display: block; max-width: 100%; height: auto; }

@@ -1,0 +1,4 @@
+@use "../tools" as *;
+
+/* 垂直流式间距：兄弟元素之间留白 */
+.flow > * + * { margin-block-start: var(--flow-gap, space(3)); }
