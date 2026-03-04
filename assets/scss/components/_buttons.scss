@@ -1,0 +1,35 @@
+@use "../tools" as *;
+
+/* 8) 按钮组件 */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: space(1);
+  padding: space(2) space(3);
+  min-block-size: 44px;                /* 最小触达区域 */
+  border-radius: var(--radius);
+  border: var(--border-w) solid var(--border);
+  background: var(--surface);
+  color: var(--on-surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition:
+    transform var(--t-fast) var(--ease),
+    background-color var(--t-normal) var(--ease),
+    color var(--t-normal) var(--ease);
+}
+.button:hover {
+  transform: translateY(-1px);
+}
+.button--primary {
+  background: var(--brand);
+  color: var(--on-brand);
+  border-color: transparent;
+}
+.button:focus-visible { @include focus-ring(); }
+.button[disabled],
+.button[aria-disabled="true"] {
+  opacity: .5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

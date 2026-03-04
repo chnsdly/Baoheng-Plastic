@@ -1,15 +1,8 @@
-@import "tokens";
-@import "header";
-@import "home/hero";
-@import "home/usps";
-@import "home/factory";
-@import "home/industries";
-@import "home/clients";
-@import "home/featured";
-@import "home/cta";
-@import "products";
-@import "industries-list";
-@import "resources-list";
-@import "resources-single";
-@import "form";
-@import "contact";
+@use "vars";
+@use "tools" as *;
+
+@use "base/index";
+@use "layout/index";
+@use "components/index";
+@use "pages/index";
+@use "utilities/index";
