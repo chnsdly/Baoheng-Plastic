@@ -1,0 +1,121 @@
+/* ---------------------------- 主题变量：亮色基线 ---------------------------- */
+:root {
+  /* 品牌色 & 基础语义色 */
+  --brand:        #1279e8;   /* 品牌色 */
+  --on-brand:     #000000;   /* 品牌色上的文本/图标 */
+  --surface:      #fafbff;   /* 页面默认底色：提亮整体背景 */
+  --on-surface:   #101114;   /* 正文前景色 */
+  --card:         #ffffff;
+  --on-card:      #0b0e10;
+  --muted:        #667085;   /* 次要文本/图标 */
+  --border:       #cacaca;   /* 分隔线/描边 */
+  --surface-variant: #f1f5f9; /* 区块浅底（如 clients 背景） */
+  --on-surface-variant: var(--on-surface);
+
+  /* 反馈色 */
+  --success:      #16a34a;
+  --warning:      #d97706;
+  --danger:       #dc2626;
+  --info:         #2563eb;
+  --on-success:   #ffffff;
+  --on-warning:   #ffffff;
+  --on-danger:    #ffffff;
+  --on-info:      #ffffff;
+
+  --focus:        #2563eb;   /* 焦点环/选区色（高对比度） */
+
+  --layer-alpha: 1;    /* 透明度调节 */
+
+  --container-wide:   80rem; /* 宽版：营销/视觉模块 */
+  --container:        72rem; /* 默认：常规页面 */
+  --container-narrow: 60rem; /* 窄版：以阅读为主 */
+  
+  --header-height: 56px;    /* 导航栏高度 */
+
+  /* 字体与排版 */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --font-size: 16px;                     /* 基础根字号 */
+  --fs-0: clamp(0.6875rem, 0.65rem + 0.25vw, 0.75rem); /* 极小：标签、角标 */
+  --fs-xxs: clamp(0.75rem, 0.72rem + 0.3vw, 0.8125rem);
+  --fs-xs: clamp(0.875rem, 0.82rem + 0.5vw, 0.9375rem);
+  --fs-1: clamp(1rem, 0.96rem + 0.5vw, 1.125rem);  /* 小文本/正文 */
+  --fs-2: clamp(1.125rem, 1.05rem + 1vw, 1.375rem);/* 中等标题 */
+  --fs-3: clamp(1.375rem, 1.25rem + 1.5vw, 1.75rem);/* 较大标题 */
+  --fs-4: clamp(1.75rem, 1.5rem + 2vw, 2.25rem);   /* 更大标题 */
+  --fs-5: clamp(2.25rem, 1.9rem + 3vw, 3rem);      /* 最大标题 */
+  --line: 1.6;  /* 全局行高 */
+
+  /* 间距与圆角 */
+  --space: 0.5rem; /* 基准间距步长 */
+  --radius: 5px;   /* 默认圆角 */
+  --radius-sm: 4px; /* 小圆角（控件、标签） */
+  --radius-pill: 999px; /* 胶囊形圆角 */
+  --border-w: 1px;  /* 描边宽度 */
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.08); /* 常规阴影 */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.06); /* 轻阴影（按钮、控件） */
+  --shadow-soft: 0 4px 12px rgba(0,0,0,.06); /* 柔和阴影（卡片悬停） */
+  /* 区块通用：统一 section 上下留白与标题字号 */
+  --section-padding: calc(var(--space) * 6);
+  --section-title-size: var(--fs-3);
+  --section-title-weight: 600;
+  --section-desc-size: var(--fs-1);
+  --section-desc-color: var(--muted);
+
+
+  /* 动效参数 */
+  --ease: cubic-bezier(.2,.6,.2,1);
+  --t-fast: 180ms;
+  --t-normal: 320ms;
+  --t-slow: 500ms;
+
+  /* Z-index 层级 */
+  --z-base: 0;
+  --z-header: 100;
+  --z-overlay: 900;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}
+
+/* ---------------------------- 主题变量：暗色覆盖 ---------------------------- */
+[data-theme="dark"] {
+  --surface:    #0b1220;
+  --on-surface: #eef2ff;
+  --muted:      #9aa4b2;
+  --border:     #233044;
+  --surface-variant: #1e293b;
+  --on-surface-variant: var(--on-surface);
+
+  --brand:      #2260ff;
+  --on-brand:   #ffffff;
+  --focus:      #60a5fa;
+
+  --card: color-mix(in oklch, var(--surface), white 7%);
+
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
+  --shadow-soft: 0 4px 12px rgba(0,0,0,.35);
+}
+
+/* 系统偏好暗色模式 */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --surface:    #0b1220;
+    --on-surface: #eef2ff;
+    --muted:      #9aa4b2;
+    --border:     #233044;
+    --surface-variant: #1e293b;
+    --on-surface-variant: var(--on-surface);
+    --brand:      #2260ff;
+    --on-brand:   #ffffff;
+    --focus:      #60a5fa;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
+    --shadow-soft: 0 4px 12px rgba(0,0,0,.35);
+  }
+}
+
+/* 降低动画（系统偏好） */
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 1ms; --t-normal: 1ms; }
+}
