@@ -1,10 +1,14 @@
 /* Home: Featured products */
+.home-featured{
+  padding-block: var(--section-padding);
+}
+
 .home-featured .head{
   display:grid;
   grid-template-columns:1fr auto 1fr;
   align-items:flex-end;
   gap: space(1);
-  margin-top:space(4);
+  margin-top:0;
   margin-bottom:space(2);
 }
 .home-featured .head h2{

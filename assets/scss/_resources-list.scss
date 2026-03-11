@@ -1,10 +1,14 @@
+/* resources section spacing */
+.resources-listing {
+  padding-block: var(--section-padding);
+}
+
 /* =============== 两栏布局修复（仅本页生效） =============== */
 .layout--two {
   --sidebar-w: 20rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: space(3);
-  margin-block: var(--section-padding);
 
   /* 让列从顶部对齐，避免侧栏被内容撑下去 */
   align-items: start;
