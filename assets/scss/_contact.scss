@@ -70,7 +70,7 @@
   border-radius: var(--radius);
   background: var(--surface-variant);
   border: var(--border-w) solid var(--border);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow);
 }
 
 .contact-hero__meta-row--social {
@@ -108,13 +108,13 @@
   background: var(--surface-variant);
   border-radius: var(--radius-pill);
   border: var(--border-w) solid var(--border);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow);
   transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
 }
 
 .contact-social__link:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow);
   background: color-mix(in srgb, var(--brand) 12%, var(--surface));
 }
 

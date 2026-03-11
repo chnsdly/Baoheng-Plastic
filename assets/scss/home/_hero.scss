@@ -138,7 +138,7 @@
   font-size: var(--text-body-lg);
   cursor: pointer;
   transition: transform var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow);
 }
 
 .hero__control:hover,
