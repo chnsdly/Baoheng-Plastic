@@ -8,7 +8,7 @@
   --card:         #ffffff;
   --on-card:      #0b0e10;
   --muted:        #667085;   /* 次要文本/图标 */
-  --border:       #cacaca;   /* 分隔线/描边 */
+  --border:       1px solid #d9e2ec;   /* 全站统一边框 */
   --surface-variant: #f1f5f9; /* 区块浅底（如 clients 背景） */
   --on-surface-variant: var(--on-surface);
 
@@ -104,7 +104,6 @@
   --space: 0.5rem; /* 基准间距步长 */
   --radius: 14px;   /* 默认圆角 */
   --radius-pill: 999px; /* 胶囊形圆角 */
-  --border-w: 1px;  /* 描边宽度 */
   --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   /* 区块通用：统一 section 上下留白与标题字号 */
   --section-padding: calc(var(--space) * 6);
@@ -133,7 +132,6 @@
   --surface:    #0b1220;
   --on-surface: #eef2ff;
   --muted:      #9aa4b2;
-  --border:     #233044;
   --surface-variant: #1e293b;
   --on-surface-variant: var(--on-surface);
 
@@ -150,13 +148,12 @@
     --surface:    #0b1220;
     --on-surface: #eef2ff;
     --muted:      #9aa4b2;
-    --border:     #233044;
     --surface-variant: #1e293b;
     --on-surface-variant: var(--on-surface);
     --brand:      #2260ff;
     --on-brand:   #ffffff;
     --focus:      #60a5fa;
-      }
+  }
 }
 
 /* 降低动画（系统偏好） */
@@ -334,7 +331,7 @@ input, button, select, textarea { font: inherit; color: inherit; }
   padding: space(2) space(3);
   min-block-size: 44px;                /* 最小触达区域 */
   border-radius: var(--radius);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   background: var(--surface);
   color: var(--on-surface);
   font-family: var(--font-body);

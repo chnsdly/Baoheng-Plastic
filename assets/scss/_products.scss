@@ -35,7 +35,7 @@
   align-items: center;
   gap: space(.75);
   padding-bottom: space(1.5);
-  border-bottom: 1px solid var(--border);
+  border-bottom: var(--border);
 }
 
 .product-sidebar__eyebrow{
@@ -59,7 +59,7 @@
   gap: space(.5);
   padding: space(0.6) space(0.9);
   border-radius: var(--radius);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   background: var(--surface);
   color: var(--on-card);
   font-weight: 700;
@@ -247,7 +247,7 @@
 
 .product-listing__media{
   border-radius: var(--radius);
-  border: 1px solid var(--border);
+  border: var(--border);
   box-shadow: var(--shadow);
   margin: 0;
   aspect-ratio: 4 / 3;
@@ -390,7 +390,7 @@
   min-block-size: calc(var(--space) * 5.5);
   padding-inline: space(1.2);
   padding-block: space(.7);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   border-radius: var(--radius);
   background: var(--surface);
   color: var(--on-surface);
@@ -478,7 +478,7 @@
   margin: 0;
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: var(--border);
   background: var(--surface);
   aspect-ratio: 4 / 3;
 }
@@ -579,7 +579,7 @@
 
 .product-details__specs .card{
   border-radius: var(--radius);
-  border: var(--border-w) solid color-mix(in srgb, var(--border) 82%, transparent);
+  border: var(--border);
   background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, var(--card)) 0%, color-mix(in srgb, var(--surface) 86%, var(--card)) 100%);
   box-shadow: var(--shadow);
 }
@@ -588,7 +588,7 @@
   background: var(--card);
   padding: space(2);
   border-radius: var(--radius);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
 }
 
 .spec-list{
@@ -598,9 +598,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1px;
-  background: color-mix(in srgb, var(--border) 86%, transparent);
+  background: #d9e2ec;
   border-radius: var(--radius);
-  border: var(--border-w) solid color-mix(in srgb, var(--border) 82%, transparent);
+  border: var(--border);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
@@ -647,7 +647,7 @@
   margin: 0;
   border-radius: var(--radius);
   overflow: hidden;
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   background: var(--surface);
 }
 
@@ -683,7 +683,7 @@
   margin: 0;
   border-radius: var(--radius);
   overflow: hidden;
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   background: var(--surface);
   inline-size: 100%;
 }
@@ -769,7 +769,7 @@
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     background: var(--card);
-    border: var(--border-w) solid color-mix(in srgb, var(--border) 85%, transparent);
+    border: var(--border);
   }
 
   &__image{

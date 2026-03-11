@@ -69,7 +69,7 @@ code {
   padding: 0.2em 0.4em;
   background: var(--surface-variant);
   border-radius: var(--radius);
-  border: 1px solid var(--border);
+  border: var(--border);
 }
 
 /* 表格样式 */
@@ -82,7 +82,7 @@ table {
 
 th, td {
   padding: space(2) space(3);
-  border: 1px solid var(--border);
+  border: var(--border);
   text-align: left;
 }
 
@@ -341,7 +341,6 @@ h6, .h6 {
   :root {
     --brand: #0056b3;
     --on-brand: #ffffff;
-    --border: #000000;
     --muted: #333333;
   }
   

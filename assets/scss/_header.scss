@@ -130,7 +130,7 @@
   margin-top: 2px;
   min-width: $width;
   background: var(--card);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: calc(var(--space) * 0.5);
@@ -224,7 +224,7 @@
   gap: calc(var(--space) * 0.6);
   padding: calc(var(--space) * 0.8) calc(var(--space) * 1.2);
   min-height: 44px;
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   border-radius: var(--radius);
   background: var(--surface);
   color: var(--on-surface);
@@ -500,7 +500,7 @@ body[data-drawer-open="true"] {
     list-style: none;
     margin: 0;
     padding: 0 0 0 calc(var(--space) * 1);
-    border-left: 2px solid var(--border);
+    border-left: var(--border);
     margin-left: calc(var(--space) * 1.5);
   }
 }
@@ -533,7 +533,7 @@ body[data-drawer-open="true"] {
 .drawer__footer {
   padding-top: calc(var(--space) * 2);
   margin-top: auto;
-  border-top: var(--border-w) solid var(--border);
+  border-top: var(--border);
 }
 
 .lang-switcher--drawer {
