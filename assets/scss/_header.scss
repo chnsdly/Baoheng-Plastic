@@ -82,14 +82,18 @@
 
 .navbar__item {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__link {
   display: inline-flex;
   align-items: center;
   gap: calc(var(--space) * 0.5);
+  position: relative;
   padding: calc(var(--space) * 1.2) calc(var(--space) * 1.5);
   min-height: 44px;
+  line-height: 1.2;
   color: var(--on-surface);
   font-size: var(--fs-xs);
   font-weight: 500;
@@ -100,29 +104,12 @@
 
   &:hover {
     color: var(--brand);
+    text-decoration: none;
   }
   &.is-active {
     color: var(--brand);
     background-color: color-mix(in srgb, var(--brand) 12%, transparent);
   }
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(var(--space) * 1);
-    right: calc(var(--space) * 1);
-    bottom: calc(var(--space) * 0.6);
-    height: 2px;
-    background: var(--brand);
-    border-radius: 1px;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform var(--t-normal) var(--ease);
-  }
-}
-
-.navbar__item:hover > .navbar__link::after,
-.navbar__link.is-active::after {
-  transform: scaleX(1);
 }
 
 .navbar__chevron {
@@ -187,6 +174,7 @@
   &:hover {
     background: color-mix(in srgb, var(--brand) 10%, transparent);
     color: var(--brand);
+    text-decoration: none;
   }
   &.is-active {
     background: color-mix(in srgb, var(--brand) 14%, transparent);
