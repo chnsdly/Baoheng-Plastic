@@ -37,7 +37,7 @@
   gap: calc(var(--space) * 2);
   grid-template-columns: 92px 1fr auto;
   align-items: center;
-  border-bottom: 1px solid var(--border);
+  border-bottom: var(--border);
   color: var(--on-card, var(--on-surface));
   padding-block: space(2);
 
@@ -109,7 +109,7 @@
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 44px; min-width: 44px; padding: space(0.5) space(1);
   border-radius: var(--radius);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   background: var(--surface);
   color: var(--on-surface);
   text-decoration: none;

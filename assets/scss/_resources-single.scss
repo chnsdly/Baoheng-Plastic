@@ -59,7 +59,7 @@
   /* 引用 */
   blockquote {
     margin: 0; padding: space(2) space(3);
-    border-left: calc(var(--border-w) * 3) solid var(--brand);
+    border-left: var(--border);
     background: color-mix(in oklch, var(--surface), white 6%);
     border-radius: var(--radius);
   }
@@ -68,7 +68,7 @@
   code { 
     font-family: var(--font-mono);
     background: color-mix(in oklch, var(--surface), black 6%);
-    border: var(--border-w) solid var(--border);
+    border: var(--border);
     border-radius: var(--radius);
     padding: .15em .35em;
   }
@@ -76,7 +76,7 @@
     margin: 0; padding: space(2);
     background: var(--card);
     color: var(--on-card);
-    border: var(--border-w) solid var(--border);
+    border: var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     overflow: auto;
@@ -90,18 +90,18 @@
     width: 100%;
     border-collapse: collapse;
     background: var(--surface);
-    border: var(--border-w) solid var(--border);
+    border: var(--border);
     border-radius: var(--radius);
     overflow: hidden;
   }
   th, td { padding: space(1.5) space(2); text-align: left; }
   thead th { background: color-mix(in oklch, var(--surface), white 6%); }
-  tbody tr + tr { border-top: var(--border-w) solid var(--border); }
+  tbody tr + tr { border-top: var(--border); }
 
   /* 分隔线 */
   hr {
-    border: 0; height: var(--border-w);
-    background: var(--border);
+    border: 0; height: 1px;
+    background: #d9e2ec;
     margin: space(4) 0;
   }
 
@@ -119,7 +119,7 @@
   .tag {
     display: inline-flex; align-items: center;
     padding: calc(var(--space)*0.75) calc(var(--space)*1.25);
-    border: var(--border-w) solid var(--border);
+    border: var(--border);
     border-radius: var(--radius-pill);
     background: transparent;
     color: var(--on-surface);
@@ -144,7 +144,7 @@
 .post-pager {
   display: flex; justify-content: space-between; align-items: center;
   gap: space(2); margin-top: space(4); padding-top: space(2);
-  border-top: var(--border-w) solid var(--border);
+  border-top: var(--border);
   a, span {
     color: var(--brand); text-decoration: none;
     white-space: nowrap;
@@ -167,7 +167,7 @@
 .blog-card.eq {
   display: flex; flex-direction: column;
   background: var(--card); color: var(--on-card);
-  border: var(--border-w) solid var(--border);
+  border: var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow); overflow: hidden;
 }

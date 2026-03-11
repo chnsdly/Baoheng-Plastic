@@ -6,7 +6,6 @@
     linear-gradient(135deg, color-mix(in oklab, var(--on-surface) 10%, var(--surface) 90%), color-mix(in oklab, var(--on-surface) 8%, var(--surface) 80%));
   --cta-glow: color-mix(in srgb, var(--brand), transparent 90%);
   --cta-ink: var(--on-surface);
-  --cta-border: color-mix(in oklab, var(--border), transparent 35%);
 
   position: relative;
   isolation: isolate;
@@ -49,7 +48,7 @@
   border-radius: var(--radius);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: var(--shadow);
-  border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
+  border: var(--border);
 }
 
 .cta__eyebrow {
@@ -128,7 +127,7 @@
   inline-size: 2.25rem;
   block-size: 2.25rem;
   border-radius: var(--radius-pill);
-  border: 1px solid color-mix(in oklab, var(--cta-border), transparent 10%);
+  border: var(--border);
   background: color-mix(in oklab, var(--brand), white 78%);
   color: var(--on-brand);
 }
@@ -148,7 +147,7 @@
   border-radius: var(--radius);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: var(--shadow);
-  border: 1px solid color-mix(in srgb, var(--border), transparent 20%);
+  border: var(--border);
 }
 
 .cta__form-head {

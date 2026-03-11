@@ -132,7 +132,7 @@
   inline-size: 2.5rem;
   block-size: 2.5rem;
   border-radius: 50%;
-  border: var(--border-w) solid color-mix(in srgb, var(--on-surface) 20%, transparent);
+  border: var(--border);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
   color: inherit;
   font-size: var(--text-body-lg);
