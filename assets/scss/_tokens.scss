@@ -63,6 +63,22 @@
   --fs-4: clamp(1.75rem, 1.5rem + 2vw, 2.25rem);       /* 更大标题 */
   --fs-5: clamp(2.25rem, 1.9rem + 3vw, 3rem);          /* 最大标题 */
   --fs-6: clamp(3rem, 2.5rem + 4vw, 4rem);             /* 超大标题（仅限重要标题） */
+
+  /* 语义字号令牌：确保各模块同类文本统一 */
+  --text-display: var(--fs-6);
+  --text-h1: var(--fs-5);
+  --text-h2: var(--fs-4);
+  --text-h3: var(--fs-3);
+  --text-h4: var(--fs-2);
+  --text-body-lg: var(--fs-2);
+  --text-body: var(--fs-1);
+  --text-body-sm: var(--fs-xs);
+  --text-caption: var(--fs-xxs);
+  --text-overline: var(--fs-0);
+
+  --text-nav: var(--text-body-sm);
+  --text-button: var(--text-body-sm);
+  --text-label: var(--text-caption);
   
   /* 行高系统 */
   --line-tight: 1.22;    /* 标题行高 */
@@ -95,9 +111,9 @@
   --shadow-soft: 0 4px 12px rgba(0,0,0,.06); /* 柔和阴影（卡片悬停） */
   /* 区块通用：统一 section 上下留白与标题字号 */
   --section-padding: calc(var(--space) * 6);
-  --section-title-size: var(--fs-3);
+  --section-title-size: var(--text-h3);
   --section-title-weight: 600;
-  --section-desc-size: var(--fs-1);
+  --section-desc-size: var(--text-body);
   --section-desc-color: var(--muted);
 
 
@@ -210,17 +226,17 @@ $bp: (
 
 /* ==================== 排版工具类 ==================== */
 /* 标题样式 */
-.h1 { font-size: var(--fs-5); font-weight: var(--weight-bold); line-height: var(--line-tight); }
-.h2 { font-size: var(--fs-4); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
-.h3 { font-size: var(--fs-3); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
-.h4 { font-size: var(--fs-2); font-weight: var(--weight-semibold); line-height: var(--line-normal); }
-.h5 { font-size: var(--fs-1); font-weight: var(--weight-medium); line-height: var(--line-normal); }
-.h6 { font-size: var(--fs-xs); font-weight: var(--weight-medium); line-height: var(--line-normal); }
+.h1 { font-size: var(--text-h1); font-weight: var(--weight-bold); line-height: var(--line-tight); }
+.h2 { font-size: var(--text-h2); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+.h3 { font-size: var(--text-h3); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+.h4 { font-size: var(--text-h4); font-weight: var(--weight-semibold); line-height: var(--line-normal); }
+.h5 { font-size: var(--text-body); font-weight: var(--weight-medium); line-height: var(--line-normal); }
+.h6 { font-size: var(--text-body-sm); font-weight: var(--weight-medium); line-height: var(--line-normal); }
 
 /* 正文样式 */
-.text-body { font-size: var(--fs-1); line-height: var(--line-normal); }
-.text-small { font-size: var(--fs-xs); line-height: var(--line-normal); }
-.text-xsmall { font-size: var(--fs-xxs); line-height: var(--line-normal); }
+.text-body { font-size: var(--text-body); line-height: var(--line-normal); }
+.text-small { font-size: var(--text-body-sm); line-height: var(--line-normal); }
+.text-xsmall { font-size: var(--text-caption); line-height: var(--line-normal); }
 
 /* 字重工具类 */
 .weight-light { font-weight: var(--weight-light); }
@@ -274,17 +290,17 @@ body {
 }
 
 /* 3) 标题基础样式 */
-h1, .h1 { font-size: var(--fs-5); font-family: var(--font-heading); font-weight: var(--weight-bold); line-height: var(--line-tight); }
-h2, .h2 { font-size: var(--fs-4); font-family: var(--font-heading); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
-h3, .h3 { font-size: var(--fs-3); font-family: var(--font-heading); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
-h4, .h4 { font-size: var(--fs-2); font-family: var(--font-heading); font-weight: var(--weight-semibold); line-height: var(--line-normal); }
-h5, .h5 { font-size: var(--fs-1); font-family: var(--font-heading); font-weight: var(--weight-medium); line-height: var(--line-normal); }
-h6, .h6 { font-size: var(--fs-xs); font-family: var(--font-heading); font-weight: var(--weight-medium); line-height: var(--line-normal); }
+h1, .h1 { font-size: var(--text-h1); font-family: var(--font-heading); font-weight: var(--weight-bold); line-height: var(--line-tight); }
+h2, .h2 { font-size: var(--text-h2); font-family: var(--font-heading); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+h3, .h3 { font-size: var(--text-h3); font-family: var(--font-heading); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+h4, .h4 { font-size: var(--text-h4); font-family: var(--font-heading); font-weight: var(--weight-semibold); line-height: var(--line-normal); }
+h5, .h5 { font-size: var(--text-body); font-family: var(--font-heading); font-weight: var(--weight-medium); line-height: var(--line-normal); }
+h6, .h6 { font-size: var(--text-body-sm); font-family: var(--font-heading); font-weight: var(--weight-medium); line-height: var(--line-normal); }
 
 /* 4) 段落和文本元素 */
 p, li, td, th, input, textarea, select, button {
   font-family: var(--font-body);
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
   line-height: var(--line-normal);
 }
 
@@ -335,7 +351,7 @@ input, button, select, textarea { font: inherit; color: inherit; }
   color: var(--on-surface);
   font-family: var(--font-body);
   font-weight: var(--weight-medium);
-  font-size: var(--fs-1);
+  font-size: var(--text-button);
   box-shadow: var(--shadow);
   cursor: pointer;
   transition:
