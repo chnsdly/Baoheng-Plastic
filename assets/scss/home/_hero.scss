@@ -135,7 +135,7 @@
   border: var(--border-w) solid color-mix(in srgb, var(--on-surface) 20%, transparent);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
   color: inherit;
-  font-size: 1.25rem;
+  font-size: var(--fs-2);
   cursor: pointer;
   transition: transform var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease);
   box-shadow: var(--shadow-sm);

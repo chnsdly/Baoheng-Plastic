@@ -26,7 +26,7 @@
   --leading: 1.75;
   --indent: space(3);
 
-  font-size: 1rem;
+  font-size: var(--fs-1);
   line-height: var(--leading);
 
   /* 基础间距：段落与模块 */
@@ -38,7 +38,7 @@
   }
   h2 { font-size: var(--fs-3); }
   h3 { font-size: var(--fs-2); }
-  h4 { font-size: 1.125rem; }
+  h4 { font-size: var(--fs-2); }
 
   p { margin: 0; }
 
@@ -174,7 +174,7 @@
 .blog-card.eq .media, .blog-card.eq .ph-media,
 .blog-card.eq img, .blog-card.eq picture { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
 .blog-card.eq .card-body { padding: space(2); }
-.blog-card.eq .card-body h3 { margin: 0 0 space(1); font-size: 1.1rem; line-height: 1.35; }
+.blog-card.eq .card-body h3 { margin: 0 0 space(1); font-size: var(--fs-1); line-height: 1.35; }
 .blog-card.eq .card-body .meta { margin: 0; color: var(--muted); font-size: var(--fs-1); }
 .blog-card.eq .card-actions { padding: 0 space(2) space(2); margin-top: auto; }
 .blog-card.eq .btn.btn-secondary {

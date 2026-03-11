@@ -5,9 +5,9 @@
   <div class="about__hero">
     <div class="container container--wide">
       <div class="about__hero-inner">
-        {{- with .badge }}<div class="about__hero-badge">{{ . }}</div>{{ end }}
-        {{- with .title }}<h1 class="about__hero-title">{{ . }}</h1>{{ end }}
-        {{- with .subtitle }}<p class="about__hero-sub">{{ . }}</p>{{ end }}
+        {{- with .badge }}<div class="about__hero-badge text-xs">{{ . }}</div>{{ end }}
+        {{- with .title }}<h1 class="about__hero-title h1">{{ . }}</h1>{{ end }}
+        {{- with .subtitle }}<p class="about__hero-sub h4 text-muted">{{ . }}</p>{{ end }}
         {{- with .proofs }}
         <div class="about__hero-proof">
           {{- range . }}
@@ -37,8 +37,8 @@
       <ul class="stats-grid" role="list">
         {{- range . }}
         <li class="stat">
-          <div class="stat__num">{{ .num }}</div>
-          <div class="stat__label">{{ .label }}</div>
+          <div class="stat__num h2 weight-bold">{{ .num }}</div>
+          <div class="stat__label text-muted">{{ .label }}</div>
         </li>
         {{- end }}
       </ul>
@@ -51,8 +51,8 @@
   <div class="about__visuals">
     <div class="container container--wide">
       <div class="section-head">
-        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
-        {{- with .subtitle }}<p class="muted">{{ . }}</p>{{ end }}
+        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
       </div>
       <div class="visuals">
         {{- range $i, $item := .items }}
@@ -61,8 +61,8 @@
             {{- with $item.image }}<img src="{{ . }}" alt="{{ $item.alt }}" loading="lazy">{{ end }}
           </div>
           <div class="visual__body">
-            {{- with $item.title }}<h3>{{ . }}</h3>{{ end }}
-            {{- with $item.copy }}<p class="muted">{{ . }}</p>{{ end }}
+            {{- with $item.title }}<h3 class="h3">{{ . }}</h3>{{ end }}
+            {{- with $item.copy }}<p class="text-muted">{{ . }}</p>{{ end }}
             {{- with $item.bullets }}
             <ul class="check-list check-list--tight">
               {{- range . }}
@@ -83,13 +83,13 @@
   <div id="capabilities" class="about__capabilities">
     <div class="container">
       <div class="section-head">
-        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
-        {{- with .subtitle }}<p class="muted">{{ . }}</p>{{ end }}
+        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
       </div>
       <div class="cards-grid">
         {{- range .cards }}
         <article class="card">
-          {{- with .title }}<h3>{{ . }}</h3>{{ end }}
+          {{- with .title }}<h3 class="h3">{{ . }}</h3>{{ end }}
           {{- with .items }}
           <ul class="check-list">
             {{- range . }}
@@ -109,12 +109,12 @@
   <div class="about__timeline">
     <div class="container container--narrow">
       <div class="section-head">
-        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
       </div>
       <ol class="timeline" role="list">
         {{- range .items }}
         <li>
-          {{- with .year }}<div class="tl__year">{{ . }}</div>{{ end }}
+          {{- with .year }}<div class="tl__year weight-bold text-muted">{{ . }}</div>{{ end }}
           {{- with .content }}<div class="tl__content">{{ . }}</div>{{ end }}
         </li>
         {{- end }}
@@ -128,8 +128,8 @@
   <div class="about__global">
     <div class="container">
       <div class="section-head">
-        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
-        {{- with .subtitle }}<p class="muted">{{ . }}</p>{{ end }}
+        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
       </div>
       <div class="global__grid">
         <div class="global__map" aria-hidden="true">
@@ -154,12 +154,12 @@
   <div class="about__sustain">
     <div class="container container--narrow">
       <div class="section-head">
-        {{- with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
       </div>
       <div class="cards-grid">
         {{- range .cards }}
         <article class="card">
-          {{- with .title }}<h3>{{ . }}</h3>{{ end }}
+          {{- with .title }}<h3 class="h3">{{ . }}</h3>{{ end }}
           {{- with .content }}<p>{{ . }}</p>{{ end }}
         </article>
         {{- end }}
@@ -175,17 +175,15 @@
 
 <style>
 .about { --gap: calc(var(--space) * 3); }
-.muted { color: var(--muted); }
-.small { font-size: var(--fs-1); }
 .section-head { text-align: center; margin-block: calc(var(--space) * 6) calc(var(--space) * 4); }
-.section-head h2 { font-size: var(--fs-4); margin: 0 0 calc(var(--space) * 1); }
+.section-head h2 { margin: 0 0 calc(var(--space) * 1); }
 .section-head p { margin: 0; }
 
 .about__hero { background: linear-gradient(180deg, color-mix(in oklch, var(--brand) 20%, transparent), transparent), var(--surface); padding-block: calc(var(--space) * 6); }
 .about__hero-inner { max-width: var(--container-narrow); margin: 0 auto; text-align: center; }
-.about__hero-badge { display: inline-block; padding: .35rem .75rem; border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand), white 85%); color: var(--on-surface); border: var(--border-w) solid var(--border); font-size: .875rem; }
-.about__hero-title { font-size: var(--fs-5); margin: calc(var(--space) * 2) 0 calc(var(--space) * 2); letter-spacing: -0.02em; }
-.about__hero-sub { font-size: var(--fs-2); color: var(--muted); margin: 0 auto calc(var(--space) * 3); max-width: 60ch; }
+.about__hero-badge { display: inline-block; padding: .35rem .75rem; border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand), white 85%); color: var(--on-surface); border: var(--border-w) solid var(--border); }
+.about__hero-title { margin: calc(var(--space) * 2) 0 calc(var(--space) * 2); letter-spacing: -0.02em; }
+.about__hero-sub { margin: 0 auto calc(var(--space) * 3); max-width: 60ch; }
 .about__hero-proof { display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center; margin-block: calc(var(--space) * 3) calc(var(--space) * 4); }
 .chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border-w) solid var(--border); background: var(--card); color: var(--on-card); box-shadow: var(--shadow); }
 .chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
@@ -195,8 +193,8 @@
 .stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); list-style: none; padding: 0; margin: 0; }
 @media (min-width: 48rem) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
 .stat { text-align: center; padding: calc(var(--space) * 3); border-radius: var(--radius); background: var(--card); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); }
-.stat__num { font-size: clamp(2rem, 1.2rem + 3vw, 3rem); letter-spacing: -0.02em; font-weight: 700; }
-.stat__label { color: var(--muted); margin-top: .25rem; }
+.stat__num { letter-spacing: -0.02em; }
+.stat__label { margin-top: .25rem; }
 
 .about__visuals { padding-block: calc(var(--space) * 6); }
 .visuals { display: grid; gap: calc(var(--gap) * 1.5); }
@@ -205,7 +203,7 @@
 .visual--reverse .visual__image { order: 2; }
 .visual--reverse .visual__body { order: 1; }
 .visual__image img { width: 100%; display: block; border-radius: var(--radius); border: var(--border-w) solid var(--border); box-shadow: var(--shadow); background: radial-gradient(circle at 25% 25%, color-mix(in oklch, var(--brand), white 70%), transparent 55%), var(--surface); }
-.visual__body h3 { margin: 0 0 .5rem; font-size: var(--fs-3); }
+.visual__body h3 { margin: 0 0 .5rem; }
 .visual__body p { margin: 0 0 1rem; }
 .check-list--tight { gap: .35rem; }
 .check-list--tight li::before { top: .35rem; }
@@ -213,7 +211,7 @@
 .cards-grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
 @media (min-width: 48rem) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
 .card { background: var(--card); color: var(--on-card); border: var(--border-w) solid var(--border); border-radius: var(--radius); padding: calc(var(--space) * 3); box-shadow: var(--shadow); }
-.card h3 { margin: 0 0 .5rem; font-size: var(--fs-3); letter-spacing: -0.01em; }
+.card h3 { margin: 0 0 .5rem; letter-spacing: -0.01em; }
 .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
 .check-list li { position: relative; padding-left: 1.5rem; }
 .check-list li::before { content: ""; position: absolute; left: 0; top: .5rem; width: .75rem; height: .75rem; border-radius: 50%; background: var(--brand); }
@@ -222,7 +220,6 @@
 .timeline { --line: color-mix(in oklch, var(--brand), black 60%); list-style: none; padding: 0; margin: 0; position: relative; }
 .timeline li { display: grid; grid-template-columns: 6rem 1fr; gap: var(--gap); padding: calc(var(--space) * 2) 0; border-left: 2px solid var(--line); margin-left: 1rem; position: relative; }
 .timeline li::before { content: ""; position: absolute; left: -9px; top: calc(50% - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 2px var(--surface); }
-.tl__year { font-weight: 700; color: var(--muted); }
 .tl__content { color: var(--on-surface); }
 
 .about__global { padding-block: calc(var(--space) * 6); }
