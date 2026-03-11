@@ -31,6 +31,7 @@
   --container-narrow: 60rem; /* 窄版：以阅读为主 */
   
   --header-height: 56px;    /* 导航栏高度 */
+  --control-h: 44px;        /* 全站按钮统一高度 */
 
   /* ==================== 字体与排版系统 ==================== */
   /* 英文字体栈 */
@@ -329,7 +330,7 @@ input, button, select, textarea { font: inherit; color: inherit; }
   justify-content: center;
   gap: space(1);
   padding: space(2) space(3);
-  min-block-size: 44px;                /* 最小触达区域 */
+  min-block-size: var(--control-h);    /* 全站按钮统一高度 */
   border-radius: var(--radius);
   border: var(--border);
   background: var(--surface);

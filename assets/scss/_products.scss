@@ -386,8 +386,8 @@
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-inline-size: calc(var(--space) * 5.5);
-  min-block-size: calc(var(--space) * 5.5);
+  min-inline-size: var(--control-h);
+  min-block-size: var(--control-h);
   padding-inline: space(1.2);
   padding-block: space(.7);
   border: var(--border);
@@ -525,8 +525,8 @@
 }
 
 .product-overview__social{
-  inline-size: 44px;
-  block-size: 44px;
+  inline-size: var(--control-h);
+  block-size: var(--control-h);
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
