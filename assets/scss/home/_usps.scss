@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: calc(var(--radius) * 3);
+  border-radius: var(--radius);
   background: radial-gradient(circle at 20% 30%, color-mix(in oklab, var(--card), transparent 60%), transparent 50%);
   opacity: 0.55;
   mix-blend-mode: screen;
@@ -44,7 +44,7 @@
   align-items: center;
   gap: space(1.25);
   padding: space(1.75);
-  border-radius: calc(var(--radius) * 1.5);
+  border-radius: var(--radius);
   background: color-mix(in oklab, var(--card), transparent 12%);
   box-shadow:
     0 10px 40px color-mix(in oklab, var(--on-surface) 8%, transparent),
@@ -77,7 +77,7 @@
   place-items: center;
   width: 88px;
   height: 88px;
-  border-radius: calc(var(--radius) * 2);
+  border-radius: var(--radius);
   font-size: var(--text-h1);
   color: var(--on-brand);
   background: linear-gradient(135deg, color-mix(in oklab, var(--brand), var(--card) 20%), color-mix(in oklab, var(--on-surface) 25%, var(--surface)));

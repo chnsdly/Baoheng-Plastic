@@ -55,7 +55,7 @@
 .res-thumb {
   position: relative;
   overflow: clip;
-  border-radius: calc(var(--radius, 10px) - 2px);
+  border-radius: var(--radius);
 
   .res-thumb__img {
     display: block;
@@ -136,11 +136,11 @@
 
 .popular-item .ph {
   overflow: hidden;
-  border-radius: var(--radius, 10px);
+  border-radius: var(--radius);
 }
 
 .popular-item .ph__img {
-  border-radius: var(--radius, 10px);
+  border-radius: var(--radius);
   display: block;
 }
 
