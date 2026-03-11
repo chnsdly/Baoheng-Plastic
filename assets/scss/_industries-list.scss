@@ -184,8 +184,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.5rem;
-  min-width: 2.5rem;
+  min-height: var(--control-h);
+  min-width: var(--control-h);
   padding-inline: space(2);
   border-radius: var(--radius);
   border: var(--border);

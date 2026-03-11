@@ -107,7 +107,7 @@
 }
 .pager__btn, .pager__num {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: 44px; min-width: 44px; padding: space(0.5) space(1);
+  min-height: var(--control-h); min-width: var(--control-h); padding: space(0.5) space(1);
   border-radius: var(--radius);
   border: var(--border);
   background: var(--surface);
