@@ -34,8 +34,8 @@
 
   /* ==================== 字体与排版系统 ==================== */
   /* 英文字体栈 */
-  --font-heading-en: 'Montserrat', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  --font-body-en: 'Open Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-heading-en: 'Manrope', 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-body-en: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   
   /* 中文字体栈 */
   --font-heading-zh: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
@@ -65,10 +65,16 @@
   --fs-6: clamp(3rem, 2.5rem + 4vw, 4rem);             /* 超大标题（仅限重要标题） */
   
   /* 行高系统 */
-  --line-tight: 1.2;     /* 标题行高 */
-  --line-normal: 1.5;    /* 正文行高 */
+  --line-tight: 1.22;    /* 标题行高 */
+  --line-normal: 1.62;   /* 正文行高 */
   --line-loose: 1.8;     /* 长文本行高 */
   --line: var(--line-normal);  /* 全局默认行高 */
+
+  --tracking-heading-1: -0.02em;
+  --tracking-heading-2: -0.012em;
+  --tracking-heading-3: -0.006em;
+  --tracking-heading-compact: 0.04em;
+  --tracking-body: 0;
   
   /* 字重系统 */
   --weight-light: 300;
@@ -157,12 +163,20 @@
 html[lang="zh"] {
   --font-heading: var(--font-heading-zh);
   --font-body: var(--font-body-zh);
+  --line-tight: 1.35;
+  --line-normal: 1.75;
+  --tracking-heading-1: 0;
+  --tracking-heading-2: 0;
+  --tracking-heading-3: 0;
+  --tracking-heading-compact: 0.02em;
 }
 
 /* 英文页面字体切换 */
 html[lang="en"] {
   --font-heading: var(--font-heading-en);
   --font-body: var(--font-body-en);
+  --line-tight: 1.22;
+  --line-normal: 1.62;
 }
 
 /* ----------------------------- SCSS 工具类 ----------------------------- */
@@ -250,10 +264,10 @@ body {
   margin: 0;
   min-height: 100dvh;
   font-family: var(--font-body);
-  font-display: swap;
   color: var(--on-surface);
   background: var(--surface);
   line-height: var(--line);
+  letter-spacing: var(--tracking-body);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
