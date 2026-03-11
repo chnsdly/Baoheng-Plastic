@@ -82,6 +82,9 @@
 
 .navbar__item {
   position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__link {
@@ -100,29 +103,12 @@
 
   &:hover {
     color: var(--brand);
+    text-decoration: none;
   }
   &.is-active {
     color: var(--brand);
     background-color: color-mix(in srgb, var(--brand) 12%, transparent);
   }
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(var(--space) * 1);
-    right: calc(var(--space) * 1);
-    bottom: calc(var(--space) * 0.6);
-    height: 2px;
-    background: var(--brand);
-    border-radius: 1px;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform var(--t-normal) var(--ease);
-  }
-}
-
-.navbar__item:hover > .navbar__link::after,
-.navbar__link.is-active::after {
-  transform: scaleX(1);
 }
 
 .navbar__chevron {
@@ -164,6 +150,10 @@
   list-style: none;
   display: grid;
   gap: 2px;
+
+  > li {
+    margin: 0;
+  }
 }
 
 .navbar__item:hover > .dropdown-menu,
@@ -187,6 +177,7 @@
   &:hover {
     background: color-mix(in srgb, var(--brand) 10%, transparent);
     color: var(--brand);
+    text-decoration: none;
   }
   &.is-active {
     background: color-mix(in srgb, var(--brand) 14%, transparent);
@@ -450,6 +441,7 @@ body[data-drawer-open="true"] {
 }
 
 .drawer__item {
+  margin: 0;
   border-radius: var(--radius);
 }
 
