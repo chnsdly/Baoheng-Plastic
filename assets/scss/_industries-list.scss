@@ -77,7 +77,7 @@
 .industry-card__media {
   display: block;
   overflow: hidden;
-  border-radius: calc(var(--radius) - 2px);
+  border-radius: var(--radius);
   border: var(--border-w) solid var(--border);
   background: var(--surface);
   transition: transform var(--t-normal) var(--ease);
@@ -265,7 +265,7 @@
 .industries-sidebar__thumbnail {
   width: 96px;
   height: 72px;
-  border-radius: calc(var(--radius) - 2px);
+  border-radius: var(--radius);
   overflow: hidden;
   border: var(--border-w) solid var(--border);
   background: var(--surface);

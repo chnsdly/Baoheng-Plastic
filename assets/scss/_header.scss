@@ -171,7 +171,7 @@
   color: var(--on-surface);
   font-size: var(--text-body-sm);
   text-decoration: none;
-  border-radius: calc(var(--radius) * 0.8);
+  border-radius: var(--radius);
   transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
   &:hover {
@@ -274,7 +274,7 @@
   color: var(--on-surface);
   font-size: var(--text-caption);
   text-decoration: none;
-  border-radius: calc(var(--radius) * 0.8);
+  border-radius: var(--radius);
   white-space: nowrap;
   transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
