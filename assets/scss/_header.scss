@@ -82,6 +82,7 @@
 
 .navbar__item {
   position: relative;
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -149,6 +150,10 @@
   list-style: none;
   display: grid;
   gap: 2px;
+
+  > li {
+    margin: 0;
+  }
 }
 
 .navbar__item:hover > .dropdown-menu,
@@ -436,6 +441,7 @@ body[data-drawer-open="true"] {
 }
 
 .drawer__item {
+  margin: 0;
   border-radius: var(--radius);
 }
 
