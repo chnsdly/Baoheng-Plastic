@@ -73,7 +73,7 @@
   min-width: 0;
 }
 .res-title {
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
   font-weight: 500;
   text-decoration: none;
   color: var(--on-card, var(--on-surface));
@@ -84,7 +84,7 @@
   &:hover { text-decoration: underline; }
 }
 .res-desc {
-  font-size: var(--fs-xs);
+  font-size: var(--text-body-sm);
   margin: 0;
   color: var(--on-surface);
   display: -webkit-box;
@@ -97,7 +97,7 @@
   flex-wrap: wrap;
   gap: space(1) space(1.25);
   color: var(--muted);
-  font-size: var(--fs-xxs);
+  font-size: var(--text-caption);
 }
 
 /* 分页 */

@@ -78,7 +78,7 @@
   width: 88px;
   height: 88px;
   border-radius: calc(var(--radius) * 2);
-  font-size: var(--fs-5);
+  font-size: var(--text-h1);
   color: var(--on-brand);
   background: linear-gradient(135deg, color-mix(in oklab, var(--brand), var(--card) 20%), color-mix(in oklab, var(--on-surface) 25%, var(--surface)));
   box-shadow: var(--shadow-soft);

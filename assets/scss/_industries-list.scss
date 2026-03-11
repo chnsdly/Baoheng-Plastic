@@ -114,7 +114,7 @@
 
 .industry-card__title {
   margin: 0;
-  font-size: var(--fs-2);
+  font-size: var(--text-body-lg);
 }
 
 .industry-card__link {
@@ -131,7 +131,7 @@
 
 .industry-card__summary {
   margin: 0;
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
   color: var(--on-surface);
 }
 
@@ -147,7 +147,7 @@
 .industry-card__meta-item {
   display: flex;
   gap: space(1);
-  font-size: var(--fs-xxs);
+  font-size: var(--text-caption);
   color: var(--muted);
 }
 
@@ -192,7 +192,7 @@
   background: var(--surface);
   color: var(--on-surface);
   text-decoration: none;
-  font-size: var(--fs-xs);
+  font-size: var(--text-body-sm);
 }
 
 .industries-listing__pager-num.is-active {
@@ -231,7 +231,7 @@
 
 .industries-sidebar__heading {
   margin: 0;
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
   font-weight: 700;
   color: var(--on-surface);
 }
@@ -289,13 +289,13 @@
 }
 
 .industries-sidebar__item-title {
-  font-size: var(--fs-xs);
+  font-size: var(--text-body-sm);
   font-weight: 600;
   color: var(--on-surface);
 }
 
 .industries-sidebar__item-summary {
-  font-size: var(--fs-xxs);
+  font-size: var(--text-caption);
   color: var(--muted);
 }
 
@@ -317,7 +317,7 @@
   border: var(--border-w) solid var(--border);
   background: var(--surface);
   color: var(--on-surface);
-  font-size: var(--fs-xxs);
+  font-size: var(--text-caption);
   text-decoration: none;
   transition: background var(--t-fast) var(--ease);
 }
@@ -348,7 +348,7 @@
   border: var(--border-w) solid var(--border);
   background: var(--surface);
   color: var(--brand);
-  font-size: var(--fs-xxs);
+  font-size: var(--text-caption);
   text-decoration: none;
   transition: background var(--t-fast) var(--ease);
 }

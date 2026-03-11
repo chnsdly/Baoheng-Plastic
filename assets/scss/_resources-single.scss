@@ -4,7 +4,7 @@
   padding-block: var(--section-padding) space(3);
   h1 {
     margin: 0 0 space(1);
-    font-size: var(--fs-4);
+    font-size: var(--text-h2);
     font-weight: var(--section-title-weight);
     line-height: 1.2;
     color: var(--on-surface);
@@ -26,7 +26,7 @@
   --leading: 1.75;
   --indent: space(3);
 
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
   line-height: var(--leading);
 
   /* 基础间距：段落与模块 */
@@ -36,9 +36,9 @@
     margin: space(4) 0 space(1);
     line-height: 1.25;
   }
-  h2 { font-size: var(--fs-3); }
-  h3 { font-size: var(--fs-2); }
-  h4 { font-size: var(--fs-2); }
+  h2 { font-size: var(--text-h3); }
+  h3 { font-size: var(--text-body-lg); }
+  h4 { font-size: var(--text-body-lg); }
 
   p { margin: 0; }
 
@@ -52,7 +52,7 @@
   figcaption {
     margin-top: space(1);
     color: var(--muted);
-    font-size: var(--fs-1);
+    font-size: var(--text-body);
     text-align: center;
   }
 
@@ -155,7 +155,7 @@
 /* ===== 相关文章 ===== */
 .post-related {
   margin-top: space(6);
-  h2 { margin: 0 0 space(2); font-size: var(--fs-2); }
+  h2 { margin: 0 0 space(2); font-size: var(--text-body-lg); }
 }
 .blog-grid {
   display: grid; gap: space(2);
@@ -174,8 +174,8 @@
 .blog-card.eq .media, .blog-card.eq .ph-media,
 .blog-card.eq img, .blog-card.eq picture { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
 .blog-card.eq .card-body { padding: space(2); }
-.blog-card.eq .card-body h3 { margin: 0 0 space(1); font-size: var(--fs-1); line-height: 1.35; }
-.blog-card.eq .card-body .meta { margin: 0; color: var(--muted); font-size: var(--fs-1); }
+.blog-card.eq .card-body h3 { margin: 0 0 space(1); font-size: var(--text-body); line-height: 1.35; }
+.blog-card.eq .card-body .meta { margin: 0; color: var(--muted); font-size: var(--text-body); }
 .blog-card.eq .card-actions { padding: 0 space(2) space(2); margin-top: auto; }
 .blog-card.eq .btn.btn-secondary {
   @extend .button;

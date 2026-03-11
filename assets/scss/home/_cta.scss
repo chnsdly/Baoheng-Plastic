@@ -58,7 +58,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: color-mix(in oklab, var(--on-surface) 70%, transparent);
-  font-size: var(--fs-xs);
+  font-size: var(--text-body-sm);
 }
 
 .cta__title {
@@ -71,14 +71,14 @@
 .cta__desc {
   margin: 0;
   color: color-mix(in oklab, var(--muted) 75%, transparent);
-  font-size: var(--fs-2);
+  font-size: var(--text-body-lg);
   max-inline-size: 62ch;
 }
 
 .cta__meta {
   margin: 0;
   color: color-mix(in oklab, var(--muted) 60%, transparent);
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
 }
 
 .cta__contact {
@@ -106,12 +106,12 @@
   letter-spacing: 0.04em;
   color: color-mix(in oklab, var(--muted) 65%, transparent);
   text-transform: uppercase;
-  font-size: var(--fs-xs);
+  font-size: var(--text-body-sm);
 }
 
 .cta__value {
   margin: 0;
-  font-size: var(--fs-1);
+  font-size: var(--text-body);
   color: color-mix(in oklab, var(--on-surface) 90%, transparent);
   font-weight: 500;
 }
@@ -169,13 +169,13 @@
   color: var(--on-brand);
   font-weight: 700;
   letter-spacing: 0.02em;
-  font-size: var(--fs-xs);
+  font-size: var(--text-body-sm);
   box-shadow: var(--shadow-sm);
 }
 
 .cta__form-title {
   margin: 0;
-  font-size: var(--fs-3);
+  font-size: var(--text-h3);
   letter-spacing: -0.01em;
 }
 

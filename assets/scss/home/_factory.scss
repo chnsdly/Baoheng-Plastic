@@ -133,21 +133,21 @@
 
   &__item-title {
     margin: 0;
-    font-size: var(--fs-2);
+    font-size: var(--text-body-lg);
     font-weight: 700;
     text-align: center;
   }
 
   &__item-text {
     margin: 0;
-    font-size: var(--fs-1);
+    font-size: var(--text-body);
     text-align: center;
     line-height: 1.6;
   }
 
   &__hint {
     margin: 0;
-    font-size: var(--fs-0);
+    font-size: var(--text-overline);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--muted);
