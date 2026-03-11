@@ -105,9 +105,7 @@
   --radius: 14px;   /* 默认圆角 */
   --radius-pill: 999px; /* 胶囊形圆角 */
   --border-w: 1px;  /* 描边宽度 */
-  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.08); /* 常规阴影 */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.06); /* 轻阴影（按钮、控件） */
-  --shadow-soft: 0 4px 12px rgba(0,0,0,.06); /* 柔和阴影（卡片悬停） */
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   /* 区块通用：统一 section 上下留白与标题字号 */
   --section-padding: calc(var(--space) * 6);
   --section-title-size: var(--text-h3);
@@ -144,10 +142,6 @@
   --focus:      #60a5fa;
 
   --card: color-mix(in oklch, var(--surface), white 7%);
-
-  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
-  --shadow-soft: 0 4px 12px rgba(0,0,0,.35);
 }
 
 /* 系统偏好暗色模式 */
@@ -162,10 +156,7 @@
     --brand:      #2260ff;
     --on-brand:   #ffffff;
     --focus:      #60a5fa;
-    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5);
-    --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
-    --shadow-soft: 0 4px 12px rgba(0,0,0,.35);
-  }
+      }
 }
 
 /* 降低动画（系统偏好） */
@@ -218,9 +209,7 @@ $bp: (
 
 @mixin focus-ring($offset: 2px) {
   outline: none;
-  box-shadow:
-    0 0 0 $offset rgba(0,0,0,0),
-    0 0 0 calc($offset + 2px) var(--focus);
+  box-shadow: var(--shadow);
 }
 
 /* ==================== 排版工具类 ==================== */

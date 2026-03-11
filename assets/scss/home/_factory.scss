@@ -55,7 +55,7 @@
     perspective: 1200px;
 
     &:focus-visible {
-      box-shadow: 0 0 0 3px var(--brand), var(--shadow);
+      box-shadow: var(--shadow);
     }
 
     &:hover .factory__card,

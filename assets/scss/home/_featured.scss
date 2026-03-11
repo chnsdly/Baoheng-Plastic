@@ -48,7 +48,7 @@
 }
 .product-card.eq:hover{
   transform: translateY(calc(var(--space) * -0.75)) scale(1.02);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow);
 }
 
 /* 封面图：按比例显示，不再压扁 */
