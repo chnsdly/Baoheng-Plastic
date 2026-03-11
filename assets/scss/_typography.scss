@@ -1,0 +1,381 @@
+/* ==================== 排版系统 ==================== */
+
+/* 1. 基础排版重置 */
+/* ================================================ */
+
+/* 段落间距 */
+p {
+  margin-block: 0;
+  margin-block-end: space(2);
+  
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+/* 列表样式 */
+ul, ol {
+  margin-block: 0 space(2);
+  padding-inline-start: space(4);
+  
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+li {
+  margin-block: space(1);
+  
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+/* 引用样式 */
+blockquote {
+  margin-block: space(3);
+  margin-inline: 0;
+  padding-inline: space(4);
+  border-inline-start: 3px solid var(--brand);
+  font-style: italic;
+  color: var(--muted);
+  
+  p:last-child {
+    margin-block-end: 0;
+  }
+}
+
+/* 代码样式 */
+code, kbd, pre, samp {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+pre {
+  margin-block: space(3);
+  padding: space(3);
+  background: var(--surface-variant);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  
+  code {
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+}
+
+code {
+  padding: 0.2em 0.4em;
+  background: var(--surface-variant);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  margin-block: space(3);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: space(2) space(3);
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--surface-variant);
+  font-weight: var(--weight-semibold);
+}
+
+/* 2. 标题层次系统 */
+/* ================================================ */
+
+/* 标题间距 */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-block: 0;
+  margin-block-end: space(2);
+  font-family: var(--font-heading);
+  color: var(--on-surface);
+  font-weight: inherit;
+  line-height: inherit;
+  
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+/* 标题层次间距 */
+h1, .h1 {
+  margin-block-end: space(4);
+  font-size: var(--fs-5);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-tight);
+  letter-spacing: -0.02em;
+}
+
+h2, .h2 {
+  margin-block-end: space(3);
+  font-size: var(--fs-4);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-tight);
+  letter-spacing: -0.01em;
+}
+
+h3, .h3 {
+  margin-block-end: space(2.5);
+  font-size: var(--fs-3);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-tight);
+}
+
+h4, .h4 {
+  margin-block-end: space(2);
+  font-size: var(--fs-2);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-normal);
+}
+
+h5, .h5 {
+  margin-block-end: space(1.5);
+  font-size: var(--fs-1);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-normal);
+}
+
+h6, .h6 {
+  margin-block-end: space(1);
+  font-size: var(--fs-xs);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+/* 3. 文本工具类 */
+/* ================================================ */
+
+/* 文本大小类 */
+.text-xs { font-size: var(--fs-xs); }
+.text-sm { font-size: var(--fs-1); }
+.text-base { font-size: var(--fs-2); }
+.text-lg { font-size: var(--fs-3); }
+.text-xl { font-size: var(--fs-4); }
+.text-2xl { font-size: var(--fs-5); }
+.text-3xl { font-size: var(--fs-6); }
+
+/* 文本颜色类 */
+.text-brand { color: var(--brand); }
+.text-muted { color: var(--muted); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+.text-info { color: var(--info); }
+
+/* 文本对齐类 */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* 文本变换类 */
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+.text-normal-case { text-transform: none; }
+
+/* 文本装饰类 */
+.text-underline { text-decoration: underline; }
+.text-line-through { text-decoration: line-through; }
+.text-no-underline { text-decoration: none; }
+
+/* 字重类 */
+.font-light { font-weight: var(--weight-light); }
+.font-normal { font-weight: var(--weight-normal); }
+.font-medium { font-weight: var(--weight-medium); }
+.font-semibold { font-weight: var(--weight-semibold); }
+.font-bold { font-weight: var(--weight-bold); }
+.font-extrabold { font-weight: var(--weight-extrabold); }
+
+/* 行高类 */
+.leading-tight { line-height: var(--line-tight); }
+.leading-normal { line-height: var(--line-normal); }
+.leading-loose { line-height: var(--line-loose); }
+
+/* 字间距类 */
+.tracking-tight { letter-spacing: -0.05em; }
+.tracking-normal { letter-spacing: normal; }
+.tracking-wide { letter-spacing: 0.05em; }
+
+/* 4. 特殊排版组件 */
+/* ================================================ */
+
+/* 引言/导语 */
+.lead {
+  font-size: var(--fs-3);
+  font-weight: var(--weight-light);
+  line-height: var(--line-loose);
+  color: var(--muted);
+  margin-block-end: space(4);
+}
+
+/* 小标题/副标题 */
+.subtitle {
+  font-size: var(--fs-2);
+  font-weight: var(--weight-normal);
+  color: var(--muted);
+  margin-block-start: calc(space(2) * -1);
+  margin-block-end: space(3);
+}
+
+/* 标签/徽章 */
+.label {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  font-size: var(--fs-xxs);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-pill);
+  background: var(--surface-variant);
+  color: var(--muted);
+}
+
+.label--brand {
+  background: var(--brand);
+  color: var(--on-brand);
+}
+
+.label--success {
+  background: var(--success);
+  color: var(--on-success);
+}
+
+.label--warning {
+  background: var(--warning);
+  color: var(--on-warning);
+}
+
+.label--danger {
+  background: var(--danger);
+  color: var(--on-danger);
+}
+
+/* 5. 响应式排版 */
+/* ================================================ */
+
+/* 移动端优化 */
+@include mq-up(sm) {
+  h1, .h1 { font-size: var(--fs-6); }
+  h2, .h2 { font-size: var(--fs-5); }
+  h3, .h3 { font-size: var(--fs-4); }
+  
+  .lead {
+    font-size: var(--fs-4);
+  }
+}
+
+/* 平板端优化 */
+@include mq-up(md) {
+  h1, .h1 { 
+    font-size: clamp(3rem, calc(2.5rem + 2vw), 4rem);
+    margin-block-end: space(5);
+  }
+  
+  h2, .h2 { 
+    font-size: clamp(2.25rem, calc(1.9rem + 1.5vw), 3rem);
+    margin-block-end: space(4);
+  }
+  
+  .lead {
+    font-size: var(--fs-5);
+    max-width: 80ch;
+    margin-inline: auto;
+  }
+}
+
+/* 桌面端优化 */
+@include mq-up(lg) {
+  body {
+    font-size: var(--fs-2);
+    line-height: var(--line-loose);
+  }
+  
+  p, li, td, th, input, textarea, select, button {
+    font-size: var(--fs-2);
+    line-height: var(--line-loose);
+  }
+}
+
+/* 6. 可访问性优化 */
+/* ================================================ */
+
+/* 焦点样式 */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* 减少动画时的排版优化 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+  :root {
+    --brand: #0056b3;
+    --on-brand: #ffffff;
+    --border: #000000;
+    --muted: #333333;
+  }
+  
+  body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+/* 7. 打印样式 */
+/* ================================================ */
+
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000000;
+    background: #ffffff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  p, li {
+    page-break-inside: avoid;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}

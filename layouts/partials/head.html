@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="{{ $style.RelPermalink }}"
 {{- if and hugo.IsProduction $style.Data.Integrity -}} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{- end -}}>
 
+{{- /* 字体系统 */ -}}
+{{- partial "fonts.html" . -}}
+
 {{- /* Page metadata */ -}}
 {{- $title := .Site.Title -}}
 {{- if not .IsHome -}}

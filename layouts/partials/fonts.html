@@ -1,0 +1,100 @@
+<!-- 字体预加载和链接 -->
+{{- /* 字体预加载 - 提升字体加载性能 */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{- /* 英文字体：Montserrat (标题) 和 Open Sans (正文) */ -}}
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+
+{{- /* 中文字体：Noto Sans SC (思源黑体) */ -}}
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" media="print" onload="this.media='all'">
+
+{{- /* 字体加载回退策略 */ -}}
+<noscript>
+  <!-- 无JavaScript时的回退 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap">
+</noscript>
+
+{{- /* 字体加载状态检测 */ -}}
+<script>
+  (function() {
+    // 检测字体是否加载成功
+    function checkFontLoaded(fontFamily) {
+      return document.fonts.check('12px ' + fontFamily);
+    }
+    
+    // 字体加载回调
+    document.fonts.ready.then(function() {
+      // 字体加载完成后添加类
+      document.documentElement.classList.add('fonts-loaded');
+      
+      // 检查具体字体加载状态
+      if (checkFontLoaded('Montserrat')) {
+        document.documentElement.classList.add('font-montserrat-loaded');
+      }
+      if (checkFontLoaded('Open Sans')) {
+        document.documentElement.classList.add('font-opensans-loaded');
+      }
+      if (checkFontLoaded('Noto Sans SC')) {
+        document.documentElement.classList.add('font-notosanssc-loaded');
+      }
+    });
+    
+    // 字体加载超时处理
+    setTimeout(function() {
+      if (!document.documentElement.classList.contains('fonts-loaded')) {
+        document.documentElement.classList.add('fonts-fallback');
+      }
+    }, 3000);
+  })();
+</script>
+
+{{- /* 字体加载样式 */ -}}
+<style>
+  /* 字体加载过程中的回退样式 */
+  .fonts-loading body {
+    font-family: var(--font-sans);
+  }
+  
+  .fonts-loading h1,
+  .fonts-loading h2,
+  .fonts-loading h3,
+  .fonts-loading h4,
+  .fonts-loading h5,
+  .fonts-loading h6 {
+    font-family: var(--font-sans);
+  }
+  
+  /* 字体加载完成后的优化 */
+  .fonts-loaded body {
+    font-family: var(--font-body);
+    font-display: swap;
+  }
+  
+  .fonts-loaded h1,
+  .fonts-loaded h2,
+  .fonts-loaded h3,
+  .fonts-loaded h4,
+  .fonts-loaded h5,
+  .fonts-loaded h6 {
+    font-family: var(--font-heading);
+    font-display: swap;
+  }
+  
+  /* 字体加载失败时的优雅降级 */
+  .fonts-fallback body {
+    font-family: var(--font-sans);
+  }
+  
+  .fonts-fallback h1,
+  .fonts-fallback h2,
+  .fonts-fallback h3,
+  .fonts-fallback h4,
+  .fonts-fallback h5,
+  .fonts-fallback h6 {
+    font-family: var(--font-sans);
+  }
+</style>
