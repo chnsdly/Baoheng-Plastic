@@ -101,7 +101,6 @@
           }catch(e){}
           // 轻量埋点（可删除）
           try{ window.dataLayer = window.dataLayer || []; window.dataLayer.push({event:'WhatsAppOpen', placement:'fab'}); }catch(e){}
-          try{ if(window.gtag) window.gtag('event','WhatsAppOpen',{placement:'fab'}); }catch(e){}
           try{ if(window.fbq) window.fbq('trackCustom','WhatsAppOpen',{placement:'fab'}); }catch(e){}
         });
       })();
