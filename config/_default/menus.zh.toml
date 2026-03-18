@@ -114,12 +114,6 @@ url = "/Manufacturing/"
 identifier = "Manufacturing"
 weight = 30
 
-[[main]]
-name = "采购指南"
-url = "/ordering-guide/"
-identifier = "ordering-guide"
-weight = 40
-
 
 [[main]]
 name = "资讯中心"
@@ -159,6 +153,5 @@ weight = 50
 
 [[main]]
 name = "获取报价"
-url = "/get-quote/"
-identifier = "get-quote"
+url = "/contact/"
 weight = 60
