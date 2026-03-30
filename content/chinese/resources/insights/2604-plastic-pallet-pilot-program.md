@@ -32,7 +32,7 @@ popular: false
 
 试点的价值，就是把“全面升级”变成“可控实验”。
 
-如果你的场景包含货架存储，建议把本框架与我们另一篇货架钢管加固清单配套使用，在同一试点周期内同时验证结构安全假设。可参考：[货架托盘钢管加固选型清单](/chinese/resources/insights/2603-%E8%B4%A7%E6%9E%B6%E6%89%98%E7%9B%98%E9%92%A2%E7%AE%A1%E5%8A%A0%E5%9B%BA%E9%80%89%E5%9E%8B%E6%B8%85%E5%8D%95/)。
+如果你的场景包含货架存储，建议把本框架与我们另一篇货架钢管加固清单配套使用，在同一试点周期内同时验证结构安全假设。可参考：[货架托盘钢管加固选型清单](/chinese/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/)。
 
 ---
 
