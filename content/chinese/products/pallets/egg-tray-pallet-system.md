@@ -24,6 +24,8 @@ showcase_gallery:
     alt: "蛋托运输系统托盘 展示图 2"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-3.jpg"
     alt: "蛋托运输系统托盘 展示图 3"
+  - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-4.jpg"
+    alt: "蛋托运输系统托盘 展示图 4"
 industry_gallery:
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-industry-1.jpg"
     alt: "蛋托运输系统托盘 行业应用 1"

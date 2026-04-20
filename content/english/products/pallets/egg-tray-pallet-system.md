@@ -24,6 +24,8 @@ showcase_gallery:
     alt: "Egg tray transport pallet system showcase 2"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-3.jpg"
     alt: "Egg tray transport pallet system showcase 3"
+  - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-4.jpg"
+    alt: "Egg tray transport pallet system showcase 4"
 industry_gallery:
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-industry-1.jpg"
     alt: "Egg tray transport pallet system industry use 1"
