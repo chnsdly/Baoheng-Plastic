@@ -7,7 +7,7 @@ keywords = ["plastic pallets", "injection molding pallets", "logistics pallets",
 logo = "images/logo.png"
 default_image = "images/home/factory-1.jpg"
 
-contact_email = "weibenlong6@gmail.com"
+contact_email = "sales@baohengplastic.com"
 contact_phone = "+86 13325077372"
 contact_address = "Xianghe Industrial Park, Linyi City, Shandong, China"
 business_hours = "Mon–Sat, 8:30–17:30 (GMT+8)"
@@ -22,7 +22,7 @@ url = "https://www.baohengplastic.com/"
 logo = "https://www.baohengplastic.com/images/logo.png"
 foundingDate = "2013-01-01"
 telephone = "+86 13325077372"
-email = "weibenlong6@gmail.com"
+email = "sales@baohengplastic.com"
 [organization.address]
 streetAddress = "Xianghe Industrial Park"
 addressLocality = "Linyi City"
