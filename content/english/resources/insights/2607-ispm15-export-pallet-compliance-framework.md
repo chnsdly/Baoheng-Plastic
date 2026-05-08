@@ -77,7 +77,7 @@ Prioritize plastic pallets for lanes with one or more of the following character
 
 For these lanes, a consistent plastic pallet specification often reduces exception handling and makes outbound SOPs easier to standardize.
 
-If your project is still in early evaluation, this [pilot program framework](/english/resources/insights/2604-plastic-pallet-pilot-program/) can help you validate operational impact before full rollout.
+If your project is still in early evaluation, this [pilot program framework](/resources/insights/2604-plastic-pallet-pilot-program/) can help you validate operational impact before full rollout.
 
 ---
 
@@ -93,8 +93,8 @@ Confirm payload under forklift movement, not only static floor conditions.
 
 ### 2. Structure selection by lane behavior
 
-- One-way export and cube efficiency: nestable nine-leg options can be practical, such as this [nine-leg pallet model](/english/products/pallets/nine-leg_1210/).
-- Export plus racking at destination or DC transfer: consider rack-capable designs, such as this [3-runner pallet model](/english/products/pallets/3-runner_1210/).
+- One-way export and cube efficiency: nestable nine-leg options can be practical, such as this [nine-leg pallet model](/products/pallets/nine-leg_1210/).
+- Export plus racking at destination or DC transfer: consider rack-capable designs, such as this [3-runner pallet model](/products/pallets/3-runner_1210/).
 
 ### 3. Size compatibility with cartons, container plans, and destination handling equipment
 
@@ -108,7 +108,7 @@ For food and beverage exports, washable and consistent materials can support cle
 
 If your network is reusable or semi-closed-loop, define marking rules (embossed logo, code, barcode, or RFID-ready points) before mass purchase.
 
-For teams comparing rackable and nestable architecture, this buyer framework can be used alongside your export-lane analysis: [Nestable vs Rackable Plastic Pallets](/english/resources/insights/2606-nestable-vs-rackable-plastic-pallets/).
+For teams comparing rackable and nestable architecture, this buyer framework can be used alongside your export-lane analysis: [Nestable vs Rackable Plastic Pallets](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/).
 
 ---
 
@@ -124,7 +124,7 @@ To avoid receiving non-comparable quotations, include these items in your RFQ pa
 - Acceptance criteria for dimensional tolerance and visual quality;
 - Packaging density requirements for container loading.
 
-You can use this detailed template to structure the process: [Plastic Pallet RFQ Checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/).
+You can use this detailed template to structure the process: [Plastic Pallet RFQ Checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/).
 
 ---
 
@@ -158,4 +158,4 @@ In export operations, pallet selection should be treated as a **risk-control dec
 
 Wood pallets can still be appropriate in some lanes. But where border compliance complexity and delay cost are high, plastic pallets often provide stronger process stability and lower total disruption.
 
-If your team is currently upgrading from wood pallets, this practical overview is also useful for broader warehouse alignment: [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/english/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/).
+If your team is currently upgrading from wood pallets, this practical overview is also useful for broader warehouse alignment: [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/).

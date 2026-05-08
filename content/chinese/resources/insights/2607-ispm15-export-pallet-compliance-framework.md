@@ -77,7 +77,7 @@ popular: false
 
 在这些航线中，使用统一规格的塑料托盘，通常更容易减少异常处理并标准化出货SOP。
 
-如果你还在评估阶段，可以先参考这个 [试点项目框架](/chinese/resources/insights/2604-plastic-pallet-pilot-program/)，先做小范围验证再放大。
+如果你还在评估阶段，可以先参考这个 [试点项目框架](/zh/resources/insights/2604-plastic-pallet-pilot-program/)，先做小范围验证再放大。
 
 ---
 
@@ -93,8 +93,8 @@ popular: false
 
 ### 2. 按航线行为选结构
 
-- 一次性出口、强调空托体积效率：可优先评估九脚可套叠方案，例如这款 [九脚托盘](/chinese/products/pallets/nine-leg_1210/)。
-- 出口后仍可能进仓上架：需评估可上货架结构，例如这款 [川字托盘](/chinese/products/pallets/3-runner_1210/)。
+- 一次性出口、强调空托体积效率：可优先评估九脚可套叠方案，例如这款 [九脚托盘](/zh/products/pallets/nine-leg_1210/)。
+- 出口后仍可能进仓上架：需评估可上货架结构，例如这款 [川字托盘](/zh/products/pallets/3-runner_1210/)。
 
 ### 3. 与纸箱模数、装柜方案、目的地搬运设备匹配
 
@@ -108,7 +108,7 @@ popular: false
 
 若你采用可回收循环或半闭环网络，建议在量产前就定义标识规则（Logo、编码、条码或RFID预留）。
 
-如果你还在比较“可套叠”与“可上架”两类结构，可配合阅读这篇框架文章： [Nestable vs Rackable Plastic Pallets](/chinese/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
+如果你还在比较“可套叠”与“可上架”两类结构，可配合阅读这篇框架文章： [Nestable vs Rackable Plastic Pallets](/zh/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
 
 ---
 
@@ -124,7 +124,7 @@ popular: false
 - 尺寸公差与外观验收标准；
 - 装柜密度与包装要求。
 
-可直接配合这份模板使用： [Plastic Pallet RFQ Checklist](/chinese/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)。
+可直接配合这份模板使用： [Plastic Pallet RFQ Checklist](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)。
 
 ---
 
@@ -158,4 +158,4 @@ popular: false
 
 木托盘在部分航线仍可使用；但当口岸合规复杂、延期代价高时，塑料托盘往往能提供更稳定的流程表现和更低的异常总成本。
 
-如果你正在推进木托盘升级，也可同步参考这篇总览文章，建立更完整的仓储升级思路： [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/chinese/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/)。
+如果你正在推进木托盘升级，也可同步参考这篇总览文章，建立更完整的仓储升级思路： [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/zh/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/)。

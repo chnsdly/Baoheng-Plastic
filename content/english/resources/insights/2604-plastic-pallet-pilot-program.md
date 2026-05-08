@@ -11,7 +11,7 @@ date: 2026-03-14
 popular: false
 ---
 
-In our cornerstone guide, [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/english/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/), we covered the strategic “why” and key technical basics of switching pallet systems.
+In our cornerstone guide, [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/), we covered the strategic “why” and key technical basics of switching pallet systems.
 
 This article goes one level deeper on one practical question that procurement and warehouse teams keep asking:
 
@@ -32,7 +32,7 @@ Many teams already know plastic pallets can outperform wood in consistency, clea
 
 A pilot fixes this by converting a broad upgrade into a controlled operational test.
 
-If your site includes selective racking, pair this framework with our technical checklist on steel reinforcement for rackable pallets so safety assumptions are validated during the same test window. [See related checklist](/english/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/).
+If your site includes selective racking, pair this framework with our technical checklist on steel reinforcement for rackable pallets so safety assumptions are validated during the same test window. [See related checklist](/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/).
 
 ---
 
@@ -91,7 +91,7 @@ Industry test standards such as **ISO 8611** (pallet performance testing) are us
 
 ### H3: Product shortlist logic (example)
 
-If your pilot lane is medium-heavy racking with mixed forklift traffic, a rackable three-runner design is often a practical starting point. For example, our [1210 open deck 3-runner plastic pallet](/english/products/pallets/3-runner_1210/) supports steel-pipe reinforcement and is commonly evaluated in this type of scenario.
+If your pilot lane is medium-heavy racking with mixed forklift traffic, a rackable three-runner design is often a practical starting point. For example, our [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) supports steel-pipe reinforcement and is commonly evaluated in this type of scenario.
 
 The key is not the model name; the key is matching structure + reinforcement + load profile.
 

@@ -60,8 +60,8 @@ Statements like “freezer safe” are not enough. Require temperature-specific 
 
 ### A. Match structure to storage behavior
 
-- **Frequent racking exposure**: start with rack-capable structures (for example, [3-runner pallets](/english/products/pallets/3-runner_1210/)) and evaluate steel reinforcement by beam span.
-- **Floor-heavy staging with export movement**: lighter [nine-leg options](/english/products/pallets/nine-leg_1210/) may fit some lanes if load profile and impact risk are controlled.
+- **Frequent racking exposure**: start with rack-capable structures (for example, [3-runner pallets](/products/pallets/3-runner_1210/)) and evaluate steel reinforcement by beam span.
+- **Floor-heavy staging with export movement**: lighter [nine-leg options](/products/pallets/nine-leg_1210/) may fit some lanes if load profile and impact risk are controlled.
 
 ### B. Specify reinforcement by geometry, not by keyword
 
@@ -73,7 +73,7 @@ Use measurable RFQ language:
 - Tube dimensions;
 - Expected deflection limit under your rack span.
 
-If your team needs a structured format, adapt this [plastic pallet RFQ checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) and add a dedicated freezer-test section.
+If your team needs a structured format, adapt this [plastic pallet RFQ checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) and add a dedicated freezer-test section.
 
 ### C. Treat beam span as a hard input
 
@@ -126,7 +126,7 @@ Track weekly:
 - Product damage linked to pallet instability;
 - Washdown and hygiene non-conformance events.
 
-For execution structure, use a staged method similar to this [90-day pilot framework](/english/resources/insights/2604-plastic-pallet-pilot-program/) while adding temperature-zone control and cold-shift observation windows.
+For execution structure, use a staged method similar to this [90-day pilot framework](/resources/insights/2604-plastic-pallet-pilot-program/) while adding temperature-zone control and cold-shift observation windows.
 
 ---
 
@@ -160,7 +160,7 @@ Before mass purchase, align these owners and deliverables:
 4. **Supplier engineering**: provide test evidence under declared freezer conditions;
 5. **Finance**: evaluate total cost including damage, delays, and replacement cycles.
 
-If your network also includes export lanes, combine this freezer framework with your border-compliance workflow using the [ISPM 15 export decision guide](/english/resources/insights/2607-ispm15-export-pallet-compliance-framework/).
+If your network also includes export lanes, combine this freezer framework with your border-compliance workflow using the [ISPM 15 export decision guide](/resources/insights/2607-ispm15-export-pallet-compliance-framework/).
 
 ---
 

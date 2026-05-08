@@ -11,7 +11,7 @@ date: 2026-03-14
 popular: false
 ---
 
-在主文《[从木托盘到塑料托盘：仓储升级实用指南](/chinese/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/)》里，我们已经讲清了从木托到塑托升级的总体逻辑和关键技术点。
+在主文《[从木托盘到塑料托盘：仓储升级实用指南](/zh/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/)》里，我们已经讲清了从木托到塑托升级的总体逻辑和关键技术点。
 
 这篇文章只解决一个更“落地”的问题：
 
@@ -32,7 +32,7 @@ popular: false
 
 试点的价值，就是把“全面升级”变成“可控实验”。
 
-如果你的场景包含货架存储，建议把本框架与我们另一篇货架钢管加固清单配套使用，在同一试点周期内同时验证结构安全假设。可参考：[货架托盘钢管加固选型清单](/chinese/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/)。
+如果你的场景包含货架存储，建议把本框架与我们另一篇货架钢管加固清单配套使用，在同一试点周期内同时验证结构安全假设。可参考：[货架托盘钢管加固选型清单](/zh/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/)。
 
 ---
 
@@ -91,7 +91,7 @@ popular: false
 
 ### H3：产品初筛逻辑（示例）
 
-如果你的试点场景是中重载上架、且叉车流量较高，三滑块（川字）可上架结构通常是一个实用起点。比如这款 [1210 open deck 3-runner plastic pallet](/english/products/pallets/3-runner_1210/) 支持钢管加固，常用于这类工况评估。
+如果你的试点场景是中重载上架、且叉车流量较高，三滑块（川字）可上架结构通常是一个实用起点。比如这款 [1210 open deck 3-runner plastic pallet](/zh/products/pallets/3-runner_1210/) 支持钢管加固，常用于这类工况评估。
 
 重点不在型号本身，而在“结构 + 加固 + 载荷曲线”是否匹配。
 

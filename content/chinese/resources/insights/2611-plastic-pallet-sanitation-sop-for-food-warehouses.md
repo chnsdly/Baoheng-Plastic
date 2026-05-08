@@ -73,7 +73,7 @@ popular: false
 - 进入B/A区前必须过闸核验；
 - 清洗前后托盘分区存放。
 
-如仓内存在冷链业务，可将本SOP与这份[冷库托盘选型框架](/chinese/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/)联动，确保卫生控制与低温结构控制一致。
+如仓内存在冷链业务，可将本SOP与这份[冷库托盘选型框架](/zh/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/)联动，确保卫生控制与低温结构控制一致。
 
 ---
 
@@ -124,7 +124,7 @@ popular: false
 
 任一项不通过，即转入返洗或破损隔离区。
 
-若你正在做卫生场景采购，可把这些放行与破损判定条款写入询价文件，并参考这份[塑料托盘RFQ规格清单](/chinese/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)。
+若你正在做卫生场景采购，可把这些放行与破损判定条款写入询价文件，并参考这份[塑料托盘RFQ规格清单](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)。
 
 ---
 
@@ -139,7 +139,7 @@ popular: false
 - 材料一致性与批次可追溯能力；
 - 尺寸稳定性是否有利于减少二次碰撞损伤。
 
-对于需要颜色分区管理的场景（如过敏原分区、洁污分流），可结合如[食品系列1210托盘](/chinese/products/pallets/food_white_1210/)这类型号与SOP状态标识联动，提升一线可视化管理效率。
+对于需要颜色分区管理的场景（如过敏原分区、洁污分流），可结合如[食品系列1210托盘](/zh/products/pallets/food_white_1210/)这类型号与SOP状态标识联动，提升一线可视化管理效率。
 
 ---
 

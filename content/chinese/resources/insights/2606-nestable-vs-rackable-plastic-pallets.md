@@ -32,7 +32,7 @@ popular: false
 - 回空运输成本更容易压缩
 - 常用于一次性出口或轻载循环
 
-常见形态是九脚结构，可参考该类[九脚托盘产品](/chinese/products/pallets/nine-leg_1210/)。
+常见形态是九脚结构，可参考该类[九脚托盘产品](/zh/products/pallets/nine-leg_1210/)。
 
 ### 上架型塑料托盘（Rackable）
 
@@ -45,7 +45,7 @@ popular: false
 - 适用于货架存储和较长在架时间
 - 单价和自重通常高于套叠托盘
 
-典型结构可参考[川字托盘产品](/chinese/products/pallets/3-runner_1210/)。
+典型结构可参考[川字托盘产品](/zh/products/pallets/3-runner_1210/)。
 
 ---
 
@@ -144,10 +144,10 @@ popular: false
 
 ## 6）从方案评估到导入落地的执行步骤
 
-1. **按线路梳理场景**：出口一程、国内循环、货架存储、地堆暂存。  
-2. **按场景分配结构**：套叠、上架或双规格。  
-3. **先做小范围试点**，用实测数据校验假设（可参考[90天试点框架](/chinese/resources/insights/2604-plastic-pallet-pilot-program/)）。  
-4. **锁定RFQ参数**，在询价前写清梁跨度、载荷画像、验收标准（可参考[RFQ规格核对清单](/chinese/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)）。  
+1. **按线路梳理场景**：出口一程、国内循环、货架存储、地堆暂存。
+2. **按场景分配结构**：套叠、上架或双规格。
+3. **先做小范围试点**，用实测数据校验假设（可参考[90天试点框架](/zh/resources/insights/2604-plastic-pallet-pilot-program/)）。
+4. **锁定RFQ参数**，在询价前写清梁跨度、载荷画像、验收标准（可参考[RFQ规格核对清单](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)）。
 5. **90天复盘**，重点看破损率、作业延误和物流成本偏差。
 
 ---
