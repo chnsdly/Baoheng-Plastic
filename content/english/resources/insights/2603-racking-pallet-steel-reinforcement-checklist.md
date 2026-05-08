@@ -11,7 +11,7 @@ date: 2026-03-10
 popular: false
 ---
 
-In our previous article, [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/english/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/), we mentioned that steel reinforcement is often the “safety fuse” for pallets used on racking.
+In our previous article, [From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades](/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/), we mentioned that steel reinforcement is often the “safety fuse” for pallets used on racking.
 
 This follow-up focuses on that single point in more detail:
 

@@ -73,7 +73,7 @@ Control approach:
 - require gateway checks before entering B or A zones,
 - use separate storage for pre-clean and post-clean pallets.
 
-If your warehouse also handles frozen products, integrate low-temperature handling checks with this [freezer pallet specification framework](/english/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/) so hygiene and structural controls stay aligned.
+If your warehouse also handles frozen products, integrate low-temperature handling checks with this [freezer pallet specification framework](/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/) so hygiene and structural controls stay aligned.
 
 ---
 
@@ -124,7 +124,7 @@ Recommended release checklist:
 
 Any pallet failing one item is blocked and moved to rewash or damage quarantine.
 
-If you are defining procurement specs for hygienic lanes, include these release and damage criteria in your RFQ package using this [plastic pallet RFQ checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/).
+If you are defining procurement specs for hygienic lanes, include these release and damage criteria in your RFQ package using this [plastic pallet RFQ checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/).
 
 ---
 
@@ -139,7 +139,7 @@ Practical selection points:
 - material consistency and traceable batch control,
 - stable dimensions to avoid secondary damage during handling.
 
-For lines requiring color segregation (for example, allergen control or zone coding), food-grade pallet options such as [food series 1210 models](/english/products/pallets/food_white_1210/) can simplify daily visual control when combined with SOP tagging rules.
+For lines requiring color segregation (for example, allergen control or zone coding), food-grade pallet options such as [food series 1210 models](/products/pallets/food_white_1210/) can simplify daily visual control when combined with SOP tagging rules.
 
 ---
 

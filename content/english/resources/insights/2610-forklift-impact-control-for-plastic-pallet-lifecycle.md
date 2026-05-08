@@ -33,7 +33,7 @@ That means lifecycle cost is driven by:
 - where impact concentrates,
 - and how quickly damaged units are removed from circulation.
 
-If your site is moving to rack-capable formats such as [3-runner plastic pallets](/english/products/pallets/3-runner_1210/), impact discipline is especially important because preserving geometry is critical for predictable rack performance.
+If your site is moving to rack-capable formats such as [3-runner plastic pallets](/products/pallets/3-runner_1210/), impact discipline is especially important because preserving geometry is critical for predictable rack performance.
 
 ---
 
@@ -68,7 +68,7 @@ A single speed rule for the entire site usually fails. Define operating windows 
 - Mandatory fork leveling before insertion;
 - No corrective side-push once pallet touches beam.
 
-For rack projects, align this SOP with your structural checks in this [racking and reinforcement checklist](/english/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/).
+For rack projects, align this SOP with your structural checks in this [racking and reinforcement checklist](/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/).
 
 ### Floor staging and cross-dock lanes
 
@@ -95,7 +95,7 @@ Include these items in your next quotation package:
 - Reinforcement configuration and declared use limits;
 - Acceptance sample criteria tied to your lane profile.
 
-If your RFQ template is still generic, adapt this [plastic pallet RFQ specification checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) and add an “impact-governance” section.
+If your RFQ template is still generic, adapt this [plastic pallet RFQ specification checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) and add an “impact-governance” section.
 
 ---
 
@@ -128,7 +128,7 @@ Track a small dashboard weekly:
 
 These indicators should be reviewed jointly by warehouse operations, EHS/quality, and procurement.
 
-If your site is in conversion phase, combine these KPIs with a staged rollout model like this [90-day plastic pallet pilot program](/english/resources/insights/2604-plastic-pallet-pilot-program/).
+If your site is in conversion phase, combine these KPIs with a staged rollout model like this [90-day plastic pallet pilot program](/resources/insights/2604-plastic-pallet-pilot-program/).
 
 ---
 

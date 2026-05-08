@@ -60,8 +60,8 @@ popular: false
 
 ### A. 先匹配存储行为，再选结构
 
-- **长期上货架**：优先评估可上架结构（如 [川字托盘](/chinese/products/pallets/3-runner_1210/)），并结合梁距确定是否需要钢管加固。
-- **以地堆+外发为主**：在载荷与冲击风险可控时，可评估部分 [九脚托盘](/chinese/products/pallets/nine-leg_1210/) 方案。
+- **长期上货架**：优先评估可上架结构（如 [川字托盘](/zh/products/pallets/3-runner_1210/)），并结合梁距确定是否需要钢管加固。
+- **以地堆+外发为主**：在载荷与冲击风险可控时，可评估部分 [九脚托盘](/zh/products/pallets/nine-leg_1210/) 方案。
 
 ### B. 加固必须“按几何参数”写进规格
 
@@ -73,7 +73,7 @@ RFQ 建议写成可量化条款：
 - 钢管规格；
 - 在既定梁距下允许挠度上限。
 
-如需模板，可基于这份 [塑料托盘 RFQ 清单](/chinese/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) 增加“低温测试”专章。
+如需模板，可基于这份 [塑料托盘 RFQ 清单](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) 增加“低温测试”专章。
 
 ### C. 梁距必须作为硬输入
 
@@ -126,7 +126,7 @@ RFQ 建议写成可量化条款：
 - 因托盘稳定性问题导致的货损；
 - 清洗与卫生不符合项。
 
-执行节奏可参考这份 [90 天试点框架](/chinese/resources/insights/2604-plastic-pallet-pilot-program/)，并补充温区分层和冷库班次观察窗口。
+执行节奏可参考这份 [90 天试点框架](/zh/resources/insights/2604-plastic-pallet-pilot-program/)，并补充温区分层和冷库班次观察窗口。
 
 ---
 
@@ -160,7 +160,7 @@ RFQ 建议写成可量化条款：
 4. **供应商技术**：提交声明温区下的测试证据；
 5. **财务**：按货损、延误与更换周期评估总成本。
 
-如业务同时包含出口路径，可将本框架与 [ISPM 15 出口合规决策指南](/chinese/resources/insights/2607-ispm15-export-pallet-compliance-framework/) 联合使用。
+如业务同时包含出口路径，可将本框架与 [ISPM 15 出口合规决策指南](/zh/resources/insights/2607-ispm15-export-pallet-compliance-framework/) 联合使用。
 
 ---
 

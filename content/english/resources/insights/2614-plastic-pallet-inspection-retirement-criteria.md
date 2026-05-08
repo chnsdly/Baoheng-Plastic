@@ -31,7 +31,7 @@ Before setting inspection rules, divide your pallet fleet into service classes:
 - **Return or export pallets** used for one-way movement, supplier loops, or low-frequency circulation.
 - **Hygiene-controlled pallets** used in food, beverage, pharmaceutical, or clean production areas.
 
-Each class needs different pass/fail criteria. Racking pallets require the strictest control because structural deformation can affect load stability at height. Hygiene-controlled pallets need closer attention to cracks, embedded residue, and cleaning access. For a deeper specification baseline, the [plastic pallet RFQ checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) explains why load condition, rack span, material, and reinforcement should be defined before purchase.
+Each class needs different pass/fail criteria. Racking pallets require the strictest control because structural deformation can affect load stability at height. Hygiene-controlled pallets need closer attention to cracks, embedded residue, and cleaning access. For a deeper specification baseline, the [plastic pallet RFQ checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) explains why load condition, rack span, material, and reinforcement should be defined before purchase.
 
 ## The five inspection zones that matter most
 
@@ -73,7 +73,7 @@ Check for:
 - rust staining that suggests water ingress,
 - abnormal bending after rack storage.
 
-If a pallet is used for beam racking and reinforcement integrity is uncertain, do not rely on visual appearance alone. Quarantine the pallet and compare it with a known-good sample under the same support condition. The [racking pallet steel reinforcement checklist](/english/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/) can help buyers define reinforcement details before future orders.
+If a pallet is used for beam racking and reinforcement integrity is uncertain, do not rely on visual appearance alone. Quarantine the pallet and compare it with a known-good sample under the same support condition. The [racking pallet steel reinforcement checklist](/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/) can help buyers define reinforcement details before future orders.
 
 ### 4) Edges and corners: early indicators of handling discipline
 
@@ -86,7 +86,7 @@ Look for:
 - burrs that catch stretch film,
 - impact marks concentrated on one side of the pallet.
 
-If damage patterns repeat in one warehouse zone, the root cause may not be the pallet itself. It may be fork height, aisle congestion, poor line marking, or rushed loading practice. The article on [forklift impact control for plastic pallet lifecycle](/english/resources/insights/2610-forklift-impact-control-for-plastic-pallet-lifecycle/) covers these operational causes in more detail.
+If damage patterns repeat in one warehouse zone, the root cause may not be the pallet itself. It may be fork height, aisle congestion, poor line marking, or rushed loading practice. The article on [forklift impact control for plastic pallet lifecycle](/resources/insights/2610-forklift-impact-control-for-plastic-pallet-lifecycle/) covers these operational causes in more detail.
 
 ### 5) Hygiene and contamination: cracks are not the only concern
 
@@ -199,7 +199,7 @@ When preparing the next RFQ or replacement plan, use inspection records to answe
 - Does the current design match forklift type, rack span, and load profile?
 - Would reinforcement, different base geometry, or a stronger material grade reduce lifecycle cost?
 
-For example, if a warehouse retires many rackable pallets because of runner deformation, a reinforced three-runner design may be more appropriate than a lighter transfer pallet. A product such as the [1210 open deck 3-runner plastic pallet](/english/products/pallets/3-runner_1210/) illustrates the type of structure buyers often review when racking compatibility, forklift handling, and load support must be considered together.
+For example, if a warehouse retires many rackable pallets because of runner deformation, a reinforced three-runner design may be more appropriate than a lighter transfer pallet. A product such as the [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) illustrates the type of structure buyers often review when racking compatibility, forklift handling, and load support must be considered together.
 
 ## Final checklist for warehouse teams
 

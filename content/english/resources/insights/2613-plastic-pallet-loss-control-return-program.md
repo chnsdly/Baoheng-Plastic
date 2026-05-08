@@ -64,7 +64,7 @@ If a lane cannot support return discipline, it should not be planned as a closed
 
 Loss control is partly operational, but pallet design still matters. The easier a pallet is to recognize, count, stack, and segregate, the easier it is to keep in the right loop.
 
-For tightly managed internal loops, a durable rackable pallet with a consistent base may be appropriate where the same asset moves between production, storage, and dispatch. For example, a [3-runner plastic pallet](/english/products/pallets/3-runner_1210/) can support forklift handling and defined bottom-contact points in many warehouse flows.
+For tightly managed internal loops, a durable rackable pallet with a consistent base may be appropriate where the same asset moves between production, storage, and dispatch. For example, a [3-runner plastic pallet](/products/pallets/3-runner_1210/) can support forklift handling and defined bottom-contact points in many warehouse flows.
 
 For open or semi-open loops, visibility becomes more important. Color, molded logo position, hot-stamp marking, or serial identification can reduce accidental mixing. These features do not prevent every loss, but they make exceptions easier to detect during receiving and yard checks.
 
@@ -131,7 +131,7 @@ Track opening balance, pallets shipped out, pallets returned, adjustments, and c
 
 ### Average dwell days
 
-Dwell days measure how long pallets remain outside the owner’s usable pool. Longer dwell time increases the pool size needed to support the same shipment volume. Teams planning the total pool should connect this metric with a structured [plastic pallet pool sizing method](/english/resources/insights/2612-plastic-pallet-pool-sizing-method/).
+Dwell days measure how long pallets remain outside the owner’s usable pool. Longer dwell time increases the pool size needed to support the same shipment volume. Teams planning the total pool should connect this metric with a structured [plastic pallet pool sizing method](/resources/insights/2612-plastic-pallet-pool-sizing-method/).
 
 ### Return compliance rate
 

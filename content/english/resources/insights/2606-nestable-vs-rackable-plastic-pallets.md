@@ -32,7 +32,7 @@ Typical characteristics:
 - Lower transport cost for empty returns
 - Commonly used in one-way shipping or light-duty circulation
 
-A typical option is a nine-leg design such as this [nestable plastic pallet category](/english/products/pallets/nine-leg_1210/).
+A typical option is a nine-leg design such as this [nestable plastic pallet category](/products/pallets/nine-leg_1210/).
 
 ### Rackable plastic pallets
 
@@ -45,7 +45,7 @@ Typical characteristics:
 - Suitable for selective racking and longer dwell time
 - Usually higher unit price and higher tare weight
 
-A common architecture is a 3-runner configuration such as this [rack-oriented 3-runner pallet](/english/products/pallets/3-runner_1210/).
+A common architecture is a 3-runner configuration such as this [rack-oriented 3-runner pallet](/products/pallets/3-runner_1210/).
 
 ---
 
@@ -146,10 +146,10 @@ If your shipments use wood packaging in some lanes, remember that wood material 
 
 ## 6) Implementation playbook: from shortlist to rollout
 
-1. **Map lanes by function**: export one-way, domestic closed-loop, rack storage, floor-only staging.  
-2. **Assign target pallet architecture per lane**: nestable, rackable, or dual-spec.  
-3. **Run a controlled pilot** in one representative lane before scaling ([pilot program framework](/english/resources/insights/2604-plastic-pallet-pilot-program/)).  
-4. **Lock RFQ parameters** with beam span, load profile, and acceptance criteria before quotation ([RFQ checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)).  
+1. **Map lanes by function**: export one-way, domestic closed-loop, rack storage, floor-only staging.
+2. **Assign target pallet architecture per lane**: nestable, rackable, or dual-spec.
+3. **Run a controlled pilot** in one representative lane before scaling ([pilot program framework](/resources/insights/2604-plastic-pallet-pilot-program/)).
+4. **Lock RFQ parameters** with beam span, load profile, and acceptance criteria before quotation ([RFQ checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)).
 5. **Review 90-day performance** using damage rate, handling delay, and logistics cost variance.
 
 ---

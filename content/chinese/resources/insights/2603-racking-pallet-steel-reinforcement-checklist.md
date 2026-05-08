@@ -11,7 +11,7 @@ date: 2026-03-10
 popular: false
 ---
 
-在上一篇文章《[从木托盘到塑料托盘：仓储升级实用指南](/chinese/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/)》中，我们提到：在上货架场景里，钢管加固往往是托盘安全的“保险丝”。
+在上一篇文章《[从木托盘到塑料托盘：仓储升级实用指南](/zh/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/)》中，我们提到：在上货架场景里，钢管加固往往是托盘安全的“保险丝”。
 
 这篇内容专门把这个点展开讲清楚：
 

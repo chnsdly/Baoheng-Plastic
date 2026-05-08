@@ -66,7 +66,7 @@ Specify:
 - flatness expectations at conveyor contact zones,
 - minimum support continuity for roller or chain transfers.
 
-For many automated lanes, stable runner designs such as [3-runner pallets](/english/products/pallets/3-runner_1210/) are easier to control than highly discontinuous bases.
+For many automated lanes, stable runner designs such as [3-runner pallets](/products/pallets/3-runner_1210/) are easier to control than highly discontinuous bases.
 
 ### C. Deflection behavior under real dynamic loads
 
@@ -78,7 +78,7 @@ Request suppliers to provide:
 - rack deflection data where AS/RS storage is involved,
 - pass/fail thresholds linked to your support conditions.
 
-Teams that already use structured procurement templates can extend this [RFQ specification checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) with dedicated automation clauses.
+Teams that already use structured procurement templates can extend this [RFQ specification checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) with dedicated automation clauses.
 
 ### D. Surface condition for sensors and handling tools
 
@@ -95,7 +95,7 @@ Add QC criteria for:
 
 Even in ambient automation, pallet behavior changes with night/day temperatures, dock exposure, and washdown cycles.
 
-For chilled or mixed-temperature operations, include environmental validation steps inspired by freezer-focused evaluation methods such as this [low-temperature framework](/english/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/).
+For chilled or mixed-temperature operations, include environmental validation steps inspired by freezer-focused evaluation methods such as this [low-temperature framework](/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/).
 
 ---
 
@@ -161,7 +161,7 @@ A focused pilot can prevent long-term downtime costs.
 - Separate pallet-related events from equipment-control events.
 - Finalize accepted specification and incoming QC thresholds.
 
-If your team already uses a longer rollout process, align this with your existing [pilot program method](/english/resources/insights/2604-plastic-pallet-pilot-program/) and add automation-specific KPIs.
+If your team already uses a longer rollout process, align this with your existing [pilot program method](/resources/insights/2604-plastic-pallet-pilot-program/) and add automation-specific KPIs.
 
 ---
 

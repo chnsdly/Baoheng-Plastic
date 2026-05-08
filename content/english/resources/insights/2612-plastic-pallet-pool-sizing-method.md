@@ -97,7 +97,7 @@ Pool sizing is not only quantity. It also depends on whether the selected pallet
 
 If one lane has frequent beam-rack storage or higher point loads, verify structural fit first, then lock quantity planning. A quantity model built on the wrong pallet architecture will still fail in operation.
 
-Use lane-specific technical checks before scaling procurement, especially when mixing nestable and rackable configurations. Related framework: [Nestable vs Rackable Plastic Pallets](/english/resources/insights/2606-nestable-vs-rackable-plastic-pallets/).
+Use lane-specific technical checks before scaling procurement, especially when mixing nestable and rackable configurations. Related framework: [Nestable vs Rackable Plastic Pallets](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/).
 
 ## Step 6: Build a tiered replenishment trigger
 
@@ -127,9 +127,9 @@ When pool size is large, technical failure rates can quickly become a planning i
 
 Use recognized test frameworks such as ISO 8611 when setting mechanical performance expectations with suppliers ([ISO 8611 standard page](https://www.iso.org/standard/36596.html)). For dimensions and interoperability references, ISO 6780 remains a useful baseline for pallet sizes in global systems ([ISO 6780 standard page](https://www.iso.org/standard/72358.html)).
 
-For first-time migration teams, this implementation sequence helps reduce ramp-up risk: [Plastic Pallet Pilot Program](/english/resources/insights/2604-plastic-pallet-pilot-program/) and [Plastic Pallet RFQ Checklist](/english/resources/insights/2605-plastic-pallet-rfq-specification-checklist/).
+For first-time migration teams, this implementation sequence helps reduce ramp-up risk: [Plastic Pallet Pilot Program](/resources/insights/2604-plastic-pallet-pilot-program/) and [Plastic Pallet RFQ Checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/).
 
-If you are evaluating platform options for closed-loop operations, you can compare different pallet structures in the [plastic pallet product catalog](/english/products/pallets/).
+If you are evaluating platform options for closed-loop operations, you can compare different pallet structures in the [plastic pallet product catalog](/products/pallets/).
 
 ## A 30-day rollout plan for operations teams
 
