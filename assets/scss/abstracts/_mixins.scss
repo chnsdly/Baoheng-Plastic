@@ -1,0 +1,4 @@
+
+@function space($n) { 
+  @return calc(var(--space) * #{$n}); 
+}

@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Base Reset
+   只做必要的浏览器默认样式统一，不过度抹掉 HTML 原生语义
+   ========================================================================== */
+
+
+/* 1. 更直观的盒模型：width / height 包含 padding 和 border */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* 2. 去掉 body 默认外边距 */
+body {
+  margin: 0;
+}
+
+
+/* 3. 清除常见文本和结构元素的默认外边距
+   注意：不重置 ul / ol，保留文章列表的缩进和符号 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* 4. 媒体元素不撑破父容器 */
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* 5. 图片按自身比例缩放 */
+img {
+  height: auto;
+}
+
+
+/* 6. 表单元素继承页面字体 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* 7. 表格边框更可控 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* 8. 文本域只允许纵向拉伸，避免破坏横向布局 */
+textarea {
+  resize: vertical;
+}
+
+
+/* 9. 保留并统一键盘焦点可见性 */
+:focus-visible {
+  outline: var(--focus-outline, 2px solid currentColor);
+  outline-offset: var(--focus-offset, 2px);
+}

@@ -1,5 +1,9 @@
 @import "abstracts/tokens";
 @import "abstracts/mixins";
+
+@import "base/reset";
+@import "base/base";
+
 @import "typography";
 @import "header";
 @import "home/hero";
