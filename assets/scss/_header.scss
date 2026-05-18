@@ -75,9 +75,6 @@
   display: flex;
   align-items: center;
   gap: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar__item {
@@ -147,7 +144,6 @@
 
 .dropdown-menu {
   @include dropdown-panel(left, 220px);
-  list-style: none;
   display: grid;
   gap: 2px;
 
@@ -432,9 +428,6 @@ body[data-drawer-open="true"] {
 }
 
 .drawer__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -497,8 +490,6 @@ body[data-drawer-open="true"] {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    list-style: none;
-    margin: 0;
     padding: 0 0 0 calc(var(--space) * 1);
     border-left: var(--border);
     margin-left: calc(var(--space) * 1.5);

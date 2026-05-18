@@ -10,7 +10,6 @@
   max-width: 720px;
   margin-inline: auto;
   color: var(--on-surface);
-  box-sizing: border-box; /* 防止外层无内边距时被撑到边 */
   padding: space(4);
   box-shadow: var(--shadow);
   border-radius: var(--radius);
@@ -40,7 +39,6 @@
   width: 100%;
 }
 
-.lead-form textarea{ resize: vertical; }
 
 .lead-form :is(input, textarea)::placeholder{
   color: color-mix(in oklab, var(--on-surface) 45%, transparent);
