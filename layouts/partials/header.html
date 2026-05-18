@@ -1,7 +1,7 @@
 <header class="site-header" id="site-header" role="banner"
   data-scroll-threshold="72"
   data-scroll-delta="8">
-  <div class="navbar__wrap">
+  <div class="navbar__wrap container container--wide">
     <nav class="navbar" aria-label="Main navigation">
       <div class="navbar__left">
         <div class="navbar__logo">
@@ -55,7 +55,7 @@
       <div class="navbar__actions">
         {{ $getQuoteItems := where .Site.Menus.main "Identifier" "get-quote" }}
         {{ with index $getQuoteItems 0 }}
-        <a class="navbar__cta button button--primary" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        <a class="navbar__cta button font-meta button--primary" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         {{ end }}
         {{ if hugo.IsMultilingual }}
         <div class="lang-switcher" role="group" aria-label="{{ i18n "language" | default "Language" }}">

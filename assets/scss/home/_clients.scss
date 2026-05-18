@@ -29,14 +29,14 @@
 
   &__title {
     margin: 0;
-    font-size: var(--section-title-size);
+    @extend .font-title-l;
     font-weight: var(--section-title-weight);
   }
 
   &__description {
     margin: space(2) auto 0;
     color: var(--section-desc-color);
-    font-size: var(--section-desc-size);
+    @extend .font-body;
   }
 
   &__carousel {
