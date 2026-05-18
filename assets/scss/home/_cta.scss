@@ -57,12 +57,12 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: color-mix(in oklab, var(--on-surface) 70%, transparent);
-  font-size: var(--text-body-sm);
+  @extend .font-meta;
 }
 
 .cta__title {
   margin: 0;
-  font-size: var(--section-title-size);
+  @extend .font-title-l;
   font-weight: var(--section-title-weight);
   color: var(--on-surface);
 }
@@ -70,14 +70,14 @@
 .cta__desc {
   margin: 0;
   color: color-mix(in oklab, var(--muted) 75%, transparent);
-  font-size: var(--text-body-lg);
+  @extend .font-title-xs;
   max-inline-size: 62ch;
 }
 
 .cta__meta {
   margin: 0;
   color: color-mix(in oklab, var(--muted) 60%, transparent);
-  font-size: var(--text-body);
+  @extend .font-body;
 }
 
 .cta__contact {
@@ -102,12 +102,12 @@
   letter-spacing: 0.04em;
   color: color-mix(in oklab, var(--muted) 65%, transparent);
   text-transform: uppercase;
-  font-size: var(--text-body-sm);
+  @extend .font-meta;
 }
 
 .cta__value {
   margin: 0;
-  font-size: var(--text-body);
+  @extend .font-body;
   color: color-mix(in oklab, var(--on-surface) 90%, transparent);
   font-weight: 500;
 }
@@ -165,13 +165,13 @@
   color: var(--on-brand);
   font-weight: 700;
   letter-spacing: 0.02em;
-  font-size: var(--text-body-sm);
+  @extend .font-meta;
   box-shadow: var(--shadow);
 }
 
 .cta__form-title {
   margin: 0;
-  font-size: var(--text-h3);
+  @extend .font-title-l;
   letter-spacing: -0.01em;
 }
 

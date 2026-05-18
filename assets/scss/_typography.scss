@@ -13,6 +13,11 @@ p {
   }
 }
 
+p, li, td, th, input, textarea, select, button {
+  @extend .font-body;
+  line-height: var(--line-normal);
+}
+
 /* 列表样式 */
 ul:not([class]),
 ol:not([class]) {
@@ -49,7 +54,7 @@ blockquote {
 /* 代码样式 */
 code, kbd, pre, samp {
   font-family: var(--font-mono);
-  font-size: 0.9em;  /* 代码字体稍小 */
+  @extend .font-meta;
 }
 
 pre {
@@ -94,12 +99,12 @@ th {
 /* ================================================ */
 
 /* 标题间距 */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-block: 0;
   margin-block-end: space(2);
   font-family: var(--font-heading);
@@ -113,47 +118,47 @@ h6, .h6 {
 }
 
 /* 标题层次间距 */
-h1, .h1 {
+h1 {
   margin-block-end: space(4);
-  font-size: var(--text-h1);
+  @extend .font-display;
   font-weight: var(--weight-bold);
   line-height: var(--line-tight);
   letter-spacing: var(--tracking-heading-1);
 }
 
-h2, .h2 {
+h2 {
   margin-block-end: space(3);
-  font-size: var(--text-h2);
+  @extend .font-display;
   font-weight: var(--weight-semibold);
   line-height: var(--line-tight);
   letter-spacing: var(--tracking-heading-2);
 }
 
-h3, .h3 {
+h3 {
   margin-block-end: space(2.5);
-  font-size: var(--text-h3);
+  @extend .font-title-l;
   font-weight: var(--weight-semibold);
   line-height: var(--line-tight);
   letter-spacing: var(--tracking-heading-3);
 }
 
-h4, .h4 {
+h4 {
   margin-block-end: space(2);
-  font-size: var(--text-h4);
+  @extend .font-title-xs;
   font-weight: var(--weight-semibold);
   line-height: var(--line-normal);
 }
 
-h5, .h5 {
+h5 {
   margin-block-end: space(1.5);
-  font-size: var(--text-body);
+  @extend .font-body;
   font-weight: var(--weight-medium);
   line-height: var(--line-normal);
 }
 
-h6, .h6 {
+h6 {
   margin-block-end: space(1);
-  font-size: var(--text-body-sm);
+  @extend .font-meta;
   font-weight: var(--weight-medium);
   line-height: var(--line-normal);
   text-transform: uppercase;
@@ -163,15 +168,6 @@ h6, .h6 {
 
 /* 3. 文本工具类 */
 /* ================================================ */
-
-/* 文本大小类 */
-.text-xs { font-size: var(--text-body-sm); }
-.text-sm { font-size: var(--text-body); }
-.text-base { font-size: var(--text-body-lg); }
-.text-lg { font-size: var(--text-h3); }
-.text-xl { font-size: var(--text-h2); }
-.text-2xl { font-size: var(--text-h1); }
-.text-3xl { font-size: var(--text-display); }
 
 /* 文本颜色类 */
 .text-brand { color: var(--brand); }
@@ -221,7 +217,7 @@ h6, .h6 {
 
 /* 引言/导语 */
 .lead {
-  font-size: var(--text-body-lg);
+  @extend .font-title-xs;
   font-weight: var(--weight-light);
   line-height: var(--line-loose);
   color: var(--muted);
@@ -230,7 +226,7 @@ h6, .h6 {
 
 /* 小标题/副标题 */
 .subtitle {
-  font-size: var(--text-body-lg);
+  @extend .font-title-xs;
   font-weight: var(--weight-normal);
   color: var(--muted);
   margin-block-start: calc(space(2) * -1);
@@ -241,7 +237,7 @@ h6, .h6 {
 .label {
   display: inline-block;
   padding: 0.25em 0.75em;
-  font-size: var(--text-label);
+  @extend .font-meta;
   font-weight: var(--weight-semibold);
   line-height: 1;
   text-transform: uppercase;
@@ -274,46 +270,15 @@ h6, .h6 {
 /* 5. 响应式排版 */
 /* ================================================ */
 
-/* 移动端优化 */
-@include mq-up(sm) {
-  h1, .h1 { font-size: var(--text-display); }
-  h2, .h2 { font-size: var(--text-h1); }
-  h3, .h3 { font-size: var(--text-h2); }
-  
-  .lead {
-    font-size: var(--text-h4);
-  }
-}
-
 /* 平板端优化 */
 @include mq-up(md) {
-  h1, .h1 { 
-    font-size: clamp(3rem, calc(2.5rem + 2vw), 4rem);
-    margin-block-end: space(5);
-  }
+  h1 { margin-block-end: space(5); }
   
-  h2, .h2 { 
-    font-size: clamp(2.25rem, calc(1.9rem + 1.5vw), 3rem);
-    margin-block-end: space(4);
-  }
+  h2 { margin-block-end: space(4); }
   
   .lead {
-    font-size: var(--text-h3);
     max-width: 80ch;
     margin-inline: auto;
-  }
-}
-
-/* 桌面端优化 */
-@include mq-up(lg) {
-  body {
-    font-size: var(--text-body);
-    line-height: var(--line-normal);
-  }
-  
-  p, li, td, th, input, textarea, select, button {
-    font-size: var(--text-body);
-    line-height: var(--line-normal);
   }
 }
 
@@ -354,7 +319,6 @@ h6, .h6 {
 
 @media print {
   body {
-    font-size: 12pt;
     line-height: 1.5;
     color: #000000;
     background: #ffffff;

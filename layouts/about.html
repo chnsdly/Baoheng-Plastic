@@ -4,10 +4,10 @@
   {{- with $hero }}
   <div class="about__hero">
     <div class="container container--wide">
-      <div class="about__hero-inner">
-        {{- with .badge }}<div class="about__hero-badge text-xs">{{ . }}</div>{{ end }}
-        {{- with .title }}<h1 class="about__hero-title h1">{{ . }}</h1>{{ end }}
-        {{- with .subtitle }}<p class="about__hero-sub h4 text-muted">{{ . }}</p>{{ end }}
+      <div class="about__hero-inner container container--narrow">
+        {{- with .badge }}<div class="about__hero-badge font-meta">{{ . }}</div>{{ end }}
+        {{- with .title }}<h1 class="about__hero-title font-display">{{ . }}</h1>{{ end }}
+        {{- with .subtitle }}<p class="about__hero-sub font-title-xs text-muted">{{ . }}</p>{{ end }}
         {{- with .proofs }}
         <div class="about__hero-proof">
           {{- range . }}
@@ -23,7 +23,7 @@
         {{- end }}
         {{- with .cta }}
         <div class="about__hero-cta">
-          <a class="button button--primary" href="{{ .href }}" aria-label="{{ or .ariaLabel .label }}">{{ .label }}</a>
+          <a class="button font-meta button--primary" href="{{ .href }}" aria-label="{{ or .ariaLabel .label }}">{{ .label }}</a>
         </div>
         {{- end }}
       </div>
@@ -37,7 +37,7 @@
       <ul class="stats-grid" role="list">
         {{- range . }}
         <li class="stat">
-          <div class="stat__num h2 weight-bold">{{ .num }}</div>
+          <div class="stat__num font-display weight-bold">{{ .num }}</div>
           <div class="stat__label text-muted">{{ .label }}</div>
         </li>
         {{- end }}
@@ -51,7 +51,7 @@
   <div class="about__visuals">
     <div class="container container--wide">
       <div class="section-head">
-        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
         {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
       </div>
       <div class="visuals">
@@ -61,7 +61,7 @@
             {{- with $item.image }}<img src="{{ . }}" alt="{{ $item.alt }}" loading="lazy">{{ end }}
           </div>
           <div class="visual__body">
-            {{- with $item.title }}<h3 class="h3">{{ . }}</h3>{{ end }}
+            {{- with $item.title }}<h3 class="font-title-l">{{ . }}</h3>{{ end }}
             {{- with $item.copy }}<p class="text-muted">{{ . }}</p>{{ end }}
             {{- with $item.bullets }}
             <ul class="check-list check-list--tight">
@@ -83,13 +83,13 @@
   <div id="capabilities" class="about__capabilities">
     <div class="container">
       <div class="section-head">
-        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
         {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
       </div>
       <div class="cards-grid">
         {{- range .cards }}
         <article class="card">
-          {{- with .title }}<h3 class="h3">{{ . }}</h3>{{ end }}
+          {{- with .title }}<h3 class="font-title-l">{{ . }}</h3>{{ end }}
           {{- with .items }}
           <ul class="check-list">
             {{- range . }}
@@ -109,7 +109,7 @@
   <div class="about__timeline">
     <div class="container container--narrow">
       <div class="section-head">
-        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
       </div>
       <ol class="timeline" role="list">
         {{- range .items }}
@@ -128,7 +128,7 @@
   <div class="about__global">
     <div class="container">
       <div class="section-head">
-        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
         {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
       </div>
       <div class="global__grid">
@@ -154,12 +154,12 @@
   <div class="about__sustain">
     <div class="container container--narrow">
       <div class="section-head">
-        {{- with .title }}<h2 class="h2">{{ . }}</h2>{{ end }}
+        {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
       </div>
       <div class="cards-grid">
         {{- range .cards }}
         <article class="card">
-          {{- with .title }}<h3 class="h3">{{ . }}</h3>{{ end }}
+          {{- with .title }}<h3 class="font-title-l">{{ . }}</h3>{{ end }}
           {{- with .content }}<p>{{ . }}</p>{{ end }}
         </article>
         {{- end }}
@@ -180,7 +180,7 @@
 .section-head p { margin: 0; }
 
 .about__hero { background: linear-gradient(180deg, color-mix(in oklch, var(--brand) 20%, transparent), transparent), var(--surface); padding-block: var(--section-padding); }
-.about__hero-inner { max-width: var(--container-narrow); margin: 0 auto; text-align: center; }
+.about__hero-inner { text-align: center; }
 .about__hero-badge { display: inline-block; padding: .35rem .75rem; border-radius: var(--radius-pill); background: color-mix(in oklch, var(--brand), white 85%); color: var(--on-surface); border: var(--border); }
 .about__hero-title { margin: calc(var(--space) * 2) 0 calc(var(--space) * 2); letter-spacing: -0.02em; }
 .about__hero-sub { margin: 0 auto calc(var(--space) * 3); max-width: 60ch; }

@@ -14,8 +14,6 @@
   --hero-text-color: var(--on-surface);   /* 文字颜色（图上通常用浅色） */
   --hero-content-max: 80ch;             /* 文案最大宽度 */
   --hero-gap: calc(var(--space) * 5);                 /* 文案块垂直间距 */
-  --hero-title-size: var(--text-h1);       /* 标题字号（用全局令牌） */
-  --hero-desc-size: var(--text-body-lg);        /* 副标题字号 */
 
   /* 背景图调校 */
   --hero-obj-x: 50%;                    /* 背景焦点 X（object-position） */
@@ -98,13 +96,13 @@
 
 .hero h1 {
   margin: 0;
-  font-size: var(--hero-title-size);
+  @extend .font-display;
   line-height: 1.15;
   letter-spacing: .2px;
 }
 .hero__desc {
   margin: 0;
-  font-size: var(--hero-desc-size);
+  @extend .font-title-xs;
   line-height: 1.5;
   opacity: .95;
 }
@@ -135,7 +133,7 @@
   border: var(--border);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
   color: inherit;
-  font-size: var(--text-body-lg);
+  @extend .font-title-xs;
   cursor: pointer;
   transition: transform var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease);
   box-shadow: var(--shadow);
@@ -203,6 +201,4 @@
 /* ================================ 移动端微调 ================================ */
 @media (max-width: map-get($bp, md)) {
   .hero { --hero-gap: space(2); }
-  .hero h1 { font-size: var(--text-h2); }
-  .hero__desc { font-size: var(--text-body); }
 }

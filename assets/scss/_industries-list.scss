@@ -4,11 +4,6 @@
   color: var(--on-surface);
 }
 
-.industries-listing__container {
-  max-width: var(--container);
-  margin-inline: auto;
-}
-
 .industries-listing__layout {
   display: grid;
   gap: space(4);
@@ -33,14 +28,14 @@
 
 .industries-listing__title {
   margin: 0;
-  font-size: var(--section-title-size);
+  @extend .font-title-l;
   font-weight: var(--section-title-weight);
   color: var(--on-surface);
 }
 
 .industries-listing__description {
   margin: 0;
-  font-size: var(--section-desc-size);
+  @extend .font-body;
   color: var(--section-desc-color);
 }
 
@@ -111,7 +106,7 @@
 
 .industry-card__title {
   margin: 0;
-  font-size: var(--text-body-lg);
+  @extend .font-title-xs;
 }
 
 .industry-card__link {
@@ -128,7 +123,7 @@
 
 .industry-card__summary {
   margin: 0;
-  font-size: var(--text-body);
+  @extend .font-body;
   color: var(--on-surface);
 }
 
@@ -141,7 +136,7 @@
 .industry-card__meta-item {
   display: flex;
   gap: space(1);
-  font-size: var(--text-caption);
+  @extend .font-meta;
   color: var(--muted);
 }
 
@@ -186,7 +181,7 @@
   background: var(--surface);
   color: var(--on-surface);
   text-decoration: none;
-  font-size: var(--text-body-sm);
+  @extend .font-meta;
 }
 
 .industries-listing__pager-num.is-active {
@@ -225,7 +220,7 @@
 
 .industries-sidebar__heading {
   margin: 0;
-  font-size: var(--text-body);
+  @extend .font-body;
   font-weight: 700;
   color: var(--on-surface);
 }
@@ -280,13 +275,13 @@
 }
 
 .industries-sidebar__item-title {
-  font-size: var(--text-body-sm);
+  @extend .font-meta;
   font-weight: 600;
   color: var(--on-surface);
 }
 
 .industries-sidebar__item-summary {
-  font-size: var(--text-caption);
+  @extend .font-meta;
   color: var(--muted);
 }
 
@@ -305,7 +300,7 @@
   border: var(--border);
   background: var(--surface);
   color: var(--on-surface);
-  font-size: var(--text-caption);
+  @extend .font-meta;
   text-decoration: none;
   transition: background var(--t-fast) var(--ease);
 }
@@ -336,7 +331,7 @@
   border: var(--border);
   background: var(--surface);
   color: var(--brand);
-  font-size: var(--text-caption);
+  @extend .font-meta;
   text-decoration: none;
   transition: background var(--t-fast) var(--ease);
 }

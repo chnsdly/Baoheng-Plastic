@@ -4,7 +4,7 @@ robots: "noindex, nofollow"
 ---
 <div class="container container--narrow">
   <p>感谢您的提交。</p>
-  <a id="dl-btn" href="#" class="button" hidden>立即下载</a>
+  <a id="dl-btn" href="#" class="button font-meta" hidden>立即下载</a>
 </div>
 
 <script>

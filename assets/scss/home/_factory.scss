@@ -14,13 +14,13 @@
 
   &__title {
     margin: 0;
-    font-size: var(--section-title-size);
+    @extend .font-title-l;
     font-weight: var(--section-title-weight);
   }
 
   &__description {
     margin: space(2) 0 0;
-    font-size: var(--section-desc-size);
+    @extend .font-body;
     color: var(--section-desc-color);
   }
 
@@ -129,21 +129,21 @@
 
   &__item-title {
     margin: 0;
-    font-size: var(--text-body-lg);
+    @extend .font-title-xs;
     font-weight: 700;
     text-align: center;
   }
 
   &__item-text {
     margin: 0;
-    font-size: var(--text-body);
+    @extend .font-body;
     text-align: center;
     line-height: 1.6;
   }
 
   &__hint {
     margin: 0;
-    font-size: var(--text-overline);
+    @extend .font-meta;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--muted);

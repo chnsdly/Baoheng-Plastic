@@ -4,7 +4,7 @@ robots: "noindex, nofollow"
 ---
 
 <p>Thank you for your submission.</p>
-<a id="dl-btn" href="#" class="button" hidden>Download now</a>
+<a id="dl-btn" href="#" class="button font-meta" hidden>Download now</a>
 
 <script>
   // Build a download link from the URL query string ?dl=slug
