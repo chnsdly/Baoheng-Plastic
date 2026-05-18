@@ -29,9 +29,6 @@
 
 /* =============== 资源列表（主列） =============== */
 .res-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   gap: calc(var(--space) * 2);
 }
@@ -132,12 +129,6 @@
 }
 
 /* =============== 侧边栏：热门文章 =============== */
-.popular-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .popular-item .ph {
   overflow: hidden;
   border-radius: var(--radius);
@@ -146,11 +137,4 @@
 .popular-item .ph__img {
   border-radius: var(--radius);
   display: block;
-}
-
-/* =============== 侧边栏：栏目列表 =============== */
-.section-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }

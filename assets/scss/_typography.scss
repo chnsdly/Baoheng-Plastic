@@ -14,7 +14,8 @@ p {
 }
 
 /* 列表样式 */
-ul, ol {
+ul:not([class]),
+ol:not([class]) {
   margin-block: 0 space(2);
   padding-inline-start: space(4);
   
@@ -23,7 +24,7 @@ ul, ol {
   }
 }
 
-li {
+:where(ul:not([class]), ol:not([class])) > li {
   margin-block: space(1);
   
   &:last-child {
@@ -76,8 +77,6 @@ code {
 table {
   width: 100%;
   margin-block: space(3);
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 th, td {
