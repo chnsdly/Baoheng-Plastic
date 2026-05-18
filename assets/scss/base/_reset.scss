@@ -12,14 +12,21 @@
 }
 
 
-/* 2. 去掉 body 默认外边距 */
+/* 2. 移动端文本缩放控制 */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+/* 3. 去掉 body 默认外边距 */
 body {
   margin: 0;
 }
 
 
-/* 3. 清除常见文本和结构元素的默认外边距
-   注意：不重置 ul / ol，保留文章列表的缩进和符号 */
+/* 4. 清除常见文本和结构元素的默认外边距
+   注意：不重置无 class 的 ul / ol，保留文章列表的缩进和符号 */
 h1,
 h2,
 h3,
@@ -35,7 +42,15 @@ dd {
 }
 
 
-/* 4. 媒体元素不撑破父容器 */
+/* 5. 有 class 的列表通常是 UI 组件列表，去掉默认列表样式 */
+:where(ul[class], ol[class]) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* 6. 媒体元素不撑破父容器 */
 img,
 picture,
 video,
@@ -45,13 +60,13 @@ canvas {
 }
 
 
-/* 5. 图片按自身比例缩放 */
+/* 7. 图片按自身比例缩放 */
 img {
   height: auto;
 }
 
 
-/* 6. 表单元素继承页面字体 */
+/* 8. 表单元素继承页面字体 */
 input,
 button,
 textarea,
@@ -60,21 +75,40 @@ select {
 }
 
 
-/* 7. 表格边框更可控 */
+/* 9. 表格边框更可控 */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 
-/* 8. 文本域只允许纵向拉伸，避免破坏横向布局 */
+/* 10. 文本域只允许纵向拉伸，避免破坏横向布局 */
 textarea {
   resize: vertical;
 }
 
 
-/* 9. 保留并统一键盘焦点可见性 */
+/* 11. 防止长型号、长链接、技术参数撑破布局 */
+:where(h1, h2, h3, h4, h5, h6, p, a, li, dt, dd, figcaption, th, td) {
+  overflow-wrap: break-word;
+}
+
+
+/* 12. 保留并统一键盘焦点可见性 */
 :focus-visible {
   outline: var(--focus-outline, 2px solid currentColor);
   outline-offset: var(--focus-offset, 2px);
+}
+
+
+/* 13. 尊重用户的减少动态效果偏好 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
