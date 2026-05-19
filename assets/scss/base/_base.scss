@@ -1,7 +1,12 @@
+
 /* ==========================================================================
    Base
    --------------------------------------------------------------------------
-   只集中管理全站 body、container 和 font 基础样式。
+   集中管理全站最基础的 HTML 元素样式，例如 body、标题、段落、链接、
+   列表、图片、表格、表单文字和基础字体渲染。
+
+   这里负责建立网站默认观感，应该保持低选择器权重，只写全站通用规则，
+   不写具体组件、模块或单独页面的样式。
    ========================================================================== */
 
 .font-meta { font-size: 0.875rem; font-weight: 400; }
@@ -12,16 +17,7 @@
 .font-display { font-size: 2.5rem; font-weight: 600; }
 
 body {
-  @extend .font-body;
-  min-height: 100dvh;
-  font-family: var(--font-body);
-  color: var(--on-surface);
   background-color: var(--surface);
-  line-height: var(--line);
-  letter-spacing: var(--tracking-body);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -31,7 +27,11 @@ body {
   margin-inline: auto;
   padding-inline: space(1);
 }
-
-/* 在 .container 后面使用，保证能覆盖 */
 .container--wide { --container: var(--container-wide); }
 .container--narrow { --container: var(--container-narrow); }
+
+.section { position: relative; padding-block: space(4); }
+.section__inner { display: grid; gap: space(3); }
+.section__header { display: grid; gap: space(2); text-align: center; }
+.section__title { color: var(--on-surface); }
+.section__description { margin: 0 auto; max-width: 120ch; color: var(--secondary); }

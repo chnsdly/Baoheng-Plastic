@@ -1,4 +1,9 @@
 [[main]]
+name = "HOME"
+pageRef = "/"
+weight = 1
+
+[[main]]
 name = "Products"
 url = "/products/"
 identifier = "products"

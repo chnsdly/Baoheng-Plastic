@@ -1,13 +1,27 @@
-/* ---------------------------- 主题变量：亮色基线 ---------------------------- */
+
+/* ==========================================================================
+   Tokens
+   --------------------------------------------------------------------------
+   集中管理全站设计令牌和基础变量，例如品牌色、文字色、间距、圆角、
+   阴影、断点、层级、动画时间等。
+
+   这里只定义“可被复用的设计值”，不写具体组件或页面样式。
+   如项目使用 CSS Variables，也可在这里统一输出 :root / [data-theme]
+   等全局变量，方便浅色、深色主题和组件复用。
+   ========================================================================== */
+   
 :root {
   /* 品牌色 & 基础语义色 */
   --brand:        #1279e8;   /* 品牌色 */
-  --on-brand:     #000000;   /* 品牌色上的文本/图标 */
-  --surface:      #fafbff;   /* 页面默认底色：提亮整体背景 */
-  --on-surface:   #101114;   /* 正文前景色 */
-  --card:         #ffffff;
+  --on-brand:     #FAFAF7;   /* 品牌色上的文本/图标 */
+  --surface:      #FAFAF7;   /* 页面默认底色：提亮整体背景 */
+  --on-surface:   #121212;   /* 正文前景色 */
+  --card:         color-mix(in oklab, var(--surface) 38%, white);
   --on-card:      #0b0e10;
-  --muted:        #667085;   /* 次要文本/图标 */
+  --muted:        color-mix(in oklab, var(--on-surface) 70%, var(--surface) 30%);
+  --img-bg: linear-gradient(to top, #EAF4FF 0%, #B9DAFA 50%, #76AFE8 100%); /* 透明图片的背景色 */
+
+
   --border:       1px solid #d9e2ec;   /* 全站统一边框 */
   --surface-variant: #f1f5f9; /* 区块浅底（如 clients 背景） */
   --on-surface-variant: var(--on-surface);
@@ -29,10 +43,6 @@
   --radius: 14px;   /* 默认圆角 */
   --radius-pill: 999px; /* 胶囊形圆角 */
   --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  /* 区块通用 */
-  --section-padding: calc(var(--space) * 6);
-  --section-title-weight: 600;
-  --section-desc-color: var(--muted);
 
 
   /* 动效参数 */
