@@ -90,7 +90,10 @@
 }
 .lead-form button:hover{ filter: brightness(1.05); }
 .lead-form button:active{ transform: translateY(1px); }
-.lead-form button:focus-visible{ @include focus-ring(3px); }
+.lead-form button:focus-visible{
+  outline: 3px solid color-mix(in oklab, var(--brand) 45%, white);
+  outline-offset: var(--focus-offset);
+}
 .lead-form button:disabled{ opacity: 0.6; cursor: not-allowed; }
 
 /* —— 自适应两列 —— */

@@ -76,7 +76,8 @@
 }
 
 .industry-card__media:focus-visible {
-  @include focus-ring();
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
 }
 
 .industry-card__media:hover {

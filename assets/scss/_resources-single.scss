@@ -184,4 +184,7 @@
 
 /* ===== 焦点可达 ===== */
 .post a:focus-visible,
-.post .btn:focus-visible { @include focus-ring(3px); }
+.post .btn:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--brand) 45%, white);
+  outline-offset: var(--focus-offset);
+}
