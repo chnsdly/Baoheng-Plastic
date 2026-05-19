@@ -138,3 +138,10 @@
   border-radius: var(--radius-s);
   display: block;
 }
+
+.popular-item .s2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

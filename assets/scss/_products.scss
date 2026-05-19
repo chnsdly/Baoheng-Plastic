@@ -9,6 +9,10 @@
   gap: space(3);
 }
 
+.product-listing__inner > * + * {
+  margin-block-start: space(3);
+}
+
 .product-listing__layout{
   display: grid;
   gap: space(2.5);

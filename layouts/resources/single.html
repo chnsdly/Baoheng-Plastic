@@ -98,7 +98,7 @@
               {{ end }}
             </a>
             <div class="card-body">
-              <h3 class="clamp2"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+              <h3 ><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
               <p class="meta">
                 {{ if eq $lang "zh" }}
                   {{ $p.Date.Format "2006-01-02" }} · 约 {{ $p.ReadingTime }} 分钟
