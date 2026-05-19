@@ -49,7 +49,7 @@
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition: opacity var(--t-slow) var(--ease);
+    transition: opacity var(--transition-base);
   }
 
   .hero__slide.is-active { opacity: 1; }
@@ -135,7 +135,7 @@
   color: inherit;
   @extend .font-title-xs;
   cursor: pointer;
-  transition: transform var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease);
+  transition: transform var(--transition-base), background-color var(--transition-base), border-color var(--transition-base);
   box-shadow: var(--shadow);
 }
 
@@ -160,7 +160,7 @@
   background: color-mix(in srgb, var(--on-surface) 25%, transparent);
   cursor: pointer;
   padding: 0;
-  transition: background-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease), inline-size var(--t-fast) var(--ease);
+  transition: background-color var(--transition-base), transform var(--transition-base), inline-size var(--transition-base);
 }
 
 .hero__dot.is-active {
