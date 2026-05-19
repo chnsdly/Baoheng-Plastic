@@ -55,7 +55,7 @@
       <div class="navbar__actions">
         {{ $getQuoteItems := where .Site.Menus.main "Identifier" "get-quote" }}
         {{ with index $getQuoteItems 0 }}
-        <a class="navbar__cta button font-meta button--primary" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        <a class="navbar__cta button font-meta" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         {{ end }}
         {{ if hugo.IsMultilingual }}
         <div class="lang-switcher" role="group" aria-label="{{ i18n "language" | default "Language" }}">
