@@ -46,7 +46,7 @@
   box-shadow: var(--shadow);
   flex-direction:column;
   background: var(--card);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   overflow:hidden;
   transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
 }

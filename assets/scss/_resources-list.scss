@@ -56,14 +56,14 @@
 .res-thumb {
   position: relative;
   overflow: clip;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
 
   .res-thumb__img {
     display: block;
     width: 100%; height: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    background: var(--surface-variant);
+    background: var(--surface);
   }
 }
 
@@ -108,8 +108,8 @@
 }
 .pager__btn, .pager__num {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: var(--control-h); min-width: var(--control-h); padding: space(0.5) space(1);
-  border-radius: var(--radius);
+  min-height: 44px; min-width: 44px; padding: space(0.5) space(1);
+  border-radius: var(--radius-s);
   border: var(--border);
   background: var(--surface);
   color: var(--on-surface);
@@ -131,10 +131,10 @@
 /* =============== 侧边栏：热门文章 =============== */
 .popular-item .ph {
   overflow: hidden;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
 }
 
 .popular-item .ph__img {
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   display: block;
 }

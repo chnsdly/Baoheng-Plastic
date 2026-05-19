@@ -28,20 +28,13 @@
   --border:       1px solid #E7E5DD;   /* 全站统一边框 */
   --space: 0.5rem; /* 基准间距步长 */
 
-  --surface-variant: #f1f5f9; /* 区块浅底（如 clients 背景） */
-  --on-surface-variant: var(--on-surface);
   
-  --header-height: 56px;    /* 导航栏高度 */
-  --control-h: 44px;        /* 全站按钮统一高度 */
 
   --radius-s: 12px;  /* 按钮、输入框、小标签 */
   --radius-m: 16px;  /* 卡片 */
   --radius-l: 24px;  /* 大面板 */
   --radius-pill: 999px; /* 胶囊 */
 
-  /* 间距与圆角 */
-  --radius: 14px;   /* 默认圆角 */
-  --radius-pill: 999px; /* 胶囊形圆角 */
 
   --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   --focus:        #2563eb;   /* 焦点环/选区色（高对比度） */
@@ -76,8 +69,8 @@
   justify-content: center;
   gap: space(1);
   padding: space(2) space(3);
-  min-block-size: var(--control-h);    /* 全站按钮统一高度 */
-  border-radius: var(--radius);
+  min-block-size: 44px;    /* 全站按钮统一高度 */
+  border-radius: var(--radius-s);
   border: var(--border);
   background: var(--surface);
   color: var(--on-surface);

@@ -60,8 +60,8 @@ code, kbd, pre, samp {
 pre {
   margin-block: space(3);
   padding: space(3);
-  background: var(--surface-variant);
-  border-radius: var(--radius);
+  background: var(--surface);
+  border-radius: var(--radius-m);
   overflow-x: auto;
   
   code {
@@ -73,8 +73,8 @@ pre {
 
 code {
   padding: 0.2em 0.4em;
-  background: var(--surface-variant);
-  border-radius: var(--radius);
+  background: var(--surface);
+  border-radius: var(--radius-m);
   border: var(--border);
 }
 
@@ -91,7 +91,7 @@ th, td {
 }
 
 th {
-  background: var(--surface-variant);
+  background: var(--surface);
   font-weight: var(--weight-semibold);
 }
 
@@ -243,7 +243,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: var(--tracking-heading-compact);
   border-radius: var(--radius-pill);
-  background: var(--surface-variant);
+  background: var(--surface);
   color: var(--secondary);
 }
 

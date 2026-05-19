@@ -22,7 +22,7 @@
 .product-sidebar{
   background: var(--card);
   box-shadow: var(--shadow);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   padding: space(2);
   position: sticky;
   top: calc(var(--space) * 3);
@@ -58,7 +58,7 @@
   align-items: center;
   gap: space(.5);
   padding: space(0.6) space(0.9);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
   background: var(--surface);
   color: var(--on-surface);
@@ -94,7 +94,7 @@
   text-decoration: none;
 }
 .product-sidebar__item{
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   transition: background-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
 }
 
@@ -167,7 +167,7 @@
   padding: space(0.6) space(0.75);
   color: var(--secondary);
   @extend .font-meta;
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
   text-decoration: none;
   transition: background var(--t-normal) var(--ease), color var(--t-normal) var(--ease);
@@ -202,7 +202,7 @@
   inline-size: 100%;
   padding: calc(var(--space) * 2);
   box-shadow: var(--shadow);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   
 }
 
@@ -241,7 +241,7 @@
 }
 
 .product-listing__media{
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
   box-shadow: var(--shadow);
   margin: 0;
@@ -381,12 +381,12 @@
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-inline-size: var(--control-h);
-  min-block-size: var(--control-h);
+  min-inline-size: 44px;
+  min-block-size: 44px;
   padding-inline: space(1.2);
   padding-block: space(.7);
   border: var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   background: var(--surface);
   color: var(--on-surface);
   text-decoration:none;
@@ -438,7 +438,7 @@
 
 .product-single__header{
   background: var(--card);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   padding: space(2);
   box-shadow: var(--shadow);
   display: grid;
@@ -466,7 +466,7 @@
 
 .product-overview__media{
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   overflow: hidden;
   border: var(--border);
   background: var(--surface);
@@ -515,8 +515,8 @@
 }
 
 .product-overview__social{
-  inline-size: var(--control-h);
-  block-size: var(--control-h);
+  inline-size: 44px;
+  block-size: 44px;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
@@ -555,7 +555,7 @@
   @extend .font-title-xs;
   color: var(--on-surface);
   box-shadow: var(--shadow);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
 
 }
 
@@ -568,7 +568,7 @@
 
 
 .product-details__specs .card{
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
   background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, var(--card)) 0%, color-mix(in srgb, var(--surface) 86%, var(--card)) 100%);
   box-shadow: var(--shadow);
@@ -577,7 +577,7 @@
 .card{
   background: var(--card);
   padding: space(2);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
 }
 
@@ -587,7 +587,7 @@
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1px;
   background: #d9e2ec;
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -633,7 +633,7 @@
 .product-details__figure,
 .showcase__figure{
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   overflow: hidden;
   border: var(--border);
   background: var(--surface);
@@ -669,7 +669,7 @@
 .product-showcase__figure,
 .industry-gallery__figure{
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   overflow: hidden;
   border: var(--border);
   background: var(--surface);
@@ -696,7 +696,7 @@
 
 .product-details__form{
   padding: space(2);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   background: var(--card);
   box-shadow: var(--shadow);
   display: grid;
@@ -712,8 +712,8 @@
   --product-showcase-columns: 1;
   margin-bottom: space(2);
   padding: space(2);
-  background: var(--surface-variant);
-  border-radius: var(--radius);
+  background: var(--surface);
+  border-radius: var(--radius-m);
   box-shadow: var(--shadow);
   color: var(--on-surface);
   display: grid;
@@ -740,7 +740,7 @@
 
   &__description{
     margin: 0;
-    color: var(--on-surface-variant);
+    color: var(--on-surface);
     line-height: 1.6;
   }
 
@@ -754,7 +754,7 @@
     position: relative;
     margin: 0;
     overflow: hidden;
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
     box-shadow: var(--shadow);
     background: var(--card);
     border: var(--border);
