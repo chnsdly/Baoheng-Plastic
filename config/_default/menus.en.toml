@@ -47,74 +47,7 @@ weight = 10
 
 
 [[main]]
-name = "Solutions"
-url = "/solutions/"
-identifier = "solutions"
-weight = 20
-
-  [[main]]
-  name = "3PL & Warehousing"
-  url = "/solutions/3pl-warehousing/"
-  parent = "solutions"
-  weight = 21
-
-  [[main]]
-  name = "E-commerce Fulfillment"
-  url = "/solutions/ecommerce-fulfillment/"
-  parent = "solutions"
-  weight = 22
-
-  [[main]]
-  name = "Food & Beverage"
-  url = "/solutions/food-beverage/"
-  parent = "solutions"
-  weight = 23
-
-  [[main]]
-  name = "Chemical Industry"
-  url = "/solutions/chemical-industry/"
-  parent = "solutions"
-  weight = 24
-
-  [[main]]
-  name = "Cold Chain Logistics"
-  url = "/solutions/cold-chain-logistics/"
-  parent = "solutions"
-  weight = 25
-
-  [[main]]
-  name = "Pharmaceutical & Healthcare"
-  url = "/solutions/pharmaceutical-healthcare/"
-  parent = "solutions"
-  weight = 26
-
-  [[main]]
-  name = "Automotive Manufacturing"
-  url = "/solutions/automotive-manufacturing/"
-  parent = "solutions"
-  weight = 27
-
-  [[main]]
-  name = "Agriculture & Agri-supply Chain"
-  url = "/solutions/agriculture-supply-chain/"
-  parent = "solutions"
-  weight = 28
-
-  [[main]]
-  name = "Retail & Wholesale"
-  url = "/solutions/retail-wholesale-distribution/"
-  parent = "solutions"
-  weight = 29
-
-  [[main]]
-  name = "Electronics & High-tech"
-  url = "/solutions/electronics-high-tech/"
-  parent = "solutions"
-  weight = 30
-
-
-[[main]]
-name = "Manufacturing"
+name = "ABOUT US"
 url = "/Manufacturing/"
 identifier = "Manufacturing"
 weight = 30
@@ -157,6 +90,6 @@ weight = 50
   weight = 56
 
 [[main]]
-name = "Get a Quote"
+name = "CONTACT"
 url = "/contact/"
 weight = 60
