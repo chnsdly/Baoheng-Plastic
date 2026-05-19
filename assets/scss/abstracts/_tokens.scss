@@ -12,16 +12,6 @@
   --surface-variant: #f1f5f9; /* 区块浅底（如 clients 背景） */
   --on-surface-variant: var(--on-surface);
 
-  /* 反馈色 */
-  --success:      #16a34a;
-  --warning:      #d97706;
-  --danger:       #dc2626;
-  --info:         #2563eb;
-  --on-success:   #ffffff;
-  --on-warning:   #ffffff;
-  --on-danger:    #ffffff;
-  --on-info:      #ffffff;
-
   --focus:        #2563eb;   /* 焦点环/选区色（高对比度） */
 
   --layer-alpha: 1;    /* 透明度调节 */
@@ -33,42 +23,6 @@
   --header-height: 56px;    /* 导航栏高度 */
   --control-h: 44px;        /* 全站按钮统一高度 */
 
-  /* ==================== 字体与排版系统 ==================== */
-  /* 英文字体栈 */
-  --font-heading-en: 'Manrope', 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  --font-body-en: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  
-  /* 中文字体栈 */
-  --font-heading-zh: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
-  --font-body-zh: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
-  
-  /* 回退字体栈 */
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  
-  /* 动态字体变量（根据语言切换） */
-  --font-heading: var(--font-heading-en);
-  --font-body: var(--font-body-en);
-  
-  /* 行高系统 */
-  --line-tight: 1.22;    /* 标题行高 */
-  --line-normal: 1.62;   /* 正文行高 */
-  --line-loose: 1.8;     /* 长文本行高 */
-  --line: var(--line-normal);  /* 全局默认行高 */
-
-  --tracking-heading-1: -0.02em;
-  --tracking-heading-2: -0.012em;
-  --tracking-heading-3: -0.006em;
-  --tracking-heading-compact: 0.04em;
-  --tracking-body: 0;
-  
-  /* 字重系统 */
-  --weight-light: 300;
-  --weight-normal: 400;
-  --weight-medium: 500;
-  --weight-semibold: 600;
-  --weight-bold: 700;
-  --weight-extrabold: 800;
 
   /* 间距与圆角 */
   --space: 0.5rem; /* 基准间距步长 */
@@ -95,61 +49,6 @@
   --z-tooltip: 1100;
 }
 
-/* ---------------------------- 主题变量：暗色覆盖 ---------------------------- */
-[data-theme="dark"] {
-  --surface:    #0b1220;
-  --on-surface: #eef2ff;
-  --muted:      #9aa4b2;
-  --surface-variant: #1e293b;
-  --on-surface-variant: var(--on-surface);
-
-  --brand:      #2260ff;
-  --on-brand:   #ffffff;
-  --focus:      #60a5fa;
-
-  --card: color-mix(in oklch, var(--surface), white 7%);
-}
-
-/* 系统偏好暗色模式 */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --surface:    #0b1220;
-    --on-surface: #eef2ff;
-    --muted:      #9aa4b2;
-    --surface-variant: #1e293b;
-    --on-surface-variant: var(--on-surface);
-    --brand:      #2260ff;
-    --on-brand:   #ffffff;
-    --focus:      #60a5fa;
-  }
-}
-
-/* 降低动画（系统偏好） */
-@media (prefers-reduced-motion: reduce) {
-  :root { --t-fast: 1ms; --t-normal: 1ms; }
-}
-
-/* ==================== 语言特定的字体切换 ==================== */
-/* 中文页面字体切换 */
-html[lang="zh"] {
-  --font-heading: var(--font-heading-zh);
-  --font-body: var(--font-body-zh);
-  --line-tight: 1.35;
-  --line-normal: 1.75;
-  --tracking-heading-1: 0;
-  --tracking-heading-2: 0;
-  --tracking-heading-3: 0;
-  --tracking-heading-compact: 0.02em;
-}
-
-/* 英文页面字体切换 */
-html[lang="en"] {
-  --font-heading: var(--font-heading-en);
-  --font-body: var(--font-body-en);
-  --line-tight: 1.22;
-  --line-normal: 1.62;
-}
-
 /* ----------------------------- SCSS 工具类 ----------------------------- */
 /* 响应式断点：参考 Tailwind 的常用断点 */
 $bp: (
@@ -158,10 +57,6 @@ $bp: (
   lg: 64rem,   /* >= 1024px */
   xl: 80rem    /* >= 1280px */
 );
-
-@function space($n) { 
-  @return calc(var(--space) * #{$n}); 
-}
 
 @mixin mq-up($name) {
   $v: map-get($bp, $name);
@@ -177,56 +72,6 @@ $bp: (
   box-shadow: var(--shadow);
 }
 
-/* 字重工具类 */
-.weight-light { font-weight: var(--weight-light); }
-.weight-normal { font-weight: var(--weight-normal); }
-.weight-medium { font-weight: var(--weight-medium); }
-.weight-semibold { font-weight: var(--weight-semibold); }
-.weight-bold { font-weight: var(--weight-bold); }
-.weight-extrabold { font-weight: var(--weight-extrabold); }
-
-/* 行高工具类 */
-.line-tight { line-height: var(--line-tight); }
-.line-normal { line-height: var(--line-normal); }
-.line-loose { line-height: var(--line-loose); }
-
-/* 文本对齐 */
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-justify { text-align: justify; }
-
-/* 文本变换 */
-.text-uppercase { text-transform: uppercase; }
-.text-lowercase { text-transform: lowercase; }
-.text-capitalize { text-transform: capitalize; }
-
-/* 文本装饰 */
-.text-underline { text-decoration: underline; }
-.text-line-through { text-decoration: line-through; }
-.text-no-underline { text-decoration: none; }
-
-/* --------------------------- 基础原子样式 -------------------------- */
-/* 媒体自适应 */
-svg { display: block; max-width: 100%; height: auto; }
-
-/* 链接样式 */
-a { color: var(--brand); text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* 表单继承 */
-input, button, select, textarea { color: inherit; }
-
-/* 可访问性：视觉隐藏 */
-.sr-only {
-  position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  border: 0; overflow: hidden;
-  white-space: nowrap;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-}
 
 /* 按钮组件 */
 .button {

@@ -2,3 +2,17 @@
 @function space($n) { 
   @return calc(var(--space) * #{$n}); 
 }
+
+/* 响应式断点 */
+$breakpoints: (
+  phone: 30rem,      // 480
+  tablet: 48rem,     // 768
+  laptop: 64rem,     // 1024
+  desktop: 80rem,    // 1280
+  wide: 96rem        // 1536
+);
+@mixin mq-up($name) {
+  @media (min-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}
