@@ -72,22 +72,11 @@ weight = 40
   weight = 42
 
   [[main]]
-  name = "下载中心"
-  url = "/resources/downloads/"
-  parent = "resources"
-  weight = 43
-
-  [[main]]
   name = "常见问题"
   url = "/resources/faq/"
   parent = "resources"
-  weight = 44
+  weight = 43
 
-  [[main]]
-  name = "外贸术语表"
-  url = "/resources/glossary/"
-  parent = "resources"
-  weight = 45
 
 [[main]]
 name = "联系我们"

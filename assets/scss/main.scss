@@ -6,11 +6,11 @@
 
 @import "layout/header";
 
-@import "pages/home";
+@import "pages/home/hero";
+@import "pages/home/usps";
 
 @import "components/buttons";
 @import "typography";
-@import "home/usps";
 @import "home/factory";
 @import "home/industries";
 @import "home/clients";

@@ -1,109 +1,11 @@
 {{ define "main" }}
-<main class="home-page">
-<!---------- 首页大图 ---------->
-  {{ with .Params.home_hero }}
-    {{ if .enable }}
-    {{ $heroImages := slice }}
-    {{ range .images }}
-      {{ $heroImages = $heroImages | append . }}
-    {{ end }}
-    {{ $heroTotal := len $heroImages }}
-    <section class="home-hero" data-home-hero>
-      <div class="home-hero__slides" data-home-hero-track>
-        {{ range $index, $image := $heroImages }}
-        <div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" data-home-hero-slide>
-          {{ partial "image.html" (dict
-            "src" $image
-            "alt" ""
-            "class" "home-hero__bg"
-            "sizes" "100vw"
-            "widths" (slice 768 1280 1600 1920)
-            "loading" (cond (eq $index 0) "eager" "lazy")
-            "fetch" (cond (eq $index 0) "high" "auto")
-          ) }}
-        </div>
-        {{ end }}
-      </div>
-      <div class="container home-hero__inner">
-          {{ with .title }}
-          <h1 class="font-display">{{ . }}</h1>
-          {{ end }}
 
-          {{ with .description }}
-          <p class="font-title-xs">{{ . }}</p>
-          {{ end }}
-          
-          {{ with .button }}
-          <div class="home-hero__action">
-            <a class="button" href="{{ .url | relLangURL }}">
-              {{ .label }}
-            </a>
-          </div>
-          {{ end }}
-
-      </div>
-      {{ if gt $heroTotal 1 }}
-      <button class="home-hero__nav home-hero__nav--prev" type="button" aria-label="Previous slide" data-home-hero-prev>&lsaquo;</button>
-      <button class="home-hero__nav home-hero__nav--next" type="button" aria-label="Next slide" data-home-hero-next>&rsaquo;</button>
-      <div class="home-hero__dots" role="tablist" aria-label="Hero slides">
-        {{ range $index, $_ := $heroImages }}
-        <button
-          class="home-hero__dot{{ if eq $index 0 }} is-active{{ end }}"
-          type="button"
-          role="tab"
-          aria-label="Go to slide {{ add $index 1 }}"
-          aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
-          data-home-hero-dot="{{ $index }}"
-        ></button>
-        {{ end }}
-      </div>
-      {{ end }}
-    </section>
-    {{ if gt $heroTotal 1 }}
-    <script>
-      (() => {
-        const hero = document.querySelector('[data-home-hero]');
-        if (!hero) return;
-
-        const track = hero.querySelector('[data-home-hero-track]');
-        const slides = Array.from(hero.querySelectorAll('[data-home-hero-slide]'));
-        const dots = Array.from(hero.querySelectorAll('[data-home-hero-dot]'));
-        const prevButton = hero.querySelector('[data-home-hero-prev]');
-        const nextButton = hero.querySelector('[data-home-hero-next]');
-        const total = slides.length;
-
-        if (!track || total < 2) return;
-
-        let current = 0;
-        const update = (next) => {
-          current = (next + total) % total;
-          track.style.transform = `translateX(-${current * 100}%)`;
-
-          slides.forEach((slide, index) => {
-            slide.classList.toggle('is-active', index === current);
-          });
-
-          dots.forEach((dot, index) => {
-            const active = index === current;
-            dot.classList.toggle('is-active', active);
-            dot.setAttribute('aria-selected', active ? 'true' : 'false');
-          });
-        };
-
-        prevButton?.addEventListener('click', () => update(current - 1));
-        nextButton?.addEventListener('click', () => update(current + 1));
-        dots.forEach((dot, index) => {
-          dot.addEventListener('click', () => update(index));
-        });
-      })();
-    </script>
-    {{ end }}
-    {{ end }}
-  {{ end }}
+{{ partial "home/hero.html" . }}
+{{ partial "home/usps.html" . }}
 {{ partial "home/featured.html" . }}
 {{ partial "home/factory.html" . }}
 {{ partial "home/industries.html" . }}
 {{ partial "home/clients.html" . }}
 {{ partial "home/cta.html" . }}
-</main>
+
 {{ end }}

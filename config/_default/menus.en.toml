@@ -72,22 +72,11 @@ weight = 40
   weight = 42
 
   [[main]]
-  name = "Downloads"
-  url = "/resources/downloads/"
-  parent = "resources"
-  weight = 43
-
-  [[main]]
   name = "FAQ"
   url = "/resources/faq/"
   parent = "resources"
-  weight = 44
+  weight = 43
 
-  [[main]]
-  name = "Glossary"
-  url = "/resources/glossary/"
-  parent = "resources"
-  weight = 45
 
 [[main]]
 name = "CONTACT"
