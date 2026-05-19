@@ -19,7 +19,7 @@
 
 .contact-hero__intro {
   background: var(--card);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
   padding: space(3);
   box-shadow: var(--shadow);
@@ -67,8 +67,8 @@
   align-items: center;
   gap: space(1.5);
   padding: space(1.5) space(2);
-  border-radius: var(--radius);
-  background: var(--surface-variant);
+  border-radius: var(--radius-m);
+  background: var(--surface);
   border: var(--border);
   box-shadow: var(--shadow);
 }
@@ -101,11 +101,11 @@
 }
 
 .contact-social__link {
-  inline-size: var(--control-h);
-  block-size: var(--control-h);
+  inline-size: 44px;
+  block-size: 44px;
   display: grid;
   place-items: center;
-  background: var(--surface-variant);
+  background: var(--surface);
   border-radius: var(--radius-pill);
   border: var(--border);
   box-shadow: var(--shadow);
@@ -121,7 +121,7 @@
 .contact-form-card {
   max-width: var(--container-narrow);
   background: var(--card);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   border: var(--border);
   box-shadow: var(--shadow);
   overflow: hidden;

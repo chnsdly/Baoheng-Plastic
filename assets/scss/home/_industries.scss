@@ -34,7 +34,7 @@
   &__media {
     position: relative;
     overflow: hidden;
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
     box-shadow: var(--shadow);
     background-color: var(--card);
     isolation: isolate; // Ensure overlay stacking context.

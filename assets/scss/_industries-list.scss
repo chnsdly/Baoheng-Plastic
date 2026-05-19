@@ -53,7 +53,7 @@
   gap: space(3);
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   border: var(--border);
   box-shadow: var(--shadow);
   padding: space(3);
@@ -69,7 +69,7 @@
 .industry-card__media {
   display: block;
   overflow: hidden;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   border: var(--border);
   background: var(--surface);
   transition: transform var(--t-normal) var(--ease);
@@ -173,10 +173,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--control-h);
-  min-width: var(--control-h);
+  min-height: 44px;
+  min-width: 44px;
   padding-inline: space(2);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   border: var(--border);
   background: var(--surface);
   color: var(--on-surface);
@@ -212,7 +212,7 @@
   gap: space(2);
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   border: var(--border);
   box-shadow: var(--shadow);
   padding: space(3);
@@ -251,7 +251,7 @@
 .industries-sidebar__thumbnail {
   width: 96px;
   height: 72px;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   overflow: hidden;
   border: var(--border);
   background: var(--surface);

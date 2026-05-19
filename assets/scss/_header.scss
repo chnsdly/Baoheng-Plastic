@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   z-index: var(--z-header);
-  height: var(--header-height);
+  height: 56px;
   background: color-mix(in srgb, var(--card) 96%, white 4%);
   box-shadow: var(--shadow);
   transition: transform var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), background-color var(--t-normal) var(--ease);
@@ -27,7 +27,7 @@
   }
 
   &.is-hidden {
-    transform: translateY(calc(-1 * var(--header-height)));
+    transform: translateY(calc(-1 * 56px));
   }
 }
 
@@ -60,7 +60,7 @@
   img {
     display: block;
     height: auto;
-    max-height: calc(var(--header-height) - 12px);
+    max-height: calc(56px - 12px);
     width: auto;
     max-width: 200px;
     object-fit: contain;
@@ -86,13 +86,13 @@
   align-items: center;
   gap: calc(var(--space) * 0.5);
   padding: calc(var(--space) * 1.2) calc(var(--space) * 1.5);
-  min-height: var(--control-h);
+  min-height: 44px;
   color: var(--on-surface);
   @extend .font-meta;
   font-weight: 500;
   white-space: nowrap;
   text-decoration: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   transition: color var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
 
   &:hover {
@@ -125,7 +125,7 @@
   min-width: $width;
   background: var(--card);
   border: var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   box-shadow: var(--shadow);
   padding: calc(var(--space) * 0.5);
   opacity: 0;
@@ -159,12 +159,12 @@
 .dropdown-menu__link {
   display: block;
   padding: calc(var(--space) * 1) calc(var(--space) * 1.5);
-  min-height: var(--control-h);
+  min-height: 44px;
   line-height: 1.3;
   color: var(--on-surface);
   @extend .font-meta;
   text-decoration: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
   &:hover {
@@ -192,11 +192,11 @@
   @extend .font-meta;
   font-weight: 500;
   padding: calc(var(--space) * 1.2) calc(var(--space) * 2);
-  min-height: var(--control-h);
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   transition: transform var(--t-fast) var(--ease), box-shadow var(--t-normal) var(--ease);
 
   &:hover {
@@ -216,9 +216,9 @@
   align-items: center;
   gap: calc(var(--space) * 0.6);
   padding: calc(var(--space) * 0.8) calc(var(--space) * 1.2);
-  min-height: var(--control-h);
+  min-height: 44px;
   border: var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   background: var(--surface);
   color: var(--on-surface);
   @extend .font-meta;
@@ -267,7 +267,7 @@
   color: var(--on-surface);
   @extend .font-meta;
   text-decoration: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   white-space: nowrap;
   transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
@@ -280,12 +280,12 @@
 // Hamburger
 .navbar__toggler {
   position: relative;
-  width: var(--control-h);
-  height: var(--control-h);
+  width: 44px;
+  height: 44px;
   padding: 0;
   background: transparent;
   border: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   cursor: pointer;
   color: var(--on-surface);
   display: none;
@@ -335,7 +335,7 @@
 
 // ------------------------------ Body offset ------------------------------
 body {
-  --header-offset: var(--header-height);
+  --header-offset: 56px;
   padding-top: var(--header-offset);
   transition: padding-top var(--t-normal) var(--ease);
 }
@@ -373,7 +373,7 @@ body[data-drawer-open="true"] {
   background: var(--surface);
   display: flex;
   flex-direction: column;
-  padding: calc(var(--header-height) + var(--space) * 2) calc(var(--space) * 2) calc(var(--space) * 3);
+  padding: calc(56px + var(--space) * 2) calc(var(--space) * 2) calc(var(--space) * 3);
   transform: translateY(-100%);
   transition: transform var(--t-normal) var(--ease);
   overflow: hidden;
@@ -388,7 +388,7 @@ body[data-drawer-open="true"] {
   align-items: center;
   gap: var(--space);
   margin-bottom: calc(var(--space) * 2);
-  min-height: var(--control-h);
+  min-height: 44px;
 }
 
 .drawer__back {
@@ -398,7 +398,7 @@ body[data-drawer-open="true"] {
   padding: calc(var(--space) * 1) calc(var(--space) * 1.5);
   background: transparent;
   border: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   color: var(--on-surface);
   @extend .font-body;
   cursor: pointer;
@@ -432,7 +432,7 @@ body[data-drawer-open="true"] {
 
 .drawer__item {
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
 }
 
 .drawer__link {
@@ -449,7 +449,7 @@ body[data-drawer-open="true"] {
   text-align: left;
   border: none;
   background: transparent;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   cursor: pointer;
   transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
@@ -505,7 +505,7 @@ body[data-drawer-open="true"] {
   color: var(--on-surface);
   @extend .font-body;
   text-decoration: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   transition: background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 
   &:hover {

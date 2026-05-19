@@ -45,7 +45,7 @@
   gap: space(2);
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: var(--shadow);
   border: var(--border);
@@ -141,7 +141,7 @@
 .cta__card {
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   padding: clamp(1.5rem, 3vw, 2.25rem);
   box-shadow: var(--shadow);
   border: var(--border);

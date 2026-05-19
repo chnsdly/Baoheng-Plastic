@@ -12,7 +12,7 @@
   color: var(--on-surface);
   padding: space(4);
   box-shadow: var(--shadow);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   margin-block: space(4);
 }
 
@@ -34,7 +34,7 @@
   padding: space(0.8) space(1);
   line-height: 1.45;
   min-height: 2.5rem;
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   transition: border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
   width: 100%;
 }
@@ -80,9 +80,9 @@
   border: none;
   background: var(--brand);
   color: var(--on-brand);
-  border-radius: var(--radius);
+  border-radius: var(--radius-s);
   padding: space(1) space(2);
-  min-height: var(--control-h);
+  min-height: 44px;
   font-weight: 600;
   line-height: 1;
   cursor: pointer;

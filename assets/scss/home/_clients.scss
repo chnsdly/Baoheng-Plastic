@@ -6,7 +6,7 @@
   --clients-columns: 2;
 
   padding-block: var(--section-padding);
-  background-color: var(--surface-variant);
+  background-color: var(--surface);
   color: var(--on-surface);
 
   @include mq-up(tablet) {
@@ -55,7 +55,7 @@
   &__slide {
     flex: 0 0 calc((100% - (var(--clients-gap) * (var(--clients-columns) - 1))) / var(--clients-columns));
     max-width: clamp(12rem, 25vw, 18rem);
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
     box-shadow: var(--shadow);
     background-color: var(--card);
     overflow: hidden;

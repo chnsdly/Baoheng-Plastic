@@ -42,7 +42,7 @@
     margin: 0;
     position: relative;
     overflow: hidden;
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
     box-shadow: var(--shadow);
     background-color: var(--card);
     aspect-ratio: 5 / 3;
@@ -72,7 +72,7 @@
   &__side {
     position: absolute;
     inset: 0;
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
     overflow: hidden;
     backface-visibility: hidden;
     display: flex;
