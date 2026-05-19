@@ -48,7 +48,7 @@
   background: var(--card);
   border-radius: var(--radius-m);
   overflow:hidden;
-  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 .product-card.eq:hover{
   transform: translateY(calc(var(--space) * -0.75)) scale(1.02);

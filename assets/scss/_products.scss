@@ -64,7 +64,7 @@
   color: var(--on-surface);
   font-weight: 700;
   cursor: pointer;
-  transition: background-color var(--t-normal) var(--ease), color var(--t-normal) var(--ease), transform var(--t-fast) var(--ease);
+  transition: background-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
 }
 
 .product-sidebar__toggle:hover,
@@ -82,7 +82,7 @@
   border-inline-end: 2px solid currentColor;
   border-block-end: 2px solid currentColor;
   transform: rotate(45deg);
-  transition: transform var(--t-fast) var(--ease);
+  transition: transform var(--transition-base);
 }
 
 .product-sidebar__list{
@@ -95,7 +95,7 @@
 }
 .product-sidebar__item{
   border-radius: var(--radius-m);
-  transition: background-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
 }
 
 .product-sidebar__item + .product-sidebar__item{ margin-top: space(.5); }
@@ -122,7 +122,7 @@
   border-block-end: 2px solid currentColor;
   transform: rotate(-45deg);
   opacity: .4;
-  transition: transform var(--t-fast) var(--ease), opacity var(--t-fast) var(--ease);
+  transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
 .product-sidebar__item--has-children > .product-sidebar__link::after{ transform: rotate(-45deg); }
@@ -154,10 +154,10 @@
   visibility: hidden;
   overflow: hidden;
   transition:
-    max-height var(--t-slow) var(--ease),
-    opacity var(--t-slow) var(--ease),
-    visibility var(--t-slow) var(--ease),
-    margin var(--t-slow) var(--ease);
+    max-height var(--transition-base),
+    opacity var(--transition-base),
+    visibility var(--transition-base),
+    margin var(--transition-base);
 }
 
 .product-sidebar__subitem + .product-sidebar__subitem{ margin-top: space(.35); }
@@ -170,7 +170,7 @@
   border-radius: var(--radius-m);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
   text-decoration: none;
-  transition: background var(--t-normal) var(--ease), color var(--t-normal) var(--ease);
+  transition: background var(--transition-base), color var(--transition-base);
 }
 
 .product-sidebar__sublink:hover,
@@ -227,8 +227,8 @@
   color: var(--on-brand);
   overflow: hidden;
   transition:
-    transform var(--t-normal) var(--ease),
-    box-shadow var(--t-normal) var(--ease);
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .product-listing__card-link{
@@ -255,7 +255,7 @@
   block-size: 100%;
   object-fit: cover;
   display: block;
-  transition: transform var(--t-normal) var(--ease);
+  transition: transform var(--transition-base);
 }
 
 .product-listing__image{
@@ -336,11 +336,11 @@
     overflow: hidden;
     margin-top: 0;
     transition:
-      max-height var(--t-slow) var(--ease),
-      opacity var(--t-slow) var(--ease),
-      visibility var(--t-slow) var(--ease),
-      margin var(--t-slow) var(--ease),
-      transform var(--t-slow) var(--ease);
+      max-height var(--transition-base),
+      opacity var(--transition-base),
+      visibility var(--transition-base),
+      margin var(--transition-base),
+      transform var(--transition-base);
     transform: translateY(-6px);
   }
 
@@ -391,10 +391,10 @@
   color: var(--on-surface);
   text-decoration:none;
   transition:
-    background-color var(--t-normal) var(--ease),
-    color var(--t-normal) var(--ease),
-    border-color var(--t-normal) var(--ease),
-    transform var(--t-fast) var(--ease);
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base);
 }
 
 .product-listing__pager-button:hover,
@@ -525,7 +525,7 @@
   background: none;
   box-shadow: none;
   padding: 0;
-  transition: transform var(--t-fast) var(--ease);
+  transition: transform var(--transition-base);
 }
 
 .product-overview__social:hover,
@@ -600,7 +600,7 @@
   gap: space(.75);
   padding: space(1) space(1.25);
   background: linear-gradient(120deg, color-mix(in srgb, var(--surface) 94%, var(--card)) 0%, color-mix(in srgb, var(--surface) 88%, var(--card)) 100%);
-  transition: background var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+  transition: background var(--transition-base), transform var(--transition-base);
 }
 
 .spec-list__item:hover,

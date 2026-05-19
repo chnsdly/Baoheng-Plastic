@@ -35,7 +35,7 @@
   line-height: 1.45;
   min-height: 2.5rem;
   border-radius: var(--radius-s);
-  transition: border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
   width: 100%;
 }
 
@@ -86,7 +86,7 @@
   font-weight: 600;
   line-height: 1;
   cursor: pointer;
-  transition: transform var(--t-fast) var(--ease), filter var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease);
+  transition: transform var(--transition-base), filter var(--transition-base), background-color var(--transition-base);
 }
 .lead-form button:hover{ filter: brightness(1.05); }
 .lead-form button:active{ transform: translateY(1px); }

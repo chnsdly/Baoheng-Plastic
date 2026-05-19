@@ -46,17 +46,12 @@
   --focus-offset: 2px;
 
   /* 动效参数 */
-  --ease: cubic-bezier(.2,.6,.2,1);
-  --t-fast: 180ms;
-  --t-normal: 320ms;
-  --t-slow: 500ms;
-
+        
   /* Z-index 层级 */
-  --z-base: 0;
-  --z-header: 100;
-  --z-overlay: 900;
-  --z-modal: 1000;
-  --z-tooltip: 1100;
+  --z-base: 0;       /* 普通内容 */
+  --z-header: 10;    /* 吸顶头部 */
+  --z-panel: 20;     /* 下拉、弹出层、抽屉 */
+  --z-modal: 30;     /* 遮罩、弹窗这类最高层 */
 }
 
 /* ----------------------------- SCSS 工具类 ----------------------------- */
@@ -83,10 +78,10 @@
   box-shadow: var(--shadow);
   cursor: pointer;
   transition:
-    transform var(--t-fast) var(--ease),
-    background-color var(--t-normal) var(--ease),
-    color var(--t-normal) var(--ease),
-    border-color var(--t-normal) var(--ease);
+    transform var(--transition-base),
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base);
 }
 .button:hover {
   transform: translateY(-1px);
