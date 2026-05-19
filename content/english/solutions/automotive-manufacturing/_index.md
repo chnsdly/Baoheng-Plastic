@@ -1,4 +1,0 @@
----
-title: "Manufacturing Parts"
-description: ""
----
