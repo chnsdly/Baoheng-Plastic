@@ -14,7 +14,7 @@ body.is-menu-open {
 }
 
 .site-header__inner {
-  min-height: 4.5rem;
+  min-height: var(--height-header);
   display: flex;
   padding-inline: space(2);
   align-items: center;
