@@ -10,7 +10,7 @@
   align-items: start;
 }
 
-@include mq-up(lg) {
+@include mq-up(laptop) {
   .industries-listing__layout {
     grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
   }
@@ -59,7 +59,7 @@
   padding: space(3);
 }
 
-@include mq-up(md) {
+@include mq-up(tablet) {
   .industry-card {
     grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
     align-items: stretch;
@@ -200,7 +200,7 @@
   gap: space(3);
 }
 
-@include mq-up(lg) {
+@include mq-up(laptop) {
   .industries-sidebar {
     position: sticky;
     top: space(6);

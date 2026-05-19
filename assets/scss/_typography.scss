@@ -271,7 +271,7 @@ h6 {
 /* ================================================ */
 
 /* 平板端优化 */
-@include mq-up(md) {
+@include mq-up(tablet) {
   h1 { margin-block-end: space(5); }
   
   h2 { margin-block-end: space(4); }
