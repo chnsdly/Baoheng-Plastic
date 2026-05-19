@@ -39,7 +39,7 @@
   grid-template-columns: 92px 1fr auto;
   align-items: center;
   border-bottom: var(--border);
-  color: var(--on-card, var(--on-surface));
+  color: var(--on-surface);
   padding-block: space(2);
 
   @media (min-width: 48rem) {
@@ -77,7 +77,7 @@
   @extend .font-body;
   font-weight: 500;
   text-decoration: none;
-  color: var(--on-card, var(--on-surface));
+  color: var(--on-surface);
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -97,7 +97,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: space(1) space(1.25);
-  color: var(--muted);
+  color: var(--secondary);
   @extend .font-meta;
 }
 
@@ -125,7 +125,7 @@
   opacity: 0.5; pointer-events: none;
 }
 .pager__gap {
-  padding: 0 space(0.5); color: var(--muted);
+  padding: 0 space(0.5); color: var(--secondary);
 }
 
 /* =============== 侧边栏：热门文章 =============== */

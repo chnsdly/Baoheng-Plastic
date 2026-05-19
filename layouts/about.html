@@ -7,7 +7,7 @@
       <div class="about__hero-inner container container--narrow">
         {{- with .badge }}<div class="about__hero-badge font-meta">{{ . }}</div>{{ end }}
         {{- with .title }}<h1 class="about__hero-title font-display">{{ . }}</h1>{{ end }}
-        {{- with .subtitle }}<p class="about__hero-sub font-title-xs text-muted">{{ . }}</p>{{ end }}
+        {{- with .subtitle }}<p class="about__hero-sub font-title-xs text-secondary">{{ . }}</p>{{ end }}
         {{- with .proofs }}
         <div class="about__hero-proof">
           {{- range . }}
@@ -38,7 +38,7 @@
         {{- range . }}
         <li class="stat">
           <div class="stat__num font-display weight-bold">{{ .num }}</div>
-          <div class="stat__label text-muted">{{ .label }}</div>
+          <div class="stat__label text-secondary">{{ .label }}</div>
         </li>
         {{- end }}
       </ul>
@@ -52,7 +52,7 @@
     <div class="container container--wide">
       <div class="section-head">
         {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
-        {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
+        {{- with .subtitle }}<p class="text-secondary">{{ . }}</p>{{ end }}
       </div>
       <div class="visuals">
         {{- range $i, $item := .items }}
@@ -62,7 +62,7 @@
           </div>
           <div class="visual__body">
             {{- with $item.title }}<h3 class="font-title-l">{{ . }}</h3>{{ end }}
-            {{- with $item.copy }}<p class="text-muted">{{ . }}</p>{{ end }}
+            {{- with $item.copy }}<p class="text-secondary">{{ . }}</p>{{ end }}
             {{- with $item.bullets }}
             <ul class="check-list check-list--tight">
               {{- range . }}
@@ -84,7 +84,7 @@
     <div class="container">
       <div class="section-head">
         {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
-        {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
+        {{- with .subtitle }}<p class="text-secondary">{{ . }}</p>{{ end }}
       </div>
       <div class="cards-grid">
         {{- range .cards }}
@@ -114,7 +114,7 @@
       <ol class="timeline" role="list">
         {{- range .items }}
         <li>
-          {{- with .year }}<div class="tl__year weight-bold text-muted">{{ . }}</div>{{ end }}
+          {{- with .year }}<div class="tl__year weight-bold text-secondary">{{ . }}</div>{{ end }}
           {{- with .content }}<div class="tl__content">{{ . }}</div>{{ end }}
         </li>
         {{- end }}
@@ -129,7 +129,7 @@
     <div class="container">
       <div class="section-head">
         {{- with .title }}<h2 class="font-display">{{ . }}</h2>{{ end }}
-        {{- with .subtitle }}<p class="text-muted">{{ . }}</p>{{ end }}
+        {{- with .subtitle }}<p class="text-secondary">{{ . }}</p>{{ end }}
       </div>
       <div class="global__grid">
         <div class="global__map" aria-hidden="true">
@@ -185,7 +185,7 @@
 .about__hero-title { margin: calc(var(--space) * 2) 0 calc(var(--space) * 2); letter-spacing: -0.02em; }
 .about__hero-sub { margin: 0 auto calc(var(--space) * 3); max-width: 60ch; }
 .about__hero-proof { display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center; margin-block: calc(var(--space) * 3) calc(var(--space) * 4); }
-.chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border); background: var(--card); color: var(--on-card); box-shadow: var(--shadow); }
+.chip { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border-radius: var(--radius-pill); border: var(--border); background: var(--card); color: var(--on-surface); box-shadow: var(--shadow); }
 .chip svg { width: 18px; height: 18px; fill: currentColor; opacity: .7; }
 .about__hero-cta { display: flex; gap: var(--gap); justify-content: center; }
 
@@ -210,7 +210,7 @@
 
 .cards-grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
 @media (min-width: 48rem) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-.card { background: var(--card); color: var(--on-card); border: var(--border); border-radius: var(--radius); padding: calc(var(--space) * 3); box-shadow: var(--shadow); }
+.card { background: var(--card); color: var(--on-surface); border: var(--border); border-radius: var(--radius); padding: calc(var(--space) * 3); box-shadow: var(--shadow); }
 .card h3 { margin: 0 0 .5rem; letter-spacing: -0.01em; }
 .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
 .check-list li { position: relative; padding-left: 1.5rem; }

@@ -531,7 +531,7 @@ body[data-drawer-open="true"] {
   flex-wrap: wrap;
   .lang-switcher__current {
     @extend .font-body;
-    color: var(--muted);
+    color: var(--secondary);
     font-weight: 500;
   }
   .lang-switcher__link {

@@ -79,7 +79,7 @@
     flex-direction: column;
     justify-content: flex-end;
     background: var(--card);
-    color: var(--on-card, var(--on-surface));
+    color: var(--on-surface);
   }
 
   &__side--front {
@@ -146,6 +146,6 @@
     @extend .font-meta;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--muted);
+    color: var(--secondary);
   }
 }
