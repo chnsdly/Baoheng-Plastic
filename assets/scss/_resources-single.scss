@@ -11,7 +11,7 @@
   }
   .meta {
     margin: 0;
-    color: var(--muted);
+    color: var(--secondary);
     @extend .font-body;
   }
 }
@@ -51,7 +51,7 @@
   figure { margin: 0; }
   figcaption {
     margin-top: space(1);
-    color: var(--muted);
+    color: var(--secondary);
     @extend .font-body;
     text-align: center;
   }
@@ -75,7 +75,7 @@
   pre {
     margin: 0; padding: space(2);
     background: var(--card);
-    color: var(--on-card);
+    color: var(--on-surface);
     border: var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -114,7 +114,7 @@
   display: flex; flex-wrap: wrap; gap: space(1);
   align-items: center;
   margin-top: space(3);
-  color: var(--muted);
+  color: var(--secondary);
   .tag {
     display: inline-flex; align-items: center;
     padding: calc(var(--space)*0.75) calc(var(--space)*1.25);
@@ -131,7 +131,7 @@
 .post-share {
   display: flex; flex-wrap: wrap; gap: space(1);
   align-items: center; margin-top: space(2);
-  span { color: var(--muted); }
+  span { color: var(--secondary); }
   .btn { @extend .button; }
   .btn.btn-sm {
     padding: calc(var(--space)*1.25) calc(var(--space)*2);
@@ -148,7 +148,7 @@
     color: var(--brand); text-decoration: none;
     white-space: nowrap;
   }
-  .disabled { color: var(--muted); cursor: default; }
+  .disabled { color: var(--secondary); cursor: default; }
 }
 
 /* ===== 相关文章 ===== */
@@ -165,7 +165,7 @@
 /* 卡片（复用列表样式的“等高”简版） */
 .blog-card.eq {
   display: flex; flex-direction: column;
-  background: var(--card); color: var(--on-card);
+  background: var(--card); color: var(--on-surface);
   border: var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow); overflow: hidden;
@@ -174,7 +174,7 @@
 .blog-card.eq img, .blog-card.eq picture { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
 .blog-card.eq .card-body { padding: space(2); }
 .blog-card.eq .card-body h3 { margin: 0 0 space(1); @extend .font-body; line-height: 1.35; }
-.blog-card.eq .card-body .meta { margin: 0; color: var(--muted); @extend .font-body; }
+.blog-card.eq .card-body .meta { margin: 0; color: var(--secondary); @extend .font-body; }
 .blog-card.eq .card-actions { padding: 0 space(2) space(2); margin-top: auto; }
 .blog-card.eq .btn.btn-secondary {
   @extend .button;

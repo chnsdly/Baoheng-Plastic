@@ -43,14 +43,14 @@
   @extend .font-meta;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--secondary);
   font-weight: 600;
 }
 
 .product-sidebar__title{
   margin: 0;
   @extend .font-title-xs;
-  color: var(--on-card);
+  color: var(--on-surface);
 }
 
 .product-sidebar__toggle{
@@ -61,7 +61,7 @@
   border-radius: var(--radius);
   border: var(--border);
   background: var(--surface);
-  color: var(--on-card);
+  color: var(--on-surface);
   font-weight: 700;
   cursor: pointer;
   transition: background-color var(--t-normal) var(--ease), color var(--t-normal) var(--ease), transform var(--t-fast) var(--ease);
@@ -70,7 +70,7 @@
 .product-sidebar__toggle:hover,
 .product-sidebar__toggle:focus-visible{
   background: color-mix(in srgb, var(--brand) 10%, var(--card));
-  color: var(--on-card);
+  color: var(--on-surface);
   transform: translateY(-1px);
 }
 
@@ -106,7 +106,7 @@
   justify-content: space-between;
   gap: space(1);
   inline-size: 100%;
-  color: var(--on-card);
+  color: var(--on-surface);
   
   font-weight: 700;
   padding: space(1) space(1.25);
@@ -165,7 +165,7 @@
 .product-sidebar__sublink{
   display: block;
   padding: space(0.6) space(0.75);
-  color: var(--muted);
+  color: var(--secondary);
   @extend .font-meta;
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--surface) 80%, transparent);
@@ -175,12 +175,12 @@
 
 .product-sidebar__sublink:hover,
 .product-sidebar__sublink:focus-visible{
-  color: var(--on-card);
+  color: var(--on-surface);
   background: color-mix(in srgb, var(--brand) 12%, var(--card));
 }
 
 .product-sidebar__sublink--active{
-  color: var(--on-card);
+  color: var(--on-surface);
   background: color-mix(in srgb, var(--brand) 18%, var(--card));
   box-shadow: var(--shadow);
 }
@@ -209,12 +209,12 @@
 .product-listing__title{
   margin: 0;
   @extend .font-title-xs;
-  color: var(--on-card);
+  color: var(--on-surface);
 }
 
 .product-listing__intro{
   @extend .font-body;
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 .product-listing__grid{
@@ -276,20 +276,20 @@
   margin: 0;
   text-align: center;
   @extend .font-meta;
-  color: var(--on-card);
+  color: var(--on-surface);
   font-weight: 400;
 }
 
 .product-listing__summary{
   margin: 0;
   @extend .font-body;
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 .product-listing__meta{
   margin: 0;
   @extend .font-meta;
-  color: var(--on-card);
+  color: var(--on-surface);
   text-transform: uppercase;
 }
 
@@ -449,13 +449,13 @@
   @extend .font-meta;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 .product-single__title{
   margin: 0;
   @extend .font-title-xs;
-  color: var(--on-card);
+  color: var(--on-surface);
 }
 
 .product-overview{
@@ -489,7 +489,7 @@
 .product-overview__description{
   margin: 0;
   @extend .font-body;
-  color: var(--on-card);
+  color: var(--on-surface);
 }
 
 .product-overview__actions{
@@ -563,7 +563,7 @@
   margin: 0;
   padding: calc(var(--space)*2);
   @extend .font-body;
-  color: var(--on-card);
+  color: var(--on-surface);
 }
 
 
@@ -613,12 +613,12 @@
   font-weight: 700;
   @extend .font-meta;
   letter-spacing: .02em;
-  color: var(--muted);
+  color: var(--secondary);
   text-transform: uppercase;
 }
 
 .spec-list__value{
-  color: var(--on-card);
+  color: var(--on-surface);
   font-weight: 600;
   line-height: 1.5;
 }
@@ -784,12 +784,12 @@
 .product-details__form-title{
   margin: 0;
   @extend .font-title-xs;
-  color: var(--on-card);
+  color: var(--on-surface);
 }
 
 .product-details__form-description{
   margin: 0;
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 @include mq-up(tablet){

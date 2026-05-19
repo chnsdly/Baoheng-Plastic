@@ -52,7 +52,7 @@
   display: grid;
   gap: space(3);
   background: var(--card);
-  color: var(--on-card, var(--on-surface));
+  color: var(--on-surface);
   border-radius: var(--radius);
   border: var(--border);
   box-shadow: var(--shadow);
@@ -137,7 +137,7 @@
   display: flex;
   gap: space(1);
   @extend .font-meta;
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 .industry-card__meta-label {
@@ -211,7 +211,7 @@
   display: grid;
   gap: space(2);
   background: var(--card);
-  color: var(--on-card, var(--on-surface));
+  color: var(--on-surface);
   border-radius: var(--radius);
   border: var(--border);
   box-shadow: var(--shadow);
@@ -282,7 +282,7 @@
 
 .industries-sidebar__item-summary {
   @extend .font-meta;
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 .industries-sidebar__chips {

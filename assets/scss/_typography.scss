@@ -44,7 +44,7 @@ blockquote {
   padding-inline: space(4);
   border-inline-start: 3px solid var(--brand);
   font-style: italic;
-  color: var(--muted);
+  color: var(--secondary);
   
   p:last-child {
     margin-block-end: 0;
@@ -163,7 +163,7 @@ h6 {
   line-height: var(--line-normal);
   text-transform: uppercase;
   letter-spacing: var(--tracking-heading-compact);
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 /* 3. 文本工具类 */
@@ -171,7 +171,7 @@ h6 {
 
 /* 文本颜色类 */
 .text-brand { color: var(--brand); }
-.text-muted { color: var(--muted); }
+.text-secondary { color: var(--secondary); }
 .text-success { color: var(--success); }
 .text-warning { color: var(--warning); }
 .text-danger { color: var(--danger); }
@@ -220,7 +220,7 @@ h6 {
   @extend .font-title-xs;
   font-weight: var(--weight-light);
   line-height: var(--line-loose);
-  color: var(--muted);
+  color: var(--secondary);
   margin-block-end: space(4);
 }
 
@@ -228,7 +228,7 @@ h6 {
 .subtitle {
   @extend .font-title-xs;
   font-weight: var(--weight-normal);
-  color: var(--muted);
+  color: var(--secondary);
   margin-block-start: calc(space(2) * -1);
   margin-block-end: space(3);
 }
@@ -244,7 +244,7 @@ h6 {
   letter-spacing: var(--tracking-heading-compact);
   border-radius: var(--radius-pill);
   background: var(--surface-variant);
-  color: var(--muted);
+  color: var(--secondary);
 }
 
 .label--brand {
@@ -305,7 +305,7 @@ h6 {
   :root {
     --brand: #0056b3;
     --on-brand: #ffffff;
-    --muted: #333333;
+    --secondary: #333333;
   }
   
   body {
