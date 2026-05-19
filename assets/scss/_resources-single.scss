@@ -159,7 +159,7 @@
 .blog-grid {
   display: grid; gap: space(2);
   grid-template-columns: 1fr;
-  @include mq-up(md){ grid-template-columns: repeat(3, minmax(0,1fr)); }
+  @include mq-up(tablet){ grid-template-columns: repeat(3, minmax(0,1fr)); }
 }
 
 /* 卡片（复用列表样式的“等高”简版） */

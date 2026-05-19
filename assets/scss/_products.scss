@@ -310,7 +310,7 @@
 
 .product-listing__card-link:focus-visible{ @include focus-ring(); }
 
-@include mq-up(md){
+@include mq-up(tablet){
   .product-listing__inner{ gap: space(4); }
   .product-listing__layout{
     grid-template-columns: minmax(12rem, 18rem) 1fr;
@@ -355,7 +355,7 @@
   .product-sidebar.is-open .product-sidebar__toggle-icon{ transform: rotate(-135deg); }
 }
 
-@include mq-up(md){
+@include mq-up(tablet){
   .product-sidebar__panel{
     max-height: none;
     opacity: 1;
@@ -792,7 +792,7 @@
   color: var(--muted);
 }
 
-@include mq-up(md){
+@include mq-up(tablet){
   .product-single__container{
     grid-template-columns: minmax(12rem, 18rem) 1fr;
     align-items: start;
@@ -819,7 +819,7 @@
   }
 }
 
-@include mq-up(lg){
+@include mq-up(laptop){
   .product-showcase-grid{
     --product-showcase-columns: 3;
   }

@@ -199,6 +199,6 @@
 .hero--dim-strong { --hero-overlay-alpha: .62; }
 
 /* ================================ 移动端微调 ================================ */
-@media (max-width: map-get($bp, md)) {
+@media (max-width: map-get($breakpoints, tablet)) {
   .hero { --hero-gap: space(2); }
 }

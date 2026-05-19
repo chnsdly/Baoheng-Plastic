@@ -9,11 +9,11 @@
   background-color: var(--surface-variant);
   color: var(--on-surface);
 
-  @include mq-up(md) {
+  @include mq-up(tablet) {
     --clients-columns: 3;
   }
 
-  @include mq-up(lg) {
+  @include mq-up(laptop) {
     --clients-columns: 4;
   }
 
