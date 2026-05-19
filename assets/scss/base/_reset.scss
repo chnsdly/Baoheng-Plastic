@@ -46,6 +46,10 @@ dd {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* 5. 带 class 的列表通常是导航、卡片、菜单等组件，不需要默认圆点和缩进 */
 :where(ul[class], ol[class]) {
@@ -53,7 +57,6 @@ dd {
   padding: 0;
   list-style: none;
 }
-
 
 /* 6. 图片、视频等媒体元素不要超出父容器，避免撑破页面 */
 img,
