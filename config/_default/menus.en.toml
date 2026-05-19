@@ -48,8 +48,8 @@ weight = 20
 
 [[main]]
 name = "ABOUT US"
-url = "/Manufacturing/"
-identifier = "Manufacturing"
+url = "/about/"
+identifier = "about"
 weight = 30
 
 
