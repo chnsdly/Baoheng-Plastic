@@ -16,34 +16,37 @@
   --on-brand:     #FAFAF7;   /* 品牌色上的文本/图标 */
   --surface:      #FAFAF7;   /* 页面默认底色：提亮整体背景 */
   --on-surface:   #121212;   /* 正文前景色 */
+
   --card:         color-mix(in oklab, var(--surface) 38%, white);
-  
   --secondary:        color-mix(in oklab, var(--on-surface) 70%, var(--surface) 30%);
   --img-bg: linear-gradient(to top, #EAF4FF 0%, #B9DAFA 50%, #76AFE8 100%); /* 透明图片的背景色 */
 
+  --container:        72rem; /* 默认：常规页面 */
+  --container-wide:   80rem; /* 宽版：营销/视觉模块 */
+  --container-narrow: 56rem; /* 窄版：以阅读为主 */
 
-  --border:       1px solid #d9e2ec;   /* 全站统一边框 */
+  --border:       1px solid #E7E5DD;   /* 全站统一边框 */
+  --space: 0.5rem; /* 基准间距步长 */
+
   --surface-variant: #f1f5f9; /* 区块浅底（如 clients 背景） */
   --on-surface-variant: var(--on-surface);
-
-  --focus:        #2563eb;   /* 焦点环/选区色（高对比度） */
-
-  --layer-alpha: 1;    /* 透明度调节 */
-
-  --container-wide:   80rem; /* 宽版：营销/视觉模块 */
-  --container:        72rem; /* 默认：常规页面 */
-  --container-narrow: 60rem; /* 窄版：以阅读为主 */
   
   --header-height: 56px;    /* 导航栏高度 */
   --control-h: 44px;        /* 全站按钮统一高度 */
 
+  --radius-s: 12px;  /* 按钮、输入框、小标签 */
+  --radius-m: 16px;  /* 卡片 */
+  --radius-l: 24px;  /* 大面板 */
+  --radius-pill: 999px; /* 胶囊 */
 
   /* 间距与圆角 */
-  --space: 0.5rem; /* 基准间距步长 */
   --radius: 14px;   /* 默认圆角 */
   --radius-pill: 999px; /* 胶囊形圆角 */
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --focus:        #2563eb;   /* 焦点环/选区色（高对比度） */
+
+  --layer-alpha: 1;    /* 透明度调节 */
 
   /* 动效参数 */
   --ease: cubic-bezier(.2,.6,.2,1);
