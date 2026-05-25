@@ -13,15 +13,15 @@ home_hero:
 usps:
   enable: true
   items:
-    - icon: "fas fa-certificate"
-      title: "ISO certification"
-      description: "Plant management aligns to ISO9001 and OHSAS18001 standards."
-    - icon: "fas fa-vial"
-      title: "SGS tested"
-      description: "SGS reports verify every resin is 100% food-grade virgin material."
-    - icon: "fas fa-truck-loading"
-      title: "Global logistics"
-      description: "Export-ready supply keeps fleets equipped across 20+ countries."
+    - icon: "fas fa-industry"
+      title: "Factory Direct"
+      description: "Better sourcing cost from a real plastic products supplier."
+    - icon: "fas fa-tasks"
+      title: "Application Fit"
+      description: "Pallets, crates and containers matched to your real use case."
+    - icon: "fas fa-shipping-fast"
+      title: "Export Ready"
+      description: "Quality checks, packing and support for overseas orders."
 ##########################################################
 industries: 
   enable: true

@@ -13,15 +13,15 @@ home_hero:
 usps:
   enable: true
   items:
-    - icon: "fas fa-certificate"
-      title: "ISO认证"
-      description: "工厂管理符合 ISO9001 与 OHSAS18001 标准。"
-    - icon: "fas fa-vial"
-      title: "SGS 检测"
-      description: "SGS 检测报告证明原材料均为食品级全新原料。"
-    - icon: "fas fa-truck-loading"
-      title: "物流保障"
-      description: "出口配套能力覆盖 20+ 国家，满足跨境运输需求。"
+    - icon: "fas fa-industry"
+      title: "源头工厂"
+      description: "来自塑料制品供应商的批量采购成本优势。"
+    - icon: "fas fa-tasks"
+      title: "应用适配"
+      description: "根据使用场景匹配托盘、周转筐和容器产品。"
+    - icon: "fas fa-shipping-fast"
+      title: "出口就绪"
+      description: "提供海外订单支持，降低跨境采购沟通成本。"
 ##########################################################
 # 中文版
 industries: 
