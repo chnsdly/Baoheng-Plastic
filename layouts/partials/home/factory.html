@@ -2,38 +2,40 @@
 {{ if $factory.enable }}
 <section class="factory" aria-labelledby="factory-title">
   <div class="container">
-    <div class="factory__header">
+    <header class="factory__header">
       <h2 class="factory__title" id="factory-title">{{ $factory.title }}</h2>
       {{ with $factory.description }}
       <p class="factory__description">{{ . }}</p>
       {{ end }}
-    </div>
+    </header>
+
     <div class="factory__grid">
-      {{ range $index, $item := $factory.items }}
+      {{ range $index, $item := first 3 $factory.items }}
       <article class="factory__item">
         <figure
-          class="factory__media"
+          class="factory__flip"
           tabindex="0"
           aria-labelledby="factory-item-{{ $index }}-title"
           aria-describedby="factory-item-{{ $index }}-content"
         >
-          <div class="factory__card" role="presentation">
-            <div class="factory__side factory__side--front">
-              <img class="factory__image"
-                   src="{{ $item.image | relURL }}"
-                   alt="{{ $item.title }}"
-                   loading="lazy"
-                   decoding="async">
-              <div class="factory__front-overlay" aria-hidden="true">
+          <div class="factory__flip-card" role="presentation">
+            <div class="factory__face factory__face--front">
+              <img
+                class="factory__image"
+                src="{{ $item.image | relURL }}"
+                alt="{{ $item.title }}"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="factory__overlay" aria-hidden="true">
                 <h3 class="factory__item-title">{{ $item.title }}</h3>
                 <p class="factory__hint">{{ i18n "hover_to_reveal" }}</p>
               </div>
             </div>
-            <figcaption class="factory__side factory__side--back">
-              <div class="factory__content">
-                <h3 class="factory__item-title" id="factory-item-{{ $index }}-title">{{ $item.title }}</h3>
-                <p class="factory__item-text" id="factory-item-{{ $index }}-content">{{ $item.content }}</p>
-              </div>
+
+            <figcaption class="factory__face factory__face--back">
+              <h3 class="factory__item-title" id="factory-item-{{ $index }}-title">{{ $item.title }}</h3>
+              <p class="factory__item-text" id="factory-item-{{ $index }}-content">{{ $item.content }}</p>
             </figcaption>
           </div>
         </figure>
