@@ -1,7 +1,7 @@
 {{ $usps := .Params.usps }}
 {{ if and $usps $usps.enable }}
-<section class="usps">
-  <div class="container container--wide usps__container">
+<section class="section usps">
+  <div class="container container--wide">
     {{ with $usps.items }}
     <ul class="usps__list">
       {{ range . }}
