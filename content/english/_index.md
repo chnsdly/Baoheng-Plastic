@@ -80,7 +80,7 @@ clients:
 ############################## FACTORY ##############################
 factory:
   enable: true
-  title: "Baoheng Pallet — Plastic Pallet Manufacturing Specialist"
+  title: "Plastic Pallet Manufacturer"
   description: "We focus on plastic pallet R&D and manufacturing, serving warehousing, logistics, packaging, cold chain, food, chemical, and agricultural industries. Made from virgin HDPE/PP and formed by advanced one-piece injection molding, our pallets feature a well-engineered structure, high load capacity, and a longer service life. With 15 large injection molding machines, we offer a full range of standard sizes and load ratings for common applications. We also provide strong tooling and mold development capabilities, supporting customization in size, color, logo, and steel-tube reinforcement. Our experienced team offers one-on-one support from model selection through mass delivery. Compatible with forklifts, racking, and automated warehouses, Baoheng pallets help improve handling efficiency and reduce total logistics costs."
 
   items:

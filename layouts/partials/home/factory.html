@@ -1,15 +1,15 @@
-{{ $factory := .Params.factory }}
-{{ if $factory.enable }}
-<section class="factory" aria-labelledby="factory-title">
-  <div class="container">
-    <div class="factory__header">
-      <h2 class="factory__title" id="factory-title">{{ $factory.title }}</h2>
-      {{ with $factory.description }}
-      <p class="factory__description">{{ . }}</p>
+{{with .Params.factory }}
+{{ if .enable }}
+<section class="section factory">
+  <div class="container section__inner">
+    <div class="section__header">
+      <h2 class="section__title">{{ .title }}</h2>
+      {{ with .description }}
+      <p class="section__description">{{ . }}</p>
       {{ end }}
     </div>
     <div class="factory__grid">
-      {{ range $index, $item := $factory.items }}
+      {{ range $index, $item := .items }}
       <article class="factory__item">
         <figure
           class="factory__media"
@@ -42,4 +42,5 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}

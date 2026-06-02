@@ -36,20 +36,6 @@
   gap: space(0.25);
 }
 
-.usps__title {
-  margin: 0;
-  color: var(--on-surface);
-  font-weight: var(--section-title-weight);
-  @extend .font-title-l;
-}
-
-.usps__description {
-  margin: 0;
-  color: var(--section-desc-color);
-  line-height: var(--line);
-  @extend .font-body;
-}
-
 @media (min-width: 64rem) {
   .usps__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));

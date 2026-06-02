@@ -2,27 +2,6 @@
 // Mirrors the Industries section spacing and typography while adding hover/focus overlays.
 
 .factory {
-  padding-block: var(--section-padding);
-  background-color: var(--surface);
-  color: var(--on-surface);
-
-  &__header {
-    text-align: center;
-    margin-inline: auto;
-    margin-bottom: space(4);
-  }
-
-  &__title {
-    margin: 0;
-    @extend .font-title-l;
-    font-weight: var(--section-title-weight);
-  }
-
-  &__description {
-    margin: space(2) 0 0;
-    @extend .font-body;
-    color: var(--section-desc-color);
-  }
 
   &__grid {
     display: grid;

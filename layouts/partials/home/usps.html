@@ -1,8 +1,8 @@
-{{ $usps := .Params.usps }}
-{{ if and $usps $usps.enable }}
+{{ with .Params.usps }}
+{{ if .enable }}
 <section class="section usps">
   <div class="container container--wide">
-    {{ with $usps.items }}
+    {{ with .items }}
     <ul class="usps__list">
       {{ range . }}
       <li class="usps__item">
@@ -10,8 +10,8 @@
           {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
         </div>
         <div class="usps__content">
-          <p class="usps__title">{{ .title }}</p>
-          <p class="usps__description">{{ .description }}</p>
+          <p class="font-title-s">{{ .title }}</p>
+          <p class="font-body">{{ .description }}</p>
         </div>
       </li>
       {{ end }}
@@ -19,4 +19,5 @@
     {{ end }}
   </div>
 </section>
+{{ end }}
 {{ end }}
