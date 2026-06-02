@@ -51,7 +51,13 @@ const esc = (s: any) => (s ?? "").toString()
   .replaceAll('"', "&quot;");
 
 const th = (t: string) => `<th>${esc(t)}</th>`;
-const td = (t: any) => `<td>${esc(t)}</td>`;
+const td = (field: string, value: any) => {
+  if (field === "message") {
+    return `<td class="col-message"><div class="message-box">${esc(value)}</div></td>`;
+  }
+
+  return `<td>${esc(value)}</td>`;
+};
 
 const headers = [
   "created_at",
@@ -72,7 +78,7 @@ const headers = [
 
 const rowsHtml = (rows.results || []).map(r => `
   <tr>
-    ${headers.map(h => td(r[h])).join("")}
+    ${headers.map(h => td(h, r[h])).join("")}
   </tr>
 `).join("");
 
@@ -175,6 +181,19 @@ const body = `
 
     tbody tr:hover {
       background: #f1f5f9;
+    }
+    
+    .col-message {
+      width: 360px;
+      max-width: 360px;
+    }
+
+    .message-box {
+      max-height: 88px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      padding-right: 6px;
     }
   </style>
 </head>
