@@ -48,39 +48,48 @@ const esc = (s: any) => (s ?? "").toString()
   .replaceAll("&", "&amp;")
   .replaceAll("<", "&lt;")
   .replaceAll(">", "&gt;")
-  .replaceAll('"', "&quot;");
+  .replaceAll('"', "&quot;")
+  .replaceAll("'", "&#39;");
 
-const th = (t: string) => `<th>${esc(t)}</th>`;
-const td = (field: string, value: any) => {
-  if (field === "message") {
-    return `<td class="col-message"><div class="message-box">${esc(value)}</div></td>`;
-  }
-
-  return `<td>${esc(value)}</td>`;
-};
-
-const headers = [
-  "created_at",
-  "form_type",
-  "name",
-  "email",
-  "phone",
-  "company",
-  "country",
-  "message",
-  "page_url",
-  "utm_source",
-  "utm_medium",
-  "utm_campaign",
-  "utm_term",
-  "utm_content"
+const columns = [
+  { key: "created_at",   label: "created_at",   width: 150 },
+  { key: "form_type",    label: "form_type",    width: 110 },
+  { key: "name",         label: "name",         width: 140 },
+  { key: "email",        label: "email",        width: 220 },
+  { key: "phone",        label: "phone",        width: 160 },
+  { key: "company",      label: "company",      width: 180 },
+  { key: "country",      label: "country",      width: 120 },
+  { key: "message",      label: "message",      width: 420, className: "message" },
+  { key: "page_url",     label: "page_url",     width: 360, className: "url" },
+  { key: "utm_source",   label: "utm_source",   width: 130 },
+  { key: "utm_medium",   label: "utm_medium",   width: 130 },
+  { key: "utm_campaign", label: "utm_campaign", width: 180 },
+  { key: "utm_term",     label: "utm_term",     width: 150 },
+  { key: "utm_content",  label: "utm_content",  width: 180 }
 ];
+
+const totalWidth = columns.reduce((sum, col) => sum + col.width, 0);
+
+const th = (col: any) => `<th>${esc(col.label)}</th>`;
+
+const td = (col: any, row: any) => {
+  const value = row[col.key];
+  const className = col.className ? ` class="${col.className}"` : "";
+
+  return `
+    <td${className}>
+      <div class="cell" title="${esc(value)}">${esc(value)}</div>
+    </td>
+  `;
+};
 
 const rowsHtml = (rows.results || []).map(r => `
   <tr>
-    ${headers.map(h => td(h, r[h])).join("")}
+    ${columns.map(col => td(col, r)).join("")}
   </tr>
 `).join("");
+
+const colgroup = columns.map(col => `<col style="width:${col.width}px">`).join("");
 
 const body = `
 <!doctype html>
@@ -142,37 +151,52 @@ const body = `
     }
 
     .table-wrap {
-      overflow-x: auto;
+      overflow: auto;
+      max-height: calc(100vh - 140px);
     }
 
     table {
-      width: 100%;
-      min-width: 1500px;
+      width: ${totalWidth}px;
+      min-width: ${totalWidth}px;
+      table-layout: fixed;
       border-collapse: collapse;
     }
 
     th,
     td {
-      padding: 10px 12px;
+      padding: 8px 10px;
       border-bottom: 1px solid #e5e7eb;
       text-align: left;
       vertical-align: top;
+      box-sizing: border-box;
     }
 
     th {
       position: sticky;
       top: 0;
-      z-index: 1;
+      z-index: 2;
       background: #f8fafc;
       color: #374151;
       font-weight: 600;
       white-space: nowrap;
     }
 
-    td {
-      max-width: 260px;
+    .cell {
+      height: 44px;
+      line-height: 22px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    td.message .cell {
+      white-space: pre-wrap;
+      overflow: auto;
       word-break: break-word;
-      color: #111827;
+    }
+
+    td.url .cell {
+      color: #2563eb;
     }
 
     tbody tr:nth-child(even) {
@@ -181,19 +205,6 @@ const body = `
 
     tbody tr:hover {
       background: #f1f5f9;
-    }
-    
-    .col-message {
-      width: 360px;
-      max-width: 360px;
-    }
-
-    .message-box {
-      max-height: 88px;
-      overflow-y: auto;
-      white-space: pre-wrap;
-      word-break: break-word;
-      padding-right: 6px;
     }
   </style>
 </head>
@@ -213,8 +224,9 @@ const body = `
     <div class="card">
       <div class="table-wrap">
         <table>
+          <colgroup>${colgroup}</colgroup>
           <thead>
-            <tr>${headers.map(th).join("")}</tr>
+            <tr>${columns.map(th).join("")}</tr>
           </thead>
           <tbody>
             ${rowsHtml}
