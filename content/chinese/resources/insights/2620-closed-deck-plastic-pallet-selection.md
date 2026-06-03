@@ -2,7 +2,7 @@
 title: "闭合面塑料托盘如何选型：什么时候值得指定平面结构"
 description: "面向食品、饮料、医药和洁净仓储团队的实用指南，帮助判断闭合面塑料托盘何时能比开放式面板提供更好的卫生控制、货物支撑和检查价值。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2620-closed-deck-plastic-pallet.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["闭合面塑料托盘", "平面托盘", "食品仓储托盘", "托盘卫生"]
 reading: "8 分钟"

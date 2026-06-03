@@ -2,7 +2,7 @@
 title: "Closed-Deck Plastic Pallets: When a Smooth Surface Is Worth Specifying"
 description: "A practical guide for food, beverage, pharmaceutical, and clean warehouse teams deciding when closed-deck plastic pallets provide better hygiene control, product support, and inspection value than open-deck designs."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2620-closed-deck-plastic-pallet.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["closed-deck plastic pallet", "smooth deck pallet", "food warehouse pallets", "pallet hygiene"]
 reading: "8 min"
