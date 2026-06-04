@@ -2,7 +2,7 @@
 title: "Foldable Pallet Boxes: How to Calculate Return-Space Savings Before You Buy"
 description: "A practical method for B2B logistics teams to calculate whether foldable pallet boxes can reduce empty-return volume, storage pressure, and circulation cost before placing a bulk order."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2621-foldable-pallet-box-return-space-calculation.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["foldable pallet boxes", "returnable bulk packaging", "empty return logistics", "collapsible pallet box"]
 reading: "8 min"

@@ -2,7 +2,7 @@
 title: "折叠式围板箱：采购前如何计算空箱回运空间节省"
 description: "面向 B2B 物流团队的折叠式围板箱测算方法，用于在批量采购前评估空箱回运体积、仓储占用和循环成本。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2621-foldable-pallet-box-return-space-calculation.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["折叠式围板箱", "可循环周转包装", "空箱回运", "折叠周转箱"]
 reading: "8 分钟"
