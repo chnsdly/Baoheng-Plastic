@@ -2,7 +2,7 @@
 title: "Plastic Pallet Stack Height: How to Plan Safe Floor Storage Before Buying"
 description: "A practical guide for warehouse and procurement teams to calculate pallet stack height, floor load, and handling limits before approving plastic pallets for block storage."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/stack-height.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet stack height", "floor storage", "block stacking", "warehouse pallet planning"]
 reading: "8 min"

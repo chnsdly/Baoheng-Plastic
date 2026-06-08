@@ -2,7 +2,7 @@
 title: "塑料托盘地堆高度：采购前如何规划安全的地面存储"
 description: "面向仓储和采购团队的实用指南，帮助在批准塑料托盘用于地堆存储前，计算堆码高度、地面承载和搬运限制。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/stack-height.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘堆码高度", "地面存储", "地堆", "仓储托盘规划"]
 reading: "8 分钟"
