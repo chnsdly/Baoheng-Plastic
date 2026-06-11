@@ -2,7 +2,7 @@
 title: "塑料托盘上货架挠度：批量采购前如何设定验收标准"
 description: "面向采购和仓储团队的实用指南，说明如何在采购可上架塑料托盘前定义挠度限制、测试条件和样品验收规则。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2623-plastic-pallet-rack-deflection-acceptance-criteria.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘挠度", "可上架塑料托盘", "托盘验收标准", "仓库安全"]
 reading: "8 分钟"

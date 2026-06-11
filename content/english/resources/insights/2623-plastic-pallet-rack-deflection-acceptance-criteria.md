@@ -2,7 +2,7 @@
 title: "Plastic Pallet Rack Deflection: How to Set Acceptance Criteria Before Bulk Orders"
 description: "A practical guide for procurement and warehouse teams to define plastic pallet rack deflection limits, test conditions, and approval rules before buying rackable pallets."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2623-plastic-pallet-rack-deflection-acceptance-criteria.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet rack deflection", "rackable plastic pallets", "pallet acceptance criteria", "warehouse safety"]
 reading: "8 min"
