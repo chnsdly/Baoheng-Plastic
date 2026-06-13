@@ -1,6 +1,7 @@
 ---
 
 title: "可嵌套周转筐"
+description: "这款可嵌套塑料周转筐采用耐用 PP/HDPE 材料，网眼透气结构，坚固轻便，适用于各类仓储、物流、食品加工与日常搬运场景，多尺寸多颜色可选。"
 featured_image: "/images/products/crate-box/nestable-crates-hero.jpg"
 product_type: "板条箱"
 pallet_category: []

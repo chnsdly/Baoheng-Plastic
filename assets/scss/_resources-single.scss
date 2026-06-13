@@ -1,190 +1,149 @@
-/* ================== Blog Single ================== */
-/* ===== 头部：标题 + 元信息 ===== */
-.post-head {
-  padding-block: var(--section-padding) space(3);
-  h1 {
-    margin: 0 0 space(1);
-    @extend .font-display;
-    font-weight: var(--section-title-weight);
-    line-height: 1.2;
-    color: var(--on-surface);
-  }
-  .meta {
-    margin: 0;
-    color: var(--secondary);
-    @extend .font-body;
-  }
-}
-
-/* ===== 封面 ===== */
-.rounded-xl,
-.post-cover { border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow); }
-.post-cover { display: block; width: 100%; height: auto; }
-
-/* ===== 正文排版 ===== */
-.post-body {
-  --leading: 1.75;
-  --indent: space(3);
-
-  @extend .font-body;
-  line-height: var(--leading);
-
-  /* 基础间距：段落与模块 */
-  > * + * { margin-block-start: space(2); }
-
-  h2, h3, h4, h5, h6 {
-    margin: space(4) 0 space(1);
-    line-height: 1.25;
-  }
-  h2 { @extend .font-title-l; }
-  h3 { @extend .font-title-xs; }
-  h4 { @extend .font-title-xs; }
-
-  p { margin: 0; }
-
-  /* 列表 */
-  ul, ol { padding-left: var(--indent); margin: 0; }
-  li + li { margin-top: space(1); }
-
-  /* 图片 / 图注 */
-  img { border-radius: var(--radius-m); box-shadow: var(--shadow); }
-  figure { margin: 0; }
-  figcaption {
-    margin-top: space(1);
-    color: var(--secondary);
-    @extend .font-body;
-    text-align: center;
-  }
-
-  /* 引用 */
-  blockquote {
-    margin: 0; padding: space(2) space(3);
-    border-left: var(--border);
-    background: color-mix(in oklch, var(--surface), white 6%);
-    border-radius: var(--radius-m);
-  }
-
-  /* 代码：行内与多行 */
-  code { 
-    font-family: var(--font-mono);
-    background: color-mix(in oklch, var(--surface), black 6%);
-    border: var(--border);
-    border-radius: var(--radius-m);
-    padding: .15em .35em;
-  }
-  pre {
-    margin: 0; padding: space(2);
-    background: var(--card);
-    color: var(--on-surface);
-    border: var(--border);
-    border-radius: var(--radius-m);
-    box-shadow: var(--shadow);
-    overflow: auto;
-    font-family: var(--font-mono);
-    line-height: 1.6;
-  }
-  pre code { background: transparent; border: 0; padding: 0; }
-
-  /* 表格 */
-  table {
-    width: 100%;
-    background: var(--surface);
-    border: var(--border);
-    border-radius: var(--radius-m);
-    overflow: hidden;
-  }
-  th, td { padding: space(1.5) space(2); text-align: left; }
-  thead th { background: color-mix(in oklch, var(--surface), white 6%); }
-  tbody tr + tr { border-top: var(--border); }
-
-  /* 分隔线 */
-  hr {
-    border: 0; height: 1px;
-    background: #d9e2ec;
-    margin: space(4) 0;
-  }
-
-  /* 链接（正文内）：主色，悬停下划线 */
-  a { color: var(--brand); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-}
-
-/* ===== 标签 ===== */
-.post-tags {
-  display: flex; flex-wrap: wrap; gap: space(1);
-  align-items: center;
-  margin-top: space(3);
-  color: var(--secondary);
-  .tag {
-    display: inline-flex; align-items: center;
-    padding: calc(var(--space)*0.75) calc(var(--space)*1.25);
-    border: var(--border);
-    border-radius: var(--radius-pill);
-    background: transparent;
-    color: var(--on-surface);
-    text-decoration: none;
-  }
-  .tag:hover { background: color-mix(in oklch, var(--surface), white 6%); }
-}
-
-/* ===== 分享按钮 ===== */
-.post-share {
-  display: flex; flex-wrap: wrap; gap: space(1);
-  align-items: center; margin-top: space(2);
-  span { color: var(--secondary); }
-  .btn { @extend .button; }
-  .btn.btn-sm {
-    padding: calc(var(--space)*1.25) calc(var(--space)*2);
-    min-block-size: 36px;
-  }
-}
-
-/* ===== 上一/下一篇 ===== */
-.post-pager {
-  display: flex; justify-content: space-between; align-items: center;
-  gap: space(2); margin-top: space(4); padding-top: space(2);
-  border-top: var(--border);
-  a, span {
-    color: var(--brand); text-decoration: none;
-    white-space: nowrap;
-  }
-  .disabled { color: var(--secondary); cursor: default; }
-}
-
-/* ===== 相关文章 ===== */
-.post-related {
-  margin-top: space(6);
-  h2 { margin: 0 0 space(2); @extend .font-title-xs; }
-}
-.blog-grid {
-  display: grid; gap: space(2);
-  grid-template-columns: 1fr;
-  @include mq-up(tablet){ grid-template-columns: repeat(3, minmax(0,1fr)); }
-}
-
-/* 卡片（复用列表样式的“等高”简版） */
-.blog-card.eq {
-  display: flex; flex-direction: column;
-  background: var(--card); color: var(--on-surface);
-  border: var(--border);
-  border-radius: var(--radius-m);
-  box-shadow: var(--shadow); overflow: hidden;
-}
-.blog-card.eq .media, .blog-card.eq .ph-media,
-.blog-card.eq img, .blog-card.eq picture { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
-.blog-card.eq .card-body { padding: space(2); }
-.blog-card.eq .card-body h3 { margin: 0 0 space(1); @extend .font-body; line-height: 1.35; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
-.blog-card.eq .card-body .meta { margin: 0; color: var(--secondary); @extend .font-body; }
-.blog-card.eq .card-actions { padding: 0 space(2) space(2); margin-top: auto; }
-.blog-card.eq .btn.btn-secondary {
-  @extend .button;
+.resource-single {
   background: var(--surface);
-  color: var(--on-surface);
 }
 
-/* ===== 焦点可达 ===== */
-.post a:focus-visible,
-.post .btn:focus-visible {
-  outline: 3px solid color-mix(in oklab, var(--brand) 45%, white);
-  outline-offset: var(--focus-offset);
+.resource-single__hero {
+  padding-block: var(--section-padding);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--brand) 10%, transparent), transparent 58%),
+    var(--card);
+  border-bottom: var(--border);
+}
+
+.resource-single__hero-inner {
+  display: grid;
+  gap: space(1);
+  max-width: var(--container-narrow);
+}
+
+.resource-single__eyebrow,
+.resource-cta__eyebrow {
+  margin: 0;
+  color: var(--brand-strong);
+  font-size: 0.8rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.resource-single__title {
+  margin: 0;
+  color: var(--on-surface);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.02;
+  font-weight: var(--weight-extrabold);
+}
+
+.resource-single__meta,
+.resource-single__desc {
+  margin: 0;
+  color: var(--secondary);
+}
+
+.resource-single__layout {
+  display: grid;
+  gap: space(2);
+  align-items: start;
+  padding-block: var(--section-padding);
+}
+
+.resource-single__main {
+  min-width: 0;
+}
+
+.resource-single__cover {
+  width: 100%;
+  max-height: 34rem;
+  object-fit: cover;
+  border: var(--border);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow);
+  margin-bottom: space(2);
+}
+
+.resource-single__body {
+  padding: space(2);
+  border: var(--border);
+  border-radius: var(--radius-l);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.resource-single__body > * + * {
+  margin-top: space(1.2);
+}
+
+.resource-single__body :is(h2, h3, h4) {
+  margin-top: space(2);
+}
+
+.resource-single__body :is(img, table) {
+  border-radius: var(--radius-m);
+}
+
+.resource-single__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: space(0.55);
+  align-items: center;
+  margin-top: space(1.5);
+  color: var(--secondary);
+}
+
+.resource-single__tags a {
+  padding: space(0.35) space(0.65);
+  border-radius: var(--radius-pill);
+  background: var(--card);
+  color: var(--brand-strong);
+  font-weight: var(--weight-semibold);
+}
+
+.resource-single__aside {
+  position: sticky;
+  top: calc(var(--height-header) + #{space(1)});
+}
+
+.resource-cta {
+  display: grid;
+  gap: space(1);
+  padding: space(1.5);
+  border: var(--border);
+  border-radius: var(--radius-l);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.resource-cta h2,
+.resource-cta p {
+  margin: 0;
+}
+
+.resource-cta p:not(.resource-cta__eyebrow) {
+  color: var(--secondary);
+}
+
+.resource-related {
+  padding-block: var(--section-padding);
+  background: var(--card);
+  border-top: var(--border);
+}
+
+.resource-related__header {
+  display: grid;
+  gap: space(0.5);
+  margin-bottom: space(2);
+}
+
+.resource-related__header h2 {
+  margin: 0;
+}
+
+.resources-grid--compact {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+@include mq-up(laptop) {
+  .resource-single__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
+  }
 }

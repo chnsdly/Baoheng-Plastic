@@ -1,6 +1,7 @@
 ---
 
 title: "1210-食品与医用塑料托盘"
+description: "这款塑料托盘具有完全平整的表面，一体成型，清洁效率高，减少清洁死角，为洁净车间和高标准生产环境设计。我们的工程师将会根据您的具体货物与使用场景，为您推荐最合适的塑料托盘，欢迎咨询，获取您的专属报价。"
 featured_image: "/images/products/pallet/food/1210-green-hero.jpg"
 product_type: "塑料托盘"
 pallet_category:

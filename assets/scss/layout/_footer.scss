@@ -1,0 +1,120 @@
+.site-footer {
+  border-top: var(--border);
+  background: var(--brand-strong);
+  color: color-mix(in srgb, var(--on-brand) 86%, transparent);
+}
+
+.site-footer__inner {
+  display: grid;
+  gap: space(3);
+  padding-block: space(4);
+}
+
+.site-footer__brand {
+  display: grid;
+  gap: space(1);
+  max-width: 34rem;
+}
+
+.site-footer__logo {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: var(--weight-bold);
+  color: var(--on-brand);
+}
+
+.site-footer__summary {
+  margin: 0;
+  color: color-mix(in srgb, var(--on-brand) 74%, transparent);
+}
+
+.site-footer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: space(0.8);
+  margin-top: space(0.5);
+}
+
+.site-footer .button--ghost {
+  color: color-mix(in srgb, var(--on-brand) 82%, transparent);
+}
+
+.site-footer .button--ghost:hover,
+.site-footer .button--ghost:focus-visible {
+  color: var(--on-brand);
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: space(2);
+}
+
+.site-footer__group {
+  display: grid;
+  gap: space(0.8);
+}
+
+.site-footer__heading {
+  margin: 0;
+  color: var(--on-brand);
+  font-size: 0.84rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.site-footer__list {
+  display: grid;
+  gap: space(0.55);
+}
+
+.site-footer__link {
+  color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+  text-decoration: none;
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  color: var(--on-brand);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-footer__contact {
+  display: grid;
+  gap: space(0.45);
+}
+
+.site-footer__contact-row {
+  margin: 0;
+  color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+}
+
+.site-footer__bottom {
+  border-top: 1px solid color-mix(in srgb, var(--on-brand) 18%, transparent);
+}
+
+.site-footer__bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: space(1);
+  padding-block: space(1.4);
+  color: color-mix(in srgb, var(--on-brand) 62%, transparent);
+  font-size: 0.88rem;
+}
+
+.site-footer__bottom-inner p {
+  margin: 0;
+}
+
+@include mq-up(tablet) {
+  .site-footer__inner {
+    grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.4fr);
+    align-items: start;
+  }
+
+  .site-footer__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

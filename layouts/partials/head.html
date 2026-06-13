@@ -20,12 +20,20 @@
 {{- with .Params.images -}}
   {{- $image = (index . 0) | absURL -}}
 {{- else -}}
-  {{- with .Site.Params.default_image -}}
+  {{- with .Params.featured_image -}}
     {{- $image = . | absURL -}}
+  {{- else -}}
+    {{- with .Params.cover_image -}}
+      {{- $image = . | absURL -}}
+    {{- else -}}
+      {{- with .Site.Params.default_image -}}
+        {{- $image = . | absURL -}}
+      {{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- $robots := .Params.robots | default "index, follow" -}}
+{{- $robots := .Params.robots | default (cond (in (slice "taxonomy" "term") .Kind) "noindex, follow" "index, follow") -}}
 
 <title>{{ $title }}</title>
 <meta charset="utf-8">
@@ -56,7 +64,7 @@
 {{- end -}}
 <link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}">
 {{- range .AllTranslations -}}
-<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}">
 {{- end -}}
 
 {{- /* Open Graph */ -}}
@@ -65,7 +73,7 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+<meta property="og:locale" content="{{ replace (.Site.Language.LanguageCode | default .Site.Language.Lang) "-" "_" }}">
 {{- if $image -}}
 <meta property="og:image" content="{{ $image }}">
 <meta property="og:image:alt" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
@@ -78,3 +86,5 @@
 {{- if $image -}}
 <meta name="twitter:image" content="{{ $image }}">
 {{- end -}}
+
+{{ partial "schema.html" . }}

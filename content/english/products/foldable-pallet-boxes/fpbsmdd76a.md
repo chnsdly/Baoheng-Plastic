@@ -1,6 +1,7 @@
 ---
 
 title: "1210-BF-FPBSMDD76A"
+description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds."
 featured_image: "/images/products/fold/smdd76a-hero.jpg"
 product_type: "Foldable Pallet Boxes"
 pallet_category: []

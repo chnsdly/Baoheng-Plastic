@@ -1,6 +1,7 @@
 ---
 
 title: "1210-BP-CD9L15B"
+description: "吹塑九脚托盘，采用HDPE/PP全新料生产而成，一体吹塑成型，九脚分布式支撑，增强承重。托盘轻便耐用，四向插取，方便操作，可提升仓库空间利用率和搬运效率。 欢迎咨询，获取您的专属报价。"
 featured_image: "/images/products/blow-molded/1210-hero.jpg"
 product_type: "吹塑可嵌套塑料托盘"
 showcase_gallery:

@@ -1,22 +1,22 @@
 ---
 title: "Resources"
-description: "Find expert insights, company news, downloadable assets, and answers to common questions."
+description: "Practical sourcing guides, RFQ checklists, company updates, case references, and FAQs for plastic pallets and industrial handling products."
 aliases:
   - "/resources/blog-news/"
 hero:
   title: "Resource Center"
-  subtitle: "Stay ahead with the latest knowledge, certifications, and support from the GlobalTech team."
+  subtitle: "Buying guides and project knowledge for plastic pallets, pallet boxes, crates, containers, and warehouse logistics."
 sections:
   - label: "Insights"
-    url: "/resources/articles/"
-    summary: "Thought leadership articles and best practices for smarter logistics."
+    url: "/resources/insights/"
+    summary: "Specification checklists, selection frameworks, and warehouse operating guides."
+  - label: "Case Studies"
+    url: "/resources/case-studies/"
+    summary: "Project references and application notes for common sourcing scenarios."
   - label: "Newsroom"
     url: "/resources/news/"
-    summary: "Company announcements, milestones, and event highlights."
-  - label: "Downloads"
-    url: "/resources/downloads/"
-    summary: "Specification sheets, compliance certificates, and helpful checklists."
+    summary: "Company updates, milestones, and event highlights."
   - label: "FAQ"
     url: "/resources/faq/"
-    summary: "Quick answers to the questions we hear most from our customers."
+    summary: "Quick answers to common questions about plastic pallet and container sourcing."
 ---

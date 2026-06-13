@@ -1,6 +1,7 @@
 ---
 
 title: "大型周转箱"
+description: "大容量塑料周转箱采用 HDPE/POE 一体成型，箱体加厚带底部加强筋，可用于储水、清洗、养殖、食品加工等多场景周转，容量 90–600L 可选。"
 featured_image: "/images/products/crate-box/rectangular-tank-hero.jpg"
 product_type: "板条箱"
 pallet_category: []

@@ -1,96 +1,142 @@
-/* Home: Featured products */
-.home-featured{
+.home-featured {
   padding-block: var(--section-padding);
+  background: var(--surface);
 }
 
-.home-featured .head{
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:flex-end;
-  gap: space(1);
-  margin-top:0;
-  margin-bottom:space(2);
-}
-.home-featured .head h2{
-  grid-column:1 / 4;
-  margin:0;
-  @extend .font-title-l;
-  font-weight: var(--section-title-weight);
-  text-align:center;
-}
-.home-featured .more-link{
-  grid-column:3 / 4;
-  justify-self:end;
-  align-self:flex-end;
-  color:var(--on-brand);
-  text-decoration:none;
-}
-
-.home-featured .product-grid{
+.home-featured__inner,
+.home-section-head {
   display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: space(1);
-
-    @include mq-up(tablet) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    @include mq-up(laptop) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
+  gap: space(2);
 }
 
-/* 等高产品卡（无按钮版） */
-.product-card.eq{
-  display:flex;
-  box-shadow: var(--shadow);
-  flex-direction:column;
-  background: var(--card);
+.home-section-head {
+  align-items: end;
+  column-gap: space(2);
+  row-gap: space(1);
+}
+
+.home-section-head__eyebrow,
+.home-product-card__type {
+  margin: 0;
+  color: var(--brand-strong);
+  font-size: 0.8rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.home-section-head__title {
+  max-width: 58rem;
+  margin: 0;
+  color: var(--on-surface);
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: var(--line-tight);
+  font-weight: var(--weight-extrabold);
+}
+
+.home-section-head__link {
+  justify-self: start;
+  color: var(--brand-strong);
+  font-weight: var(--weight-bold);
+}
+
+.home-product-grid {
+  display: grid;
+  gap: space(1.25);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.home-product-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: var(--border);
   border-radius: var(--radius-m);
-  overflow:hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
-}
-.product-card.eq:hover{
-  transform: translateY(calc(var(--space) * -0.75)) scale(1.02);
+  background: var(--card);
   box-shadow: var(--shadow);
-}
-
-/* 封面图：按比例显示，不再压扁 */
-.product-card.eq .media{
-  display:block;
-  aspect-ratio: 3 / 2;        /* ← 3:2 更挺拔；想更高可用 4/3 */
-  overflow:hidden;
-}
-.product-card.eq .media picture,
-.product-card.eq .media img{
-  width:100%;
-  height:100%;
-  object-fit:cover;           /* 填满裁剪，避免变形/压扁 */
-  display:block;
-}
-
-/* 文本区：把标题与图片的间距拉近 */
-.product-card.eq .card-body{
-  flex:1;
-  padding: space(1.25) space(1.5) space(1.5);
-}
-.product-card.eq .card-body h3{
-  margin: calc(var(--space) * 0.3) 0 calc(var(--space) * 0.4);
-  @extend .font-meta;
-  line-height: 1.35;
-  text-align: center;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.product-card.eq .card-body h3 a{
-  text-decoration: none;
-  color: inherit;
-}
-.product-card.eq .card-body .secondary{
-  color: var(--secondary);
+
+.home-product-card__media {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 5 / 4;
+  padding: space(0.75);
+  background: var(--surface-alt);
+  overflow: hidden;
 }
 
-/* 两行截断工具类（如你已有可忽略） */
-/* 多行截断工具类统一由 tokens 提供 */
+.home-product-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform var(--transition-base);
+}
+
+.home-product-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: space(1);
+  border: 1px dashed color-mix(in srgb, var(--brand) 28%, var(--line));
+  border-radius: var(--radius-s);
+  color: var(--brand-strong);
+  font-size: 0.8rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-product-card:hover .home-product-card__media img,
+.home-product-card:focus-within .home-product-card__media img {
+  transform: scale(1.04);
+}
+
+.home-product-card__body {
+  display: grid;
+  gap: space(0.75);
+  padding: space(1.15);
+}
+
+.home-product-card__title {
+  margin: 0;
+  color: var(--on-surface);
+  font-size: 1.05rem;
+  line-height: var(--line-tight);
+  font-weight: var(--weight-bold);
+}
+
+.home-product-card__desc {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.92rem;
+}
+
+.home-product-card__quote {
+  justify-self: start;
+  color: var(--brand-strong);
+  font-weight: var(--weight-bold);
+}
+
+@include mq-up(tablet) {
+  .home-section-head {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .home-section-head > :not(.home-section-head__link) {
+    grid-column: 1;
+  }
+
+  .home-section-head__link {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+  }
+}
+
+@include mq-up(desktop) {
+  .home-product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

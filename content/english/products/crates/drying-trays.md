@@ -1,6 +1,7 @@
 ---
 
-title: "drying-trays"
+title: "Plastic Drying Trays"
+description: "Shallow single-freeze/air-drying trays are molded from virgin HDPE/PP with precision tooling."
 featured_image: "/images/products/crate-box/drying-trays-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []

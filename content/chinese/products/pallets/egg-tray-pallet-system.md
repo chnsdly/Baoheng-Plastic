@@ -1,6 +1,7 @@
 ---
 
 title: "蛋托运输系统托盘"
+description: "蛋托运输系统托盘由底部塑料托盘、层间隔板与多层蛋托组合构成，用于鸡蛋周转、仓储与短途运输中的整托单元化管理。系统支持按层数进行堆叠配置，便于在保障稳定性的前提下提升单托装载效率。"
 featured_image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-hero.jpg"
 product_type: "塑料托盘"
 pallet_category:

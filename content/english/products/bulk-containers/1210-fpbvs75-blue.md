@@ -1,6 +1,7 @@
 ---
 
-title: "1210-fpbvs75-blue"
+title: "1210 FPBVS75 Blue Large Bulk Container"
+description: "This large pallet box is molded from virgin HDPE/PP with precision tooling for a strong, reliable structure."
 featured_image: "/images/products/l-container/1210-fpbvs75-blue-hero.jpg"
 product_type: "Large Bulk Containers"
 pallet_category: []

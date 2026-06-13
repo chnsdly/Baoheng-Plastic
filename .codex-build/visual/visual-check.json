@@ -1,0 +1,263 @@
+{
+  "base": "http://127.0.0.1:7076",
+  "screenshots": [
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\home-viewport.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\home-factory.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\products-list.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\product-detail.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\case-studies.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\insights.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\contact.png",
+    "C:\\Users\\chnsd\\Documents\\Plastic-Pallets\\.codex-build\\visual\\mega-menu.png"
+  ],
+  "metrics": {
+    "home": {
+      "factoryTitle": {
+        "selector": ".factory .home-section-head__title",
+        "text": "Plastic Pallet Manufacturer",
+        "width": 928,
+        "height": 59,
+        "x": 152,
+        "y": 208,
+        "fontSize": "51.2px",
+        "lineHeight": "58.88px"
+      },
+      "factoryDescription": {
+        "selector": ".factory__description",
+        "text": "We focus on plastic pallet R&D and manufacturing, serving warehousing, logistics, packaging, cold chain, food, chemical,",
+        "width": 1120,
+        "height": 149,
+        "x": 152,
+        "y": 275,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    },
+    "productsList": {
+      "firstCard": {
+        "selector": ".product-listing__card",
+        "text": "Plastic Pallets 068068 spill containment pallet (150 mm height) A durable rackable pallet that keeps loads stable across",
+        "width": 271,
+        "height": 498,
+        "x": 456,
+        "y": 468,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      "firstMedia": {
+        "selector": ".product-listing__media",
+        "text": "",
+        "width": 269,
+        "height": 215,
+        "x": 457,
+        "y": 469,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      "firstImage": {
+        "src": "http://127.0.0.1:7076/images/products/pallet/spill/068068-hero.jpg",
+        "complete": true,
+        "naturalWidth": 1024,
+        "naturalHeight": 768,
+        "width": 257,
+        "height": 203,
+        "opacity": "1",
+        "display": "block",
+        "objectFit": "contain"
+      }
+    },
+    "productDetail": {
+      "hero": {
+        "selector": ".product-hero",
+        "text": "Plastic Pallets 1010 open deck 9-leg plastic pallet Grid-deck 9-leg plastic pallets are one-piece injection molded from ",
+        "width": 850,
+        "height": 646,
+        "x": 456,
+        "y": 192,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      "title": {
+        "selector": ".product-hero__title",
+        "text": "1010 open deck 9-leg plastic pallet",
+        "width": 416,
+        "height": 166,
+        "x": 873,
+        "y": 236,
+        "fontSize": "53.6px",
+        "lineHeight": "55.208px"
+      },
+      "media": {
+        "selector": ".product-hero__media",
+        "text": "",
+        "width": 384,
+        "height": 307,
+        "x": 473,
+        "y": 361,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    },
+    "caseStudies": {
+      "empty": {
+        "selector": ".resources-empty",
+        "text": "Content in preparation If you are evaluating plastic pallets or handling containers, send your requirements and we will ",
+        "width": 848,
+        "height": 205,
+        "x": 440,
+        "y": 377,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      "emptyButton": {
+        "selector": ".resources-empty .button",
+        "text": "Send requirements",
+        "width": 195,
+        "height": 56,
+        "x": 457,
+        "y": 509,
+        "fontSize": "16px",
+        "lineHeight": "16px"
+      }
+    },
+    "insights": {
+      "firstCard": {
+        "selector": ".resource-card",
+        "text": "Jun 11, 2026 / 9 min read Plastic Pallet Rack Deflection: How to Set Acceptance Criteria Before Bulk Orders A practical ",
+        "width": 276,
+        "height": 454,
+        "x": 440,
+        "y": 377,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      "firstTitle": {
+        "selector": ".resource-card__title",
+        "text": "Plastic Pallet Rack Deflection: How to Set Acceptance Criteria Before Bulk Orders",
+        "width": 255,
+        "height": 65,
+        "x": 451,
+        "y": 619,
+        "fontSize": "18.88px",
+        "lineHeight": "21.712px"
+      }
+    },
+    "contact": {
+      "headline": {
+        "selector": ".contact-hero__headline",
+        "text": "Tell us what you need to source",
+        "width": 638,
+        "height": 216,
+        "x": 152,
+        "y": 342,
+        "fontSize": "72px",
+        "lineHeight": "72px"
+      },
+      "formTitle": {
+        "selector": ".contact-form-card__header h2",
+        "text": "Get a factory quote",
+        "width": 444,
+        "height": 108,
+        "x": 827,
+        "y": 235,
+        "fontSize": "51.84px",
+        "lineHeight": "53.9136px"
+      }
+    },
+    "mega": {
+      "viewport": 1440,
+      "panel": {
+        "selector": ".site-header__mega",
+        "text": "Product Center Find the right plastic handling product by use case Pallets, pallet boxes, crates, and containers organiz",
+        "width": 1440,
+        "height": 279,
+        "x": 0,
+        "y": 73,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      },
+      "inner": {
+        "selector": ".site-header__mega-inner",
+        "text": "Product Center Find the right plastic handling product by use case Pallets, pallet boxes, crates, and containers organiz",
+        "width": 1408,
+        "height": 277,
+        "x": 16,
+        "y": 74,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "Factory title is not vertically crushed",
+      "pass": true,
+      "detail": {
+        "selector": ".factory .home-section-head__title",
+        "text": "Plastic Pallet Manufacturer",
+        "width": 928,
+        "height": 59,
+        "x": 152,
+        "y": 208,
+        "fontSize": "51.2px",
+        "lineHeight": "58.88px"
+      }
+    },
+    {
+      "name": "Product detail title has usable column width",
+      "pass": true,
+      "detail": {
+        "selector": ".product-hero__title",
+        "text": "1010 open deck 9-leg plastic pallet",
+        "width": 416,
+        "height": 166,
+        "x": 873,
+        "y": 236,
+        "fontSize": "53.6px",
+        "lineHeight": "55.208px"
+      }
+    },
+    {
+      "name": "Mega menu spans viewport",
+      "pass": true,
+      "detail": {
+        "selector": ".site-header__mega",
+        "text": "Product Center Find the right plastic handling product by use case Pallets, pallet boxes, crates, and containers organiz",
+        "width": 1440,
+        "height": 279,
+        "x": 0,
+        "y": 73,
+        "fontSize": "16px",
+        "lineHeight": "24.8px"
+      }
+    },
+    {
+      "name": "Resource empty CTA is not stretched full width",
+      "pass": true,
+      "detail": {
+        "selector": ".resources-empty .button",
+        "text": "Send requirements",
+        "width": 195,
+        "height": 56,
+        "x": 457,
+        "y": 509,
+        "fontSize": "16px",
+        "lineHeight": "16px"
+      }
+    },
+    {
+      "name": "Contact form title stays compact",
+      "pass": true,
+      "detail": {
+        "selector": ".contact-form-card__header h2",
+        "text": "Get a factory quote",
+        "width": 444,
+        "height": 108,
+        "x": 827,
+        "y": 235,
+        "fontSize": "51.84px",
+        "lineHeight": "53.9136px"
+      }
+    }
+  ]
+}

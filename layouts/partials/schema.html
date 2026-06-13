@@ -1,0 +1,91 @@
+{{- $graph := slice -}}
+{{- $orgParams := .Site.Params.organization -}}
+{{- $orgID := printf "%s#organization" .Site.BaseURL -}}
+{{- $orgName := $orgParams.name | default (.Site.Params.company_name | default .Site.Title) -}}
+{{- $orgLogo := $orgParams.logo | default (.Site.Params.logo | absURL) -}}
+{{- $address := dict "@type" "PostalAddress" -}}
+{{- with $orgParams.address.streetAddress }}{{- $address = merge $address (dict "streetAddress" .) -}}{{- end -}}
+{{- with $orgParams.address.addressLocality }}{{- $address = merge $address (dict "addressLocality" .) -}}{{- end -}}
+{{- with $orgParams.address.addressRegion }}{{- $address = merge $address (dict "addressRegion" .) -}}{{- end -}}
+{{- with $orgParams.address.postalCode }}{{- $address = merge $address (dict "postalCode" .) -}}{{- end -}}
+{{- with $orgParams.address.addressCountry }}{{- $address = merge $address (dict "addressCountry" .) -}}{{- end -}}
+
+{{- $org := dict
+  "@type" "Organization"
+  "@id" $orgID
+  "name" $orgName
+  "url" .Site.BaseURL
+  "logo" $orgLogo
+-}}
+{{- with $orgParams.legalName }}{{- $org = merge $org (dict "legalName" .) -}}{{- end -}}
+{{- with $orgParams.foundingDate }}{{- $org = merge $org (dict "foundingDate" .) -}}{{- end -}}
+{{- with ($orgParams.telephone | default .Site.Params.contact_phone) }}{{- $org = merge $org (dict "telephone" .) -}}{{- end -}}
+{{- with ($orgParams.email | default .Site.Params.contact_email) }}{{- $org = merge $org (dict "email" .) -}}{{- end -}}
+{{- if gt (len $address) 1 }}{{- $org = merge $org (dict "address" $address) -}}{{- end -}}
+{{- $graph = $graph | append $org -}}
+
+{{- $website := dict
+  "@type" "WebSite"
+  "@id" (printf "%s#website" .Site.BaseURL)
+  "url" .Site.BaseURL
+  "name" .Site.Title
+  "publisher" (dict "@id" $orgID)
+-}}
+{{- $graph = $graph | append $website -}}
+
+{{- if not .IsHome -}}
+  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" (cond (eq .Site.Language.Lang "zh") "首页" "Home") "item" ("/" | absLangURL)) -}}
+  {{- $position := 2 -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- if not .IsHome -}}
+      {{- $items = $items | append (dict "@type" "ListItem" "position" $position "name" .Title "item" .Permalink) -}}
+      {{- $position = add $position 1 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" $position "name" .Title "item" .Permalink) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumb" .Permalink) "itemListElement" $items) -}}
+{{- end -}}
+
+{{- if and .IsPage (eq .Section "products") -}}
+  {{- $desc := (.Description | default .Params.hero_description | default .Summary | plainify) -}}
+  {{- $product := dict
+    "@type" "Product"
+    "@id" (printf "%s#product" .Permalink)
+    "name" .Title
+    "url" .Permalink
+    "description" $desc
+    "sku" .File.ContentBaseName
+    "brand" (dict "@id" $orgID)
+  -}}
+  {{- with .Params.featured_image }}{{- $product = merge $product (dict "image" (slice (. | absURL))) -}}{{- end -}}
+  {{- with .Params.product_type }}{{- $product = merge $product (dict "category" .) -}}{{- end -}}
+  {{- with .Params.specs -}}
+    {{- $props := slice -}}
+    {{- range $key, $value := . -}}
+      {{- $type := printf "%T" $value -}}
+      {{- $val := cond (or (eq $type "[]string") (eq $type "[]interface {}")) (delimit $value ", ") $value -}}
+      {{- $props = $props | append (dict "@type" "PropertyValue" "name" (humanize $key) "value" (printf "%v" $val)) -}}
+    {{- end -}}
+    {{- if gt (len $props) 0 }}{{- $product = merge $product (dict "additionalProperty" $props) -}}{{- end -}}
+  {{- end -}}
+  {{- $graph = $graph | append $product -}}
+{{- end -}}
+
+{{- if and .IsPage (eq .Section "resources") -}}
+  {{- $desc := (.Description | default .Summary | plainify) -}}
+  {{- $article := dict
+    "@type" "Article"
+    "@id" (printf "%s#article" .Permalink)
+    "headline" .Title
+    "url" .Permalink
+    "description" $desc
+    "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+    "author" (dict "@id" $orgID)
+    "publisher" (dict "@id" $orgID)
+  -}}
+  {{- with (or .Params.cover_image .Params.featured_image) }}{{- $article = merge $article (dict "image" (. | absURL)) -}}{{- end -}}
+  {{- $graph = $graph | append $article -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

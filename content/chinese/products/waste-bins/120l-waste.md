@@ -1,6 +1,7 @@
 ---
 
-title: "120l-waste"
+title: "120L 带轮塑料垃圾桶"
+description: "环卫塑料垃圾桶采用耐候 HDPE 一体注塑成型，桶身加厚且搭配静音脚轮，适用于街道、社区和园区的垃圾收集与分类，可按需求选择容量与颜色以匹配既有清运体系。"
 featured_image: "/images/products/waste/120l-waste-hero.jpg"
 product_type: "塑料垃圾桶"
 pallet_category: []

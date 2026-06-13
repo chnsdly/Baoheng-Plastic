@@ -1,6 +1,7 @@
 ---
 
 title: "1208 open deck perimeter-base plastic pallet"
+description: "A three-runner pallet with a robust cross-reinforced base and one-piece molded construction, engineered to deliver stable support and high impact resistance for heavy-duty loads."
 featured_image: "/images/products/pallet/perimeter-base/1208-hero.jpg"
 product_type: "Plastic Pallets"
 pallet_category:

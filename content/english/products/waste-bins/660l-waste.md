@@ -1,6 +1,7 @@
 ---
 
-title: "660l-waste"
+title: "660L Wheeled Plastic Waste Bin"
+description: "These municipal plastic waste bins are molded from weather-resistant HDPE with reinforced walls and quiet casters, ideal for street, residential, and campus collection."
 featured_image: "/images/products/waste/660l-waste-hero.jpg"
 product_type: "Plastic Waste Bins"
 pallet_category: []

@@ -1,6 +1,7 @@
 ---
 
-title: "rectangular-tank"
+title: "Rectangular Plastic Tank"
+description: "This heavy-duty plastic utility tank is molded from HDPE/POE with a reinforced base and large open top."
 featured_image: "/images/products/crate-box/rectangular-tank-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []

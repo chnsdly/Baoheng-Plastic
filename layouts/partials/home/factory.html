@@ -1,46 +1,30 @@
-{{with .Params.factory }}
-{{ if .enable }}
-<section class="section factory">
-  <div class="container section__inner">
-    <div class="section__header">
-      <h2 class="section__title">{{ .title }}</h2>
-      {{ with .description }}
-      <p class="section__description">{{ . }}</p>
-      {{ end }}
-    </div>
-    <div class="factory__grid">
-      {{ range $index, $item := .items }}
-      <article class="factory__item">
-        <figure
-          class="factory__media"
-          tabindex="0"
-          aria-labelledby="factory-item-{{ $index }}-title"
-          aria-describedby="factory-item-{{ $index }}-content"
-        >
-          <div class="factory__card" role="presentation">
-            <div class="factory__side factory__side--front">
+{{- $lang := .Site.Language.Lang -}}
+{{ with .Params.factory }}
+  {{ if .enable }}
+    <section class="factory">
+      <div class="container factory__inner">
+        <div class="home-section-head">
+          <p class="home-section-head__eyebrow">{{ if eq $lang "zh" }}工厂能力{{ else }}Factory capability{{ end }}</p>
+          <h2 class="home-section-head__title">{{ .title }}</h2>
+          {{ with .description }}<p class="factory__description">{{ . }}</p>{{ end }}
+        </div>
+
+        <div class="factory__grid">
+          {{ range .items }}
+            <article class="factory__item">
               <img class="factory__image"
-                   src="{{ $item.image | relURL }}"
-                   alt="{{ $item.title }}"
+                   src="{{ .image | relURL }}"
+                   alt="{{ .title }}"
                    loading="lazy"
                    decoding="async">
-              <div class="factory__front-overlay" aria-hidden="true">
-                <h3 class="factory__item-title">{{ $item.title }}</h3>
-                <p class="factory__hint">{{ i18n "hover_to_reveal" }}</p>
-              </div>
-            </div>
-            <figcaption class="factory__side factory__side--back">
               <div class="factory__content">
-                <h3 class="factory__item-title" id="factory-item-{{ $index }}-title">{{ $item.title }}</h3>
-                <p class="factory__item-text" id="factory-item-{{ $index }}-content">{{ $item.content }}</p>
+                <h3 class="factory__item-title">{{ .title }}</h3>
+                <p class="factory__item-text">{{ .content }}</p>
               </div>
-            </figcaption>
-          </div>
-        </figure>
-      </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
 {{ end }}

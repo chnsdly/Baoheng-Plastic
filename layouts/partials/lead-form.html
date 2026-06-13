@@ -3,6 +3,7 @@
 {{ $slug := .slug }}
 {{ $page := .page }}
 {{ $sitekey := .sitekey }}
+{{ $lang := $page.Site.Language.Lang }}
 
 <form action="/api/lead" method="POST" class="lead-form" novalidate>
   <input type="hidden" name="form_type" value="{{ $type }}">
@@ -18,21 +19,16 @@
 
   <div style="display:none;"><input name="website" autocomplete="off"></div>
 
-  <label>Your Name*<input name="name" required></label>
-  <label>Email*<input name="email" type="email" required></label>
-  <label>Company<input name="company"></label>
-  <label>Country*<input name="country" required></label>
-  <label>Phone*<input name="phone" type="tel" required></label>
-  <label>Message<textarea name="message" rows="4"></textarea></label>
-
-  <!-- <label class="checkbox">
-    <input type="checkbox" name="consent" value="yes" required>
-    I agree to the Privacy Policy and to be contacted regarding this request.
-  </label> -->
+  <label>{{ if eq $lang "zh" }}姓名*{{ else }}Your Name*{{ end }}<input name="name" required autocomplete="name"></label>
+  <label>{{ if eq $lang "zh" }}邮箱*{{ else }}Email*{{ end }}<input name="email" type="email" required autocomplete="email"></label>
+  <label>{{ if eq $lang "zh" }}公司{{ else }}Company{{ end }}<input name="company" autocomplete="organization"></label>
+  <label>{{ if eq $lang "zh" }}国家/地区*{{ else }}Country*{{ end }}<input name="country" required autocomplete="country-name"></label>
+  <label>{{ if eq $lang "zh" }}电话/WhatsApp*{{ else }}Phone / WhatsApp*{{ end }}<input name="phone" type="tel" required autocomplete="tel"></label>
+  <label class="lead-form__message">{{ if eq $lang "zh" }}需求说明{{ else }}Message{{ end }}<textarea name="message" rows="4" placeholder="{{ if eq $lang "zh" }}请填写产品型号、数量、使用场景、承重或尺寸要求。{{ else }}Tell us the product model, quantity, application, load, or size requirements.{{ end }}"></textarea></label>
 
   <!-- Turnstile -->
   <div class="cf-turnstile" data-sitekey="{{ $sitekey }}"></div>
-  <button type="submit">Submit</button>
+  <button type="submit">{{ if eq $lang "zh" }}提交询盘{{ else }}Submit inquiry{{ end }}</button>
 </form>
 
 <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
@@ -44,5 +40,4 @@
       if (el && p.get(k)) el.value = p.get(k);
     }
   })();
-  
 </script>

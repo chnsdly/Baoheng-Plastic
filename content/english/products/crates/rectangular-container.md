@@ -1,6 +1,7 @@
 ---
 
-title: "rectangular-container"
+title: "Rectangular Plastic Container"
+description: "This multi-purpose plastic tote is molded from virgin HDPE for a lightweight yet robust structure."
 featured_image: "/images/products/crate-box/rectangular-container-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []

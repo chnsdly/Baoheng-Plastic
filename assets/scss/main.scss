@@ -5,12 +5,14 @@
 @import "base/base";
 
 @import "layout/header";
+@import "layout/footer";
 
 @import "pages/home/hero";
 @import "pages/home/usps";
 @import "pages/home/factory";
 
 @import "components/buttons";
+@import "components/breadcrumb";
 @import "typography";
 @import "home/industries";
 @import "home/clients";

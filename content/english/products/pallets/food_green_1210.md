@@ -1,6 +1,7 @@
 ---
 
 title: "1210 food & medical plastic pallet"
+description: "This plastic pallet features a completely flat, one-piece molded surface that offers superior hygiene, easy cleaning, and minimal retention points."
 featured_image: "/images/products/pallet/food/1210-green-hero.jpg"
 product_type: "Plastic Pallets"
 pallet_category:

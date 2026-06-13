@@ -4,15 +4,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: space(0.75);
   min-height: 3.5rem;
   padding: 0.625rem 1.5rem;
   line-height: 1;
   border-radius: var(--radius-s);
+  border: 1px solid transparent;
   box-shadow: var(--shadow);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
   transition:
     transform var(--transition-base),
     box-shadow var(--transition-base),
-    background-color var(--transition-base);
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base);
   cursor: pointer;
 }
 
@@ -22,13 +28,40 @@
 }
 
 .button:hover {
-  background-color: color-mix(in oklab, var(--brand) 92%, black);
+  background-color: var(--brand-strong);
+  color: var(--on-brand);
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
 .button:active {
   background-color: color-mix(in oklab, var(--brand) 84%, black);
   transform: translateY(0);
   box-shadow: var(--shadow);
+}
+
+.button--secondary {
+  background: var(--card);
+  color: var(--on-surface);
+  border-color: var(--line);
+}
+
+.button--secondary:hover {
+  background: var(--surface-alt);
+  color: var(--on-surface);
+}
+
+.button--ghost {
+  min-height: 2.75rem;
+  padding-inline: 0;
+  background: transparent;
+  color: var(--brand);
+  box-shadow: none;
+}
+
+.button--ghost:hover {
+  background: transparent;
+  color: var(--brand-strong);
+  box-shadow: none;
 }

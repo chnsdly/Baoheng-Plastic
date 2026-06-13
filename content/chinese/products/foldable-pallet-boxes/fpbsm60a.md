@@ -1,6 +1,7 @@
 ---
 
 title: "1210-BF-FPBSM60A"
+description: "可折叠卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。可大幅降低回空运输体积，适合循环周转。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
 featured_image: "/images/products/fold/sm60a-hero.jpg"
 product_type: "可折叠塑料托盘箱"
 pallet_category: []

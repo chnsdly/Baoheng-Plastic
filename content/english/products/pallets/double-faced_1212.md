@@ -1,6 +1,7 @@
 ---
 
 title: "1212 open deck double-faced plastic pallet"
+description: "This double-sided, stackable pallet features a fully integrated design with reinforced ribs on both surfaces, providing maximum protection and high load capacity for heavy goods."
 featured_image: "/images/products/pallet/double-faced/1212-hero.jpg"
 product_type: "Plastic Pallets"
 pallet_category:

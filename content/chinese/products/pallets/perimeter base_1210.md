@@ -1,6 +1,7 @@
 ---
 
 title: "1210-网格田字型塑料托盘"
+description: "田字结构托盘，底部三向纵横加强，一体化成型，为重载货物提供稳固承托与抗冲击能力。适用于叉车高频操作，承重强、耐用度高，适配仓储与立体库等多场景使用。欢迎咨询，获取您的专属报价。"
 featured_image: "/images/products/pallet/perimeter-base/1210-hero.jpg"
 featured: true
 product_type: "塑料托盘"

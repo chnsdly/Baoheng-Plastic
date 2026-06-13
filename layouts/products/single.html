@@ -1,145 +1,78 @@
-
 {{ define "main" }}
-  {{ $allProducts := .Site.RegularPages }}
-  {{ $productMenus := slice }}
-  {{ $sidebarToggleLabel := cond (eq $.Site.Language.Lang "zh") "浏览产品分类" "Browse categories" }}
-  {{ with where .Site.Menus.main "Identifier" "products" }}
-    {{ with index . 0 }}
-      {{ $productMenus = sort .Children "Weight" }}
-    {{ end }}
-  {{ end }}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $contactURL := "/contact/" | relLangURL }}
+  {{ $specs := .Params.specs | default dict }}
+  {{ $heroText := .Params.hero_description | default .Description | default .Summary }}
+  {{ $detailHeading := .Params.detail_heading | default (cond (eq $lang "zh") "产品详情" "Product details") }}
+  {{ $detailIntro := .Params.detail_intro | default .Params.detail_description }}
+  {{ $dimensions := index $specs "dimensions" }}
+  {{ $dynamicLoad := index $specs "dynamic_load" }}
+  {{ $staticLoad := index $specs "static_load" }}
+  {{ $rackingLoad := index $specs "racking_load" }}
+  {{ $material := index $specs "material" }}
+  {{ $allProducts := where .Site.RegularPages "Section" "products" }}
+  {{ $related := where (where $allProducts "Params.product_type" .Params.product_type) "RelPermalink" "ne" .RelPermalink }}
 
   <section class="product-single">
     <div class="container product-single__container">
-      <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
-        <div class="product-sidebar__header">
-          <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
-          <button class="product-sidebar__toggle" type="button" aria-expanded="false" aria-controls="product-sidebar-panel">{{ $sidebarToggleLabel }}<span class="product-sidebar__toggle-icon" aria-hidden="true"></span></button>
-        </div>
-        <div class="product-sidebar__panel" id="product-sidebar-panel">
-          <ul class="product-sidebar__list" role="list">
-            {{ range $productMenus }}
-              {{ $menuName := .Name }}
-              {{ $matchingPages := where $allProducts "Params.product_type" $menuName }}
-              {{ $categories := slice }}
-              {{ range $matchingPages }}
-                {{ with .Params.pallet_category }}
-                  {{ $catVal := . }}
-                  {{ if eq (printf "%T" $catVal) "string" }}
-                    {{ $categories = $categories | append $catVal }}
-                  {{ else }}
-                    {{ range $catVal }}
-                      {{ $categories = $categories | append . }}
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-              {{ end }}
-              {{ $categories = uniq (sort $categories) }}
-              {{ $hasChildren := gt (len $categories) 0 }}
-              {{ $menuURL := .URL | relLangURL }}
-              {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $.Params.product_type $menuName) }}
-              <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
-                <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
-                {{ if $hasChildren }}
-                  <ul class="product-sidebar__submenu" role="list">
-                    {{ range $categories }}
-                      <li class="product-sidebar__subitem">
-                        {{ $categoryParam := urlquery . }}
-                        <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $menuURL $categoryParam }}">{{ . }}</a>
-                      </li>
-                    {{ end }}
-                  </ul>
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      </aside>
+      {{ partial "product-sidebar.html" (dict "page" . "enableFilters" false) }}
 
       <article class="product-single__content">
-        {{ $contactPage := site.GetPage (printf "/%s/contact" .Site.Language.Lang) }}
-        {{ $contactURL := cond $contactPage $contactPage.RelPermalink (relLangURL "/contact") }}
-        {{ $heroText := .Params.hero_description | default .Params.summary }}
-        {{ $detailHeading := .Params.detail_heading | default (i18n "product_detail_heading" | default "产品详情") }}
-        {{ $detailIntro := .Params.detail_intro | default .Params.detail_description }}
-        {{ $ctaLabel := .Params.contact_cta_label | default (i18n "cta_get_quote" | default "Get a quote") }}
-        {{ $ctaHref := .Params.contact_cta_link | default $contactURL }}
-        {{ $socials := site.Params.social }}
-        {{ $industryGallery := .Params.industry_gallery }}
-        {{ $showcaseGallery := .Params.showcase_gallery }}
-        {{ $productShowcase := .Params.product_showcase }}
+        <header class="product-hero">
+          <div class="product-hero__media-wrap">
+            <figure class="product-hero__media">
+              {{ with .Params.featured_image }}
+                <img class="product-hero__image"
+                     src="{{ . | relURL }}"
+                     alt="{{ $.Title }}"
+                     loading="eager"
+                     decoding="async">
+              {{ else }}
+                <span class="product-hero__placeholder">{{ .Params.product_type | default "Product" }}</span>
+              {{ end }}
+            </figure>
+          </div>
 
-        <header class="product-single__header">
-          <h1 class="product-single__title">{{ .Title }}</h1>
-        </header>
+          <div class="product-hero__body">
+            {{ with .Params.product_type }}<p class="product-hero__eyebrow">{{ . }}</p>{{ end }}
+            <h1 class="product-hero__title">{{ .Title }}</h1>
+            {{ with $heroText }}<p class="product-hero__description">{{ . }}</p>{{ end }}
 
-        <div class="product-overview">
-          <figure class="product-overview__media">
-            <img class="product-overview__image"
-                 src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}'
-                 alt='{{ .Title }}'
-                 loading="lazy"
-                 decoding="async">
-          </figure>
-
-          <div class="product-overview__body">
-            {{ with $heroText }}
-              <p class="product-overview__description">{{ . }}</p>
+            {{ if or $dimensions $dynamicLoad $staticLoad $rackingLoad $material }}
+              <dl class="product-hero__specs">
+                {{ with $dimensions }}<div><dt>{{ if eq $lang "zh" }}尺寸{{ else }}Size{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $dynamicLoad }}<div><dt>{{ if eq $lang "zh" }}动载{{ else }}Dynamic load{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $staticLoad }}<div><dt>{{ if eq $lang "zh" }}静载{{ else }}Static load{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $rackingLoad }}<div><dt>{{ if eq $lang "zh" }}货架载{{ else }}Racking load{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $material }}<div><dt>{{ if eq $lang "zh" }}材质{{ else }}Material{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
+              </dl>
             {{ end }}
 
-            <div class="product-overview__actions">
-              <a class="button font-meta product-overview__cta" href="{{ $ctaHref }}">{{ $ctaLabel }}</a>
-
-              <div class="product-overview__socials" aria-label="{{ i18n "share" | default "Share" }}">
-                  {{ with $socials.linkedin }}
-                    <a class="product-overview__social" aria-label="LinkedIn" href="{{ . }}" target="_blank" rel="noreferrer noopener">
-                      <img class="product-overview__social-icon" src='{{ "images/icons/linkedin.svg" | relURL }}' alt="LinkedIn" width="24" height="24">
-                    </a>
-                  {{ end }}
-                  {{ with $socials.twitter }}
-                    <a class="product-overview__social" aria-label="X (Twitter)" href="{{ . }}" target="_blank" rel="noreferrer noopener">
-                      <img class="product-overview__social-icon" src='{{ "images/icons/x.svg" | relURL }}' alt="X (Twitter)" width="24" height="24">
-                    </a>
-                  {{ end }}
-                  {{ with $socials.youtube }}
-                    <a class="product-overview__social" aria-label="YouTube" href="{{ . }}" target="_blank" rel="noreferrer noopener">
-                      <img class="product-overview__social-icon" src='{{ "images/icons/youtube.svg" | relURL }}' alt="YouTube" width="24" height="24">
-                    </a>
-                  {{ end }}
-                  {{ with $socials.facebook }}
-                    <a class="product-overview__social" aria-label="Facebook" href="{{ . }}" target="_blank" rel="noreferrer noopener">
-                      <img class="product-overview__social-icon" src='{{ "images/icons/facebook.svg" | relURL }}' alt="Facebook" width="24" height="24">
-                    </a>
-                  {{ end }}
-                </div>
+            <div class="product-hero__actions">
+              <a class="button" href="{{ $contactURL }}?product={{ .Title | urlquery }}">{{ if eq $lang "zh" }}询价此产品{{ else }}Request quote for this product{{ end }}</a>
+              <a class="button button--secondary" href="#product-inquiry">{{ if eq $lang "zh" }}填写需求{{ else }}Send requirements{{ end }}</a>
             </div>
           </div>
-        </div>
+        </header>
 
         <section class="product-details" aria-labelledby="product-details-heading">
           <div class="product-details__header">
+            <p class="product-details__eyebrow">{{ if eq $lang "zh" }}选型信息{{ else }}Selection notes{{ end }}</p>
             <h2 class="product-details__title" id="product-details-heading">{{ $detailHeading }}</h2>
             {{ with $detailIntro }}
-              <div class="product-details__intro">
-                {{ . | markdownify }}
-              </div>
+              <div class="product-details__intro">{{ . | markdownify }}</div>
             {{ end }}
           </div>
 
-          {{ with $productShowcase }}
+          {{ with .Params.product_showcase }}
             {{ if .enable }}
               <section class="product-showcase-grid" aria-labelledby="product-showcase-title">
                 <div class="product-showcase-grid__header">
                   <div class="product-showcase-grid__headline">
-                    {{ with .title }}
-                      <h3 id="product-showcase-title" class="product-showcase-grid__title">{{ . }}</h3>
-                    {{ end }}
-                    {{ with .description }}
-                      <p class="product-showcase-grid__description">{{ . }}</p>
-                    {{ end }}
+                    {{ with .title }}<h3 id="product-showcase-title" class="product-showcase-grid__title">{{ . }}</h3>{{ end }}
+                    {{ with .description }}<p class="product-showcase-grid__description">{{ . }}</p>{{ end }}
                   </div>
                 </div>
-
                 {{ with .items }}
                   <div class="product-showcase-grid__items" role="list">
                     {{ range . }}
@@ -151,9 +84,7 @@
                                alt="{{ .alt | default .title | default $.Title }}"
                                loading="lazy"
                                decoding="async">
-                          {{ with .title }}
-                            <figcaption class="product-showcase-grid__label">{{ . }}</figcaption>
-                          {{ end }}
+                          {{ with .title }}<figcaption class="product-showcase-grid__label">{{ . }}</figcaption>{{ end }}
                         </figure>
                       {{ end }}
                     {{ end }}
@@ -163,16 +94,20 @@
             {{ end }}
           {{ end }}
 
-          {{ with $showcaseGallery }}
-            {{ $showcaseItems := first 4 . }}
-            <div class="showcase__gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              {{ range $showcaseItems }}
-                {{ $asset := .image }}
-                {{ if $asset }}
-                  <figure class="showcase__figure">
-                    <img class="showcase__image"
-                         src="{{ $asset | relURL }}"
-                         alt="{{ .alt | default $.Title }}"
+          {{ if .Params.specs }}
+            <div class="product-details__specs">
+              {{ partial "product-specs.html" . }}
+            </div>
+          {{ end }}
+
+          {{ with .Params.showcase_gallery }}
+            <div class="product-gallery" aria-label="{{ if eq $lang "zh" }}产品图片{{ else }}Product gallery{{ end }}">
+              {{ range first 4 . }}
+                {{ with .image }}
+                  <figure class="product-gallery__figure">
+                    <img class="product-gallery__image"
+                         src="{{ . | relURL }}"
+                         alt="{{ $.Title }}"
                          loading="lazy"
                          decoding="async">
                   </figure>
@@ -181,146 +116,62 @@
             </div>
           {{ end }}
 
-          {{ if .Params.specs }}
-            <div class="product-details__specs">
-              {{ partial "product-specs.html" . }}
+          {{ with .Params.industry_gallery }}
+            <div class="product-gallery product-gallery--industry" aria-label="{{ if eq $lang "zh" }}应用场景{{ else }}Application gallery{{ end }}">
+              {{ range first 3 . }}
+                {{ with .image }}
+                  <figure class="product-gallery__figure">
+                    <img class="product-gallery__image"
+                         src="{{ . | relURL }}"
+                         alt="{{ $.Title }}"
+                         loading="lazy"
+                         decoding="async">
+                  </figure>
+                {{ end }}
+              {{ end }}
             </div>
           {{ end }}
 
-          {{ with $industryGallery }}
-            {{ $galleryItems := first 3 . }}
-            {{ $primary := index $galleryItems 0 }}
-            <div class="industry-gallery" aria-label="{{ i18n "product_gallery" | default "Product gallery" }}">
-              <div class="industry-gallery__gallery">
-                {{ with $primary }}
-                  {{ $asset := .image }}
-                  {{ if $asset }}
-                    <figure class="industry-gallery__figure industry-gallery__figure--primary">
-                      <img class="industry-gallery__image"
-                           src="{{ $asset | relURL }}"
-                           alt="{{ .alt | default $.Title }}"
+          <section class="product-inquiry" id="product-inquiry">
+            <div class="product-inquiry__copy">
+              <p class="product-inquiry__eyebrow">{{ if eq $lang "zh" }}提交询盘{{ else }}Inquiry support{{ end }}</p>
+              <h2 class="product-inquiry__title">{{ .Params.form_title | default (cond (eq $lang "zh") "告诉我们您的载荷与周转需求" "Tell us about your load and handling requirements") }}</h2>
+              <p class="product-inquiry__description">
+                {{ .Params.form_description | default (cond (eq $lang "zh") "请说明使用环境、数量、承重、尺寸、颜色或 Logo 要求，我们会协助确认合适型号。" "Share application, quantity, load, size, color, or logo requirements and we will help confirm the suitable model.") }}
+              </p>
+            </div>
+            {{ partial "lead-form.html" (dict "type" "product-detail" "slug" .File.ContentBaseName "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+          </section>
+        </section>
+
+        {{ if gt (len $related) 0 }}
+          <section class="product-related" aria-labelledby="related-products-title">
+            <div class="product-related__header">
+              <p class="product-related__eyebrow">{{ if eq $lang "zh" }}相关产品{{ else }}Related products{{ end }}</p>
+              <h2 class="product-related__title" id="related-products-title">{{ if eq $lang "zh" }}继续比较同类型号{{ else }}Compare similar models{{ end }}</h2>
+            </div>
+            <div class="product-related__grid">
+              {{ range first 3 $related.ByTitle }}
+                {{ $relatedTitle := .Title }}
+                <article class="product-related__card">
+                  <a class="product-related__link" href="{{ .RelPermalink }}">
+                    {{ with .Params.featured_image }}
+                      <img class="product-related__image"
+                           src="{{ . | relURL }}"
+                           alt="{{ $relatedTitle }}"
                            loading="lazy"
                            decoding="async">
-                    </figure>
-                  {{ end }}
-                {{ end }}
-
-                <div class="industry-gallery__stack">
-                  {{ range after 1 $galleryItems }}
-                    {{ $asset := .image }}
-                    {{ if $asset }}
-                      <figure class="industry-gallery__figure industry-gallery__figure--secondary">
-                        <img class="industry-gallery__image"
-                             src="{{ $asset | relURL }}"
-                             alt="{{ .alt | default $.Title }}"
-                             loading="lazy"
-                             decoding="async">
-                      </figure>
+                    {{ else }}
+                      <span class="product-related__placeholder">{{ .Params.product_type | default "Product" }}</span>
                     {{ end }}
-                  {{ end }}
-                </div>
-              </div>
+                    <span class="product-related__name">{{ .Title }}</span>
+                  </a>
+                </article>
+              {{ end }}
             </div>
-          {{ end }}
-
-          <div class="product-details__form">
-            {{ with .Params.form_title }}<h3 class="product-details__form-title">{{ . }}</h3>{{ end }}
-            {{ with .Params.form_description }}<p class="product-details__form-description">{{ . }}</p>{{ end }}
-            {{ partial "lead-form.html" (dict "type" "product-detail" "slug" .File.ContentBaseName "page" . "sitekey" .Site.Params.turnstile_site_key) }}
-          </div>
-        </section>
+          </section>
+        {{ end }}
       </article>
     </div>
   </section>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const params = new URLSearchParams(window.location.search);
-      const activeCategory = params.get('category') || '';
-      const cards = document.querySelectorAll('.product-listing__card');
-      const links = document.querySelectorAll('.product-sidebar__sublink');
-      const pager = document.querySelector('.product-listing__pager');
-      const sidebar = document.querySelector('.product-sidebar');
-      const sidebarToggle = document.querySelector('.product-sidebar__toggle');
-      const sidebarPanel = document.querySelector('.product-sidebar__panel');
-      const desktopQuery = window.matchMedia('(min-width: 48rem)');
-
-      const toggleCards = (category) => {
-        cards.forEach((card) => {
-          const list = (card.dataset.categories || '').split('|').filter(Boolean);
-          const defaultVisible = card.dataset.defaultVisible === 'true';
-          const matches = category ? list.includes(category) : defaultVisible;
-          card.style.display = matches ? '' : 'none';
-        });
-
-        links.forEach((link) => {
-          const isActive = category && link.dataset.category === category;
-          link.classList.toggle('product-sidebar__sublink--active', isActive);
-          if (isActive) {
-            link.setAttribute('aria-current', 'true');
-          } else {
-            link.removeAttribute('aria-current');
-          }
-        });
-        if (pager) {
-          pager.style.display = category ? 'none' : '';
-        }
-      };
-
-      links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-          const category = link.dataset.category || '';
-          const linkUrl = new URL(link.href, window.location.origin);
-
-          if (linkUrl.pathname !== window.location.pathname) {
-            return;
-          }
-
-          event.preventDefault();
-          const url = new URL(window.location.href);
-
-          if (category) {
-            url.searchParams.set('category', category);
-          } else {
-            url.searchParams.delete('category');
-          }
-
-          window.history.replaceState({}, '', url.toString());
-          toggleCards(category);
-
-          if (!desktopQuery.matches && sidebar) {
-            sidebar.classList.remove('is-open');
-            syncSidebarState();
-          }
-        });
-      });
-
-      toggleCards(activeCategory);
-
-      const syncSidebarState = () => {
-        if (!sidebar || !sidebarToggle || !sidebarPanel) return;
-        const isDesktop = desktopQuery.matches;
-        const shouldBeOpen = isDesktop || sidebar.classList.contains('is-open');
-
-        sidebar.classList.toggle('is-open', shouldBeOpen);
-        sidebarToggle.setAttribute('aria-expanded', shouldBeOpen ? 'true' : 'false');
-        sidebarPanel.hidden = !shouldBeOpen && !isDesktop;
-      };
-
-      if (sidebar && sidebarToggle && sidebarPanel) {
-        sidebar.classList.toggle('is-open', desktopQuery.matches);
-        syncSidebarState();
-
-        sidebarToggle.addEventListener('click', () => {
-          sidebar.classList.toggle('is-open');
-          syncSidebarState();
-        });
-
-        desktopQuery.addEventListener('change', () => {
-          sidebar.classList.toggle('is-open', desktopQuery.matches);
-          syncSidebarState();
-        });
-      }
-    });
-  </script>
 {{ end }}

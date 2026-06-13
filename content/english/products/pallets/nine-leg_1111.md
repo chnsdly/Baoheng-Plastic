@@ -1,6 +1,7 @@
 ---
 
 title: "1111 open deck 9-leg plastic pallet"
+description: "Grid-deck 9-leg plastic pallets are one-piece injection molded from virgin HDPE/PP, with a nine-leg support layout for reliable load-bearing."
 featured_image: "/images/products/pallet/nine-leg/1111-hero.jpg"
 product_type: "Plastic Pallets"
 pallet_category:

@@ -1,6 +1,7 @@
 ---
 
 title: "折叠周转箱"
+description: "这款折叠塑料周转筐采用全新 HDPE 一体成型，卡口拉合即可完成开合，折叠后高度约为原来的 1/6，大幅节省仓储与运输空间"
 featured_image: "/images/products/crate-box/foldable-crates-hero.jpg"
 product_type: "板条箱"
 pallet_category: []

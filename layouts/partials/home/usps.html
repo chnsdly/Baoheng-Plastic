@@ -1,23 +1,20 @@
+{{- $lang := .Site.Language.Lang -}}
 {{ with .Params.usps }}
-{{ if .enable }}
-<section class="section usps">
-  <div class="container container--wide">
-    {{ with .items }}
-    <ul class="usps__list">
-      {{ range . }}
-      <li class="usps__item">
-        <div class="usps__icon" aria-hidden="true">
-          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
-        </div>
-        <div class="usps__content">
-          <p class="font-title-s">{{ .title }}</p>
-          <p class="font-body">{{ .description }}</p>
-        </div>
-      </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
+  {{ if .enable }}
+    <section class="usps" aria-label="{{ if eq $lang "zh" }}采购优势{{ else }}Sourcing advantages{{ end }}">
+      <div class="container">
+        <ul class="usps__list" role="list">
+          {{ range $index, $item := .items }}
+            <li class="usps__item">
+              <span class="usps__number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+              <div class="usps__content">
+                <p class="usps__title">{{ .title }}</p>
+                <p class="usps__text">{{ .description }}</p>
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+  {{ end }}
 {{ end }}

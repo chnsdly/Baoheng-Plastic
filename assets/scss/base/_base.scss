@@ -9,15 +9,20 @@
    不写具体组件、模块或单独页面的样式。
    ========================================================================== */
 
-.font-meta { font-size: 0.875rem; font-weight: 400; }
-.font-body { font-size: 1rem; font-weight: 400; }
-.font-title-xs { font-size: 1.25rem; font-weight: 400; }
-.font-title-s { font-size: 1.5rem; font-weight: 500; }
-.font-title-l { font-size: 1.75rem; font-weight: 500; }
-.font-display { font-size: 2.5rem; font-weight: 600; }
+.font-meta { font-size: 0.875rem; font-weight: var(--weight-medium); line-height: var(--line-normal); }
+.font-body { font-size: 1rem; font-weight: var(--weight-normal); line-height: var(--line-normal); }
+.font-title-xs { font-size: 1.25rem; font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+.font-title-s { font-size: 1.5rem; font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+.font-title-l { font-size: 1.875rem; font-weight: var(--weight-semibold); line-height: var(--line-tight); }
+.font-display { font-size: 2.4rem; font-weight: var(--weight-bold); line-height: var(--line-tight); }
 
 body {
   background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  line-height: var(--line-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -25,15 +30,33 @@ body {
   max-width: var(--container);
   width: 100%;
   margin-inline: auto;
-  padding-inline: space(1);
+  padding-inline: space(2);
 }
 .container--wide { --container: var(--container-wide); }
 .container--narrow { --container: var(--container-narrow); }
 
-.section { position: relative; padding-block: space(4); }
+.section { position: relative; padding-block: var(--section-padding); }
 .section__inner { display: grid; gap: space(3); }
-.section__header { display: grid; gap: space(2); text-align: center; }
+.section__header { display: grid; gap: space(1.5); text-align: center; }
 .section__title { color: var(--on-surface); }
-.section__description { margin: 0 auto; max-width: 120ch; color: var(--secondary); }
+.section__description { margin: 0 auto; max-width: 76ch; color: var(--secondary); }
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand) 22%, white);
+  color: var(--on-surface);
+}
+
+@include mq-up(tablet) {
+  .font-display { font-size: 3rem; }
+  .container { padding-inline: space(3); }
+}
+
+@include mq-up(laptop) {
+  :root { --section-padding: 5rem; }
+}
 
 

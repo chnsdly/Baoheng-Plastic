@@ -1,5 +1,66 @@
-<footer class="site-footer" style="padding:2rem 0; border-top:var(--border);">
-  <div class="container" style="opacity:.8;">
-    © {{ now.Year }} {{ site.Params.company_name | default site.Title }}
+{{- $lang := .Site.Language.Lang -}}
+{{- $products := slice -}}
+{{- $resources := slice -}}
+{{- with where .Site.Menus.main "Identifier" "products" -}}
+  {{- with index . 0 -}}{{- $products = sort .Children "Weight" -}}{{- end -}}
+{{- end -}}
+{{- with where .Site.Menus.main "Identifier" "resources" -}}
+  {{- with index . 0 -}}{{- $resources = sort .Children "Weight" -}}{{- end -}}
+{{- end -}}
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo" href="{{ "/" | relLangURL }}">{{ site.Params.company_name | default site.Title }}</a>
+      <p class="site-footer__summary">
+        {{ if eq $lang "zh" }}
+          源头工厂供应塑料托盘、卡板箱、周转筐、周转箱和环卫垃圾桶，面向仓储、物流、食品、冷链、制造与市政项目提供选型和批量报价支持。
+        {{ else }}
+          Factory-direct plastic pallets, pallet boxes, crates, containers, and waste bins for warehousing, logistics, food, cold-chain, manufacturing, and municipal projects.
+        {{ end }}
+      </p>
+      <div class="site-footer__actions">
+        <a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ if eq $lang "zh" }}浏览产品{{ else }}Browse products{{ end }}</a>
+        <a class="button button--ghost" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a>
+      </div>
+    </div>
+
+    <div class="site-footer__grid">
+      <nav class="site-footer__group" aria-label="{{ if eq $lang "zh" }}页脚产品导航{{ else }}Footer product navigation{{ end }}">
+        <p class="site-footer__heading">{{ if eq $lang "zh" }}产品{{ else }}Products{{ end }}</p>
+        <ul class="site-footer__list" role="list">
+          {{ range $products }}
+            <li><a class="site-footer__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+
+      <nav class="site-footer__group" aria-label="{{ if eq $lang "zh" }}页脚资源导航{{ else }}Footer resource navigation{{ end }}">
+        <p class="site-footer__heading">{{ if eq $lang "zh" }}资源{{ else }}Resources{{ end }}</p>
+        <ul class="site-footer__list" role="list">
+          {{ range $resources }}
+            <li><a class="site-footer__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          {{ end }}
+          <li><a class="site-footer__link" href="{{ "/about/" | relLangURL }}">{{ if eq $lang "zh" }}关于我们{{ else }}About us{{ end }}</a></li>
+          <li><a class="site-footer__link" href="{{ "/privacy-policy/" | relLangURL }}">{{ if eq $lang "zh" }}隐私政策{{ else }}Privacy policy{{ end }}</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__group">
+        <p class="site-footer__heading">{{ if eq $lang "zh" }}联系{{ else }}Contact{{ end }}</p>
+        <div class="site-footer__contact">
+          <p class="site-footer__contact-row">{{ .Site.Params.contact_email }}</p>
+          <p class="site-footer__contact-row">{{ .Site.Params.contact_phone }}</p>
+          <p class="site-footer__contact-row">{{ .Site.Params.contact_address }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="container site-footer__bottom-inner">
+      <p>&copy; {{ now.Year }} {{ site.Params.company_name | default site.Title }}</p>
+      <p>{{ if eq $lang "zh" }}工业塑料包装产品工厂{{ else }}Industrial plastic handling products manufacturer{{ end }}</p>
+    </div>
   </div>
 </footer>

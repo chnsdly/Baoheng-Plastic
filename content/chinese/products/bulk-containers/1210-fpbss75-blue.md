@@ -1,6 +1,7 @@
 ---
 
-title: "1210-fpbss75-blue"
+title: "1210 FPBSS75 蓝色大型散装容器"
+description: "大型卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。箱体结构稳固，可高效保护和周转散装物料与包装货物。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
 featured_image: "/images/products/l-container/1210-fpbss75-blue-hero.jpg"
 product_type: "大型散装容器"
 pallet_category: []

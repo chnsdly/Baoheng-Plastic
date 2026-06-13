@@ -1,231 +1,98 @@
 {{ define "main" }}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $products := .RegularPagesRecursive.ByTitle }}
+  {{ $contactURL := "/contact/" | relLangURL }}
+  {{ $rfqURL := "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}
+
   <section class="product-listing">
     <div class="container product-listing__inner">
-      {{ $allProducts := .Pages.ByTitle }}
-      {{ $pgr := .Paginate $allProducts 12 }}
-      {{ $productMenus := slice }}
-      {{ $sidebarToggleLabel := cond (eq $.Site.Language.Lang "zh") "浏览产品分类" "Browse categories" }}
-      {{ with where .Site.Menus.main "Identifier" "products" }}
-        {{ with index . 0 }}
-          {{ $productMenus = sort .Children "Weight" }}
-        {{ end }}
-      {{ end }}
-      {{ $currentType := "" }}
-      {{ with first 1 $pgr.Pages }}
-        {{ $currentType = (index . 0).Params.product_type }}
-      {{ end }}
+      <header class="product-listing__hero">
+        <div class="product-listing__hero-copy">
+          <p class="product-listing__eyebrow">{{ if eq $lang "zh" }}源头工厂产品中心{{ else }}Factory product center{{ end }}</p>
+          <h1 class="product-listing__title">{{ .Title }}</h1>
+          <p class="product-listing__intro">
+            {{ with .Description }}
+              {{ . }}
+            {{ else }}
+              {{ if eq $lang "zh" }}
+                按真实使用场景选择塑料托盘、吹塑托盘、周转筐、折叠卡板箱、大型容器和环卫垃圾桶。提交载荷、尺寸、数量和工况后，我们会协助匹配合适型号。
+              {{ else }}
+                Source plastic pallets, blow-molded pallets, crates, foldable pallet boxes, bulk containers, and waste bins by real handling application. Share load, size, quantity, and workflow details for a practical recommendation.
+              {{ end }}
+            {{ end }}
+          </p>
+        </div>
+        <div class="product-listing__hero-actions">
+          <a class="button" href="{{ $contactURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a>
+          <a class="button button--secondary" href="{{ $rfqURL }}">{{ if eq $lang "zh" }}查看 RFQ 清单{{ else }}RFQ checklist{{ end }}</a>
+        </div>
+      </header>
 
       <div class="product-listing__layout">
-        <aside class="product-sidebar" aria-label='{{ i18n "product_categories" | default "Product categories" }}'>
-          <div class="product-sidebar__header">
-            <h2 class="product-sidebar__title">{{ i18n "product_menu" | default "Products" }}</h2>
-            <button class="product-sidebar__toggle" type="button" aria-expanded="false" aria-controls="product-sidebar-panel">{{ $sidebarToggleLabel }}<span class="product-sidebar__toggle-icon" aria-hidden="true"></span></button>
-          </div>
-          <div class="product-sidebar__panel" id="product-sidebar-panel">
-            <ul class="product-sidebar__list" role="list">
-              {{ range $productMenus }}
-                {{ $menuName := .Name }}
-                {{ $matchingPages := where $.Site.RegularPages "Params.product_type" $menuName }}
-                {{ $categories := slice }}
-                {{ range $matchingPages }}
-                  {{ with .Params.pallet_category }}
-                    {{ $catVal := . }}
-                    {{ if eq (printf "%T" $catVal) "string" }}
-                      {{ $categories = $categories | append $catVal }}
-                    {{ else }}
-                      {{ range $catVal }}
-                        {{ $categories = $categories | append . }}
-                      {{ end }}
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-                {{ $categories = uniq (sort $categories) }}
-                {{ $hasChildren := gt (len $categories) 0 }}
-                {{ $menuURL := .URL | relLangURL }}
-                {{ $isActive := hasPrefix $.RelPermalink $menuURL | or (eq $currentType $menuName) }}
-                <li class="product-sidebar__item{{ if $hasChildren }} product-sidebar__item--has-children{{ end }}{{ if $isActive }} product-sidebar__item--current{{ end }}">
-                  <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
-                  {{ if $hasChildren }}
-                    <ul class="product-sidebar__submenu" role="list">
-                      {{ range $categories }}
-                        <li class="product-sidebar__subitem">
-                          {{ $categoryParam := urlquery . }}
-                          <a class="product-sidebar__sublink" data-category="{{ . }}" href="{{ printf "%s?category=%s" $menuURL $categoryParam }}">{{ . }}</a>
-                        </li>
-                      {{ end }}
-                    </ul>
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        </aside>
+        {{ partial "product-sidebar.html" (dict "page" . "enableFilters" true) }}
 
         <div class="product-listing__body">
-          <header class="product-listing__header">
-            <h1 class="product-listing__title">{{ .Title }}</h1>
-            {{ with .Content }}<div class="product-listing__intro">{{ . }}</div>{{ end }}
-          </header>
-
-          {{ $visiblePermalinks := slice }}
-          {{ range $pgr.Pages }}
-            {{ $visiblePermalinks = $visiblePermalinks | append .Permalink }}
-          {{ end }}
+          <div class="product-listing__toolbar">
+            <p class="product-listing__count">
+              <span data-product-count>{{ len $products }}</span>
+              {{ if eq $lang "zh" }} 个可询价产品{{ else }} quote-ready products{{ end }}
+            </p>
+            <button class="product-listing__clear" type="button" data-product-filter-clear hidden>{{ if eq $lang "zh" }}清除筛选{{ else }}Clear filter{{ end }}</button>
+          </div>
 
           <div class="product-listing__grid">
-            {{ range $allProducts }}
+            {{ range $products }}
               {{ $pageCats := slice }}
+              {{ with .Params.product_type }}{{ $pageCats = $pageCats | append . }}{{ end }}
               {{ with .Params.pallet_category }}
                 {{ $catVal := . }}
                 {{ if eq (printf "%T" $catVal) "string" }}
                   {{ $pageCats = $pageCats | append $catVal }}
                 {{ else }}
-                  {{ range $catVal }}
-                    {{ $pageCats = $pageCats | append . }}
-                  {{ end }}
+                  {{ range $catVal }}{{ $pageCats = $pageCats | append . }}{{ end }}
                 {{ end }}
               {{ end }}
               {{ $pageCats = uniq $pageCats }}
-              {{ $isVisibleByDefault := in $visiblePermalinks .Permalink }}
-              <article class="product-listing__card{{ if not $isVisibleByDefault }} product-listing__card--extra{{ end }}" data-categories="{{ delimit $pageCats "|" }}" data-default-visible="{{ if $isVisibleByDefault }}true{{ else }}false{{ end }}" style="{{ if not $isVisibleByDefault }}display:none;{{ end }}">
+              {{ $desc := .Description | default .Params.hero_description | default .Summary | plainify }}
+              {{ $specs := .Params.specs | default dict }}
+              {{ $dimensions := index $specs "dimensions" }}
+              {{ $dynamicLoad := index $specs "dynamic_load" }}
+              {{ $productTitle := .Title }}
+              <article class="product-listing__card" data-product-card data-categories="{{ delimit $pageCats "|" }}">
                 <a class="product-listing__card-link" href="{{ .RelPermalink }}">
                   <figure class="product-listing__media">
-                    <img class="product-listing__image"
-                         src='{{ .Params.featured_image | default "/images/placeholder.jpg" | relURL }}'
-                         alt='{{ .Title }}'
-                         loading="lazy"
-                         decoding="async">
+                    {{ with .Params.featured_image }}
+                      <img class="product-listing__image"
+                           src="{{ . | relURL }}"
+                           alt="{{ $productTitle }}"
+                           loading="lazy"
+                           decoding="async">
+                    {{ else }}
+                      <span class="product-listing__placeholder">{{ .Params.product_type | default "Product" }}</span>
+                    {{ end }}
                   </figure>
                   <div class="product-listing__content">
+                    {{ with .Params.product_type }}<p class="product-listing__type">{{ . }}</p>{{ end }}
                     <h2 class="product-listing__card-title">{{ .Title }}</h2>
+                    {{ with $desc }}<p class="product-listing__summary">{{ truncate 150 . }}</p>{{ end }}
+                    {{ if or $dimensions $dynamicLoad }}
+                      <dl class="product-listing__specs">
+                        {{ with $dimensions }}
+                          <div><dt>{{ if eq $lang "zh" }}尺寸{{ else }}Size{{ end }}</dt><dd>{{ . }}</dd></div>
+                        {{ end }}
+                        {{ with $dynamicLoad }}
+                          <div><dt>{{ if eq $lang "zh" }}动载{{ else }}Dynamic{{ end }}</dt><dd>{{ . }}</dd></div>
+                        {{ end }}
+                      </dl>
+                    {{ end }}
                   </div>
                 </a>
+                <a class="product-listing__quote" href="{{ $contactURL }}?product={{ .Title | urlquery }}">{{ if eq $lang "zh" }}询价此产品{{ else }}Quote this product{{ end }}</a>
               </article>
             {{ end }}
           </div>
-          {{ if gt $pgr.TotalPages 1 }}
-          <nav class="product-listing__pager" aria-label='{{ i18n "pagination_label" | default "Pagination" }}'>
-            {{ with $pgr.Prev }}
-              <a href="{{ .URL }}" rel="prev" class="product-listing__pager-button">{{ i18n "prev" | default "Prev" }}</a>
-            {{ else }}
-              <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "prev" | default "Prev" }}</span>
-            {{ end }}
-
-            <ul class="product-listing__pager-list" role="list">
-              {{ range $p := $pgr.Pagers }}
-                {{ $isCurrent := eq $p.PageNumber $pgr.PageNumber }}
-                <li class="product-listing__pager-item">
-                  {{ if $isCurrent }}
-                    <span class="product-listing__pager-number product-listing__pager-number--current" aria-current="page" aria-label='{{ i18n "current_page" | default "Current page" }}'>{{ $p.PageNumber }}</span>
-                  {{ else }}
-                    <a class="product-listing__pager-number" href="{{ $p.URL }}"
-                       aria-label='{{ i18n "go_to_page" (dict "n" $p.PageNumber) | default (printf "Go to page %d" $p.PageNumber) }}'>
-                      {{ $p.PageNumber }}
-                    </a>
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-
-            {{ with $pgr.Next }}
-              <a href="{{ .URL }}" rel="next" class="product-listing__pager-button">{{ i18n "next" | default "Next" }}</a>
-            {{ else }}
-              <span class="product-listing__pager-button product-listing__pager-button--disabled" aria-disabled="true">{{ i18n "next" | default "Next" }}</span>
-            {{ end }}
-          </nav>
-          {{ end }}
         </div>
       </div>
     </div>
   </section>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const params = new URLSearchParams(window.location.search);
-      const activeCategory = params.get('category') || '';
-      const cards = document.querySelectorAll('.product-listing__card');
-      const links = document.querySelectorAll('.product-sidebar__sublink');
-      const pager = document.querySelector('.product-listing__pager');
-      const sidebar = document.querySelector('.product-sidebar');
-      const sidebarToggle = document.querySelector('.product-sidebar__toggle');
-      const sidebarPanel = document.querySelector('.product-sidebar__panel');
-      const desktopQuery = window.matchMedia('(min-width: 48rem)');
-
-      const toggleCards = (category) => {
-        cards.forEach((card) => {
-          const list = (card.dataset.categories || '').split('|').filter(Boolean);
-          const defaultVisible = card.dataset.defaultVisible === 'true';
-          const matches = category ? list.includes(category) : defaultVisible;
-          card.style.display = matches ? '' : 'none';
-        });
-
-        links.forEach((link) => {
-          const isActive = category && link.dataset.category === category;
-          link.classList.toggle('product-sidebar__sublink--active', isActive);
-          if (isActive) {
-            link.setAttribute('aria-current', 'true');
-          } else {
-            link.removeAttribute('aria-current');
-          }
-        });
-        if (pager) {
-          pager.style.display = category ? 'none' : '';
-        }
-      };
-
-      links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-          const category = link.dataset.category || '';
-          const linkUrl = new URL(link.href, window.location.origin);
-
-          if (linkUrl.pathname !== window.location.pathname) {
-            return;
-          }
-
-          event.preventDefault();
-          const url = new URL(window.location.href);
-
-          if (category) {
-            url.searchParams.set('category', category);
-          } else {
-            url.searchParams.delete('category');
-          }
-
-          window.history.replaceState({}, '', url.toString());
-          toggleCards(category);
-
-          if (!desktopQuery.matches && sidebar) {
-            sidebar.classList.remove('is-open');
-            syncSidebarState();
-          }
-        });
-      });
-
-      toggleCards(activeCategory);
-
-      const syncSidebarState = () => {
-        if (!sidebar || !sidebarToggle || !sidebarPanel) return;
-        const isDesktop = desktopQuery.matches;
-        const shouldBeOpen = isDesktop || sidebar.classList.contains('is-open');
-
-        sidebar.classList.toggle('is-open', shouldBeOpen);
-        sidebarToggle.setAttribute('aria-expanded', shouldBeOpen ? 'true' : 'false');
-        sidebarPanel.hidden = !shouldBeOpen && !isDesktop;
-      };
-
-      if (sidebar && sidebarToggle && sidebarPanel) {
-        sidebar.classList.toggle('is-open', desktopQuery.matches);
-        syncSidebarState();
-
-        sidebarToggle.addEventListener('click', () => {
-          sidebar.classList.toggle('is-open');
-          syncSidebarState();
-        });
-
-        desktopQuery.addEventListener('change', () => {
-          sidebar.classList.toggle('is-open', desktopQuery.matches);
-          syncSidebarState();
-        });
-      }
-    });
-  </script>
 {{ end }}

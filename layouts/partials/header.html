@@ -1,44 +1,119 @@
-{{ $menu := .Site.Menus.main }}
-{{ $languages := .Site.Languages }}
+{{- $menu := .Site.Menus.main -}}
+{{- $languages := .Site.Languages -}}
+{{- $lang := .Site.Language.Lang -}}
+
 <header class="site-header" data-site-header>
   <div class="site-header__bar">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="{{ "/" | relLangURL }}">
-        <img class="site-header__logo-image" src="{{ "images/logo.webp" | relURL }}" alt="{{ .Site.Title }}" width="400"
-          height="100" decoding="async">
+      <a class="site-header__logo" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}">
+        <img class="site-header__logo-image" src="{{ "images/logo.webp" | relURL }}" alt="{{ .Site.Title }}" width="336" height="79" decoding="async">
       </a>
 
-      <div class="site-header__actions">
-        {{ if gt (len $languages) 1 }}
-        <details class="site-header__language" data-language-switcher>
-          <summary class="site-header__icon-button">
-            <span class="site-header__language-label font-meta">{{ .Site.Language.LanguageName }}</span>
-            <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="1.8" />
-            </svg>
-          </summary>
-          <ul class="site-header__language-list">
-            {{ range $languages }}
-            {{ $langCode := .Lang }}
-            {{ $target := $langCode | relLangURL }}
-            {{ range $.AllTranslations }}
-            {{ if eq .Language.Lang $langCode }}{{ $target = .RelPermalink }}{{ end }}
-            {{ end }}
-            <li>
-              <a class="site-header__language-link font-meta {{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}"
-                href="{{ $target }}" lang="{{ or .LanguageCode .Lang }}" {{ if eq $.Site.Language.Lang .Lang
-                }}aria-current="true" {{ end }}>
-                {{ .LanguageName }}
+      <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" | default "Primary navigation" }}'>
+        <ul class="site-header__nav-list" role="list">
+          {{- range $menu -}}
+            {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
+            {{- $isCurrent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
+            <li class="site-header__nav-item{{ if .HasChildren }} site-header__nav-item--has-children{{ end }}{{ if eq $itemKey "products" }} site-header__nav-item--mega{{ end }}">
+              <a class="site-header__nav-link{{ if $isCurrent }} site-header__nav-link--current{{ end }}" href="{{ .URL | relLangURL }}"{{ if $isCurrent }} aria-current="page"{{ end }}>
+                <span>{{ .Name }}</span>
+                {{- if .HasChildren -}}
+                  <svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                  </svg>
+                {{- end -}}
               </a>
-            </li>
-            {{ end }}
-          </ul>
-        </details>
-        {{ end }}
 
-        <button class="site-header__menu-toggle" type="button" aria-expanded="false"
-          aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" | default "Open menu" }}' data-menu-toggle>
+              {{- if .HasChildren -}}
+                {{- if eq $itemKey "products" -}}
+                  <div class="site-header__mega" aria-label="{{ .Name }}">
+                    <div class="container container--wide site-header__mega-inner">
+                      <div class="site-header__mega-lede">
+                        <p class="site-header__mega-eyebrow">{{ if eq $lang "zh" }}产品中心{{ else }}Product Center{{ end }}</p>
+                        <h2 class="site-header__mega-title">{{ if eq $lang "zh" }}按采购场景快速找到合适的塑料包装产品{{ else }}Find the right plastic handling product by use case{{ end }}</h2>
+                        <p class="site-header__mega-text">{{ if eq $lang "zh" }}托盘、卡板箱、周转筐和容器统一入口，方便采购团队快速发起询盘。{{ else }}Pallets, pallet boxes, crates, and containers organized for faster sourcing and quotation requests.{{ end }}</p>
+                        <a class="button button--secondary site-header__mega-cta" href="{{ .URL | relLangURL }}">{{ if eq $lang "zh" }}查看全部产品{{ else }}View all products{{ end }}</a>
+                      </div>
+
+                      <div class="site-header__mega-columns">
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">{{ if eq $lang "zh" }}塑料托盘{{ else }}Plastic Pallets{{ end }}</p>
+                          <ul class="site-header__mega-list" role="list">
+                            {{- range .Children -}}
+                              {{- if or (in .URL "/pallets/") (in .URL "/blow-molded-pallets/") -}}
+                                <li><a class="site-header__mega-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                              {{- end -}}
+                            {{- end -}}
+                          </ul>
+                        </div>
+
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">{{ if eq $lang "zh" }}箱体与容器{{ else }}Boxes & Containers{{ end }}</p>
+                          <ul class="site-header__mega-list" role="list">
+                            {{- range .Children -}}
+                              {{- if or (in .URL "/foldable-pallet-boxes/") (in .URL "/bulk-containers/") (in .URL "/crates/") -}}
+                                <li><a class="site-header__mega-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                              {{- end -}}
+                            {{- end -}}
+                          </ul>
+                        </div>
+
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">{{ if eq $lang "zh" }}采购支持{{ else }}Buying Support{{ end }}</p>
+                          <ul class="site-header__mega-list" role="list">
+                            {{- range .Children -}}
+                              {{- if in .URL "/waste-bins/" -}}
+                                <li><a class="site-header__mega-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                              {{- end -}}
+                            {{- end -}}
+                            <li><a class="site-header__mega-link" href="{{ "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}">{{ if eq $lang "zh" }}RFQ 规格清单{{ else }}RFQ specification checklist{{ end }}</a></li>
+                            <li><a class="site-header__mega-link" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {{- else -}}
+                  <ul class="site-header__submenu" role="list">
+                    {{- range .Children -}}
+                      {{- $childCurrent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
+                      <li class="site-header__submenu-item">
+                        <a class="site-header__submenu-link{{ if $childCurrent }} site-header__submenu-link--current{{ end }}" href="{{ .URL | relLangURL }}"{{ if $childCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a>
+                      </li>
+                    {{- end -}}
+                  </ul>
+                {{- end -}}
+              {{- end -}}
+            </li>
+          {{- end -}}
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        {{- if gt (len $languages) 1 -}}
+          <details class="site-header__language" data-language-switcher>
+            <summary class="site-header__icon-button">
+              <span class="site-header__language-label font-meta">{{ .Site.Language.LanguageName }}</span>
+              <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+              </svg>
+            </summary>
+            <ul class="site-header__language-list" role="list">
+              {{- range $languages -}}
+                {{- $langCode := .Lang -}}
+                {{- $target := $langCode | relLangURL -}}
+                {{- range $.AllTranslations -}}
+                  {{- if eq .Language.Lang $langCode -}}{{- $target = .RelPermalink -}}{{- end -}}
+                {{- end -}}
+                <li>
+                  <a class="site-header__language-link font-meta{{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}" href="{{ $target }}" lang="{{ or .LanguageCode .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="true"{{ end }}>{{ .LanguageName }}</a>
+                </li>
+              {{- end -}}
+            </ul>
+          </details>
+        {{- end -}}
+
+        <button class="site-header__menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" | default "Open menu" }}' data-menu-toggle>
           <span class="site-header__menu-toggle-box" aria-hidden="true">
             <span class="site-header__menu-toggle-line"></span>
             <span class="site-header__menu-toggle-line"></span>
@@ -46,43 +121,6 @@
           </span>
         </button>
       </div>
-
-      <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" | default "Primary navigation" }}'>
-        <ul class="site-header__nav-list">
-          {{ range $menu }}
-          {{ $itemKey := .Identifier | default (.Name | anchorize) }}
-          <li class="site-header__nav-item{{ if .HasChildren }} site-header__nav-item--has-children{{ end }}">
-            {{ if .HasChildren }}
-            <button class="site-header__nav-link site-header__nav-toggle{{ if or ($.IsMenuCurrent "main" .)
-              ($.HasMenuCurrent "main" .) }} site-header__nav-link--current{{ end }}" type="button">
-              <span>{{ .Name }}</span>
-              <svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="1.8" />
-              </svg>
-            </button>
-            <ul class="site-header__submenu">
-              {{ range .Children }}
-              <li class="site-header__submenu-item">
-                <a class="site-header__submenu-link{{ if or ($.IsMenuCurrent " main" .) ($.HasMenuCurrent "main" .) }}
-                  site-header__submenu-link--current{{ end }}" href="{{ .URL | relLangURL }}" {{ if or
-                  ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}aria-current="page" {{ end }}>
-                  {{ .Name }}
-                </a>
-              </li>
-              {{ end }}
-            </ul>
-            {{ else }}
-            <a class="site-header__nav-link{{ if or ($.IsMenuCurrent " main" .) ($.HasMenuCurrent "main" .) }}
-              site-header__nav-link--current{{ end }}" href="{{ .URL | relLangURL }}" {{ if or ($.IsMenuCurrent "main"
-              .) ($.HasMenuCurrent "main" .) }}aria-current="page" {{ end }}>
-              {{ .Name }}
-            </a>
-            {{ end }}
-          </li>
-          {{ end }}
-        </ul>
-      </nav>
     </div>
   </div>
 
@@ -92,45 +130,47 @@
         <button class="site-header__back" type="button" data-menu-back hidden>
           <span aria-hidden="true">&lt;</span>
         </button>
+        <p class="site-header__mobile-title" data-menu-title>{{ i18n "menu" | default "Menu" }}</p>
       </div>
 
       <div class="site-header__mobile-panels">
         <div class="site-header__mobile-panel site-header__mobile-panel--root" data-menu-panel="root">
-          <ul class="site-header__mobile-list">
-            {{ range $menu }}
-            {{ $itemKey := .Identifier | default (.Name | anchorize) }}
-            <li class="site-header__mobile-item">
-              {{ if .HasChildren }}
-              <button class="site-header__mobile-link site-header__mobile-link--submenu" type="button"
-                data-menu-open="{{ $itemKey }}">
-                <span>{{ .Name }}</span>
-                <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1.8" />
-                </svg>
-              </button>
-              {{ else }}
-              <a class="site-header__mobile-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-              {{ end }}
-            </li>
-            {{ end }}
+          <ul class="site-header__mobile-list" role="list">
+            {{- range $menu -}}
+              {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
+              <li class="site-header__mobile-item">
+                {{- if .HasChildren -}}
+                  <button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="{{ $itemKey }}">
+                    <span>{{ .Name }}</span>
+                    <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                    </svg>
+                  </button>
+                {{- else -}}
+                  <a class="site-header__mobile-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                {{- end -}}
+              </li>
+            {{- end -}}
           </ul>
         </div>
 
-        {{ range $menu }}
-        {{ $itemKey := .Identifier | default (.Name | anchorize) }}
-        {{ if .HasChildren }}
-        <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
-          <ul class="site-header__mobile-list">
-            {{ range .Children }}
-            <li class="site-header__mobile-item">
-              <a class="site-header__mobile-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        {{ end }}
-        {{ end }}
+        {{- range $menu -}}
+          {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
+          {{- if .HasChildren -}}
+            <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
+              <ul class="site-header__mobile-list" role="list">
+                <li class="site-header__mobile-item">
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="{{ .URL | relLangURL }}">{{ if eq $lang "zh" }}全部{{ else }}All{{ end }} {{ .Name }}</a>
+                </li>
+                {{- range .Children -}}
+                  <li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                  </li>
+                {{- end -}}
+              </ul>
+            </div>
+          {{- end -}}
+        {{- end -}}
       </div>
     </div>
   </div>
@@ -147,29 +187,26 @@
     const title = header.querySelector('[data-menu-title]');
     const languageSwitcher = header.querySelector('[data-language-switcher]');
     const menuTitles = {
-      root: {{ (i18n "menu" | default "菜单") | jsonify }},
-      {{ range $menu }}{{ if .HasChildren }}{{ (.Identifier | default (.Name | anchorize)) | jsonify }}: {{ .Name | jsonify }},{{ end }}{{ end }}
+      root: {{ printf "%q" (i18n "menu" | default "Menu") | safeJS }},
+      {{ range $menu }}{{ if .HasChildren }}{{ printf "%q" (.Identifier | default (.Name | anchorize)) | safeJS }}: {{ printf "%q" .Name | safeJS }},{{ end }}{{ end }}
     };
-
-    let activePanel = 'root';
 
     const closeLanguageSwitcher = () => {
       if (languageSwitcher) languageSwitcher.removeAttribute('open');
     };
 
     const showPanel = (panelName) => {
-      activePanel = panelName;
       header.querySelectorAll('[data-menu-panel]').forEach((panel) => {
         panel.hidden = panel.dataset.menuPanel !== panelName;
       });
-      backButton.hidden = panelName === 'root';
-      title.textContent = menuTitles[panelName] || menuTitles.root;
+      if (backButton) backButton.hidden = panelName === 'root';
+      if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
     };
 
     const closeDrawer = () => {
       header.dataset.menuState = 'closed';
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', {{ (i18n "open_menu" | default "Open menu") | jsonify }});
+      toggle.setAttribute('aria-label', {{ printf "%q" (i18n "open_menu" | default "Open menu") | safeJS }});
       drawer.hidden = true;
       document.body.classList.remove('is-menu-open');
       showPanel('root');
@@ -181,14 +218,13 @@
       requestAnimationFrame(() => {
         header.dataset.menuState = 'open';
         toggle.setAttribute('aria-expanded', 'true');
-        toggle.setAttribute('aria-label', {{ (i18n "close_menu" | default "Close menu") | jsonify }});
+        toggle.setAttribute('aria-label', {{ printf "%q" (i18n "close_menu" | default "Close menu") | safeJS }});
         document.body.classList.add('is-menu-open');
       });
     };
 
     toggle.addEventListener('click', () => {
-      const isOpen = header.dataset.menuState === 'open';
-      if (isOpen) {
+      if (header.dataset.menuState === 'open') {
         closeDrawer();
       } else {
         openDrawer();
@@ -196,24 +232,18 @@
     });
 
     header.querySelectorAll('[data-menu-open]').forEach((button) => {
-      button.addEventListener('click', () => {
-        showPanel(button.dataset.menuOpen);
-      });
+      button.addEventListener('click', () => showPanel(button.dataset.menuOpen));
     });
 
-    backButton.addEventListener('click', () => showPanel('root'));
+    if (backButton) backButton.addEventListener('click', () => showPanel('root'));
 
     document.addEventListener('click', (event) => {
       if (!languageSwitcher || !languageSwitcher.hasAttribute('open')) return;
-      if (!languageSwitcher.contains(event.target)) {
-        closeLanguageSwitcher();
-      }
+      if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1024) {
-        closeDrawer();
-      }
+      if (window.innerWidth >= 1024) closeDrawer();
     });
 
     showPanel('root');

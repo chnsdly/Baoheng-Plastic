@@ -1,6 +1,7 @@
 ---
 
-title: "foldable-crates"
+title: "Foldable Plastic Crates"
+description: "This collapsible plastic crate is made from virgin HDPE and features a smart latch design that opens and closes with a simple pull-and-lock motion."
 featured_image: "/images/products/crate-box/foldable-crates-hero.jpg"
 product_type: "Plastic Crates & Boxes"
 pallet_category: []

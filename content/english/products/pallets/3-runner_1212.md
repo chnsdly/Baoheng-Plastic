@@ -1,6 +1,7 @@
 ---
 
 title: "1212 open deck 3-runner plastic pallet"
+description: "Rackable plastic pallets made from 100% virgin HDPE/PP using large precision one-piece molds."
 featured_image: "/images/products/pallet/3-runner/1212-hero.jpg"
 product_type: "Plastic Pallets"
 pallet_category:

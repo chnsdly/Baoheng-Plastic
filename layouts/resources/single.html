@@ -1,120 +1,93 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-{{ $lang := .Site.Language.Lang }}
-{{ $p := . }}
-
-<article class="post container container--narrow" aria-label="{{ .Title }}">
-
-  <!-- 头部：标题 + 元信息 -->
-  <header class="post-head">
-    <h1>{{ .Title }}</h1>
-    <p class="meta">
-      {{ if eq $lang "zh" }}
-        发布于 {{ .Date.Format "2006-01-02" }} · 约 {{ .ReadingTime }} 分钟
-        {{ with .Lastmod }}{{ if gt .Unix $p.Date.Unix }} · 更新 {{ .Format "2006-01-02" }}{{ end }}{{ end }}
-      {{ else }}
-        Published {{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read
-        {{ with .Lastmod }}{{ if gt .Unix $p.Date.Unix }} · Updated {{ .Format "Jan 2, 2006" }}{{ end }}{{ end }}
-      {{ end }}
-      {{ with .Params.author }} · {{ . }}{{ end }}
-    </p>
-  </header>
-
-  <!-- 封面：使用 static 目录下的 cover_image 或 featured_image -->
-  {{ $src := or .Params.cover_image .Params.featured_image }}
-  {{ if $src }}
-    <img class="post-cover" src='{{ $src | relURL }}' alt='{{ .Title }}' loading="lazy" decoding="async">
-  {{ else }}
-    <img class="post-cover" src='{{ "/images/placeholder.jpg" | relURL }}' alt='{{ .Title }}' loading="lazy" decoding="async">
-  {{ end }}
-
-  <!-- 主体正文（不再包含目录） -->
-  <div class="post-body">
-    {{ .Content }}
-  </div>
-
-  <!-- 标签 -->
-  {{ with .Params.tags }}
-    <p class="post-tags">
-      <span>{{ if eq $lang "zh"}}标签：{{else}}Tags:{{end}}</span>
-      {{ range . }}
-        <a class="tag" href='{{ (printf "tags/%s/" (urlize .)) | relLangURL }}'>#{{ . }}</a>
-      {{ end }}
-    </p>
-  {{ end }}
-
-  <!-- 分享 -->
-  {{ $u := .Permalink | urlquery }}
-  {{ $t := .Title | urlquery }}
-  <div class="post-share">
-    <span>{{ if eq $lang "zh"}}分享：{{else}}Share:{{end}}</span>
-    <a class="btn btn-sm" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $u }}">LinkedIn</a>
-    <a class="btn btn-sm" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url={{ $u }}&text={{ $t }}">X/Twitter</a>
-    <a class="btn btn-sm" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ $u }}">Facebook</a>
-  </div>
-
-  <!-- 上一/下一篇 -->
-  <nav class="post-pager" aria-label="{{ if eq $lang "zh"}}文章导航{{else}}Post navigation{{end}}">
-    {{ with .PrevInSection }}
-      <a class="prev" href="{{ .RelPermalink }}" rel="prev">← {{ if eq $lang "zh"}}上一篇{{else}}Previous{{end}}</a>
-    {{ else }}
-      <span class="prev disabled" aria-disabled="true">← {{ if eq $lang "zh"}}上一篇{{else}}Previous{{end}}</span>
-    {{ end }}
-    {{ with .NextInSection }}
-      <a class="next" href="{{ .RelPermalink }}" rel="next">{{ if eq $lang "zh"}}下一篇{{else}}Next{{end}} →</a>
-    {{ else }}
-      <span class="next disabled" aria-disabled="true">{{ if eq $lang "zh"}}下一篇{{else}}Next{{end}} →</span>
-    {{ end }}
-  </nav>
-
-  <!-- 相关文章 -->
-  {{ $all := where site.RegularPages "Section" "blog" }}
-  {{ $rel := slice }}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $cover := or .Params.cover_image .Params.featured_image }}
+  {{ $all := where .Site.RegularPages "Section" "resources" }}
+  {{ $related := slice }}
   {{ if .Params.tags }}
-    {{ range $p := $all }}
-      {{ if and (ne $p.RelPermalink .RelPermalink) (gt (len (intersect $p.Params.tags $.Params.tags)) 0) }}
-        {{ $rel = $rel | append $p }}
+    {{ range $candidate := $all }}
+      {{ if and (ne $candidate.RelPermalink $.RelPermalink) (gt (len (intersect ($candidate.Params.tags | default slice) $.Params.tags)) 0) }}
+        {{ $related = $related | append $candidate }}
       {{ end }}
     {{ end }}
   {{ end }}
-  {{ if eq (len $rel) 0 }}
-    {{ range $p := (where $all "RelPermalink" "ne" .RelPermalink) }}
-      {{ $rel = $rel | append $p }}
-    {{ end }}
-  {{ end }}
-  {{ $rel = first 3 (sort $rel "Date" "desc") }}
-  {{ if gt (len $rel) 0 }}
-    <section class="post-related">
-      <h2>{{ if eq $lang "zh"}}相关文章{{else}}Related articles{{end}}</h2>
-      <div class="blog-grid">
-        {{ range $p := $rel }}
-          <article class="blog-card eq">
-            <a class="media" href="{{ $p.RelPermalink }}">
-              {{ with $p.Params.cover_image }}
-                <img src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
-              {{ else }}
-                <div class="ph-media" aria-hidden="true"></div>
-              {{ end }}
-            </a>
-            <div class="card-body">
-              <h3 ><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
-              <p class="meta">
-                {{ if eq $lang "zh" }}
-                  {{ $p.Date.Format "2006-01-02" }} · 约 {{ $p.ReadingTime }} 分钟
-                {{ else }}
-                  {{ $p.Date.Format "Jan 2, 2006" }} · {{ $p.ReadingTime }} min
-                {{ end }}
-              </p>
-            </div>
-            <div class="card-actions">
-              <a class="btn btn-secondary" href="{{ $p.RelPermalink }}">{{ if eq $lang "zh"}}阅读全文{{else}}Read more{{end}}</a>
-            </div>
-          </article>
-        {{ end }}
-      </div>
-    </section>
+  {{ if eq (len $related) 0 }}
+    {{ $related = where $all "RelPermalink" "ne" .RelPermalink }}
   {{ end }}
 
-</article>
+  <article class="resource-single">
+    <header class="resource-single__hero">
+      <div class="container resource-single__hero-inner">
+        <p class="resource-single__eyebrow">{{ if eq $lang "zh" }}采购指南{{ else }}Sourcing guide{{ end }}</p>
+        <h1 class="resource-single__title">{{ .Title }}</h1>
+        <p class="resource-single__meta">
+          {{ .Date.Format (cond (eq $lang "zh") "2006-01-02" "Jan 2, 2006") }}
+          <span aria-hidden="true">/</span>
+          {{ .ReadingTime }} {{ if eq $lang "zh" }}分钟阅读{{ else }}min read{{ end }}
+          {{ with .Params.author }}<span aria-hidden="true">/</span> {{ . }}{{ end }}
+        </p>
+        {{ with .Description }}<p class="resource-single__desc">{{ . }}</p>{{ end }}
+      </div>
+    </header>
+
+    <div class="container resource-single__layout">
+      <main class="resource-single__main">
+        {{ with $cover }}
+          <img class="resource-single__cover" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" decoding="async">
+        {{ end }}
+
+        <div class="resource-single__body">
+          {{ .Content }}
+        </div>
+
+        {{ with .Params.tags }}
+          <div class="resource-single__tags">
+            <span>{{ if eq $lang "zh" }}标签{{ else }}Tags{{ end }}</span>
+            {{ range . }}
+              <a href='{{ (printf "tags/%s/" (urlize .)) | relLangURL }}'>#{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </main>
+
+      <aside class="resource-single__aside">
+        <div class="resource-cta">
+          <p class="resource-cta__eyebrow">{{ if eq $lang "zh" }}需要选型帮助？{{ else }}Need model selection help?{{ end }}</p>
+          <h2>{{ if eq $lang "zh" }}把工况发给我们{{ else }}Send us your operating conditions{{ end }}</h2>
+          <p>{{ if eq $lang "zh" }}说明产品类型、数量、承重、尺寸和使用场景，我们会给出更合适的采购建议。{{ else }}Share product type, quantity, load, size, and application. We will recommend a practical sourcing direction.{{ end }}</p>
+          <a class="button" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a>
+        </div>
+      </aside>
+    </div>
+
+    {{ if gt (len $related) 0 }}
+      <section class="resource-related">
+        <div class="container">
+          <div class="resource-related__header">
+            <p class="resource-single__eyebrow">{{ if eq $lang "zh" }}继续阅读{{ else }}Continue reading{{ end }}</p>
+            <h2>{{ if eq $lang "zh" }}相关采购内容{{ else }}Related buying resources{{ end }}</h2>
+          </div>
+          <div class="resources-grid resources-grid--compact">
+            {{ range first 3 (sort $related "Date" "desc") }}
+              {{ $itemCover := or .Params.cover_image .Params.featured_image }}
+              <article class="resource-card">
+                <a class="resource-card__media" href="{{ .RelPermalink }}">
+                  {{ with $itemCover }}
+                    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">
+                  {{ else }}
+                    <span class="resource-card__placeholder" aria-hidden="true"></span>
+                  {{ end }}
+                </a>
+                <div class="resource-card__body">
+                  <p class="resource-card__meta">{{ .Date.Format (cond (eq $lang "zh") "2006-01-02" "Jan 2, 2006") }}</p>
+                  <h3 class="resource-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  </article>
 {{ end }}

@@ -1,53 +1,67 @@
 {{ define "main" }}
+  {{ $lang := .Site.Language.Lang }}
   <section class="contact-hero">
     <div class="container contact-hero__grid contact-hero__grid--balanced">
+      <div class="contact-hero__intro">
+        <p class="contact-hero__eyebrow">{{ .Site.Params.company_name }}</p>
+        <h1 class="contact-hero__headline">{{ if eq $lang "zh" }}告诉我们您的采购需求{{ else }}Tell us what you need to source{{ end }}</h1>
+        <p class="contact-hero__lede">
+          {{ if eq $lang "zh" }}
+            提交产品型号、数量、承重、尺寸、使用场景或目标交期，我们会根据托盘、卡板箱、筐箱和容器的真实工况给出选型建议与报价。
+          {{ else }}
+            Share the product type, quantity, load, size, application, or delivery target. Our team will recommend suitable pallets, pallet boxes, crates, or containers and reply with a practical quotation.
+          {{ end }}
+        </p>
+
+        <div class="contact-hero__steps" role="list" aria-label="{{ if eq $lang "zh" }}询盘流程{{ else }}Inquiry process{{ end }}">
+          <div class="contact-hero__step" role="listitem">
+            <span>1</span>
+            <p>{{ if eq $lang "zh" }}提交产品和使用场景{{ else }}Send product and application details{{ end }}</p>
+          </div>
+          <div class="contact-hero__step" role="listitem">
+            <span>2</span>
+            <p>{{ if eq $lang "zh" }}工程/销售确认规格{{ else }}We confirm the suitable specification{{ end }}</p>
+          </div>
+          <div class="contact-hero__step" role="listitem">
+            <span>3</span>
+            <p>{{ if eq $lang "zh" }}提供报价与交付建议{{ else }}You receive a quotation and delivery plan{{ end }}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="contact-hero__form">
         <div class="contact-form-card">
           <div class="contact-form-card__header">
-            <p>提交表单，我们会在1 个工作日内回复。</p>
+            <p class="contact-panel__eyebrow">{{ if eq $lang "zh" }}询盘表单{{ else }}Inquiry form{{ end }}</p>
+            <h2>{{ if eq $lang "zh" }}获取工厂报价{{ else }}Get a factory quote{{ end }}</h2>
+            <p>{{ if eq $lang "zh" }}通常 1 个工作日内回复。{{ else }}We usually reply within one business day.{{ end }}</p>
           </div>
           <div class="contact-form-card__body">
             {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="contact-hero__intro">
-        <p class="contact-hero__eyebrow">{{ .Site.Params.company_name }}</p>
-        <p class="contact-hero__lede">{{ i18n "contact_detail_intro" }}</p>
-
-        <div class="contact-hero__meta contact-hero__meta--list">
-          <div class="contact-hero__meta-row">
-            <p class="contact-hero__meta-label">Email</p>
-            <p class="contact-hero__meta-value">{{ .Site.Params.contact_email }}</p>
-          </div>
-          <div class="contact-hero__meta-row">
-            <p class="contact-hero__meta-label">Phone</p>
-            <p class="contact-hero__meta-value">{{ .Site.Params.contact_phone }}</p>
-          </div>
-          <div class="contact-hero__meta-row">
-            <p class="contact-hero__meta-label">Address</p>
-            <p class="contact-hero__meta-value">{{ .Site.Params.contact_address }}</p>
-          </div>
-          <div class="contact-hero__meta-row">
-            <p class="contact-hero__meta-label">Working hours</p>
-            <p class="contact-hero__meta-value">{{ .Site.Params.business_hours }}</p>
-          </div>
-          <div class="contact-hero__meta-row contact-hero__meta-row--social">
-            <p class="contact-hero__meta-label">Social</p>
-            <div class="contact-social">
-              {{ $icons := dict "linkedin" "linkedin" "twitter" "x" "facebook" "facebook" "youtube" "youtube" }}
-              {{ range $key, $value := .Site.Params.social }}
-                {{ with index $icons $key }}
-                  <a class="contact-social__link" href="{{ $value }}" target="_blank" rel="noopener" aria-label="{{ $key }}">
-                    <img src="{{ printf "%simages/icons/%s.svg" ("/" | relURL) . }}" alt="{{ $key }} icon" loading="lazy">
-                  </a>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      </div>
+  <section class="contact-details">
+    <div class="container contact-details__grid">
+      <article class="contact-details__card">
+        <p class="contact-details__label">Email</p>
+        <p class="contact-details__value">{{ .Site.Params.contact_email }}</p>
+      </article>
+      <article class="contact-details__card">
+        <p class="contact-details__label">Phone / WhatsApp</p>
+        <p class="contact-details__value">{{ .Site.Params.contact_phone }}</p>
+      </article>
+      <article class="contact-details__card">
+        <p class="contact-details__label">{{ if eq $lang "zh" }}地址{{ else }}Address{{ end }}</p>
+        <p class="contact-details__value">{{ .Site.Params.contact_address }}</p>
+      </article>
+      <article class="contact-details__card">
+        <p class="contact-details__label">{{ if eq $lang "zh" }}工作时间{{ else }}Working hours{{ end }}</p>
+        <p class="contact-details__value">{{ .Site.Params.business_hours }}</p>
+      </article>
     </div>
   </section>
 {{ end }}

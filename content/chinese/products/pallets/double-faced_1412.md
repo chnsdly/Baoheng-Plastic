@@ -1,6 +1,7 @@
 ---
 
 title: "1412-网格双面型塑料托盘"
+description: "堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。"
 featured_image: "/images/products/pallet/double-faced/1412-hero.jpg"
 featured: true
 product_type: "塑料托盘"
