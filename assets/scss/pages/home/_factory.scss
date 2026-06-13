@@ -5,7 +5,7 @@
 
 .factory__inner {
   display: grid;
-  gap: space(2);
+  gap: var(--section-gap);
 }
 
 .factory__description {
@@ -16,7 +16,7 @@
 
 .factory__grid {
   display: grid;
-  gap: space(1.25);
+  gap: var(--grid-gap);
 }
 
 .factory__item {
@@ -37,13 +37,13 @@
 .factory__content {
   display: grid;
   gap: space(0.75);
-  padding: space(1.4);
+  padding: var(--card-padding);
 }
 
 .factory__item-title {
   margin: 0;
   color: var(--on-surface);
-  font-size: 1.2rem;
+  font-size: var(--type-card-title);
   font-weight: var(--weight-bold);
 }
 

@@ -25,17 +25,17 @@
 .resources-nav__title {
   margin: 0;
   color: var(--brand-strong);
-  font-size: 0.8rem;
+  font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--tracking-heading-compact);
   text-transform: uppercase;
 }
 
 .resources-listing__title {
   margin: 0;
   color: var(--on-surface);
-  font-size: clamp(2rem, 4.5vw, 3.6rem);
-  line-height: 1.03;
+  font-size: var(--type-page-title);
+  line-height: var(--line-tight);
   font-weight: var(--weight-extrabold);
   text-wrap: balance;
 }
@@ -138,7 +138,7 @@
 .resource-card__title {
   margin: 0;
   color: var(--on-surface);
-  font-size: 1.18rem;
+  font-size: var(--type-card-title);
   line-height: var(--line-tight);
   font-weight: var(--weight-bold);
   display: -webkit-box;
@@ -177,7 +177,7 @@
 }
 
 .resources-empty h2 {
-  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  font-size: var(--type-subsection-title);
   line-height: var(--line-tight);
 }
 

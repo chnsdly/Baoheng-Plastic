@@ -10,7 +10,7 @@
   gap: space(0.45);
   padding-block: space(0.8);
   color: var(--secondary);
-  font-size: 0.86rem;
+  font-size: var(--type-ui);
 }
 
 .breadcrumb__item {

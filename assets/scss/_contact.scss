@@ -22,9 +22,9 @@
 .contact-details__label {
   margin: 0;
   color: var(--brand-strong);
-  font-size: 0.82rem;
+  font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--tracking-heading-compact);
   text-transform: uppercase;
 }
 
@@ -32,8 +32,8 @@
   max-width: 14ch;
   margin: 0;
   color: var(--on-surface);
-  font-size: clamp(2.25rem, 5.4vw, 4.5rem);
-  line-height: 1;
+  font-size: var(--type-page-title);
+  line-height: var(--line-tight);
   font-weight: var(--weight-extrabold);
   text-wrap: balance;
 }
@@ -42,7 +42,7 @@
   max-width: 58rem;
   margin: 0;
   color: var(--secondary);
-  font-size: 1.05rem;
+  font-size: var(--type-lede);
 }
 
 .contact-hero__steps {
@@ -98,8 +98,8 @@
 
 .contact-form-card__header h2 {
   margin: 0;
-  font-size: clamp(2rem, 3.6vw, 3.25rem);
-  line-height: 1.04;
+  font-size: var(--type-subsection-title);
+  line-height: var(--line-tight);
   font-weight: var(--weight-extrabold);
   text-wrap: balance;
 }

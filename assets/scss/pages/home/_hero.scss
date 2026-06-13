@@ -52,17 +52,17 @@
 .home-hero__eyebrow {
   margin: 0;
   color: color-mix(in srgb, var(--on-brand) 82%, transparent);
-  font-size: 0.82rem;
+  font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
-  letter-spacing: 0.06em;
+  letter-spacing: var(--tracking-heading-compact);
   text-transform: uppercase;
 }
 
 .home-hero__title {
   margin: 0;
   color: var(--on-brand);
-  font-size: clamp(2.1rem, 5vw, 4.2rem);
-  line-height: 1.05;
+  font-size: var(--type-hero-title);
+  line-height: var(--line-tight);
   font-weight: var(--weight-semibold);
 }
 
@@ -70,7 +70,7 @@
   max-width: 48rem;
   margin: 0;
   color: color-mix(in srgb, var(--on-brand) 82%, transparent);
-  font-size: clamp(1rem, 2vw, 1.22rem);
+  font-size: var(--type-lede);
 }
 
 .home-hero__actions,

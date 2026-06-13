@@ -46,9 +46,9 @@
 .product-sidebar__eyebrow {
   margin: 0;
   color: var(--brand-strong);
-  font-size: 0.8rem;
+  font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--tracking-heading-compact);
   text-transform: uppercase;
 }
 
@@ -56,18 +56,18 @@
 .product-hero__title {
   margin: 0;
   color: var(--on-surface);
-  line-height: 1.03;
+  line-height: var(--line-tight);
   font-weight: var(--weight-extrabold);
   text-wrap: balance;
   overflow-wrap: normal;
 }
 
 .product-listing__title {
-  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  font-size: var(--type-page-title);
 }
 
 .product-hero__title {
-  font-size: clamp(2rem, 3.8vw, 3.35rem);
+  font-size: var(--type-page-title);
 }
 
 .product-listing__intro,
@@ -116,7 +116,7 @@
 .product-sidebar__title {
   margin: 0;
   color: var(--on-surface);
-  font-size: 1.05rem;
+  font-size: var(--type-card-title);
   font-weight: var(--weight-bold);
 }
 
@@ -193,7 +193,7 @@
   background: transparent;
   color: var(--secondary);
   text-align: left;
-  font-size: 0.88rem;
+  font-size: var(--type-ui);
   cursor: pointer;
 }
 
@@ -298,9 +298,9 @@
   border: 1px dashed color-mix(in srgb, var(--brand) 28%, var(--line));
   border-radius: var(--radius-s);
   color: var(--brand-strong);
-  font-size: 0.8rem;
+  font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--tracking-heading-compact);
   text-align: center;
   text-transform: uppercase;
 }
@@ -327,7 +327,7 @@
 .product-listing__card-title {
   margin: 0;
   color: var(--on-surface);
-  font-size: 1.05rem;
+  font-size: var(--type-card-title);
   line-height: var(--line-tight);
   font-weight: var(--weight-bold);
 }
@@ -335,7 +335,7 @@
 .product-listing__summary {
   margin: 0;
   color: var(--secondary);
-  font-size: 0.93rem;
+  font-size: var(--type-body-sm);
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -359,7 +359,7 @@
 .product-listing__specs dt,
 .product-hero__specs dt {
   color: var(--secondary);
-  font-size: 0.82rem;
+  font-size: var(--type-eyebrow);
 }
 
 .product-listing__specs dd,
@@ -423,7 +423,7 @@
 .product-related__title {
   margin: 0;
   color: var(--on-surface);
-  font-size: clamp(1.45rem, 3vw, 2.3rem);
+  font-size: var(--type-subsection-title);
   line-height: var(--line-tight);
   font-weight: var(--weight-bold);
 }
@@ -462,7 +462,7 @@
 
 .spec-list__label {
   color: var(--secondary);
-  font-size: 0.84rem;
+  font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
 }
@@ -489,7 +489,7 @@
 
 .product-showcase-grid__title {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: var(--type-content-title);
 }
 
 .product-showcase-grid__description {

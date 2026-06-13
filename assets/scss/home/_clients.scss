@@ -29,7 +29,8 @@
 
   &__title {
     margin: 0;
-    @extend .font-title-l;
+    font-size: var(--type-section-title);
+    line-height: var(--line-tight);
     font-weight: var(--section-title-weight);
   }
 

@@ -28,7 +28,8 @@
 
 .industries-listing__title {
   margin: 0;
-  @extend .font-title-l;
+  font-size: var(--type-section-title);
+  line-height: var(--line-tight);
   font-weight: var(--section-title-weight);
   color: var(--on-surface);
 }
@@ -50,13 +51,13 @@
 
 .industry-card {
   display: grid;
-  gap: space(3);
+  gap: var(--grid-gap);
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   border: var(--border);
   box-shadow: var(--shadow);
-  padding: space(3);
+  padding: var(--panel-padding);
 }
 
 @include mq-up(tablet) {
@@ -69,7 +70,7 @@
 .industry-card__media {
   display: block;
   overflow: hidden;
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   border: var(--border);
   background: var(--surface);
   transition: transform var(--transition-base);
@@ -107,7 +108,9 @@
 
 .industry-card__title {
   margin: 0;
-  @extend .font-title-xs;
+  font-size: var(--type-card-title);
+  line-height: var(--line-tight);
+  font-weight: var(--weight-bold);
 }
 
 .industry-card__link {
@@ -213,10 +216,10 @@
   gap: space(2);
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   border: var(--border);
   box-shadow: var(--shadow);
-  padding: space(3);
+  padding: var(--card-padding);
 }
 
 .industries-sidebar__heading {

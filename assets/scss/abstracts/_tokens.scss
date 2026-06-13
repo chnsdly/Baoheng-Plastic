@@ -36,17 +36,22 @@
   --space: 0.5rem;
   --height-header: 4.2rem;
   --section-padding: 4rem;
+  --section-gap: calc(var(--space) * 4);
+  --grid-gap: calc(var(--space) * 1.5);
+  --panel-padding: calc(var(--space) * 2);
+  --card-padding: calc(var(--space) * 2);
 
   /* Shape */
   --border: 1px solid var(--line);
   --radius-s: 4px;
   --radius-m: 8px;
-  --radius-l: 16px;
+  --radius-l: 12px;
   --radius: var(--radius-m);
   --radius-pill: 999px;
 
   /* Elevation */
   --shadow: 0 1px 2px rgba(23, 32, 29, 0.04), 0 12px 30px rgba(23, 32, 29, 0.06);
+  --shadow-lg: 0 2px 5px rgba(23, 32, 29, 0.06), 0 18px 44px rgba(23, 32, 29, 0.1);
   --shadow-hover: 0 2px 4px rgba(23, 32, 29, 0.06), 0 18px 44px rgba(23, 32, 29, 0.1);
   --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 0 0 1px rgba(23, 32, 29, 0.05);
 
@@ -62,13 +67,39 @@
   --weight-bold: 700;
   --weight-extrabold: 800;
 
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-md: 0.9375rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 2.75rem;
+  --text-6xl: 3.25rem;
+
+  --type-meta: var(--text-sm);
+  --type-ui: var(--text-sm);
+  --type-eyebrow: var(--text-xs);
+  --type-body: var(--text-base);
+  --type-body-sm: var(--text-sm);
+  --type-lede: var(--text-lg);
+  --type-card-title: var(--text-lg);
+  --type-content-title: var(--text-xl);
+  --type-subsection-title: var(--text-2xl);
+  --type-section-title: var(--text-3xl);
+  --type-page-title: var(--text-4xl);
+  --type-hero-title: var(--text-5xl);
+  --type-display: var(--type-page-title);
+
   --line-tight: 1.15;
   --line-normal: 1.55;
   --line-loose: 1.75;
   --tracking-heading-1: 0;
   --tracking-heading-2: 0;
   --tracking-heading-3: 0;
-  --tracking-heading-compact: 0.04em;
+  --tracking-heading-compact: 0;
   --section-title-weight: var(--weight-semibold);
   --section-desc-color: var(--secondary);
 
@@ -82,4 +113,24 @@
   --z-header: 10;
   --z-panel: 20;
   --z-modal: 30;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --panel-padding: calc(var(--space) * 3);
+    --card-padding: calc(var(--space) * 2.5);
+    --type-subsection-title: var(--text-3xl);
+    --type-section-title: var(--text-4xl);
+    --type-page-title: var(--text-5xl);
+    --type-hero-title: var(--text-6xl);
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --section-padding: 5rem;
+    --type-section-title: 2.5rem;
+    --type-page-title: 3rem;
+    --type-hero-title: 3.5rem;
+  }
 }
