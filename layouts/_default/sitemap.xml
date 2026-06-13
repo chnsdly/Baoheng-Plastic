@@ -1,18 +1,55 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+{{- $defaultLang := "" -}}
+{{- with .Site.Sites -}}
+  {{- with index . 0 -}}{{- $defaultLang = .Language.Lang -}}{{- end -}}
+{{- end -}}
 {{- range .Data.Pages }}
   {{- $robots := .Params.robots | default "" -}}
   {{- $excludedKind := in (slice "taxonomy" "term") .Kind -}}
   {{- if and (not $excludedKind) (not (in $robots "noindex")) }}
+  {{- $pageTitle := .Title -}}
+  {{- $xDefaultURL := .Permalink -}}
+  {{- if $defaultLang -}}
+    {{- range .AllTranslations -}}
+      {{- if eq .Language.Lang $defaultLang -}}{{- $xDefaultURL = .Permalink -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $images := slice -}}
+  {{- with .Params.images -}}
+    {{- range . -}}{{- $images = $images | append . -}}{{- end -}}
+  {{- end -}}
+  {{- with .Params.featured_image }}{{- $images = $images | append . -}}{{- end -}}
+  {{- with .Params.cover_image }}{{- $images = $images | append . -}}{{- end -}}
+  {{- with .Params.showcase_gallery -}}
+    {{- range . -}}{{- with .image }}{{- $images = $images | append . -}}{{- end -}}{{- end -}}
+  {{- end -}}
+  {{- with .Params.industry_gallery -}}
+    {{- range . -}}{{- with .image }}{{- $images = $images | append . -}}{{- end -}}{{- end -}}
+  {{- end -}}
+  {{- with .Params.product_showcase.items -}}
+    {{- range . -}}
+      {{- with (or .image .imag) }}{{- $images = $images | append . -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $images = uniq $images -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- with .Lastmod }}
     <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     {{- end }}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}"/>
     {{- range .AllTranslations }}
       {{- $hreflang := .Language.LanguageCode | default .Language.Lang }}
     <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}"/>
+    {{- end }}
+    {{- range first 10 $images }}
+    <image:image>
+      <image:loc>{{ . | absURL }}</image:loc>
+      <image:title>{{ $pageTitle }}</image:title>
+    </image:image>
     {{- end }}
   </url>
   {{- end }}

@@ -1,20 +1,35 @@
-{{- /* Hugo Pipes: SCSS -> CSS; production: minify + fingerprint (+SRI) */ -}}
-{{- $style := resources.Get "scss/main.scss" | toCSS -}}
-{{- if hugo.IsProduction -}}
-  {{- $style = $style | minify | fingerprint -}}
-{{- end -}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}"
-{{- if and hugo.IsProduction $style.Data.Integrity -}} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{- end -}}>
-
 {{- /* Page metadata */ -}}
 {{- $title := .Site.Title -}}
-{{- if not .IsHome -}}
+{{- with .Params.seo_title -}}
+  {{- $title = . -}}
+{{- end -}}
+{{- if and (not .Params.seo_title) (not .IsHome) -}}
   {{- with .Title -}}
-    {{- $title = printf "%s | %s" . $.Site.Title -}}
+    {{- $titleText := . | plainify -}}
+    {{- if gt (len $titleText) 55 -}}
+      {{- $title = . -}}
+    {{- else -}}
+      {{- $title = printf "%s | %s" . $.Site.Title -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- if gt (len ($title | plainify)) 70 -}}
+  {{- $title = truncate 68 $title -}}
+{{- end -}}
 
-{{- $description := (.Description | default .Site.Params.description) | plainify | htmlEscape -}}
+{{- $rawDescription := .Description | default .Params.hero_description | default .Summary | default .Site.Params.description -}}
+{{- $descriptionText := $rawDescription | plainify -}}
+{{- if and (lt (len $descriptionText) 50) .Params.hero_description -}}
+  {{- $descriptionText = .Params.hero_description | plainify -}}
+{{- end -}}
+{{- if and (lt (len $descriptionText) 50) (not .IsHome) .Title -}}
+  {{- $descriptionText = printf "%s - %s" (.Title | plainify) $descriptionText -}}
+{{- end -}}
+{{- if gt (len $descriptionText) 170 -}}
+  {{- $descriptionText = truncate 160 $descriptionText -}}
+{{- end -}}
+{{- $description := $descriptionText | htmlEscape -}}
+{{- $pageTitle := .Title | default .Site.Title | plainify | htmlEscape -}}
 
 {{- $image := "" -}}
 {{- with .Params.images -}}
@@ -34,18 +49,32 @@
 {{- end -}}
 
 {{- $robots := .Params.robots | default (cond (in (slice "taxonomy" "term") .Kind) "noindex, follow" "index, follow") -}}
+{{- if and (not (in $robots "noindex")) (not (in $robots "max-image-preview")) -}}
+  {{- $robots = printf "%s, max-image-preview:large" $robots -}}
+{{- end -}}
 
-<title>{{ $title }}</title>
+{{- /* Hugo Pipes: SCSS -> CSS; production: minify + fingerprint (+SRI) */ -}}
+{{- $style := resources.Get "scss/main.scss" | toCSS -}}
+{{- if hugo.IsProduction -}}
+  {{- $style = $style | minify | fingerprint -}}
+{{- end -}}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">
 <meta name="author" content="{{ .Site.Params.company_name | default .Site.Title }}">
 <meta name="robots" content="{{ $robots }}">
 
 <link rel="canonical" href="{{ .Permalink }}">
+{{- if and .IsNode .Paginator }}
+{{ with .Paginator.Prev }}<link rel="prev" href="{{ .URL | absURL }}">{{ end }}
+{{ with .Paginator.Next }}<link rel="next" href="{{ .URL | absURL }}">{{ end }}
+{{- end }}
 
-{{- /* RSS (optional; keep if you publish articles/news) */ -}}
-<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS" href="{{ "index.xml" | relLangURL }}">
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} RSS" href="{{ .Permalink }}">
+{{- end }}
 
 {{- /* hreflang */ -}}
 {{- $xDefaultURL := .Permalink -}}
@@ -67,24 +96,34 @@
 <link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}">
 {{- end -}}
 
+<link rel="stylesheet" href="{{ $style.RelPermalink }}"{{ if and hugo.IsProduction $style.Data.Integrity }} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
+
 {{- /* Open Graph */ -}}
-<meta property="og:title" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
+<meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "products") }}product{{ else if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="{{ replace (.Site.Language.LanguageCode | default .Site.Language.Lang) "-" "_" }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ replace (.Language.LanguageCode | default .Language.Lang) "-" "_" }}">
+{{- end }}
 {{- if $image -}}
 <meta property="og:image" content="{{ $image }}">
-<meta property="og:image:alt" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
+<meta property="og:image:alt" content="{{ $pageTitle }}">
 {{- end -}}
+{{- if and .IsPage (eq .Section "resources") (not .Date.IsZero) }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+{{- end }}
 
 {{- /* Twitter Card (optional; harmless to keep) */ -}}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title | default .Site.Title | plainify | htmlEscape }}">
+<meta name="twitter:title" content="{{ $pageTitle }}">
 <meta name="twitter:description" content="{{ $description }}">
 {{- if $image -}}
 <meta name="twitter:image" content="{{ $image }}">
+<meta name="twitter:image:alt" content="{{ $pageTitle }}">
 {{- end -}}
 
 {{ partial "schema.html" . }}

@@ -1,14 +1,53 @@
 {{- $graph := slice -}}
 {{- $orgParams := .Site.Params.organization -}}
 {{- $orgID := printf "%s#organization" .Site.BaseURL -}}
+{{- $websiteID := printf "%s#website" .Site.BaseURL -}}
+{{- $pageID := printf "%s#webpage" .Permalink -}}
 {{- $orgName := $orgParams.name | default (.Site.Params.company_name | default .Site.Title) -}}
 {{- $orgLogo := $orgParams.logo | default (.Site.Params.logo | absURL) -}}
+{{- $langCode := .Site.Language.LanguageCode | default .Site.Language.Lang -}}
+{{- $desc := (.Description | default .Params.hero_description | default .Summary | default .Site.Params.description | plainify) -}}
+
+{{- $pageImage := "" -}}
+{{- with .Params.images -}}
+  {{- $pageImage = (index . 0) | absURL -}}
+{{- else -}}
+  {{- with .Params.featured_image -}}
+    {{- $pageImage = . | absURL -}}
+  {{- else -}}
+    {{- with .Params.cover_image -}}
+      {{- $pageImage = . | absURL -}}
+    {{- else -}}
+      {{- with .Site.Params.default_image -}}
+        {{- $pageImage = . | absURL -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $siteLanguages := slice -}}
+{{- range .Site.Languages -}}
+  {{- $siteLanguages = $siteLanguages | append (.LanguageName | default .Lang) -}}
+{{- end -}}
+
 {{- $address := dict "@type" "PostalAddress" -}}
 {{- with $orgParams.address.streetAddress }}{{- $address = merge $address (dict "streetAddress" .) -}}{{- end -}}
 {{- with $orgParams.address.addressLocality }}{{- $address = merge $address (dict "addressLocality" .) -}}{{- end -}}
 {{- with $orgParams.address.addressRegion }}{{- $address = merge $address (dict "addressRegion" .) -}}{{- end -}}
 {{- with $orgParams.address.postalCode }}{{- $address = merge $address (dict "postalCode" .) -}}{{- end -}}
 {{- with $orgParams.address.addressCountry }}{{- $address = merge $address (dict "addressCountry" .) -}}{{- end -}}
+
+{{- $contact := dict "@type" "ContactPoint" "contactType" "sales" -}}
+{{- with ($orgParams.telephone | default .Site.Params.contact_phone) }}{{- $contact = merge $contact (dict "telephone" .) -}}{{- end -}}
+{{- with ($orgParams.email | default .Site.Params.contact_email) }}{{- $contact = merge $contact (dict "email" .) -}}{{- end -}}
+{{- if gt (len $siteLanguages) 0 }}{{- $contact = merge $contact (dict "availableLanguage" $siteLanguages) -}}{{- end -}}
+
+{{- $sameAs := slice -}}
+{{- range $key, $url := .Site.Params.social -}}
+  {{- if and $url (not (in $url "globaltech")) (ne $url "https://facebook.com/") -}}
+    {{- $sameAs = $sameAs | append $url -}}
+  {{- end -}}
+{{- end -}}
 
 {{- $org := dict
   "@type" "Organization"
@@ -22,16 +61,51 @@
 {{- with ($orgParams.telephone | default .Site.Params.contact_phone) }}{{- $org = merge $org (dict "telephone" .) -}}{{- end -}}
 {{- with ($orgParams.email | default .Site.Params.contact_email) }}{{- $org = merge $org (dict "email" .) -}}{{- end -}}
 {{- if gt (len $address) 1 }}{{- $org = merge $org (dict "address" $address) -}}{{- end -}}
+{{- if gt (len $contact) 2 }}{{- $org = merge $org (dict "contactPoint" $contact) -}}{{- end -}}
+{{- if gt (len $sameAs) 0 }}{{- $org = merge $org (dict "sameAs" $sameAs) -}}{{- end -}}
 {{- $graph = $graph | append $org -}}
 
 {{- $website := dict
   "@type" "WebSite"
-  "@id" (printf "%s#website" .Site.BaseURL)
+  "@id" $websiteID
   "url" .Site.BaseURL
   "name" .Site.Title
   "publisher" (dict "@id" $orgID)
+  "inLanguage" $langCode
 -}}
+{{- if gt (len $siteLanguages) 0 }}{{- $website = merge $website (dict "availableLanguage" $siteLanguages) -}}{{- end -}}
 {{- $graph = $graph | append $website -}}
+
+{{- $pageType := "WebPage" -}}
+{{- if .IsNode -}}
+  {{- $pageType = "CollectionPage" -}}
+{{- end -}}
+{{- if .IsHome -}}
+  {{- $pageType = "WebPage" -}}
+{{- end -}}
+{{- if and .IsPage (eq .Section "products") -}}
+  {{- $pageType = "ItemPage" -}}
+{{- else if and .File (eq .File.ContentBaseName "contact") -}}
+  {{- $pageType = "ContactPage" -}}
+{{- else if and .File (eq .File.ContentBaseName "about") -}}
+  {{- $pageType = "AboutPage" -}}
+{{- end -}}
+
+{{- $page := dict
+  "@type" $pageType
+  "@id" $pageID
+  "url" .Permalink
+  "name" (.Title | default .Site.Title)
+  "description" $desc
+  "inLanguage" $langCode
+  "isPartOf" (dict "@id" $websiteID)
+  "publisher" (dict "@id" $orgID)
+-}}
+{{- if $pageImage }}{{- $page = merge $page (dict "primaryImageOfPage" (dict "@type" "ImageObject" "url" $pageImage)) -}}{{- end -}}
+{{- if not .IsHome }}{{- $page = merge $page (dict "breadcrumb" (dict "@id" (printf "%s#breadcrumb" .Permalink))) -}}{{- end -}}
+{{- if and .IsPage (eq .Section "products") }}{{- $page = merge $page (dict "mainEntity" (dict "@id" (printf "%s#product" .Permalink))) -}}{{- end -}}
+{{- if and .IsPage (eq .Section "resources") }}{{- $page = merge $page (dict "mainEntity" (dict "@id" (printf "%s#article" .Permalink))) -}}{{- end -}}
+{{- $graph = $graph | append $page -}}
 
 {{- if not .IsHome -}}
   {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" (cond (eq .Site.Language.Lang "zh") "首页" "Home") "item" ("/" | absLangURL)) -}}
@@ -47,7 +121,6 @@
 {{- end -}}
 
 {{- if and .IsPage (eq .Section "products") -}}
-  {{- $desc := (.Description | default .Params.hero_description | default .Summary | plainify) -}}
   {{- $product := dict
     "@type" "Product"
     "@id" (printf "%s#product" .Permalink)
@@ -56,6 +129,8 @@
     "description" $desc
     "sku" .File.ContentBaseName
     "brand" (dict "@id" $orgID)
+    "manufacturer" (dict "@id" $orgID)
+    "mainEntityOfPage" (dict "@id" $pageID)
   -}}
   {{- with .Params.featured_image }}{{- $product = merge $product (dict "image" (slice (. | absURL))) -}}{{- end -}}
   {{- with .Params.product_type }}{{- $product = merge $product (dict "category" .) -}}{{- end -}}
@@ -72,7 +147,6 @@
 {{- end -}}
 
 {{- if and .IsPage (eq .Section "resources") -}}
-  {{- $desc := (.Description | default .Summary | plainify) -}}
   {{- $article := dict
     "@type" "Article"
     "@id" (printf "%s#article" .Permalink)
@@ -83,8 +157,9 @@
     "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
     "author" (dict "@id" $orgID)
     "publisher" (dict "@id" $orgID)
+    "mainEntityOfPage" (dict "@id" $pageID)
   -}}
-  {{- with (or .Params.cover_image .Params.featured_image) }}{{- $article = merge $article (dict "image" (. | absURL)) -}}{{- end -}}
+  {{- with (or .Params.cover_image .Params.featured_image) }}{{- $article = merge $article (dict "image" (slice (. | absURL))) -}}{{- end -}}
   {{- $graph = $graph | append $article -}}
 {{- end -}}
 

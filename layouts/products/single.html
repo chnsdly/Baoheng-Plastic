@@ -103,11 +103,12 @@
           {{ with .Params.showcase_gallery }}
             <div class="product-gallery" aria-label="{{ if eq $lang "zh" }}产品图片{{ else }}Product gallery{{ end }}">
               {{ range first 4 . }}
+                {{ $galleryAlt := .alt | default $.Title }}
                 {{ with .image }}
                   <figure class="product-gallery__figure">
                     <img class="product-gallery__image"
                          src="{{ . | relURL }}"
-                         alt="{{ $.Title }}"
+                         alt="{{ $galleryAlt }}"
                          loading="lazy"
                          decoding="async">
                   </figure>
@@ -119,11 +120,12 @@
           {{ with .Params.industry_gallery }}
             <div class="product-gallery product-gallery--industry" aria-label="{{ if eq $lang "zh" }}应用场景{{ else }}Application gallery{{ end }}">
               {{ range first 3 . }}
+                {{ $galleryAlt := .alt | default $.Title }}
                 {{ with .image }}
                   <figure class="product-gallery__figure">
                     <img class="product-gallery__image"
                          src="{{ . | relURL }}"
-                         alt="{{ $.Title }}"
+                         alt="{{ $galleryAlt }}"
                          loading="lazy"
                          decoding="async">
                   </figure>
