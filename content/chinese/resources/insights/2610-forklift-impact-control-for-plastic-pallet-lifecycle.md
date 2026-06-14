@@ -33,7 +33,7 @@ popular: false
 - 冲击集中位置；
 - 损伤托盘从现场被隔离的速度。
 
-如果你的项目采用可上架结构（如 [川字塑料托盘](/zh/products/pallets/3-runner_1210/)），冲击纪律尤为重要，因为几何稳定性直接影响货架使用表现。
+如果你的项目采用可上架结构（如 [川字塑料托盘](/products/pallets/3-runner_1210/)），冲击纪律尤为重要，因为几何稳定性直接影响货架使用表现。
 
 ---
 
@@ -68,7 +68,7 @@ popular: false
 - 进叉前叉臂必须找平；
 - 托盘接触梁位后禁止侧推修正。
 
-货架项目建议与这份 [上架与钢管加固检查清单](/zh/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/) 联动执行。
+货架项目建议与这份 [上架与钢管加固检查清单](/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/) 联动执行。
 
 ### 地堆与中转巷道
 
@@ -95,7 +95,7 @@ popular: false
 - 加固配置及声明适用边界；
 - 与巷道工况绑定的到货抽检标准。
 
-若现有RFQ仍偏通用，可基于这份 [塑料托盘RFQ规格清单](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) 增加“冲击治理”章节。
+若现有RFQ仍偏通用，可基于这份 [塑料托盘RFQ规格清单](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) 增加“冲击治理”章节。
 
 ---
 
@@ -128,7 +128,7 @@ popular: false
 
 这些指标应由仓储运营、EHS/质量、采购联合复盘。
 
-如果项目处于切换阶段，可结合这份 [90天塑料托盘试点方案](/zh/resources/insights/2604-plastic-pallet-pilot-program/) 同步推进。
+如果项目处于切换阶段，可结合这份 [90天塑料托盘试点方案](/resources/insights/2604-plastic-pallet-pilot-program/) 同步推进。
 
 ---
 

@@ -7,10 +7,26 @@ enableRobotsTXT = true
 
 [languages]
   [languages.en]
-    languageName = 'English'
+    label = 'English'
+    locale = 'en-US'
+    direction = 'ltr'
     weight = 1
     contentDir = 'content/english'
   [languages.zh]
-    languageName = '中文'
-    weight = 2
+    label = '简体中文'
+    locale = 'zh-CN'
+    direction = 'ltr'
+    weight = 6
     contentDir = 'content/chinese'
+  [languages.es]
+    label = 'Español'
+    locale = 'es'
+    direction = 'ltr'
+    weight = 7
+    contentDir = 'content/spanish'
+  [languages.fr]
+    label = 'Français'
+    locale = 'fr'
+    direction = 'ltr'
+    weight = 8
+    contentDir = 'content/french'

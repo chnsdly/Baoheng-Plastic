@@ -9,9 +9,9 @@ pallet_category:
 showcase_gallery:
   - image: "/images/products/pallet/food/1210-white-showcase.jpg"
     alt: "1210 food & medical plastic pallet showcase 1"
-  - image: "/images/products/pallet/food/showcase-white-1.jpg"
+  - image: "/images/products/pallet/food/1210-white-hero.jpg"
     alt: "1210 food & medical plastic pallet showcase 2"
-  - image: "/images/products/pallet/food/showcase-white-2.jpg"
+  - image: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210 food & medical plastic pallet showcase 3"
   - image: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210 food & medical plastic pallet showcase 3"
@@ -51,9 +51,9 @@ detail_intro: |-
 industry_gallery:
   - image: "/images/products/pallet/food/industry-1.jpg"
     alt: "1210 food & medical plastic pallet industry use 1"
-  - image: "/images/products/pallet/food/industry-2.jpg"
+  - image: "/images/products/pallet/food/1210-white-showcase.jpg"
     alt: "1210 food & medical plastic pallet industry use 2"
-  - image: "/images/products/pallet/food/industry-3.jpg"
+  - image: "/images/products/pallet/food/showcase-3.jpg"
     alt: "1210 food & medical plastic pallet industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

@@ -33,7 +33,7 @@ specs_order:
 
 hero_description: "吹塑九脚托盘，采用HDPE/PP全新料生产而成，一体吹塑成型，九脚分布式支撑，增强承重。托盘轻便耐用，四向插取，方便操作，可提升仓库空间利用率和搬运效率。 欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   1. 这些托盘轻量化设计，轻便易拿取，九脚设计支持叉车四向作业，食品加工，医药产品，生鲜配送，纸箱包装等行业使用。性价比高，经济实用，是木托盘重量的三分之一，降低操作人员劳动强度，极大提升周转运输效率。
 

@@ -43,7 +43,7 @@ popular: false
 - 回运路线与出货路线不匹配；
 - 因局部缺托触发的紧急单次回收。
 
-如果你的托盘总量假设仍在建立，可先参考这篇[塑料托盘池规模测算方法](/zh/resources/insights/2612-plastic-pallet-pool-sizing-method/)，再优化回运线路。
+如果你的托盘总量假设仍在建立，可先参考这篇[塑料托盘池规模测算方法](/resources/insights/2612-plastic-pallet-pool-sizing-method/)，再优化回运线路。
 
 ---
 
@@ -131,9 +131,9 @@ popular: false
 - 车厢地面摆放方式；
 - 发车前拍照确认要求。
 
-如果你同时使用不同结构的托盘，不应默认它们回运表现一致。套叠型与可上架型在堆码密度和运输稳定性上差异明显。制定线路规则时，可参考这篇[套叠型 vs 可上架型塑料托盘对比](/zh/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
+如果你同时使用不同结构的托盘，不应默认它们回运表现一致。套叠型与可上架型在堆码密度和运输稳定性上差异明显。制定线路规则时，可参考这篇[套叠型 vs 可上架型塑料托盘对比](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
 
-对于回运中占比较高的加固上架托盘，也应确认其结构是否匹配当前搬运节奏，例如这款[川字塑料托盘](/zh/products/pallets/3-runner_1210/)。
+对于回运中占比较高的加固上架托盘，也应确认其结构是否匹配当前搬运节奏，例如这款[川字塑料托盘](/products/pallets/3-runner_1210/)。
 
 ---
 
@@ -151,7 +151,7 @@ popular: false
 
 流程应轻量，但必须强制执行。通常一个“扫码 + 签收”动作，就能显著减少无法解释的账面差异。
 
-对于节点较多的网络，建议沿用这篇[塑料托盘追溯标签系统](/zh/resources/insights/2615-plastic-pallet-traceability-labeling-system/)中的位置与编码逻辑，便于跨仓对账。
+对于节点较多的网络，建议沿用这篇[塑料托盘追溯标签系统](/resources/insights/2615-plastic-pallet-traceability-labeling-system/)中的位置与编码逻辑，便于跨仓对账。
 
 ---
 

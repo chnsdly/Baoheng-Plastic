@@ -7,12 +7,14 @@
   gap: space(0.75);
   min-height: 3.5rem;
   padding: 0.625rem 1.5rem;
-  line-height: 1;
+  line-height: 1.2;
   border-radius: var(--radius-s);
   border: 1px solid transparent;
   box-shadow: var(--shadow);
   font-weight: var(--weight-semibold);
   text-decoration: none;
+  text-align: center;
+  white-space: normal;
   transition:
     transform var(--transition-base),
     box-shadow var(--transition-base),

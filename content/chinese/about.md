@@ -14,7 +14,7 @@ hero:
     - icon: "coverage"
       text: "交付 30+ 国家/地区项目"
   cta:
-    href: "/zh/contact"
+    href: "/contact"
     label: "获取报价"
     ariaLabel: "获取报价"
 stats:
@@ -158,6 +158,8 @@ organization:
         - "de"
         - "it"
         - "zh"
-  sameAs:
+sameAs:
     - "https://www.linkedin.com/company/baohengplastic"
 ---
+
+宝恒塑业为工业采购客户生产塑料托盘、卡板箱、周转箱、容器和垃圾桶，并提供选型、质量控制与出口交付支持。

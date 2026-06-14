@@ -124,7 +124,7 @@ This prevents a common problem: a sample performs well, but the bulk shipment di
 
 The best pallet structure depends on the load path. A lightweight nestable pallet may be efficient for one-way distribution or empty return, but it may not be suitable for unsupported rack storage. A perimeter-base or three-runner pallet can provide stronger support for forklift handling and racking, but the final choice should still be confirmed against the actual span and load distribution.
 
-For operations that need four-way entry and stable support in warehouse storage, a model such as the [1210 open deck perimeter-base plastic pallet](/products/pallets/perimeter%20base_1210/) can be considered as part of the validation shortlist. The point is not to choose by category name alone. The tested structure should match the load, support condition, handling equipment, and required service life.
+For operations that need four-way entry and stable support in warehouse storage, a model such as the [1210 open deck perimeter-base plastic pallet](/products/pallets/perimeter-base_1210/) can be considered as part of the validation shortlist. The point is not to choose by category name alone. The tested structure should match the load, support condition, handling equipment, and required service life.
 
 If the operation involves selective racking or high-bay storage, the validation should also connect with reinforcement decisions. The [racking pallet steel reinforcement checklist](/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/) explains when reinforcement should be reviewed instead of assuming that every rackable pallet needs the same internal structure.
 

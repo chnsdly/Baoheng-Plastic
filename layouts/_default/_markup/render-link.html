@@ -1,0 +1,9 @@
+{{- $href := .Destination -}}
+{{- if and (strings.HasPrefix $href "/") (not (strings.HasPrefix $href "//")) -}}
+  {{- if or (strings.HasPrefix $href "/images/") (strings.HasPrefix $href "/files/") -}}
+    {{- $href = $href | relURL -}}
+  {{- else -}}
+    {{- $href = $href | relLangURL -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

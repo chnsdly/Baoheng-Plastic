@@ -5,7 +5,7 @@
 {{- $pageID := printf "%s#webpage" .Permalink -}}
 {{- $orgName := $orgParams.name | default (.Site.Params.company_name | default .Site.Title) -}}
 {{- $orgLogo := $orgParams.logo | default (.Site.Params.logo | absURL) -}}
-{{- $langCode := .Site.Language.LanguageCode | default .Site.Language.Lang -}}
+{{- $langCode := .Site.Language.Locale | default .Site.Language.Lang -}}
 {{- $desc := (.Description | default .Params.hero_description | default .Summary | default .Site.Params.description | plainify) -}}
 
 {{- $pageImage := "" -}}
@@ -27,7 +27,7 @@
 
 {{- $siteLanguages := slice -}}
 {{- range .Site.Languages -}}
-  {{- $siteLanguages = $siteLanguages | append (.LanguageName | default .Lang) -}}
+  {{- $siteLanguages = $siteLanguages | append (.Label | default .Lang) -}}
 {{- end -}}
 
 {{- $address := dict "@type" "PostalAddress" -}}
@@ -108,7 +108,7 @@
 {{- $graph = $graph | append $page -}}
 
 {{- if not .IsHome -}}
-  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" (cond (eq .Site.Language.Lang "zh") "首页" "Home") "item" ("/" | absLangURL)) -}}
+  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" (i18n "home") "item" ("/" | absLangURL)) -}}
   {{- $position := 2 -}}
   {{- range .Ancestors.Reverse -}}
     {{- if not .IsHome -}}

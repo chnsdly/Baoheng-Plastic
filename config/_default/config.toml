@@ -15,3 +15,11 @@ theme = []
 [languages.zh.taxonomies]
   category = "分类"
   tag      = "标签"
+
+[languages.es.taxonomies]
+  category = "categories"
+  tag      = "tags"
+
+[languages.fr.taxonomies]
+  category = "categories"
+  tag      = "tags"

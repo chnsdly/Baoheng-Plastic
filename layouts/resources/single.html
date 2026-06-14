@@ -1,7 +1,6 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-  {{ $lang := .Site.Language.Lang }}
   {{ $cover := or .Params.cover_image .Params.featured_image }}
   {{ $all := where .Site.RegularPages "Section" "resources" }}
   {{ $related := slice }}
@@ -19,12 +18,12 @@
   <article class="resource-single">
     <header class="resource-single__hero">
       <div class="container resource-single__hero-inner">
-        <p class="resource-single__eyebrow">{{ if eq $lang "zh" }}采购指南{{ else }}Sourcing guide{{ end }}</p>
+        <p class="resource-single__eyebrow">{{ i18n "sourcing_guide" }}</p>
         <h1 class="resource-single__title">{{ .Title }}</h1>
         <p class="resource-single__meta">
-          {{ .Date.Format (cond (eq $lang "zh") "2006-01-02" "Jan 2, 2006") }}
+          {{ .Date.Format (i18n "date_format") }}
           <span aria-hidden="true">/</span>
-          {{ .ReadingTime }} {{ if eq $lang "zh" }}分钟阅读{{ else }}min read{{ end }}
+          {{ .ReadingTime }} {{ i18n "min_read" }}
           {{ with .Params.author }}<span aria-hidden="true">/</span> {{ . }}{{ end }}
         </p>
         {{ with .Description }}<p class="resource-single__desc">{{ . }}</p>{{ end }}
@@ -43,9 +42,15 @@
 
         {{ with .Params.tags }}
           <div class="resource-single__tags">
-            <span>{{ if eq $lang "zh" }}标签{{ else }}Tags{{ end }}</span>
+            <span>{{ i18n "tags" }}</span>
+            {{ $tagPath := i18n "taxonomy_tag_path" | default "tags" }}
             {{ range . }}
-              <a href='{{ (printf "tags/%s/" (urlize .)) | relLangURL }}'>#{{ . }}</a>
+              {{ $tagPage := $.Site.GetPage (printf "/%s/%s" $tagPath (urlize .)) }}
+              {{ if $tagPage }}
+                <a href="{{ $tagPage.RelPermalink }}">#{{ . }}</a>
+              {{ else }}
+                <span class="resource-single__tag">#{{ . }}</span>
+              {{ end }}
             {{ end }}
           </div>
         {{ end }}
@@ -53,10 +58,10 @@
 
       <aside class="resource-single__aside">
         <div class="resource-cta">
-          <p class="resource-cta__eyebrow">{{ if eq $lang "zh" }}需要选型帮助？{{ else }}Need model selection help?{{ end }}</p>
-          <h2>{{ if eq $lang "zh" }}把工况发给我们{{ else }}Send us your operating conditions{{ end }}</h2>
-          <p>{{ if eq $lang "zh" }}说明产品类型、数量、承重、尺寸和使用场景，我们会给出更合适的采购建议。{{ else }}Share product type, quantity, load, size, and application. We will recommend a practical sourcing direction.{{ end }}</p>
-          <a class="button" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a>
+          <p class="resource-cta__eyebrow">{{ i18n "need_selection_help" }}</p>
+          <h2>{{ i18n "send_operating_conditions" }}</h2>
+          <p>{{ i18n "resource_cta_text" }}</p>
+          <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a>
         </div>
       </aside>
     </div>
@@ -65,8 +70,8 @@
       <section class="resource-related">
         <div class="container">
           <div class="resource-related__header">
-            <p class="resource-single__eyebrow">{{ if eq $lang "zh" }}继续阅读{{ else }}Continue reading{{ end }}</p>
-            <h2>{{ if eq $lang "zh" }}相关采购内容{{ else }}Related buying resources{{ end }}</h2>
+            <p class="resource-single__eyebrow">{{ i18n "continue_reading" }}</p>
+            <h2>{{ i18n "related_buying_resources" }}</h2>
           </div>
           <div class="resources-grid resources-grid--compact">
             {{ range first 3 (sort $related "Date" "desc") }}
@@ -81,7 +86,7 @@
                   {{ end }}
                 </a>
                 <div class="resource-card__body">
-                  <p class="resource-card__meta">{{ .Date.Format (cond (eq $lang "zh") "2006-01-02" "Jan 2, 2006") }}</p>
+                  <p class="resource-card__meta">{{ .Date.Format (i18n "date_format") }}</p>
                   <h3 class="resource-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                 </div>
               </article>

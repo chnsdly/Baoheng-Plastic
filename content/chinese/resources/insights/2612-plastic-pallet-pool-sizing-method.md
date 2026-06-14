@@ -97,7 +97,7 @@ popular: false
 
 若某些线路存在高频上架、点载荷更重等情况，应先校验结构适配，再确认数量。建立在错误托盘结构上的数量模型，落地后仍会失效。
 
-在混用套叠型与货架型托盘时，建议按线路做技术分层。可参考：[Nestable vs Rackable Plastic Pallets](/zh/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
+在混用套叠型与货架型托盘时，建议按线路做技术分层。可参考：[Nestable vs Rackable Plastic Pallets](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
 
 ## 第六步：建立分级补库触发机制
 
@@ -125,9 +125,9 @@ popular: false
 
 在与供应商约定承载与耐久指标时，可参考ISO 8611测试框架（[ISO 8611标准页](https://www.iso.org/standard/36596.html)）。在尺寸协同与系统兼容方面，ISO 6780也是常见的参考基线（[ISO 6780标准页](https://www.iso.org/standard/72358.html)）。
 
-对于首次切换团队，建议结合以下实施资料降低导入风险：[Plastic Pallet Pilot Program](/zh/resources/insights/2604-plastic-pallet-pilot-program/) 与 [Plastic Pallet RFQ Checklist](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)。
+对于首次切换团队，建议结合以下实施资料降低导入风险：[Plastic Pallet Pilot Program](/resources/insights/2604-plastic-pallet-pilot-program/) 与 [Plastic Pallet RFQ Checklist](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)。
 
-若需要对比不同结构的托盘方案，可查看[plastic pallet product catalog](/zh/products/pallets/)。
+若需要对比不同结构的托盘方案，可查看[plastic pallet product catalog](/products/pallets/)。
 
 ## 30天落地节奏建议
 

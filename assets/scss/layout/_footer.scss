@@ -26,6 +26,7 @@
 .site-footer__summary {
   margin: 0;
   color: color-mix(in srgb, var(--on-brand) 74%, transparent);
+  overflow-wrap: anywhere;
 }
 
 .site-footer__actions {
@@ -71,6 +72,7 @@
 .site-footer__link {
   color: color-mix(in srgb, var(--on-brand) 76%, transparent);
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .site-footer__link:hover,
@@ -88,6 +90,7 @@
 .site-footer__contact-row {
   margin: 0;
   color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+  overflow-wrap: anywhere;
 }
 
 .site-footer__bottom {
@@ -115,6 +118,6 @@
   }
 
   .site-footer__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(9rem, 1fr));
   }
 }

@@ -3,7 +3,6 @@
 {{ $phone := $params.contact_phone }}
 {{ $email := $params.contact_email }}
 {{ $address := $params.contact_address }}
-{{ $lang := .Site.Language.Lang }}
 {{ $phoneHref := "" }}
 {{ if $phone }}
   {{ $phoneHref = printf "tel:%s" (replaceRE "[^\\d+]" "" $phone) }}
@@ -17,9 +16,9 @@
   <div class="container">
     <div class="cta__grid">
       <div class="cta__intro">
-        <p class="cta__eyebrow">{{ if eq $lang "zh" }}联系工厂{{ else }}Talk with the factory{{ end }}</p>
-        <h2 id="cta-title" class="cta__title">{{ if eq $lang "zh" }}把采购清单发给我们，获取匹配型号与报价{{ else }}Send your RFQ and get matched models with a practical quote{{ end }}</h2>
-        <p class="cta__desc">{{ if eq $lang "zh" }}托盘、卡板箱、周转筐、容器或垃圾桶都可以提交需求。我们会结合载荷、尺寸、数量、使用场景和交期回复。{{ else }}For pallets, pallet boxes, crates, containers, or waste bins, share load, size, quantity, application, and timing so we can reply with the right sourcing direction.{{ end }}</p>
+        <p class="cta__eyebrow">{{ i18n "home_cta_eyebrow" }}</p>
+        <h2 id="cta-title" class="cta__title">{{ i18n "home_cta_title" }}</h2>
+        <p class="cta__desc">{{ i18n "home_cta_desc" }}</p>
         <ul class="cta__contact" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
           {{ with $phone }}
           <li class="cta__contact-item">
@@ -47,7 +46,7 @@
                   <path d="M21.75 7.003a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.919A2.25 2.25 0 0 1 2.25 7.003" />
                 </svg>
               </span>
-              {{ i18n "email" | default "Email" }}
+              {{ i18n "email" }}
             </p>
             <p class="cta__value">
               <a href="{{ $emailHref }}">{{ . }}</a>
@@ -75,7 +74,7 @@
       <div class="cta__form">
         <div class="cta__card" aria-label="{{ i18n "contact_us" | default "Contact us" }}">
           <div class="cta__form-head">
-            <h3 class="cta__form-title">{{ if eq $lang "zh" }}获取工厂报价{{ else }}Get a factory quote{{ end }}</h3>
+            <h3 class="cta__form-title">{{ i18n "factory_quote" }}</h3>
           </div>
           {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" $params.turnstile_site_key) }}
         </div>

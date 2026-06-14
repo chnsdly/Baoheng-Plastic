@@ -27,7 +27,7 @@ specs_order:
 
 hero_description: "堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   1. 这款托盘采用HDPE/PP全新料生产而成，双面对称结构，加强筋设计，无拼接，无焊缝，可满足重型货物承载。适用于汽车零部件，重型金属，化工原料，大型设备，高位立体仓储等重载行业。
 

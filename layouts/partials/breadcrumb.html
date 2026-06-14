@@ -1,10 +1,9 @@
 {{- if not .IsHome -}}
-  {{- $lang := .Site.Language.Lang -}}
-  <nav class="breadcrumb" aria-label="{{ if eq $lang "zh" }}面包屑导航{{ else }}Breadcrumb{{ end }}">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumb_label" }}">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
         <li class="breadcrumb__item">
-          <a class="breadcrumb__link" href="{{ "/" | relLangURL }}">{{ if eq $lang "zh" }}首页{{ else }}Home{{ end }}</a>
+          <a class="breadcrumb__link" href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
         </li>
         {{- range .Ancestors.Reverse -}}
           {{- if not .IsHome -}}

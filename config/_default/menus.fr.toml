@@ -1,0 +1,81 @@
+[[main]]
+name = "ACCUEIL"
+pageRef = "/"
+weight = 10
+
+[[main]]
+name = "PRODUITS"
+url = "/products/"
+identifier = "products"
+weight = 20
+
+  [[main]]
+  name = "Palettes plastique"
+  url = "/products/pallets/"
+  parent = "products"
+  weight = 21
+
+  [[main]]
+  name = "Palettes soufflées emboîtables"
+  url = "/products/blow-molded-pallets/"
+  parent = "products"
+  weight = 22
+
+  [[main]]
+  name = "Caisses et bacs plastique"
+  url = "/products/crates/"
+  parent = "products"
+  weight = 23
+
+  [[main]]
+  name = "Caisses-palettes pliables"
+  url = "/products/foldable-pallet-boxes/"
+  parent = "products"
+  weight = 24
+
+  [[main]]
+  name = "Grands conteneurs vrac"
+  url = "/products/bulk-containers/"
+  parent = "products"
+  weight = 25
+
+  [[main]]
+  name = "Bacs à déchets plastique"
+  url = "/products/waste-bins/"
+  parent = "products"
+  weight = 26
+
+[[main]]
+name = "À PROPOS"
+url = "/about/"
+identifier = "about"
+weight = 30
+
+[[main]]
+name = "RESSOURCES"
+url = "/resources/"
+identifier = "resources"
+weight = 40
+
+  [[main]]
+  name = "Cas clients"
+  url = "/resources/case-studies/"
+  parent = "resources"
+  weight = 41
+
+  [[main]]
+  name = "Guides techniques"
+  url = "/resources/insights/"
+  parent = "resources"
+  weight = 42
+
+  [[main]]
+  name = "FAQ"
+  url = "/resources/faq/"
+  parent = "resources"
+  weight = 43
+
+[[main]]
+name = "CONTACT"
+url = "/contact/"
+weight = 50

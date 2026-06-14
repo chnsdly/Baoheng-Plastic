@@ -9,7 +9,7 @@
 {{- if and $cfg ($cfg.enabled | default true) -}}
   {{- $phone := $cfg.phone | default "" -}}
   {{- if ne $phone "" -}}
-    {{- $label := $cfg.label | default "Chat on WhatsApp" -}}
+    {{- $label := i18n "whatsapp_chat" -}}
     {{- $href := printf "https://wa.me/%s" $phone -}}
 
     {{- $side := $cfg.side | default "right" -}}

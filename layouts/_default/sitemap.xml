@@ -42,7 +42,7 @@
     {{- end }}
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}"/>
     {{- range .AllTranslations }}
-      {{- $hreflang := .Language.LanguageCode | default .Language.Lang }}
+      {{- $hreflang := .Language.Locale | default .Language.Lang }}
     <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}"/>
     {{- end }}
     {{- range first 10 $images }}

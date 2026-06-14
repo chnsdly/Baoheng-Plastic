@@ -1,4 +1,4 @@
-{{ $label := (cond (eq .Site.Language.Lang "zh") "获取报价" "Request a Quote") }}
+{{ $label := i18n "quote_request" }}
 {{ $product := .Get "product" | default .Page.Title }}
 <a class="cta-button"
    href='{{ "contact/" | relLangURL }}?product={{ $product | urlquery }}'

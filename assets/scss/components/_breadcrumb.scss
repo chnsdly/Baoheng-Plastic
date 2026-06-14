@@ -38,4 +38,5 @@
 .breadcrumb__current {
   color: var(--on-surface);
   font-weight: var(--weight-medium);
+  overflow-wrap: anywhere;
 }

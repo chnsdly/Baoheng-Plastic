@@ -158,6 +158,8 @@ organization:
         - "de"
         - "it"
         - "zh"
-  sameAs:
+sameAs:
     - "https://www.linkedin.com/company/baohengplastic"
 ---
+
+Baoheng Plastic manufactures plastic pallets, pallet boxes, crates, containers, and waste bins for industrial buyers that need dependable model selection, quality control, and export delivery support.

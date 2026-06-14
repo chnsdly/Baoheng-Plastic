@@ -28,7 +28,7 @@ specs_order:
 
 hero_description: "可上架塑料托盘，采用HDPE/PP全新料，大型精密模具一体成型，我们的工程师将会根据您的具体货物与使用场景，为您推荐最合适的塑料托盘，欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   1. 这些托盘适合货架存储与堆垛，可匹配手动液压车，电动叉车及自动化立体库使用，适用于食品，化工，冷链，仓储物流等多种行业使用，满足大多数货物的存储与运输。
 

@@ -1,20 +1,19 @@
 {{- $page := .page -}}
 {{- $enableFilters := .enableFilters | default false -}}
-{{- $lang := $page.Site.Language.Lang -}}
 {{- $allProducts := where $page.Site.RegularPages "Section" "products" -}}
 {{- $productMenus := slice -}}
 {{- with where $page.Site.Menus.main "Identifier" "products" -}}
   {{- with index . 0 -}}{{- $productMenus = sort .Children "Weight" -}}{{- end -}}
 {{- end -}}
 
-<aside class="product-sidebar" aria-label="{{ if eq $lang "zh" }}产品分类{{ else }}Product categories{{ end }}">
+<aside class="product-sidebar" aria-label="{{ i18n "product_sidebar_label" }}">
   <div class="product-sidebar__header">
     <div>
-      <p class="product-sidebar__eyebrow">{{ if eq $lang "zh" }}产品中心{{ else }}Product center{{ end }}</p>
-      <h2 class="product-sidebar__title">{{ if eq $lang "zh" }}按品类查找{{ else }}Browse by category{{ end }}</h2>
+      <p class="product-sidebar__eyebrow">{{ i18n "product_sidebar_eyebrow" }}</p>
+      <h2 class="product-sidebar__title">{{ i18n "product_sidebar_title" }}</h2>
     </div>
     <button class="product-sidebar__toggle" type="button" aria-expanded="false" aria-controls="product-sidebar-panel" data-product-sidebar-toggle>
-      {{ if eq $lang "zh" }}展开{{ else }}Menu{{ end }}
+      {{ i18n "product_sidebar_toggle" }}
       <span class="product-sidebar__toggle-icon" aria-hidden="true"></span>
     </button>
   </div>

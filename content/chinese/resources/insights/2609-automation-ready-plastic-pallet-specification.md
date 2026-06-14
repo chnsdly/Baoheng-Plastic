@@ -66,7 +66,7 @@ popular: false
 - 输送接触区平整度要求；
 - 在滚筒/链条转接条件下的最小有效接触。
 
-在很多自动化工位中，底部受力更稳定的结构（例如 [川字托盘](/zh/products/pallets/3-runner_1210/)）通常更容易实现可控运行。
+在很多自动化工位中，底部受力更稳定的结构（例如 [川字托盘](/products/pallets/3-runner_1210/)）通常更容易实现可控运行。
 
 ### C. 真实工况下的挠度表现
 
@@ -78,7 +78,7 @@ popular: false
 - 涉及立库时的上架挠度数据；
 - 与支撑条件绑定的验收阈值。
 
-若团队已有标准采购模板，可在这份 [塑料托盘 RFQ 清单](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) 上增加自动化专用条款。
+若团队已有标准采购模板，可在这份 [塑料托盘 RFQ 清单](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/) 上增加自动化专用条款。
 
 ### D. 表面质量与传感/抓取友好性
 
@@ -95,7 +95,7 @@ popular: false
 
 即便是常温自动化仓，夜班温差、月台暴露、清洗频次也会影响托盘行为。
 
-对于冷藏或混温场景，可参考这份 [低温选型框架](/zh/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/) 补充环境稳定性验证条款。
+对于冷藏或混温场景，可参考这份 [低温选型框架](/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/) 补充环境稳定性验证条款。
 
 ---
 
@@ -161,7 +161,7 @@ popular: false
 - 区分“托盘原因”与“设备控制原因”；
 - 冻结量产规格与来料检验阈值。
 
-如团队已有更长周期导入机制，可基于现有 [90 天试点框架](/zh/resources/insights/2604-plastic-pallet-pilot-program/) 增加自动化 KPI。
+如团队已有更长周期导入机制，可基于现有 [90 天试点框架](/resources/insights/2604-plastic-pallet-pilot-program/) 增加自动化 KPI。
 
 ---
 

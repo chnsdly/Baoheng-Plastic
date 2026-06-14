@@ -1,4 +1,3 @@
-{{- $lang := .Site.Language.Lang -}}
 {{- $hero := .Params.home_hero -}}
 {{- $images := $hero.images | default (slice "images/hero_bg_1.webp") -}}
 {{- $image := index $images 0 -}}
@@ -20,37 +19,33 @@
 
   <div class="container home-hero__inner">
     <div class="home-hero__content">
-      <p class="home-hero__eyebrow">{{ if eq $lang "zh" }}塑料托盘与工业周转包装源头工厂{{ else }}Plastic pallets and industrial handling products{{ end }}</p>
+      <p class="home-hero__eyebrow">{{ i18n "home_hero_eyebrow" }}</p>
       <h1 class="home-hero__title">
         {{ with $hero.title }}
           {{ . }}
         {{ else }}
-          {{ if eq $lang "zh" }}为仓储物流采购匹配可靠的塑料托盘、箱筐与容器{{ else }}Factory-direct plastic pallets, pallet boxes, crates, and containers{{ end }}
+          {{ i18n "home_hero_title" }}
         {{ end }}
       </h1>
       <p class="home-hero__text">
         {{ with $hero.description }}
           {{ . }}
         {{ else }}
-          {{ if eq $lang "zh" }}
-            从承重、尺寸、材料、叉车/货架适配到出口交付，帮助采购团队更快锁定合适型号并获得清晰报价。
-          {{ else }}
-            Match load, size, material, forklift/rack fit, and export delivery requirements with practical model recommendations and clear quotations.
-          {{ end }}
+          {{ i18n "home_hero_text" }}
         {{ end }}
       </p>
 
       <div class="home-hero__actions">
-        <a class="button" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a>
-        <a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ if eq $lang "zh" }}浏览产品{{ else }}Browse products{{ end }}</a>
+        <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a>
+        <a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ i18n "browse_products" }}</a>
       </div>
     </div>
 
-    <div class="home-hero__quick" role="list" aria-label="{{ if eq $lang "zh" }}快速产品入口{{ else }}Quick product links{{ end }}">
-      <a href="{{ "/products/pallets/" | relLangURL }}" role="listitem">{{ if eq $lang "zh" }}塑料托盘{{ else }}Plastic pallets{{ end }}</a>
-      <a href="{{ "/products/foldable-pallet-boxes/" | relLangURL }}" role="listitem">{{ if eq $lang "zh" }}折叠卡板箱{{ else }}Foldable pallet boxes{{ end }}</a>
-      <a href="{{ "/products/crates/" | relLangURL }}" role="listitem">{{ if eq $lang "zh" }}周转筐/箱{{ else }}Crates and boxes{{ end }}</a>
-      <a href="{{ "/products/bulk-containers/" | relLangURL }}" role="listitem">{{ if eq $lang "zh" }}大型容器{{ else }}Bulk containers{{ end }}</a>
+    <div class="home-hero__quick" role="list" aria-label="{{ i18n "home_quick_links" }}">
+      <a href="{{ "/products/pallets/" | relLangURL }}" role="listitem">{{ i18n "home_quick_pallets" }}</a>
+      <a href="{{ "/products/foldable-pallet-boxes/" | relLangURL }}" role="listitem">{{ i18n "home_quick_foldable" }}</a>
+      <a href="{{ "/products/crates/" | relLangURL }}" role="listitem">{{ i18n "home_quick_crates" }}</a>
+      <a href="{{ "/products/bulk-containers/" | relLangURL }}" role="listitem">{{ i18n "home_quick_bulk" }}</a>
     </div>
   </div>
 </section>

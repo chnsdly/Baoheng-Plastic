@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{ $lang := .Site.Language.Lang }}
   {{ $products := .RegularPagesRecursive.ByTitle }}
   {{ $contactURL := "/contact/" | relLangURL }}
   {{ $rfqURL := "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}
@@ -8,23 +7,19 @@
     <div class="container product-listing__inner">
       <header class="product-listing__hero">
         <div class="product-listing__hero-copy">
-          <p class="product-listing__eyebrow">{{ if eq $lang "zh" }}源头工厂产品中心{{ else }}Factory product center{{ end }}</p>
+          <p class="product-listing__eyebrow">{{ i18n "product_listing_eyebrow" }}</p>
           <h1 class="product-listing__title">{{ .Title }}</h1>
           <p class="product-listing__intro">
             {{ with .Description }}
               {{ . }}
             {{ else }}
-              {{ if eq $lang "zh" }}
-                按真实使用场景选择塑料托盘、吹塑托盘、周转筐、折叠卡板箱、大型容器和环卫垃圾桶。提交载荷、尺寸、数量和工况后，我们会协助匹配合适型号。
-              {{ else }}
-                Source plastic pallets, blow-molded pallets, crates, foldable pallet boxes, bulk containers, and waste bins by real handling application. Share load, size, quantity, and workflow details for a practical recommendation.
-              {{ end }}
+              {{ i18n "product_listing_intro" }}
             {{ end }}
           </p>
         </div>
         <div class="product-listing__hero-actions">
-          <a class="button" href="{{ $contactURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a>
-          <a class="button button--secondary" href="{{ $rfqURL }}">{{ if eq $lang "zh" }}查看 RFQ 清单{{ else }}RFQ checklist{{ end }}</a>
+          <a class="button" href="{{ $contactURL }}">{{ i18n "request_quote" }}</a>
+          <a class="button button--secondary" href="{{ $rfqURL }}">{{ i18n "rfq_checklist" }}</a>
         </div>
       </header>
 
@@ -35,9 +30,9 @@
           <div class="product-listing__toolbar">
             <p class="product-listing__count">
               <span data-product-count>{{ len $products }}</span>
-              {{ if eq $lang "zh" }} 个可询价产品{{ else }} quote-ready products{{ end }}
+              {{ i18n "quote_ready_products" }}
             </p>
-            <button class="product-listing__clear" type="button" data-product-filter-clear hidden>{{ if eq $lang "zh" }}清除筛选{{ else }}Clear filter{{ end }}</button>
+            <button class="product-listing__clear" type="button" data-product-filter-clear hidden>{{ i18n "clear_filter" }}</button>
           </div>
 
           <div class="product-listing__grid">
@@ -78,16 +73,16 @@
                     {{ if or $dimensions $dynamicLoad }}
                       <dl class="product-listing__specs">
                         {{ with $dimensions }}
-                          <div><dt>{{ if eq $lang "zh" }}尺寸{{ else }}Size{{ end }}</dt><dd>{{ . }}</dd></div>
+                          <div><dt>{{ i18n "size" }}</dt><dd>{{ . }}</dd></div>
                         {{ end }}
                         {{ with $dynamicLoad }}
-                          <div><dt>{{ if eq $lang "zh" }}动载{{ else }}Dynamic{{ end }}</dt><dd>{{ . }}</dd></div>
+                          <div><dt>{{ i18n "dynamic" }}</dt><dd>{{ . }}</dd></div>
                         {{ end }}
                       </dl>
                     {{ end }}
                   </div>
                 </a>
-                <a class="product-listing__quote" href="{{ $contactURL }}?product={{ .Title | urlquery }}">{{ if eq $lang "zh" }}询价此产品{{ else }}Quote this product{{ end }}</a>
+                <a class="product-listing__quote" href="{{ $contactURL }}?product={{ .Title | urlquery }}">{{ i18n "quote_this_product" }}</a>
               </article>
             {{ end }}
           </div>

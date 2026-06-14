@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{ $lang := .Site.Language.Lang }}
   {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
   {{ $root := .Site.GetPage "section" "resources" }}
   {{ $sections := cond (and $root (gt (len $root.Sections) 0)) $root.Sections slice }}
@@ -8,29 +7,25 @@
     <div class="container resources-listing__inner">
       <header class="resources-listing__hero">
         <div>
-          <p class="resources-listing__eyebrow">{{ if eq $lang "zh" }}采购资源{{ else }}Buying resources{{ end }}</p>
+          <p class="resources-listing__eyebrow">{{ i18n "resources_eyebrow" }}</p>
           <h1 class="resources-listing__title">{{ .Title }}</h1>
           <p class="resources-listing__intro">
             {{ with .Description }}
               {{ . }}
             {{ else }}
-              {{ if eq $lang "zh" }}
-                围绕塑料托盘、卡板箱、周转筐、容器和仓储物流采购，整理选型清单、工况判断、质量控制和项目案例。
-              {{ else }}
-                Practical guides, checklists, quality notes, and project references for plastic pallets, pallet boxes, crates, containers, and warehouse sourcing.
-              {{ end }}
+              {{ i18n "resources_intro" }}
             {{ end }}
           </p>
         </div>
-        <a class="button" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}带着问题询价{{ else }}Ask for sourcing help{{ end }}</a>
+        <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "ask_sourcing_help" }}</a>
       </header>
 
       <div class="resources-listing__layout">
-        <aside class="resources-nav" aria-label="{{ if eq $lang "zh" }}资源分类{{ else }}Resource sections{{ end }}">
-          <p class="resources-nav__title">{{ if eq $lang "zh" }}资源分类{{ else }}Resource sections{{ end }}</p>
+        <aside class="resources-nav" aria-label="{{ i18n "resource_sections" }}">
+          <p class="resources-nav__title">{{ i18n "resource_sections" }}</p>
           <ul class="resources-nav__list" role="list">
             {{ with $root }}
-              <li><a class="resources-nav__link{{ if eq $.RelPermalink .RelPermalink }} resources-nav__link--current{{ end }}" href="{{ .RelPermalink }}">{{ if eq $lang "zh" }}全部资源{{ else }}All resources{{ end }}</a></li>
+              <li><a class="resources-nav__link{{ if eq $.RelPermalink .RelPermalink }} resources-nav__link--current{{ end }}" href="{{ .RelPermalink }}">{{ i18n "all_resources" }}</a></li>
             {{ end }}
             {{ range $sections }}
               <li><a class="resources-nav__link{{ if eq $.RelPermalink .RelPermalink }} resources-nav__link--current{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -54,22 +49,22 @@
                   </a>
                   <div class="resource-card__body">
                     <p class="resource-card__meta">
-                      {{ .Date.Format (cond (eq $lang "zh") "2006-01-02" "Jan 2, 2006") }}
+                      {{ .Date.Format (i18n "date_format") }}
                       <span aria-hidden="true">/</span>
-                      {{ .ReadingTime }} {{ if eq $lang "zh" }}分钟{{ else }}min read{{ end }}
+                      {{ .ReadingTime }} {{ i18n "minutes" }}
                     </p>
                     <h2 class="resource-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                     <p class="resource-card__desc">{{ with .Description }}{{ . }}{{ else }}{{ truncate 170 (.Summary | plainify) }}{{ end }}</p>
-                    <a class="resource-card__link" href="{{ .RelPermalink }}">{{ if eq $lang "zh" }}阅读详情{{ else }}Read article{{ end }}</a>
+                    <a class="resource-card__link" href="{{ .RelPermalink }}">{{ i18n "read_article" }}</a>
                   </div>
                 </article>
               {{ end }}
             </div>
           {{ else }}
             <div class="resources-empty">
-              <h2>{{ if eq $lang "zh" }}内容整理中{{ else }}Content in preparation{{ end }}</h2>
-              <p>{{ if eq $lang "zh" }}如果您正在评估塑料托盘或塑料周转容器，可以先提交需求，我们会直接给出选型建议。{{ else }}If you are evaluating plastic pallets or handling containers, send your requirements and we will help with model selection.{{ end }}</p>
-              <a class="button" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交需求{{ else }}Send requirements{{ end }}</a>
+              <h2>{{ i18n "content_preparation" }}</h2>
+              <p>{{ i18n "resources_empty_text" }}</p>
+              <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "submit_request" }}</a>
             </div>
           {{ end }}
         </div>

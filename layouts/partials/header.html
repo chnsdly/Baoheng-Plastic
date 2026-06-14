@@ -1,6 +1,5 @@
 {{- $menu := .Site.Menus.main -}}
 {{- $languages := .Site.Languages -}}
-{{- $lang := .Site.Language.Lang -}}
 
 <header class="site-header" data-site-header>
   <div class="site-header__bar">
@@ -29,15 +28,15 @@
                   <div class="site-header__mega" aria-label="{{ .Name }}">
                     <div class="container container--wide site-header__mega-inner">
                       <div class="site-header__mega-lede">
-                        <p class="site-header__mega-eyebrow">{{ if eq $lang "zh" }}产品中心{{ else }}Product Center{{ end }}</p>
-                        <h2 class="site-header__mega-title">{{ if eq $lang "zh" }}按采购场景快速找到合适的塑料包装产品{{ else }}Find the right plastic handling product by use case{{ end }}</h2>
-                        <p class="site-header__mega-text">{{ if eq $lang "zh" }}托盘、卡板箱、周转筐和容器统一入口，方便采购团队快速发起询盘。{{ else }}Pallets, pallet boxes, crates, and containers organized for faster sourcing and quotation requests.{{ end }}</p>
-                        <a class="button button--secondary site-header__mega-cta" href="{{ .URL | relLangURL }}">{{ if eq $lang "zh" }}查看全部产品{{ else }}View all products{{ end }}</a>
+                        <p class="site-header__mega-eyebrow">{{ i18n "header_mega_eyebrow" }}</p>
+                        <h2 class="site-header__mega-title">{{ i18n "header_mega_title" }}</h2>
+                        <p class="site-header__mega-text">{{ i18n "header_mega_text" }}</p>
+                        <a class="button button--secondary site-header__mega-cta" href="{{ .URL | relLangURL }}">{{ i18n "view_all_products" }}</a>
                       </div>
 
                       <div class="site-header__mega-columns">
                         <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ if eq $lang "zh" }}塑料托盘{{ else }}Plastic Pallets{{ end }}</p>
+                          <p class="site-header__mega-heading">{{ i18n "header_mega_pallets" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range .Children -}}
                               {{- if or (in .URL "/pallets/") (in .URL "/blow-molded-pallets/") -}}
@@ -48,7 +47,7 @@
                         </div>
 
                         <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ if eq $lang "zh" }}箱体与容器{{ else }}Boxes & Containers{{ end }}</p>
+                          <p class="site-header__mega-heading">{{ i18n "header_mega_boxes" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range .Children -}}
                               {{- if or (in .URL "/foldable-pallet-boxes/") (in .URL "/bulk-containers/") (in .URL "/crates/") -}}
@@ -59,15 +58,15 @@
                         </div>
 
                         <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ if eq $lang "zh" }}采购支持{{ else }}Buying Support{{ end }}</p>
+                          <p class="site-header__mega-heading">{{ i18n "header_mega_support" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range .Children -}}
                               {{- if in .URL "/waste-bins/" -}}
                                 <li><a class="site-header__mega-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
                               {{- end -}}
                             {{- end -}}
-                            <li><a class="site-header__mega-link" href="{{ "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}">{{ if eq $lang "zh" }}RFQ 规格清单{{ else }}RFQ specification checklist{{ end }}</a></li>
-                            <li><a class="site-header__mega-link" href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}提交询盘{{ else }}Request a quote{{ end }}</a></li>
+                            <li><a class="site-header__mega-link" href="{{ "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}">{{ i18n "rfq_spec_checklist" }}</a></li>
+                            <li><a class="site-header__mega-link" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a></li>
                           </ul>
                         </div>
                       </div>
@@ -93,7 +92,7 @@
         {{- if gt (len $languages) 1 -}}
           <details class="site-header__language" data-language-switcher>
             <summary class="site-header__icon-button">
-              <span class="site-header__language-label font-meta">{{ .Site.Language.LanguageName }}</span>
+              <span class="site-header__language-label font-meta">{{ .Site.Language.Label | default .Site.Language.Lang }}</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
               </svg>
@@ -101,12 +100,15 @@
             <ul class="site-header__language-list" role="list">
               {{- range $languages -}}
                 {{- $langCode := .Lang -}}
-                {{- $target := $langCode | relLangURL -}}
+                {{- $target := "/" | relURL -}}
+                {{- range $.Site.Sites -}}
+                  {{- if eq .Language.Lang $langCode -}}{{- $target = .Home.RelPermalink -}}{{- end -}}
+                {{- end -}}
                 {{- range $.AllTranslations -}}
                   {{- if eq .Language.Lang $langCode -}}{{- $target = .RelPermalink -}}{{- end -}}
                 {{- end -}}
                 <li>
-                  <a class="site-header__language-link font-meta{{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}" href="{{ $target }}" lang="{{ or .LanguageCode .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="true"{{ end }}>{{ .LanguageName }}</a>
+                  <a class="site-header__language-link font-meta{{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}" href="{{ $target }}" lang="{{ .Locale | default .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="true"{{ end }}>{{ .Label | default .Lang }}</a>
                 </li>
               {{- end -}}
             </ul>
@@ -160,7 +162,7 @@
             <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
               <ul class="site-header__mobile-list" role="list">
                 <li class="site-header__mobile-item">
-                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="{{ .URL | relLangURL }}">{{ if eq $lang "zh" }}全部{{ else }}All{{ end }} {{ .Name }}</a>
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="{{ .URL | relLangURL }}">{{ i18n "all_menu_prefix" }} {{ .Name }}</a>
                 </li>
                 {{- range .Children -}}
                   <li class="site-header__mobile-item">

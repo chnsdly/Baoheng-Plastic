@@ -8,7 +8,7 @@ pallet_category: []
 
 hero_description: "这款可嵌套塑料周转筐采用耐用 PP/HDPE 材料，网眼透气结构，坚固轻便，适用于各类仓储、物流、食品加工与日常搬运场景，多尺寸多颜色可选。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   周转筐采用高强度全新料注塑成型，结构稳定，不易变形，网眼设计通风排水，适用于水果蔬菜、食品加工、商超配送、工厂物料周转等多种场景。可嵌套回空，大幅节省仓储与运输空间，多尺寸、多颜色可定制，手柄圆润，搬运舒适，整体易清洗、耐低温、耐腐蚀，满足高频使用的耐用需求。
 

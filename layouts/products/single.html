@@ -1,9 +1,8 @@
 {{ define "main" }}
-  {{ $lang := .Site.Language.Lang }}
   {{ $contactURL := "/contact/" | relLangURL }}
   {{ $specs := .Params.specs | default dict }}
   {{ $heroText := .Params.hero_description | default .Description | default .Summary }}
-  {{ $detailHeading := .Params.detail_heading | default (cond (eq $lang "zh") "产品详情" "Product details") }}
+  {{ $detailHeading := .Params.detail_heading | default (i18n "product_detail_heading") }}
   {{ $detailIntro := .Params.detail_intro | default .Params.detail_description }}
   {{ $dimensions := index $specs "dimensions" }}
   {{ $dynamicLoad := index $specs "dynamic_load" }}
@@ -40,24 +39,24 @@
 
             {{ if or $dimensions $dynamicLoad $staticLoad $rackingLoad $material }}
               <dl class="product-hero__specs">
-                {{ with $dimensions }}<div><dt>{{ if eq $lang "zh" }}尺寸{{ else }}Size{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
-                {{ with $dynamicLoad }}<div><dt>{{ if eq $lang "zh" }}动载{{ else }}Dynamic load{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
-                {{ with $staticLoad }}<div><dt>{{ if eq $lang "zh" }}静载{{ else }}Static load{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
-                {{ with $rackingLoad }}<div><dt>{{ if eq $lang "zh" }}货架载{{ else }}Racking load{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
-                {{ with $material }}<div><dt>{{ if eq $lang "zh" }}材质{{ else }}Material{{ end }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $dimensions }}<div><dt>{{ i18n "size" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $dynamicLoad }}<div><dt>{{ i18n "dynamic_load" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $staticLoad }}<div><dt>{{ i18n "static_load" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $rackingLoad }}<div><dt>{{ i18n "racking_load" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+                {{ with $material }}<div><dt>{{ i18n "material" }}</dt><dd>{{ . }}</dd></div>{{ end }}
               </dl>
             {{ end }}
 
             <div class="product-hero__actions">
-              <a class="button" href="{{ $contactURL }}?product={{ .Title | urlquery }}">{{ if eq $lang "zh" }}询价此产品{{ else }}Request quote for this product{{ end }}</a>
-              <a class="button button--secondary" href="#product-inquiry">{{ if eq $lang "zh" }}填写需求{{ else }}Send requirements{{ end }}</a>
+              <a class="button" href="{{ $contactURL }}?product={{ .Title | urlquery }}">{{ i18n "request_quote_product" }}</a>
+              <a class="button button--secondary" href="#product-inquiry">{{ i18n "submit_request" }}</a>
             </div>
           </div>
         </header>
 
         <section class="product-details" aria-labelledby="product-details-heading">
           <div class="product-details__header">
-            <p class="product-details__eyebrow">{{ if eq $lang "zh" }}选型信息{{ else }}Selection notes{{ end }}</p>
+            <p class="product-details__eyebrow">{{ i18n "selection_notes" }}</p>
             <h2 class="product-details__title" id="product-details-heading">{{ $detailHeading }}</h2>
             {{ with $detailIntro }}
               <div class="product-details__intro">{{ . | markdownify }}</div>
@@ -101,7 +100,7 @@
           {{ end }}
 
           {{ with .Params.showcase_gallery }}
-            <div class="product-gallery" aria-label="{{ if eq $lang "zh" }}产品图片{{ else }}Product gallery{{ end }}">
+            <div class="product-gallery" aria-label="{{ i18n "product_gallery" }}">
               {{ range first 4 . }}
                 {{ $galleryAlt := .alt | default $.Title }}
                 {{ with .image }}
@@ -118,7 +117,7 @@
           {{ end }}
 
           {{ with .Params.industry_gallery }}
-            <div class="product-gallery product-gallery--industry" aria-label="{{ if eq $lang "zh" }}应用场景{{ else }}Application gallery{{ end }}">
+            <div class="product-gallery product-gallery--industry" aria-label="{{ i18n "application_gallery" }}">
               {{ range first 3 . }}
                 {{ $galleryAlt := .alt | default $.Title }}
                 {{ with .image }}
@@ -136,10 +135,10 @@
 
           <section class="product-inquiry" id="product-inquiry">
             <div class="product-inquiry__copy">
-              <p class="product-inquiry__eyebrow">{{ if eq $lang "zh" }}提交询盘{{ else }}Inquiry support{{ end }}</p>
-              <h2 class="product-inquiry__title">{{ .Params.form_title | default (cond (eq $lang "zh") "告诉我们您的载荷与周转需求" "Tell us about your load and handling requirements") }}</h2>
+              <p class="product-inquiry__eyebrow">{{ i18n "product_inquiry" }}</p>
+              <h2 class="product-inquiry__title">{{ .Params.form_title | default (i18n "product_form_title") }}</h2>
               <p class="product-inquiry__description">
-                {{ .Params.form_description | default (cond (eq $lang "zh") "请说明使用环境、数量、承重、尺寸、颜色或 Logo 要求，我们会协助确认合适型号。" "Share application, quantity, load, size, color, or logo requirements and we will help confirm the suitable model.") }}
+                {{ .Params.form_description | default (i18n "product_form_description") }}
               </p>
             </div>
             {{ partial "lead-form.html" (dict "type" "product-detail" "slug" .File.ContentBaseName "page" . "sitekey" .Site.Params.turnstile_site_key) }}
@@ -149,8 +148,8 @@
         {{ if gt (len $related) 0 }}
           <section class="product-related" aria-labelledby="related-products-title">
             <div class="product-related__header">
-              <p class="product-related__eyebrow">{{ if eq $lang "zh" }}相关产品{{ else }}Related products{{ end }}</p>
-              <h2 class="product-related__title" id="related-products-title">{{ if eq $lang "zh" }}继续比较同类型号{{ else }}Compare similar models{{ end }}</h2>
+              <p class="product-related__eyebrow">{{ i18n "related_products" }}</p>
+              <h2 class="product-related__title" id="related-products-title">{{ i18n "compare_similar_models" }}</h2>
             </div>
             <div class="product-related__grid">
               {{ range first 3 $related.ByTitle }}

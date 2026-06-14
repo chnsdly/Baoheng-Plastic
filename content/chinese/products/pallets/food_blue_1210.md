@@ -28,7 +28,7 @@ specs_order:
 
 hero_description: "这款塑料托盘具有完全平整的表面，一体成型，清洁效率高，减少清洁死角，为洁净车间和高标准生产环境设计。我们的工程师将会根据您的具体货物与使用场景，为您推荐最合适的塑料托盘，欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   1. 这款托盘采用HDPE/PP全新料生产而成，采用焊接工艺，无收缩变形， 尺寸精度高，适合在AGV/RGV上稳定运行，可嵌入芯片，提高立体仓储高效运转。适合制药厂，食品饮料等行业使用。
 
@@ -50,9 +50,9 @@ showcase_gallery:
 industry_gallery-false:
   - image: "/images/products/pallet/food/industry-1.jpg"
     alt: "1210-食品与医用塑料托盘 行业场景1"
-  - image: "/images/products/pallet/food/industry-2.jpg"
+  - image: "/images/products/pallet/food/showcase-blue-1.jpg"
     alt: "1210-食品与医用塑料托盘 行业场景2"
-  - image: "/images/products/pallet/food/industry-3.jpg"
+  - image: "/images/products/pallet/food/showcase-blue-2.jpg"
     alt: "1210-食品与医用塑料托盘 行业场景1"
 form_title: "告诉我们您的载荷与周转需求"
 form_description: "说明使用环境、循环频次与卫生等级，我们将在 1 个工作日内提供专属报价。"

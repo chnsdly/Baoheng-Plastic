@@ -1,7 +1,6 @@
-{{- $lang := .Site.Language.Lang -}}
 {{ with .Params.usps }}
   {{ if .enable }}
-    <section class="usps" aria-label="{{ if eq $lang "zh" }}采购优势{{ else }}Sourcing advantages{{ end }}">
+    <section class="usps" aria-label="{{ i18n "home_usps_label" }}">
       <div class="container">
         <ul class="usps__list" role="list">
           {{ range $index, $item := .items }}

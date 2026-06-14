@@ -93,7 +93,7 @@
 {{- end -}}
 <link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}">
 {{- range .AllTranslations -}}
-<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ .Permalink }}">
 {{- end -}}
 
 <link rel="stylesheet" href="{{ $style.RelPermalink }}"{{ if and hugo.IsProduction $style.Data.Integrity }} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
@@ -104,9 +104,9 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if and .IsPage (eq .Section "products") }}product{{ else if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ replace (.Site.Language.LanguageCode | default .Site.Language.Lang) "-" "_" }}">
+<meta property="og:locale" content="{{ replace (.Site.Language.Locale | default .Site.Language.Lang) "-" "_" }}">
 {{- range .Translations }}
-<meta property="og:locale:alternate" content="{{ replace (.Language.LanguageCode | default .Language.Lang) "-" "_" }}">
+<meta property="og:locale:alternate" content="{{ replace (.Language.Locale | default .Language.Lang) "-" "_" }}">
 {{- end }}
 {{- if $image -}}
 <meta property="og:image" content="{{ $image }}">

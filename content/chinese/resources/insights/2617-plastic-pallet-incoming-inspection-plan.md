@@ -97,7 +97,7 @@ popular: false
 - 预期载荷下的托盘挠度；
 - 与横梁间距的匹配程度。
 
-对于上架使用，采购团队应把到货 QC 与采购规格中的载荷假设对应起来。如果这些假设尚未固化，可参考这份[塑料托盘 RFQ 规格清单](/zh/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)作为起点。
+对于上架使用，采购团队应把到货 QC 与采购规格中的载荷假设对应起来。如果这些假设尚未固化，可参考这份[塑料托盘 RFQ 规格清单](/resources/insights/2605-plastic-pallet-rfq-specification-checklist/)作为起点。
 
 ### 用于输送线和自动化搬运
 
@@ -109,7 +109,7 @@ popular: false
 - 可能影响传感器识别的翘曲；
 - 需要扫码时的标签或条码可读性。
 
-自动化项目不能只依赖外观检查。一批托盘看起来干净整齐，但如果底部结构离散过大，仍可能造成转接异常。自动化场景的规格要求可参考这篇[自动化仓塑料托盘规格指南](/zh/resources/insights/2609-automation-ready-plastic-pallet-specification/)。
+自动化项目不能只依赖外观检查。一批托盘看起来干净整齐，但如果底部结构离散过大，仍可能造成转接异常。自动化场景的规格要求可参考这篇[自动化仓塑料托盘规格指南](/resources/insights/2609-automation-ready-plastic-pallet-specification/)。
 
 ### 用于食品、饮料或医药仓库
 
@@ -121,7 +121,7 @@ popular: false
 - 破损边缘是否可能残留污物；
 - 颜色或标识是否符合分区管理要求。
 
-如果卫生清洁是运营要求，放行结论应与仓库清洁流程一致，而不仅仅看收货检查。可执行的清洁方法可参考这份[食品仓塑料托盘清洁 SOP](/zh/resources/insights/2611-plastic-pallet-sanitation-sop-for-food-warehouses/)。
+如果卫生清洁是运营要求，放行结论应与仓库清洁流程一致，而不仅仅看收货检查。可执行的清洁方法可参考这份[食品仓塑料托盘清洁 SOP](/resources/insights/2611-plastic-pallet-sanitation-sop-for-food-warehouses/)。
 
 ---
 
@@ -175,7 +175,7 @@ popular: false
 5. **货物适配：** 确认纸箱、桶、周转箱或袋装货物不超出托盘有效面。
 6. **扫码检查：** 如使用标签、模内标识或条码，确认识别位置稳定。
 
-如果托盘用于重载货架，类似[川字塑料托盘](/zh/products/pallets/3-runner_1210/)的加固结构，其放行检查重点会与主要用于单向流转或空托存放的套叠托盘不同。
+如果托盘用于重载货架，类似[川字塑料托盘](/products/pallets/3-runner_1210/)的加固结构，其放行检查重点会与主要用于单向流转或空托存放的套叠托盘不同。
 
 功能验证也应像外观缺陷一样记录清楚。“试用通过”不如“20 个载货托盘在 2700 mm 横梁上完成上架验证，未见摇晃、开裂或不安全挠度”更有价值。
 

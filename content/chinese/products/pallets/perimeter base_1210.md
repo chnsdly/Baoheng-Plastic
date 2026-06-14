@@ -26,7 +26,7 @@ specs_order:
 
 hero_description: "田字结构托盘，底部三向纵横加强，一体化成型，为重载货物提供稳固承托与抗冲击能力。适用于叉车高频操作，承重强、耐用度高，适配仓储与立体库等多场景使用。欢迎咨询，获取您的专属报价。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   1. 这款田字托盘采用全新 HDPE/PP 原料一体成型，底部三向纵横加强结构，无拼接、无焊缝，承载稳定，可满足重型货物长期使用需求。适用于汽车零部件、重型金属、化工原料、大型设备、仓储与立体库等场景。
 

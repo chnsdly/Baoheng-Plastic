@@ -52,9 +52,9 @@ detail_intro: |-
 industry_gallery:
   - image: "/images/products/pallet/food/industry-1.jpg"
     alt: "1210 food & medical plastic pallet industry use 1"
-  - image: "/images/products/pallet/food/industry-2.jpg"
+  - image: "/images/products/pallet/food/showcase-blue-1.jpg"
     alt: "1210 food & medical plastic pallet industry use 2"
-  - image: "/images/products/pallet/food/industry-3.jpg"
+  - image: "/images/products/pallet/food/showcase-blue-2.jpg"
     alt: "1210 food & medical plastic pallet industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."

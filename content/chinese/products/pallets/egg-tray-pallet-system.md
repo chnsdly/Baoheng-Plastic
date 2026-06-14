@@ -9,7 +9,7 @@ pallet_category:
 
 hero_description: "蛋托运输系统托盘由底部塑料托盘、层间隔板与多层蛋托组合构成，用于鸡蛋周转、仓储与短途运输中的整托单元化管理。系统支持按层数进行堆叠配置，便于在保障稳定性的前提下提升单托装载效率。"
 contact_cta_label: "获取报价"
-contact_cta_link: "/zh/contact"
+contact_cta_link: "/contact"
 detail_intro: |-
   1. 蛋托运输系统托盘采用“底托 + 隔板 + 蛋托”分层组合结构。底部塑料托盘用于承载与叉车搬运，隔板用于层间支撑与受力分散，蛋托用于单枚鸡蛋定位，适用于蛋品集配、分拣中心与终端配送前的周转场景。
 
