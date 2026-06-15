@@ -2,7 +2,7 @@
 title: "塑料托盘RFQ清单：采购询价前必须锁定的12项技术规格"
 description: "用一份可执行的塑料托盘RFQ规格清单，提前锁定载荷、货架跨度、材料、加固、测试与商务条款，减少低价错配和后续替换成本。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2605-plastic-pallet-rfq-specification-checklist.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘","RFQ","托盘采购","货架载荷","仓储管理"]
 reading: "8 分钟"

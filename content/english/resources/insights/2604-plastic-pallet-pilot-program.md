@@ -2,7 +2,7 @@
 title: "How to Run a 90-Day Plastic Pallet Pilot Before Full Warehouse Rollout"
 description: "A 90-day pilot framework to validate plastic pallet ROI, racking safety, and operational fit before replacing wooden pallets across your warehouse network."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2604-plastic-pallet-pilot-program-warehouse-rollout.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallets","warehouse upgrade","ROI","racking"]
 reading: "8 min"

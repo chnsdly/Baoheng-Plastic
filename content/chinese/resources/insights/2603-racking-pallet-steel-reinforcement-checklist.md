@@ -2,7 +2,7 @@
 title: "货架安全专题：采购前如何评估带钢管加固的塑料托盘"
 description: "基于《从木托盘到塑料托盘：仓储升级实用指南》的延伸内容，聚焦一个关键点：货架场景下钢管加固该怎么评估。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2603-steel-reinforced-racking-plastic-pallet-checklist.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["HDPE","货架","钢管加固"]
 reading: "4 分钟"

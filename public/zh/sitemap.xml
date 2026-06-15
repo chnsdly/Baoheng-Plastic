@@ -15,6 +15,8 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/resources/2624-plastic-pallet-anti-slip-edge-lip-selection.webp</image:loc>
       <image:title>塑料托盘防滑设计：如何为稳定单元货载选择挡边与防滑面</image:title>
@@ -260,7 +262,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"/>
     <image:image>
-      <image:loc>http://localhost:1313/images/resources/articles-0.jpg</image:loc>
+      <image:loc>http://localhost:1313/images/resources/2605-plastic-pallet-rfq-specification-checklist.webp</image:loc>
       <image:title>塑料托盘RFQ清单：采购询价前必须锁定的12项技术规格</image:title>
     </image:image>
   </url><url>
@@ -272,7 +274,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2604-plastic-pallet-pilot-program/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2604-plastic-pallet-pilot-program/"/>
     <image:image>
-      <image:loc>http://localhost:1313/images/resources/articles-0.jpg</image:loc>
+      <image:loc>http://localhost:1313/images/resources/2604-plastic-pallet-pilot-program-warehouse-rollout.webp</image:loc>
       <image:title>正式替换前，如何做一套90天塑料托盘试点验证</image:title>
     </image:image>
   </url><url>
@@ -284,7 +286,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/"/>
     <image:image>
-      <image:loc>http://localhost:1313/images/resources/articles-0.jpg</image:loc>
+      <image:loc>http://localhost:1313/images/resources/2603-steel-reinforced-racking-plastic-pallet-checklist.webp</image:loc>
       <image:title>货架安全专题：采购前如何评估带钢管加固的塑料托盘</image:title>
     </image:image>
   </url><url>
@@ -296,7 +298,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/"/>
     <image:image>
-      <image:loc>http://localhost:1313/images/resources/articles-0.jpg</image:loc>
+      <image:loc>http://localhost:1313/images/resources/2511-wooden-to-plastic-pallets-warehouse-upgrade.webp</image:loc>
       <image:title>从木托盘到塑料托盘：仓储升级实用指南</image:title>
     </image:image>
   </url><url>

@@ -3,7 +3,7 @@
 title: "Cómo validar un programa piloto de palets plásticos en 90 días"
 description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2604-plastic-pallet-pilot-program-warehouse-rollout.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
 reading: "8 min"

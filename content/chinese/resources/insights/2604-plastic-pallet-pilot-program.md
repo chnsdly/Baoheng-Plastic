@@ -2,7 +2,7 @@
 title: "正式替换前，如何做一套90天塑料托盘试点验证"
 description: "提供一套可落地的90天试点框架，帮助仓储与采购团队在全面替换木托盘前，先验证塑料托盘的安全性、适配性与ROI。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2604-plastic-pallet-pilot-program-warehouse-rollout.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘","仓储升级","ROI","货架"]
 reading: "8 分钟"

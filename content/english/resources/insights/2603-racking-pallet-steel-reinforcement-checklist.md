@@ -2,7 +2,7 @@
 title: "Racking Safety Deep Dive: How to Evaluate Steel-Reinforced Plastic Pallets Before Purchase"
 description: "An extension of our wooden-to-plastic pallet upgrade guide, focused on one critical topic: how to evaluate steel reinforcement for racking safety."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2603-steel-reinforced-racking-plastic-pallet-checklist.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["HDPE","Racking","Steel Reinforcement"]
 reading: "4 min"
