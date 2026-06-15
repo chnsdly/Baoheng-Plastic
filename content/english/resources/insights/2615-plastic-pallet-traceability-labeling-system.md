@@ -2,7 +2,7 @@
 title: "Plastic Pallet Traceability: How to Build a Labeling System That Survives Real Warehouse Use"
 description: "A practical guide for manufacturers, 3PLs, and warehouse teams on designing plastic pallet labels, IDs, scan points, and data rules for returnable pallet control."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2615-plastic-pallet-traceability-labeling-system.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet traceability", "pallet labeling", "warehouse asset tracking", "returnable packaging"]
 reading: "9 min"

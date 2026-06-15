@@ -2,7 +2,7 @@
 title: "塑料托盘批量采购前的载荷测试：B2B 买家的实用验证方案"
 description: "面向采购、仓储和物流团队的实用指南，说明在批量采购前如何验证塑料托盘承载能力、挠度、货架匹配和实际搬运表现。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2616-plastic-pallet-load-test-before-bulk-order.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘载荷测试", "托盘承载能力", "托盘批量采购", "仓库托盘验证"]
 reading: "9 min"

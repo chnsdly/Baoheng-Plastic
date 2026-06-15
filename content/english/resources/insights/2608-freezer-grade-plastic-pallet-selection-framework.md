@@ -2,7 +2,7 @@
 title: "How to Specify Plastic Pallets for Freezer Warehouses: A Practical Framework for -25°C to -18°C Operations"
 description: "A procurement and operations guide to selecting plastic pallets for freezer environments, with material checks, impact-risk controls, and implementation standards for cold-chain warehouses."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2608-freezer-grade-plastic-pallet-selection-framework.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["freezer warehouse", "plastic pallets", "cold chain logistics", "HDPE pallet"]
 reading: "8 min"

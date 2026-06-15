@@ -2,7 +2,7 @@
 title: "冷库塑料托盘如何选型：适用于 -25°C 到 -18°C 场景的实操框架"
 description: "面向采购与仓储运营团队的冷库塑料托盘选型指南，覆盖材料校验、抗冲击风险控制与冷链仓实施要点。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2608-freezer-grade-plastic-pallet-selection-framework.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["冷库仓储", "塑料托盘", "冷链物流", "HDPE托盘"]
 reading: "8 分钟"

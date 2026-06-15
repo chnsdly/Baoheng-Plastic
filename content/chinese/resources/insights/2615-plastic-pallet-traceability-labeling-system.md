@@ -2,7 +2,7 @@
 title: "塑料托盘追踪管理：如何建立经得起真实仓库使用的标识系统"
 description: "面向制造商、第三方仓储和物流团队的实用指南，说明如何设计塑料托盘标签、编号、扫码节点和数据规则，用于周转托盘管理。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2615-plastic-pallet-traceability-labeling-system.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘追踪", "托盘标识", "仓库资产管理", "周转包装"]
 reading: "9 min"

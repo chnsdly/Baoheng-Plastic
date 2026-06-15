@@ -2,7 +2,7 @@
 title: "食品仓塑料托盘清洁SOP：如何在不牺牲周转效率的前提下控制卫生风险"
 description: "面向食品与饮料仓储的实操框架：明确托盘清洗频次、放行标准与隔离规则，在降低污染风险的同时保障多班次作业效率。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2611-plastic-pallet-sanitation-sop-for-food-warehouses.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["食品仓", "塑料托盘卫生", "清洁SOP", "HACCP"]
 reading: "8 分钟"

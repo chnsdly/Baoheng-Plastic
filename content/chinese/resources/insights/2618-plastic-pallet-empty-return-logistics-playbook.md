@@ -2,7 +2,7 @@
 title: "如何降低塑料托盘空托回运成本：一套可执行的物流操作手册"
 description: "面向 B2B 采购与物流团队的塑料托盘空托回运管理框架，覆盖线路分级、触发规则、装载标准、交接控制与关键指标。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2618-plastic-pallet-empty-return-logistics-playbook.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘回运", "空托回运成本", "托盘池管理", "仓储运输规划"]
 reading: "9 分钟"

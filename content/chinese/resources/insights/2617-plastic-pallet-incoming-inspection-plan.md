@@ -2,7 +2,7 @@
 title: "塑料托盘到货检验怎么做：仓库正式投用前的实用 QC 计划"
 description: "面向 B2B 采购与仓储团队的塑料托盘到货检验指南，涵盖抽样、尺寸检查、功能验证、缺陷分级与供应商反馈机制。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2617-plastic-pallet-incoming-inspection-plan.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘检验", "到货质检", "仓储托盘", "托盘采购"]
 reading: "8 分钟"

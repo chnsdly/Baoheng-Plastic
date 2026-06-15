@@ -2,7 +2,7 @@
 title: "Nestable vs Rackable Plastic Pallets: A Buyer’s Decision Framework for Export and Warehouse Operations"
 description: "Learn how to choose between nestable and rackable plastic pallets using load profile, return logistics, rack exposure, and total landed cost for B2B procurement decisions."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2606-nestable-vs-rackable-plastic-pallets.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallets", "nestable pallet", "rackable pallet", "warehouse procurement"]
 reading: "7 min"

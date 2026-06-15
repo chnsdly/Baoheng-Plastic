@@ -2,7 +2,7 @@
 title: "塑料托盘颜色编码：如何降低食品、医药与多区域仓库的混用风险"
 description: "一套面向仓储与采购团队的塑料托盘颜色编码方法，帮助降低交叉接触、产品混放、状态误判和仓库操作错误。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2619-plastic-pallet-color-coding-warehouse-segregation.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘颜色编码", "仓库分区管理", "食品仓储托盘", "托盘识别"]
 reading: "8 分钟"

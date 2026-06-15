@@ -2,7 +2,7 @@
 title: "塑料托盘检查标准：何时继续使用、降级使用或报废"
 description: "面向仓库与工厂现场的一套塑料托盘检查框架，帮助团队判断托盘是否可继续使用、转入低风险场景，或在造成安全与搬运问题前及时退出。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2614-plastic-pallet-inspection-retirement-criteria.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘检查", "仓储安全", "托盘寿命", "货架托盘"]
 reading: "8 分钟"

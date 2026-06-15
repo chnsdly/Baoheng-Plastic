@@ -2,7 +2,7 @@
 title: "Forklift Impact Control for Plastic Pallet Lifecycle: A Practical SOP for Warehouse Teams"
 description: "Learn how B2B warehouse teams can reduce pallet cracking and unplanned replacement cost by standardizing forklift impact controls, incident coding, and lane-level operating rules."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["forklift impact", "plastic pallet lifecycle", "warehouse SOP", "pallet damage reduction"]
 reading: "9 min"

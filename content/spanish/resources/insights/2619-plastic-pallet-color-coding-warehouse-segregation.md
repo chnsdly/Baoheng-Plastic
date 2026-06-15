@@ -3,7 +3,7 @@
 title: "Codificación por color de palets plásticos para evitar mezclas en almacén"
 description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2619-plastic-pallet-color-coding-warehouse-segregation.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
 reading: "8 min"

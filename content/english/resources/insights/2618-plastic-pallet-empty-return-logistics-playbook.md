@@ -2,7 +2,7 @@
 title: "How to Cut Empty Return Costs in Plastic Pallet Programs: A Practical Logistics Playbook"
 description: "A practical framework for reducing empty-return freight, dwell time, and loss in plastic pallet programs across suppliers, warehouses, and distributors."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2618-plastic-pallet-empty-return-logistics-playbook.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet return logistics", "empty return cost", "pallet pooling", "warehouse transport planning"]
 reading: "9 min"

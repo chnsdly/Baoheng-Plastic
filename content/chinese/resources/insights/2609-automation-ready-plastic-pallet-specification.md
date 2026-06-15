@@ -2,7 +2,7 @@
 title: "自动化仓可用的塑料托盘如何定义：面向输送线、AS/RS 与高吞吐仓的规格清单"
 description: "面向采购与仓储团队的实操指南：如何为自动化输送与立库场景定义塑料托盘规格，包括尺寸一致性、底部结构、挠度阈值与试点验证方法。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2609-automation-ready-plastic-pallet-specification.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["自动化仓储", "塑料托盘", "ASRS", "输送线托盘"]
 reading: "9 分钟"

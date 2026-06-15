@@ -2,7 +2,7 @@
 title: "Incoming Inspection for Plastic Pallets: A Practical QC Plan Before Warehouse Deployment"
 description: "A practical guide for B2B buyers and warehouse teams on how to inspect plastic pallet lots before release, including sampling, dimensional checks, functional tests, defect classification, and supplier feedback loops."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2617-plastic-pallet-incoming-inspection-plan.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet inspection", "incoming quality control", "warehouse pallets", "pallet procurement"]
 reading: "8 min"

@@ -3,7 +3,7 @@
 title: "ISPM 15 et palettes d’exportation : cadre de décision pour acheteurs"
 description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2607-ispm15-export-pallet-compliance-framework.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
 reading: "8 min"

@@ -3,7 +3,7 @@
 title: "Manual logístico para reducir costes de retorno de palets vacíos"
 description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2618-plastic-pallet-empty-return-logistics-playbook.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
 reading: "9 min"

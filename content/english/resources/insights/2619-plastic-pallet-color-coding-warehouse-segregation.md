@@ -2,7 +2,7 @@
 title: "Plastic Pallet Color Coding: How to Prevent Mix-Ups in Food, Pharma, and Multi-Zone Warehouses"
 description: "A practical guide to building a plastic pallet color-coding system that reduces cross-contact risk, product mix-ups, and warehouse handling errors without slowing daily operations."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2619-plastic-pallet-color-coding-warehouse-segregation.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet color coding", "warehouse segregation", "food warehouse pallets", "pallet identification"]
 reading: "8 min"

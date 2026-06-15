@@ -2,7 +2,7 @@
 title: "How to Size a Plastic Pallet Pool: A Practical Method for Warehouse and Logistics Teams"
 description: "Learn a step-by-step method to calculate plastic pallet pool size, safety stock, and lane-level buffers for B2B warehouse and transport operations."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2612-plastic-pallet-pool-sizing-method.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet pool", "warehouse planning", "pallet safety stock", "logistics operations"]
 reading: "8 min"

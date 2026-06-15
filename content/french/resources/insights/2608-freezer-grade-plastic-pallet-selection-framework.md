@@ -3,7 +3,7 @@
 title: "Comment spécifier des palettes plastique pour chambres froides de -25 °C à -18 °C"
 description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2608-freezer-grade-plastic-pallet-selection-framework.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
 reading: "8 min"

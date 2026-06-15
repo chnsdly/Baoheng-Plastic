@@ -2,7 +2,7 @@
 title: "Automation-Ready Plastic Pallets: A Specification Checklist for Conveyors, AS/RS, and High-Throughput Warehouses"
 description: "A practical buyer guide to specifying plastic pallets for automated conveyor and AS/RS environments, including dimensional control, bottom-deck design, deflection limits, and pilot validation steps."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2609-automation-ready-plastic-pallet-specification.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["automated warehouse", "plastic pallets", "ASRS", "conveyor pallet"]
 reading: "9 min"

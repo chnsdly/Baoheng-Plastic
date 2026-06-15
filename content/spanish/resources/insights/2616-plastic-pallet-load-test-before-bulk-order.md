@@ -3,7 +3,7 @@
 title: "Pruebas de carga de palets plásticos antes de pedidos en volumen"
 description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2616-plastic-pallet-load-test-before-bulk-order.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
 reading: "9 min"

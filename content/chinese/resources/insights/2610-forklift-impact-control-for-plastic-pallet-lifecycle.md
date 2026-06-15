@@ -2,7 +2,7 @@
 title: "用叉车冲击控制提升塑料托盘寿命：仓库团队可落地的SOP框架"
 description: "面向B2B仓储运营团队的实操指南：通过叉车冲击控制、损伤编码和巷道级作业规则，降低托盘开裂与非计划更换成本。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["叉车冲击", "塑料托盘寿命", "仓库SOP", "托盘降损"]
 reading: "9 分钟"

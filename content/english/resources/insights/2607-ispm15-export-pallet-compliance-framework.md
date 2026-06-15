@@ -2,7 +2,7 @@
 title: "ISPM 15 and Export Pallet Compliance: A Practical Decision Framework for B2B Shipping Teams"
 description: "A practical guide for exporters on when ISPM 15 applies, where wood pallet compliance fails, and how to evaluate plastic pallets for lower border risk and smoother international shipments."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2607-ispm15-export-pallet-compliance-framework.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["ISPM 15", "export pallets", "plastic pallets", "customs compliance"]
 reading: "8 min"

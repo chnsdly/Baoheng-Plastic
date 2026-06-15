@@ -2,7 +2,7 @@
 title: "ISPM 15 与出口托盘合规：B2B出货团队可落地的决策框架"
 description: "面向出口企业的实操指南：ISPM 15 何时适用、木托盘合规常见失误点，以及如何按航线评估塑料托盘以降低通关风险。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2607-ispm15-export-pallet-compliance-framework.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["ISPM 15", "出口托盘", "塑料托盘", "通关合规"]
 reading: "8 分钟"

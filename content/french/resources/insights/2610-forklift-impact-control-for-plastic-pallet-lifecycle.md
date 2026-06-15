@@ -3,7 +3,7 @@
 title: "Maîtrise des impacts de chariot pour prolonger la durée de vie des palettes plastique"
 description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
 reading: "9 min"

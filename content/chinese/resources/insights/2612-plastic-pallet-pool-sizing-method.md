@@ -2,7 +2,7 @@
 title: "如何计算塑料托盘保有量：仓储与物流团队可执行的方法"
 description: "面向B2B仓储与物流场景，系统讲解塑料托盘池的数量计算、安全库存设置与分线路缓冲策略。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2612-plastic-pallet-pool-sizing-method.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘池", "仓储规划", "托盘安全库存", "物流运营"]
 reading: "8 min"

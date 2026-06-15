@@ -2,7 +2,7 @@
 title: "Plastic Pallet Inspection Criteria: When to Repair, Downgrade, or Retire Warehouse Pallets"
 description: "A practical inspection framework for warehouse teams to decide whether plastic pallets can stay in service, move to lighter-duty use, or be removed before they create safety and handling problems."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2614-plastic-pallet-inspection-retirement-criteria.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet inspection", "warehouse safety", "pallet lifecycle", "rackable pallet"]
 reading: "8 min"

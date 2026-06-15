@@ -2,7 +2,7 @@
 title: "如何降低闭环物流中的塑料托盘流失：一套可执行的回收管控方案"
 description: "面向制造商、经销商与仓储团队，讲解如何通过线路规则、资产归属、回收KPI和异常管理降低塑料托盘流失。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2613-plastic-pallet-loss-control-return-program.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["塑料托盘流失", "闭环物流", "托盘回收", "仓储资产管理"]
 reading: "9 min"

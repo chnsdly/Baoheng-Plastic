@@ -3,7 +3,7 @@
 title: "Palettes plastique emboîtables ou rackables : comment choisir"
 description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2606-nestable-vs-rackable-plastic-pallets.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
 reading: "7 min"

@@ -2,7 +2,7 @@
 title: "How to Reduce Plastic Pallet Loss in Closed-Loop Logistics: A Practical Return-Control Program"
 description: "A practical guide for manufacturers, distributors, and warehouse teams to reduce plastic pallet loss through lane rules, ownership control, return KPIs, and exception management."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2613-plastic-pallet-loss-control-return-program.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet loss", "closed-loop logistics", "pallet return", "warehouse asset control"]
 reading: "9 min"

@@ -3,7 +3,7 @@
 title: "Essais de charge des palettes plastique avant commande en volume"
 description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2616-plastic-pallet-load-test-before-bulk-order.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
 reading: "9 min"

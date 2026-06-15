@@ -2,7 +2,7 @@
 title: "Plastic Pallet Sanitation SOP for Food Warehouses: How to Control Hygiene Risk Without Slowing Throughput"
 description: "A practical framework for food and beverage warehouses to define pallet cleaning frequency, verification checks, and segregation rules that reduce contamination risk and protect operational efficiency."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2611-plastic-pallet-sanitation-sop-for-food-warehouses.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["food warehouse", "plastic pallet hygiene", "sanitation SOP", "HACCP"]
 reading: "8 min"

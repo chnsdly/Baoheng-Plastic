@@ -2,7 +2,7 @@
 title: "套叠式 vs 上架型塑料托盘：面向出口与仓储场景的采购决策框架"
 description: "从货架工况、载荷特征、回空物流和搬运强度四个维度，帮助B2B采购团队判断何时选套叠托盘，何时选上架托盘。"
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2606-nestable-vs-rackable-plastic-pallets.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallets", "nestable pallet", "rackable pallet", "warehouse procurement"]
 reading: "7 分钟"

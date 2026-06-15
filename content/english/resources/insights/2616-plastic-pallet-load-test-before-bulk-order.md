@@ -2,7 +2,7 @@
 title: "Plastic Pallet Load Testing Before Bulk Orders: A Practical Validation Plan for B2B Buyers"
 description: "A practical guide for procurement, warehouse, and logistics teams on validating plastic pallet load capacity, deflection, rack fit, and handling performance before committing to a bulk order."
 layout: "resources/"
-cover_image: "images/resources/articles-0.jpg"
+cover_image: "images/resources/2616-plastic-pallet-load-test-before-bulk-order.webp"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet load test", "pallet load capacity", "bulk pallet purchase", "warehouse pallet validation"]
 reading: "9 min"
