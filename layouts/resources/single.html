@@ -2,6 +2,7 @@
 
 {{ define "main" }}
   {{ $cover := or .Params.cover_image .Params.featured_image }}
+  {{ $coverAlt := .Params.cover_alt | default .Title }}
   {{ $all := where .Site.RegularPages "Section" "resources" }}
   {{ $related := slice }}
   {{ if .Params.tags }}
@@ -33,7 +34,7 @@
     <div class="container resource-single__layout">
       <main class="resource-single__main">
         {{ with $cover }}
-          <img class="resource-single__cover" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" decoding="async">
+          <img class="resource-single__cover" src="{{ . | relURL }}" alt="{{ $coverAlt }}" loading="eager" decoding="async">
         {{ end }}
 
         <div class="resource-single__body">
@@ -77,10 +78,11 @@
             {{ range first 3 (sort $related "Date" "desc") }}
               {{ $itemCover := or .Params.cover_image .Params.featured_image }}
               {{ $itemTitle := .Title }}
+              {{ $itemAlt := .Params.cover_alt | default $itemTitle }}
               <article class="resource-card">
                 <a class="resource-card__media" href="{{ .RelPermalink }}">
                   {{ with $itemCover }}
-                    <img src="{{ . | relURL }}" alt="{{ $itemTitle }}" loading="lazy" decoding="async">
+                    <img src="{{ . | relURL }}" alt="{{ $itemAlt }}" loading="lazy" decoding="async">
                   {{ else }}
                     <span class="resource-card__placeholder" aria-hidden="true"></span>
                   {{ end }}

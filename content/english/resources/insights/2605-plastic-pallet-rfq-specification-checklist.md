@@ -2,7 +2,8 @@
 title: "Plastic Pallet RFQ Checklist: 12 Specifications Buyers Should Lock Before Quoting"
 description: "Avoid costly pallet mismatches with a practical RFQ checklist covering load data, rack span, material, reinforcement, testing standards, and commercial terms."
 layout: "resources/"
-cover_image: "images/resources/2605-plastic-pallet-rfq-specification-checklist.webp"
+cover_image: "images/resources/2605.webp"
+cover_alt: "Blue plastic pallet with a checklist, tape measure, and caliper in a warehouse inspection area"
 categories: "articles" # articles | downloads | news | faq
 tags: ["plastic pallet", "RFQ", "warehouse procurement", "racking load"]
 reading: "8 min"

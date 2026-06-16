@@ -39,10 +39,11 @@
               {{ range $pages }}
                 {{ $cover := or .Params.cover_image .Params.featured_image }}
                 {{ $cardTitle := .Title }}
+                {{ $cardAlt := .Params.cover_alt | default $cardTitle }}
                 <article class="resource-card">
                   <a class="resource-card__media" href="{{ .RelPermalink }}">
                     {{ with $cover }}
-                      <img src="{{ . | relURL }}" alt="{{ $cardTitle }}" loading="lazy" decoding="async">
+                      <img src="{{ . | relURL }}" alt="{{ $cardAlt }}" loading="lazy" decoding="async">
                     {{ else }}
                       <span class="resource-card__placeholder" aria-hidden="true"></span>
                     {{ end }}
