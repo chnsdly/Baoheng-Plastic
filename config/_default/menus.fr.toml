@@ -42,55 +42,55 @@ weight = 10
 
 [[main]]
 name = "Industries"
-url = "/contact/?intent=product-recommendation"
+url = "/contact/?intent=selection-support"
 identifier = "industries"
 weight = 20
 
   [[main]]
   name = "Entreposage et logistique"
-  url = "/contact/?intent=product-recommendation&industry=warehousing-logistics"
+  url = "/contact/?intent=selection-support&industry=warehousing-logistics"
   parent = "industries"
   weight = 21
 
   [[main]]
   name = "Alimentaire et boissons"
-  url = "/contact/?intent=product-recommendation&industry=food-beverage"
+  url = "/contact/?intent=selection-support&industry=food-beverage"
   parent = "industries"
   weight = 22
 
   [[main]]
   name = "Pharma et hygiène"
-  url = "/contact/?intent=product-recommendation&industry=pharmaceutical-hygienic-manufacturing"
+  url = "/contact/?intent=selection-support&industry=pharmaceutical-hygienic-manufacturing"
   parent = "industries"
   weight = 23
 
   [[main]]
   name = "Chimie et rétention"
-  url = "/contact/?intent=product-recommendation&industry=chemical-spill-control"
+  url = "/contact/?intent=selection-support&industry=chemical-spill-control"
   parent = "industries"
   weight = 24
 
   [[main]]
   name = "Impression et emballage"
-  url = "/contact/?intent=product-recommendation&industry=printing-packaging"
+  url = "/contact/?intent=selection-support&industry=printing-packaging"
   parent = "industries"
   weight = 25
 
   [[main]]
   name = "Agriculture et produits frais"
-  url = "/contact/?intent=product-recommendation&industry=agriculture-fresh-produce"
+  url = "/contact/?intent=selection-support&industry=agriculture-fresh-produce"
   parent = "industries"
   weight = 26
 
   [[main]]
   name = "Chaîne du froid et surgelés"
-  url = "/contact/?intent=product-recommendation&industry=cold-chain-frozen-food"
+  url = "/contact/?intent=selection-support&industry=cold-chain-frozen-food"
   parent = "industries"
   weight = 27
 
   [[main]]
   name = "Volaille et oeufs"
-  url = "/contact/?intent=product-recommendation&industry=poultry-egg-handling"
+  url = "/contact/?intent=selection-support&industry=poultry-egg-handling"
   parent = "industries"
   weight = 28
 

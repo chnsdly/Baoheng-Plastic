@@ -1,6 +1,8 @@
 {{- $menu := .Site.Menus.main -}}
 {{- $languages := .Site.Languages -}}
-{{- $recommendURL := printf "%s?intent=product-recommendation" ("/contact/" | relLangURL) -}}
+{{- $languageShortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
+{{- $currentLanguageShort := default (upper .Site.Language.Lang) (index $languageShortLabels .Site.Language.Lang) -}}
+{{- $recommendURL := printf "%s?intent=selection-support" ("/contact/" | relLangURL) -}}
 {{- $quoteURL := "/contact/" | relLangURL -}}
 {{- $industrySlugs := dict
   "21" "warehousing-logistics"
@@ -94,7 +96,7 @@
                         <p class="site-header__mega-eyebrow">{{ i18n "header_industries_mega_eyebrow" }}</p>
                         <h2 class="site-header__mega-title">{{ i18n "header_industries_mega_title" }}</h2>
                         <p class="site-header__mega-text">{{ i18n "header_industries_mega_text" }}</p>
-                        <a class="button button--secondary site-header__mega-cta" href="{{ $recommendURL }}">{{ i18n "get_product_recommendation" }}</a>
+                        <a class="button button--secondary site-header__mega-cta" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a>
                       </div>
 
                       <div class="site-header__mega-columns site-header__mega-columns--industries">
@@ -140,14 +142,14 @@
 
       <div class="site-header__actions">
         <div class="site-header__cta-group" aria-label="{{ i18n "header_conversion_actions" }}">
-          <a class="site-header__cta site-header__cta--outline" href="{{ $recommendURL }}">{{ i18n "get_product_recommendation" }}</a>
+          <a class="site-header__cta site-header__cta--outline" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a>
           <a class="site-header__cta site-header__cta--primary" href="{{ $quoteURL }}">{{ i18n "nav_request_quote" }}</a>
         </div>
 
         {{- if gt (len $languages) 1 -}}
           <details class="site-header__language" data-language-switcher>
             <summary class="site-header__icon-button">
-              <span class="site-header__language-label font-meta">{{ .Site.Language.Label | default .Site.Language.Lang }}</span>
+              <span class="site-header__language-label font-meta">{{ $currentLanguageShort }}</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
               </svg>
@@ -213,7 +215,7 @@
           </ul>
 
           <div class="site-header__mobile-cta" aria-label="{{ i18n "header_conversion_actions" }}">
-            <a class="site-header__cta site-header__cta--outline" href="{{ $recommendURL }}">{{ i18n "get_product_recommendation" }}</a>
+            <a class="site-header__cta site-header__cta--outline" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a>
             <a class="site-header__cta site-header__cta--primary" href="{{ $quoteURL }}">{{ i18n "nav_request_quote" }}</a>
           </div>
         </div>
@@ -223,7 +225,7 @@
           {{- $panelHref := partial "menu-url.html" (dict "url" .URL) -}}
           {{- if eq $itemKey "industries" -}}{{- $panelHref = $recommendURL -}}{{- end -}}
           {{- $panelLabel := printf "%s %s" (i18n "all_menu_prefix") .Name -}}
-          {{- if eq $itemKey "industries" -}}{{- $panelLabel = i18n "get_product_recommendation" -}}{{- end -}}
+          {{- if eq $itemKey "industries" -}}{{- $panelLabel = i18n "product_selection_support" -}}{{- end -}}
           {{- if .HasChildren -}}
             <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
               <ul class="site-header__mobile-list" role="list">
