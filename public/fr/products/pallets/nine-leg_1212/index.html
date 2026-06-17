@@ -49,13 +49,11 @@
       </a>
 
       <nav class="site-header__nav" aria-label='Navigation principale'>
-        <ul class="site-header__nav-list" role="list"><li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="/fr/">
-                <span>ACCUEIL</span></a></li><li class="site-header__nav-item site-header__nav-item--has-children site-header__nav-item--mega">
+        <ul class="site-header__nav-list" role="list"><li class="site-header__nav-item site-header__nav-item--has-children site-header__nav-item--mega">
               <a class="site-header__nav-link" href="/fr/products/">
-                <span>PRODUITS</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                <span>Produits</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
-                  </svg></a><div class="site-header__mega" aria-label="PRODUITS">
+                  </svg></a><div class="site-header__mega site-header__mega--products" aria-label="Produits">
                     <div class="container container--wide site-header__mega-inner">
                       <div class="site-header__mega-lede">
                         <p class="site-header__mega-eyebrow">Centre produits</p>
@@ -83,11 +81,36 @@
                         </div>
                       </div>
                     </div>
+                  </div></li><li class="site-header__nav-item site-header__nav-item--has-children site-header__nav-item--mega">
+              <a class="site-header__nav-link" href="/fr/contact/?intent=product-recommendation">
+                <span>Industries</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                  </svg></a><div class="site-header__mega site-header__mega--industries" aria-label="Industries">
+                    <div class="container container--wide site-header__mega-inner">
+                      <div class="site-header__mega-lede">
+                        <p class="site-header__mega-eyebrow">Applications par industrie</p>
+                        <h2 class="site-header__mega-title">Commencez par votre environnement d&#39;utilisation</h2>
+                        <p class="site-header__mega-text">Choisissez l&#39;application la plus proche et envoyez vos conditions d&#39;exploitation afin que nous recommandions les palettes, caisses ou conteneurs adaptés.</p>
+                        <a class="button button--secondary site-header__mega-cta" href="/fr/contact/?intent=product-recommendation">Obtenir une recommandation</a>
+                      </div>
+
+                      <div class="site-header__mega-columns site-header__mega-columns--industries">
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">Usages industriels clés</p>
+                          <ul class="site-header__mega-list" role="list"><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=warehousing-logistics">Entreposage et logistique</a></li><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=food-beverage">Alimentaire et boissons</a></li><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=pharmaceutical-hygienic-manufacturing">Pharma et hygiène</a></li><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=chemical-spill-control">Chimie et rétention</a></li></ul>
+                        </div>
+
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">Manutention spécialisée</p>
+                          <ul class="site-header__mega-list" role="list"><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=printing-packaging">Impression et emballage</a></li><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=agriculture-fresh-produce">Agriculture et produits frais</a></li><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=cold-chain-frozen-food">Chaîne du froid et surgelés</a></li><li><a class="site-header__mega-link" href="/fr/contact/?intent=product-recommendation&amp;industry=poultry-egg-handling">Volaille et oeufs</a></li></ul>
+                        </div>
+                      </div>
+                    </div>
                   </div></li><li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="/fr/about/">
-                <span>À PROPOS</span></a></li><li class="site-header__nav-item site-header__nav-item--has-children">
+              <a class="site-header__nav-link" href="/fr/about/#capabilities">
+                <span>Fabrication</span></a></li><li class="site-header__nav-item site-header__nav-item--has-children">
               <a class="site-header__nav-link" href="/fr/resources/">
-                <span>RESSOURCES</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                <span>Ressources</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
                   </svg></a><ul class="site-header__submenu" role="list"><li class="site-header__submenu-item">
                         <a class="site-header__submenu-link" href="/fr/resources/case-studies/">Cas clients</a>
@@ -96,11 +119,15 @@
                       </li><li class="site-header__submenu-item">
                         <a class="site-header__submenu-link" href="/fr/resources/faq/">FAQ</a>
                       </li></ul></li><li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="/fr/contact/">
-                <span>CONTACT</span></a></li></ul>
+              <a class="site-header__nav-link" href="/fr/about/">
+                <span>À propos</span></a></li></ul>
       </nav>
 
-      <div class="site-header__actions"><details class="site-header__language" data-language-switcher>
+      <div class="site-header__actions">
+        <div class="site-header__cta-group" aria-label="Actions de conversion">
+          <a class="site-header__cta site-header__cta--outline" href="/fr/contact/?intent=product-recommendation">Obtenir une recommandation</a>
+          <a class="site-header__cta site-header__cta--primary" href="/fr/contact/">Demander un devis</a>
+        </div><details class="site-header__language" data-language-switcher>
             <summary class="site-header__icon-button">
               <span class="site-header__language-label font-meta">Français</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -138,21 +165,31 @@
 
       <div class="site-header__mobile-panels">
         <div class="site-header__mobile-panel site-header__mobile-panel--root" data-menu-panel="root">
-          <ul class="site-header__mobile-list" role="list"><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/fr/">ACCUEIL</a></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="products">
-                    <span>PRODUITS</span>
+          <ul class="site-header__mobile-list" role="list"><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="products">
+                    <span>Produits</span>
                     <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
                     </svg>
-                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/fr/about/">À PROPOS</a></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="resources">
-                    <span>RESSOURCES</span>
+                  </button></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="industries">
+                    <span>Industries</span>
                     <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
                     </svg>
-                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/fr/contact/">CONTACT</a></li></ul>
+                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/fr/about/#capabilities">Fabrication</a></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="resources">
+                    <span>Ressources</span>
+                    <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                    </svg>
+                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/fr/about/">À propos</a></li></ul>
+
+          <div class="site-header__mobile-cta" aria-label="Actions de conversion">
+            <a class="site-header__cta site-header__cta--outline" href="/fr/contact/?intent=product-recommendation">Obtenir une recommandation</a>
+            <a class="site-header__cta site-header__cta--primary" href="/fr/contact/">Demander un devis</a>
+          </div>
         </div><div class="site-header__mobile-panel" data-menu-panel="products" hidden>
               <ul class="site-header__mobile-list" role="list">
                 <li class="site-header__mobile-item">
-                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/fr/products/">Tous les PRODUITS</a>
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/fr/products/">Tous les Produits</a>
                 </li><li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="/fr/products/pallets/">Palettes plastique</a>
                   </li><li class="site-header__mobile-item">
@@ -166,10 +203,31 @@
                   </li><li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="/fr/products/waste-bins/">Bacs à déchets plastique</a>
                   </li></ul>
+            </div><div class="site-header__mobile-panel" data-menu-panel="industries" hidden>
+              <ul class="site-header__mobile-list" role="list">
+                <li class="site-header__mobile-item">
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/fr/contact/?intent=product-recommendation">Obtenir une recommandation</a>
+                </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=warehousing-logistics">Entreposage et logistique</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=food-beverage">Alimentaire et boissons</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=pharmaceutical-hygienic-manufacturing">Pharma et hygiène</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=chemical-spill-control">Chimie et rétention</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=printing-packaging">Impression et emballage</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=agriculture-fresh-produce">Agriculture et produits frais</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=cold-chain-frozen-food">Chaîne du froid et surgelés</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/fr/contact/?intent=product-recommendation&amp;industry=poultry-egg-handling">Volaille et oeufs</a>
+                  </li></ul>
             </div><div class="site-header__mobile-panel" data-menu-panel="resources" hidden>
               <ul class="site-header__mobile-list" role="list">
                 <li class="site-header__mobile-item">
-                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/fr/resources/">Tous les RESSOURCES</a>
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/fr/resources/">Tous les Ressources</a>
                 </li><li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="/fr/resources/case-studies/">Cas clients</a>
                   </li><li class="site-header__mobile-item">
@@ -194,7 +252,7 @@
     const languageSwitcher = header.querySelector('[data-language-switcher]');
     const menuTitles = {
       root: "Menu",
-      "products": "PRODUITS","resources": "RESSOURCES",
+      "products": "Produits","industries": "Industries","resources": "Ressources",
     };
 
     const closeLanguageSwitcher = () => {
@@ -249,7 +307,7 @@
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1024) closeDrawer();
+      if (window.innerWidth >= 1280) closeDrawer();
     });
 
     showPanel('root');
@@ -565,11 +623,14 @@
   <input type="hidden" name="form_type" value="product-detail">
   
   <input type="hidden" name="page_url" value="http://localhost:1313/fr/products/pallets/nine-leg_1212/">
-  <input type="hidden" name="utm_source"   id="utm_source">
-  <input type="hidden" name="utm_medium"   id="utm_medium">
-  <input type="hidden" name="utm_campaign" id="utm_campaign">
-  <input type="hidden" name="utm_term"     id="utm_term">
-  <input type="hidden" name="utm_content"  id="utm_content">
+  <input type="hidden" name="intent">
+  <input type="hidden" name="industry">
+  <input type="hidden" name="product">
+  <input type="hidden" name="utm_source">
+  <input type="hidden" name="utm_medium">
+  <input type="hidden" name="utm_campaign">
+  <input type="hidden" name="utm_term">
+  <input type="hidden" name="utm_content">
 
   <div style="display:none;"><input name="website" autocomplete="off"></div>
 
@@ -589,9 +650,12 @@
 <script>
   (function(){
     const p = new URLSearchParams(location.search);
-    for (const k of ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"]) {
-      const el = document.getElementById(k);
-      if (el && p.get(k)) el.value = p.get(k);
+    for (const k of ["intent","industry","product","utm_source","utm_medium","utm_campaign","utm_term","utm_content"]) {
+      const value = p.get(k);
+      if (!value) continue;
+      document.querySelectorAll(`input[name="${k}"]`).forEach((el) => {
+        el.value = value;
+      });
     }
   })();
 </script>

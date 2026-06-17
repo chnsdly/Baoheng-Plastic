@@ -49,13 +49,11 @@
       </a>
 
       <nav class="site-header__nav" aria-label='Navegación principal'>
-        <ul class="site-header__nav-list" role="list"><li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="/es/">
-                <span>INICIO</span></a></li><li class="site-header__nav-item site-header__nav-item--has-children site-header__nav-item--mega">
+        <ul class="site-header__nav-list" role="list"><li class="site-header__nav-item site-header__nav-item--has-children site-header__nav-item--mega">
               <a class="site-header__nav-link" href="/es/products/">
-                <span>PRODUCTOS</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                <span>Productos</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
-                  </svg></a><div class="site-header__mega" aria-label="PRODUCTOS">
+                  </svg></a><div class="site-header__mega site-header__mega--products" aria-label="Productos">
                     <div class="container container--wide site-header__mega-inner">
                       <div class="site-header__mega-lede">
                         <p class="site-header__mega-eyebrow">Centro de productos</p>
@@ -83,11 +81,36 @@
                         </div>
                       </div>
                     </div>
+                  </div></li><li class="site-header__nav-item site-header__nav-item--has-children site-header__nav-item--mega">
+              <a class="site-header__nav-link" href="/es/contact/?intent=product-recommendation">
+                <span>Industrias</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                  </svg></a><div class="site-header__mega site-header__mega--industries" aria-label="Industrias">
+                    <div class="container container--wide site-header__mega-inner">
+                      <div class="site-header__mega-lede">
+                        <p class="site-header__mega-eyebrow">Aplicaciones por industria</p>
+                        <h2 class="site-header__mega-title">Empiece por su entorno de manejo</h2>
+                        <p class="site-header__mega-text">Elija la aplicación más cercana y envíe sus condiciones de operación para recomendar palets, cajas o contenedores adecuados.</p>
+                        <a class="button button--secondary site-header__mega-cta" href="/es/contact/?intent=product-recommendation">Obtener recomendación</a>
+                      </div>
+
+                      <div class="site-header__mega-columns site-header__mega-columns--industries">
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">Usos industriales principales</p>
+                          <ul class="site-header__mega-list" role="list"><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=warehousing-logistics">Almacenaje y logística</a></li><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=food-beverage">Alimentos y bebidas</a></li><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=pharmaceutical-hygienic-manufacturing">Farmacéutica e higiene</a></li><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=chemical-spill-control">Químicos y control de derrames</a></li></ul>
+                        </div>
+
+                        <div class="site-header__mega-column">
+                          <p class="site-header__mega-heading">Manejo especializado</p>
+                          <ul class="site-header__mega-list" role="list"><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=printing-packaging">Impresión y embalaje</a></li><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=agriculture-fresh-produce">Agricultura y frescos</a></li><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=cold-chain-frozen-food">Cadena de frío y congelados</a></li><li><a class="site-header__mega-link" href="/es/contact/?intent=product-recommendation&amp;industry=poultry-egg-handling">Aves y manejo de huevos</a></li></ul>
+                        </div>
+                      </div>
+                    </div>
                   </div></li><li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="/es/about/">
-                <span>NOSOTROS</span></a></li><li class="site-header__nav-item site-header__nav-item--has-children">
+              <a class="site-header__nav-link" href="/es/about/#capabilities">
+                <span>Fabricación</span></a></li><li class="site-header__nav-item site-header__nav-item--has-children">
               <a class="site-header__nav-link" href="/es/resources/">
-                <span>RECURSOS</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                <span>Recursos</span><svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
                   </svg></a><ul class="site-header__submenu" role="list"><li class="site-header__submenu-item">
                         <a class="site-header__submenu-link" href="/es/resources/case-studies/">Casos prácticos</a>
@@ -96,11 +119,15 @@
                       </li><li class="site-header__submenu-item">
                         <a class="site-header__submenu-link" href="/es/resources/faq/">Preguntas frecuentes</a>
                       </li></ul></li><li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="/es/contact/">
-                <span>CONTACTO</span></a></li></ul>
+              <a class="site-header__nav-link" href="/es/about/">
+                <span>Nosotros</span></a></li></ul>
       </nav>
 
-      <div class="site-header__actions"><details class="site-header__language" data-language-switcher>
+      <div class="site-header__actions">
+        <div class="site-header__cta-group" aria-label="Acciones de conversión">
+          <a class="site-header__cta site-header__cta--outline" href="/es/contact/?intent=product-recommendation">Obtener recomendación</a>
+          <a class="site-header__cta site-header__cta--primary" href="/es/contact/">Solicitar cotización</a>
+        </div><details class="site-header__language" data-language-switcher>
             <summary class="site-header__icon-button">
               <span class="site-header__language-label font-meta">Español</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -138,21 +165,31 @@
 
       <div class="site-header__mobile-panels">
         <div class="site-header__mobile-panel site-header__mobile-panel--root" data-menu-panel="root">
-          <ul class="site-header__mobile-list" role="list"><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/es/">INICIO</a></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="products">
-                    <span>PRODUCTOS</span>
+          <ul class="site-header__mobile-list" role="list"><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="products">
+                    <span>Productos</span>
                     <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
                     </svg>
-                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/es/about/">NOSOTROS</a></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="resources">
-                    <span>RECURSOS</span>
+                  </button></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="industries">
+                    <span>Industrias</span>
                     <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
                     </svg>
-                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/es/contact/">CONTACTO</a></li></ul>
+                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/es/about/#capabilities">Fabricación</a></li><li class="site-header__mobile-item"><button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="resources">
+                    <span>Recursos</span>
+                    <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                    </svg>
+                  </button></li><li class="site-header__mobile-item"><a class="site-header__mobile-link" href="/es/about/">Nosotros</a></li></ul>
+
+          <div class="site-header__mobile-cta" aria-label="Acciones de conversión">
+            <a class="site-header__cta site-header__cta--outline" href="/es/contact/?intent=product-recommendation">Obtener recomendación</a>
+            <a class="site-header__cta site-header__cta--primary" href="/es/contact/">Solicitar cotización</a>
+          </div>
         </div><div class="site-header__mobile-panel" data-menu-panel="products" hidden>
               <ul class="site-header__mobile-list" role="list">
                 <li class="site-header__mobile-item">
-                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/es/products/">Todos los PRODUCTOS</a>
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/es/products/">Todos los Productos</a>
                 </li><li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="/es/products/pallets/">Palets de plástico</a>
                   </li><li class="site-header__mobile-item">
@@ -166,10 +203,31 @@
                   </li><li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="/es/products/waste-bins/">Contenedores de residuos</a>
                   </li></ul>
+            </div><div class="site-header__mobile-panel" data-menu-panel="industries" hidden>
+              <ul class="site-header__mobile-list" role="list">
+                <li class="site-header__mobile-item">
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/es/contact/?intent=product-recommendation">Obtener recomendación</a>
+                </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=warehousing-logistics">Almacenaje y logística</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=food-beverage">Alimentos y bebidas</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=pharmaceutical-hygienic-manufacturing">Farmacéutica e higiene</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=chemical-spill-control">Químicos y control de derrames</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=printing-packaging">Impresión y embalaje</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=agriculture-fresh-produce">Agricultura y frescos</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=cold-chain-frozen-food">Cadena de frío y congelados</a>
+                  </li><li class="site-header__mobile-item">
+                    <a class="site-header__mobile-link" href="/es/contact/?intent=product-recommendation&amp;industry=poultry-egg-handling">Aves y manejo de huevos</a>
+                  </li></ul>
             </div><div class="site-header__mobile-panel" data-menu-panel="resources" hidden>
               <ul class="site-header__mobile-list" role="list">
                 <li class="site-header__mobile-item">
-                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/es/resources/">Todos los RECURSOS</a>
+                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="/es/resources/">Todos los Recursos</a>
                 </li><li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="/es/resources/case-studies/">Casos prácticos</a>
                   </li><li class="site-header__mobile-item">
@@ -194,7 +252,7 @@
     const languageSwitcher = header.querySelector('[data-language-switcher]');
     const menuTitles = {
       root: "Menú",
-      "products": "PRODUCTOS","resources": "RECURSOS",
+      "products": "Productos","industries": "Industrias","resources": "Recursos",
     };
 
     const closeLanguageSwitcher = () => {
@@ -249,7 +307,7 @@
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1024) closeDrawer();
+      if (window.innerWidth >= 1280) closeDrawer();
     });
 
     showPanel('root');
@@ -517,11 +575,14 @@
   <input type="hidden" name="form_type" value="product-detail">
   
   <input type="hidden" name="page_url" value="http://localhost:1313/es/products/bulk-containers/1210-fpbvs75-grey/">
-  <input type="hidden" name="utm_source"   id="utm_source">
-  <input type="hidden" name="utm_medium"   id="utm_medium">
-  <input type="hidden" name="utm_campaign" id="utm_campaign">
-  <input type="hidden" name="utm_term"     id="utm_term">
-  <input type="hidden" name="utm_content"  id="utm_content">
+  <input type="hidden" name="intent">
+  <input type="hidden" name="industry">
+  <input type="hidden" name="product">
+  <input type="hidden" name="utm_source">
+  <input type="hidden" name="utm_medium">
+  <input type="hidden" name="utm_campaign">
+  <input type="hidden" name="utm_term">
+  <input type="hidden" name="utm_content">
 
   <div style="display:none;"><input name="website" autocomplete="off"></div>
 
@@ -541,9 +602,12 @@
 <script>
   (function(){
     const p = new URLSearchParams(location.search);
-    for (const k of ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"]) {
-      const el = document.getElementById(k);
-      if (el && p.get(k)) el.value = p.get(k);
+    for (const k of ["intent","industry","product","utm_source","utm_medium","utm_campaign","utm_term","utm_content"]) {
+      const value = p.get(k);
+      if (!value) continue;
+      document.querySelectorAll(`input[name="${k}"]`).forEach((el) => {
+        el.value = value;
+      });
     }
   })();
 </script>

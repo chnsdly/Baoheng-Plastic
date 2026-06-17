@@ -1,0 +1,9 @@
+{{- $url := .url | default "" -}}
+{{- if and (hasPrefix $url "/") (in $url "?") -}}
+  {{- $parts := split $url "?" -}}
+  {{- printf "%s?%s" ((index $parts 0) | relLangURL) (index $parts 1) -}}
+{{- else if hasPrefix $url "/" -}}
+  {{- $url | relLangURL -}}
+{{- else -}}
+  {{- $url -}}
+{{- end -}}
