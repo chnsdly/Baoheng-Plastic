@@ -1,4 +1,7 @@
 ---
 title: "塑料托盘"
-description: "浏览注塑 HDPE/PP 塑料托盘，覆盖货架存储、堆码、出口运输、冷链、食品加工和仓储物流等应用场景。"
+description: "按结构、载荷、工况和应用场景浏览注塑与吹塑塑料托盘。"
+weight: 10
+product_family: "Plastic Pallets"
 ---
+

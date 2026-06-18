@@ -139,7 +139,7 @@ popular: false
 
 目标不是消除所有额外操作，而是确认月台增加的操作时间，是否能被运输和仓储收益合理抵消。
 
-对于需要叉车兼容和可循环承载的批量货物，可参考这款 [1200 × 1000 mm 折叠式围板箱](/products/foldable-pallet-boxes/fpbvs80a/) 的结构参数，用于比较占地尺寸、承载能力、折叠搬运方式和回运空间假设。
+对于需要叉车兼容和可循环承载的批量货物，可参考这款 [1200 × 1000 mm 折叠式围板箱](/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/) 的结构参数，用于比较占地尺寸、承载能力、折叠搬运方式和回运空间假设。
 
 ---
 

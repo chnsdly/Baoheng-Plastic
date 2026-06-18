@@ -1,6 +1,9 @@
 {{- $prods := where site.RegularPages "Section" "products" -}}
 {{- $featured := where $prods ".Params.featured" true | first 8 -}}
 {{- if eq (len $featured) 0 -}}{{- $featured = first 8 $prods.ByTitle -}}{{- end -}}
+{{- $productsRoot := site.GetPage "section" "products" -}}
+{{- $families := slice -}}
+{{- with $productsRoot -}}{{- $families = .Sections.ByWeight -}}{{- end -}}
 
 <section class="home-featured">
   <div class="container home-featured__inner">
@@ -13,17 +16,36 @@
     <div class="home-product-grid">
       {{ range $p := $featured }}
         {{ $desc := $p.Description | default $p.Params.hero_description | default $p.Summary | plainify }}
+        {{ $family := $p.Params.product_family | default $p.Params.product_type }}
+        {{ $series := $p.Params.product_series }}
+        {{ $familyLabel := $family }}
+        {{ $seriesLabel := $series }}
+        {{ $hasSeriesSection := false }}
+        {{ $productURL := $p.RelPermalink }}
+        {{ range $families }}
+          {{ if hasPrefix $productURL .RelPermalink }}
+            {{ $familyLabel = .Title }}
+            {{ range .Sections.ByWeight }}
+              {{ if hasPrefix $productURL .RelPermalink }}
+                {{ $seriesLabel = .Title }}
+                {{ $hasSeriesSection = true }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if and (not $hasSeriesSection) (ne site.Language.Lang "en") }}{{ $seriesLabel = "" }}{{ end }}
         <article class="home-product-card">
           <a class="home-product-card__media" href="{{ $p.RelPermalink }}">
             {{ with $p.Params.featured_image }}
               <img src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
             {{ else }}
-              <span class="home-product-card__placeholder">{{ $p.Params.product_type | default "Product" }}</span>
+              <span class="home-product-card__placeholder">{{ $familyLabel | default "Product" }}</span>
             {{ end }}
           </a>
           <div class="home-product-card__body">
-            {{ with $p.Params.product_type }}<p class="home-product-card__type">{{ . }}</p>{{ end }}
+            {{ with $familyLabel }}<p class="home-product-card__type">{{ . }}</p>{{ end }}
             <h3 class="home-product-card__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+            {{ with $seriesLabel }}<p class="home-product-card__series">{{ . }}</p>{{ end }}
             {{ with $desc }}<p class="home-product-card__desc">{{ truncate 120 . }}</p>{{ end }}
             <a class="home-product-card__quote" href="{{ "/contact/" | relLangURL }}?product={{ $p.Title | urlquery }}">{{ i18n "home_quote" }}</a>
           </div>

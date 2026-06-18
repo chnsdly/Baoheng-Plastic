@@ -11,35 +11,22 @@ weight = 10
   weight = 11
 
   [[main]]
-  name = "Nestable Blow-Mold Pallets"
-  url = "/products/blow-molded-pallets/"
+  name = "Pallet Boxes & Bulk Containers"
+  url = "/products/pallet-boxes-bulk-containers/"
   parent = "products"
   weight = 12
 
   [[main]]
   name = "Plastic Crates & Boxes"
-  url = "/products/crates/"
+  url = "/products/crates-boxes-totes/"
   parent = "products"
   weight = 13
-
-  [[main]]
-  name = "Foldable Pallet Boxes"
-  url = "/products/foldable-pallet-boxes/"
-  parent = "products"
-  weight = 14
-
-  [[main]]
-  name = "Large Bulk Containers"
-  url = "/products/bulk-containers/"
-  parent = "products"
-  weight = 15
 
   [[main]]
   name = "Plastic Waste Bins"
   url = "/products/waste-bins/"
   parent = "products"
-  weight = 16
-
+  weight = 14
 [[main]]
 name = "Industries"
 url = "/contact/?intent=selection-support"

@@ -1,9 +1,8 @@
 {{- $page := .page -}}
-{{- $enableFilters := .enableFilters | default false -}}
-{{- $allProducts := where $page.Site.RegularPages "Section" "products" -}}
-{{- $productMenus := slice -}}
-{{- with where $page.Site.Menus.main "Identifier" "products" -}}
-  {{- with index . 0 -}}{{- $productMenus = sort .Children "Weight" -}}{{- end -}}
+{{- $productsRoot := $page.Site.GetPage "section" "products" -}}
+{{- $families := slice -}}
+{{- with $productsRoot -}}
+  {{- $families = .Sections.ByWeight -}}
 {{- end -}}
 
 <aside class="product-sidebar" aria-label="{{ i18n "product_sidebar_label" }}">
@@ -20,34 +19,27 @@
 
   <div class="product-sidebar__panel" id="product-sidebar-panel" data-product-sidebar-panel>
     <ul class="product-sidebar__list" role="list">
-      {{- range $productMenus -}}
-        {{- $menuName := .Name -}}
-        {{- $menuURL := .URL | relLangURL -}}
-        {{- $matchingPages := where $allProducts "Params.product_type" $menuName -}}
-        {{- $categories := slice -}}
-        {{- range $matchingPages -}}
-          {{- with .Params.pallet_category -}}
-            {{- $catVal := . -}}
-            {{- if eq (printf "%T" $catVal) "string" -}}
-              {{- $categories = $categories | append $catVal -}}
-            {{- else -}}
-              {{- range $catVal -}}{{- $categories = $categories | append . -}}{{- end -}}
-            {{- end -}}
-          {{- end -}}
-        {{- end -}}
-        {{- $categories = uniq (sort $categories) -}}
-        {{- $isActive := or (hasPrefix $page.RelPermalink $menuURL) (eq $page.Params.product_type $menuName) -}}
+      {{- range $families -}}
+        {{- $familyURL := .RelPermalink -}}
+        {{- $familyCount := len .RegularPagesRecursive -}}
+        {{- $children := .Sections.ByWeight -}}
+        {{- $isActive := hasPrefix $page.RelPermalink $familyURL -}}
         <li class="product-sidebar__item{{ if $isActive }} product-sidebar__item--current{{ end }}">
-          <a class="product-sidebar__link" href="{{ $menuURL }}">{{ $menuName }}</a>
-          {{- if gt (len $categories) 0 -}}
+          <a class="product-sidebar__link" href="{{ $familyURL }}">
+            <span class="product-sidebar__name">{{ .Title }}</span>
+            <span class="product-sidebar__count">{{ $familyCount }}</span>
+          </a>
+          {{- if gt (len $children) 0 -}}
             <ul class="product-sidebar__submenu" role="list">
-              {{- range $categories -}}
-                <li class="product-sidebar__subitem">
-                  {{- if $enableFilters -}}
-                    <button class="product-sidebar__sublink" type="button" data-product-filter="{{ . }}">{{ . }}</button>
-                  {{- else -}}
-                    <a class="product-sidebar__sublink" href="{{ $menuURL }}">{{ . }}</a>
-                  {{- end -}}
+              {{- range $children -}}
+                {{- $childURL := .RelPermalink -}}
+                {{- $childCount := len .RegularPagesRecursive -}}
+                {{- $isChildActive := hasPrefix $page.RelPermalink $childURL -}}
+                <li class="product-sidebar__subitem{{ if $isChildActive }} product-sidebar__subitem--current{{ end }}">
+                  <a class="product-sidebar__sublink" href="{{ $childURL }}">
+                    <span class="product-sidebar__subname">{{ .Title }}</span>
+                    <span class="product-sidebar__subcount">{{ $childCount }}</span>
+                  </a>
                 </li>
               {{- end -}}
             </ul>
@@ -85,34 +77,5 @@
         syncSidebar();
       });
     }
-
-    const buttons = document.querySelectorAll('[data-product-filter]');
-    const cards = document.querySelectorAll('[data-product-card]');
-    const count = document.querySelector('[data-product-count]');
-    const clear = document.querySelector('[data-product-filter-clear]');
-
-    const applyFilter = (category) => {
-      let visible = 0;
-      cards.forEach((card) => {
-        const categories = (card.dataset.categories || '').split('|').filter(Boolean);
-        const show = !category || categories.includes(category);
-        card.hidden = !show;
-        if (show) visible += 1;
-      });
-      buttons.forEach((button) => {
-        const active = category && button.dataset.productFilter === category;
-        button.classList.toggle('product-sidebar__sublink--active', active);
-        button.setAttribute('aria-pressed', active ? 'true' : 'false');
-      });
-      if (count) count.textContent = String(visible);
-      if (clear) clear.hidden = !category;
-    };
-
-    buttons.forEach((button) => {
-      button.setAttribute('aria-pressed', 'false');
-      button.addEventListener('click', () => applyFilter(button.dataset.productFilter || ''));
-    });
-
-    if (clear) clear.addEventListener('click', () => applyFilter(''));
   });
 </script>

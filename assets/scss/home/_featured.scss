@@ -113,6 +113,13 @@
   font-size: var(--type-body-sm);
 }
 
+.home-product-card__series {
+  margin: 0;
+  color: var(--secondary);
+  font-size: var(--type-body-sm);
+  font-weight: var(--weight-semibold);
+}
+
 .home-product-card__quote {
   justify-self: start;
   color: var(--brand-strong);

@@ -1,4 +1,7 @@
 ---
 title: "Plastic Pallets"
-description: "Browse injection-molded HDPE/PP plastic pallets for racking, stacking, export shipping, cold chain, food handling, and warehouse logistics."
+description: "Browse injection-molded and blow-molded plastic pallets by handling structure, load use, and application."
+weight: 10
+product_family: "Plastic Pallets"
 ---
+

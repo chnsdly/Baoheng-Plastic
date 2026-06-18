@@ -121,6 +121,14 @@
 {{- end -}}
 
 {{- if and .IsPage (eq .Section "products") -}}
+  {{- $productCategory := .Params.product_family | default .Params.product_type -}}
+  {{- with .Params.product_series -}}
+    {{- if $productCategory -}}
+      {{- $productCategory = printf "%s > %s" $productCategory . -}}
+    {{- else -}}
+      {{- $productCategory = . -}}
+    {{- end -}}
+  {{- end -}}
   {{- $product := dict
     "@type" "Product"
     "@id" (printf "%s#product" .Permalink)
@@ -133,7 +141,7 @@
     "mainEntityOfPage" (dict "@id" $pageID)
   -}}
   {{- with .Params.featured_image }}{{- $product = merge $product (dict "image" (slice (. | absURL))) -}}{{- end -}}
-  {{- with .Params.product_type }}{{- $product = merge $product (dict "category" .) -}}{{- end -}}
+  {{- with $productCategory }}{{- $product = merge $product (dict "category" .) -}}{{- end -}}
   {{- with .Params.specs -}}
     {{- $props := slice -}}
     {{- range $key, $value := . -}}

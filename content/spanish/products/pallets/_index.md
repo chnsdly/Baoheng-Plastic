@@ -1,4 +1,7 @@
 ---
-title: "Palets plásticos"
-description: "Browse inyectado HDPE/PP Palets plásticos para estantería, stacking, envíos de exportación, cadena de frío, manejo alimentario, y logística de almacén."
+title: "Palets de plástico"
+description: "Explore palets plásticos inyectados y soplados por estructura, carga y aplicación."
+weight: 10
+product_family: "Plastic Pallets"
 ---
+

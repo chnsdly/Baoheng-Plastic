@@ -1,4 +1,7 @@
 ---
 title: "Palettes plastique"
-description: "Browse moulée par injection HDPE/PP Palettes plastique pour rayonnage, stacking, expédition export, chaîne du froid, manutention alimentaire, et logistique d'entrepôt."
+description: "Parcourez les palettes plastique injectées et soufflées par structure, charge et application."
+weight: 10
+product_family: "Plastic Pallets"
 ---
+

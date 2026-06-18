@@ -1,4 +1,4 @@
 ---
-title: "产品中心"
-description: "浏览宝恒塑业塑料托盘、吹塑托盘、周转筐、折叠卡板箱、大型容器和环卫垃圾桶，适用于工业采购。"
+title: "产品"
+description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
 ---

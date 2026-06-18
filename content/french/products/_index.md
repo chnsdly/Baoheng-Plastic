@@ -1,4 +1,4 @@
 ---
 title: "Produits"
-description: "Découvrez les palettes plastique, palettes soufflées, caisses, caisses-palettes pliables, conteneurs vrac et bacs à déchets Baoheng Plastic pour les achats industriels."
+description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
 ---

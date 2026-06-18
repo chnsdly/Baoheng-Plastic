@@ -2,6 +2,27 @@
   {{ $contactURL := "/contact/" | relLangURL }}
   {{ $specs := .Params.specs | default dict }}
   {{ $heroText := .Params.hero_description | default .Description | default .Summary }}
+  {{ $family := .Params.product_family | default .Params.product_type }}
+  {{ $series := .Params.product_series }}
+  {{ $familyLabel := $family }}
+  {{ $seriesLabel := $series }}
+  {{ $hasSeriesSection := false }}
+  {{ $productsRoot := .Site.GetPage "section" "products" }}
+  {{ $families := slice }}
+  {{ with $productsRoot }}{{ $families = .Sections.ByWeight }}{{ end }}
+  {{ $pageURL := .RelPermalink }}
+  {{ range $families }}
+    {{ if hasPrefix $pageURL .RelPermalink }}
+      {{ $familyLabel = .Title }}
+      {{ range .Sections.ByWeight }}
+        {{ if hasPrefix $pageURL .RelPermalink }}
+          {{ $seriesLabel = .Title }}
+          {{ $hasSeriesSection = true }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if and (not $hasSeriesSection) (ne .Site.Language.Lang "en") }}{{ $seriesLabel = "" }}{{ end }}
   {{ $detailHeading := .Params.detail_heading | default (i18n "product_detail_heading") }}
   {{ $detailIntro := .Params.detail_intro | default .Params.detail_description }}
   {{ $dimensions := index $specs "dimensions" }}
@@ -10,11 +31,17 @@
   {{ $rackingLoad := index $specs "racking_load" }}
   {{ $material := index $specs "material" }}
   {{ $allProducts := where .Site.RegularPages "Section" "products" }}
-  {{ $related := where (where $allProducts "Params.product_type" .Params.product_type) "RelPermalink" "ne" .RelPermalink }}
+  {{ $related := slice }}
+  {{ with $series }}
+    {{ $related = where (where $allProducts "Params.product_series" .) "RelPermalink" "ne" $.RelPermalink }}
+  {{ end }}
+  {{ if and (eq (len $related) 0) $family }}
+    {{ $related = where (where $allProducts "Params.product_family" $family) "RelPermalink" "ne" .RelPermalink }}
+  {{ end }}
 
   <section class="product-single">
     <div class="container product-single__container">
-      {{ partial "product-sidebar.html" (dict "page" . "enableFilters" false) }}
+      {{ partial "product-sidebar.html" (dict "page" .) }}
 
       <article class="product-single__content">
         <header class="product-hero">
@@ -33,8 +60,9 @@
           </div>
 
           <div class="product-hero__body">
-            {{ with .Params.product_type }}<p class="product-hero__eyebrow">{{ . }}</p>{{ end }}
+            {{ with $familyLabel }}<p class="product-hero__eyebrow">{{ . }}</p>{{ end }}
             <h1 class="product-hero__title">{{ .Title }}</h1>
+            {{ with $seriesLabel }}<p class="product-hero__series">{{ . }}</p>{{ end }}
             {{ with $heroText }}<p class="product-hero__description">{{ . }}</p>{{ end }}
 
             {{ if or $dimensions $dynamicLoad $staticLoad $rackingLoad $material }}

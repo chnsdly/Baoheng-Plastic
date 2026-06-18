@@ -11,35 +11,22 @@ weight = 10
   weight = 11
 
   [[main]]
-  name = "Palettes soufflées emboîtables"
-  url = "/products/blow-molded-pallets/"
+  name = "Caisses-palettes et vrac"
+  url = "/products/pallet-boxes-bulk-containers/"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "Caisses et bacs plastique"
-  url = "/products/crates/"
+  name = "Caisses et bacs"
+  url = "/products/crates-boxes-totes/"
   parent = "products"
   weight = 13
-
-  [[main]]
-  name = "Caisses-palettes pliables"
-  url = "/products/foldable-pallet-boxes/"
-  parent = "products"
-  weight = 14
-
-  [[main]]
-  name = "Grands conteneurs vrac"
-  url = "/products/bulk-containers/"
-  parent = "products"
-  weight = 15
 
   [[main]]
   name = "Bacs à déchets plastique"
   url = "/products/waste-bins/"
   parent = "products"
-  weight = 16
-
+  weight = 14
 [[main]]
 name = "Industries"
 url = "/contact/?intent=selection-support"

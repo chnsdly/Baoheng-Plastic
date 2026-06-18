@@ -1,4 +1,7 @@
 ---
 title: "塑料垃圾桶"
 description: "多容量户外塑料垃圾桶，适用于市政环卫、园区、社区、商业设施和分类收集系统。"
+weight: 40
+product_family: "Plastic Waste Bins"
 ---
+

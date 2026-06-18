@@ -139,7 +139,7 @@ During trial use, record:
 
 The aim is not to eliminate every extra handling step. The aim is to confirm that the extra seconds at the dock are justified by transport and storage gains.
 
-For bulk goods that require forklift-compatible, reusable containment, a product such as a [1200 × 1000 mm foldable pallet box](/products/foldable-pallet-boxes/fpbvs80a/) can be reviewed as a reference structure when comparing footprint, load rating, folded handling, and return-space assumptions.
+For bulk goods that require forklift-compatible, reusable containment, a product such as a [1200 × 1000 mm foldable pallet box](/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/) can be reviewed as a reference structure when comparing footprint, load rating, folded handling, and return-space assumptions.
 
 ---
 

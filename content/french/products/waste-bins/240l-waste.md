@@ -2,8 +2,16 @@
 title: "240L bac à déchets plastique à roues"
 description: "240L bac à déchets plastique à roues de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
 featured_image: "/images/products/waste/240l-waste-hero.jpg"
-product_type: "Bacs à déchets"
-pallet_category: []
+product_type: "Plastic Waste Bins"
+product_family: "Plastic Waste Bins"
+product_series: "Two-Wheel Waste Bins"
+product_filters:
+  - "Wheeled"
+  - "Outdoor"
+  - "Municipal Collection"
+product_kind: "model"
+pallet_category:
+  - "Two-Wheel Waste Bins"
 hero_description: "240L bac à déchets plastique à roues de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
 contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
@@ -25,5 +33,6 @@ industry_gallery:
 form_title: "Parlez-nous de vos exigences de charge"
 form_description: "Partagez environnement d’usage, circulation, hygiène, couleur ou logo ; nous répondrons avec un devis adapté."
 ---
+
 
 {{< quote_request_button >}}

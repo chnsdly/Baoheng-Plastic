@@ -2,6 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallets/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/crates-boxes-totes/turnover-boxes/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/turnover-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/turnover-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/turnover-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/turnover-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/turnover-boxes/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/large-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/large-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/large-bulk-containers/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/crates-boxes-totes/turnover-crates/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/turnover-crates/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/turnover-crates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/turnover-crates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/turnover-crates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/turnover-crates/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/crates-boxes-totes/freezing-trays/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/freezing-trays/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/freezing-trays/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/freezing-trays/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/freezing-trays/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/freezing-trays/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/crates-boxes-totes/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/crates-boxes-totes/folding-crates/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/folding-crates/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/folding-crates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/folding-crates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/folding-crates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/folding-crates/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/waste-bins/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/waste-bins/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/waste-bins/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/waste-bins/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/waste-bins/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/waste-bins/"/>
+  </url><url>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/"/>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/"/>
@@ -314,12 +419,12 @@
       <image:title>From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/spill_068068/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/spill_068068/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/spill_068068/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/spill_068068/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/spill_068068/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/spill_068068/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/spill_068068/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/spill_068068/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/spill_068068/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/spill_068068/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/spill_068068/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/spill_068068/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/spill/068068-hero.jpg</image:loc>
       <image:title>068068 spill containment pallet (150 mm height)</image:title>
@@ -353,12 +458,12 @@
       <image:title>068068 spill containment pallet (150 mm height)</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/spill_072072/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/spill_072072/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/spill_072072/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/spill_072072/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/spill_072072/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/spill_072072/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/spill_072072/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/spill_072072/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/spill_072072/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/spill_072072/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/spill_072072/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/spill_072072/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/spill/072072-hero.jpg</image:loc>
       <image:title>072072 spill containment pallet (160 mm height)</image:title>
@@ -392,12 +497,12 @@
       <image:title>072072 spill containment pallet (160 mm height)</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/print_080060/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/print_080060/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/print_080060/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/print_080060/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/print_080060/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/print_080060/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/print_080060/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/print_080060/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/print_080060/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/print_080060/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/print_080060/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/print_080060/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/print/080060-hero.jpg</image:loc>
       <image:title>080060 printing press plastic pallet</image:title>
@@ -431,12 +536,12 @@
       <image:title>080060 printing press plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/print_080063/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/print_080063/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/print_080063/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/print_080063/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/print_080063/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/print_080063/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/print_080063/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/print_080063/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/print_080063/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/print_080063/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/print_080063/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/print_080063/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/print/080063-hero.jpg</image:loc>
       <image:title>080063 printing press plastic pallet</image:title>
@@ -470,12 +575,12 @@
       <image:title>080063 printing press plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1008/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1008/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1008/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1008/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1008/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1008/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1008/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1008/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1008/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1008/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1008/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1008/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1008-hero.jpg</image:loc>
       <image:title>1008 open deck 9-leg plastic pallet</image:title>
@@ -532,12 +637,12 @@
       <image:title>100L Plastic Waste Bin</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1010/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1010/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1010/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1010/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1010/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1010/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1010/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1010/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1010/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1010/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1010/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1010/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1010-hero.jpg</image:loc>
       <image:title>1010 open deck 9-leg plastic pallet</image:title>
@@ -571,12 +676,12 @@
       <image:title>1010 open deck 9-leg plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/print_105075/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/print_105075/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/print_105075/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/print_105075/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/print_105075/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/print_105075/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/print_105075/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/print_105075/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/print_105075/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/print_105075/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/print_105075/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/print_105075/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/print/105075-hero.jpg</image:loc>
       <image:title>105075 printing press plastic pallet</image:title>
@@ -610,12 +715,12 @@
       <image:title>105075 printing press plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/print_105076/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/print_105076/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/print_105076/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/print_105076/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/print_105076/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/print_105076/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/print_105076/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/print_105076/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/print_105076/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/print_105076/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/print_105076/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/print_105076/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/print/105076-hero.jpg</image:loc>
       <image:title>105076 printing press plastic pallet</image:title>
@@ -649,12 +754,12 @@
       <image:title>105076 printing press plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/3-runner_1111/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/3-runner_1111/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/3-runner_1111/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/3-runner_1111/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/3-runner_1111/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/3-runner_1111/"/>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1111/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1111/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1111/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/3-runner_1111/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/3-runner_1111/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/3-runner_1111/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/3-runner/1111-hero.jpg</image:loc>
       <image:title>1111 open deck 3-runner plastic pallet</image:title>
@@ -688,12 +793,12 @@
       <image:title>1111 open deck 3-runner plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1111/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1111/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1111/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1111/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1111/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1111/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1111/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1111/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1111/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1111/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1111/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1111/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1111-hero.jpg</image:loc>
       <image:title>1111 open deck 9-leg plastic pallet</image:title>
@@ -727,12 +832,12 @@
       <image:title>1111 open deck 9-leg plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/double-faced_1111/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/double-faced_1111/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/double-faced_1111/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/double-faced_1111/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/double-faced_1111/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/double-faced_1111/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1111/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1111/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1111/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/double-faced_1111/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/double-faced_1111/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/double-faced_1111/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/double-faced/1111-hero.jpg</image:loc>
       <image:title>1111 open deck double-faced plastic pallet</image:title>
@@ -766,12 +871,12 @@
       <image:title>1111 open deck double-faced plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/perimeter-base_1111/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/perimeter-base_1111/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/perimeter-base_1111/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/perimeter-base_1111/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/perimeter-base_1111/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/perimeter-base_1111/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1111/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1111/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1111/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/perimeter-base_1111/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/perimeter-base_1111/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/perimeter-base_1111/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/perimeter-base/1111-hero.jpg</image:loc>
       <image:title>1111 open deck perimeter-base plastic pallet</image:title>
@@ -805,12 +910,12 @@
       <image:title>1111 open deck perimeter-base plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/blow-molding_1111/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1111/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1111/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/blow-molding_1111/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/blow-molding_1111/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/blow-molding_1111/"/>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1111/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1111/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1111/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/blow-molding_1111/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/blow-molding_1111/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/blow-molding_1111/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/blow-molded/1111-hero.jpg</image:loc>
       <image:title>1111-BP-CD9L15B</image:title>
@@ -844,12 +949,12 @@
       <image:title>1111-BP-CD9L15B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/3-runner_1208/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/3-runner_1208/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/3-runner_1208/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/3-runner_1208/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/3-runner_1208/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/3-runner_1208/"/>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1208/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1208/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1208/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/3-runner_1208/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/3-runner_1208/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/3-runner_1208/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/3-runner/1208-hero.jpg</image:loc>
       <image:title>1208 open deck 3-runner plastic pallet</image:title>
@@ -883,12 +988,12 @@
       <image:title>1208 open deck 3-runner plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1208/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1208/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1208/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1208/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1208/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1208/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1208/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1208/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1208/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1208/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1208/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1208/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1208-hero.jpg</image:loc>
       <image:title>1208 open deck 9-leg plastic pallet</image:title>
@@ -922,12 +1027,12 @@
       <image:title>1208 open deck 9-leg plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/perimeter-base_1208/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/perimeter-base_1208/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/perimeter-base_1208/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/perimeter-base_1208/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/perimeter-base_1208/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/perimeter-base_1208/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1208/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1208/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1208/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/perimeter-base_1208/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/perimeter-base_1208/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/perimeter-base_1208/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/perimeter-base/1208-hero.jpg</image:loc>
       <image:title>1208 open deck perimeter-base plastic pallet</image:title>
@@ -961,12 +1066,12 @@
       <image:title>1208 open deck perimeter-base plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/blow-molding_1208/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1208/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1208/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/blow-molding_1208/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/blow-molding_1208/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/blow-molding_1208/"/>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1208/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1208/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1208/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/blow-molding_1208/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/blow-molding_1208/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/blow-molding_1208/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/blow-molded/1208-hero.jpg</image:loc>
       <image:title>1208-BP-CD9L15B</image:title>
@@ -1023,12 +1128,12 @@
       <image:title>120L Wheeled Plastic Waste Bin</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/food_blue_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/food_blue_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/food_blue_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/food_blue_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/food_blue_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/food_blue_1210/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/food_blue_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/food_blue_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/food_blue_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/food_blue_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/food_blue_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/food_blue_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/food/1210-blue-hero.jpg</image:loc>
       <image:title>1210 food &amp; medical plastic pallet</image:title>
@@ -1054,12 +1159,12 @@
       <image:title>1210 food &amp; medical plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/food_green_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/food_green_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/food_green_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/food_green_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/food_green_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/food_green_1210/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/food_green_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/food_green_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/food_green_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/food_green_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/food_green_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/food_green_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/food/1210-green-hero.jpg</image:loc>
       <image:title>1210 food &amp; medical plastic pallet</image:title>
@@ -1085,12 +1190,12 @@
       <image:title>1210 food &amp; medical plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/food_white_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/food_white_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/food_white_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/food_white_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/food_white_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/food_white_1210/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/food_white_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/food_white_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/food_white_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/food_white_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/food_white_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/food_white_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/food/1210-white-hero.jpg</image:loc>
       <image:title>1210 food &amp; medical plastic pallet</image:title>
@@ -1108,12 +1213,12 @@
       <image:title>1210 food &amp; medical plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/bulk-containers/1210-fpbss75-blue/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/bulk-containers/1210-fpbss75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/bulk-containers/1210-fpbss75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/bulk-containers/1210-fpbss75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/bulk-containers/1210-fpbss75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/bulk-containers/1210-fpbss75-blue/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-blue/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-blue/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/l-container/1210-fpbss75-blue-hero.jpg</image:loc>
       <image:title>1210 FPBSS75 Blue Large Bulk Container</image:title>
@@ -1131,12 +1236,12 @@
       <image:title>1210 FPBSS75 Blue Large Bulk Container</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/bulk-containers/1210-fpbss75-grey/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/bulk-containers/1210-fpbss75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/bulk-containers/1210-fpbss75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/bulk-containers/1210-fpbss75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/bulk-containers/1210-fpbss75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/bulk-containers/1210-fpbss75-grey/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-grey/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbss75-grey/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/l-container/1210-fpbss75-grey-hero.jpg</image:loc>
       <image:title>1210 FPBSS75 Grey Large Bulk Container</image:title>
@@ -1154,12 +1259,12 @@
       <image:title>1210 FPBSS75 Grey Large Bulk Container</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/bulk-containers/1210-fpbvs75-blue/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/bulk-containers/1210-fpbvs75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/bulk-containers/1210-fpbvs75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/bulk-containers/1210-fpbvs75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/bulk-containers/1210-fpbvs75-blue/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/bulk-containers/1210-fpbvs75-blue/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-blue/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-blue/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-blue/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/l-container/1210-fpbvs75-blue-hero.jpg</image:loc>
       <image:title>1210 FPBVS75 Blue Large Bulk Container</image:title>
@@ -1177,12 +1282,12 @@
       <image:title>1210 FPBVS75 Blue Large Bulk Container</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/bulk-containers/1210-fpbvs75-grey/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/bulk-containers/1210-fpbvs75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/bulk-containers/1210-fpbvs75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/bulk-containers/1210-fpbvs75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/bulk-containers/1210-fpbvs75-grey/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/bulk-containers/1210-fpbvs75-grey/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-grey/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-grey/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/large-bulk-containers/1210-fpbvs75-grey/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/l-container/1210-fpbvs75-grey-hero.jpg</image:loc>
       <image:title>1210 FPBVS75 Grey Large Bulk Container</image:title>
@@ -1200,12 +1305,12 @@
       <image:title>1210 FPBVS75 Grey Large Bulk Container</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/3-runner_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/3-runner_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/3-runner_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/3-runner_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/3-runner_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/3-runner_1210/"/>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/3-runner_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/3-runner_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/3-runner_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/3-runner/1210-hero.jpg</image:loc>
       <image:title>1210 open deck 3-runner plastic pallet</image:title>
@@ -1239,12 +1344,12 @@
       <image:title>1210 open deck 3-runner plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1210/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1210-hero.jpg</image:loc>
       <image:title>1210 open deck 9-leg plastic pallet</image:title>
@@ -1278,12 +1383,12 @@
       <image:title>1210 open deck 9-leg plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/double-faced_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/double-faced_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/double-faced_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/double-faced_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/double-faced_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/double-faced_1210/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/double-faced_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/double-faced_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/double-faced_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/double-faced/1210-hero.jpg</image:loc>
       <image:title>1210 open deck double-faced plastic pallet</image:title>
@@ -1317,12 +1422,12 @@
       <image:title>1210 open deck double-faced plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/perimeter-base_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/perimeter-base_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/perimeter-base_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/perimeter-base_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/perimeter-base_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/perimeter-base_1210/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/perimeter-base_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/perimeter-base_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/perimeter-base_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/perimeter-base/1210-hero.jpg</image:loc>
       <image:title>1210 open deck perimeter-base plastic pallet</image:title>
@@ -1356,12 +1461,12 @@
       <image:title>1210 open deck perimeter-base plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbsm60a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsm60a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsm60a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbsm60a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbsm60a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbsm60a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsm60a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsm60a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsm60a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsm60a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsm60a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsm60a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/sm60a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSM60A</image:title>
@@ -1395,12 +1500,12 @@
       <image:title>1210-BF-FPBSM60A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd76a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd76a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd76a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbsmdd76a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbsmdd76a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbsmdd76a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd76a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd76a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd76a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd76a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd76a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd76a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/smdd76a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSMDD76A</image:title>
@@ -1434,12 +1539,12 @@
       <image:title>1210-BF-FPBSMDD76A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd86a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd86a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd86a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbsmdd86a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbsmdd86a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbsmdd86a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd86a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd86a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd86a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd86a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd86a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd86a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/smdd86a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSMDD86A</image:title>
@@ -1473,12 +1578,12 @@
       <image:title>1210-BF-FPBSMDD86A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd98a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd98a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbsmdd98a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbsmdd98a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbsmdd98a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbsmdd98a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd98a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd98a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd98a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd98a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd98a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbsmdd98a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/smdd98a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSMDD98A</image:title>
@@ -1512,12 +1617,12 @@
       <image:title>1210-BF-FPBSMDD98A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbss80a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbss80a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbss80a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbss80a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbss80a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbss80a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/ss80a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSS80A</image:title>
@@ -1551,12 +1656,12 @@
       <image:title>1210-BF-FPBSS80A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbss80b/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbss80b/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbss80b/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbss80b/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbss80b/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbss80b/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80b/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80b/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80b/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80b/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80b/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbss80b/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/ss80b-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSS80B</image:title>
@@ -1590,12 +1695,12 @@
       <image:title>1210-BF-FPBSS80B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbssdd80a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbssdd80a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbssdd80a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbssdd80a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbssdd80a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbssdd80a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/ssdd80a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSSDD80A</image:title>
@@ -1629,12 +1734,12 @@
       <image:title>1210-BF-FPBSSDD80A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbssdd80b/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbssdd80b/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbssdd80b/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbssdd80b/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbssdd80b/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbssdd80b/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80b/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80b/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80b/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80b/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80b/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbssdd80b/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/ssdd80b-hero.jpg</image:loc>
       <image:title>1210-BF-FPBSSDD80B</image:title>
@@ -1668,12 +1773,12 @@
       <image:title>1210-BF-FPBSSDD80B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbvs76a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvs76a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvs76a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbvs76a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbvs76a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbvs76a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs76a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs76a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs76a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs76a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs76a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs76a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/vs76a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBVS76A</image:title>
@@ -1707,12 +1812,12 @@
       <image:title>1210-BF-FPBVS76A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbvs80a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvs80a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvs80a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbvs80a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbvs80a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbvs80a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/vs80a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBVS80A</image:title>
@@ -1746,12 +1851,12 @@
       <image:title>1210-BF-FPBVS80A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbvs80b/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvs80b/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvs80b/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbvs80b/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbvs80b/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbvs80b/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80b/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80b/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80b/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80b/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80b/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvs80b/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/vs80b-hero.jpg</image:loc>
       <image:title>1210-BF-FPBVS80B</image:title>
@@ -1785,12 +1890,12 @@
       <image:title>1210-BF-FPBVS80B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/fpbvsdd81a/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvsdd81a/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/fpbvsdd81a/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/fpbvsdd81a/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/fpbvsdd81a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/fpbvsdd81a/"/>
+    <loc>http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvsdd81a/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvsdd81a/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvsdd81a/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvsdd81a/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvsdd81a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/fpbvsdd81a/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/fold/vsdd81a-hero.jpg</image:loc>
       <image:title>1210-BF-FPBVSDD81A</image:title>
@@ -1824,12 +1929,12 @@
       <image:title>1210-BF-FPBVSDD81A</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/blow-molding_1210/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1210/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1210/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/blow-molding_1210/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/blow-molding_1210/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/blow-molding_1210/"/>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1210/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1210/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1210/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/blow-molding_1210/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/blow-molding_1210/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/blow-molding_1210/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/blow-molded/1210-hero.jpg</image:loc>
       <image:title>1210-BP-CD9L15B</image:title>
@@ -1863,12 +1968,12 @@
       <image:title>1210-BP-CD9L15B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/3-runner_1212/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/3-runner_1212/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/3-runner_1212/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/3-runner_1212/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/3-runner_1212/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/3-runner_1212/"/>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1212/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1212/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1212/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/3-runner_1212/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/3-runner_1212/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/3-runner_1212/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/3-runner/1212-hero.jpg</image:loc>
       <image:title>1212 open deck 3-runner plastic pallet</image:title>
@@ -1902,12 +2007,12 @@
       <image:title>1212 open deck 3-runner plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1212/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1212/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1212/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1212/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1212/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1212/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1212/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1212/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1212/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1212/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1212/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1212/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1212-hero.jpg</image:loc>
       <image:title>1212 open deck 9-leg plastic pallet</image:title>
@@ -1941,12 +2046,12 @@
       <image:title>1212 open deck 9-leg plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/double-faced_1212/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/double-faced_1212/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/double-faced_1212/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/double-faced_1212/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/double-faced_1212/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/double-faced_1212/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1212/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1212/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1212/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/double-faced_1212/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/double-faced_1212/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/double-faced_1212/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/double-faced/1212-hero.jpg</image:loc>
       <image:title>1212 open deck double-faced plastic pallet</image:title>
@@ -1980,12 +2085,12 @@
       <image:title>1212 open deck double-faced plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/perimeter-base_1212/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/perimeter-base_1212/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/perimeter-base_1212/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/perimeter-base_1212/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/perimeter-base_1212/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/perimeter-base_1212/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1212/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1212/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1212/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/perimeter-base_1212/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/perimeter-base_1212/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/perimeter-base_1212/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/perimeter-base/1212-hero.jpg</image:loc>
       <image:title>1212 open deck perimeter-base plastic pallet</image:title>
@@ -2019,12 +2124,12 @@
       <image:title>1212 open deck perimeter-base plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/blow-molding_1212/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1212/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1212/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/blow-molding_1212/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/blow-molding_1212/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/blow-molding_1212/"/>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1212/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1212/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1212/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/blow-molding_1212/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/blow-molding_1212/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/blow-molding_1212/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/blow-molded/1212-hero.jpg</image:loc>
       <image:title>1212-BP-CD9L15B</image:title>
@@ -2058,12 +2163,12 @@
       <image:title>1212-BP-CD9L15B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/spill_130068-15/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/spill_130068-15/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/spill_130068-15/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/spill_130068-15/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/spill_130068-15/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/spill_130068-15/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/spill_130068-15/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130068-15/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130068-15/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/spill_130068-15/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/spill_130068-15/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/spill_130068-15/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/spill/130068-15-hero.jpg</image:loc>
       <image:title>130068 spill containment pallet (150 mm height)</image:title>
@@ -2097,12 +2202,12 @@
       <image:title>130068 spill containment pallet (150 mm height)</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/spill_130068-30/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/spill_130068-30/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/spill_130068-30/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/spill_130068-30/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/spill_130068-30/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/spill_130068-30/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/spill_130068-30/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130068-30/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130068-30/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/spill_130068-30/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/spill_130068-30/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/spill_130068-30/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/spill/130068-30-hero.jpg</image:loc>
       <image:title>130068 spill containment pallet (300 mm height)</image:title>
@@ -2136,12 +2241,12 @@
       <image:title>130068 spill containment pallet (300 mm height)</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/spill_130130-15/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/spill_130130-15/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/spill_130130-15/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/spill_130130-15/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/spill_130130-15/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/spill_130130-15/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/spill_130130-15/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130130-15/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130130-15/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/spill_130130-15/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/spill_130130-15/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/spill_130130-15/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/spill/130130-15-hero.jpg</image:loc>
       <image:title>130130 spill containment pallet (150 mm height)</image:title>
@@ -2175,12 +2280,12 @@
       <image:title>130130 spill containment pallet (150 mm height)</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/spill_130130-30/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/spill_130130-30/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/spill_130130-30/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/spill_130130-30/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/spill_130130-30/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/spill_130130-30/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/spill_130130-30/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130130-30/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/spill_130130-30/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/spill_130130-30/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/spill_130130-30/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/spill_130130-30/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/spill/130130-30-hero.jpg</image:loc>
       <image:title>130130 spill containment pallet (300 mm height)</image:title>
@@ -2214,12 +2319,12 @@
       <image:title>130130 spill containment pallet (300 mm height)</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/3-runner_1311/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/3-runner_1311/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/3-runner_1311/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/3-runner_1311/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/3-runner_1311/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/3-runner_1311/"/>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1311/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1311/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1311/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/3-runner_1311/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/3-runner_1311/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/3-runner_1311/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/3-runner/1311-hero.jpg</image:loc>
       <image:title>1311 open deck 3-runner plastic pallet</image:title>
@@ -2253,12 +2358,12 @@
       <image:title>1311 open deck 3-runner plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/nine-leg_1311/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nine-leg_1311/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nine-leg_1311/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nine-leg_1311/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nine-leg_1311/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nine-leg_1311/"/>
+    <loc>http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1311/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1311/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/nestable-plastic-pallets/nine-leg_1311/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/nestable-plastic-pallets/nine-leg_1311/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/nestable-plastic-pallets/nine-leg_1311/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/nestable-plastic-pallets/nine-leg_1311/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/nine-leg/1311-hero.jpg</image:loc>
       <image:title>1311 open deck 9-leg plastic pallet</image:title>
@@ -2292,12 +2397,12 @@
       <image:title>1311 open deck 9-leg plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/double-faced_1311/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/double-faced_1311/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/double-faced_1311/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/double-faced_1311/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/double-faced_1311/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/double-faced_1311/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1311/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1311/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1311/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/double-faced_1311/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/double-faced_1311/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/double-faced_1311/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/double-faced/1311-hero.jpg</image:loc>
       <image:title>1311 open deck double-faced plastic pallet</image:title>
@@ -2331,12 +2436,12 @@
       <image:title>1311 open deck double-faced plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/perimeter-base_1311/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/perimeter-base_1311/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/perimeter-base_1311/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/perimeter-base_1311/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/perimeter-base_1311/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/perimeter-base_1311/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1311/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1311/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1311/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/perimeter-base_1311/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/perimeter-base_1311/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/perimeter-base_1311/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/perimeter-base/1311-hero.jpg</image:loc>
       <image:title>1311 open deck perimeter-base plastic pallet</image:title>
@@ -2370,12 +2475,12 @@
       <image:title>1311 open deck perimeter-base plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/blow-molding_1311/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1311/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1311/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/blow-molding_1311/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/blow-molding_1311/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/blow-molding_1311/"/>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1311/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1311/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1311/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/blow-molding_1311/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/blow-molding_1311/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/blow-molding_1311/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/blow-molded/1311-hero.jpg</image:loc>
       <image:title>1311-BP-CD9L15B</image:title>
@@ -2409,12 +2514,12 @@
       <image:title>1311-BP-CD9L15B</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/3-runner_1412/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/3-runner_1412/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/3-runner_1412/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/3-runner_1412/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/3-runner_1412/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/3-runner_1412/"/>
+    <loc>http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1412/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1412/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/rackable-plastic-pallets/3-runner_1412/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/rackable-plastic-pallets/3-runner_1412/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/rackable-plastic-pallets/3-runner_1412/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/rackable-plastic-pallets/3-runner_1412/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/3-runner/1412-hero.jpg</image:loc>
       <image:title>1412 open deck 3-runner plastic pallet</image:title>
@@ -2448,12 +2553,12 @@
       <image:title>1412 open deck 3-runner plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/double-faced_1412/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/double-faced_1412/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/double-faced_1412/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/double-faced_1412/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/double-faced_1412/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/double-faced_1412/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1412/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1412/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/double-faced_1412/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/double-faced_1412/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/double-faced_1412/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/double-faced_1412/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/double-faced/1412-hero.jpg</image:loc>
       <image:title>1412 open deck double-faced plastic pallet</image:title>
@@ -2487,12 +2592,12 @@
       <image:title>1412 open deck double-faced plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/perimeter-base_1412/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/perimeter-base_1412/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/perimeter-base_1412/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/perimeter-base_1412/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/perimeter-base_1412/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/perimeter-base_1412/"/>
+    <loc>http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1412/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1412/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/stackable-plastic-pallets/perimeter-base_1412/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/stackable-plastic-pallets/perimeter-base_1412/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/stackable-plastic-pallets/perimeter-base_1412/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/stackable-plastic-pallets/perimeter-base_1412/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/perimeter-base/1412-hero.jpg</image:loc>
       <image:title>1412 open deck perimeter-base plastic pallet</image:title>
@@ -2526,12 +2631,12 @@
       <image:title>1412 open deck perimeter-base plastic pallet</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/blow-molding_1412/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1412/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/blow-molding_1412/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/blow-molding_1412/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/blow-molding_1412/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/blow-molding_1412/"/>
+    <loc>http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1412/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1412/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/blow-molded-pallets/blow-molding_1412/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/blow-molded-pallets/blow-molding_1412/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/blow-molded-pallets/blow-molding_1412/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/blow-molded-pallets/blow-molding_1412/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/blow-molded/1412-hero.jpg</image:loc>
       <image:title>1412-BP-CD9L15B</image:title>
@@ -2678,12 +2783,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/contact/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/contact/"/>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/egg-tray-pallet-system/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/egg-tray-pallet-system/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/egg-tray-pallet-system/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/egg-tray-pallet-system/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/egg-tray-pallet-system/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/egg-tray-pallet-system/"/>
+    <loc>http://localhost:1313/products/pallets/specialty-pallets/egg-tray-pallet-system/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/specialty-pallets/egg-tray-pallet-system/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/specialty-pallets/egg-tray-pallet-system/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/specialty-pallets/egg-tray-pallet-system/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/specialty-pallets/egg-tray-pallet-system/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/egg-tray-pallet-system/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/pallet/egg-tray-system/egg-tray-pallet-system-hero.jpg</image:loc>
       <image:title>Egg Tray Transport Pallet System</image:title>
@@ -2724,19 +2829,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/faq/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/faq/"/>
   </url><url>
-    <loc>http://localhost:1313/products/foldable-pallet-boxes/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/foldable-pallet-boxes/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/foldable-pallet-boxes/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/foldable-pallet-boxes/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/foldable-pallet-boxes/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/foldable-pallet-boxes/"/>
-  </url><url>
-    <loc>http://localhost:1313/products/crates/foldable-crates/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/foldable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/foldable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/foldable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/foldable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/foldable-crates/"/>
+    <loc>http://localhost:1313/products/crates-boxes-totes/folding-crates/foldable-crates/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/folding-crates/foldable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/folding-crates/foldable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/folding-crates/foldable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/folding-crates/foldable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/folding-crates/foldable-crates/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/crate-box/foldable-crates-hero.jpg</image:loc>
       <image:title>Foldable Plastic Crates</image:title>
@@ -2762,26 +2860,12 @@
       <image:title>Foldable Plastic Crates</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/bulk-containers/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/bulk-containers/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/bulk-containers/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/bulk-containers/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/bulk-containers/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/bulk-containers/"/>
-  </url><url>
-    <loc>http://localhost:1313/products/blow-molded-pallets/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/blow-molded-pallets/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/blow-molded-pallets/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/blow-molded-pallets/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/blow-molded-pallets/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/blow-molded-pallets/"/>
-  </url><url>
-    <loc>http://localhost:1313/products/crates/nestable-crates/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/nestable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/nestable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/nestable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/nestable-crates/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/nestable-crates/"/>
+    <loc>http://localhost:1313/products/crates-boxes-totes/turnover-crates/nestable-crates/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/turnover-crates/nestable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/turnover-crates/nestable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/turnover-crates/nestable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/turnover-crates/nestable-crates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/turnover-crates/nestable-crates/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/crate-box/nestable-crates-hero.jpg</image:loc>
       <image:title>Nestable Plastic Crates</image:title>
@@ -2830,19 +2914,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/news/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/news/"/>
   </url><url>
-    <loc>http://localhost:1313/products/crates/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/"/>
-  </url><url>
-    <loc>http://localhost:1313/products/crates/drying-trays/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/drying-trays/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/drying-trays/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/drying-trays/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/drying-trays/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/drying-trays/"/>
+    <loc>http://localhost:1313/products/crates-boxes-totes/freezing-trays/drying-trays/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/freezing-trays/drying-trays/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/freezing-trays/drying-trays/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/freezing-trays/drying-trays/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/freezing-trays/drying-trays/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/freezing-trays/drying-trays/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/crate-box/drying-trays-hero.jpg</image:loc>
       <image:title>Plastic Drying Trays</image:title>
@@ -2884,20 +2961,6 @@
       <image:title>Plastic Drying Trays</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/pallets/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/pallets/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/pallets/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/pallets/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/pallets/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/"/>
-  </url><url>
-    <loc>http://localhost:1313/products/waste-bins/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/waste-bins/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/waste-bins/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/waste-bins/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/waste-bins/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/waste-bins/"/>
-  </url><url>
     <loc>http://localhost:1313/products/</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/"/>
@@ -2905,12 +2968,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/"/>
   </url><url>
-    <loc>http://localhost:1313/products/crates/rectangular-container/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/rectangular-container/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/rectangular-container/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/rectangular-container/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/rectangular-container/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/rectangular-container/"/>
+    <loc>http://localhost:1313/products/crates-boxes-totes/turnover-boxes/rectangular-container/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/turnover-boxes/rectangular-container/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/turnover-boxes/rectangular-container/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/turnover-boxes/rectangular-container/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/turnover-boxes/rectangular-container/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/turnover-boxes/rectangular-container/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/crate-box/rectangular-container-hero.jpg</image:loc>
       <image:title>Rectangular Plastic Container</image:title>
@@ -2940,12 +3003,12 @@
       <image:title>Rectangular Plastic Container</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/crates/rectangular-tank/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/rectangular-tank/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/rectangular-tank/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/rectangular-tank/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/rectangular-tank/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/rectangular-tank/"/>
+    <loc>http://localhost:1313/products/crates-boxes-totes/turnover-boxes/rectangular-tank/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/turnover-boxes/rectangular-tank/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/turnover-boxes/rectangular-tank/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/turnover-boxes/rectangular-tank/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/turnover-boxes/rectangular-tank/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/turnover-boxes/rectangular-tank/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/crate-box/rectangular-tank-hero.jpg</image:loc>
       <image:title>Rectangular Plastic Tank</image:title>
@@ -2987,12 +3050,12 @@
       <image:title>Rectangular Plastic Tank</image:title>
     </image:image>
   </url><url>
-    <loc>http://localhost:1313/products/crates/stacknest-crate/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates/stacknest-crate/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates/stacknest-crate/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates/stacknest-crate/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates/stacknest-crate/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates/stacknest-crate/"/>
+    <loc>http://localhost:1313/products/crates-boxes-totes/turnover-crates/stacknest-crate/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/products/crates-boxes-totes/turnover-crates/stacknest-crate/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/products/crates-boxes-totes/turnover-crates/stacknest-crate/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/products/crates-boxes-totes/turnover-crates/stacknest-crate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/products/crates-boxes-totes/turnover-crates/stacknest-crate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/crates-boxes-totes/turnover-crates/stacknest-crate/"/>
     <image:image>
       <image:loc>http://localhost:1313/images/products/crate-box/stacknest-crate-hero.jpg</image:loc>
       <image:title>Stack-Nest Plastic Crate</image:title>

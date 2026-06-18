@@ -1,4 +1,4 @@
 ---
 title: "Productos"
-description: "Explore palets plásticos, palets soplados, cajas, cajas pallet plegables, contenedores a granel y contenedores de residuos Baoheng Plastic para compras industriales."
+description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
 ---

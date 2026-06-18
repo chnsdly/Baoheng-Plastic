@@ -4,7 +4,15 @@ title: "240L Wheeled Plastic Waste Bin"
 description: "These municipal plastic waste bins are molded from weather-resistant HDPE with reinforced walls and quiet casters, ideal for street, residential, and campus collection."
 featured_image: "/images/products/waste/240l-waste-hero.jpg"
 product_type: "Plastic Waste Bins"
-pallet_category: []
+product_family: "Plastic Waste Bins"
+product_series: "Two-Wheel Waste Bins"
+product_filters:
+  - "Wheeled"
+  - "Outdoor"
+  - "Municipal Collection"
+product_kind: "model"
+pallet_category:
+  - "Two-Wheel Waste Bins"
 hero_description: "These municipal plastic waste bins are molded from weather-resistant HDPE with reinforced walls and quiet casters, ideal for street, residential, and campus collection. Multiple capacities and color options make them easy to integrate with existing hauling systems."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
@@ -23,7 +31,7 @@ industry_gallery:
     alt: "industry use 1"
 form_title: "Tell us about your load requirements"
 form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
-
 ---
+
 
 {{< quote_request_button >}}

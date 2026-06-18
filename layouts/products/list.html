@@ -1,5 +1,8 @@
 {{ define "main" }}
   {{ $products := .RegularPagesRecursive.ByTitle }}
+  {{ $productsRoot := .Site.GetPage "section" "products" }}
+  {{ $families := slice }}
+  {{ with $productsRoot }}{{ $families = .Sections.ByWeight }}{{ end }}
   {{ $contactURL := "/contact/" | relLangURL }}
   {{ $rfqURL := "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}
 
@@ -24,21 +27,36 @@
       </header>
 
       <div class="product-listing__layout">
-        {{ partial "product-sidebar.html" (dict "page" . "enableFilters" true) }}
+        {{ partial "product-sidebar.html" (dict "page" .) }}
 
         <div class="product-listing__body">
-          <div class="product-listing__toolbar">
-            <p class="product-listing__count">
-              <span data-product-count>{{ len $products }}</span>
-              {{ i18n "quote_ready_products" }}
-            </p>
-            <button class="product-listing__clear" type="button" data-product-filter-clear hidden>{{ i18n "clear_filter" }}</button>
-          </div>
-
           <div class="product-listing__grid">
             {{ range $products }}
               {{ $pageCats := slice }}
-              {{ with .Params.product_type }}{{ $pageCats = $pageCats | append . }}{{ end }}
+              {{ $family := .Params.product_family | default .Params.product_type }}
+              {{ $series := .Params.product_series }}
+              {{ $familyLabel := $family }}
+              {{ $seriesLabel := $series }}
+              {{ $hasSeriesSection := false }}
+              {{ $productURL := .RelPermalink }}
+              {{ range $families }}
+                {{ if hasPrefix $productURL .RelPermalink }}
+                  {{ $familyLabel = .Title }}
+                  {{ range .Sections.ByWeight }}
+                    {{ if hasPrefix $productURL .RelPermalink }}
+                      {{ $seriesLabel = .Title }}
+                      {{ $hasSeriesSection = true }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ if and (not $hasSeriesSection) (ne $.Site.Language.Lang "en") }}{{ $seriesLabel = "" }}{{ end }}
+              {{ $kind := .Params.product_kind | default "model" }}
+              {{ with $family }}{{ $pageCats = $pageCats | append . }}{{ end }}
+              {{ with $series }}{{ $pageCats = $pageCats | append . }}{{ end }}
+              {{ with .Params.product_filters }}
+                {{ range . }}{{ $pageCats = $pageCats | append . }}{{ end }}
+              {{ end }}
               {{ with .Params.pallet_category }}
                 {{ $catVal := . }}
                 {{ if eq (printf "%T" $catVal) "string" }}
@@ -67,8 +85,14 @@
                     {{ end }}
                   </figure>
                   <div class="product-listing__content">
-                    {{ with .Params.product_type }}<p class="product-listing__type">{{ . }}</p>{{ end }}
+                    {{ if or $familyLabel $seriesLabel }}
+                      <div class="product-listing__meta">
+                        {{ with $familyLabel }}<p class="product-listing__type">{{ . }}</p>{{ end }}
+                        {{ if ne $kind "model" }}<span class="product-listing__badge">{{ humanize $kind }}</span>{{ end }}
+                      </div>
+                    {{ end }}
                     <h2 class="product-listing__card-title">{{ .Title }}</h2>
+                    {{ with $seriesLabel }}<p class="product-listing__series-text">{{ . }}</p>{{ end }}
                     {{ with $desc }}<p class="product-listing__summary">{{ truncate 150 . }}</p>{{ end }}
                     {{ if or $dimensions $dynamicLoad }}
                       <dl class="product-listing__specs">

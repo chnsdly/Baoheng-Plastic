@@ -56,7 +56,7 @@
                           <p class="site-header__mega-heading">{{ i18n "header_mega_pallets" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range .Children -}}
-                              {{- if or (in .URL "/pallets/") (in .URL "/blow-molded-pallets/") -}}
+                              {{- if in .URL "/pallets/" -}}
                                 <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
                               {{- end -}}
                             {{- end -}}
@@ -67,7 +67,7 @@
                           <p class="site-header__mega-heading">{{ i18n "header_mega_boxes" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range .Children -}}
-                              {{- if or (in .URL "/foldable-pallet-boxes/") (in .URL "/bulk-containers/") (in .URL "/crates/") -}}
+                              {{- if or (in .URL "/pallet-boxes-bulk-containers/") (in .URL "/crates-boxes-totes/") -}}
                                 <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
                               {{- end -}}
                             {{- end -}}

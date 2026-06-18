@@ -2,8 +2,17 @@
 title: "660L contenedor plástico de residuos con ruedas"
 description: "660L contenedor plástico de residuos con ruedas de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
 featured_image: "/images/products/waste/660l-waste-hero.jpg"
-product_type: "Contenedores de residuos"
-pallet_category: []
+product_type: "Plastic Waste Bins"
+product_family: "Plastic Waste Bins"
+product_series: "Four-Wheel Waste Bins"
+product_filters:
+  - "Wheeled"
+  - "Outdoor"
+  - "High Capacity"
+  - "Municipal Collection"
+product_kind: "model"
+pallet_category:
+  - "Four-Wheel Waste Bins"
 hero_description: "660L contenedor plástico de residuos con ruedas de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
 contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
@@ -25,5 +34,6 @@ industry_gallery:
 form_title: "Cuéntenos sus requisitos de carga"
 form_description: "Comparta entorno de uso, circulación, higiene, color o logotipo; responderemos con una cotización adaptada."
 ---
+
 
 {{< quote_request_button >}}

@@ -1,4 +1,4 @@
 ---
 title: "Products"
-description: "Browse Baoheng Plastic pallets, blow-molded pallets, crates, foldable pallet boxes, bulk containers, and waste bins for industrial sourcing."
+description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
 ---

@@ -11,35 +11,22 @@ weight = 10
   weight = 11
 
   [[main]]
-  name = "Palets soplados encajables"
-  url = "/products/blow-molded-pallets/"
+  name = "Cajas pallet y contenedores"
+  url = "/products/pallet-boxes-bulk-containers/"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "Cajas y contenedores plásticos"
-  url = "/products/crates/"
+  name = "Cajas y gavetas"
+  url = "/products/crates-boxes-totes/"
   parent = "products"
   weight = 13
-
-  [[main]]
-  name = "Cajas pallet plegables"
-  url = "/products/foldable-pallet-boxes/"
-  parent = "products"
-  weight = 14
-
-  [[main]]
-  name = "Contenedores a granel"
-  url = "/products/bulk-containers/"
-  parent = "products"
-  weight = 15
 
   [[main]]
   name = "Contenedores de residuos"
   url = "/products/waste-bins/"
   parent = "products"
-  weight = 16
-
+  weight = 14
 [[main]]
 name = "Industrias"
 url = "/contact/?intent=selection-support"

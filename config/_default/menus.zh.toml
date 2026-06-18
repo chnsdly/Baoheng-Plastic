@@ -11,35 +11,22 @@ weight = 10
   weight = 11
 
   [[main]]
-  name = "吹塑可嵌套塑料托盘"
-  url = "/products/blow-molded-pallets/"
+  name = "托盘箱与大型容器"
+  url = "/products/pallet-boxes-bulk-containers/"
   parent = "products"
   weight = 12
 
   [[main]]
-  name = "塑料周转筐与箱"
-  url = "/products/crates/"
+  name = "周转筐、周转箱"
+  url = "/products/crates-boxes-totes/"
   parent = "products"
   weight = 13
-
-  [[main]]
-  name = "折叠卡板箱"
-  url = "/products/foldable-pallet-boxes/"
-  parent = "products"
-  weight = 14
-
-  [[main]]
-  name = "大型散装容器"
-  url = "/products/bulk-containers/"
-  parent = "products"
-  weight = 15
 
   [[main]]
   name = "塑料垃圾桶"
   url = "/products/waste-bins/"
   parent = "products"
-  weight = 16
-
+  weight = 14
 [[main]]
 name = "应用行业"
 url = "/contact/?intent=selection-support"
