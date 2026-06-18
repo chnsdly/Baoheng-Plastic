@@ -3,12 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url>
     <loc>http://localhost:1313/fr/</loc>
-    <lastmod>2026-06-15T00:00:00&#43;00:00</lastmod>
+    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/"/>
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/"/>
+  </url><url>
+    <loc>http://localhost:1313/fr/resources/insights/2625-plastic-pallet-size-container-loading-guide/</loc>
+    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/2625-plastic-pallet-size-container-loading-guide/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/2625-plastic-pallet-size-container-loading-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/2625-plastic-pallet-size-container-loading-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2625-plastic-pallet-size-container-loading-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2625-plastic-pallet-size-container-loading-guide/"/>
+    <image:image>
+      <image:loc>http://localhost:1313/images/resources/2625-plastic-pallet-size-container-loading-guide.webp</image:loc>
+      <image:title>Dimension de palette plastique pour chargement conteneur : aligner cartons, palettes et espace export</image:title>
+    </image:image>
+  </url><url>
+    <loc>http://localhost:1313/fr/resources/insights/</loc>
+    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/"/>
+  </url><url>
+    <loc>http://localhost:1313/fr/resources/</loc>
+    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/"/>
   </url><url>
     <loc>http://localhost:1313/fr/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/</loc>
     <lastmod>2026-06-15T00:00:00&#43;00:00</lastmod>
@@ -21,22 +49,6 @@
       <image:loc>http://localhost:1313/images/resources/2624-plastic-pallet-anti-slip-edge-lip-selection.webp</image:loc>
       <image:title>Conception antidérapante des palettes plastique : spécifier rebords et adhérence du plateau</image:title>
     </image:image>
-  </url><url>
-    <loc>http://localhost:1313/fr/resources/insights/</loc>
-    <lastmod>2026-06-15T00:00:00&#43;00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/"/>
-  </url><url>
-    <loc>http://localhost:1313/fr/resources/</loc>
-    <lastmod>2026-06-15T00:00:00&#43;00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/"/>
   </url><url>
     <loc>http://localhost:1313/fr/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/</loc>
     <lastmod>2026-06-11T00:00:00&#43;00:00</lastmod>

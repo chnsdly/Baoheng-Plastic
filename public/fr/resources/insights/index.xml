@@ -6,8 +6,15 @@
     <description>Recent content in Guides techniques on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/fr/resources/insights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dimension de palette plastique pour chargement conteneur : aligner cartons, palettes et espace export</title>
+      <link>http://localhost:1313/fr/resources/insights/2625-plastic-pallet-size-container-loading-guide/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/resources/insights/2625-plastic-pallet-size-container-loading-guide/</guid>
+      <description>&lt;p&gt;La dimension de la palette plastique est souvent décidée trop tard dans un projet export. Les cartons sont déjà validés, le plan de chargement conteneur est déjà estimé, et l&amp;rsquo;entrepôt doit simplement trouver une palette standard qui convient. Cette séquence crée des problèmes évitables : dépassement des cartons, perte d&amp;rsquo;espace au sol dans le conteneur, unités de charge instables, conflits d&amp;rsquo;entrée de fourches et hypothèses différentes entre les achats et les fournisseurs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Conception antidérapante des palettes plastique : spécifier rebords et adhérence du plateau</title>
       <link>http://localhost:1313/fr/resources/insights/2624-plastic-pallet-anti-slip-edge-lip-selection/</link>
