@@ -449,6 +449,11 @@ body.is-menu-open {
   height: 0.75rem;
 }
 
+.site-header__mega::before {
+  top: -1.5rem;
+  height: 1.5rem;
+}
+
 .site-header__submenu-link {
   display: block;
   padding: space(0.7) space(0.8);
@@ -476,7 +481,6 @@ body.is-menu-open {
   border-radius: 0 0 var(--radius-l) var(--radius-l);
   background: var(--card);
   box-shadow: var(--shadow-lg);
-  overflow: hidden;
 }
 
 .site-header__nav-item--has-children:hover > .site-header__mega,
