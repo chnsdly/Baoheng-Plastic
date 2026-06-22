@@ -65,6 +65,6 @@ items:
 cta:
   title: "Vous hésitez sur le bon produit ?"
   text: "Envoyez application, charge, dimensions, température, détails de rayonnage, quantité et destination. Nous recommanderons une orientation pratique avant devis."
-  url: "/contact/?intent=selection-support"
+  url: "/selection-support/"
   label: "Demander une aide à la sélection"
 ---

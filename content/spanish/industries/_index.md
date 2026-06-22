@@ -65,6 +65,6 @@ items:
 cta:
   title: "¿No sabe qué producto encaja?"
   text: "Envíe aplicación, carga, tamaño, temperatura, datos de estantería, cantidad y destino. Recomendaremos una dirección práctica antes de cotizar."
-  url: "/contact/?intent=selection-support"
+  url: "/selection-support/"
   label: "Solicitar ayuda de selección"
 ---

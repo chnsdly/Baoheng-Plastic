@@ -2,7 +2,7 @@
 {{- $languages := .Site.Languages -}}
 {{- $languageShortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
 {{- $currentLanguageShort := default (upper .Site.Language.Lang) (index $languageShortLabels .Site.Language.Lang) -}}
-{{- $recommendURL := printf "%s?intent=selection-support" ("/contact/" | relLangURL) -}}
+{{- $recommendURL := "/selection-support/" | relLangURL -}}
 {{- $quoteURL := "/contact/" | relLangURL -}}
 
 <header class="site-header" data-site-header>

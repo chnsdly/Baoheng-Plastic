@@ -1,0 +1,220 @@
+{{ define "main" }}
+  {{ $hero := .Params.hero | default dict }}
+  {{ $situations := .Params.situations | default dict }}
+  {{ $requirements := .Params.requirements | default dict }}
+  {{ $directions := .Params.product_directions | default dict }}
+  {{ $paths := .Params.selection_paths | default dict }}
+  {{ $industries := .Params.industry_links | default dict }}
+  {{ $resources := .Params.resources | default dict }}
+  {{ $form := .Params.form | default dict }}
+
+  <article class="selection-support">
+    <section class="selection-hero">
+      <div class="container selection-hero__grid">
+        <div class="selection-hero__copy">
+          {{ with $hero.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+          <h1 class="selection-hero__title">{{ $hero.title | default .Title }}</h1>
+          {{ with $hero.text }}<p class="selection-hero__text">{{ . }}</p>{{ end }}
+
+          <div class="selection-hero__actions">
+            {{ with $hero.primary_url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.primary_label | default (i18n "product_selection_support") }}</a>{{ end }}
+            {{ with $hero.secondary_url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.secondary_label | default (i18n "browse_products") }}</a>{{ end }}
+          </div>
+
+          {{ with $hero.proof_points }}
+            <ul class="selection-hero__proof" role="list">
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+        </div>
+
+        {{ with $hero.image }}
+          <figure class="selection-hero__media">
+            <img src="{{ . | relURL }}" alt="{{ $hero.image_alt | default $.Title }}" loading="eager" decoding="async">
+          </figure>
+        {{ end }}
+      </div>
+    </section>
+
+    {{ with $situations.items }}
+      <section class="selection-section">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              {{ with $situations.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+              <h2>{{ $situations.title }}</h2>
+            </div>
+            {{ with $situations.text }}<p>{{ . }}</p>{{ end }}
+          </header>
+
+          <div class="selection-card-grid">
+            {{ range . }}
+              <article class="selection-card">
+                {{ with .label }}<p class="selection-card__label">{{ . }}</p>{{ end }}
+                <h3>{{ .title }}</h3>
+                {{ with .text }}<p>{{ . }}</p>{{ end }}
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with $requirements.groups }}
+      <section class="selection-section selection-section--muted">
+        <div class="container selection-split">
+          <header class="section-head section-head--left">
+            {{ with $requirements.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+            <h2>{{ $requirements.title }}</h2>
+            {{ with $requirements.text }}<p>{{ . }}</p>{{ end }}
+          </header>
+
+          <div class="selection-requirement-grid">
+            {{ range . }}
+              <article class="selection-requirement">
+                <h3>{{ .title }}</h3>
+                {{ with .items }}
+                  <ul class="check-list" role="list">
+                    {{ range . }}<li>{{ . }}</li>{{ end }}
+                  </ul>
+                {{ end }}
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with $directions.items }}
+      <section class="selection-section">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              {{ with $directions.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+              <h2>{{ $directions.title }}</h2>
+            </div>
+            {{ with $directions.text }}<p>{{ . }}</p>{{ end }}
+          </header>
+
+          <div class="selection-product-grid">
+            {{ range . }}
+              <article class="selection-product-card">
+                <a class="selection-product-card__media" href="{{ partial "menu-url.html" (dict "url" .url) }}">
+                  {{ with .image }}<img src="{{ . | relURL }}" alt="{{ $.Title }} {{ $.Params.product_directions.title }}" loading="lazy" decoding="async">{{ end }}
+                </a>
+                <div class="selection-product-card__body">
+                  <h3><a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a></h3>
+                  {{ with .summary }}<p>{{ . }}</p>{{ end }}
+                  {{ with .fit }}<p class="selection-product-card__fit"><span>{{ $directions.fit_label }}</span>{{ . }}</p>{{ end }}
+                  <a class="text-link" href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ $directions.link_label }}</a>
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with $paths.items }}
+      <section class="selection-section selection-section--paths">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              {{ with $paths.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+              <h2>{{ $paths.title }}</h2>
+            </div>
+            {{ with $paths.text }}<p>{{ . }}</p>{{ end }}
+          </header>
+
+          <div class="selection-path-list" role="list">
+            {{ range . }}
+              <article class="selection-path" role="listitem">
+                <div>
+                  <p class="selection-path__label">{{ $paths.condition_label }}</p>
+                  <h3>{{ .condition }}</h3>
+                </div>
+                <div>
+                  <p class="selection-path__label">{{ $paths.direction_label }}</p>
+                  <p class="selection-path__direction">{{ .direction }}</p>
+                  {{ with .note }}<p class="selection-path__note">{{ . }}</p>{{ end }}
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with $industries.items }}
+      <section class="selection-section">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              {{ with $industries.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+              <h2>{{ $industries.title }}</h2>
+            </div>
+            {{ with $industries.text }}<p>{{ . }}</p>{{ end }}
+          </header>
+
+          <div class="selection-industry-grid">
+            {{ range . }}
+              <a class="selection-industry-link" href="{{ partial "menu-url.html" (dict "url" .url) }}">
+                <span>{{ .title }}</span>
+                {{ with .focus }}<small>{{ . }}</small>{{ end }}
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with $resources.items }}
+      <section class="selection-section selection-section--muted">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              {{ with $resources.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+              <h2>{{ $resources.title }}</h2>
+            </div>
+            {{ with $resources.text }}<p>{{ . }}</p>{{ end }}
+          </header>
+
+          <div class="selection-resource-grid">
+            {{ range . }}
+              <article class="selection-resource-card">
+                <h3><a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a></h3>
+                {{ with .summary }}<p>{{ . }}</p>{{ end }}
+                <a class="text-link" href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ $resources.link_label }}</a>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    <section class="selection-section selection-section--form" id="selection-support-form">
+      <div class="container selection-form">
+        <div class="selection-form__copy">
+          {{ with $form.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+          <h2>{{ $form.title }}</h2>
+          {{ with $form.text }}<p>{{ . }}</p>{{ end }}
+          {{ with $form.points }}
+            <ul class="check-list" role="list">
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+        </div>
+
+        <div class="selection-form__card">
+          {{ partial "lead-form.html" (dict
+            "type" ($form.type | default "selection-support")
+            "page" .
+            "sitekey" .Site.Params.turnstile_site_key
+            "intent" "selection-support"
+            "message_placeholder" $form.message_placeholder
+          ) }}
+        </div>
+      </div>
+    </section>
+  </article>
+{{ end }}

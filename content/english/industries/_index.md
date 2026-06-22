@@ -65,6 +65,6 @@ items:
 cta:
   title: "Not sure which product fits?"
   text: "Send your application, load, size, temperature, rack details, quantity, and destination. We will recommend a practical product direction before quoting."
-  url: "/contact/?intent=selection-support"
+  url: "/selection-support/"
   label: "Get selection support"
 ---

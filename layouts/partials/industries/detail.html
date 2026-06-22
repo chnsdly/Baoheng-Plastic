@@ -1,6 +1,6 @@
 {{ $hero := .Params.hero }}
 {{ $industryKey := .Params.industry_key }}
-{{ $contactURL := printf "%s?intent=selection-support&industry=%s" ("/contact/" | relLangURL) $industryKey }}
+{{ $contactURL := printf "%s?industry=%s" ("/selection-support/" | relLangURL) $industryKey }}
 <article class="industry-detail">
   <section class="industry-detail__hero">
     <div class="container industry-detail__hero-grid">

@@ -65,6 +65,6 @@ items:
 cta:
   title: "不确定哪类产品合适？"
   text: "发送应用场景、载重、尺寸、温度、货架信息、数量和目的港，我们会先给出可执行的选型方向，再进入报价。"
-  url: "/contact/?intent=selection-support"
+  url: "/selection-support/"
   label: "获取选型支持"
 ---

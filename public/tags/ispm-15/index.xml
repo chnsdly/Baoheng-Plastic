@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ISPM 15 on Baoheng Plastic</title>
-    <link>https://www.baohengplastic.com/tags/ispm-15/</link>
+    <link>http://localhost:1313/tags/ispm-15/</link>
     <description>Recent content in ISPM 15 on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.baohengplastic.com/tags/ispm-15/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ispm-15/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ISPM 15 and Export Pallet Compliance: A Practical Decision Framework for B2B Shipping Teams</title>
-      <link>https://www.baohengplastic.com/resources/insights/2607-ispm15-export-pallet-compliance-framework/</link>
+      <link>http://localhost:1313/resources/insights/2607-ispm15-export-pallet-compliance-framework/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2607-ispm15-export-pallet-compliance-framework/</guid>
+      <guid>http://localhost:1313/resources/insights/2607-ispm15-export-pallet-compliance-framework/</guid>
       <description>&lt;p&gt;International shipments fail at the border for many reasons, but one recurring issue is often underestimated: &lt;strong&gt;wood packaging compliance&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For export teams, procurement managers, and warehouse operators, pallet choice is not only a load-handling decision. It is also a compliance decision that affects customs clearance speed, inspection risk, rework cost, and on-time delivery.&lt;/p&gt;&#xA;&lt;p&gt;This guide focuses on one practical question:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When does switching from wood to plastic pallets reduce export compliance risk, and how should B2B teams make that decision lane by lane?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
