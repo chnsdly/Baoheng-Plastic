@@ -108,7 +108,7 @@ For food and beverage exports, washable and consistent materials can support cle
 
 If your network is reusable or semi-closed-loop, define marking rules (embossed logo, code, barcode, or RFID-ready points) before mass purchase.
 
-For teams comparing rackable and nestable architecture, this buyer framework can be used alongside your export-lane analysis: [Nestable vs Rackable Plastic Pallets](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/).
+For teams comparing rackable and nestable architecture, this selection framework can be used alongside your export-lane analysis: [Nestable vs Rackable Plastic Pallets](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/).
 
 ---
 

@@ -13,7 +13,7 @@ popular: false
 
 Choosing plastic pallets is often treated as a material question. In real projects, the bigger question is structural: **should you buy nestable pallets or rackable pallets**?
 
-For B2B buyers, this decision directly affects freight cost, racking safety, handling efficiency, and replacement rate. A pallet that looks cheaper per unit can become the more expensive option once transport, storage, and damage risk are included.
+For procurement teams, this decision directly affects freight cost, racking safety, handling efficiency, and replacement rate. A pallet that looks cheaper per unit can become the more expensive option once transport, storage, and damage risk are included.
 
 This guide provides a practical decision framework for procurement teams, warehouse managers, and logistics leaders who need to choose the right pallet architecture before quotation and rollout.
 

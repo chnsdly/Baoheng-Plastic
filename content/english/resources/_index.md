@@ -1,6 +1,6 @@
----
+﻿---
 title: "Resources"
-description: "Practical sourcing guides, RFQ checklists, company updates, case references, and FAQs for plastic pallets and industrial handling products."
+description: "Practical sourcing guides, RFQ checklists, quality notes, and selection frameworks for plastic pallets and industrial handling products."
 aliases:
   - "/resources/blog-news/"
 hero:
@@ -10,10 +10,7 @@ sections:
   - label: "Insights"
     url: "/resources/insights/"
     summary: "Specification checklists, selection frameworks, and warehouse operating guides."
-  - label: "Case Studies"
-    url: "/resources/case-studies/"
-    summary: "Project references and application notes for common sourcing scenarios."
-  - label: "FAQ"
-    url: "/resources/faq/"
-    summary: "Quick answers to common questions about plastic pallet and container sourcing."
+  - label: "RFQ Checklist"
+    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+    summary: "A practical baseline for sending comparable plastic pallet quotation requests."
 ---

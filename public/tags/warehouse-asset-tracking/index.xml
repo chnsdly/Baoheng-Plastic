@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Warehouse Asset Tracking on Baoheng Plastic</title>
-    <link>http://localhost:1313/tags/warehouse-asset-tracking/</link>
+    <link>https://www.baohengplastic.com/tags/warehouse-asset-tracking/</link>
     <description>Recent content in Warehouse Asset Tracking on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/warehouse-asset-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.baohengplastic.com/tags/warehouse-asset-tracking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plastic Pallet Traceability: How to Build a Labeling System That Survives Real Warehouse Use</title>
-      <link>http://localhost:1313/resources/insights/2615-plastic-pallet-traceability-labeling-system/</link>
+      <link>https://www.baohengplastic.com/resources/insights/2615-plastic-pallet-traceability-labeling-system/</link>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/insights/2615-plastic-pallet-traceability-labeling-system/</guid>
+      <guid>https://www.baohengplastic.com/resources/insights/2615-plastic-pallet-traceability-labeling-system/</guid>
       <description>&lt;p&gt;Reusable plastic pallets only become manageable assets when the warehouse can identify them quickly and consistently. A pallet may be durable, rackable, and easy to clean, but if nobody can tell which pool it belongs to, where it was last shipped, or whether it is approved for the current lane, it will still create avoidable cost.&lt;/p&gt;&#xA;&lt;p&gt;For manufacturers, 3PL operators, food distributors, and closed-loop logistics teams, the practical question is not whether every pallet should carry a label. The better question is:&lt;/p&gt;</description>
     </item>
   </channel>

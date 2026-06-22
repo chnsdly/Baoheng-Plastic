@@ -1,4 +1,4 @@
-.home-featured {
+﻿.home-featured {
   padding-block: var(--section-padding);
   background: var(--surface);
 }
@@ -15,13 +15,19 @@
   row-gap: space(1);
 }
 
+.home-section-head--center {
+  max-width: 66rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
 .home-section-head__eyebrow,
 .home-product-card__type {
   margin: 0;
-  color: var(--brand-strong);
+  color: var(--accent);
   font-size: var(--type-eyebrow);
-  font-weight: var(--weight-bold);
-  letter-spacing: var(--tracking-heading-compact);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -32,44 +38,79 @@
   font-size: var(--type-section-title);
   line-height: var(--line-tight);
   font-weight: var(--section-title-weight);
+  text-wrap: balance;
+}
+
+.home-section-head__desc {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--secondary);
 }
 
 .home-section-head__link {
   justify-self: start;
-  color: var(--brand-strong);
+  color: var(--brand);
   font-weight: var(--weight-bold);
+  text-decoration: none;
 }
 
+.home-section-head__link:hover,
+.home-section-head__link:focus-visible {
+  color: var(--brand-strong);
+  text-decoration: underline;
+}
+
+.home-family-grid,
 .home-product-grid {
   display: grid;
   gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
+.home-family-card,
 .home-product-card {
   display: grid;
   grid-template-rows: auto 1fr;
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   background: var(--card);
   box-shadow: var(--shadow);
   overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
+.home-family-card:hover,
+.home-family-card:focus-within,
+.home-product-card:hover,
+.home-product-card:focus-within {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
+  box-shadow: var(--shadow-hover);
+}
+
+.home-family-card__media,
 .home-product-card__media {
   display: grid;
   place-items: center;
   aspect-ratio: 5 / 4;
   padding: space(0.75);
-  background: var(--surface-alt);
+  background: var(--img-bg);
   overflow: hidden;
 }
 
+.home-family-card__media img,
 .home-product-card__media img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   transition: transform var(--transition-base);
+}
+
+.home-family-card:hover img,
+.home-family-card:focus-within img,
+.home-product-card:hover img,
+.home-product-card:focus-within img {
+  transform: scale(1.035);
 }
 
 .home-product-card__placeholder {
@@ -88,17 +129,15 @@
   text-transform: uppercase;
 }
 
-.home-product-card:hover .home-product-card__media img,
-.home-product-card:focus-within .home-product-card__media img {
-  transform: scale(1.04);
-}
-
+.home-family-card__body,
 .home-product-card__body {
   display: grid;
-  gap: space(0.75);
+  align-content: start;
+  gap: space(0.8);
   padding: var(--card-padding);
 }
 
+.home-family-card__body h3,
 .home-product-card__title {
   margin: 0;
   color: var(--on-surface);
@@ -107,35 +146,50 @@
   font-weight: var(--weight-bold);
 }
 
-.home-product-card__desc {
-  margin: 0;
-  color: var(--secondary);
-  font-size: var(--type-body-sm);
+.home-family-card__body h3 a,
+.home-product-card__title a {
+  text-decoration: none;
 }
 
+.home-family-card__body p,
+.home-product-card__desc,
 .home-product-card__series {
   margin: 0;
   color: var(--secondary);
   font-size: var(--type-body-sm);
-  font-weight: var(--weight-semibold);
+}
+
+.home-family-card__fit {
+  display: grid;
+  gap: space(0.25);
+  padding-top: space(0.75);
+  border-top: var(--border);
+}
+
+.home-family-card__fit span {
+  color: var(--accent);
+  font-size: var(--type-eyebrow);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .home-product-card__quote {
   justify-self: start;
-  color: var(--brand-strong);
+  color: var(--brand);
   font-weight: var(--weight-bold);
 }
 
 @include mq-up(tablet) {
-  .home-section-head {
+  .home-section-head:not(.home-section-head--center) {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 
-  .home-section-head > :not(.home-section-head__link) {
+  .home-section-head:not(.home-section-head--center) > :not(.home-section-head__link) {
     grid-column: 1;
   }
 
-  .home-section-head__link {
+  .home-section-head:not(.home-section-head--center) .home-section-head__link {
     grid-column: 2;
     grid-row: 2;
     justify-self: end;
@@ -143,6 +197,7 @@
 }
 
 @include mq-up(desktop) {
+  .home-family-grid,
   .home-product-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }

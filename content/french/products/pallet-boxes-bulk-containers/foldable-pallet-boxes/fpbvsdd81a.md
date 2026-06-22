@@ -50,13 +50,13 @@ hero_description: "1210-BF-FPBVSDD81A de Baoheng Plastic pour opérations indust
 contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. 1210-BF-FPBVSDD81A est conçue pour les acheteurs industriels qui recherchent une solution plastique stable, réutilisable et simple à spécifier pour l'entrepôt, la logistique ou la production.
+  1. 1210-BF-FPBVSDD81A est conçue pour les applications d'entrepôt, de logistique ou de production qui exigent une solution plastique stable, réutilisable et simple à spécifier.
 
   2. La structure utilise HDPE/PP et doit être validée selon le flux réel de chariots élévateurs, d'empilage, de nettoyage et de stockage.
 
   3. Paramètres de référence : dimensions 1200 x 1000 x 760 mm; charge dynamique 1 t; charge statique 4 t; charge en rayonnage 0.7 t. Confirmez toujours la répartition de charge et les conditions d'utilisation.
 
-  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les projets B2B.
+  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les commandes par projet ou les réassorts.
 industry_gallery:
   - image: "/images/products/fold/industry-1.jpg"
     alt: "1210-BF-FPBVSDD76A industry utilisation 1"

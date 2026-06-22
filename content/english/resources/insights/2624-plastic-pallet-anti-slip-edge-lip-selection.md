@@ -15,7 +15,7 @@ Unit load stability is often discussed after something has already gone wrong: c
 
 Still, the plastic pallet surface can either support or undermine the stability of the complete load. Edge lips, deck texture, anti-slip plugs, and rubber inserts are small design details, but they affect how cartons, sacks, trays, and plastic totes behave during daily movement.
 
-The question for B2B buyers is not whether every pallet needs the most aggressive anti-slip design. The better question is: **which load movement risk needs to be controlled, and which pallet feature solves it without creating a new problem?**
+The question for procurement teams is not whether every pallet needs the most aggressive anti-slip design. The better question is: **which load movement risk needs to be controlled, and which pallet feature solves it without creating a new problem?**
 
 ---
 

@@ -5,7 +5,7 @@ description: "Guía técnica para equipos de compras, almacén y logística: def
 layout: "resources/"
 cover_image: "images/resources/2606-nestable-vs-rackable-plastic-pallets.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
+tags: ["palets plásticos", "compras industriales", "almacén", "RFQ"]
 reading: "7 min"
 file_size: ""
 date: 2026-03-30

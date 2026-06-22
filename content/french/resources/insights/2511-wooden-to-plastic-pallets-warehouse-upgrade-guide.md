@@ -5,7 +5,7 @@ description: "Guide technique pour les équipes achats, entrepôt et logistique 
 layout: "resources/"
 cover_image: "images/resources/2511-wooden-to-plastic-pallets-warehouse-upgrade.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
+tags: ["palettes plastique", "achats industriels", "entrepôt", "RFQ"]
 reading: "5 分钟"
 file_size: ""
 date: 2025-11-20

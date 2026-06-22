@@ -47,13 +47,13 @@ hero_description: "1412 plateau ajouré double face Palette plastique de Baoheng
 contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. 1412 plateau ajouré double face Palette plastique est conçue pour les acheteurs industriels qui recherchent une solution plastique stable, réutilisable et simple à spécifier pour l'entrepôt, la logistique ou la production.
+  1. 1412 plateau ajouré double face Palette plastique est conçue pour les applications d'entrepôt, de logistique ou de production qui exigent une solution plastique stable, réutilisable et simple à spécifier.
 
   2. La structure utilise HDPE/PP et doit être validée selon le flux réel de chariots élévateurs, d'empilage, de nettoyage et de stockage.
 
   3. Paramètres de référence : dimensions 1400 × 1200 × 150 mm; charge dynamique 2 t; charge statique 6 t. Confirmez toujours la répartition de charge et les conditions d'utilisation.
 
-  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les projets B2B.
+  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les commandes par projet ou les réassorts.
 industry_gallery:
   - image: "/images/products/pallet/double-faced/industry-1.jpg"
     alt: "1412-BP-OD3R15 industry utilisation 1"

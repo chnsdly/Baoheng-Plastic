@@ -48,13 +48,13 @@ hero_description: "1212 plateau ajouré 9-leg Palette plastique de Baoheng Plast
 contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. 1212 plateau ajouré 9-leg Palette plastique est conçue pour les acheteurs industriels qui recherchent une solution plastique stable, réutilisable et simple à spécifier pour l'entrepôt, la logistique ou la production.
+  1. 1212 plateau ajouré 9-leg Palette plastique est conçue pour les applications d'entrepôt, de logistique ou de production qui exigent une solution plastique stable, réutilisable et simple à spécifier.
 
   2. La structure utilise HDPE et doit être validée selon le flux réel de chariots élévateurs, d'empilage, de nettoyage et de stockage.
 
   3. Paramètres de référence : dimensions 1200 × 1200 × 140 mm; charge dynamique 0.8 t; charge statique 2 t. Confirmez toujours la répartition de charge et les conditions d'utilisation.
 
-  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les projets B2B.
+  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les commandes par projet ou les réassorts.
 industry_gallery:
   - image: "/images/products/pallet/nine-leg/industry-1.jpg"
     alt: "1212 plateau ajouré 9-leg Palette plastique industry utilisation 1"

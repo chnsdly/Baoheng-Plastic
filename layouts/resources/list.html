@@ -27,8 +27,15 @@
             {{ with $root }}
               <li><a class="resources-nav__link{{ if eq $.RelPermalink .RelPermalink }} resources-nav__link--current{{ end }}" href="{{ .RelPermalink }}">{{ i18n "all_resources" }}</a></li>
             {{ end }}
-            {{ range $sections }}
-              <li><a class="resources-nav__link{{ if eq $.RelPermalink .RelPermalink }} resources-nav__link--current{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ with .Params.sections }}
+              {{ range . }}
+                {{ $href := partial "menu-url.html" (dict "url" .url) }}
+                <li><a class="resources-nav__link{{ if eq $.RelPermalink $href }} resources-nav__link--current{{ end }}" href="{{ $href }}">{{ .label }}</a></li>
+              {{ end }}
+            {{ else }}
+              {{ range $sections }}
+                <li><a class="resources-nav__link{{ if eq $.RelPermalink .RelPermalink }} resources-nav__link--current{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
             {{ end }}
           </ul>
         </aside>

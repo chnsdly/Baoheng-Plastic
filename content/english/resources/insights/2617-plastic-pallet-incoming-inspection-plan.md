@@ -1,6 +1,6 @@
 ---
 title: "Incoming Inspection for Plastic Pallets: A Practical QC Plan Before Warehouse Deployment"
-description: "A practical guide for B2B buyers and warehouse teams on how to inspect plastic pallet lots before release, including sampling, dimensional checks, functional tests, defect classification, and supplier feedback loops."
+description: "A practical guide for procurement teams and warehouse teams on how to inspect plastic pallet lots before release, including sampling, dimensional checks, functional tests, defect classification, and supplier feedback loops."
 layout: "resources/"
 cover_image: "images/resources/2617-plastic-pallet-incoming-inspection-plan.webp"
 categories: "articles" # articles | downloads | news | faq
@@ -13,7 +13,7 @@ popular: false
 
 A plastic pallet shipment can look acceptable at the dock and still create problems after it enters daily warehouse circulation. The risk is not only cracked pallets. A small dimensional drift, uneven bottom runner, excessive warpage, weak label area, or inconsistent fork entry can lead to rejected loads, unstable stacking, conveyor stoppages, or disputes between procurement and operations.
 
-For B2B buyers, the practical question is straightforward:
+For procurement teams, the practical question is straightforward:
 
 **What should be checked when a new plastic pallet lot arrives, before it is released into production, storage, or outbound logistics?**
 
@@ -156,7 +156,7 @@ A practical approach is to use risk-based sampling:
 - targeted inspection for transport damage if packaging or container loading appears abnormal;
 - increased inspection after any complaint, line stoppage, or field failure.
 
-For companies that already use formal acceptance sampling, **ISO 2859-1:2026** provides a recognized framework for attribute-based lot-by-lot inspection indexed by AQL ([ISO standard page](https://www.iso.org/standard/85464.html)). In practice, the exact sample size and acceptance number should be defined by the buyer’s quality team according to application risk, supplier history, and internal policy.
+For companies that already use formal acceptance sampling, **ISO 2859-1:2026** provides a recognized framework for attribute-based lot-by-lot inspection indexed by AQL ([ISO standard page](https://www.iso.org/standard/85464.html)). In practice, the exact sample size and acceptance number should be defined by the company quality team according to application risk, supplier history, and internal policy.
 
 For plastic pallets, avoid one common mistake: sampling only from the easiest-to-reach stack. Pull samples from different layers, different pallet stacks, and different container positions whenever possible. This reduces the chance of missing a concentrated defect pattern.
 

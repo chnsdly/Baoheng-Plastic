@@ -1,4 +1,4 @@
-.usps {
+﻿.usps {
   padding-block: space(3);
   background: var(--card);
   border-bottom: var(--border);
@@ -14,9 +14,9 @@
   grid-template-columns: auto 1fr;
   gap: space(1);
   align-items: start;
-  padding: space(1.3);
-  border: var(--border);
-  border-radius: var(--radius-m);
+  padding: space(1.25);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-l);
   background: var(--surface);
 }
 

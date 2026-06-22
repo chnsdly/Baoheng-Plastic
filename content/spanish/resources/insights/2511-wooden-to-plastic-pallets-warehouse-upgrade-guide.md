@@ -5,7 +5,7 @@ description: "Guía técnica para equipos de compras, almacén y logística: def
 layout: "resources/"
 cover_image: "images/resources/2511-wooden-to-plastic-pallets-warehouse-upgrade.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
+tags: ["palets plásticos", "compras industriales", "almacén", "RFQ"]
 reading: "5 分钟"
 file_size: ""
 date: 2025-11-20

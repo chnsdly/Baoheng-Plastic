@@ -205,7 +205,7 @@ The system should become easier over time. If it requires constant manual polici
 
 ---
 
-## A practical rule for B2B buyers
+## A practical rule for procurement teams
 
 Plastic pallet color coding works best when it is treated as part of warehouse process design, not as a cosmetic product option.
 

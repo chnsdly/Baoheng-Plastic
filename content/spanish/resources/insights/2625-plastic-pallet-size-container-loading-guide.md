@@ -75,7 +75,7 @@ Cuando se necesitan compatibilidad con estanterías, manipulación con carretill
 
 Un palet de 1200 x 800 mm puede ser eficiente cuando las cajas están diseñadas alrededor de esa huella y cuando la red de destino espera ese tamaño. En algunos sistemas europeos o vinculados al retail puede facilitar movimientos de pasillo más limpios y manipulación estandarizada.
 
-Para compradores que comparan esta huella, el [palet plástico abierto de 3 patines 1208](/es/products/pallets/3-runner_1208/) es una estructura relevante cuando el flujo exige manipulación rackable.
+Para equipos que comparan esta huella, el [palet plástico abierto de 3 patines 1208](/es/products/pallets/3-runner_1208/) es una estructura relevante cuando el flujo exige manipulación rackable.
 
 Lo importante es no elegir por costumbre. Un palet de 1200 x 800 mm con mala compatibilidad de caja puede desperdiciar más espacio que un palet de 1200 x 1000 mm con un patrón de capa más seguro. También puede ocurrir lo contrario.
 

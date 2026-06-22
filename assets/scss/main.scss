@@ -1,4 +1,4 @@
-@import "abstracts/tokens";
+﻿@import "abstracts/tokens";
 @import "abstracts/mixins";
 
 @import "base/reset";
@@ -20,8 +20,10 @@
 @import "home/cta";
 @import "products";
 @import "industries-list";
+@import "manufacturing";
 @import "resources-list";
 @import "resources-single";
 @import "form";
 @import "contact";
 @import "about";
+

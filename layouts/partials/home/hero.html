@@ -1,6 +1,8 @@
 {{- $hero := .Params.home_hero -}}
 {{- $images := $hero.images | default (slice "images/hero_bg_1.webp") -}}
 {{- $image := index $images 0 -}}
+{{- $primary := $hero.primary_cta -}}
+{{- $secondary := $hero.secondary_cta -}}
 
 <section class="home-hero">
   {{ with $image }}
@@ -19,33 +21,31 @@
 
   <div class="container home-hero__inner">
     <div class="home-hero__content">
-      <p class="home-hero__eyebrow">{{ i18n "home_hero_eyebrow" }}</p>
-      <h1 class="home-hero__title">
-        {{ with $hero.title }}
-          {{ . }}
-        {{ else }}
-          {{ i18n "home_hero_title" }}
-        {{ end }}
-      </h1>
-      <p class="home-hero__text">
-        {{ with $hero.description }}
-          {{ . }}
-        {{ else }}
-          {{ i18n "home_hero_text" }}
-        {{ end }}
-      </p>
+      <p class="home-hero__eyebrow">{{ $hero.eyebrow | default (i18n "home_hero_eyebrow") }}</p>
+      <h1 class="home-hero__title">{{ $hero.title | default (i18n "home_hero_title") }}</h1>
+      <p class="home-hero__text">{{ $hero.description | default (i18n "home_hero_text") }}</p>
 
       <div class="home-hero__actions">
-        <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a>
-        <a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ i18n "browse_products" }}</a>
+        {{ with $primary.url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $primary.label | default (i18n "request_quote") }}</a>{{ else }}<a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a>{{ end }}
+        {{ with $secondary.url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $secondary.label | default (i18n "browse_products") }}</a>{{ else }}<a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ i18n "browse_products" }}</a>{{ end }}
       </div>
+
+      {{ with $hero.proof_points }}
+        <ul class="home-hero__proof" role="list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
     </div>
 
-    <div class="home-hero__quick" role="list" aria-label="{{ i18n "home_quick_links" }}">
-      <a href="{{ "/products/pallets/" | relLangURL }}" role="listitem">{{ i18n "home_quick_pallets" }}</a>
-      <a href="{{ "/products/pallet-boxes-bulk-containers/foldable-pallet-boxes/" | relLangURL }}" role="listitem">{{ i18n "home_quick_foldable" }}</a>
-      <a href="{{ "/products/crates-boxes-totes/" | relLangURL }}" role="listitem">{{ i18n "home_quick_crates" }}</a>
-      <a href="{{ "/products/pallet-boxes-bulk-containers/large-bulk-containers/" | relLangURL }}" role="listitem">{{ i18n "home_quick_bulk" }}</a>
-    </div>
+    {{ with $hero.stats }}
+      <div class="home-hero__stats" role="list" aria-label="{{ i18n "home_factory_facts" }}">
+        {{ range . }}
+          <div class="home-hero__stat" role="listitem">
+            <strong>{{ .value }}</strong>
+            <span>{{ .label }}</span>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
   </div>
 </section>

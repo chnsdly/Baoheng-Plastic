@@ -15,7 +15,7 @@ La stabilité d'une charge unitaire est souvent analysée trop tard : des carton
 
 La surface de la palette plastique peut pourtant renforcer ou affaiblir la stabilité de l'ensemble. Rebords moulés, texture du plateau, pastilles antidérapantes et inserts caoutchouc sont de petits détails de conception, mais ils influencent le comportement réel des cartons, sacs, plateaux et caisses plastique pendant les mouvements quotidiens.
 
-Pour un acheteur B2B, la bonne question n'est pas de savoir si toutes les palettes doivent recevoir le dispositif antidérapant le plus marqué. Il faut plutôt déterminer **quel type de déplacement doit être maîtrisé, puis choisir la fonction de palette qui le réduit sans créer un nouveau problème**.
+Pour un équipe achat, la bonne question n'est pas de savoir si toutes les palettes doivent recevoir le dispositif antidérapant le plus marqué. Il faut plutôt déterminer **quel type de déplacement doit être maîtrisé, puis choisir la fonction de palette qui le réduit sans créer un nouveau problème**.
 
 ---
 

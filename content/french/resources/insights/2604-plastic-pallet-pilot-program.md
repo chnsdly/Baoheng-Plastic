@@ -5,7 +5,7 @@ description: "Guide technique pour les équipes achats, entrepôt et logistique 
 layout: "resources/"
 cover_image: "images/resources/2604-plastic-pallet-pilot-program-warehouse-rollout.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
+tags: ["palettes plastique", "achats industriels", "entrepôt", "RFQ"]
 reading: "8 min"
 file_size: ""
 date: 2026-03-14

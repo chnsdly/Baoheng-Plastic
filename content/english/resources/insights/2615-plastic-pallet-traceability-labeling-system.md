@@ -65,7 +65,7 @@ At minimum, each serialized pallet record should include:
 - last transaction date,
 - assigned customer, lane, or warehouse if applicable.
 
-For shipments that need standardized logistics identification, the GS1 system uses the Serial Shipping Container Code (SSCC) to identify individual logistics units; GS1 explains that the SSCC can be encoded in GS1-128 and used on a logistics label to support tracking in transport and storage ([GS1 US](https://www.gs1us.org/resources/data-hub-help-center/about-the-serial-shipping-container-code-sscc)). In practice, buyers should separate two concepts: the pallet asset ID identifies the reusable pallet itself, while the shipment or logistics-unit ID identifies the load moving on that pallet. Mixing these two records can cause confusion when goods are delivered but the empty pallet still needs to be returned.
+For shipments that need standardized logistics identification, the GS1 system uses the Serial Shipping Container Code (SSCC) to identify individual logistics units; GS1 explains that the SSCC can be encoded in GS1-128 and used on a logistics label to support tracking in transport and storage ([GS1 US](https://www.gs1us.org/resources/data-hub-help-center/about-the-serial-shipping-container-code-sscc)). In practice, teams should separate two concepts: the pallet asset ID identifies the reusable pallet itself, while the shipment or logistics-unit ID identifies the load moving on that pallet. Mixing these two records can cause confusion when goods are delivered but the empty pallet still needs to be returned.
 
 ## Place labels where people actually scan
 

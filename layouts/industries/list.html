@@ -1,0 +1,7 @@
+﻿{{ define "main" }}
+  {{ if .Params.industry_key }}
+    {{ partial "industries/detail.html" . }}
+  {{ else }}
+    {{ partial "industries/overview.html" . }}
+  {{ end }}
+{{ end }}

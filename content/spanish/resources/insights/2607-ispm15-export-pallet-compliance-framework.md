@@ -1,18 +1,18 @@
 ---
 
-title: "ISPM 15 y palets de exportación: marco de decisión para compradores"
+title: "ISPM 15 y palets de exportación: marco de decisión para equipos de compras"
 description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
 layout: "resources/"
 cover_image: "images/resources/2607-ispm15-export-pallet-compliance-framework.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palets plásticos", "compras B2B", "almacén", "RFQ"]
+tags: ["palets plásticos", "compras industriales", "almacén", "RFQ"]
 reading: "8 min"
 file_size: ""
 date: 2026-04-07
 popular: false
 ---
 
-Esta guía resume los criterios clave de **ISPM 15 y palets de exportación: marco de decisión para compradores** para equipos de compras, almacén y logística que evalúan productos plásticos de manutención industrial.
+Esta guía resume los criterios clave de **ISPM 15 y palets de exportación: marco de decisión para equipos de compras** para equipos de compras, almacén y logística que evalúan productos plásticos de manutención industrial.
 
 El objetivo es convertir condiciones reales de uso en criterios claros de RFQ, validación y aceptación, reduciendo riesgos antes de comprar en volumen.
 ## Aplicación y alcance

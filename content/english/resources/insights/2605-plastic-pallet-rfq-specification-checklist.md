@@ -18,7 +18,7 @@ When the request for quotation is vague, suppliers quote different assumptions. 
 
 For procurement teams, warehouse managers, and logistics leads, this creates a familiar cycle: a low initial price, poor field performance, urgent replacements, and difficult internal explanations. The fix is not “buy the most expensive pallet.” The fix is to define the right specification set before asking for price.
 
-This guide focuses on one practical question: **What should a B2B buyer lock in an RFQ to get technically comparable quotes and reduce implementation risk?**
+This guide focuses on one practical question: **What should procurement teams lock in an RFQ to get technically comparable quotes and reduce implementation risk?**
 
 ## Why pallet RFQs fail in real projects
 
@@ -201,7 +201,7 @@ When technical and commercial sections are linked, “low price through downgrad
 
 After receiving quotes, avoid ranking by price first. Use a weighted scorecard.
 
-A workable model for many industrial buyers:
+A workable model for many industrial procurement teams:
 
 - **Technical compliance (40%)**: load fit, racking behavior, reinforcement, dimensions.
 - **Quality assurance (20%)**: test evidence, batch consistency, traceability.

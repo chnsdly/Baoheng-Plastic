@@ -1,67 +1,100 @@
-// Home Industries section styles
-// Uses BEM naming and site design tokens for spacing, typography, and colors.
-
-.industries {
+﻿.industries {
   padding-block: var(--section-padding);
-  background-color: var(--surface);
+  background: var(--card);
   color: var(--on-surface);
+  border-block: var(--border);
+}
 
-  &__header {
-    text-align: center;
-    margin-bottom: space(4);
-  }
+.industries__inner {
+  display: grid;
+  gap: var(--section-gap);
+}
 
-  &__title {
-    margin: 0;
-    font-size: var(--type-section-title);
-    line-height: var(--line-tight);
-    font-weight: var(--section-title-weight);
-  }
+.industries__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: var(--grid-gap);
+}
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--grid-gap);
+.industries__item {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  border: var(--border);
+  border-radius: var(--radius-l);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
 
-    @include mq-up(tablet) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+.industries__item:hover,
+.industries__item:focus-within {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
+  box-shadow: var(--shadow-hover);
+}
 
-    @include mq-up(laptop) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
+.industries__media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--surface-alt);
+}
 
-  &__media {
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-m);
-    box-shadow: var(--shadow);
-    background-color: var(--card);
-    isolation: isolate; // Ensure overlay stacking context.
-    aspect-ratio: 4 / 3;
-  }
+.industries__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-base);
+}
 
-  &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
+.industries__item:hover .industries__image,
+.industries__item:focus-within .industries__image {
+  transform: scale(1.035);
+}
 
-  &__caption {
-    position: absolute;
-    inset-inline: 0;
-    bottom: 0;
-    padding: space(1);
-    background: color-mix(in srgb, var(--on-surface) 70%, transparent);
-    color: var(--surface);
-  }
+.industries__content {
+  display: grid;
+  align-content: start;
+  gap: space(0.75);
+  padding: var(--card-padding);
+}
 
-  &__caption-text {
-    display: block;
-    @extend .font-body;
-    font-weight: 500;
-    text-align: center;
+.industries__content h3 {
+  margin: 0;
+  font-size: var(--type-card-title);
+  line-height: var(--line-tight);
+}
+
+.industries__content h3 a {
+  text-decoration: none;
+}
+
+.industries__content p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: var(--type-body-sm);
+}
+
+.industries__products {
+  display: grid;
+  gap: space(0.25);
+  padding-top: space(0.75);
+  border-top: var(--border);
+}
+
+.industries__products span {
+  color: var(--accent);
+  font-size: var(--type-eyebrow);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@include mq-up(laptop) {
+  .industries__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

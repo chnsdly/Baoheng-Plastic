@@ -65,7 +65,7 @@ popular: false
 - 最近交易日期，
 - 如适用，关联客户、线路或仓库。
 
-对于需要标准化物流识别的发运单元，GS1 体系使用 SSCC（Serial Shipping Container Code）识别单个物流单元；GS1 US 说明，SSCC 可以编码在 GS1-128 条码中，并用于物流标签，以支持运输和仓储中的追踪（[GS1 US](https://www.gs1us.org/resources/data-hub-help-center/about-the-serial-shipping-container-code-sscc)）。实际应用中，买方应区分两个概念：托盘资产编号识别的是可重复使用的托盘本身，而发运或物流单元编号识别的是该托盘上的这票货。把两者混为一谈，容易出现货物已交付、空托盘仍需回收却无法闭环的问题。
+对于需要标准化物流识别的发运单元，GS1 体系使用 SSCC（Serial Shipping Container Code）识别单个物流单元；GS1 US 说明，SSCC 可以编码在 GS1-128 条码中，并用于物流标签，以支持运输和仓储中的追踪（[GS1 US](https://www.gs1us.org/resources/data-hub-help-center/about-the-serial-shipping-container-code-sscc)）。实际应用中，采购方应区分两个概念：托盘资产编号识别的是可重复使用的托盘本身，而发运或物流单元编号识别的是该托盘上的这票货。把两者混为一谈，容易出现货物已交付、空托盘仍需回收却无法闭环的问题。
 
 ## 把标签放在人员真正会扫码的位置
 

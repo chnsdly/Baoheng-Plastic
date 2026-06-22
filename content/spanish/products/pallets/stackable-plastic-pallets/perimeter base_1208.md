@@ -46,13 +46,13 @@ hero_description: "1208 cubierta abierta base perimetral Palet plástico de Baoh
 contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. 1208 cubierta abierta base perimetral Palet plástico está diseñado para compradores industriales que necesitan una solución plástica estable, reutilizable y fácil de especificar para almacén, logística o producción.
+  1. 1208 cubierta abierta base perimetral Palet plástico está diseñado para aplicaciones de almacén, logística o producción que requieren una solución plástica estable, reutilizable y fácil de especificar.
 
   2. La estructura utiliza HDPE/PP y se debe validar según el flujo real de montacargas, apilado, limpieza y almacenamiento.
 
   3. Parámetros de referencia: dimensiones 1200 × 800 × 150 mm; carga dinámica 1 t; carga estática 3 t. Confirme siempre la distribución de la carga y las condiciones de uso.
 
-  4. Baoheng Plastic ofrece apoyo en selección de modelo, color, logotipo, embalaje de exportación y cotización por volumen para proyectos B2B.
+  4. Baoheng Plastic ofrece apoyo en selección de modelo, color, logotipo, embalaje de exportación y cotización por volumen para pedidos por proyecto o reposición.
 industry_gallery:
   - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
     alt: "1208 cubierta abierta base perimetral Palet plástico industry uso 1"

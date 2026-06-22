@@ -5,7 +5,7 @@ description: "Guide technique pour les équipes achats, entrepôt et logistique 
 layout: "resources/"
 cover_image: "images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
+tags: ["palettes plastique", "achats industriels", "entrepôt", "RFQ"]
 reading: "9 min"
 file_size: ""
 date: 2026-04-19

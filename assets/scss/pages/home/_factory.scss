@@ -1,6 +1,6 @@
-.factory {
+﻿.factory {
   padding-block: var(--section-padding);
-  background: var(--card);
+  background: var(--surface);
 }
 
 .factory__inner {
@@ -23,9 +23,17 @@
   display: grid;
   border: var(--border);
   border-radius: var(--radius-l);
-  background: var(--surface);
+  background: var(--card);
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.factory__item:hover,
+.factory__item:focus-within {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
+  box-shadow: var(--shadow-hover);
 }
 
 .factory__image {
@@ -44,6 +52,7 @@
   margin: 0;
   color: var(--on-surface);
   font-size: var(--type-card-title);
+  line-height: var(--line-tight);
   font-weight: var(--weight-bold);
 }
 

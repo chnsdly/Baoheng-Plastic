@@ -27,63 +27,64 @@ weight = 10
   url = "/products/waste-bins/"
   parent = "products"
   weight = 14
+
 [[main]]
 name = "应用行业"
-url = "/contact/?intent=selection-support"
+url = "/industries/"
 identifier = "industries"
 weight = 20
 
   [[main]]
   name = "仓储与物流"
-  url = "/contact/?intent=selection-support&industry=warehousing-logistics"
+  url = "/industries/warehousing-logistics/"
   parent = "industries"
   weight = 21
 
   [[main]]
   name = "食品与饮料"
-  url = "/contact/?intent=selection-support&industry=food-beverage"
+  url = "/industries/food-beverage/"
   parent = "industries"
   weight = 22
 
   [[main]]
   name = "医药与卫生制造"
-  url = "/contact/?intent=selection-support&industry=pharmaceutical-hygienic-manufacturing"
+  url = "/industries/pharmaceutical-hygienic-manufacturing/"
   parent = "industries"
   weight = 23
 
   [[main]]
   name = "化工与防渗漏"
-  url = "/contact/?intent=selection-support&industry=chemical-spill-control"
+  url = "/industries/chemical-spill-control/"
   parent = "industries"
   weight = 24
 
   [[main]]
   name = "印刷与包装"
-  url = "/contact/?intent=selection-support&industry=printing-packaging"
+  url = "/industries/printing-packaging/"
   parent = "industries"
   weight = 25
 
   [[main]]
   name = "农业与生鲜"
-  url = "/contact/?intent=selection-support&industry=agriculture-fresh-produce"
+  url = "/industries/agriculture-fresh-produce/"
   parent = "industries"
   weight = 26
 
   [[main]]
   name = "冷链与冷冻食品"
-  url = "/contact/?intent=selection-support&industry=cold-chain-frozen-food"
+  url = "/industries/cold-chain-frozen-food/"
   parent = "industries"
   weight = 27
 
   [[main]]
   name = "家禽与蛋品周转"
-  url = "/contact/?intent=selection-support&industry=poultry-egg-handling"
+  url = "/industries/poultry-egg-handling/"
   parent = "industries"
   weight = 28
 
 [[main]]
 name = "制造能力"
-url = "/about/#capabilities"
+url = "/manufacturing/"
 identifier = "manufacturing"
 weight = 30
 
@@ -94,22 +95,16 @@ identifier = "resources"
 weight = 40
 
   [[main]]
-  name = "客户案例"
-  url = "/resources/case-studies/"
+  name = "文章"
+  url = "/resources/insights/"
   parent = "resources"
   weight = 41
 
   [[main]]
-  name = "文章"
-  url = "/resources/insights/"
+  name = "询盘清单"
+  url = "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
   parent = "resources"
   weight = 42
-
-  [[main]]
-  name = "常见问题"
-  url = "/resources/faq/"
-  parent = "resources"
-  weight = 43
 
 [[main]]
 name = "关于我们"

@@ -15,7 +15,7 @@ La estabilidad de una carga unitaria suele revisarse cuando el problema ya apare
 
 Aun así, la superficie del palet plástico puede ayudar o perjudicar la estabilidad del conjunto. Rebordes moldeados, textura de la plataforma, puntos antideslizantes e insertos de goma parecen detalles pequeños, pero afectan cómo se comportan cajas, sacos, bandejas y contenedores plásticos durante el movimiento diario.
 
-Para un comprador B2B, la pregunta correcta no es si todos los palets necesitan el diseño antideslizante más agresivo. La pregunta útil es: **qué tipo de movimiento debe controlarse y qué característica del palet lo resuelve sin crear otro problema**.
+Para un equipo de compras, la pregunta correcta no es si todos los palets necesitan el diseño antideslizante más agresivo. La pregunta útil es: **qué tipo de movimiento debe controlarse y qué característica del palet lo resuelve sin crear otro problema**.
 
 ---
 

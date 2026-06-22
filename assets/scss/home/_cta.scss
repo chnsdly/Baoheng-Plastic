@@ -1,13 +1,8 @@
-/* Home: CTA — 统一品牌与区块变量 */
-.cta {
-  --cta-surface: linear-gradient(135deg, var(--surface-alt), var(--surface));
-  --cta-ink: var(--on-surface);
-
+﻿.cta {
   position: relative;
-  background: var(--cta-surface);
-  color: var(--cta-ink);
+  background: var(--brand-strong);
+  color: var(--on-brand);
   padding-block: var(--section-padding);
-  border-block: var(--border);
 }
 
 .cta .container {
@@ -21,151 +16,113 @@
   align-items: stretch;
 }
 
-@media (min-width: 64rem) {
-  .cta__grid { grid-template-columns: 3fr 5fr; }
-}
-
 .cta__intro {
   display: grid;
-  gap: space(2);
-  background: var(--card);
-  color: var(--on-surface);
-  border-radius: var(--radius-m);
+  gap: space(1.5);
   padding: var(--panel-padding);
-  box-shadow: var(--shadow);
-  border: var(--border);
+  border: 1px solid color-mix(in srgb, var(--on-brand) 16%, transparent);
+  border-radius: var(--radius-l);
+  background: color-mix(in srgb, var(--on-brand) 7%, transparent);
 }
 
 .cta__eyebrow {
   margin: 0;
-  font-weight: 700;
-  letter-spacing: var(--tracking-heading-compact);
+  color: color-mix(in srgb, var(--accent) 70%, white);
+  font-size: var(--type-eyebrow);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--on-surface) 70%, transparent);
-  @extend .font-meta;
 }
 
 .cta__title {
   margin: 0;
-  @extend .font-title-l;
+  color: var(--on-brand);
+  font-size: var(--type-subsection-title);
+  line-height: var(--line-tight);
   font-weight: var(--section-title-weight);
-  color: var(--on-surface);
+  text-wrap: balance;
 }
 
 .cta__desc {
   margin: 0;
-  color: color-mix(in oklab, var(--secondary) 75%, transparent);
-  @extend .font-title-xs;
+  color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+  font-size: var(--type-lede);
   max-inline-size: 62ch;
-}
-
-.cta__meta {
-  margin: 0;
-  color: color-mix(in oklab, var(--secondary) 60%, transparent);
-  @extend .font-body;
 }
 
 .cta__contact {
   display: grid;
-  gap: space(2);
+  gap: space(1);
 }
 
 .cta__contact-item {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: space(0.75) space(1.25);
-  align-items: center;
-  padding-block: space(1.25);
+  gap: space(0.35);
+  padding-block: space(1);
+  border-top: 1px solid color-mix(in srgb, var(--on-brand) 14%, transparent);
 }
 
 .cta__label {
   margin: 0;
   display: inline-flex;
   align-items: center;
-  gap: space(1);
-  font-weight: 700;
-  letter-spacing: var(--tracking-heading-compact);
-  color: color-mix(in oklab, var(--secondary) 65%, transparent);
+  gap: space(0.7);
+  color: color-mix(in srgb, var(--on-brand) 62%, transparent);
+  font-size: var(--type-eyebrow);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  @extend .font-meta;
 }
 
 .cta__value {
   margin: 0;
-  @extend .font-body;
-  color: color-mix(in oklab, var(--on-surface) 90%, transparent);
-  font-weight: 500;
+  color: var(--on-brand);
+  font-weight: var(--weight-semibold);
 }
 
 .cta__contact-item a {
   color: inherit;
-  font-weight: 500;
 }
 
 .cta__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: 2.25rem;
-  block-size: 2.25rem;
+  inline-size: 2rem;
+  block-size: 2rem;
   border-radius: var(--radius-pill);
-  border: var(--border);
-  background: color-mix(in oklab, var(--brand), white 78%);
-  color: var(--on-brand);
+  background: color-mix(in srgb, var(--accent) 76%, white);
+  color: var(--brand-strong);
 }
 
 .cta__icon svg {
-  inline-size: 1.25rem;
-  block-size: 1.25rem;
-}
-
-.cta__form {
-  align-self: center;
+  inline-size: 1.1rem;
+  block-size: 1.1rem;
 }
 
 .cta__card {
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   padding: var(--panel-padding);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   border: var(--border);
 }
 
 .cta__form-head {
   display: grid;
-  gap: space(1);
+  gap: space(0.75);
   margin-block-end: space(1.5);
-}
-
-.cta__pill {
-  margin: 0;
-  align-self: start;
-  display: inline-flex;
-  gap: space(1);
-  align-items: center;
-  padding: space(1) space(1.5);
-  border-radius: var(--radius-pill);
-  background: var(--brand);
-  color: var(--on-brand);
-  font-weight: 700;
-  letter-spacing: var(--tracking-heading-compact);
-  @extend .font-meta;
-  box-shadow: var(--shadow);
 }
 
 .cta__form-title {
   margin: 0;
-  @extend .font-title-l;
-  letter-spacing: var(--tracking-heading-3);
+  color: var(--on-surface);
+  font-size: var(--type-subsection-title);
+  line-height: var(--line-tight);
+  font-weight: var(--weight-bold);
 }
 
-.cta__form-desc {
-  margin: 0;
-  color: var(--secondary);
-}
-
-@media (max-width: 48rem) {
-  .cta__contact-item { padding: space(1.25); }
-  .cta__card { padding: space(2); }
+@media (min-width: 64rem) {
+  .cta__grid { grid-template-columns: minmax(20rem, 0.8fr) minmax(0, 1.2fr); }
 }

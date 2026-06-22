@@ -27,63 +27,64 @@ weight = 10
   url = "/products/waste-bins/"
   parent = "products"
   weight = 14
+
 [[main]]
 name = "Industrias"
-url = "/contact/?intent=selection-support"
+url = "/industries/"
 identifier = "industries"
 weight = 20
 
   [[main]]
   name = "Almacenaje y logística"
-  url = "/contact/?intent=selection-support&industry=warehousing-logistics"
+  url = "/industries/warehousing-logistics/"
   parent = "industries"
   weight = 21
 
   [[main]]
   name = "Alimentos y bebidas"
-  url = "/contact/?intent=selection-support&industry=food-beverage"
+  url = "/industries/food-beverage/"
   parent = "industries"
   weight = 22
 
   [[main]]
   name = "Farmacéutica e higiene"
-  url = "/contact/?intent=selection-support&industry=pharmaceutical-hygienic-manufacturing"
+  url = "/industries/pharmaceutical-hygienic-manufacturing/"
   parent = "industries"
   weight = 23
 
   [[main]]
   name = "Químicos y control de derrames"
-  url = "/contact/?intent=selection-support&industry=chemical-spill-control"
+  url = "/industries/chemical-spill-control/"
   parent = "industries"
   weight = 24
 
   [[main]]
   name = "Impresión y embalaje"
-  url = "/contact/?intent=selection-support&industry=printing-packaging"
+  url = "/industries/printing-packaging/"
   parent = "industries"
   weight = 25
 
   [[main]]
   name = "Agricultura y frescos"
-  url = "/contact/?intent=selection-support&industry=agriculture-fresh-produce"
+  url = "/industries/agriculture-fresh-produce/"
   parent = "industries"
   weight = 26
 
   [[main]]
   name = "Cadena de frío y congelados"
-  url = "/contact/?intent=selection-support&industry=cold-chain-frozen-food"
+  url = "/industries/cold-chain-frozen-food/"
   parent = "industries"
   weight = 27
 
   [[main]]
   name = "Aves y manejo de huevos"
-  url = "/contact/?intent=selection-support&industry=poultry-egg-handling"
+  url = "/industries/poultry-egg-handling/"
   parent = "industries"
   weight = 28
 
 [[main]]
 name = "Fabricación"
-url = "/about/#capabilities"
+url = "/manufacturing/"
 identifier = "manufacturing"
 weight = 30
 
@@ -94,22 +95,16 @@ identifier = "resources"
 weight = 40
 
   [[main]]
-  name = "Casos prácticos"
-  url = "/resources/case-studies/"
+  name = "Guías técnicas"
+  url = "/resources/insights/"
   parent = "resources"
   weight = 41
 
   [[main]]
-  name = "Guías técnicas"
-  url = "/resources/insights/"
+  name = "Lista RFQ"
+  url = "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
   parent = "resources"
   weight = 42
-
-  [[main]]
-  name = "Preguntas frecuentes"
-  url = "/resources/faq/"
-  parent = "resources"
-  weight = 43
 
 [[main]]
 name = "Nosotros"

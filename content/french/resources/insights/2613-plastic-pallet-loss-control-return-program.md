@@ -5,7 +5,7 @@ description: "Guide technique pour les équipes achats, entrepôt et logistique 
 layout: "resources/"
 cover_image: "images/resources/2613-plastic-pallet-loss-control-return-program.webp"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palettes plastique", "achats B2B", "entrepôt", "RFQ"]
+tags: ["palettes plastique", "achats industriels", "entrepôt", "RFQ"]
 reading: "9 min"
 file_size: ""
 date: 2026-05-06

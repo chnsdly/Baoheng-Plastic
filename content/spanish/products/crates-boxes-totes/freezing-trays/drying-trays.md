@@ -21,13 +21,13 @@ hero_description: "bandejas plásticas de secado de Baoheng Plastic para operaci
 contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 detail_intro: |-
-  1. bandejas plásticas de secado está diseñado para compradores industriales que necesitan una solución plástica estable, reutilizable y fácil de especificar para almacén, logística o producción.
+  1. bandejas plásticas de secado está diseñado para aplicaciones de almacén, logística o producción que requieren una solución plástica estable, reutilizable y fácil de especificar.
 
   2. La estructura utiliza HDPE/PP y se debe validar según el flujo real de montacargas, apilado, limpieza y almacenamiento.
 
   3. Parámetros de referencia: confirme carga, soporte y temperatura antes del pedido. Confirme siempre la distribución de la carga y las condiciones de uso.
 
-  4. Baoheng Plastic ofrece apoyo en selección de modelo, color, logotipo, embalaje de exportación y cotización por volumen para proyectos B2B.
+  4. Baoheng Plastic ofrece apoyo en selección de modelo, color, logotipo, embalaje de exportación y cotización por volumen para pedidos por proyecto o reposición.
 product_showcase:
   enable: true
   title: "Product List"

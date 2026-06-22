@@ -1,0 +1,112 @@
+{{ $hero := .Params.hero }}
+{{ $industryKey := .Params.industry_key }}
+{{ $contactURL := printf "%s?intent=selection-support&industry=%s" ("/contact/" | relLangURL) $industryKey }}
+<article class="industry-detail">
+  <section class="industry-detail__hero">
+    <div class="container industry-detail__hero-grid">
+      <div class="industry-detail__copy">
+        {{ with $hero.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ $hero.title | default .Title }}</h1>
+        {{ with $hero.text }}<p>{{ . }}</p>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
+        <div class="industry-detail__actions">
+          <a class="button" href="{{ $contactURL }}">{{ i18n "product_selection_support" }}</a>
+          <a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ i18n "browse_products" }}</a>
+        </div>
+      </div>
+      {{ with $hero.image }}
+        <figure class="industry-detail__media">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" decoding="async">
+        </figure>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ if or .Params.challenges .Params.selection_factors }}
+    <section class="industry-detail__section industry-detail__section--diagnosis">
+      <div class="container industry-diagnosis-grid">
+        {{ with .Params.challenges }}
+          <div class="industrial-panel">
+            <p class="page-eyebrow">{{ i18n "industry_common_risks" }}</p>
+            <h2>{{ i18n "industry_common_risks_title" }}</h2>
+            <ul class="check-list" role="list">
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ with .Params.selection_factors }}
+          <div class="industrial-panel industrial-panel--muted">
+            <p class="page-eyebrow">{{ i18n "industry_selection_factors" }}</p>
+            <h2>{{ i18n "industry_selection_factors_title" }}</h2>
+            <div class="factor-list">
+              {{ range . }}
+                <article>
+                  {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+                  {{ with .text }}<p>{{ . }}</p>{{ end }}
+                </article>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.recommended_products }}
+    <section class="industry-detail__section">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="page-eyebrow">{{ i18n "industry_recommended_direction" }}</p>
+            <h2>{{ i18n "industry_recommended_title" }}</h2>
+          </div>
+          <p>{{ i18n "industry_recommended_intro" }}</p>
+        </header>
+        <div class="industry-product-grid">
+          {{ range . }}
+            {{ $productURL := .url }}
+            {{ $productTitle := .title }}
+            <article class="industry-product-card">
+              <a class="industry-product-card__media" href="{{ partial "menu-url.html" (dict "url" $productURL) }}">
+                {{ with .image }}<img src="{{ . | relURL }}" alt="{{ $productTitle }}" loading="lazy" decoding="async">{{ end }}
+              </a>
+              <div class="industry-product-card__body">
+                {{ with $productTitle }}<h3><a href="{{ partial "menu-url.html" (dict "url" $productURL) }}">{{ . }}</a></h3>{{ end }}
+                {{ with .summary }}<p>{{ . }}</p>{{ end }}
+                {{ with $productURL }}<a class="text-link" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ i18n "industry_view_products" }}</a>{{ end }}
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.related_resources }}
+    <section class="industry-detail__section industry-detail__section--resources">
+      <div class="container industry-resource-strip">
+        <div>
+          <p class="page-eyebrow">{{ i18n "industry_buying_resources" }}</p>
+          <h2>{{ i18n "industry_guides_title" }}</h2>
+        </div>
+        <div class="industry-resource-strip__links">
+          {{ range . }}
+            <a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="industry-detail__section industry-detail__section--cta">
+    <div class="container">
+      <section class="industry-cta industry-cta--detail">
+        <div>
+          <h2>{{ .Params.cta.title | default (i18n "industry_default_cta_title") }}</h2>
+          <p>{{ .Params.cta.text | default (i18n "industry_default_cta_text") }}</p>
+        </div>
+        <a class="button" href="{{ $contactURL }}">{{ i18n "submit_request" }}</a>
+      </section>
+    </div>
+  </section>
+</article>
+

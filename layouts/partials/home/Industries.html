@@ -1,22 +1,28 @@
 {{ $industries := .Params.industries }}
 {{ if $industries.enable }}
 <section class="industries">
-  <div class="container">
-    <div class="industries__header">
-      <h2 class="industries__title">{{ $industries.title }}</h2>
+  <div class="container industries__inner">
+    <div class="home-section-head home-section-head--center">
+      {{ with $industries.eyebrow }}<p class="home-section-head__eyebrow">{{ . }}</p>{{ end }}
+      <h2 class="home-section-head__title">{{ $industries.title }}</h2>
+      {{ with $industries.description }}<p class="home-section-head__desc">{{ . }}</p>{{ end }}
+      <a class="home-section-head__link" href="{{ "/industries/" | relLangURL }}">{{ i18n "home_view_all_applications" }}</a>
     </div>
+
     <div class="industries__grid">
       {{ range $industries.items }}
       <article class="industries__item">
-        <div class="industries__media">
+        <a class="industries__media" href="{{ partial "menu-url.html" (dict "url" .url) }}">
           <img class="industries__image"
                src="{{ .image | relURL }}"
                alt="{{ .title }}"
                loading="lazy"
                decoding="async">
-          <div class="industries__caption">
-            <span class="industries__caption-text">{{ .title }}</span>
-          </div>
+        </a>
+        <div class="industries__content">
+          <h3><a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a></h3>
+          {{ with .summary }}<p>{{ . }}</p>{{ end }}
+          {{ with .products }}<p class="industries__products"><span>{{ i18n "home_typical_fit" }}</span>{{ . }}</p>{{ end }}
         </div>
       </article>
       {{ end }}

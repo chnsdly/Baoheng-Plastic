@@ -1,0 +1,67 @@
+{{ $hero := .Params.hero }}
+{{ $items := .Params.items | default .Sections.ByWeight }}
+<section class="industry-overview">
+  <div class="container industry-overview__hero">
+    <div class="industry-overview__copy">
+      {{ with $hero.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+      <h1>{{ $hero.title | default .Title }}</h1>
+      {{ with $hero.text }}<p>{{ . }}</p>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
+      {{ with .Params.overview.points }}
+        <ul class="industry-proof-list" role="list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    </div>
+    {{ with $hero.image }}
+      <figure class="industry-overview__media">
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" decoding="async">
+      </figure>
+    {{ end }}
+  </div>
+
+  <div class="container industry-overview__body">
+    {{ with .Params.overview.title }}<h2 class="sr-only">{{ . }}</h2>{{ end }}
+    <div class="industry-card-grid">
+      {{ with .Params.items }}
+        {{ range . }}
+          {{ $title := .title }}
+          {{ $url := .url }}
+          <article class="industry-application-card">
+            <a class="industry-application-card__media" href="{{ partial "menu-url.html" (dict "url" $url) }}">
+              {{ with .image }}<img src="{{ . | relURL }}" alt="{{ $title }}" loading="lazy" decoding="async">{{ end }}
+            </a>
+            <div class="industry-application-card__body">
+              <h2><a href="{{ partial "menu-url.html" (dict "url" $url) }}">{{ $title }}</a></h2>
+              {{ with .summary }}<p>{{ . }}</p>{{ end }}
+              {{ with .focus }}<p class="industry-application-card__focus"><span>{{ i18n "industry_selection_focus" }}</span>{{ . }}</p>{{ end }}
+              <a class="text-link" href="{{ partial "menu-url.html" (dict "url" $url) }}">{{ i18n "industry_view_application" }}</a>
+            </div>
+          </article>
+        {{ end }}
+      {{ else }}
+        {{ range .Sections.ByWeight }}
+          <article class="industry-application-card">
+            <div class="industry-application-card__body">
+              <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+              {{ with .Description }}<p>{{ . }}</p>{{ end }}
+              <a class="text-link" href="{{ .RelPermalink }}">{{ i18n "industry_view_application" }}</a>
+            </div>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+  {{ with .Params.cta }}
+    <div class="container">
+      <section class="industry-cta">
+        <div>
+          {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+          {{ with .text }}<p>{{ . }}</p>{{ end }}
+        </div>
+        {{ with .url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $.Params.cta.label | default (i18n "product_selection_support") }}</a>{{ end }}
+      </section>
+    </div>
+  {{ end }}
+</section>
+

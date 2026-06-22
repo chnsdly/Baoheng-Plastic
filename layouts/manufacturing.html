@@ -1,0 +1,140 @@
+﻿{{ define "main" }}
+  {{ $hero := .Params.hero }}
+  <article class="manufacturing-page">
+    <section class="manufacturing-hero">
+      <div class="container manufacturing-hero__grid">
+        <div class="manufacturing-hero__copy">
+          {{ with $hero.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+          <h1 class="manufacturing-hero__title">{{ $hero.title | default .Title }}</h1>
+          {{ with $hero.text }}<p class="manufacturing-hero__text">{{ . }}</p>{{ end }}
+          <div class="manufacturing-hero__actions">
+            {{ with $hero.cta_url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.cta_label | default (i18n "request_quote") }}</a>{{ end }}
+            {{ with $hero.secondary_url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.secondary_label | default (i18n "browse_products") }}</a>{{ end }}
+          </div>
+        </div>
+        <div class="manufacturing-hero__media">
+          {{ with $hero.image }}<img src="{{ . | relURL }}" alt="{{ $hero.title | default $.Title }}" loading="eager" decoding="async">{{ end }}
+          {{ with $hero.facts }}
+            <div class="manufacturing-hero__facts" role="list">
+              {{ range . }}
+                <div class="manufacturing-fact" role="listitem">
+                  <strong>{{ .value }}</strong>
+                  <span>{{ .label }}</span>
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{ with .Params.processes }}
+      <section class="manufacturing-section manufacturing-section--processes">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              {{ with .eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+              {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+            </div>
+            {{ with .description }}<p>{{ . }}</p>{{ end }}
+          </header>
+          <div class="manufacturing-process-grid">
+            {{ range .items }}
+              <article class="manufacturing-process-card">
+                {{ with .image }}<img src="{{ . | relURL }}" alt="{{ $.Title }} {{ $.Params.processes.title }}" loading="lazy" decoding="async">{{ end }}
+                <div class="manufacturing-process-card__body">
+                  {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+                  {{ with .text }}<p>{{ . }}</p>{{ end }}
+                  {{ with .bullets }}
+                    <ul class="check-list" role="list">
+                      {{ range . }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with .Params.materials }}
+      <section class="manufacturing-section manufacturing-section--materials">
+        <div class="container">
+          <header class="section-head">
+            {{ with .eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+            {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+          </header>
+          <div class="industrial-card-grid">
+            {{ range .cards }}
+              <article class="industrial-card">
+                {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+                {{ with .text }}<p>{{ . }}</p>{{ end }}
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with .Params.quality }}
+      <section class="manufacturing-section manufacturing-section--quality">
+        <div class="container manufacturing-quality__grid">
+          <header class="section-head section-head--left">
+            {{ with .eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+            {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+            {{ with .description }}<p>{{ . }}</p>{{ end }}
+          </header>
+          <ol class="process-steps" role="list">
+            {{ range .steps }}
+              <li>
+                {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+                {{ with .text }}<p>{{ . }}</p>{{ end }}
+              </li>
+            {{ end }}
+          </ol>
+        </div>
+      </section>
+    {{ end }}
+
+    <section class="manufacturing-section manufacturing-section--split-blocks">
+      <div class="container manufacturing-split">
+        {{ with .Params.customization }}
+          <article class="industrial-panel">
+            {{ with .eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+            {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+            {{ with .items }}
+              <ul class="check-list" role="list">
+                {{ range . }}<li>{{ . }}</li>{{ end }}
+              </ul>
+            {{ end }}
+          </article>
+        {{ end }}
+        {{ with .Params.export }}
+          <article class="industrial-panel industrial-panel--dark">
+            {{ with .eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+            {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+            {{ with .highlights }}
+              <ul class="check-list" role="list">
+                {{ range . }}<li>{{ . }}</li>{{ end }}
+              </ul>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+
+    {{ with .Params.rfq }}
+      <section class="manufacturing-rfq">
+        <div class="container manufacturing-rfq__inner">
+          <div>
+            {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+          </div>
+          {{ with .url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $.Params.rfq.label | default (i18n "submit_request") }}</a>{{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </article>
+{{ end }}

@@ -1,13 +1,7 @@
-
-/* ==========================================================================
+﻿/* ===========================================================================
    Base
-   --------------------------------------------------------------------------
-   集中管理全站最基础的 HTML 元素样式，例如 body、标题、段落、链接、
-   列表、图片、表格、表单文字和基础字体渲染。
-
-   这里负责建立网站默认观感，应该保持低选择器权重，只写全站通用规则，
-   不写具体组件、模块或单独页面的样式。
-   ========================================================================== */
+   Low-specificity defaults and shared layout primitives.
+   =========================================================================== */
 
 .font-meta { font-size: var(--type-meta); font-weight: var(--weight-medium); line-height: var(--line-normal); }
 .font-body { font-size: var(--type-body); font-weight: var(--weight-normal); line-height: var(--line-normal); }
@@ -16,13 +10,27 @@
 .font-title-l { font-size: var(--text-3xl); font-weight: var(--weight-semibold); line-height: var(--line-tight); }
 .font-display { font-size: var(--type-display); font-weight: var(--weight-bold); line-height: var(--line-tight); }
 
+html {
+  background: var(--surface);
+}
+
 body {
-  background-color: var(--surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.66) 0, rgba(244, 247, 247, 0) 34rem),
+    var(--surface);
   color: var(--on-surface);
   font-family: var(--font-body);
   line-height: var(--line-normal);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+main {
+  background: var(--surface);
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -41,17 +49,198 @@ body {
 .section__title { color: var(--on-surface); font-size: var(--type-section-title); line-height: var(--line-tight); }
 .section__description { margin: 0 auto; max-width: 76ch; color: var(--secondary); }
 
+.section-head {
+  display: grid;
+  gap: space(1);
+  max-width: 62rem;
+  margin-bottom: var(--section-gap);
+}
+
+.section-head h1,
+.section-head h2,
+.section-head h3 {
+  margin: 0;
+  color: var(--on-surface);
+  font-size: var(--type-section-title);
+  line-height: var(--line-tight);
+  font-weight: var(--section-title-weight);
+  text-wrap: balance;
+}
+
+.section-head p {
+  margin: 0;
+  color: var(--secondary);
+}
+
+.section-head--left {
+  margin-inline: 0;
+}
+
+.section-head--split {
+  max-width: none;
+  align-items: end;
+  gap: space(2);
+}
+
+.page-eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: var(--type-eyebrow);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.text-secondary { color: var(--secondary); }
+.font-bold { font-weight: var(--weight-bold); }
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: space(0.45);
+  color: var(--brand);
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+}
+
+.text-link::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  color: var(--brand-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 a {
+  color: inherit;
   text-underline-offset: 0.18em;
 }
 
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
+}
+
 ::selection {
-  background: color-mix(in oklab, var(--brand) 22%, white);
+  background: color-mix(in srgb, var(--accent) 24%, white);
   color: var(--on-surface);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.check-list {
+  display: grid;
+  gap: space(0.65);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: space(2.7);
+  color: var(--on-surface);
+}
+
+.check-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 0.58rem;
+  height: 0.58rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+.industrial-card-grid {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+.industrial-card,
+.industrial-panel {
+  display: grid;
+  align-content: start;
+  gap: space(1);
+  min-width: 0;
+  padding: var(--card-padding);
+  border: var(--border);
+  border-radius: var(--radius-l);
+  background: var(--card);
+  color: var(--on-surface);
+  box-shadow: var(--shadow);
+}
+
+.industrial-card h3,
+.industrial-panel h2,
+.industrial-panel h3 {
+  margin: 0;
+  color: var(--on-surface);
+  line-height: var(--line-tight);
+  font-weight: var(--weight-bold);
+  text-wrap: balance;
+}
+
+.industrial-card p,
+.industrial-panel p {
+  margin: 0;
+  color: var(--secondary);
+}
+
+.industrial-panel--muted {
+  background: var(--surface-alt);
+}
+
+.industrial-panel--dark {
+  background: var(--brand-strong);
+  color: var(--on-brand);
+  border-color: color-mix(in srgb, var(--on-brand) 16%, transparent);
+}
+
+.industrial-panel--dark :is(h2, h3, p, li) {
+  color: inherit;
+}
+
+.industrial-panel--dark .page-eyebrow {
+  color: color-mix(in srgb, var(--accent) 70%, white);
+}
+
+.industrial-panel--dark .check-list li::before {
+  background: color-mix(in srgb, var(--accent) 78%, white);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--on-brand) 14%, transparent);
 }
 
 @include mq-up(tablet) {
   .container { padding-inline: space(3); }
+
+  .section-head--split {
+    grid-template-columns: minmax(0, 0.95fr) minmax(20rem, 0.75fr);
+  }
+
+  .industrial-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
-
-

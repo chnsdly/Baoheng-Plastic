@@ -15,7 +15,7 @@ Rackable plastic pallets are often approved with one headline number: racking lo
 
 Plastic pallet rack deflection affects more than appearance. Excessive bending can reduce fork entry clearance, make pallets harder to retrieve, push cartons out of level, create unstable unit loads, and shorten pallet life through repeated stress. A pallet may not crack during a short test, yet still bend enough to become unsuitable for daily rack storage.
 
-For B2B buyers, the safest approach is to define deflection acceptance criteria before placing a bulk order. This turns “rackable” from a general claim into a measurable approval rule that procurement, warehouse, safety, and suppliers can all verify.
+For procurement teams, the safest approach is to define deflection acceptance criteria before placing a bulk order. This turns “rackable” from a general claim into a measurable approval rule that procurement, warehouse, safety, and suppliers can all verify.
 
 ---
 

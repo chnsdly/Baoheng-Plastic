@@ -1,19 +1,9 @@
-{{- $menu := .Site.Menus.main -}}
+﻿{{- $menu := .Site.Menus.main -}}
 {{- $languages := .Site.Languages -}}
 {{- $languageShortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
 {{- $currentLanguageShort := default (upper .Site.Language.Lang) (index $languageShortLabels .Site.Language.Lang) -}}
 {{- $recommendURL := printf "%s?intent=selection-support" ("/contact/" | relLangURL) -}}
 {{- $quoteURL := "/contact/" | relLangURL -}}
-{{- $industrySlugs := dict
-  "21" "warehousing-logistics"
-  "22" "food-beverage"
-  "23" "pharmaceutical-hygienic-manufacturing"
-  "24" "chemical-spill-control"
-  "25" "printing-packaging"
-  "26" "agriculture-fresh-produce"
-  "27" "cold-chain-frozen-food"
-  "28" "poultry-egg-handling"
--}}
 
 <header class="site-header" data-site-header>
   <div class="site-header__bar">
@@ -29,7 +19,6 @@
             {{- $isMega := in (slice "products" "industries") $itemKey -}}
             {{- $isCurrent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
             {{- $menuHref := partial "menu-url.html" (dict "url" .URL) -}}
-            {{- if eq $itemKey "industries" -}}{{- $menuHref = $recommendURL -}}{{- end -}}
             <li class="site-header__nav-item{{ if .HasChildren }} site-header__nav-item--has-children{{ end }}{{ if $isMega }} site-header__nav-item--mega{{ end }}">
               <a class="site-header__nav-link{{ if $isCurrent }} site-header__nav-link--current{{ end }}" href="{{ $menuHref }}"{{ if $isCurrent }} aria-current="page"{{ end }}>
                 <span>{{ .Name }}</span>
@@ -104,9 +93,7 @@
                           <p class="site-header__mega-heading">{{ i18n "header_industries_mega_core" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range first 4 .Children -}}
-                              {{- $industrySlug := index $industrySlugs (printf "%d" .Weight) -}}
-                              {{- $industryHref := cond $industrySlug (printf "%s&industry=%s" $recommendURL $industrySlug) $recommendURL -}}
-                              <li><a class="site-header__mega-link" href="{{ $industryHref }}">{{ .Name }}</a></li>
+                              <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
                             {{- end -}}
                           </ul>
                         </div>
@@ -115,9 +102,7 @@
                           <p class="site-header__mega-heading">{{ i18n "header_industries_mega_specialized" }}</p>
                           <ul class="site-header__mega-list" role="list">
                             {{- range after 4 .Children -}}
-                              {{- $industrySlug := index $industrySlugs (printf "%d" .Weight) -}}
-                              {{- $industryHref := cond $industrySlug (printf "%s&industry=%s" $recommendURL $industrySlug) $recommendURL -}}
-                              <li><a class="site-header__mega-link" href="{{ $industryHref }}">{{ .Name }}</a></li>
+                              <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
                             {{- end -}}
                           </ul>
                         </div>
@@ -198,7 +183,6 @@
             {{- range $menu -}}
               {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
               {{- $mobileHref := partial "menu-url.html" (dict "url" .URL) -}}
-              {{- if eq $itemKey "industries" -}}{{- $mobileHref = $recommendURL -}}{{- end -}}
               <li class="site-header__mobile-item">
                 {{- if .HasChildren -}}
                   <button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="{{ $itemKey }}">
@@ -223,9 +207,7 @@
         {{- range $menu -}}
           {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
           {{- $panelHref := partial "menu-url.html" (dict "url" .URL) -}}
-          {{- if eq $itemKey "industries" -}}{{- $panelHref = $recommendURL -}}{{- end -}}
           {{- $panelLabel := printf "%s %s" (i18n "all_menu_prefix") .Name -}}
-          {{- if eq $itemKey "industries" -}}{{- $panelLabel = i18n "product_selection_support" -}}{{- end -}}
           {{- if .HasChildren -}}
             <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
               <ul class="site-header__mobile-list" role="list">
@@ -234,10 +216,6 @@
                 </li>
                 {{- range .Children -}}
                   {{- $childHref := partial "menu-url.html" (dict "url" .URL) -}}
-                  {{- if eq $itemKey "industries" -}}
-                    {{- $industrySlug := index $industrySlugs (printf "%d" .Weight) -}}
-                    {{- $childHref = cond $industrySlug (printf "%s&industry=%s" $recommendURL $industrySlug) $recommendURL -}}
-                  {{- end -}}
                   <li class="site-header__mobile-item">
                     <a class="site-header__mobile-link" href="{{ $childHref }}">{{ .Name }}</a>
                   </li>
@@ -325,3 +303,4 @@
     closeDrawer();
   })();
 </script>
+
