@@ -1,6 +1,6 @@
 ﻿.home-hero {
   position: relative;
-  min-height: calc(100svh - var(--height-header));
+  min-height: calc(86svh - var(--height-header));
   display: grid;
   align-items: stretch;
   overflow: hidden;
@@ -40,14 +40,14 @@
   display: grid;
   grid-template-rows: minmax(min-content, 1fr) auto;
   gap: space(3);
-  min-height: calc(100svh - var(--height-header));
+  min-height: calc(86svh - var(--height-header));
   align-content: stretch;
   padding-block: clamp(4rem, 8vh, 6rem) clamp(1.5rem, 4vh, 2.5rem);
 }
 
 .home-hero__content {
   display: grid;
-  gap: space(1.35);
+  gap: space(3);
   align-self: center;
   max-width: 48rem;
 }
@@ -116,7 +116,7 @@
   gap: space(1);
   align-self: end;
   width: 100%;
-  max-width: 52rem;
+  max-width: 48rem;
 }
 
 .home-hero__stat {
