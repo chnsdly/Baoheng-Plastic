@@ -6,7 +6,7 @@ home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "源头工厂塑料搬运产品"
+  eyebrow: "厂家直供"
   title: "匹配真实仓储工况的塑料托盘与容器"
   description: "宝恒塑业生产 HDPE/PP 托盘、围板箱、周转筐、大型容器和垃圾桶，帮助您在下单前确认结构、承重、材料、包装和交付方案。"
   primary_cta:
@@ -15,10 +15,6 @@ home_hero:
   secondary_cta:
     label: "浏览产品"
     url: "/products/"
-  proof_points:
-    - "注塑与吹塑生产能力"
-    - "按载重、货架、叉车和回收流程选型"
-    - "出口包装与集装箱装载支持"
   stats:
     - value: "2013"
       label: "专注工业塑料产品"

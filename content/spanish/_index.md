@@ -6,7 +6,7 @@ home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "Productos plásticos de manejo directo de fábrica"
+  eyebrow: "Directo de fábrica"
   title: "Palets y contenedores plásticos adaptados al trabajo real de almacén"
   description: "Baoheng Plastic fabrica palets HDPE/PP, cajas pallet, gavetas, contenedores a granel y bines de residuos, y ayuda a confirmar estructura, carga, material, embalaje y entrega antes de ordenar."
   primary_cta:
@@ -15,10 +15,6 @@ home_hero:
   secondary_cta:
     label: "Ver productos"
     url: "/products/"
-  proof_points:
-    - "Producción por inyección y soplado"
-    - "Selección por carga, estantería, montacargas y flujo de retorno"
-    - "Soporte de embalaje exportación y carga de contenedor"
   stats:
     - value: "2013"
       label: "Enfoque en plásticos industriales"

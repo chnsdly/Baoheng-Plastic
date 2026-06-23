@@ -6,7 +6,7 @@ home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "Factory-direct plastic handling products"
+  eyebrow: "Factory-direct supply"
   title: "Plastic pallets and containers matched to real warehouse work"
   description: "Baoheng Plastic manufactures HDPE/PP pallets, pallet boxes, crates, bulk containers, and waste bins, helping you confirm structure, load rating, material, packing, and delivery details before ordering."
   primary_cta:
@@ -15,10 +15,6 @@ home_hero:
   secondary_cta:
     label: "Browse Products"
     url: "/products/"
-  proof_points:
-    - "Injection and blow molding production"
-    - "Model selection by load, rack, forklift, and return flow"
-    - "Export packing and container loading support"
   stats:
     - value: "2013"
       label: "Industrial plastics focus"

@@ -6,7 +6,7 @@ home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "Produits plastiques de manutention en direct usine"
+  eyebrow: "Direct usine"
   title: "Palettes et conteneurs plastique adaptés au travail réel en entrepôt"
   description: "Baoheng Plastic fabrique palettes HDPE/PP, caisses-palettes, bacs, conteneurs vrac et bacs à déchets, et vous aide à confirmer structure, charge, matière, emballage et livraison avant commande."
   primary_cta:
@@ -15,10 +15,6 @@ home_hero:
   secondary_cta:
     label: "Voir les produits"
     url: "/products/"
-  proof_points:
-    - "Production par injection et soufflage"
-    - "Sélection par charge, rayonnage, chariot et flux retour"
-    - "Support emballage export et chargement conteneur"
   stats:
     - value: "2013"
       label: "Focus plastiques industriels"
