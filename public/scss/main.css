@@ -1976,8 +1976,6 @@ h6 {
   display: grid;
   place-items: center;
   aspect-ratio: 5 / 4;
-  padding: calc(var(--space) * 0.75);
-  background: var(--img-bg);
   overflow: hidden; }
 
 .home-family-card__media img,
