@@ -164,7 +164,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/"/>
   </url><url>
     <loc>http://localhost:1313/es/</loc>
-    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
+    <lastmod>2026-06-23T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/"/>
@@ -172,15 +172,27 @@
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/"/>
   </url><url>
     <loc>http://localhost:1313/es/resources/insights/</loc>
-    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
+    <lastmod>2026-06-23T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/"/>
   </url><url>
+    <loc>http://localhost:1313/es/resources/insights/2626-anti-static-plastic-pallet-selection-guide/</loc>
+    <lastmod>2026-06-23T00:00:00&#43;00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/2626-anti-static-plastic-pallet-selection-guide/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/2626-anti-static-plastic-pallet-selection-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/2626-anti-static-plastic-pallet-selection-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2626-anti-static-plastic-pallet-selection-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2626-anti-static-plastic-pallet-selection-guide/"/>
+    <image:image>
+      <image:loc>http://localhost:1313/images/resources/2626-anti-static-plastic-pallet-selection-guide.webp</image:loc>
+      <image:title>Palets plásticos antiestáticos: cómo decidir si la protección ESD debe entrar en la especificación</image:title>
+    </image:image>
+  </url><url>
     <loc>http://localhost:1313/es/resources/</loc>
-    <lastmod>2026-06-18T00:00:00&#43;00:00</lastmod>
+    <lastmod>2026-06-23T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/"/>

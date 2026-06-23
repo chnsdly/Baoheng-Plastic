@@ -6,8 +6,15 @@
     <description>Recent content in Articles on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/es/categories/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Palets plásticos antiestáticos: cómo decidir si la protección ESD debe entrar en la especificación</title>
+      <link>http://localhost:1313/es/resources/insights/2626-anti-static-plastic-pallet-selection-guide/</link>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/resources/insights/2626-anti-static-plastic-pallet-selection-guide/</guid>
+      <description>&lt;p&gt;Los palets plásticos antiestáticos suelen solicitarse tarde en un proyecto de compra, normalmente después de que alguien mencione componentes electrónicos, aire seco en el almacén, materiales inflamables o auditorías de clientes. La petición parece sencilla: &amp;ldquo;que el palet sea antiestático&amp;rdquo;. En la práctica, esa frase es demasiado vaga para proteger al comprador y al proveedor.&lt;/p&gt;&#xA;&lt;p&gt;El riesgo electrostático no depende solo del material. Depende del producto manipulado, la superficie del embalaje, el estado del suelo, la humedad, la velocidad de manipulación, la ruta de descarga a tierra, el método de limpieza y la forma en que el palet se mueve por el almacén. Un palet plástico estándar puede ser perfectamente adecuado para cajas normales, mientras que una zona de ensamblaje sensible a ESD puede requerir una solución disipativa controlada con criterios de aceptación medibles.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Tamaño de palet plástico para carga en contenedor: cómo alinear cajas, palets y espacio de exportación</title>
       <link>http://localhost:1313/es/resources/insights/2625-plastic-pallet-size-container-loading-guide/</link>

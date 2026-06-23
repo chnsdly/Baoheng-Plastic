@@ -6,8 +6,15 @@
     <description>Recent content in Guides techniques on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/fr/resources/insights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Palettes plastiques antistatiques : quand intégrer la protection ESD au cahier des charges</title>
+      <link>http://localhost:1313/fr/resources/insights/2626-anti-static-plastic-pallet-selection-guide/</link>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/resources/insights/2626-anti-static-plastic-pallet-selection-guide/</guid>
+      <description>&lt;p&gt;Les palettes plastiques antistatiques sont souvent demandées tard dans un projet d&amp;rsquo;achat, en général après une question sur des composants électroniques, l&amp;rsquo;air sec en entrepôt, des matières inflammables ou un audit client. La demande semble simple : &amp;ldquo;il faut une palette antistatique&amp;rdquo;. En pratique, cette phrase est trop vague pour protéger l&amp;rsquo;acheteur comme le fournisseur.&lt;/p&gt;&#xA;&lt;p&gt;Le risque électrostatique ne dépend pas seulement de la matière. Il dépend du produit manutentionne, de la surface de l&amp;rsquo;emballage, de l&amp;rsquo;etat du sol, de l&amp;rsquo;humidité, de la vitesse de manutention, du chemin de mise a la terre, de la méthode de nettoyage et de la façon dont la palette circule dans l&amp;rsquo;entrepôt. Une palette plastique standard peut convenir parfaitement au stockage de cartons ordinaires, tandis qu&amp;rsquo;une zone d&amp;rsquo;assemblage sensible a l&amp;rsquo;ESD peut exiger une solution dissipative contrôlée avec des critères d&amp;rsquo;acceptation mesurables.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Dimension de palette plastique pour chargement conteneur : aligner cartons, palettes et espace export</title>
       <link>http://localhost:1313/fr/resources/insights/2625-plastic-pallet-size-container-loading-guide/</link>
