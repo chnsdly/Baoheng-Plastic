@@ -91,7 +91,7 @@ popular: false
 
 ### H3：产品初筛逻辑（示例）
 
-如果你的试点场景是中重载上架、且叉车流量较高，三滑块（川字）可上架结构通常是一个实用起点。比如这款 [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) 支持钢管加固，常用于这类工况评估。
+如果你的试点场景是中重载上架、且叉车流量较高，三滑块（川字）可上架结构通常是一个实用起点。比如这款 [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) 支持钢管加固，常用于这类工况评估。
 
 重点不在型号本身，而在“结构 + 加固 + 载荷曲线”是否匹配。
 

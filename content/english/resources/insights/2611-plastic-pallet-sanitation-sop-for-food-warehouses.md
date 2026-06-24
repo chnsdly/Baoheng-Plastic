@@ -139,7 +139,7 @@ Practical selection points:
 - material consistency and traceable batch control,
 - stable dimensions to avoid secondary damage during handling.
 
-For lines requiring color segregation (for example, allergen control or zone coding), food-grade pallet options such as [food series 1210 models](/products/pallets/food_white_1210/) can simplify daily visual control when combined with SOP tagging rules.
+For lines requiring color segregation (for example, allergen control or zone coding), food-grade pallet options such as [food series 1210 models](/products/pallets/specialty-pallets/food_white_1210/) can simplify daily visual control when combined with SOP tagging rules.
 
 ---
 

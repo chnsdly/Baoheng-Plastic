@@ -93,8 +93,8 @@ popular: false
 
 ### 2. 按航线行为选结构
 
-- 一次性出口、强调空托体积效率：可优先评估九脚可套叠方案，例如这款 [九脚托盘](/products/pallets/nine-leg_1210/)。
-- 出口后仍可能进仓上架：需评估可上货架结构，例如这款 [川字托盘](/products/pallets/3-runner_1210/)。
+- 一次性出口、强调空托体积效率：可优先评估九脚可套叠方案，例如这款 [九脚托盘](/products/pallets/nestable-plastic-pallets/nine-leg_1210/)。
+- 出口后仍可能进仓上架：需评估可上货架结构，例如这款 [川字托盘](/products/pallets/rackable-plastic-pallets/3-runner_1210/)。
 
 ### 3. 与纸箱模数、装柜方案、目的地搬运设备匹配
 

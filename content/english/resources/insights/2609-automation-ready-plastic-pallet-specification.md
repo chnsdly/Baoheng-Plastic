@@ -66,7 +66,7 @@ Specify:
 - flatness expectations at conveyor contact zones,
 - minimum support continuity for roller or chain transfers.
 
-For many automated lanes, stable runner designs such as [3-runner pallets](/products/pallets/3-runner_1210/) are easier to control than highly discontinuous bases.
+For many automated lanes, stable runner designs such as [3-runner pallets](/products/pallets/rackable-plastic-pallets/3-runner_1210/) are easier to control than highly discontinuous bases.
 
 ### C. Deflection behavior under real dynamic loads
 

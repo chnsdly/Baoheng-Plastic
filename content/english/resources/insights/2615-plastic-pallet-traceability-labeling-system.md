@@ -156,7 +156,7 @@ Traceability has the strongest financial value when it supports return disciplin
 
 For closed-loop programs, pallet IDs should feed into return KPIs such as cycle time, overdue balance, loss rate by customer, and damage rate by lane. These KPIs help procurement and logistics teams decide whether a lane needs a deposit rule, a customer account review, a different pallet type, or a one-way packaging option. The [closed-loop pallet loss control guide](/resources/insights/2613-plastic-pallet-loss-control-return-program/) explains how lane rules, dispatch confirmation, receiving acknowledgment, and empty return closure work together.
 
-Pallet design also affects traceability discipline. A clearly recognizable, stable, reusable pallet is easier to separate and count than a generic mixed pallet. For example, a structured product such as a [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) may be evaluated not only for load support and forklift handling, but also for how marking positions, color choice, and service-class rules fit a controlled warehouse loop.
+Pallet design also affects traceability discipline. A clearly recognizable, stable, reusable pallet is easier to separate and count than a generic mixed pallet. For example, a structured product such as a [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) may be evaluated not only for load support and forklift handling, but also for how marking positions, color choice, and service-class rules fit a controlled warehouse loop.
 
 ## Avoid common implementation mistakes
 

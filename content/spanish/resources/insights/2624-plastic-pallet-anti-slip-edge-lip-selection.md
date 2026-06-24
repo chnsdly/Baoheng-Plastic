@@ -53,7 +53,7 @@ El beneficio es sencillo: el reborde crea una barrera física. Puede mantener al
 
 Pero el reborde debe ajustarse al tipo de carga. Un reborde demasiado alto puede interferir con cajas que necesitan apoyar completamente sobre la plataforma, crear puntos de presión bajo sacos o dificultar la carga manual cuando el producto se desliza sobre el palet. Para mercancía en cajas, un reborde bajo y continuo suele ser más práctico; en otros procesos, un reborde segmentado o limitado a las esquinas puede funcionar mejor.
 
-Al comparar estructuras de palet, esta característica debe revisarse junto con el tipo de carga, el diseño de la plataforma y la ruta de manejo. Un modelo rackable como el [palet plástico 1210 de plataforma abierta y 3 patines](/es/products/pallets/3-runner_1210/) puede evaluarse primero por capacidad de carga y compatibilidad con racks, pero los detalles superiores también importan si el movimiento de cajas es un problema recurrente.
+Al comparar estructuras de palet, esta característica debe revisarse junto con el tipo de carga, el diseño de la plataforma y la ruta de manejo. Un modelo rackable como el [palet plástico 1210 de plataforma abierta y 3 patines](/products/pallets/rackable-plastic-pallets/3-runner_1210/) puede evaluarse primero por capacidad de carga y compatibilidad con racks, pero los detalles superiores también importan si el movimiento de cajas es un problema recurrente.
 
 ---
 

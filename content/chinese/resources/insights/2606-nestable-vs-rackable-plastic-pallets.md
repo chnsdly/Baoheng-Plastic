@@ -32,7 +32,7 @@ popular: false
 - 回空运输成本更容易压缩
 - 常用于一次性出口或轻载循环
 
-常见形态是九脚结构，可参考该类[九脚托盘产品](/products/pallets/nine-leg_1210/)。
+常见形态是九脚结构，可参考该类[九脚托盘产品](/products/pallets/nestable-plastic-pallets/nine-leg_1210/)。
 
 ### 上架型塑料托盘（Rackable）
 
@@ -45,7 +45,7 @@ popular: false
 - 适用于货架存储和较长在架时间
 - 单价和自重通常高于套叠托盘
 
-典型结构可参考[川字托盘产品](/products/pallets/3-runner_1210/)。
+典型结构可参考[川字托盘产品](/products/pallets/rackable-plastic-pallets/3-runner_1210/)。
 
 ---
 

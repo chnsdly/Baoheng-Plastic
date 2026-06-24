@@ -60,8 +60,8 @@ popular: false
 
 ### A. 先匹配存储行为，再选结构
 
-- **长期上货架**：优先评估可上架结构（如 [川字托盘](/products/pallets/3-runner_1210/)），并结合梁距确定是否需要钢管加固。
-- **以地堆+外发为主**：在载荷与冲击风险可控时，可评估部分 [九脚托盘](/products/pallets/nine-leg_1210/) 方案。
+- **长期上货架**：优先评估可上架结构（如 [川字托盘](/products/pallets/rackable-plastic-pallets/3-runner_1210/)），并结合梁距确定是否需要钢管加固。
+- **以地堆+外发为主**：在载荷与冲击风险可控时，可评估部分 [九脚托盘](/products/pallets/nestable-plastic-pallets/nine-leg_1210/) 方案。
 
 ### B. 加固必须“按几何参数”写进规格
 

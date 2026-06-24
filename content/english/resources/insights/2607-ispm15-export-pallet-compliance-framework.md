@@ -93,8 +93,8 @@ Confirm payload under forklift movement, not only static floor conditions.
 
 ### 2. Structure selection by lane behavior
 
-- One-way export and cube efficiency: nestable nine-leg options can be practical, such as this [nine-leg pallet model](/products/pallets/nine-leg_1210/).
-- Export plus racking at destination or DC transfer: consider rack-capable designs, such as this [3-runner pallet model](/products/pallets/3-runner_1210/).
+- One-way export and cube efficiency: nestable nine-leg options can be practical, such as this [nine-leg pallet model](/products/pallets/nestable-plastic-pallets/nine-leg_1210/).
+- Export plus racking at destination or DC transfer: consider rack-capable designs, such as this [3-runner pallet model](/products/pallets/rackable-plastic-pallets/3-runner_1210/).
 
 ### 3. Size compatibility with cartons, container plans, and destination handling equipment
 

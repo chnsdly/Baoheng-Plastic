@@ -69,13 +69,13 @@ Deux empreintes fréquentes à l'export sont 1200 x 1000 mm et 1200 x 800 mm. Au
 
 Une palette 1200 x 1000 mm offre un plateau plus large et s'adapte souvent mieux aux grands cartons export, produits ensachés, fûts et charges industrielles mixtes. Cette empreinte peut améliorer la stabilité lorsque les dimensions carton se divisent mal sur une palette plus étroite.
 
-Lorsque la voie exige compatibilité rayonnage, manutention au chariot et mouvements répétés en entrepôt, un modèle comme la [palette plastique ajourée 3 semelles 1210](/fr/products/pallets/3-runner_1210/) peut servir de référence. L'approbation finale doit toujours dépendre de la charge réelle, de la portée de rayonnage et du parcours de manutention.
+Lorsque la voie exige compatibilité rayonnage, manutention au chariot et mouvements répétés en entrepôt, un modèle comme la [palette plastique ajourée 3 semelles 1210](/products/pallets/rackable-plastic-pallets/3-runner_1210/) peut servir de référence. L'approbation finale doit toujours dépendre de la charge réelle, de la portée de rayonnage et du parcours de manutention.
 
 ### 1200 x 800 mm : utile lorsque le module carton et le réseau aval correspondent
 
 Une palette 1200 x 800 mm peut être efficace lorsque les cartons sont conçus autour de cette empreinte et lorsque le réseau de destination attend ce format. Dans certains systèmes européens ou liés à la distribution, elle peut faciliter les mouvements en allée et la manutention standardisée.
 
-Pour les acheteurs qui comparent cette empreinte, la [palette plastique ajourée 3 semelles 1208](/fr/products/pallets/3-runner_1208/) est une structure pertinente lorsque le flux nécessite une manutention compatible rayonnage.
+Pour les acheteurs qui comparent cette empreinte, la [palette plastique ajourée 3 semelles 1208](/products/pallets/rackable-plastic-pallets/3-runner_1208/) est une structure pertinente lorsque le flux nécessite une manutention compatible rayonnage.
 
 Le point essentiel est de ne pas choisir par habitude. Une palette 1200 x 800 mm mal adaptée aux cartons peut gaspiller plus d'espace conteneur qu'une palette 1200 x 1000 mm avec une couche plus sûre et plus compacte. L'inverse peut aussi être vrai.
 

@@ -53,7 +53,7 @@ The benefit is simple: the lip creates a physical boundary. It can help keep the
 
 However, the edge lip should match the load. A very high lip can interfere with cartons that need to sit flush across the deck, create pressure points under bagged goods, or make it harder to slide products onto the pallet during manual loading. A low continuous lip may work better for boxed goods, while segmented or corner lip designs may be easier for some loading processes.
 
-For buyers comparing pallet structures, the feature should be reviewed together with load type, deck style, and handling route. A rackable model such as the [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) may be evaluated for load capacity and rack fit first, but top-deck details should still be checked if carton movement has been a recurring issue.
+For buyers comparing pallet structures, the feature should be reviewed together with load type, deck style, and handling route. A rackable model such as the [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) may be evaluated for load capacity and rack fit first, but top-deck details should still be checked if carton movement has been a recurring issue.
 
 ---
 

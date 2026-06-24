@@ -133,7 +133,7 @@ popular: false
 
 如果你同时使用不同结构的托盘，不应默认它们回运表现一致。套叠型与可上架型在堆码密度和运输稳定性上差异明显。制定线路规则时，可参考这篇[套叠型 vs 可上架型塑料托盘对比](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/)。
 
-对于回运中占比较高的加固上架托盘，也应确认其结构是否匹配当前搬运节奏，例如这款[川字塑料托盘](/products/pallets/3-runner_1210/)。
+对于回运中占比较高的加固上架托盘，也应确认其结构是否匹配当前搬运节奏，例如这款[川字塑料托盘](/products/pallets/rackable-plastic-pallets/3-runner_1210/)。
 
 ---
 

@@ -53,7 +53,7 @@ Le principe est simple : le rebord crée une limite physique. Il aide à tenir l
 
 Le rebord doit toutefois rester adapté à la marchandise. Une lèvre trop haute peut gêner des cartons qui doivent reposer parfaitement à plat, créer des points de pression sous des sacs ou compliquer le chargement manuel lorsqu'il faut faire glisser le produit sur le plateau. Pour des cartons, un rebord bas et continu est souvent plus pratique ; pour d'autres flux, des rebords segmentés ou limités aux angles peuvent mieux fonctionner.
 
-Lorsqu'un acheteur compare plusieurs structures, cette fonction doit être évaluée avec le type de charge, le plateau et le circuit de manutention. Un modèle rackable comme la [palette plastique 1210 à plateau ajouré et 3 semelles](/fr/products/pallets/3-runner_1210/) sera d'abord étudié pour sa capacité de charge et son adaptation au rayonnage, mais les détails du plateau restent importants si les déplacements de cartons sont récurrents.
+Lorsqu'un acheteur compare plusieurs structures, cette fonction doit être évaluée avec le type de charge, le plateau et le circuit de manutention. Un modèle rackable comme la [palette plastique 1210 à plateau ajouré et 3 semelles](/products/pallets/rackable-plastic-pallets/3-runner_1210/) sera d'abord étudié pour sa capacité de charge et son adaptation au rayonnage, mais les détails du plateau restent importants si les déplacements de cartons sont récurrents.
 
 ---
 

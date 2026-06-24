@@ -199,7 +199,7 @@ When preparing the next RFQ or replacement plan, use inspection records to answe
 - Does the current design match forklift type, rack span, and load profile?
 - Would reinforcement, different base geometry, or a stronger material grade reduce lifecycle cost?
 
-For example, if a warehouse retires many rackable pallets because of runner deformation, a reinforced three-runner design may be more appropriate than a lighter transfer pallet. A product such as the [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) illustrates the type of structure buyers often review when racking compatibility, forklift handling, and load support must be considered together.
+For example, if a warehouse retires many rackable pallets because of runner deformation, a reinforced three-runner design may be more appropriate than a lighter transfer pallet. A product such as the [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) illustrates the type of structure buyers often review when racking compatibility, forklift handling, and load support must be considered together.
 
 ## Final checklist for warehouse teams
 

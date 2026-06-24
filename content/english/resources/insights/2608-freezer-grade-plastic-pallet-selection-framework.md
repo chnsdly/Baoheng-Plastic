@@ -60,8 +60,8 @@ Statements like “freezer safe” are not enough. Require temperature-specific 
 
 ### A. Match structure to storage behavior
 
-- **Frequent racking exposure**: start with rack-capable structures (for example, [3-runner pallets](/products/pallets/3-runner_1210/)) and evaluate steel reinforcement by beam span.
-- **Floor-heavy staging with export movement**: lighter [nine-leg options](/products/pallets/nine-leg_1210/) may fit some lanes if load profile and impact risk are controlled.
+- **Frequent racking exposure**: start with rack-capable structures (for example, [3-runner pallets](/products/pallets/rackable-plastic-pallets/3-runner_1210/)) and evaluate steel reinforcement by beam span.
+- **Floor-heavy staging with export movement**: lighter [nine-leg options](/products/pallets/nestable-plastic-pallets/nine-leg_1210/) may fit some lanes if load profile and impact risk are controlled.
 
 ### B. Specify reinforcement by geometry, not by keyword
 

@@ -91,7 +91,7 @@ For clean zones, food processing, or pharmaceutical handling, buyers usually nee
 
 A blue food-grade pallet may be visually correct, but if the surface traps residue or the base design does not fit the handling equipment, color coding will not solve the operational problem.
 
-For example, a smooth-deck [1210 food and medical plastic pallet](/products/pallets/food_blue_1210/) can help teams connect color control with hygiene-focused pallet design. The selection should still be checked against load weight, temperature, rack use, cleaning method, and equipment compatibility.
+For example, a smooth-deck [1210 food and medical plastic pallet](/products/pallets/specialty-pallets/food_blue_1210/) can help teams connect color control with hygiene-focused pallet design. The selection should still be checked against load weight, temperature, rack use, cleaning method, and equipment compatibility.
 
 ---
 

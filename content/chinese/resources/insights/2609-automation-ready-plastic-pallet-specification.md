@@ -66,7 +66,7 @@ popular: false
 - 输送接触区平整度要求；
 - 在滚筒/链条转接条件下的最小有效接触。
 
-在很多自动化工位中，底部受力更稳定的结构（例如 [川字托盘](/products/pallets/3-runner_1210/)）通常更容易实现可控运行。
+在很多自动化工位中，底部受力更稳定的结构（例如 [川字托盘](/products/pallets/rackable-plastic-pallets/3-runner_1210/)）通常更容易实现可控运行。
 
 ### C. 真实工况下的挠度表现
 

@@ -81,7 +81,7 @@ L'objectif n'est pas de rendre la palette responsable de tout le systeme ESD. L'
 
 La manutention chimique pose deux questions distinctes : la retention et le risque électrostatique.
 
-Une palette de retention peut aider a contenir des fuites et a separer les futs du sol. Par exemple, un produit comme la [palette de retention 130130](/fr/products/pallets/specialty-pallets/spill_130130-30/) est pertinent lorsque le probleme est la retention secondaire de futs ou de liquides industriels. Cela ne la rend pas automatiquement sure pour l'ESD.
+Une palette de retention peut aider a contenir des fuites et a separer les futs du sol. Par exemple, un produit comme la [palette de retention 130130](/products/pallets/specialty-pallets/spill_130130-30/) est pertinent lorsque le probleme est la retention secondaire de futs ou de liquides industriels. Cela ne la rend pas automatiquement sure pour l'ESD.
 
 Si le site manipule liquides inflammables, vapeurs de solvants, poussieres combustibles, aerosols ou matières de zones restreintes, la decision palette doit etre revue par l'equipe EHS ou sécurité de l'acheteur. La page [manutention chimique et controle des déversements](/fr/industries/chemical-spill-control/) est un bon point de depart pour la retention et le contact chimique, mais le controle électrostatique doit etre defini séparément.
 

@@ -81,7 +81,7 @@ El objetivo no es hacer que el palet sea responsable de todo el sistema ESD. El 
 
 La manipulación química plantea dos preguntas distintas: contención y riesgo electrostático.
 
-Un palet de contención puede ayudar a retener fugas y separar bidones del suelo. Por ejemplo, un producto como el [palet de contención 130130](/es/products/pallets/specialty-pallets/spill_130130-30/) es relevante cuando el problema es la contención secundaria de bidones o líquidos industriales. Eso no lo convierte automáticamente en un palet seguro para ESD.
+Un palet de contención puede ayudar a retener fugas y separar bidones del suelo. Por ejemplo, un producto como el [palet de contención 130130](/products/pallets/specialty-pallets/spill_130130-30/) es relevante cuando el problema es la contención secundaria de bidones o líquidos industriales. Eso no lo convierte automáticamente en un palet seguro para ESD.
 
 Si la instalación maneja líquidos inflamables, vapores de disolventes, polvo combustible, aerosoles o materiales de zonas restringidas, la decisión del palet debe revisarse con el equipo de EHS o seguridad del comprador. La pagina de [manipulación química y control de derrames](/es/industries/chemical-spill-control/) es un buen punto de partida para contención y contacto quimico, pero el control electrostático debe definirse por separado.
 

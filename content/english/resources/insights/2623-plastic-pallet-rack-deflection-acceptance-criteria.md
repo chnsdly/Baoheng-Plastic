@@ -127,7 +127,7 @@ Different plastic pallet structures resist rack deflection in different ways.
 
 ### Three-runner pallets
 
-Three-runner pallets are commonly used for racking because the runners can align with support beams and forklift entry patterns. A model such as the [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) illustrates the type of structure buyers often evaluate for rack storage, especially when steel reinforcement is available.
+Three-runner pallets are commonly used for racking because the runners can align with support beams and forklift entry patterns. A model such as the [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) illustrates the type of structure buyers often evaluate for rack storage, especially when steel reinforcement is available.
 
 The key point is alignment. If the runners or steel tubes do not sit in the right direction relative to the beam span, the pallet may not deliver the expected stiffness.
 

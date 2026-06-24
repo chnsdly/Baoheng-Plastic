@@ -32,7 +32,7 @@ Typical characteristics:
 - Lower transport cost for empty returns
 - Commonly used in one-way shipping or light-duty circulation
 
-A typical option is a nine-leg design such as this [nestable plastic pallet category](/products/pallets/nine-leg_1210/).
+A typical option is a nine-leg design such as this [nestable plastic pallet category](/products/pallets/nestable-plastic-pallets/nine-leg_1210/).
 
 ### Rackable plastic pallets
 
@@ -45,7 +45,7 @@ Typical characteristics:
 - Suitable for selective racking and longer dwell time
 - Usually higher unit price and higher tare weight
 
-A common architecture is a 3-runner configuration such as this [rack-oriented 3-runner pallet](/products/pallets/3-runner_1210/).
+A common architecture is a 3-runner configuration such as this [rack-oriented 3-runner pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/).
 
 ---
 

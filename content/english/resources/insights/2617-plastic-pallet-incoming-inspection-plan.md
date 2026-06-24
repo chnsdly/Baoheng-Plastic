@@ -175,7 +175,7 @@ A functional release check may include:
 5. **Load fit:** confirm cartons, drums, crates, or bags sit within the deck footprint.
 6. **Scanning check:** verify labels, molded marks, or barcode positions if used.
 
-If the pallet model is intended for heavy-duty racking, a reinforced product such as a [3-runner plastic pallet](/products/pallets/3-runner_1210/) may require different release checks than a nestable pallet used mainly for one-way movement or empty storage.
+If the pallet model is intended for heavy-duty racking, a reinforced product such as a [3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) may require different release checks than a nestable pallet used mainly for one-way movement or empty storage.
 
 Functional checks should be documented with the same discipline as visual defects. “Passed trial” is less useful than “20 loaded pallets passed rack placement on 2700 mm beams with no visible rocking, cracking, or unsafe deflection.”
 

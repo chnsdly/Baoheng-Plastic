@@ -69,13 +69,13 @@ Dos huellas habituales en exportación son 1200 x 1000 mm y 1200 x 800 mm. Ningu
 
 Un palet de 1200 x 1000 mm ofrece una superficie más amplia y suele adaptarse mejor a cajas de exportación grandes, productos ensacados, bidones y cargas industriales mixtas. La huella mayor puede mejorar la estabilidad cuando las dimensiones de la caja no dividen bien una superficie más estrecha.
 
-Cuando se necesitan compatibilidad con estanterías, manipulación con carretilla y movimientos repetidos en almacén, un modelo como el [palet plástico abierto de 3 patines 1210](/es/products/pallets/3-runner_1210/) puede servir como referencia de trabajo. La aprobación final debe depender siempre de la carga real, la luz de la estantería y la ruta de manipulación.
+Cuando se necesitan compatibilidad con estanterías, manipulación con carretilla y movimientos repetidos en almacén, un modelo como el [palet plástico abierto de 3 patines 1210](/products/pallets/rackable-plastic-pallets/3-runner_1210/) puede servir como referencia de trabajo. La aprobación final debe depender siempre de la carga real, la luz de la estantería y la ruta de manipulación.
 
 ### 1200 x 800 mm: útil cuando el módulo de caja y la red de destino encajan
 
 Un palet de 1200 x 800 mm puede ser eficiente cuando las cajas están diseñadas alrededor de esa huella y cuando la red de destino espera ese tamaño. En algunos sistemas europeos o vinculados al retail puede facilitar movimientos de pasillo más limpios y manipulación estandarizada.
 
-Para equipos que comparan esta huella, el [palet plástico abierto de 3 patines 1208](/es/products/pallets/3-runner_1208/) es una estructura relevante cuando el flujo exige manipulación rackable.
+Para equipos que comparan esta huella, el [palet plástico abierto de 3 patines 1208](/products/pallets/rackable-plastic-pallets/3-runner_1208/) es una estructura relevante cuando el flujo exige manipulación rackable.
 
 Lo importante es no elegir por costumbre. Un palet de 1200 x 800 mm con mala compatibilidad de caja puede desperdiciar más espacio que un palet de 1200 x 1000 mm con un patrón de capa más seguro. También puede ocurrir lo contrario.
 

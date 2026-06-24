@@ -84,7 +84,7 @@ Different pallet structures behave differently in block storage. The right choic
 
 ### Double-faced pallets for heavy and repeat stacking
 
-A double-faced pallet provides a broad bottom contact area and can be useful when heavy goods are stacked repeatedly in floor storage. A product such as the [1210 open deck double-faced plastic pallet](/products/pallets/double-faced_1210/) illustrates why buyers often evaluate double-sided structures for heavy loads: the base and deck are both designed for stable contact and frequent forklift handling.
+A double-faced pallet provides a broad bottom contact area and can be useful when heavy goods are stacked repeatedly in floor storage. A product such as the [1210 open deck double-faced plastic pallet](/products/pallets/stackable-plastic-pallets/double-faced_1210/) illustrates why buyers often evaluate double-sided structures for heavy loads: the base and deck are both designed for stable contact and frequent forklift handling.
 
 The final approval still depends on the product, floor condition, and handling method. A double-faced pallet may not be suitable for every conveyor or pallet-jack flow, so equipment compatibility must be checked before standardization.
 

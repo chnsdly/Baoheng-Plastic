@@ -69,13 +69,13 @@ Two common export pallet footprints are 1200 x 1000 mm and 1200 x 800 mm. Neithe
 
 A 1200 x 1000 mm pallet provides a broader deck and is often easier to use with larger export cartons, bagged goods, drums, and mixed industrial loads. The larger footprint can improve load stability when carton dimensions do not divide cleanly into a narrower pallet.
 
-For operations that need rack compatibility, forklift handling, and repeated warehouse movement, a model such as the [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) can be evaluated as a working reference. The final approval should still depend on the actual load, rack span, and handling route.
+For operations that need rack compatibility, forklift handling, and repeated warehouse movement, a model such as the [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) can be evaluated as a working reference. The final approval should still depend on the actual load, rack span, and handling route.
 
 ### 1200 x 800 mm: useful when carton modules and truck handling fit
 
 A 1200 x 800 mm pallet can be efficient when cartons are designed around that footprint and when the destination network expects this size. It may support cleaner aisle movement and standardized handling in some European or retail-linked distribution systems.
 
-For buyers comparing this footprint, the [1208 open deck 3-runner plastic pallet](/products/pallets/3-runner_1208/) is a relevant structure to review when rackable handling is part of the flow.
+For buyers comparing this footprint, the [1208 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1208/) is a relevant structure to review when rackable handling is part of the flow.
 
 The important point is not to choose by habit. A 1200 x 800 mm pallet with poor carton fit can waste more container space than a 1200 x 1000 mm pallet with a tighter, safer layer pattern. The reverse can also be true.
 

@@ -66,7 +66,7 @@ In these cases, deck surface is part of load protection. If product damage or ca
 
 Clean environments usually require more than a “plastic” material label. Buyers need to know whether the pallet can be inspected, washed, dried, and segregated without creating avoidable residue traps.
 
-A smooth-deck [1210 food and medical plastic pallet](/products/pallets/food_blue_1210/) is one example of how pallet geometry can support hygiene-focused handling. The final choice should still be validated against load weight, forklift type, rack use, wash method, and any site-specific quality requirements.
+A smooth-deck [1210 food and medical plastic pallet](/products/pallets/specialty-pallets/food_blue_1210/) is one example of how pallet geometry can support hygiene-focused handling. The final choice should still be validated against load weight, forklift type, rack use, wash method, and any site-specific quality requirements.
 
 ### 4. Label-heavy or traceability-controlled operations
 

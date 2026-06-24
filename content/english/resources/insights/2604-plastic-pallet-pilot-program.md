@@ -91,7 +91,7 @@ Industry test standards such as **ISO 8611** (pallet performance testing) are us
 
 ### H3: Product shortlist logic (example)
 
-If your pilot lane is medium-heavy racking with mixed forklift traffic, a rackable three-runner design is often a practical starting point. For example, our [1210 open deck 3-runner plastic pallet](/products/pallets/3-runner_1210/) supports steel-pipe reinforcement and is commonly evaluated in this type of scenario.
+If your pilot lane is medium-heavy racking with mixed forklift traffic, a rackable three-runner design is often a practical starting point. For example, our [1210 open deck 3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/) supports steel-pipe reinforcement and is commonly evaluated in this type of scenario.
 
 The key is not the model name; the key is matching structure + reinforcement + load profile.
 

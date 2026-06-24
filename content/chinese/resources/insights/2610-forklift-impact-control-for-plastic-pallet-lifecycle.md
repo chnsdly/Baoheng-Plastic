@@ -33,7 +33,7 @@ popular: false
 - 冲击集中位置；
 - 损伤托盘从现场被隔离的速度。
 
-如果你的项目采用可上架结构（如 [川字塑料托盘](/products/pallets/3-runner_1210/)），冲击纪律尤为重要，因为几何稳定性直接影响货架使用表现。
+如果你的项目采用可上架结构（如 [川字塑料托盘](/products/pallets/rackable-plastic-pallets/3-runner_1210/)），冲击纪律尤为重要，因为几何稳定性直接影响货架使用表现。
 
 ---
 

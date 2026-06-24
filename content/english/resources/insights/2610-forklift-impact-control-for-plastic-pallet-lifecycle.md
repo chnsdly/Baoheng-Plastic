@@ -33,7 +33,7 @@ That means lifecycle cost is driven by:
 - where impact concentrates,
 - and how quickly damaged units are removed from circulation.
 
-If your site is moving to rack-capable formats such as [3-runner plastic pallets](/products/pallets/3-runner_1210/), impact discipline is especially important because preserving geometry is critical for predictable rack performance.
+If your site is moving to rack-capable formats such as [3-runner plastic pallets](/products/pallets/rackable-plastic-pallets/3-runner_1210/), impact discipline is especially important because preserving geometry is critical for predictable rack performance.
 
 ---
 

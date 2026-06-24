@@ -133,7 +133,7 @@ Define a lane-specific loading standard:
 
 For teams using different pallet structures, never assume identical return performance across models. Nestable and rackable designs behave differently in stack density and transport stability. This comparison of [nestable vs rackable plastic pallets](/resources/insights/2606-nestable-vs-rackable-plastic-pallets/) is useful when setting lane-specific transport rules.
 
-If your return lane carries reinforced rack pallets, confirm whether the selected model aligns with your transport and handling pattern, such as this [3-runner plastic pallet](/products/pallets/3-runner_1210/).
+If your return lane carries reinforced rack pallets, confirm whether the selected model aligns with your transport and handling pattern, such as this [3-runner plastic pallet](/products/pallets/rackable-plastic-pallets/3-runner_1210/).
 
 ---
 
