@@ -2,12 +2,18 @@
   {{ if .enable }}
     <section class="factory">
       <div class="container factory__inner">
-        <div class="home-section-head">
-          <p class="home-section-head__eyebrow">{{ i18n "home_factory_eyebrow" }}</p>
-          <h2 class="home-section-head__title">{{ .title }}</h2>
-          {{ with .description }}<p class="factory__description">{{ . }}</p>{{ end }}
-          {{ with .cta }}<a class="home-section-head__link" href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .label }}</a>{{ end }}
-        </div>
+        <header class="home-section-head">
+          <div class="home-section-head__body">
+            <p class="home-section-head__eyebrow">{{ i18n "home_factory_eyebrow" }}</p>
+            <h2 class="home-section-head__title">{{ .title }}</h2>
+            {{ with .description }}<p class="home-section-head__desc">{{ . }}</p>{{ end }}
+          </div>
+          {{ with .cta }}
+            <div class="home-section-head__actions">
+              <a class="home-section-head__link" href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .label }}</a>
+            </div>
+          {{ end }}
+        </header>
 
         <div class="factory__grid">
           {{ range .items }}

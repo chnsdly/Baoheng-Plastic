@@ -2,12 +2,16 @@
 {{- if and $groups $groups.enable -}}
   <section class="home-featured home-featured--families">
     <div class="container home-featured__inner">
-      <div class="home-section-head">
-        {{ with $groups.eyebrow }}<p class="home-section-head__eyebrow">{{ . }}</p>{{ end }}
-        <h2 class="home-section-head__title">{{ $groups.title }}</h2>
-        {{ with $groups.description }}<p class="home-section-head__desc">{{ . }}</p>{{ end }}
-        <a class="home-section-head__link" href="{{ "products/" | relLangURL }}">{{ i18n "view_all_products" }}</a>
-      </div>
+      <header class="home-section-head">
+        <div class="home-section-head__body">
+          {{ with $groups.eyebrow }}<p class="home-section-head__eyebrow">{{ . }}</p>{{ end }}
+          <h2 class="home-section-head__title">{{ $groups.title }}</h2>
+          {{ with $groups.description }}<p class="home-section-head__desc">{{ . }}</p>{{ end }}
+        </div>
+        <div class="home-section-head__actions">
+          <a class="home-section-head__link" href="{{ "products/" | relLangURL }}">{{ i18n "view_all_products" }}</a>
+        </div>
+      </header>
 
       <div class="home-family-grid">
         {{ range $groups.items }}
@@ -41,11 +45,15 @@
 
   <section class="home-featured">
     <div class="container home-featured__inner">
-      <div class="home-section-head">
-        <p class="home-section-head__eyebrow">{{ i18n "home_featured_eyebrow" }}</p>
-        <h2 class="home-section-head__title">{{ i18n "home_featured_title" }}</h2>
-        <a class="home-section-head__link" href="{{ "products/" | relLangURL }}">{{ i18n "view_all_products" }}</a>
-      </div>
+      <header class="home-section-head">
+        <div class="home-section-head__body">
+          <p class="home-section-head__eyebrow">{{ i18n "home_featured_eyebrow" }}</p>
+          <h2 class="home-section-head__title">{{ i18n "home_featured_title" }}</h2>
+        </div>
+        <div class="home-section-head__actions">
+          <a class="home-section-head__link" href="{{ "products/" | relLangURL }}">{{ i18n "view_all_products" }}</a>
+        </div>
+      </header>
 
       <div class="home-product-grid">
         {{ range $p := $featured }}

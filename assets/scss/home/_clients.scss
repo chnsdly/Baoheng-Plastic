@@ -17,31 +17,16 @@
     --clients-columns: 4;
   }
 
+  &__inner {
+    display: grid;
+    gap: var(--section-gap);
+  }
+
   &__header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  &__headline {
-    max-width: 48rem;
-  }
-
-  &__title {
     margin: 0;
-    font-size: var(--type-section-title);
-    line-height: var(--line-tight);
-    font-weight: var(--section-title-weight);
-  }
-
-  &__description {
-    margin: space(2) auto 0;
-    color: var(--section-desc-color);
-    @extend .font-body;
   }
 
   &__carousel {
-    margin-top: space(4);
     overflow: hidden;
   }
 
@@ -87,4 +72,3 @@
     animation: none;
   }
 }
-

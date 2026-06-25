@@ -1,12 +1,12 @@
 {{ $clients := .Params.clients }}
 {{ if $clients.enable }}
 <section class="clients" aria-labelledby="clients-title">
-  <div class="container">
-    <header class="clients__header">
-      <div class="clients__headline">
-        <h2 id="clients-title" class="clients__title">{{ $clients.title }}</h2>
+  <div class="container clients__inner">
+    <header class="clients__header home-section-head">
+      <div class="home-section-head__body">
+        <h2 id="clients-title" class="clients__title home-section-head__title">{{ $clients.title }}</h2>
         {{ with $clients.description }}
-        <p class="clients__description">{{ . }}</p>
+        <p class="clients__description home-section-head__desc">{{ . }}</p>
         {{ end }}
       </div>
     </header>
