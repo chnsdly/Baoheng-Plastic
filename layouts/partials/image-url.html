@@ -1,0 +1,28 @@
+{{- $src := "" -}}
+{{- $width := 1200 -}}
+{{- if reflect.IsMap . -}}
+  {{- $src = .src | default "" -}}
+  {{- with .width }}{{- $width = . -}}{{- end -}}
+{{- else -}}
+  {{- $src = . | default "" -}}
+{{- end -}}
+
+{{- $data := partial "image-resource.html" (dict "src" $src) -}}
+{{- $url := "" -}}
+{{- with $data.resource -}}
+  {{- $img := . -}}
+  {{- if gt .Width $width -}}
+    {{- $img = .Resize (printf "%dx webp q82" $width) -}}
+  {{- else if ne .MediaType.SubType "webp" -}}
+    {{- $img = .Resize (printf "%dx webp q82" .Width) -}}
+  {{- end -}}
+  {{- $url = $img.Permalink -}}
+{{- else -}}
+  {{- if $data.isRemote -}}
+    {{- $url = $data.raw -}}
+  {{- else if $data.path -}}
+    {{- $url = $data.path | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $url -}}

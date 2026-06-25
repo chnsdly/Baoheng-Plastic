@@ -15,20 +15,24 @@
       <div class="clients__track" aria-live="off">
         {{ range $clients.items }}
         <div class="clients__slide">
-          <img class="clients__image"
-               src="{{ .image | relURL }}"
-               alt="{{ .alt | default $clients.title }}"
-               loading="lazy"
-               decoding="async">
+          {{ partial "responsive-image.html" (dict
+            "src" .image
+            "alt" (.alt | default $clients.title)
+            "class" "clients__image"
+            "sizes" "240px"
+            "widths" (slice 160 240 320)
+          ) }}
         </div>
         {{ end }}
         {{ range $clients.items }}
         <div class="clients__slide clients__slide--clone">
-          <img class="clients__image"
-               src="{{ .image | relURL }}"
-               alt="{{ .alt | default $clients.title }}"
-               loading="lazy"
-               decoding="async">
+          {{ partial "responsive-image.html" (dict
+            "src" .image
+            "alt" (.alt | default $clients.title)
+            "class" "clients__image"
+            "sizes" "240px"
+            "widths" (slice 160 240 320)
+          ) }}
         </div>
         {{ end }}
       </div>

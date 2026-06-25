@@ -31,21 +31,25 @@
 {{- $description := $descriptionText | htmlEscape -}}
 {{- $pageTitle := .Title | default .Site.Title | plainify | htmlEscape -}}
 
-{{- $image := "" -}}
+{{- $imageSource := "" -}}
 {{- with .Params.images -}}
-  {{- $image = (index . 0) | absURL -}}
+  {{- $imageSource = index . 0 -}}
 {{- else -}}
   {{- with .Params.featured_image -}}
-    {{- $image = . | absURL -}}
+    {{- $imageSource = . -}}
   {{- else -}}
     {{- with .Params.cover_image -}}
-      {{- $image = . | absURL -}}
+      {{- $imageSource = . -}}
     {{- else -}}
       {{- with .Site.Params.default_image -}}
-        {{- $image = . | absURL -}}
+        {{- $imageSource = . -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
+{{- end -}}
+{{- $image := "" -}}
+{{- with $imageSource -}}
+  {{- $image = partial "image-url.html" (dict "src" . "width" 1200) -}}
 {{- end -}}
 
 {{- $robots := .Params.robots | default (cond (in (slice "taxonomy" "term") .Kind) "noindex, follow" "index, follow") -}}

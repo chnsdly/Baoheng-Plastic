@@ -50,7 +50,12 @@
                 <article class="resource-card">
                   <a class="resource-card__media" href="{{ .RelPermalink }}">
                     {{ with $cover }}
-                      <img src="{{ . | relURL }}" alt="{{ $cardAlt }}" loading="lazy" decoding="async">
+                      {{ partial "responsive-image.html" (dict
+                        "src" .
+                        "alt" $cardAlt
+                        "sizes" "(min-width: 48rem) 28vw, 92vw"
+                        "widths" (slice 320 480 640 800)
+                      ) }}
                     {{ else }}
                       <span class="resource-card__placeholder" aria-hidden="true"></span>
                     {{ end }}

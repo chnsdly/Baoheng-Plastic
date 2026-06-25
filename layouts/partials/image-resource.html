@@ -1,0 +1,28 @@
+{{- $src := "" -}}
+{{- if reflect.IsMap . -}}
+  {{- $src = .src | default "" -}}
+{{- else -}}
+  {{- $src = . | default "" -}}
+{{- end -}}
+
+{{- $raw := printf "%s" $src -}}
+{{- $path := strings.TrimPrefix "/" $raw -}}
+{{- $path = strings.TrimPrefix "./" $path -}}
+{{- $isRemote := or (strings.HasPrefix $raw "http://") (strings.HasPrefix $raw "https://") -}}
+{{- $resource := false -}}
+{{- $resolvedPath := $path -}}
+
+{{- if and $path (not $isRemote) -}}
+  {{- if (strings.HasPrefix $path "images/products/") -}}
+    {{- $webpPath := replaceRE "\\.[^./]+$" ".webp" $path -}}
+    {{- $resource = resources.Get $webpPath -}}
+    {{- if $resource -}}
+      {{- $resolvedPath = $webpPath -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $resource -}}
+    {{- $resource = resources.Get $path -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "raw" $raw "path" $resolvedPath "resource" $resource "isRemote" $isRemote) -}}

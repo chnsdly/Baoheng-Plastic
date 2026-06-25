@@ -13,11 +13,13 @@
       {{ range $industries.items }}
       <article class="industries__item">
         <a class="industries__media" href="{{ partial "menu-url.html" (dict "url" .url) }}">
-          <img class="industries__image"
-               src="{{ .image | relURL }}"
-               alt="{{ .title }}"
-               loading="lazy"
-               decoding="async">
+          {{ partial "responsive-image.html" (dict
+            "src" .image
+            "alt" .title
+            "class" "industries__image"
+            "sizes" "(min-width: 48rem) 28vw, 92vw"
+            "widths" (slice 320 480 640 800)
+          ) }}
         </a>
         <div class="industries__content">
           <h3><a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a></h3>

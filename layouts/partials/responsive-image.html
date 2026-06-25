@@ -1,0 +1,59 @@
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+{{- $widths := .widths | default (slice 480 768 1200) -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetch := .fetch | default "" -}}
+
+{{- if not $src -}}
+  {{- errorf "responsive-image.html: missing src" -}}
+{{- end -}}
+
+{{- $imageData := partial "image-resource.html" (dict "src" $src) -}}
+{{- $orig := $imageData.resource -}}
+
+{{- if $orig -}}
+  {{- $widths = sort (uniq $widths) -}}
+  {{- $finalWidths := slice -}}
+  {{- range $widths -}}
+    {{- if le . $orig.Width -}}
+      {{- $finalWidths = $finalWidths | append . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if eq (len $finalWidths) 0 -}}
+    {{- $finalWidths = slice $orig.Width -}}
+  {{- end -}}
+
+  {{- $srcset := slice -}}
+  {{- $largest := $orig -}}
+  {{- range $finalWidths -}}
+    {{- $img := $orig.Resize (printf "%dx webp q82" .) -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
+    {{- $largest = $img -}}
+  {{- end -}}
+
+<img
+  src="{{ $largest.RelPermalink }}"
+  srcset="{{ delimit $srcset ", " }}"
+  sizes="{{ $sizes }}"
+  width="{{ $largest.Width }}"
+  height="{{ $largest.Height }}"
+  alt="{{ $alt }}"
+  {{ with $class }}class="{{ . }}"{{ end }}
+  loading="{{ $loading }}"
+  decoding="async"
+  {{ if or (eq $fetch "high") (eq $fetch "low") }}fetchpriority="{{ $fetch }}"{{ end }}
+>
+{{- else -}}
+  {{- $fallbackSrc := cond $imageData.isRemote $imageData.raw ($imageData.path | relURL) -}}
+<img
+  src="{{ $fallbackSrc }}"
+  alt="{{ $alt }}"
+  {{ with $class }}class="{{ . }}"{{ end }}
+  loading="{{ $loading }}"
+  decoding="async"
+  {{ if or (eq $fetch "high") (eq $fetch "low") }}fetchpriority="{{ $fetch }}"{{ end }}
+>
+{{- end -}}

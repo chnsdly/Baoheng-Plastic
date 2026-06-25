@@ -75,11 +75,13 @@
                 <a class="product-listing__card-link" href="{{ .RelPermalink }}">
                   <figure class="product-listing__media">
                     {{ with .Params.featured_image }}
-                      <img class="product-listing__image"
-                           src="{{ . | relURL }}"
-                           alt="{{ $productTitle }}"
-                           loading="lazy"
-                           decoding="async">
+                      {{ partial "responsive-image.html" (dict
+                        "src" .
+                        "alt" $productTitle
+                        "class" "product-listing__image"
+                        "sizes" "(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 92vw"
+                        "widths" (slice 320 480 640 800)
+                      ) }}
                     {{ else }}
                       <span class="product-listing__placeholder">{{ .Params.product_type | default "Product" }}</span>
                     {{ end }}

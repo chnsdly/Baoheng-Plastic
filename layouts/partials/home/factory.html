@@ -12,11 +12,13 @@
         <div class="factory__grid">
           {{ range .items }}
             <article class="factory__item">
-              <img class="factory__image"
-                   src="{{ .image | relURL }}"
-                   alt="{{ .title }}"
-                   loading="lazy"
-                   decoding="async">
+              {{ partial "responsive-image.html" (dict
+                "src" .image
+                "alt" .title
+                "class" "factory__image"
+                "sizes" "(min-width: 48rem) 28vw, 92vw"
+                "widths" (slice 320 480 640 800)
+              ) }}
               <div class="factory__content">
                 <h3 class="factory__item-title">{{ .title }}</h3>
                 <p class="factory__item-text">{{ .content }}</p>

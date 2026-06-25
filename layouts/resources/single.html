@@ -34,7 +34,15 @@
     <div class="container resource-single__layout">
       <main class="resource-single__main">
         {{ with $cover }}
-          <img class="resource-single__cover" src="{{ . | relURL }}" alt="{{ $coverAlt }}" loading="eager" decoding="async">
+          {{ partial "responsive-image.html" (dict
+            "src" .
+            "alt" $coverAlt
+            "class" "resource-single__cover"
+            "sizes" "(min-width: 64rem) 62vw, 92vw"
+            "widths" (slice 640 960 1200 1600)
+            "loading" "eager"
+            "fetch" "high"
+          ) }}
         {{ end }}
 
         <div class="resource-single__body">
@@ -82,7 +90,12 @@
               <article class="resource-card">
                 <a class="resource-card__media" href="{{ .RelPermalink }}">
                   {{ with $itemCover }}
-                    <img src="{{ . | relURL }}" alt="{{ $itemAlt }}" loading="lazy" decoding="async">
+                    {{ partial "responsive-image.html" (dict
+                      "src" .
+                      "alt" $itemAlt
+                      "sizes" "(min-width: 48rem) 28vw, 92vw"
+                      "widths" (slice 320 480 640 800)
+                    ) }}
                   {{ else }}
                     <span class="resource-card__placeholder" aria-hidden="true"></span>
                   {{ end }}

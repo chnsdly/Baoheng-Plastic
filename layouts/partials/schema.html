@@ -8,21 +8,25 @@
 {{- $langCode := .Site.Language.Locale | default .Site.Language.Lang -}}
 {{- $desc := (.Description | default .Params.hero_description | default .Summary | default .Site.Params.description | plainify) -}}
 
-{{- $pageImage := "" -}}
+{{- $pageImageSource := "" -}}
 {{- with .Params.images -}}
-  {{- $pageImage = (index . 0) | absURL -}}
+  {{- $pageImageSource = index . 0 -}}
 {{- else -}}
   {{- with .Params.featured_image -}}
-    {{- $pageImage = . | absURL -}}
+    {{- $pageImageSource = . -}}
   {{- else -}}
     {{- with .Params.cover_image -}}
-      {{- $pageImage = . | absURL -}}
+      {{- $pageImageSource = . -}}
     {{- else -}}
       {{- with .Site.Params.default_image -}}
-        {{- $pageImage = . | absURL -}}
+        {{- $pageImageSource = . -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
+{{- end -}}
+{{- $pageImage := "" -}}
+{{- with $pageImageSource -}}
+  {{- $pageImage = partial "image-url.html" (dict "src" . "width" 1200) -}}
 {{- end -}}
 
 {{- $siteLanguages := slice -}}
@@ -140,7 +144,10 @@
     "manufacturer" (dict "@id" $orgID)
     "mainEntityOfPage" (dict "@id" $pageID)
   -}}
-  {{- with .Params.featured_image }}{{- $product = merge $product (dict "image" (slice (. | absURL))) -}}{{- end -}}
+  {{- with .Params.featured_image -}}
+    {{- $productImage := partial "image-url.html" (dict "src" . "width" 1200) -}}
+    {{- with $productImage }}{{- $product = merge $product (dict "image" (slice .)) -}}{{- end -}}
+  {{- end -}}
   {{- with $productCategory }}{{- $product = merge $product (dict "category" .) -}}{{- end -}}
   {{- with .Params.specs -}}
     {{- $props := slice -}}
@@ -167,7 +174,10 @@
     "publisher" (dict "@id" $orgID)
     "mainEntityOfPage" (dict "@id" $pageID)
   -}}
-  {{- with (or .Params.cover_image .Params.featured_image) }}{{- $article = merge $article (dict "image" (slice (. | absURL))) -}}{{- end -}}
+  {{- with (or .Params.cover_image .Params.featured_image) -}}
+    {{- $articleImage := partial "image-url.html" (dict "src" . "width" 1200) -}}
+    {{- with $articleImage }}{{- $article = merge $article (dict "image" (slice .)) -}}{{- end -}}
+  {{- end -}}
   {{- $graph = $graph | append $article -}}
 {{- end -}}
 

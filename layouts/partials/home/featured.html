@@ -13,7 +13,12 @@
         {{ range $groups.items }}
           <article class="home-family-card">
             <a class="home-family-card__media" href="{{ partial "menu-url.html" (dict "url" .url) }}">
-              {{ with .image }}<img src="{{ . | relURL }}" alt="{{ $.Title }} {{ $.Params.product_groups.title }}" loading="lazy" decoding="async">{{ end }}
+              {{ with .image }}{{ partial "responsive-image.html" (dict
+                "src" .
+                "alt" (printf "%s %s" $.Title $.Params.product_groups.title)
+                "sizes" "(min-width: 48rem) 25vw, 92vw"
+                "widths" (slice 320 480 640 800)
+              ) }}{{ end }}
             </a>
             <div class="home-family-card__body">
               <h3><a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a></h3>
@@ -66,7 +71,12 @@
           <article class="home-product-card">
             <a class="home-product-card__media" href="{{ $p.RelPermalink }}">
               {{ with $p.Params.featured_image }}
-                <img src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
+                {{ partial "responsive-image.html" (dict
+                  "src" .
+                  "alt" $p.Title
+                  "sizes" "(min-width: 48rem) 25vw, 92vw"
+                  "widths" (slice 320 480 640 800)
+                ) }}
               {{ else }}
                 <span class="home-product-card__placeholder">{{ $familyLabel | default "Product" }}</span>
               {{ end }}

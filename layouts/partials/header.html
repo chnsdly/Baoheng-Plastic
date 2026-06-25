@@ -9,7 +9,14 @@
   <div class="site-header__bar">
     <div class="site-header__inner">
       <a class="site-header__logo" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}">
-        <img class="site-header__logo-image" src="{{ "images/logo.webp" | relURL }}" alt="{{ .Site.Title }}" width="336" height="79" decoding="async">
+        {{ partial "responsive-image.html" (dict
+          "src" "images/logo.webp"
+          "alt" .Site.Title
+          "class" "site-header__logo-image"
+          "sizes" "168px"
+          "widths" (slice 168 336)
+          "loading" "eager"
+        ) }}
       </a>
 
       <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" | default "Primary navigation" }}'>

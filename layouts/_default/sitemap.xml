@@ -46,10 +46,13 @@
     <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}"/>
     {{- end }}
     {{- range first 10 $images }}
+      {{- $imageURL := partial "image-url.html" (dict "src" . "width" 1200) -}}
+      {{- with $imageURL }}
     <image:image>
-      <image:loc>{{ . | absURL }}</image:loc>
+      <image:loc>{{ . }}</image:loc>
       <image:title>{{ $pageTitle }}</image:title>
     </image:image>
+      {{- end }}
     {{- end }}
   </url>
   {{- end }}
