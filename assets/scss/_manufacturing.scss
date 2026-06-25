@@ -1,4 +1,4 @@
-﻿.manufacturing-page {
+.manufacturing-page {
   background: var(--surface);
   color: var(--on-surface);
 }
@@ -12,23 +12,23 @@
 
 .manufacturing-hero__grid {
   display: grid;
-  gap: var(--grid-gap);
+  gap: space(3);
   align-items: center;
 }
 
 .manufacturing-hero__copy {
   display: grid;
-  gap: space(1.25);
+  gap: space(1.1);
   align-content: center;
 }
 
 .manufacturing-hero__title {
-  max-width: 15ch;
+  max-width: 22ch;
   margin: 0;
   color: var(--on-surface);
   font-size: var(--type-page-title);
   line-height: var(--line-tight);
-  font-weight: var(--weight-extrabold);
+  font-weight: var(--weight-bold);
   text-wrap: balance;
 }
 
@@ -36,7 +36,7 @@
   max-width: 64ch;
   margin: 0;
   color: var(--secondary);
-  font-size: var(--type-lede);
+  font-size: var(--type-body);
 }
 
 .manufacturing-hero__actions {
@@ -135,6 +135,8 @@
 .manufacturing-process-card__body p {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
+  line-height: var(--line-normal);
 }
 
 .manufacturing-quality__grid {
@@ -165,8 +167,8 @@
   content: counter(process, decimal-leading-zero);
   color: var(--accent);
   font-size: var(--type-eyebrow);
-  font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
 }
 
 .process-steps h3 {
@@ -178,6 +180,8 @@
 .process-steps p {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
+  line-height: var(--line-normal);
 }
 
 .manufacturing-rfq {
@@ -188,7 +192,7 @@
 
 .manufacturing-rfq__inner {
   display: grid;
-  gap: var(--grid-gap);
+  gap: space(3);
   align-items: center;
 }
 
@@ -214,9 +218,13 @@
   background: color-mix(in srgb, var(--accent) 82%, black);
 }
 
+.manufacturing-split .industrial-panel h2 {
+  font-size: var(--type-subsection-title);
+}
+
 @include mq-up(tablet) {
   .manufacturing-hero__grid {
-    grid-template-columns: minmax(0, 0.88fr) minmax(24rem, 1.12fr);
+    grid-template-columns: minmax(0, 0.95fr) minmax(24rem, 1.05fr);
   }
 
   .manufacturing-hero__facts,

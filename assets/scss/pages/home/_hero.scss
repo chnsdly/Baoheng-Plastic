@@ -1,4 +1,4 @@
-﻿.home-hero {
+.home-hero {
   position: relative;
   min-height: calc(86svh - var(--height-header));
   display: grid;
@@ -57,7 +57,7 @@
   color: color-mix(in srgb, var(--accent) 68%, white);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 

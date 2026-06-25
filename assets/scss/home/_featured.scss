@@ -1,4 +1,4 @@
-﻿.home-featured {
+.home-featured {
   padding-block: var(--section-padding);
   background: var(--surface);
 }
@@ -27,7 +27,7 @@
   color: var(--accent);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -168,7 +168,7 @@
   color: var(--accent);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 

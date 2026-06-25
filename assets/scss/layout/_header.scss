@@ -8,7 +8,7 @@ body.is-menu-open {
   z-index: var(--z-header);
   border-bottom: 1px solid color-mix(in srgb, var(--line) 84%, transparent);
   background: color-mix(in srgb, var(--card) 96%, transparent);
-  box-shadow: 0 12px 30px rgba(15, 31, 29, 0.08);
+  box-shadow: 0 8px 22px rgba(15, 31, 29, 0.07);
   backdrop-filter: saturate(160%) blur(14px);
 }
 
@@ -34,7 +34,7 @@ body.is-menu-open {
 .site-header__logo-image {
   display: block;
   width: auto;
-  height: 2.75rem;
+  height: 2.45rem;
 }
 
 .site-header__nav {
@@ -80,7 +80,7 @@ body.is-menu-open {
   display: inline-flex;
   align-items: center;
   gap: space(0.4);
-  min-height: 2.75rem;
+  min-height: 2.55rem;
   padding-inline: space(1.05);
   border-radius: var(--radius-s);
   color: var(--on-surface);
@@ -122,14 +122,14 @@ body.is-menu-open {
 }
 
 .site-header__cta {
-  min-height: 2.65rem;
+  min-height: 2.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: space(0.58) space(0.9);
+  padding: space(0.5) space(0.85);
   border: 1px solid transparent;
   border-radius: var(--radius-s);
-  font-size: var(--text-sm);
+  font-size: var(--type-ui);
   font-weight: var(--weight-semibold);
   line-height: 1.15;
   text-align: center;
@@ -167,7 +167,7 @@ body.is-menu-open {
   align-items: center;
   justify-content: space-between;
   gap: space(0.35);
-  min-height: 2.65rem;
+  min-height: 2.5rem;
   padding: space(0.55) space(0.25);
   border: 1px solid transparent;
   border-radius: var(--radius-s);
@@ -240,7 +240,7 @@ body.is-menu-open {
 
 .site-header__menu-toggle {
   min-width: 2.75rem;
-  min-height: 2.75rem;
+  min-height: 2.55rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -560,7 +560,7 @@ body.is-menu-open {
 
 .site-header__mega-link {
   display: flex;
-  min-height: 2.75rem;
+  min-height: 2.55rem;
   align-items: center;
   padding: space(0.7) space(0.85);
   border-radius: var(--radius-s);

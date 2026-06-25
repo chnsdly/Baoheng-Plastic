@@ -1,4 +1,4 @@
-﻿.cta {
+.cta {
   position: relative;
   background: var(--brand-strong);
   color: var(--on-brand);
@@ -30,7 +30,7 @@
   color: color-mix(in srgb, var(--accent) 70%, white);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -70,7 +70,7 @@
   color: color-mix(in srgb, var(--on-brand) 62%, transparent);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 

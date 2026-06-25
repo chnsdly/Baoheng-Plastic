@@ -1,17 +1,17 @@
-﻿.button {
+.button {
   background-color: var(--brand);
   color: var(--on-brand);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: space(0.75);
-  min-height: 3.35rem;
-  padding: 0.7rem 1.45rem;
-  line-height: 1.2;
+  min-height: 3.05rem;
+  padding: 0.65rem 1.25rem;
+  line-height: 1.18;
   border-radius: var(--radius-s);
   border: 1px solid transparent;
   box-shadow: var(--shadow);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semibold);
   text-decoration: none;
   text-align: center;
   white-space: normal;

@@ -1,7 +1,12 @@
 .product-listing,
 .product-single {
-  padding-block: var(--section-padding);
+  padding-block: calc(var(--section-padding) * 0.9);
   background: var(--surface);
+}
+
+.product-listing__inner,
+.product-single__container {
+  max-width: var(--container-wide);
 }
 
 .product-listing__inner,
@@ -9,14 +14,14 @@
 .product-listing__body,
 .product-details {
   display: grid;
-  gap: space(2);
+  gap: space(2.25);
 }
 
 .product-listing__hero,
 .product-hero,
 .product-inquiry {
   display: grid;
-  gap: space(2);
+  gap: space(2.25);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
@@ -24,7 +29,7 @@
 }
 
 .product-listing__hero {
-  padding: space(2);
+  padding: space(2.4);
 }
 
 .product-listing__series-text,
@@ -74,7 +79,8 @@
 }
 
 .product-hero__title {
-  font-size: var(--type-page-title);
+  max-width: 22ch;
+  font-size: var(--type-section-title);
 }
 
 .product-listing__intro,
@@ -83,6 +89,7 @@
 .product-inquiry__description {
   margin: 0;
   color: var(--secondary);
+  line-height: var(--line-normal);
 }
 
 .product-listing__hero-actions,
@@ -96,7 +103,7 @@
 .product-listing__layout,
 .product-single__container {
   display: grid;
-  gap: space(2);
+  gap: space(2.25);
   align-items: start;
 }
 
@@ -246,7 +253,7 @@
 .product-listing__grid {
   display: grid;
   gap: space(1.25);
-  grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .product-listing__card {
@@ -283,9 +290,9 @@
   display: grid;
   place-items: center;
   margin: 0;
-  aspect-ratio: 5 / 4;
-  padding: space(0.75) space(0.75) 0;
-  background: var(--card);
+  aspect-ratio: 16 / 11;
+  padding: space(1);
+  background: var(--img-bg);
   overflow: hidden;
 }
 
@@ -359,15 +366,20 @@
   margin: 0;
   color: var(--on-surface);
   font-size: var(--type-card-title);
-  line-height: var(--line-tight);
+  line-height: 1.25;
   font-weight: var(--weight-bold);
   overflow-wrap: anywhere;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .product-listing__summary {
   margin: 0;
   color: var(--secondary);
   font-size: var(--type-body-sm);
+  line-height: 1.5;
   overflow-wrap: anywhere;
   display: -webkit-box;
   overflow: hidden;
@@ -413,8 +425,8 @@
   color: var(--on-surface);
   font-size: var(--type-body-sm);
   font-weight: var(--weight-medium);
-  overflow-wrap: normal;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .product-listing__quote {
@@ -435,15 +447,15 @@
 }
 
 .product-hero {
-  padding: space(1.2);
+  padding: space(2.4);
 }
 
 .product-hero__media {
   display: grid;
   place-items: center;
   margin: 0;
-  aspect-ratio: 5 / 4;
-  padding: space(1.5);
+  aspect-ratio: 4 / 3;
+  padding: space(2);
   border-radius: var(--radius-m);
   background: var(--surface-alt);
   overflow: hidden;
@@ -459,7 +471,7 @@
 .product-details__header,
 .product-inquiry,
 .product-related {
-  padding: space(2);
+  padding: space(2.4);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
@@ -479,10 +491,20 @@
 .product-details__intro {
   display: grid;
   gap: space(0.8);
+  max-width: 78ch;
+}
+
+.product-details__intro :is(ol, ul) {
+  margin: 0;
+  padding-left: space(2.5);
+}
+
+.product-details__intro li {
+  margin-block: space(0.55);
 }
 
 .card {
-  padding: space(2);
+  padding: space(2.4);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
@@ -523,7 +545,7 @@
 .product-showcase-grid {
   display: grid;
   gap: space(1.2);
-  padding: space(2);
+  padding: space(2.4);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
@@ -620,7 +642,7 @@
 
   .product-listing__layout,
   .product-single__container {
-    grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+    grid-template-columns: minmax(13rem, 16rem) minmax(0, 1fr);
   }
 
   .product-sidebar__toggle {
@@ -628,9 +650,9 @@
   }
 
   .product-hero {
-    grid-template-columns: minmax(18rem, 1.05fr) minmax(24rem, 0.95fr);
+    grid-template-columns: minmax(18rem, 0.92fr) minmax(24rem, 1.08fr);
     align-items: center;
-    padding: space(2);
+    padding: space(2.4);
   }
 
   .product-showcase-grid__items,
@@ -650,6 +672,6 @@
   }
 
   .product-hero {
-    grid-template-columns: minmax(24rem, 1.12fr) minmax(26rem, 0.88fr);
+    grid-template-columns: minmax(22rem, 0.95fr) minmax(28rem, 1.05fr);
   }
 }

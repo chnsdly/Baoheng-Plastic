@@ -128,23 +128,23 @@ h1 {
 
 h2 {
   margin-block-end: space(3);
-  @extend .font-display;
-  font-weight: var(--weight-semibold);
+  font-size: var(--type-section-title);
+  font-weight: var(--weight-bold);
   line-height: var(--line-tight);
   letter-spacing: var(--tracking-heading-2);
 }
 
 h3 {
-  margin-block-end: space(2.5);
-  @extend .font-title-l;
+  margin-block-end: space(2.25);
+  font-size: var(--type-subsection-title);
   font-weight: var(--weight-semibold);
   line-height: var(--line-tight);
   letter-spacing: var(--tracking-heading-3);
 }
 
 h4 {
-  margin-block-end: space(2);
-  @extend .font-title-xs;
+  margin-block-end: space(1.75);
+  font-size: var(--type-content-title);
   font-weight: var(--weight-semibold);
   line-height: var(--line-normal);
 }

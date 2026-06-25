@@ -32,14 +32,14 @@
   --img-bg: linear-gradient(180deg, #f7fbfb 0%, #e7eeee 100%);
 
   /* Layout */
-  --container: 74rem;
-  --container-wide: 88rem;
+  --container: 78rem;
+  --container-wide: 92rem;
   --container-narrow: 56rem;
   --space: 0.5rem;
-  --height-header: 4.2rem;
-  --section-padding: 4rem;
-  --section-gap: calc(var(--space) * 4);
-  --grid-gap: calc(var(--space) * 2);
+  --height-header: 4rem;
+  --section-padding: 3.75rem;
+  --section-gap: calc(var(--space) * 3.5);
+  --grid-gap: calc(var(--space) * 2.25);
   --panel-padding: calc(var(--space) * 2);
   --card-padding: calc(var(--space) * 2);
 
@@ -52,9 +52,9 @@
   --radius-pill: 999px;
 
   /* Elevation */
-  --shadow: 0 1px 2px rgba(14, 31, 36, 0.04), 0 14px 32px rgba(14, 31, 36, 0.07);
-  --shadow-lg: 0 2px 5px rgba(14, 31, 36, 0.07), 0 22px 54px rgba(14, 31, 36, 0.12);
-  --shadow-hover: 0 2px 5px rgba(14, 31, 36, 0.08), 0 18px 42px rgba(14, 31, 36, 0.12);
+  --shadow: 0 1px 2px rgba(14, 31, 36, 0.04), 0 10px 24px rgba(14, 31, 36, 0.06);
+  --shadow-lg: 0 2px 5px rgba(14, 31, 36, 0.06), 0 18px 42px rgba(14, 31, 36, 0.1);
+  --shadow-hover: 0 2px 5px rgba(14, 31, 36, 0.07), 0 14px 34px rgba(14, 31, 36, 0.1);
   --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.55), inset 0 0 0 1px rgba(14, 31, 36, 0.05);
 
   /* Type */
@@ -69,17 +69,17 @@
   --weight-bold: 700;
   --weight-extrabold: 800;
 
-  --text-xs: 0.8125rem;
+  --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-md: 0.9375rem;
   --text-base: 1rem;
-  --text-lg: 1.125rem;
+  --text-lg: 1.0625rem;
   --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 2.75rem;
-  --text-6xl: 3.25rem;
+  --text-2xl: 1.45rem;
+  --text-3xl: 1.75rem;
+  --text-4xl: 2.1rem;
+  --text-5xl: 2.45rem;
+  --text-6xl: 2.9rem;
 
   --type-caption: var(--text-xs);
   --type-meta: var(--text-sm);
@@ -88,16 +88,16 @@
   --type-body: var(--text-base);
   --type-body-sm: var(--text-sm);
   --type-lede: var(--text-lg);
-  --type-card-title: var(--text-lg);
-  --type-content-title: var(--text-xl);
+  --type-card-title: var(--text-base);
+  --type-content-title: var(--text-lg);
   --type-subsection-title: var(--text-2xl);
   --type-section-title: var(--text-3xl);
   --type-page-title: var(--text-4xl);
   --type-hero-title: var(--text-5xl);
   --type-display: var(--type-page-title);
 
-  --line-tight: 1.15;
-  --line-normal: 1.55;
+  --line-tight: 1.18;
+  --line-normal: 1.58;
   --line-loose: 1.75;
   --tracking-heading-1: 0;
   --tracking-heading-2: 0;
@@ -122,7 +122,7 @@
   :root {
     --panel-padding: calc(var(--space) * 3);
     --card-padding: calc(var(--space) * 2.5);
-    --type-subsection-title: var(--text-3xl);
+    --type-subsection-title: var(--text-2xl);
     --type-section-title: var(--text-4xl);
     --type-page-title: var(--text-5xl);
     --type-hero-title: var(--text-6xl);
@@ -131,9 +131,9 @@
 
 @media (min-width: 64rem) {
   :root {
-    --section-padding: 5rem;
-    --type-section-title: 2.45rem;
-    --type-page-title: 3rem;
-    --type-hero-title: 3.45rem;
+    --section-padding: 4.5rem;
+    --type-section-title: 2.25rem;
+    --type-page-title: 2.7rem;
+    --type-hero-title: 3.05rem;
   }
 }

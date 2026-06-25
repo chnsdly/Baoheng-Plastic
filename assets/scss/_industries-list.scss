@@ -1,4 +1,4 @@
-﻿.industry-overview,
+.industry-overview,
 .industry-detail {
   background: var(--surface);
   color: var(--on-surface);
@@ -12,25 +12,25 @@
 .industry-overview__hero,
 .industry-detail__hero-grid {
   display: grid;
-  gap: var(--grid-gap);
+  gap: space(3);
   align-items: center;
 }
 
 .industry-overview__copy,
 .industry-detail__copy {
   display: grid;
-  gap: space(1.25);
+  gap: space(1.1);
   align-content: center;
 }
 
 .industry-overview__copy h1,
 .industry-detail__copy h1 {
-  max-width: 15ch;
+  max-width: 22ch;
   margin: 0;
   color: var(--on-surface);
   font-size: var(--type-page-title);
   line-height: var(--line-tight);
-  font-weight: var(--weight-extrabold);
+  font-weight: var(--weight-bold);
   text-wrap: balance;
 }
 
@@ -39,7 +39,7 @@
   max-width: 62ch;
   margin: 0;
   color: var(--secondary);
-  font-size: var(--type-lede);
+  font-size: var(--type-body);
 }
 
 .industry-overview__media,
@@ -69,7 +69,7 @@
 }
 
 .industry-proof-list li {
-  padding: space(0.85) space(1);
+  padding: space(0.75) space(0.9);
   border-left: 3px solid var(--accent);
   border-radius: var(--radius-m);
   background: var(--card);
@@ -149,7 +149,7 @@
 .industry-product-card__body {
   display: grid;
   align-content: start;
-  gap: space(0.85);
+  gap: space(0.75);
   padding: var(--card-padding);
 }
 
@@ -169,6 +169,8 @@
 .industry-product-card p {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
+  line-height: var(--line-normal);
 }
 
 .industry-application-card__focus {
@@ -182,15 +184,15 @@
 .industry-application-card__focus span {
   color: var(--accent);
   font-size: var(--type-eyebrow);
-  font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .industry-detail__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: space(0.85);
+  gap: space(0.75);
   align-items: center;
 }
 
@@ -228,9 +230,13 @@
   color: var(--secondary);
 }
 
+.industry-diagnosis-grid .industrial-panel h2 {
+  font-size: var(--type-subsection-title);
+}
+
 .industry-resource-strip {
   display: grid;
-  gap: var(--grid-gap);
+  gap: space(3);
   align-items: center;
 }
 
@@ -273,7 +279,7 @@
 
 .industry-cta {
   display: grid;
-  gap: var(--grid-gap);
+  gap: space(3);
   align-items: center;
   padding: var(--panel-padding);
   border-radius: var(--radius-l);

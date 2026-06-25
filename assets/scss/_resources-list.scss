@@ -1,19 +1,23 @@
 .resources-listing {
-  padding-block: var(--section-padding);
+  padding-block: calc(var(--section-padding) * 0.9);
   background: var(--surface);
+}
+
+.resources-listing__inner {
+  max-width: var(--container-wide);
 }
 
 .resources-listing__inner,
 .resources-listing__body {
   display: grid;
-  gap: space(2);
+  gap: space(2.25);
 }
 
 .resources-listing__hero {
   display: grid;
   gap: space(1.5);
   align-items: end;
-  padding: space(2);
+  padding: space(2.4);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
@@ -50,7 +54,7 @@
 
 .resources-listing__layout {
   display: grid;
-  gap: space(2);
+  gap: space(2.25);
   align-items: start;
 }
 
@@ -90,7 +94,7 @@
 .resources-grid {
   display: grid;
   gap: space(1.25);
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
 
 .resource-card {
@@ -105,7 +109,7 @@
 
 .resource-card__media {
   display: block;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   background: var(--surface-alt);
   overflow: hidden;
 }
@@ -134,15 +138,15 @@
 .resource-card__body {
   display: grid;
   align-content: start;
-  gap: space(0.75);
-  padding: space(1.2);
+  gap: space(0.65);
+  padding: space(1.1);
 }
 
 .resource-card__title {
   margin: 0;
   color: var(--on-surface);
   font-size: var(--type-card-title);
-  line-height: var(--line-tight);
+  line-height: 1.28;
   font-weight: var(--weight-bold);
   overflow-wrap: anywhere;
   display: -webkit-box;
@@ -159,11 +163,13 @@
 .resource-card__desc {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
+  line-height: 1.5;
   overflow-wrap: anywhere;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
 }
 
 .resource-card__link {
@@ -175,7 +181,7 @@
 .resources-empty {
   display: grid;
   gap: space(1);
-  padding: space(2);
+  padding: space(2.4);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
@@ -205,6 +211,12 @@
   }
 
   .resources-listing__layout {
-    grid-template-columns: minmax(13rem, 17rem) minmax(0, 1fr);
+    grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+  }
+}
+
+@include mq-up(desktop) {
+  .resources-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

@@ -1,4 +1,4 @@
-﻿/* ===========================================================================
+/* ===========================================================================
    Base
    Low-specificity defaults and shared layout primitives.
    =========================================================================== */
@@ -47,12 +47,12 @@ img {
 .section__inner { display: grid; gap: var(--section-gap); }
 .section__header { display: grid; gap: space(1.5); text-align: center; }
 .section__title { color: var(--on-surface); font-size: var(--type-section-title); line-height: var(--line-tight); }
-.section__description { margin: 0 auto; max-width: 76ch; color: var(--secondary); }
+.section__description { margin: 0 auto; max-width: 70ch; color: var(--secondary); line-height: var(--line-normal); }
 
 .section-head {
   display: grid;
   gap: space(1);
-  max-width: 62rem;
+  max-width: 60rem;
   margin-bottom: var(--section-gap);
 }
 
@@ -68,8 +68,10 @@ img {
 }
 
 .section-head p {
+  max-width: 70ch;
   margin: 0;
   color: var(--secondary);
+  line-height: var(--line-normal);
 }
 
 .section-head--left {
@@ -87,7 +89,7 @@ img {
   color: var(--accent);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -208,6 +210,8 @@ summary:focus-visible {
 .industrial-panel p {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
+  line-height: var(--line-normal);
 }
 
 .industrial-panel--muted {
