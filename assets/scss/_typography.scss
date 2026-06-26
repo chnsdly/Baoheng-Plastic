@@ -1,13 +1,9 @@
-/* ==================== 排版系统 ==================== */
+/* ==================== Typography System ==================== */
 
-/* 1. 基础排版重置 */
-/* ================================================ */
-
-/* 段落间距 */
 p {
   margin-block: 0;
-  margin-block-end: space(2);
-  
+  margin-block-end: space(1.4);
+
   &:last-child {
     margin-block-end: 0;
   }
@@ -18,40 +14,39 @@ p, li, td, th, input, textarea, select, button {
   line-height: var(--line-normal);
 }
 
-/* 列表样式 */
 ul:not([class]),
 ol:not([class]) {
   margin-block: 0 space(2);
-  padding-inline-start: space(4);
-  
+  padding-inline-start: space(3.4);
+
   &:last-child {
     margin-block-end: 0;
   }
 }
 
 :where(ul:not([class]), ol:not([class])) > li {
-  margin-block: space(1);
-  
+  margin-block: space(0.7);
+
   &:last-child {
     margin-block-end: 0;
   }
 }
 
-/* 引用样式 */
 blockquote {
   margin-block: space(3);
   margin-inline: 0;
-  padding-inline: space(4);
-  border-inline-start: 3px solid var(--brand);
-  font-style: italic;
+  padding: space(1.4) space(2);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: var(--radius-m);
+  background: var(--brand-tint);
   color: var(--secondary);
-  
+  font-style: normal;
+
   p:last-child {
     margin-block-end: 0;
   }
 }
 
-/* 代码样式 */
 code, kbd, pre, samp {
   font-family: var(--font-mono);
   @extend .font-meta;
@@ -59,11 +54,12 @@ code, kbd, pre, samp {
 
 pre {
   margin-block: space(3);
-  padding: space(3);
-  background: var(--surface);
+  padding: space(2);
+  border: var(--border);
   border-radius: var(--radius-m);
+  background: var(--surface-alt);
   overflow-x: auto;
-  
+
   code {
     background: transparent;
     padding: 0;
@@ -72,33 +68,33 @@ pre {
 }
 
 code {
-  padding: 0.2em 0.4em;
-  background: var(--surface);
-  border-radius: var(--radius-m);
+  padding: 0.16em 0.36em;
   border: var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface-alt);
 }
 
-/* 表格样式 */
 table {
   width: 100%;
-  margin-block: space(3);
+  margin-block: space(2.4);
+  border: var(--border);
+  border-radius: var(--radius-m);
+  overflow: hidden;
 }
 
 th, td {
-  padding: space(2) space(3);
-  border: var(--border);
+  padding: space(1) space(1.2);
+  border: 1px solid var(--line);
   text-align: left;
+  vertical-align: top;
 }
 
 th {
-  background: var(--surface);
-  font-weight: var(--weight-semibold);
+  background: var(--brand-tint);
+  color: var(--brand-strong);
+  font-weight: var(--weight-bold);
 }
 
-/* 2. 标题层次系统 */
-/* ================================================ */
-
-/* 标题间距 */
 h1,
 h2,
 h3,
@@ -106,70 +102,65 @@ h4,
 h5,
 h6 {
   margin-block: 0;
-  margin-block-end: space(2);
-  font-family: var(--font-heading);
+  margin-block-end: space(1.6);
   color: var(--on-surface);
+  font-family: var(--font-heading);
   font-weight: inherit;
   line-height: inherit;
-  
+
   &:last-child {
     margin-block-end: 0;
   }
 }
 
-/* 标题层次间距 */
 h1 {
-  margin-block-end: space(4);
+  margin-block-end: space(3);
   @extend .font-display;
   font-weight: var(--weight-bold);
   line-height: var(--line-tight);
-  letter-spacing: var(--tracking-heading-1);
+  letter-spacing: 0;
 }
 
 h2 {
-  margin-block-end: space(3);
+  margin-block-end: space(2.4);
   font-size: var(--type-section-title);
   font-weight: var(--weight-bold);
   line-height: var(--line-tight);
-  letter-spacing: var(--tracking-heading-2);
+  letter-spacing: 0;
 }
 
 h3 {
-  margin-block-end: space(2.25);
+  margin-block-end: space(1.7);
   font-size: var(--type-subsection-title);
   font-weight: var(--weight-semibold);
   line-height: var(--line-tight);
-  letter-spacing: var(--tracking-heading-3);
+  letter-spacing: 0;
 }
 
 h4 {
-  margin-block-end: space(1.75);
+  margin-block-end: space(1.4);
   font-size: var(--type-content-title);
   font-weight: var(--weight-semibold);
   line-height: var(--line-normal);
 }
 
 h5 {
-  margin-block-end: space(1.5);
+  margin-block-end: space(1.2);
   @extend .font-body;
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-semibold);
   line-height: var(--line-normal);
 }
 
 h6 {
   margin-block-end: space(1);
   @extend .font-meta;
-  font-weight: var(--weight-medium);
+  color: var(--secondary);
+  font-weight: var(--weight-bold);
   line-height: var(--line-normal);
   text-transform: uppercase;
-  letter-spacing: var(--tracking-heading-compact);
-  color: var(--secondary);
+  letter-spacing: 0;
 }
 
-/* 3. 文本工具类 */
-/* ================================================ */
-
-/* 文本颜色类 */
 .text-brand { color: var(--brand); }
 .text-secondary { color: var(--secondary); }
 .text-success { color: var(--success); }
@@ -177,24 +168,20 @@ h6 {
 .text-danger { color: var(--danger); }
 .text-info { color: var(--info); }
 
-/* 文本对齐类 */
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-justify { text-align: justify; }
 
-/* 文本变换类 */
 .text-uppercase { text-transform: uppercase; }
 .text-lowercase { text-transform: lowercase; }
 .text-capitalize { text-transform: capitalize; }
 .text-normal-case { text-transform: none; }
 
-/* 文本装饰类 */
 .text-underline { text-decoration: underline; }
 .text-line-through { text-decoration: line-through; }
 .text-no-underline { text-decoration: none; }
 
-/* 字重类 */
 .font-light { font-weight: var(--weight-light); }
 .font-normal { font-weight: var(--weight-normal); }
 .font-medium { font-weight: var(--weight-medium); }
@@ -202,120 +189,71 @@ h6 {
 .font-bold { font-weight: var(--weight-bold); }
 .font-extrabold { font-weight: var(--weight-extrabold); }
 
-/* 行高类 */
 .leading-tight { line-height: var(--line-tight); }
 .leading-normal { line-height: var(--line-normal); }
 .leading-loose { line-height: var(--line-loose); }
 
-/* 字间距类 */
 .tracking-tight { letter-spacing: 0; }
-.tracking-normal { letter-spacing: normal; }
-.tracking-wide { letter-spacing: var(--tracking-heading-compact); }
+.tracking-normal { letter-spacing: 0; }
+.tracking-wide { letter-spacing: 0; }
 
-/* 4. 特殊排版组件 */
-/* ================================================ */
-
-/* 引言/导语 */
 .lead {
   @extend .font-title-xs;
-  font-weight: var(--weight-light);
-  line-height: var(--line-loose);
   color: var(--secondary);
-  margin-block-end: space(4);
-}
-
-/* 小标题/副标题 */
-.subtitle {
-  @extend .font-title-xs;
   font-weight: var(--weight-normal);
-  color: var(--secondary);
-  margin-block-start: calc(space(2) * -1);
+  line-height: var(--line-loose);
   margin-block-end: space(3);
 }
 
-/* 标签/徽章 */
+.subtitle {
+  @extend .font-title-xs;
+  color: var(--secondary);
+  font-weight: var(--weight-normal);
+  margin-block-start: calc(space(1.2) * -1);
+  margin-block-end: space(2.4);
+}
+
 .label {
   display: inline-block;
-  padding: 0.25em 0.75em;
+  padding: 0.28em 0.72em;
   @extend .font-meta;
+  border-radius: var(--radius-pill);
+  background: var(--surface-alt);
+  color: var(--secondary);
   font-weight: var(--weight-semibold);
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: var(--tracking-heading-compact);
-  border-radius: var(--radius-pill);
-  background: var(--surface);
-  color: var(--secondary);
+  letter-spacing: 0;
 }
 
-.label--brand {
-  background: var(--brand);
-  color: var(--on-brand);
-}
+.label--brand { background: var(--brand); color: var(--on-brand); }
+.label--success { background: var(--success); color: var(--on-success); }
+.label--warning { background: var(--warning); color: var(--on-warning); }
+.label--danger { background: var(--danger); color: var(--on-danger); }
 
-.label--success {
-  background: var(--success);
-  color: var(--on-success);
-}
-
-.label--warning {
-  background: var(--warning);
-  color: var(--on-warning);
-}
-
-.label--danger {
-  background: var(--danger);
-  color: var(--on-danger);
-}
-
-/* 5. 响应式排版 */
-/* ================================================ */
-
-/* 平板端优化 */
 @include mq-up(tablet) {
-  h1 { margin-block-end: space(5); }
-  
-  h2 { margin-block-end: space(4); }
-  
+  h1 { margin-block-end: space(4); }
+  h2 { margin-block-end: space(3); }
+
   .lead {
     max-width: 80ch;
     margin-inline: auto;
   }
 }
 
-/* 6. 可访问性优化 */
-/* ================================================ */
-
-/* 焦点样式 */
-:focus-visible {
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-
-/* 减少动画时的排版优化 */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* 高对比度模式 */
 @media (prefers-contrast: high) {
   :root {
-    --brand: #0056b3;
+    --brand: #005b80;
+    --brand-strong: #102d34;
     --on-brand: #ffffff;
-    --secondary: #333333;
+    --secondary: #303a3d;
   }
-  
+
   body {
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
   }
 }
-
-/* 7. 打印样式 */
-/* ================================================ */
 
 @media print {
   body {
@@ -323,21 +261,21 @@ h6 {
     color: #000000;
     background: #ffffff;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
   }
-  
+
   p, li {
     page-break-inside: avoid;
   }
-  
+
   a {
     color: #000000;
     text-decoration: underline;
   }
-  
+
   .no-print {
     display: none !important;
   }

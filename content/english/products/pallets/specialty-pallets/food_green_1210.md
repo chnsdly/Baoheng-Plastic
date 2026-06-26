@@ -51,11 +51,11 @@ contact_cta_link: "/contact"
 detail_intro: |-
   1. This pallet is manufactured from 100% virgin HDPE/PP using a welding process that ensures no shrinkage or deformation and delivers high dimensional accuracy. It runs smoothly on AGV/RGV systems and can be embedded with RFID chips to support intelligent warehouse operations. Ideal for pharmaceutical plants, food and beverage facilities, and other hygiene-critical industries.
 
-  2. It offers a dynamic load of 2 tons, a static load of 6 tons, and a racking load of 1 ton. The high-strength structure provides long-term load-bearing performance without deformation.
+  2. The deck, base structure, and reinforcement options should be confirmed against the actual load distribution, forklift route, stacking method, cleaning process, and storage duration rather than selected by nominal load rating alone.
 
   3. The fully flat, smooth surface supports sterile-grade cleanliness to protect your goods, while the reinforced base structure ensures stable forklift handling and improved operational efficiency.
 
-  4. With 20 years of experience in plastic pallet manufacturing, we serve over 1,000 medium and large enterprises worldwide. We guarantee consistent quality and on-time delivery. Distributors and partners are welcome to contact us for cooperation.
+  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 
 
 industry_gallery:

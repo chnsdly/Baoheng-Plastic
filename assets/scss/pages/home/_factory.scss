@@ -1,4 +1,4 @@
-﻿.factory {
+.factory {
   padding-block: var(--section-padding);
   background: var(--surface);
 }
@@ -15,17 +15,21 @@
 
 .factory__item {
   display: grid;
+  min-width: 0;
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
 }
 
 .factory__item:hover,
 .factory__item:focus-within {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
   box-shadow: var(--shadow-hover);
 }
@@ -53,6 +57,7 @@
 .factory__item-text {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
 }
 
 @include mq-up(tablet) {

@@ -53,7 +53,7 @@ detail_intro: |-
 
   3. These pallets are water-, moisture- and corrosion-resistant, insect-proof and easy to clean. They require no fumigation for export and contain no splinters or exposed nails, helping protect both goods and personnel.
 
-  4. For over 20 years, we have specialized in manufacturing plastic pallets, serving more than 1,000 medium and large enterprises. We ensure consistent quality and on-time delivery, and we welcome you to partner with us as a distributor.
+  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 
 industry_gallery:
   - image: "/images/products/blow-molded/industry-1.jpg"

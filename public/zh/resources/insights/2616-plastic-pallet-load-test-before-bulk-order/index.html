@@ -307,6 +307,12 @@
       if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
     });
 
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageSwitcher();
+      if (header.dataset.menuState === 'open') closeDrawer();
+    });
+
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 1280) closeDrawer();
     });
@@ -339,6 +345,8 @@
   
   
   
+    
+      
     
       
     
@@ -605,6 +613,28 @@
               
               
               <article class="resource-card">
+                <a class="resource-card__media" href="/zh/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">
+                  
+                    <img
+  src="/images/resources/2628-plastic-pallet-load-shift-prevention-transport.webp"
+  alt="仓库装货月台上缠绕膜固定的纸箱货物放在蓝色塑料托盘上接受稳定性检查"
+  
+  loading="lazy"
+  decoding="async"
+  
+>
+                  
+                </a>
+                <div class="resource-card__body">
+                  <p class="resource-card__meta">2026-06-26</p>
+                  <h3 class="resource-card__title"><a href="/zh/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">塑料托盘运输载荷位移控制：如何为卡车和集装箱运输设定托盘规格</a></h3>
+                </div>
+              </article>
+            
+              
+              
+              
+              <article class="resource-card">
                 <a class="resource-card__media" href="/zh/resources/insights/2627-plastic-pallet-drainage-drying-after-washing/">
                   
                     <img
@@ -642,28 +672,6 @@
                 <div class="resource-card__body">
                   <p class="resource-card__meta">2026-06-23</p>
                   <h3 class="resource-card__title"><a href="/zh/resources/insights/2626-anti-static-plastic-pallet-selection-guide/">防静电塑料托盘：如何判断 ESD 保护是否应写进采购规格</a></h3>
-                </div>
-              </article>
-            
-              
-              
-              
-              <article class="resource-card">
-                <a class="resource-card__media" href="/zh/resources/insights/2625-plastic-pallet-size-container-loading-guide/">
-                  
-                    <img
-  src="/images/resources/2625-plastic-pallet-size-container-loading-guide.webp"
-  alt="装柜出口如何选择塑料托盘尺寸：让纸箱、托盘和集装箱空间匹配"
-  
-  loading="lazy"
-  decoding="async"
-  
->
-                  
-                </a>
-                <div class="resource-card__body">
-                  <p class="resource-card__meta">2026-06-18</p>
-                  <h3 class="resource-card__title"><a href="/zh/resources/insights/2625-plastic-pallet-size-container-loading-guide/">装柜出口如何选择塑料托盘尺寸：让纸箱、托盘和集装箱空间匹配</a></h3>
                 </div>
               </article>
             
@@ -737,7 +745,7 @@
   <div class="wa-fab"
          data-wa
          data-side="right"
-         style="--wa-size-desktop: 60px; --wa-size-mobile: 72px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
+         style="--wa-size-desktop: 60px; --wa-size-mobile: 56px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
          data-wa-href="https://wa.me/8613325077372">
       <a class="wa-fab__btn" href="https://wa.me/8613325077372" target="_blank" rel="noopener"
          aria-label="通过 WhatsApp 沟通" title="通过 WhatsApp 沟通">
@@ -746,9 +754,10 @@
     </div>
 
     <style>
-      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: calc(var(--z-header) - 1); }
       .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
       .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+      body.is-menu-open .wa-fab { display: none; }
 
        
       .wa-fab__btn {

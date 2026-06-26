@@ -44,9 +44,9 @@ detail_intro: |-
 
   2. The one-piece structural design resists impacts, cleans easily, and withstands moisture, low temperatures, acids, and alkalis. It meets international logistics standards and helps reduce warehouse and freight costs while keeping contents protected.
 
-  3. Exceptional load performance: dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. Every model undergoes stacking and durability tests, offering a longer service life and greater safety than wooden boxes with no fumigation required for export.
+  3. Load values shown on this page are model reference data. Confirm the final usable load against actual load distribution, support span, temperature, storage duration, handling frequency, and safety margin before purchase.
 
-  4. With 20 years of experience in plastic manufacturing, we have served over 1,000 medium and large enterprises, ensuring product quality and on-time delivery to support your supply chain.
+  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 industry_gallery:
   - image: "/images/products/l-container/industry-1.jpg"
     alt: "1210-fpbvs75-grey industry use 1"

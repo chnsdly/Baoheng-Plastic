@@ -307,6 +307,12 @@
       if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
     });
 
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageSwitcher();
+      if (header.dataset.menuState === 'open') closeDrawer();
+    });
+
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 1280) closeDrawer();
     });
@@ -339,6 +345,8 @@
   
   
   
+    
+      
     
       
     
@@ -685,7 +693,7 @@
   <div class="wa-fab"
          data-wa
          data-side="right"
-         style="--wa-size-desktop: 60px; --wa-size-mobile: 72px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
+         style="--wa-size-desktop: 60px; --wa-size-mobile: 56px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
          data-wa-href="https://wa.me/8613325077372">
       <a class="wa-fab__btn" href="https://wa.me/8613325077372" target="_blank" rel="noopener"
          aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp">
@@ -694,9 +702,10 @@
     </div>
 
     <style>
-      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: calc(var(--z-header) - 1); }
       .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
       .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+      body.is-menu-open .wa-fab { display: none; }
 
        
       .wa-fab__btn {

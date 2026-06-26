@@ -12,11 +12,13 @@
 
 html {
   background: var(--surface);
+  scroll-behavior: smooth;
 }
 
 body {
+  min-width: 20rem;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.66) 0, rgba(244, 247, 247, 0) 34rem),
+    linear-gradient(180deg, #ffffff 0, rgba(255, 255, 255, 0) 32rem),
     var(--surface);
   color: var(--on-surface);
   font-family: var(--font-body);
@@ -40,12 +42,13 @@ img {
   margin-inline: auto;
   padding-inline: space(2);
 }
+
 .container--wide { --container: var(--container-wide); }
 .container--narrow { --container: var(--container-narrow); }
 
 .section { position: relative; padding-block: var(--section-padding); }
 .section__inner { display: grid; gap: var(--section-gap); }
-.section__header { display: grid; gap: space(1.5); text-align: center; }
+.section__header { display: grid; gap: space(1.25); text-align: center; }
 .section__title { color: var(--on-surface); font-size: var(--type-section-title); line-height: var(--line-tight); }
 .section__description { margin: 0 auto; max-width: 70ch; color: var(--secondary); line-height: var(--line-normal); }
 
@@ -102,6 +105,7 @@ img {
   align-items: center;
   gap: space(0.45);
   color: var(--brand);
+  font-size: var(--type-body-sm);
   font-weight: var(--weight-bold);
   text-decoration: none;
 }
@@ -117,7 +121,7 @@ img {
 
 .text-link:hover,
 .text-link:focus-visible {
-  color: var(--brand-strong);
+  color: var(--accent-strong);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
@@ -161,7 +165,7 @@ summary:focus-visible {
 
 .check-list li {
   position: relative;
-  padding-left: space(2.7);
+  padding-left: space(2.6);
   color: var(--on-surface);
 }
 
@@ -170,11 +174,11 @@ summary:focus-visible {
   position: absolute;
   left: 0;
   top: 0.62em;
-  width: 0.58rem;
-  height: 0.58rem;
+  width: 0.52rem;
+  height: 0.52rem;
   border-radius: var(--radius-pill);
-  background: var(--accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent);
+  background: var(--green);
+  box-shadow: 0 0 0 4px var(--green-soft);
 }
 
 .industrial-card-grid {
@@ -193,7 +197,7 @@ summary:focus-visible {
   border-radius: var(--radius-l);
   background: var(--card);
   color: var(--on-surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .industrial-card h3,
@@ -222,6 +226,7 @@ summary:focus-visible {
   background: var(--brand-strong);
   color: var(--on-brand);
   border-color: color-mix(in srgb, var(--on-brand) 16%, transparent);
+  box-shadow: var(--shadow-lg);
 }
 
 .industrial-panel--dark :is(h2, h3, p, li) {
@@ -229,11 +234,11 @@ summary:focus-visible {
 }
 
 .industrial-panel--dark .page-eyebrow {
-  color: color-mix(in srgb, var(--accent) 70%, white);
+  color: color-mix(in srgb, var(--accent) 62%, white);
 }
 
 .industrial-panel--dark .check-list li::before {
-  background: color-mix(in srgb, var(--accent) 78%, white);
+  background: color-mix(in srgb, var(--accent) 74%, white);
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--on-brand) 14%, transparent);
 }
 

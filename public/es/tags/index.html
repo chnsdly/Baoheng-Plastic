@@ -307,6 +307,12 @@
       if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
     });
 
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageSwitcher();
+      if (header.dataset.menuState === 'open') closeDrawer();
+    });
+
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 1280) closeDrawer();
     });
@@ -334,6 +340,14 @@
   
   <ul>
     
+      <li><a href="/es/tags/carga-en-contenedor/">Carga en Contenedor</a></li>
+    
+      <li><a href="/es/tags/desplazamiento-de-carga-en-palet-plastico/">Desplazamiento De Carga en Palet Plastico</a></li>
+    
+      <li><a href="/es/tags/estabilidad-de-unidad-de-carga/">Estabilidad De Unidad De Carga</a></li>
+    
+      <li><a href="/es/tags/estabilidad-en-transporte/">Estabilidad en Transporte</a></li>
+    
       <li><a href="/es/tags/almac%C3%A9n-con-lavado/">Almacén Con Lavado</a></li>
     
       <li><a href="/es/tags/drenaje-de-palets-pl%C3%A1sticos/">Drenaje De Palets Plásticos</a></li>
@@ -349,8 +363,6 @@
       <li><a href="/es/tags/palets-pl%C3%A1sticos-antiest%C3%A1ticos/">Palets Plásticos Antiestáticos</a></li>
     
       <li><a href="/es/tags/seguridad-en-almac%C3%A9n/">Seguridad en Almacén</a></li>
-    
-      <li><a href="/es/tags/carga-en-contenedor/">Carga en Contenedor</a></li>
     
       <li><a href="/es/tags/paletizaci%C3%B3n-de-cajas/">Paletización De Cajas</a></li>
     
@@ -441,7 +453,7 @@
   <div class="wa-fab"
          data-wa
          data-side="right"
-         style="--wa-size-desktop: 60px; --wa-size-mobile: 72px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
+         style="--wa-size-desktop: 60px; --wa-size-mobile: 56px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
          data-wa-href="https://wa.me/8613325077372">
       <a class="wa-fab__btn" href="https://wa.me/8613325077372" target="_blank" rel="noopener"
          aria-label="Chatear por WhatsApp" title="Chatear por WhatsApp">
@@ -450,9 +462,10 @@
     </div>
 
     <style>
-      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: calc(var(--z-header) - 1); }
       .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
       .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+      body.is-menu-open .wa-fab { display: none; }
 
        
       .wa-fab__btn {

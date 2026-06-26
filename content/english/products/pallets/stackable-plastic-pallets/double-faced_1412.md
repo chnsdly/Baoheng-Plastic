@@ -50,11 +50,11 @@ contact_cta_link: "/contact"
 detail_intro: |-
   1. This pallet is made from virgin HDPE/PP with a fully symmetrical, double-sided structure and reinforced rib design. With no joints or welds, it is built to handle heavy loads and is ideal for automotive components, heavy metals, chemical materials, large equipment and high-bay warehouse storage.
 
-  2. The dense grid deck provides strong performance, with a dynamic load capacity of 1.5–2.5 tons and a static load capacity of 6–8 tons, supporting frequent forklift operations.
+  2. The deck, base structure, and reinforcement options should be confirmed against the actual load distribution, forklift route, stacking method, cleaning process, and storage duration rather than selected by nominal load rating alone.
 
   3. Both sides can be used interchangeably, helping reduce pallet damage and save budget. The four-way forklift entry ensures convenient and durable handling.
 
-  4. For over 20 years, we have specialized in manufacturing plastic pallets, serving more than 1,000 medium and large enterprises. We guarantee stable quality and on-time delivery, and we welcome you to become our distribution partner.
+  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 
 industry_gallery:
   - image: "/images/products/pallet/double-faced/industry-1.jpg"

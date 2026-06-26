@@ -5,9 +5,7 @@
 
 .manufacturing-hero {
   padding-block: var(--section-padding);
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--brand) 11%, transparent), transparent 58%),
-    var(--surface);
+  background: var(--surface);
 }
 
 .manufacturing-hero__grid {
@@ -58,7 +56,7 @@
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--img-bg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-soft);
 }
 
 .manufacturing-hero__facts {
@@ -69,11 +67,12 @@
 .manufacturing-fact {
   display: grid;
   gap: space(0.25);
-  padding: space(1.1);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--radius-m);
+  padding: space(1.05);
+  border: var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: var(--radius-l);
   background: var(--card);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .manufacturing-fact strong {
@@ -106,11 +105,11 @@
 .manufacturing-process-card {
   display: grid;
   grid-template-rows: auto 1fr;
-  overflow: hidden;
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
 }
 
 .manufacturing-process-card img {

@@ -48,7 +48,7 @@
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--img-bg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
 }
 
@@ -70,11 +70,12 @@
 
 .industry-proof-list li {
   padding: space(0.75) space(0.9);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--radius-m);
+  border: var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: var(--radius-l);
   background: var(--card);
   color: var(--on-surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   font-weight: var(--weight-semibold);
 }
 
@@ -101,7 +102,7 @@
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
@@ -110,7 +111,7 @@
 .industry-application-card:focus-within,
 .industry-product-card:hover,
 .industry-product-card:focus-within {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
   box-shadow: var(--shadow-hover);
 }
@@ -142,7 +143,7 @@
 .industry-application-card:focus-within img,
 .industry-product-card:hover img,
 .industry-product-card:focus-within img {
-  transform: scale(1.035);
+  transform: scale(1.025);
 }
 
 .industry-application-card__body,
@@ -182,7 +183,7 @@
 }
 
 .industry-application-card__focus span {
-  color: var(--accent);
+  color: var(--green);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
   letter-spacing: 0;
@@ -264,7 +265,7 @@
   display: block;
   padding: space(0.9) space(1);
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   background: var(--surface);
   color: var(--brand);
   font-weight: var(--weight-bold);

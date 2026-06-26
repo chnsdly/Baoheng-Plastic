@@ -54,9 +54,9 @@ detail_intro: |-
   
   2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
   
-  3. With excellent load-bearing performance, dynamic load capacity reaches 1,000–1,500 kg, and static load capacity reaches 4,000–6,000 kg. All models are tested for stacking strength and long-term durability. Compared with wooden boxes, it offers a longer service life, enhanced safety, and is exempt from fumigation for export shipments.
+  3. Load values shown on this page are model reference data. Confirm the final usable load against actual load distribution, support span, temperature, storage duration, handling frequency, and safety margin before purchase.
   
-  4. With 20 years of expertise in plastic container manufacturing, we have served over 1,000 medium and large enterprises, ensuring reliable quality and on-time delivery for your supply chain operations.
+  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 industry_gallery:
   - image: "/images/products/fold/industry-1.jpg"
     alt: "1210-BF-FPBSMDD98A industry use 1"

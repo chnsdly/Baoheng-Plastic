@@ -49,11 +49,11 @@ contact_cta_link: "/contact"
 detail_intro: |-
   1. This three-runner pallet is manufactured with brand-new HDPE/PP material and molded in one piece. The reinforced cross-runner structure provides stable load support with no joints or welds, making it suitable for heavy-duty applications such as automotive parts, metal components, chemical materials, large equipment, and high-bay racking systems.
 
-  2. The pallet features a dense grid surface with optimized force distribution. Dynamic load capacity reaches 1.5–2.5 tons, and static load capacity reaches 6–8 tons, meeting the requirements of frequent forklift handling and racking storage.
+  2. The deck, base structure, and reinforcement options should be confirmed against the actual load distribution, forklift route, stacking method, cleaning process, and storage duration rather than selected by nominal load rating alone.
 
   3. The stable three-runner base is rack-compatible and supports four-way forklift entry, improving material-handling efficiency while offering durability and lower overall operating costs.
 
-  4. With 20 years of expertise in plastic pallet manufacturing, we have served more than 1,000 medium and large enterprises, ensuring consistent quality and on-time delivery. We welcome you to partner with us.
+  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 industry_gallery:
   - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
     alt: "1311 open deck perimeter-base plastic pallet industry use 1"

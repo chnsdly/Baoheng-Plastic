@@ -1,19 +1,20 @@
 .button {
-  background-color: var(--brand);
-  color: var(--on-brand);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: space(0.75);
-  min-height: 3.05rem;
-  padding: 0.65rem 1.25rem;
-  line-height: 1.18;
-  border-radius: var(--radius-s);
+  gap: space(0.7);
+  min-height: 2.95rem;
+  padding: 0.68rem 1.15rem;
   border: 1px solid transparent;
-  box-shadow: var(--shadow);
-  font-weight: var(--weight-semibold);
-  text-decoration: none;
+  border-radius: var(--radius-s);
+  background: var(--brand);
+  color: var(--on-brand);
+  box-shadow: var(--shadow-soft);
+  font-size: var(--type-ui);
+  font-weight: var(--weight-bold);
+  line-height: 1.18;
   text-align: center;
+  text-decoration: none;
   white-space: normal;
   transition:
     transform var(--transition-base),
@@ -26,7 +27,7 @@
 
 .button:hover,
 .button:focus-visible {
-  background-color: var(--brand-strong);
+  background: var(--brand-strong);
   color: var(--on-brand);
   box-shadow: var(--shadow-hover);
   transform: translateY(-1px);
@@ -34,35 +35,37 @@
 }
 
 .button:active {
-  background-color: color-mix(in srgb, var(--brand-strong) 92%, black);
+  background: color-mix(in srgb, var(--brand-strong) 92%, black);
   transform: translateY(0);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .button--secondary {
   background: var(--card);
   color: var(--brand-strong);
-  border-color: color-mix(in srgb, var(--brand) 28%, var(--line));
+  border-color: color-mix(in srgb, var(--brand) 30%, var(--line));
 }
 
 .button--secondary:hover,
 .button--secondary:focus-visible {
   background: var(--brand-soft);
   color: var(--brand-strong);
-  border-color: var(--brand);
+  border-color: color-mix(in srgb, var(--brand) 58%, var(--line));
 }
 
 .button--ghost {
-  min-height: 2.75rem;
+  min-height: 2.65rem;
   padding-inline: 0;
   background: transparent;
   color: var(--brand);
+  border-color: transparent;
   box-shadow: none;
 }
 
 .button--ghost:hover,
 .button--ghost:focus-visible {
   background: transparent;
-  color: var(--brand-strong);
+  color: var(--accent-strong);
+  border-color: transparent;
   box-shadow: none;
 }

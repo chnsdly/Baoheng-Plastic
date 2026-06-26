@@ -23,14 +23,17 @@
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
 }
 
 .industries__item:hover,
 .industries__item:focus-within {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
   box-shadow: var(--shadow-hover);
 }
@@ -52,7 +55,7 @@
 
 .industries__item:hover .industries__image,
 .industries__item:focus-within .industries__image {
-  transform: scale(1.035);
+  transform: scale(1.025);
 }
 
 .industries__content {
@@ -81,12 +84,12 @@
 .industries__products {
   display: grid;
   gap: space(0.25);
-  padding-top: space(0.75);
+  padding-top: space(0.8);
   border-top: var(--border);
 }
 
 .industries__products span {
-  color: var(--accent);
+  color: var(--green);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
   letter-spacing: 0;

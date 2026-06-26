@@ -1,5 +1,5 @@
-﻿.usps {
-  padding-block: space(3);
+.usps {
+  padding-block: space(2.5);
   background: var(--card);
   border-bottom: var(--border);
 }
@@ -14,31 +14,43 @@
   grid-template-columns: auto 1fr;
   gap: space(1);
   align-items: start;
+  min-width: 0;
   padding: space(1.25);
-  border-left: 3px solid var(--accent);
+  border: var(--border);
   border-radius: var(--radius-l);
   background: var(--surface);
+  box-shadow: var(--shadow-soft);
 }
 
 .usps__number {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-s);
+  background: var(--brand-soft);
   color: var(--brand-strong);
+  font-size: var(--type-caption);
   font-weight: var(--weight-extrabold);
 }
 
 .usps__content {
   display: grid;
   gap: space(0.35);
+  min-width: 0;
 }
 
 .usps__title {
   margin: 0;
   color: var(--on-surface);
   font-weight: var(--weight-bold);
+  line-height: var(--line-tight);
 }
 
 .usps__text {
   margin: 0;
   color: var(--secondary);
+  font-size: var(--type-body-sm);
 }
 
 @include mq-up(laptop) {

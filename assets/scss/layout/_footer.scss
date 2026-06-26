@@ -1,26 +1,27 @@
 .site-footer {
-  border-top: var(--border);
-  background: var(--brand-strong);
+  border-top: 1px solid color-mix(in srgb, var(--on-brand) 12%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--brand-strong) 94%, black), var(--brand-strong));
   color: color-mix(in srgb, var(--on-brand) 86%, transparent);
 }
 
 .site-footer__inner {
   display: grid;
   gap: space(3);
-  padding-block: space(4);
+  padding-block: space(5);
 }
 
 .site-footer__brand {
   display: grid;
-  gap: space(1);
+  gap: space(1.1);
   max-width: 34rem;
 }
 
 .site-footer__logo {
+  color: var(--on-brand);
   font-family: var(--font-heading);
   font-size: var(--type-content-title);
   font-weight: var(--weight-bold);
-  color: var(--on-brand);
 }
 
 .site-footer__summary {
@@ -33,7 +34,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: space(0.8);
-  margin-top: space(0.5);
+  margin-top: space(0.4);
+}
+
+.site-footer .button--secondary {
+  background: color-mix(in srgb, var(--on-brand) 96%, transparent);
+  border-color: transparent;
 }
 
 .site-footer .button--ghost {
@@ -60,7 +66,7 @@
   color: var(--on-brand);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-bold);
-  letter-spacing: var(--tracking-heading-compact);
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -94,7 +100,7 @@
 }
 
 .site-footer__bottom {
-  border-top: 1px solid color-mix(in srgb, var(--on-brand) 18%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--on-brand) 16%, transparent);
 }
 
 .site-footer__bottom-inner {

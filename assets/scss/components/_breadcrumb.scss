@@ -1,5 +1,5 @@
 .breadcrumb {
-  background: var(--surface);
+  background: color-mix(in srgb, var(--card) 76%, var(--surface));
   border-bottom: var(--border);
 }
 
@@ -8,7 +8,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: space(0.45);
-  padding-block: space(0.8);
+  padding-block: space(0.75);
   color: var(--secondary);
   font-size: var(--type-ui);
 }
@@ -21,7 +21,7 @@
 
 .breadcrumb__item + .breadcrumb__item::before {
   content: "/";
-  color: color-mix(in srgb, var(--secondary) 45%, transparent);
+  color: color-mix(in srgb, var(--secondary) 42%, transparent);
 }
 
 .breadcrumb__link {
@@ -37,6 +37,31 @@
 
 .breadcrumb__current {
   color: var(--on-surface);
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-semibold);
   overflow-wrap: anywhere;
+}
+
+@media (max-width: 47.99rem) {
+  .breadcrumb__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-block: space(0.6);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .breadcrumb__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .breadcrumb__item {
+    flex: 0 0 auto;
+  }
+
+  .breadcrumb__current {
+    max-width: 68vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }

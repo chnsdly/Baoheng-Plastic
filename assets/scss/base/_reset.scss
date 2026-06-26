@@ -29,6 +29,10 @@ body {
   margin: 0;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 
 /* 4. 去掉常见文字元素的默认外边距，避免版面出现不可控空隙
    注意：不动普通 ul / ol，文章里的列表仍然保留缩进和圆点 */

@@ -308,6 +308,12 @@
       if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
     });
 
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageSwitcher();
+      if (header.dataset.menuState === 'open') closeDrawer();
+    });
+
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 1280) closeDrawer();
     });
@@ -1581,7 +1587,7 @@
                     
                     <h2 class="product-listing__card-title">1111-网格双面型塑料托盘</h2>
                     <p class="product-listing__series-text">堆码型塑料托盘</p>
-                    <p class="product-listing__summary">堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。</p>
+                    <p class="product-listing__summary">双面可用的堆叠塑料托盘，适合地面堆码和双向周转场景。具体承重、叉车适配和堆码高度需结合货物分布与使用条件确认。欢迎提交数量、应用和使用要求获取报价。</p>
                     
                       <dl class="product-listing__specs">
                         
@@ -2709,7 +2715,7 @@
                     
                     <h2 class="product-listing__card-title">1210-网格双面型塑料托盘</h2>
                     <p class="product-listing__series-text">堆码型塑料托盘</p>
-                    <p class="product-listing__summary">堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。</p>
+                    <p class="product-listing__summary">双面可用的堆叠塑料托盘，适合地面堆码和双向周转场景。具体承重、叉车适配和堆码高度需结合货物分布与使用条件确认。欢迎提交数量、应用和使用要求获取报价。</p>
                     
                       <dl class="product-listing__specs">
                         
@@ -3179,7 +3185,7 @@
                     
                     <h2 class="product-listing__card-title">1212-网格双面型塑料托盘</h2>
                     <p class="product-listing__series-text">堆码型塑料托盘</p>
-                    <p class="product-listing__summary">堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。</p>
+                    <p class="product-listing__summary">双面可用的堆叠塑料托盘，适合地面堆码和双向周转场景。具体承重、叉车适配和堆码高度需结合货物分布与使用条件确认。欢迎提交数量、应用和使用要求获取报价。</p>
                     
                       <dl class="product-listing__specs">
                         
@@ -4017,7 +4023,7 @@
                     
                     <h2 class="product-listing__card-title">1311-网格双面型塑料托盘</h2>
                     <p class="product-listing__series-text">堆码型塑料托盘</p>
-                    <p class="product-listing__summary">堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。</p>
+                    <p class="product-listing__summary">双面可用的堆叠塑料托盘，适合地面堆码和双向周转场景。具体承重、叉车适配和堆码高度需结合货物分布与使用条件确认。欢迎提交数量、应用和使用要求获取报价。</p>
                     
                       <dl class="product-listing__specs">
                         
@@ -4393,7 +4399,7 @@
                     
                     <h2 class="product-listing__card-title">1412-网格双面型塑料托盘</h2>
                     <p class="product-listing__series-text">堆码型塑料托盘</p>
-                    <p class="product-listing__summary">堆叠可翻面托盘， 双面加强筋，一体化设计，为重型货物提供最安全的防护，超强承重，双面可用，增强托盘使用寿命。欢迎咨询，获取您的专属报价。</p>
+                    <p class="product-listing__summary">双面可用的堆叠塑料托盘，适合地面堆码和双向周转场景。具体承重、叉车适配和堆码高度需结合货物分布与使用条件确认。欢迎提交数量、应用和使用要求获取报价。</p>
                     
                       <dl class="product-listing__specs">
                         
@@ -4658,7 +4664,7 @@
   <div class="wa-fab"
          data-wa
          data-side="right"
-         style="--wa-size-desktop: 60px; --wa-size-mobile: 72px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
+         style="--wa-size-desktop: 60px; --wa-size-mobile: 56px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
          data-wa-href="https://wa.me/8613325077372">
       <a class="wa-fab__btn" href="https://wa.me/8613325077372" target="_blank" rel="noopener"
          aria-label="通过 WhatsApp 沟通" title="通过 WhatsApp 沟通">
@@ -4667,9 +4673,10 @@
     </div>
 
     <style>
-      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: calc(var(--z-header) - 1); }
       .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
       .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+      body.is-menu-open .wa-fab { display: none; }
 
        
       .wa-fab__btn {

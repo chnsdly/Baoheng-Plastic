@@ -1,8 +1,8 @@
 .cta {
   position: relative;
+  padding-block: var(--section-padding);
   background: var(--brand-strong);
   color: var(--on-brand);
-  padding-block: var(--section-padding);
 }
 
 .cta .container {
@@ -18,7 +18,7 @@
 
 .cta__intro {
   display: grid;
-  gap: space(1.5);
+  gap: space(1.4);
   padding: var(--panel-padding);
   border: 1px solid color-mix(in srgb, var(--on-brand) 16%, transparent);
   border-radius: var(--radius-l);
@@ -27,7 +27,7 @@
 
 .cta__eyebrow {
   margin: 0;
-  color: color-mix(in srgb, var(--accent) 70%, white);
+  color: color-mix(in srgb, var(--accent) 62%, white);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
   letter-spacing: 0;
@@ -37,28 +37,31 @@
 .cta__title {
   margin: 0;
   color: var(--on-brand);
-  font-size: var(--type-subsection-title);
+  font-size: var(--type-section-title);
   line-height: var(--line-tight);
   font-weight: var(--section-title-weight);
   text-wrap: balance;
 }
 
 .cta__desc {
+  max-inline-size: 62ch;
   margin: 0;
   color: color-mix(in srgb, var(--on-brand) 76%, transparent);
   font-size: var(--type-lede);
-  max-inline-size: 62ch;
 }
 
 .cta__contact {
   display: grid;
-  gap: space(1);
+  gap: space(0.8);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .cta__contact-item {
   display: grid;
   gap: space(0.35);
-  padding-block: space(1);
+  padding-block: space(0.9);
   border-top: 1px solid color-mix(in srgb, var(--on-brand) 14%, transparent);
 }
 
@@ -66,7 +69,7 @@
   margin: 0;
   display: inline-flex;
   align-items: center;
-  gap: space(0.7);
+  gap: space(0.65);
   color: color-mix(in srgb, var(--on-brand) 62%, transparent);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
@@ -88,25 +91,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: 2rem;
-  block-size: 2rem;
+  inline-size: 1.9rem;
+  block-size: 1.9rem;
   border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--accent) 76%, white);
+  background: color-mix(in srgb, var(--accent) 72%, white);
   color: var(--brand-strong);
 }
 
 .cta__icon svg {
-  inline-size: 1.1rem;
-  block-size: 1.1rem;
+  inline-size: 1.05rem;
+  block-size: 1.05rem;
 }
 
 .cta__card {
+  padding: var(--panel-padding);
+  border: var(--border);
+  border-radius: var(--radius-l);
   background: var(--card);
   color: var(--on-surface);
-  border-radius: var(--radius-l);
-  padding: var(--panel-padding);
   box-shadow: var(--shadow-lg);
-  border: var(--border);
 }
 
 .cta__form-head {
@@ -124,5 +127,7 @@
 }
 
 @media (min-width: 64rem) {
-  .cta__grid { grid-template-columns: minmax(20rem, 0.8fr) minmax(0, 1.2fr); }
+  .cta__grid {
+    grid-template-columns: minmax(20rem, 0.82fr) minmax(0, 1.18fr);
+  }
 }

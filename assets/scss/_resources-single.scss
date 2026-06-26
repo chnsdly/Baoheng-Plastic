@@ -4,25 +4,23 @@
 
 .resource-single__hero {
   padding-block: calc(var(--section-padding) * 0.82);
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--brand) 10%, transparent), transparent 58%),
-    var(--card);
+  background: var(--card);
   border-bottom: var(--border);
 }
 
 .resource-single__hero-inner {
   display: grid;
-  gap: space(0.9);
-  max-width: 52rem;
+  gap: space(0.85);
+  max-width: 54rem;
 }
 
 .resource-single__eyebrow,
 .resource-cta__eyebrow {
   margin: 0;
-  color: var(--brand-strong);
+  color: var(--accent);
   font-size: var(--type-eyebrow);
-  font-weight: var(--weight-bold);
-  letter-spacing: var(--tracking-heading-compact);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -33,6 +31,7 @@
   line-height: var(--line-tight);
   font-weight: var(--weight-bold);
   overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .resource-single__meta,
@@ -59,20 +58,20 @@
   object-fit: cover;
   border: var(--border);
   border-radius: var(--radius-l);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   margin-bottom: space(2);
 }
 
 .resource-single__body {
-  padding: space(2.8);
+  padding: var(--panel-padding);
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .resource-single__body > * + * {
-  margin-top: space(1.1);
+  margin-top: space(1.05);
 }
 
 .resource-single__body :is(h2, h3, h4) {
@@ -105,13 +104,18 @@
 }
 
 .resource-single__body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   font-size: var(--type-body-sm);
   line-height: 1.5;
+  -webkit-overflow-scrolling: touch;
 }
 
 .resource-single__body th,
 .resource-single__body td {
-  padding: space(0.9) space(1);
+  min-width: 9rem;
+  padding: space(0.85) space(1);
 }
 
 .resource-single__body :is(img, table) {
@@ -138,7 +142,7 @@
 
 .resource-single__aside {
   position: sticky;
-  top: calc(var(--height-header) + #{space(1)});
+  top: calc(var(--height-header) + #{space(1.25)});
 }
 
 .resource-cta {
@@ -148,7 +152,7 @@
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--card);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .resource-cta h2,
@@ -184,6 +188,16 @@
 
 .resources-grid--compact {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+@media (max-width: 47.99rem) {
+  .resource-single__body {
+    padding: space(1.25);
+  }
+
+  .resource-single__aside {
+    position: static;
+  }
 }
 
 @include mq-up(laptop) {

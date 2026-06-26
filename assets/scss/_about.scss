@@ -23,9 +23,7 @@
 
 .about__hero {
   padding-block: var(--section-padding);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--brand) 12%, transparent), transparent 72%),
-    var(--surface);
+  background: var(--surface);
 }
 
 .about__hero-inner {
@@ -34,16 +32,17 @@
 
 .about__hero-badge {
   display: inline-block;
-  padding: space(0.7) space(1.2);
+  padding: space(0.65) space(1.05);
   border: var(--border);
   border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--brand) 12%, var(--card));
-  color: var(--on-surface);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-weight: var(--weight-semibold);
 }
 
 .about__hero-title {
   margin: space(2) 0;
-  letter-spacing: var(--tracking-heading-1);
+  letter-spacing: 0;
 }
 
 .about__hero-sub {
@@ -63,12 +62,12 @@
   display: inline-flex;
   align-items: center;
   gap: space(0.7);
-  padding: space(0.75) space(1.1);
+  padding: space(0.72) space(1);
   border: var(--border);
   border-radius: var(--radius-pill);
   background: var(--card);
   color: var(--on-surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .about .chip svg {
@@ -80,7 +79,8 @@
 
 .about__hero-cta {
   display: flex;
-  gap: var(--grid-gap);
+  flex-wrap: wrap;
+  gap: space(1);
   justify-content: center;
 }
 
@@ -111,15 +111,15 @@
 .about .stat {
   padding: var(--card-padding);
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   text-align: center;
 }
 
 .about .stat__num {
   font-size: var(--type-section-title);
-  letter-spacing: var(--tracking-heading-1);
+  letter-spacing: 0;
 }
 
 .about .stat__label {
@@ -150,14 +150,14 @@
   width: 100%;
   display: block;
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   background: var(--img-bg);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .about .visual__body {
   display: grid;
-  gap: space(1.5);
+  gap: space(1.35);
 }
 
 .about .visual__body h3 {
@@ -178,10 +178,10 @@
 .about .card {
   padding: var(--card-padding);
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   background: var(--card);
   color: var(--on-surface);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .about__capabilities .card,
@@ -192,7 +192,7 @@
 .about .card h3 {
   margin: 0 0 space(1);
   font-size: var(--type-card-title);
-  letter-spacing: var(--tracking-heading-3);
+  letter-spacing: 0;
 }
 
 .about .check-list {
@@ -220,7 +220,7 @@
   width: 0.55rem;
   height: 0.55rem;
   border-radius: var(--radius-pill);
-  background: var(--brand);
+  background: var(--green);
 }
 
 .about .timeline {
@@ -248,8 +248,8 @@
   width: 0.75rem;
   height: 0.75rem;
   border-radius: var(--radius-pill);
-  background: var(--brand);
-  box-shadow: var(--shadow);
+  background: var(--accent);
+  box-shadow: var(--shadow-soft);
 }
 
 .about .tl__content {
@@ -265,8 +265,8 @@
 .about .global__map img {
   width: 100%;
   border: var(--border);
-  border-radius: var(--radius-m);
-  box-shadow: var(--shadow);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-soft);
 }
 
 @include mq-up(tablet) {

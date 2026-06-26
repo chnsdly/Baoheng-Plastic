@@ -30,9 +30,10 @@
     </div>
 
     <style>
-      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: calc(var(--z-header) - 1); }
       .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
       .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+      body.is-menu-open .wa-fab { display: none; }
 
       /* 按钮与图标尺寸（桌面默认） */
       .wa-fab__btn {

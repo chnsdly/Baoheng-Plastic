@@ -308,6 +308,12 @@
       if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
     });
 
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeLanguageSwitcher();
+      if (header.dataset.menuState === 'open') closeDrawer();
+    });
+
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 1280) closeDrawer();
     });
@@ -374,6 +380,34 @@
         <div class="resources-listing__body">
           
             <div class="resources-grid">
+              
+                
+                
+                
+                <article class="resource-card">
+                  <a class="resource-card__media" href="/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">
+                    
+                      <img
+  src="/images/resources/2628-plastic-pallet-load-shift-prevention-transport.webp"
+  alt="Wrapped cartons on blue plastic pallets being checked for load stability at a warehouse loading dock"
+  
+  loading="lazy"
+  decoding="async"
+  
+>
+                    
+                  </a>
+                  <div class="resource-card__body">
+                    <p class="resource-card__meta">
+                      Jun 26, 2026
+                      <span aria-hidden="true">/</span>
+                      10 min
+                    </p>
+                    <h2 class="resource-card__title"><a href="/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">Plastic Pallet Load Shift Prevention: How to Specify Pallets for Truck and Container Transport</a></h2>
+                    <p class="resource-card__desc">A practical guide for export, warehouse, and logistics teams on reducing load shift by matching plastic pallet design, unit load controls, and transport validation.</p>
+                    <a class="resource-card__link" href="/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">Read article</a>
+                  </div>
+                </article>
               
                 
                 
@@ -1174,7 +1208,7 @@
   <div class="wa-fab"
          data-wa
          data-side="right"
-         style="--wa-size-desktop: 60px; --wa-size-mobile: 72px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
+         style="--wa-size-desktop: 60px; --wa-size-mobile: 56px; --wa-offset-desktop: 18px; --wa-offset-mobile: 14px;"
          data-wa-href="https://wa.me/8613325077372">
       <a class="wa-fab__btn" href="https://wa.me/8613325077372" target="_blank" rel="noopener"
          aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
@@ -1183,9 +1217,10 @@
     </div>
 
     <style>
-      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: 9999; }
+      .wa-fab { position: fixed; bottom: var(--wa-offset-desktop); z-index: calc(var(--z-header) - 1); }
       .wa-fab[data-side="right"] { right: var(--wa-offset-desktop); }
       .wa-fab[data-side="left"]  { left:  var(--wa-offset-desktop); }
+      body.is-menu-open .wa-fab { display: none; }
 
        
       .wa-fab__btn {
