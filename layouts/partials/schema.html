@@ -6,7 +6,11 @@
 {{- $orgName := $orgParams.name | default (.Site.Params.company_name | default .Site.Title) -}}
 {{- $orgLogo := $orgParams.logo | default (.Site.Params.logo | absURL) -}}
 {{- $langCode := .Site.Language.Locale | default .Site.Language.Lang -}}
-{{- $desc := (.Description | default .Params.hero_description | default .Summary | default .Site.Params.description | plainify) -}}
+{{- $productCopy := dict -}}
+{{- if and .IsPage (eq .Section "products") -}}
+  {{- $productCopy = partial "product-copy.html" . -}}
+{{- end -}}
+{{- $desc := ((index $productCopy "card") | default .Description | default .Params.hero_description | default .Summary | default .Site.Params.description | plainify) -}}
 
 {{- $pageImageSource := "" -}}
 {{- with .Params.images -}}
@@ -152,9 +156,11 @@
   {{- with .Params.specs -}}
     {{- $props := slice -}}
     {{- range $key, $value := . -}}
-      {{- $type := printf "%T" $value -}}
-      {{- $val := cond (or (eq $type "[]string") (eq $type "[]interface {}")) (delimit $value ", ") $value -}}
-      {{- $props = $props | append (dict "@type" "PropertyValue" "name" (humanize $key) "value" (printf "%v" $val)) -}}
+      {{- if $value -}}
+        {{- $type := printf "%T" $value -}}
+        {{- $val := cond (or (eq $type "[]string") (eq $type "[]interface {}")) (delimit $value ", ") $value -}}
+        {{- $props = $props | append (dict "@type" "PropertyValue" "name" (humanize $key) "value" (printf "%v" $val)) -}}
+      {{- end -}}
     {{- end -}}
     {{- if gt (len $props) 0 }}{{- $product = merge $product (dict "additionalProperty" $props) -}}{{- end -}}
   {{- end -}}

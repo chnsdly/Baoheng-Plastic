@@ -1,0 +1,52 @@
+{{- $page := . -}}
+{{- $lang := $page.Site.Language.Lang | default "en" -}}
+{{- $data := $page.Site.Data.product_guidance | default dict -}}
+{{- $langData := index $data $lang | default (index $data "en") | default dict -}}
+{{- $seriesData := index $langData "series" | default dict -}}
+{{- $familyData := index $langData "families" | default dict -}}
+{{- $series := $page.Params.product_series | default "" -}}
+{{- $family := $page.Params.product_family | default $page.Params.product_type | default "" -}}
+{{- $guide := index $seriesData $series -}}
+{{- if not $guide -}}
+  {{- $guide = index $familyData $family -}}
+{{- end -}}
+{{- $result := dict -}}
+{{- with $guide -}}
+  {{- $details := slice -}}
+  {{- with index . "details" -}}
+    {{- range . -}}
+      {{- $details = $details | append . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $specs := $page.Params.specs | default dict -}}
+  {{- $staticLoad := index $specs "static_load" -}}
+  {{- $dynamicLoad := index $specs "dynamic_load" -}}
+  {{- $rackingLoad := index $specs "racking_load" -}}
+  {{- $hasLoad := or $staticLoad $dynamicLoad $rackingLoad -}}
+  {{- if $hasLoad -}}
+    {{- with index $langData "load_note" -}}
+      {{- $details = $details | append . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $isPallet := or (in (lower $family) "pallet") (in (lower $series) "pallet") -}}
+  {{- if and $isPallet (isset $specs "racking_load") (not $rackingLoad) -}}
+    {{- with index $langData "no_racking_note" -}}
+      {{- $details = $details | append . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $detailsMarkdown := "" -}}
+  {{- range $index, $item := $details -}}
+    {{- $detailsMarkdown = printf "%s%d. %s\n\n" $detailsMarkdown (add $index 1) $item -}}
+  {{- end -}}
+
+  {{- $result = dict
+    "hero" (index . "hero")
+    "card" ((index . "card") | default (index . "hero"))
+    "detailsMarkdown" $detailsMarkdown
+    "form" (index . "form")
+  -}}
+{{- end -}}
+{{- return $result -}}

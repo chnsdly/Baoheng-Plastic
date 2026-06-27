@@ -1,7 +1,8 @@
 {{ define "main" }}
   {{ $contactURL := "/contact/" | relLangURL }}
   {{ $specs := .Params.specs | default dict }}
-  {{ $heroText := .Params.hero_description | default .Description | default .Summary }}
+  {{ $productCopy := partial "product-copy.html" . }}
+  {{ $heroText := (index $productCopy "hero") | default .Params.hero_description | default .Description | default .Summary }}
   {{ $family := .Params.product_family | default .Params.product_type }}
   {{ $series := .Params.product_series }}
   {{ $familyLabel := $family }}
@@ -24,7 +25,7 @@
   {{ end }}
   {{ if and (not $hasSeriesSection) (ne .Site.Language.Lang "en") }}{{ $seriesLabel = "" }}{{ end }}
   {{ $detailHeading := .Params.detail_heading | default (i18n "product_detail_heading") }}
-  {{ $detailIntro := .Params.detail_intro | default .Params.detail_description }}
+  {{ $detailIntro := (index $productCopy "detailsMarkdown") | default .Params.detail_intro | default .Params.detail_description }}
   {{ $dimensions := index $specs "dimensions" }}
   {{ $dynamicLoad := index $specs "dynamic_load" }}
   {{ $staticLoad := index $specs "static_load" }}
@@ -177,7 +178,7 @@
               <p class="product-inquiry__eyebrow">{{ i18n "product_inquiry" }}</p>
               <h2 class="product-inquiry__title">{{ .Params.form_title | default (i18n "product_form_title") }}</h2>
               <p class="product-inquiry__description">
-                {{ .Params.form_description | default (i18n "product_form_description") }}
+                {{ (index $productCopy "form") | default .Params.form_description | default (i18n "product_form_description") }}
               </p>
             </div>
             {{ partial "lead-form.html" (dict "type" "product-detail" "slug" .File.ContentBaseName "page" . "sitekey" .Site.Params.turnstile_site_key) }}

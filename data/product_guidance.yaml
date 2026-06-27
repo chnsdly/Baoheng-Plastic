@@ -1,0 +1,442 @@
+en:
+  load_note: "Treat static, dynamic, and racking loads as reference conditions, not interchangeable ratings. Final selection should confirm load distribution, support method, rack span, temperature, storage duration, handling frequency, and safety margin."
+  no_racking_note: "No racking load is published for this model on this page. Treat it as a floor-stacking, transfer, export, or containment option until rack use is confirmed against the exact beam span, support method, and load."
+  families:
+    "Plastic Pallets":
+      hero: "Plastic pallets should be selected by structure, support method, load type, handling equipment, hygiene needs, and storage environment rather than by nominal load alone."
+      card: "Review structure, entry type, load condition, rack or floor use, and material before shortlisting this pallet."
+      details:
+        - "Start with the handling method: hand pallet truck, forklift, conveyor, floor stacking, beam racking, export shipping, or closed-loop reuse can require different pallet bases."
+        - "Confirm whether the deck is open or closed, how the runners or feet support the load, and whether the goods are evenly distributed or concentrated at a few points."
+        - "For hygiene, cold-room, chemical, or automated use, confirm cleaning method, temperature range, impact risk, and dimensional tolerance before approving a bulk order."
+      form: "Share goods, unit load weight, palletizing pattern, rack span if any, handling equipment, temperature, quantity, and destination so the model can be checked against real use."
+    "Pallet Boxes & Bulk Containers":
+      hero: "Pallet boxes and bulk containers are selected around internal volume, foldability, stacking method, forklift access, return logistics, and the type of goods being handled."
+      card: "Check volume, base structure, stack height, return ratio, and loading method before specifying this container."
+      details:
+        - "Confirm whether the container will carry loose parts, produce, packaged goods, liquids, or irregular loads because side-wall stiffness and base support requirements differ."
+        - "For foldable designs, review folded height, latch condition, stacking behavior, and the return route to determine whether space savings justify the model."
+        - "If the container enters racks, conveyors, cold rooms, or wash areas, confirm support span, temperature, drainage, cleaning method, and handling frequency."
+      form: "Share product type, fill weight, stacking height, return route, loading equipment, and destination so the container can be checked for fit."
+    "Plastic Crates & Boxes":
+      hero: "Plastic crates, boxes, trays, and tanks should be matched to ventilation, drainage, nesting or stacking behavior, manual handling, cleaning, and product protection needs."
+      card: "Use this product family when ventilation, drainage, manual handling, or returnable circulation are central to the workflow."
+      details:
+        - "Open mesh crates help ventilation and drainage; closed boxes and tanks better contain small goods, liquids, ingredients, or items that need more protection."
+        - "Check whether the operation needs nesting, stack-nesting, folding, or stable full-load stacking because each structure changes storage density and handling behavior."
+        - "For food, cold-chain, washing, or drying use, confirm material grade, cleaning process, drainage time, temperature exposure, and contact-surface requirements."
+      form: "Share goods, dimensions, fill weight, stacking or nesting needs, cleaning method, and operating temperature so the right crate or container type can be reviewed."
+    "Plastic Waste Bins":
+      hero: "Plastic waste bins should be selected by capacity, wheel arrangement, lid type, outdoor exposure, collection frequency, and compatibility with the local handling route."
+      card: "Confirm capacity, wheel type, lid, collection frequency, and outdoor exposure before choosing a bin."
+      details:
+        - "Small bins are usually selected for indoor, office, facility, or low-volume sorting points; larger wheeled bins suit collection routes and outdoor staging areas."
+        - "Review wheel size, axle support, lid fit, handle position, and wall thickness against the expected surface, collection frequency, and impact risk."
+        - "For municipal or project purchasing, confirm color coding, labeling, packing quantity, spare parts, and local collection equipment compatibility before ordering."
+      form: "Share capacity, color, lid, wheel, quantity, use location, and collection method so the bin specification can be checked."
+  series:
+    "Rackable 3-Runner Pallets":
+      hero: "A 3-runner rackable pallet is a starting point for beam-rack storage, forklift handling, and reusable warehouse circulation where support span and deflection control matter."
+      card: "Best reviewed for beam-rack lanes, forklift movement, and warehouse reuse where runner support and rack span must be confirmed."
+      details:
+        - "The three-runner base is commonly used where pallets need defined runner support for forklifts and selective racking, but actual rack use depends on beam span, load distribution, and dwell time."
+        - "Open-deck versions can reduce weight and improve drainage, while steel reinforcement options should be evaluated when racking exposure, heavy cartons, or long storage duration increase deflection risk."
+        - "Confirm entry direction, pallet jack access, conveyor contact points if used, cold-room exposure, and whether the rack load is based on evenly distributed goods."
+      form: "Share unit load weight, palletizing pattern, beam span, rack type, storage duration, temperature, and handling equipment for suitability review."
+    "Perimeter-Base Stackable Pallets":
+      hero: "A perimeter-base pallet is typically considered for stable floor stacking and repeated forklift handling when a continuous base is more important than nesting efficiency."
+      card: "Review this pallet for floor stacking, forklift transfer, and reusable circulation where base stability matters."
+      details:
+        - "The perimeter base gives broad contact with the floor or the pallet below, which can improve stack stability for cartons, bags, or boxed industrial goods."
+        - "Do not assume rack suitability from the base shape alone. If no racking load is listed, confirm beam support, reinforcement, and deflection before any rack application."
+        - "Check fork entry, load overhang, deck flatness, stacking height, cleaning needs, and whether the pallet must run through conveyors or automated transfer points."
+      form: "Share load weight, load footprint, stacking height, forklift type, storage method, and whether rack use is required."
+    "Double-Faced Heavy-Duty Pallets":
+      hero: "A double-faced pallet is usually reviewed for heavy floor stacking, block stacking, and repeated forklift circulation where both faces need to support the load."
+      card: "Use for heavy floor stacking or reversible handling after confirming load distribution and equipment fit."
+      details:
+        - "The reversible deck can support stacked loads from either side, but it is usually not suitable for hand pallet trucks because there is no open bottom deck clearance."
+        - "Heavy-duty use should be verified against concentrated loads, forklift impact, stacking height, storage duration, and whether goods have sharp feet or uneven bases."
+        - "If rack use is expected, request current model data for beam span, reinforcement, and deflection limits rather than relying on static or dynamic load values."
+      form: "Share load type, base contact area, stacking height, forklift type, rack requirement if any, and operating temperature."
+    "Nestable 9-Leg Pallets":
+      hero: "A nestable 9-leg pallet is generally used for export shipping, empty-return savings, and floor transfer where rack support is not required."
+      card: "Consider this type for export, one-way shipping, and empty nesting where rack use is not part of the workflow."
+      details:
+        - "The 9-leg base lets empty pallets nest together, reducing storage and return volume, but it normally provides less rack support than runner-base pallets."
+        - "Use this structure for floor stacking, light-to-medium transfer, export loads, or distribution lanes where the pallet is supported by the floor or a full platform."
+        - "Confirm pallet jack use, fork entry, load overhang, nest height, container loading quantity, and whether destination handling will require racking."
+      form: "Share destination, container loading target, unit load weight, goods footprint, handling equipment, and whether the pallet is one-way or reusable."
+    "Nestable Blow-Molded Pallets":
+      hero: "A blow-molded nestable pallet is typically considered for export, floor handling, and impact-prone transfer routes where empty nesting and moisture resistance are useful."
+      card: "Review for export or floor handling when nesting, impact behavior, and moisture resistance matter more than rack support."
+      details:
+        - "Blow-molded pallets often use hollow molded sections that can absorb handling impact differently from injection-molded grid pallets, but final performance still depends on load and support."
+        - "The nestable base supports empty-return savings and export packing, while rack use should not be assumed unless current model data lists a racking condition."
+        - "Confirm fork entry, deck contact area, load stability during transport, container loading quantity, and destination handling equipment."
+      form: "Share load weight, export route, container target, handling equipment, stack height, and whether pallets will be reused."
+    "Spill Containment Pallets":
+      hero: "Spill containment pallets are selected for liquid or drum handling where secondary containment, chemical compatibility, drainage, and cleaning access are more important than general pallet load ratings."
+      card: "Use for drums, liquid containers, or risk zones after confirming containment volume and chemical compatibility."
+      details:
+        - "Start with the container type, liquid volume, number of drums, and spill-risk zone; containment volume and grate support must match the actual application."
+        - "Material compatibility should be checked against the liquid or chemical family, cleaning chemicals, outdoor exposure, and whether the pallet will sit in a bunded area."
+        - "Do not treat spill pallets as rackable or transport pallets unless the exact model data confirms that use; many are designed mainly for floor staging and containment."
+      form: "Share chemical or liquid type, container size, number of drums, required containment volume, indoor or outdoor use, and handling method."
+    "Printing Pallets":
+      hero: "Printing pallets should be evaluated for flatness, dimensional consistency, clean surfaces, and equipment fit rather than only by general pallet load data."
+      card: "Review this pallet for print, paper, or packaging lines where flatness and machine fit are critical."
+      details:
+        - "Confirm the printing press or converting-line interface, required flatness, board or sheet size, and whether the pallet feeds directly into equipment."
+        - "Surface texture, edge condition, dimensional tolerance, and cleanliness can affect paper handling, sheet alignment, and operator safety."
+        - "Load ratings should be checked together with stack height, paper weight, moisture conditions, and whether the pallet is stored, moved, or fed by automation."
+      form: "Share equipment model, sheet or board size, stack height, load weight, handling method, and cleanliness requirements."
+    "Food & Pharmaceutical Pallets":
+      hero: "Hygienic plastic pallets should be selected by cleanability, closed or smooth surfaces, contamination control, color coding, and the facility's own food or pharmaceutical handling rules."
+      card: "Review for hygiene-controlled areas after confirming cleaning method, material requirements, and zone-control rules."
+      details:
+        - "Closed or smooth decks can reduce dirt traps, but cleaning effectiveness still depends on wash procedure, inspection access, drainage, and pallet condition during reuse."
+        - "Confirm whether the site needs virgin material, color segregation, RFID or label zones, anti-slip features, or dedicated pallets for allergen, cleanroom, or cold-room areas."
+        - "Food or pharmaceutical suitability should be confirmed against the buyer's internal standards and current supplier documents; do not assume certification from color or surface style alone."
+      form: "Share hygiene zone, cleaning method, temperature, load weight, color or traceability needs, and any document requirements."
+    "Egg Tray Transport Pallet Systems":
+      hero: "An egg tray pallet system should be reviewed as a complete stack: base pallet, interlayers, tray pattern, stack height, ventilation, and handling route all affect stability."
+      card: "Review the full egg tray stack, not only the base pallet, before confirming the system."
+      details:
+        - "Confirm tray footprint, layer count, divider sheet use, total stack height, and whether the load is moved by forklift, pallet jack, or hand transfer."
+        - "Ventilation, shock exposure, short-haul transport, and cold-room handling can change the acceptable stacking pattern and restraint method."
+        - "Sample testing with real trays is recommended before bulk use because tray stiffness, egg count, and road vibration can change stack stability."
+      form: "Share tray size, layers per pallet, egg count, transport distance, handling equipment, and temperature conditions."
+    "Foldable Pallet Boxes":
+      hero: "Foldable pallet boxes are usually selected for closed-loop logistics where empty-return volume, side-wall strength, stacking behavior, and forklift access must work together."
+      card: "Review for reusable bulk handling when folded height, stack load, and return logistics drive the specification."
+      details:
+        - "Confirm internal dimensions, fill weight, goods shape, side-wall load, and whether the container must stack full, stack empty, or return folded."
+        - "Latch design, hinge condition, base stiffness, drainage, label areas, and fork entry should be checked because they affect daily handling more than capacity alone."
+        - "If a racking load is listed, treat it as a reference condition and confirm beam span, support points, duration, and temperature before rack use."
+      form: "Share goods, fill weight, internal volume target, fold-return route, stacking height, rack requirement, and handling equipment."
+    "Rigid Bulk Containers":
+      hero: "Rigid bulk containers are selected when side-wall strength, internal volume, stacking stability, and forklift handling are more important than folded return volume."
+      card: "Review for bulk goods or packaged parts where a fixed-wall container supports storage and repeated handling."
+      details:
+        - "Rigid walls can protect goods and simplify loading, but they require more return and storage space than foldable containers."
+        - "Confirm fill weight, impact risk, stacking height, liquid or loose-material behavior, drainage, cleaning method, and whether a lid or liner is required."
+        - "For rack, conveyor, or cold-room use, confirm support method, temperature exposure, and dimensional tolerance against the current product data."
+      form: "Share goods, fill weight, volume target, stacking height, cleaning method, and transport route."
+    "Turnover Crates":
+      hero: "Turnover crates are selected by ventilation, manual handling, nesting or stacking behavior, cleaning needs, and the protection required for the goods."
+      card: "Use for produce, parts, or in-plant circulation after confirming stack, nest, and cleaning requirements."
+      details:
+        - "Ventilated crates support airflow and drainage for produce or wet handling, while solid crates provide more containment for small parts or ingredients."
+        - "Check handle comfort, rim strength, stack stability, nesting ratio, label area, and whether workers handle the crate manually for long periods."
+        - "For food, cold-chain, or washing use, confirm material, cleaning chemicals, drainage time, and temperature exposure."
+      form: "Share goods, fill weight, crate size, stacking or nesting needs, washing method, and temperature."
+    "Turnover Boxes":
+      hero: "Turnover boxes and utility tanks should be selected by volume, wall stiffness, cleaning access, drainage, manual handling, and whether the goods are solid, wet, or liquid."
+      card: "Review volume, wall stiffness, cleaning method, and handling route before choosing a box or tank."
+      details:
+        - "Open boxes support fast loading and sorting, while deeper tanks suit soaking, holding, mixing, or wet handling when wall and base support are sufficient."
+        - "Confirm whether the contents are food ingredients, small parts, liquids, wet goods, or chemical-contact materials because material and cleaning needs differ."
+        - "Check empty nesting, stackability, drainage, trolley or pallet compatibility, and the weight workers are expected to handle."
+      form: "Share contents, volume, fill weight, cleaning method, stacking or nesting needs, and handling equipment."
+    "Foldable Crates":
+      hero: "Foldable crates are used where reusable distribution needs both loaded protection and compact empty return, but hinge and latch behavior should be checked in the real route."
+      card: "Review for returnable distribution when folded height, latch durability, and manual handling matter."
+      details:
+        - "Confirm folded height, open-stack stability, latch design, hinge wear points, and whether workers can open and close the crate quickly without damaging goods."
+        - "Use route testing when crates circulate through retail, produce, food service, or parts handling because repeated folding changes the maintenance requirement."
+        - "Cleaning method, label area, color coding, and temperature exposure should be checked before standardizing the crate."
+      form: "Share goods, route, fill weight, return frequency, cleaning method, and folded-storage target."
+    "Freezing Trays":
+      hero: "Freezing and drying trays are selected by airflow, drainage, product contact, stack height, washing method, and low-temperature handling conditions."
+      card: "Review for freezing, drying, or washing lines where airflow, drainage, and product contact matter."
+      details:
+        - "Ventilated tray designs support chilling, freezing, drying, or draining, but tray spacing and stack height must match the process and product shape."
+        - "Confirm food-contact requirements, cleaning chemicals, low-temperature impact risk, drainage time, and whether trays are moved manually or on carts."
+        - "Before bulk use, test real product loading, freezing or drying time, and cleaning turnaround because small process changes can affect throughput."
+      form: "Share product type, tray size, fill depth, temperature, washing method, stack height, and line layout."
+    "Small Waste Bins":
+      hero: "Small waste bins are usually selected for indoor sorting points, offices, workshops, and facility areas where capacity, lid type, color coding, and cleaning access matter."
+      card: "Review for indoor or low-volume sorting after confirming capacity, lid, color, and cleaning route."
+      details:
+        - "Confirm the waste stream, daily volume, indoor or outdoor position, lid requirement, and whether the bin must fit under counters or into sorting stations."
+        - "For project purchasing, check color coding, label areas, packing quantity, and replacement needs across the facility."
+        - "If bins are moved frequently, review handle design, wall stiffness, cleaning method, and expected impact."
+      form: "Share capacity, waste stream, color, lid style, quantity, and use location."
+    "Two-Wheel Waste Bins":
+      hero: "Two-wheel waste bins are selected for facility and collection routes where capacity, axle strength, wheel size, lid fit, and handling surface affect daily use."
+      card: "Review for wheeled collection after confirming capacity, wheel conditions, and collection equipment."
+      details:
+        - "Confirm collection frequency, floor or road surface, loading weight, outdoor exposure, and whether workers move the bin over ramps or uneven ground."
+        - "Wheel, axle, handle, and lid details should match the collection route because these parts see the highest handling stress."
+        - "For municipal or industrial programs, confirm color coding, labeling, spare parts, packing quantity, and compatibility with lifting equipment if used."
+      form: "Share capacity, waste stream, route surface, collection frequency, color, quantity, and any lifting equipment."
+    "Four-Wheel Waste Bins":
+      hero: "Four-wheel waste bins are usually specified for higher-volume collection points where maneuverability, brake or wheel layout, lid design, and loading route need confirmation."
+      card: "Review for high-volume collection points after confirming route surface, loading weight, and wheel layout."
+      details:
+        - "Confirm whether the bin will be moved by hand, tug, vehicle, or lifting equipment because wheel and handle requirements change with the route."
+        - "Large bins should be checked against loaded weight, turning space, lid clearance, outdoor exposure, and collection frequency."
+        - "For project orders, confirm color, labeling, spare parts, packing, and local collection equipment compatibility before production."
+      form: "Share capacity, loaded weight, route surface, handling method, lid type, color, and quantity."
+    "Stackable Plastic Pallets":
+      hero: "Stackable plastic pallets cover several base structures, so selection should start with floor stacking, forklift handling, rack needs, and whether nesting is required."
+      card: "Compare stackable structures by base type, load distribution, forklift fit, and storage method."
+      details:
+        - "Perimeter-base and double-faced structures can both support stacking, but they behave differently with pallet jacks, forklifts, conveyors, and empty storage."
+        - "Confirm whether the operation needs floor stacking only, selective racking, block stacking, closed-loop reuse, or export transfer."
+        - "Do not compare load ratings across structures without checking support method, load distribution, temperature, and storage duration."
+      form: "Share load profile, storage method, handling equipment, stack height, rack needs, and destination."
+    "Specialty Plastic Pallets":
+      hero: "Specialty pallets should be evaluated by the specific risk they control: hygiene, printing-line fit, spill containment, egg tray stacking, traceability, or another defined workflow."
+      card: "Use specialty pallets only after the exact workflow, risk, and required documents are defined."
+      details:
+        - "Start with the problem the pallet must solve, such as cleanability, flatness, containment, tray stability, color coding, or equipment interface."
+        - "Special designs should not be treated as general-purpose pallets unless load, handling, and storage conditions also match the model."
+        - "Confirm any required documents, sample tests, color or logo needs, packing plan, and application limits before purchase."
+      form: "Share the application risk, goods, load, handling equipment, documents needed, and target workflow."
+zh:
+  load_note: "静载、动载和货架载应视为参考工况下的参数，不能直接互相替代。最终选型需结合货物分布、支撑方式、货架梁距、温度、存放时间、搬运频次和安全余量确认。"
+  no_racking_note: "本页面未发布该型号的货架载参数。在未按具体梁距、支撑方式和载荷确认前，应按地面堆码、转运、出口或防渗漏等非上架用途评估。"
+  families:
+    "Plastic Pallets":
+      hero: "塑料托盘应按结构、支撑方式、载荷类型、搬运设备、卫生要求和存储环境选型，而不是只看名义承重。"
+      card: "重点确认结构、进叉方式、载荷工况、货架或地面使用方式以及材料。"
+      details:
+        - "先确认搬运方式：手动液压车、叉车、输送线、地面堆码、横梁货架、出口运输或闭环周转，对托盘底部结构的要求不同。"
+        - "确认面板开孔或封闭、底部支撑点、货物是否均布、是否有集中受力点，以及是否存在超出托盘边缘的情况。"
+        - "用于卫生、冷库、化工或自动化场景时，应进一步确认清洗方式、温度、冲击风险和尺寸公差。"
+      form: "请提供货物、单托重量、码放方式、如有货架请提供梁距、搬运设备、温度、数量和目的地，便于核对适用性。"
+    "Pallet Boxes & Bulk Containers":
+      hero: "卡板箱和大型容器应围绕内尺寸、折叠需求、堆码方式、叉车进叉、返空物流和货物形态来选型。"
+      card: "确认容积、底部结构、堆码高度、返空比例和装卸方式。"
+      details:
+        - "先确认容器承载的是散件、农产品、包装货、液体还是异形件，因为侧壁强度和底部支撑要求不同。"
+        - "折叠款需要关注折叠高度、锁扣状态、堆码表现和返空路线，判断节省空间是否能覆盖使用复杂度。"
+        - "若进入货架、输送线、冷库或清洗区，应确认支撑跨度、温度、排水、清洗方式和搬运频次。"
+      form: "请提供货物类型、装载重量、堆码高度、返空路线、装卸设备和目的地。"
+    "Plastic Crates & Boxes":
+      hero: "周转筐、周转箱、托盘和方槽应匹配通风、排水、套叠或堆码、人工搬运、清洗和货物保护需求。"
+      card: "适用于需要通风、排水、人工搬运或循环周转的场景。"
+      details:
+        - "网格筐有利于通风和排水；封闭箱体或方槽更适合小件、液体、食材或需要更好保护的物料。"
+        - "确认需要套叠、错位堆叠、折叠还是满载堆码，因为不同结构会改变仓储密度和搬运方式。"
+        - "用于食品、冷链、清洗或晾晒时，应确认材质要求、清洗流程、排水时间、温度和接触面要求。"
+      form: "请提供货物、尺寸、装载重量、堆码或套叠需求、清洗方式和使用温度。"
+    "Plastic Waste Bins":
+      hero: "塑料垃圾桶应按容量、轮组、桶盖、户外暴露、收运频次和现场收集方式选型。"
+      card: "确认容量、轮组、桶盖、收运频次和户外使用条件。"
+      details:
+        - "小容量垃圾桶通常用于室内、办公、工厂或低容量分类点；大容量带轮垃圾桶更适合收集路线和户外暂存。"
+        - "应根据地面、搬运距离、冲击风险和收运频次确认轮径、轴承、把手、桶盖和桶壁强度。"
+        - "市政或项目采购还需确认颜色分类、标签、装柜数量、备件和当地收运设备兼容性。"
+      form: "请提供容量、颜色、桶盖、轮组、数量、使用位置和收运方式。"
+  series:
+    "Rackable 3-Runner Pallets":
+      hero: "川字型上架托盘适合从横梁货架、叉车搬运和仓库循环周转角度评估，重点是梁距、载荷分布和挠度控制。"
+      card: "适合评估横梁货架、叉车周转和仓储循环使用，需确认梁距和支撑方式。"
+      details:
+        - "三条底梁常用于需要明确底部支撑的叉车和横梁货架场景，但实际能否上架取决于梁距、货物分布和存放时间。"
+        - "网格面板有利于减重和排水；如存在长期上架、重型纸箱或较高挠度风险，应评估是否需要钢管加强。"
+        - "还需确认进叉方向、是否使用液压车、输送线接触点、冷库环境，以及货架载是否基于均布载荷。"
+      form: "请提供单托重量、码放方式、梁距、货架类型、存放时间、温度和搬运设备。"
+    "Perimeter-Base Stackable Pallets":
+      hero: "田字底或周边底托盘通常用于稳定地面堆码和反复叉车搬运，连续底部支撑比空托套叠更重要。"
+      card: "适合地面堆码、叉车转运和循环周转，需确认底部稳定性和实际支撑方式。"
+      details:
+        - "周边底结构能在地面或下层托盘上形成较连续接触，适合纸箱、袋装货或工业包装件的地面堆码。"
+        - "不能仅凭底部形状判断可上架；若页面未列出货架载，应在确认梁距、加强结构和挠度后再考虑货架使用。"
+        - "需确认进叉方式、货物是否外伸、面板平整度、堆码高度、清洗要求以及是否进入输送或自动化转运点。"
+      form: "请提供载荷重量、货物占地、堆码高度、叉车类型、存储方式以及是否需要上架。"
+    "Double-Faced Heavy-Duty Pallets":
+      hero: "双面托盘通常用于重型地面堆码、块状堆码和反复叉车周转，双面都需要承托货物。"
+      card: "适合重型地面堆码或双面使用，但需确认载荷分布和设备匹配。"
+      details:
+        - "双面结构可正反面使用并承托堆码载荷，但通常不适合手动液压车，因为底部没有开放式进叉空间。"
+        - "重载使用应结合集中载荷、叉车冲击、堆码高度、存放时间以及货物底部是否尖锐或不平整进行确认。"
+        - "如需上架，应索取当前型号的梁距、加强方式和挠度限制数据，不应只依据静载或动载判断。"
+      form: "请提供货物类型、底部接触面积、堆码高度、叉车类型、是否上架和使用温度。"
+    "Nestable 9-Leg Pallets":
+      hero: "九脚套叠托盘通常用于出口运输、空托返程节省空间和地面转运，不应默认用于货架。"
+      card: "适合出口、一次性发运和空托套叠场景，前提是流程中不需要上架。"
+      details:
+        - "九脚底部可让空托盘套叠，降低仓储和返空体积，但通常不具备横梁货架所需的连续底部支撑。"
+        - "更适合地面堆码、轻中载转运、出口装运或托盘由地面/整面平台支撑的配送路线。"
+        - "需确认液压车或叉车兼容性、货物是否外伸、套叠高度、装柜数量，以及目的地是否会要求上架。"
+      form: "请提供目的地、装柜目标、单托重量、货物尺寸、搬运设备以及一次性或循环使用方式。"
+    "Nestable Blow-Molded Pallets":
+      hero: "吹塑套叠托盘通常用于出口、地面搬运和冲击较多的转运路线，空托套叠和防潮性能是主要考虑点。"
+      card: "适合出口或地面搬运，重点确认套叠、冲击环境和是否不需要货架支撑。"
+      details:
+        - "吹塑托盘的中空结构与注塑网格托盘承受冲击的方式不同，但实际表现仍取决于载荷和支撑条件。"
+        - "套叠底部有利于返空和出口装柜；除非当前型号数据列明货架工况，否则不应默认用于货架。"
+        - "需确认进叉方式、面板接触面积、运输中货物稳定性、装柜数量和目的地搬运设备。"
+      form: "请提供载荷、出口路线、装柜目标、搬运设备、堆码高度和是否循环使用。"
+    "Spill Containment Pallets":
+      hero: "防渗漏托盘用于液体、桶装或风险区域管理，重点是二次围堵、化学兼容性、排液和清洗，而不是普通托盘承重。"
+      card: "适合桶装液体或泄漏风险区域，需确认围堵容积和化学兼容性。"
+      details:
+        - "先确认容器类型、液体容量、桶数和泄漏风险区域，围堵容积和格栅支撑必须匹配实际应用。"
+        - "应根据液体或化学品类别、清洗剂、户外暴露以及是否放置在围堰区确认材料兼容性。"
+        - "除非精确型号数据确认，不应把防渗漏托盘当作货架托盘或运输托盘使用；多数主要用于地面暂存和围堵。"
+      form: "请提供化学品或液体类型、容器尺寸、桶数、所需围堵容积、室内外环境和搬运方式。"
+    "Printing Pallets":
+      hero: "印刷托盘应重点评估平整度、尺寸一致性、清洁表面和设备适配，而不是只看普通托盘载荷。"
+      card: "适合印刷、纸张或包装线，需确认平整度和设备接口。"
+      details:
+        - "需确认印刷机或后道设备接口、所需平整度、纸张或板材尺寸，以及托盘是否直接进入设备。"
+        - "表面纹理、边缘状态、尺寸公差和清洁度都会影响走纸、叠放对齐和操作安全。"
+        - "载荷参数应与纸张重量、堆高、湿度条件以及是否自动送料或转运一起评估。"
+      form: "请提供设备型号、纸张或板材尺寸、堆高、载重、搬运方式和清洁要求。"
+    "Food & Pharmaceutical Pallets":
+      hero: "食品和医药场景托盘应围绕易清洁、封闭或平滑表面、污染控制、颜色分区和工厂内部卫生规则选型。"
+      card: "适合卫生控制区域，需确认清洗方式、材料要求和分区规则。"
+      details:
+        - "封闭或平滑表面可减少藏污点，但清洁效果仍取决于清洗流程、检查可达性、排水和循环使用状态。"
+        - "需确认是否要求全新料、颜色分区、RFID或标签区、防滑设计，或用于过敏原、洁净区、冷库等专用区域。"
+        - "食品或医药适用性应按采购方内部标准和供应商当前文件确认，不能仅凭颜色或表面形式认定认证。"
+      form: "请提供卫生区域、清洗方式、温度、载荷、颜色或追溯需求以及所需文件。"
+    "Foldable Pallet Boxes":
+      hero: "折叠卡板箱通常用于闭环物流，空箱返程体积、侧壁强度、堆码表现和叉车进叉需要同时满足。"
+      card: "适合可回收周转和散装搬运，需确认折叠高度、堆码载荷和返空路线。"
+      details:
+        - "需确认内尺寸、装载重量、货物形态、侧壁受力，以及满载堆码、空箱堆码或折叠返空的使用方式。"
+        - "锁扣、铰链、底部刚性、排水、标签区域和进叉方向都会影响日常使用，不能只看容积。"
+        - "如列有货架载，应按参考工况理解，并结合梁距、支撑点、存放时间和温度确认。"
+      form: "请提供货物、装载重量、目标内尺寸或容积、返空路线、堆码高度、是否上架和搬运设备。"
+    "Rigid Bulk Containers":
+      hero: "固定式大型容器适用于侧壁强度、容积、堆码稳定性和叉车搬运优先于折叠返空体积的场景。"
+      card: "适合散装物料或包装件，需确认固定箱体的仓储和返程空间。"
+      details:
+        - "固定侧壁有利于保护货物和快速装卸，但返空和存储占用通常高于折叠容器。"
+        - "需确认装载重量、冲击风险、堆码高度、液体或散料状态、排水、清洗方式以及是否需要盖板或内衬。"
+        - "用于货架、输送线或冷库时，应按当前产品数据确认支撑方式、温度和尺寸公差。"
+      form: "请提供货物、装载重量、容积目标、堆码高度、清洗方式和运输路线。"
+    "Turnover Crates":
+      hero: "周转筐应按通风、人工搬运、套叠或堆码、清洗需求和货物保护要求选型。"
+      card: "适合农产品、零件或厂内周转，需确认堆码、套叠和清洗方式。"
+      details:
+        - "通风筐有利于农产品或湿货的通风排水；封闭箱体更适合小件、食材或需要防散落的物料。"
+        - "需确认把手舒适度、边框强度、堆码稳定性、套叠比例、标签区域，以及是否长期人工搬运。"
+        - "用于食品、冷链或清洗场景时，应确认材质、清洗剂、排水时间和温度。"
+      form: "请提供货物、装载重量、筐体尺寸、堆码或套叠需求、清洗方式和温度。"
+    "Turnover Boxes":
+      hero: "周转箱和方槽应按容积、箱壁刚性、清洗可达性、排水、人工搬运以及固体、湿货或液体状态选型。"
+      card: "选择箱体或方槽前，需确认容积、箱壁刚性、清洗和搬运路线。"
+      details:
+        - "开放式周转箱便于快速装卸和分拣；较深方槽适合浸泡、暂存、混合或湿货处理，但需确认箱壁和底部支撑。"
+        - "应确认内容物是食材、小件、液体、湿货还是接触化学品的物料，因为材质和清洗要求不同。"
+        - "同时检查空箱套叠、堆码、排水、台车或托盘兼容性，以及人工搬运重量。"
+      form: "请提供内容物、容积、装载重量、清洗方式、堆码或套叠需求和搬运设备。"
+    "Foldable Crates":
+      hero: "折叠周转筐适合既需要满载保护又需要空筐返程压缩体积的循环配送场景。"
+      card: "适合可回收配送，需确认折叠高度、锁扣耐用性和人工搬运方式。"
+      details:
+        - "需确认折叠高度、展开后堆码稳定性、锁扣设计、铰链磨损点，以及员工能否快速开合且不损伤货物。"
+        - "若用于零售、生鲜、餐饮或零件周转，应通过真实路线测试重复折叠后的维护需求。"
+        - "清洗方式、标签区域、颜色分区和温度暴露也应在标准化前确认。"
+      form: "请提供货物、路线、装载重量、返空频次、清洗方式和折叠存储目标。"
+    "Freezing Trays":
+      hero: "冷冻和晾晒托盘应围绕气流、排水、产品接触、堆码高度、清洗方式和低温搬运条件选型。"
+      card: "适合冷冻、晾晒或清洗线，重点确认通风、排水和产品接触要求。"
+      details:
+        - "通风托盘有利于冷却、冷冻、晾干或排水，但托盘间距和堆码高度必须匹配工艺和产品形态。"
+        - "需确认食品接触要求、清洗剂、低温冲击风险、排水时间以及人工或台车搬运方式。"
+        - "批量使用前建议用真实产品测试冷冻或晾晒时间和清洗周转，因为小的工艺变化会影响效率。"
+      form: "请提供产品类型、托盘尺寸、装载深度、温度、清洗方式、堆码高度和产线布局。"
+    "Small Waste Bins":
+      hero: "小型垃圾桶通常用于室内分类点、办公室、车间和设施区域，需确认容量、桶盖、颜色分类和清洗方式。"
+      card: "适合室内或低容量分类点，需确认容量、桶盖、颜色和清洁路线。"
+      details:
+        - "确认垃圾类型、日产生量、室内外位置、桶盖要求，以及是否需要放入柜下或分类站。"
+        - "项目采购需核对颜色分类、标签区域、包装数量和后期补充需求。"
+        - "若经常移动，应评估把手、桶壁强度、清洗方式和冲击风险。"
+      form: "请提供容量、垃圾类型、颜色、桶盖、数量和使用位置。"
+    "Two-Wheel Waste Bins":
+      hero: "两轮垃圾桶适合设施和收运路线，容量、轮轴、轮径、桶盖和地面条件会直接影响日常使用。"
+      card: "适合带轮收运，需确认容量、轮组条件和收运设备。"
+      details:
+        - "确认收运频次、地面或路面、装载重量、户外暴露，以及是否需要通过坡道或不平地面。"
+        - "轮子、轮轴、把手和桶盖是高频受力部位，应与收运路线匹配。"
+        - "市政或工业项目还需确认颜色分类、标签、备件、装柜数量和可能使用的提升设备。"
+      form: "请提供容量、垃圾类型、路面、收运频次、颜色、数量和是否使用提升设备。"
+    "Four-Wheel Waste Bins":
+      hero: "四轮垃圾桶通常用于高容量收集点，需确认转向、轮组或刹车、桶盖和装载路线。"
+      card: "适合高容量收集点，需确认路线地面、装载重量和轮组布局。"
+      details:
+        - "确认垃圾桶是人工推动、牵引、车辆转运还是提升设备搬运，因为轮组和把手要求不同。"
+        - "大容量垃圾桶应结合满载重量、转弯空间、桶盖开启空间、户外暴露和收运频次评估。"
+        - "项目订单需在生产前确认颜色、标签、备件、包装和当地收运设备兼容性。"
+      form: "请提供容量、满载重量、路线地面、搬运方式、桶盖类型、颜色和数量。"
+es:
+  load_note: "Use las cargas estática, dinámica y en rack como referencias de condición, no como valores intercambiables. La selección final debe confirmar distribución de carga, apoyo, luz de rack, temperatura, tiempo de almacenamiento, frecuencia de manejo y margen de seguridad."
+  no_racking_note: "Esta página no publica carga en rack para este modelo. Trátelo como opción para piso, apilado, transferencia, exportación o contención hasta confirmar el uso en rack con la luz de viga y el apoyo reales."
+  families:
+    "Plastic Pallets":
+      hero: "El pallet plástico debe elegirse por estructura, apoyo, tipo de carga, equipo de manejo, higiene y ambiente de almacenamiento, no solo por carga nominal."
+      card: "Revise estructura, entrada de horquillas, condición de carga, uso en rack o piso y material."
+      details:
+        - "Empiece por el método de manejo: transpaleta, montacargas, transportador, apilado en piso, rack, exportación o circuito reutilizable."
+        - "Confirme cubierta abierta o cerrada, runners o patas, carga distribuida o concentrada, sobrepaso de carga y compatibilidad con el equipo."
+        - "Para higiene, frío, químicos o automatización, confirme limpieza, temperatura, impacto y tolerancia dimensional antes de aprobar volumen."
+      form: "Comparta mercancía, peso por unidad, patrón de paletizado, luz de rack si aplica, equipo, temperatura, cantidad y destino."
+    "Pallet Boxes & Bulk Containers":
+      hero: "Los pallet boxes y contenedores bulk se seleccionan por volumen interno, plegado, apilado, acceso de horquillas, retorno vacío y tipo de mercancía."
+      card: "Revise volumen, base, altura de apilado, retorno y método de carga."
+      details:
+        - "Confirme si transporta piezas sueltas, producto agrícola, mercancía empacada, líquidos o cargas irregulares."
+        - "En modelos plegables, revise altura plegada, cierres, apilado y ruta de retorno."
+        - "Si entra en rack, frío, lavado o transportadores, confirme apoyo, temperatura, drenaje, limpieza y frecuencia."
+      form: "Comparta mercancía, peso de llenado, altura de apilado, ruta de retorno, equipo y destino."
+    "Plastic Crates & Boxes":
+      hero: "Cajas, crates, bandejas y tanques plásticos deben coincidir con ventilación, drenaje, anidado o apilado, manejo manual, limpieza y protección."
+      card: "Útil cuando ventilación, drenaje, manejo manual o retorno son parte central del flujo."
+      details:
+        - "Las cajas ventiladas ayudan al aire y drenaje; cajas cerradas y tanques contienen mejor piezas pequeñas, líquidos o ingredientes."
+        - "Confirme si necesita anidar, apilar, plegar o apilar cargado, porque cada estructura cambia la densidad logística."
+        - "Para alimentos, frío, lavado o secado, confirme material, limpieza, drenaje, temperatura y contacto con producto."
+      form: "Comparta mercancía, dimensiones, peso, apilado o anidado, limpieza y temperatura."
+    "Plastic Waste Bins":
+      hero: "Los contenedores de basura plásticos se seleccionan por capacidad, ruedas, tapa, exposición exterior, frecuencia de recolección y ruta de manejo."
+      card: "Confirme capacidad, ruedas, tapa, frecuencia y exposición antes de elegir."
+      details:
+        - "Los bins pequeños suelen servir puntos interiores; los modelos con ruedas se usan en rutas de recolección y áreas exteriores."
+        - "Revise ruedas, eje, asa, tapa y pared según superficie, distancia, impacto y frecuencia."
+        - "Para proyectos, confirme color, etiquetas, repuestos, embalaje y compatibilidad con el equipo local."
+      form: "Comparta capacidad, color, tapa, ruedas, cantidad, ubicación y método de recolección."
+fr:
+  load_note: "Considérez les charges statique, dynamique et en rack comme des références de condition, non comme des valeurs interchangeables. La sélection finale doit confirmer répartition de charge, support, portée de rack, température, durée de stockage, fréquence de manutention et marge de sécurité."
+  no_racking_note: "Cette page ne publie pas de charge en rack pour ce modèle. Traitez-le comme une option pour stockage au sol, transfert, export ou rétention jusqu'à validation du rack avec la portée et le support exacts."
+  families:
+    "Plastic Pallets":
+      hero: "Une palette plastique se choisit par structure, méthode de support, type de charge, équipement de manutention, hygiène et environnement, pas seulement par charge nominale."
+      card: "Vérifiez structure, entrée fourches, condition de charge, usage rack ou sol et matériau."
+      details:
+        - "Commencez par la manutention: transpalette, chariot élévateur, convoyeur, gerbage au sol, rack, export ou boucle réutilisable."
+        - "Confirmez plateau ouvert ou fermé, semelles ou pieds, charge répartie ou concentrée, dépassement et compatibilité équipement."
+        - "Pour hygiène, froid, chimie ou automatisation, confirmez nettoyage, température, impact et tolérances avant volume."
+      form: "Partagez marchandise, poids unitaire, schéma de palettisation, portée rack si besoin, équipement, température, quantité et destination."
+    "Pallet Boxes & Bulk Containers":
+      hero: "Les pallet boxes et conteneurs vrac se sélectionnent selon volume utile, pliage, empilage, accès fourches, retour à vide et type de marchandise."
+      card: "Vérifiez volume, base, hauteur d'empilage, retour à vide et méthode de chargement."
+      details:
+        - "Confirmez s'il s'agit de pièces en vrac, produits agricoles, marchandises emballées, liquides ou charges irrégulières."
+        - "Pour les modèles pliables, vérifiez hauteur pliée, verrous, empilage et boucle de retour."
+        - "En rack, froid, lavage ou convoyeur, confirmez support, température, drainage, nettoyage et fréquence."
+      form: "Partagez marchandise, poids de remplissage, hauteur d'empilage, retour, équipement et destination."
+    "Plastic Crates & Boxes":
+      hero: "Caisses, bacs, plateaux et cuves plastiques doivent correspondre à ventilation, drainage, emboîtement ou empilage, manutention manuelle, nettoyage et protection."
+      card: "Utile lorsque ventilation, drainage, manutention manuelle ou circulation retour sont essentiels."
+      details:
+        - "Les caisses ventilées aident l'air et le drainage; les bacs fermés ou cuves contiennent mieux petites pièces, liquides ou ingrédients."
+        - "Confirmez emboîtement, empilage, pliage ou empilage chargé, car chaque structure change la densité logistique."
+        - "Pour aliments, froid, lavage ou séchage, confirmez matériau, nettoyage, drainage, température et contact produit."
+      form: "Partagez marchandise, dimensions, poids, empilage ou emboîtement, nettoyage et température."
+    "Plastic Waste Bins":
+      hero: "Les bacs à déchets plastiques se choisissent par capacité, roues, couvercle, exposition extérieure, fréquence de collecte et parcours de manutention."
+      card: "Confirmez capacité, roues, couvercle, fréquence et exposition avant choix."
+      details:
+        - "Les petits bacs servent souvent les points intérieurs; les bacs roulants conviennent aux tournées et zones extérieures."
+        - "Vérifiez roues, axe, poignée, couvercle et parois selon surface, distance, impact et fréquence."
+        - "Pour projets, confirmez couleur, étiquettes, pièces de rechange, emballage et compatibilité équipement local."
+      form: "Partagez capacité, couleur, couvercle, roues, quantité, lieu et méthode de collecte."

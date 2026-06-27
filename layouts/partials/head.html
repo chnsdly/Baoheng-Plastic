@@ -1,4 +1,8 @@
 {{- /* Page metadata */ -}}
+{{- $productCopy := dict -}}
+{{- if and .IsPage (eq .Section "products") -}}
+  {{- $productCopy = partial "product-copy.html" . -}}
+{{- end -}}
 {{- $title := .Site.Title -}}
 {{- with .Params.seo_title -}}
   {{- $title = . -}}
@@ -17,7 +21,7 @@
   {{- $title = truncate 68 $title -}}
 {{- end -}}
 
-{{- $rawDescription := .Description | default .Params.hero_description | default .Summary | default .Site.Params.description -}}
+{{- $rawDescription := (index $productCopy "card") | default .Description | default .Params.hero_description | default .Summary | default .Site.Params.description -}}
 {{- $descriptionText := $rawDescription | plainify -}}
 {{- if and (lt (len $descriptionText) 50) .Params.hero_description -}}
   {{- $descriptionText = .Params.hero_description | plainify -}}

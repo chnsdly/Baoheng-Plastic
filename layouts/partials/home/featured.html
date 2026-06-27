@@ -57,7 +57,9 @@
 
       <div class="home-product-grid">
         {{ range $p := $featured }}
-          {{ $desc := $p.Description | default $p.Params.hero_description | default $p.Summary | plainify }}
+          {{ $productCopy := partial "product-copy.html" $p }}
+          {{ $descSource := (index $productCopy "card") | default $p.Description | default $p.Params.hero_description | default $p.Summary }}
+          {{ $desc := $descSource | plainify }}
           {{ $family := $p.Params.product_family | default $p.Params.product_type }}
           {{ $series := $p.Params.product_series }}
           {{ $familyLabel := $family }}
