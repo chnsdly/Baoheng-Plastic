@@ -251,6 +251,13 @@
     const backButton = header.querySelector('[data-menu-back]');
     const title = header.querySelector('[data-menu-title]');
     const languageSwitcher = header.querySelector('[data-language-switcher]');
+    if (!toggle || !drawer) return;
+
+    const openMenuLabel = "Open menu";
+    const closeMenuLabel = "Close menu";
+    const desktopQuery = window.matchMedia('(min-width: 80rem)');
+    let isDrawerOpen = false;
+
     const menuTitles = {
       root: "Menu",
       "products": "Products","industries": "Industries","resources": "Resources",
@@ -268,28 +275,30 @@
       if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
     };
 
+    const setDrawerState = (open) => {
+      isDrawerOpen = open;
+      header.dataset.menuState = open ? 'open' : 'closed';
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? closeMenuLabel : openMenuLabel);
+      document.body.classList.toggle('is-menu-open', open);
+    };
+
     const closeDrawer = () => {
-      header.dataset.menuState = 'closed';
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', "Open menu");
+      setDrawerState(false);
       drawer.hidden = true;
-      document.body.classList.remove('is-menu-open');
       showPanel('root');
     };
 
     const openDrawer = () => {
       closeLanguageSwitcher();
       drawer.hidden = false;
-      requestAnimationFrame(() => {
-        header.dataset.menuState = 'open';
-        toggle.setAttribute('aria-expanded', 'true');
-        toggle.setAttribute('aria-label', "Close menu");
-        document.body.classList.add('is-menu-open');
-      });
+      setDrawerState(true);
     };
 
-    toggle.addEventListener('click', () => {
-      if (header.dataset.menuState === 'open') {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (isDrawerOpen) {
         closeDrawer();
       } else {
         openDrawer();
@@ -310,12 +319,17 @@
     document.addEventListener('keydown', (event) => {
       if (event.key !== 'Escape') return;
       closeLanguageSwitcher();
-      if (header.dataset.menuState === 'open') closeDrawer();
+      if (isDrawerOpen) closeDrawer();
     });
 
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1280) closeDrawer();
-    });
+    const handleDesktopQueryChange = (event) => {
+      if (event.matches) closeDrawer();
+    };
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', handleDesktopQueryChange);
+    } else {
+      desktopQuery.addListener(handleDesktopQueryChange);
+    }
 
     showPanel('root');
     closeDrawer();
@@ -345,6 +359,8 @@
   
   
   
+    
+      
     
       
     
@@ -634,6 +650,28 @@
               
               
               <article class="resource-card">
+                <a class="resource-card__media" href="/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">
+                  
+                    <img
+  src="/images/resources/2629-plastic-pallet-pallet-jack-compatibility.webp"
+  alt="Warehouse operator checking manual pallet jack fork entry under a blue plastic pallet"
+  
+  loading="lazy"
+  decoding="async"
+  
+>
+                  
+                </a>
+                <div class="resource-card__body">
+                  <p class="resource-card__meta">Jun 27, 2026</p>
+                  <h3 class="resource-card__title"><a href="/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">Plastic Pallet Pallet Jack Compatibility: How to Avoid Fork-Entry, Wheel, and Bottom-Deck Problems</a></h3>
+                </div>
+              </article>
+            
+              
+              
+              
+              <article class="resource-card">
                 <a class="resource-card__media" href="/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">
                   
                     <img
@@ -671,28 +709,6 @@
                 <div class="resource-card__body">
                   <p class="resource-card__meta">Jun 24, 2026</p>
                   <h3 class="resource-card__title"><a href="/resources/insights/2627-plastic-pallet-drainage-drying-after-washing/">Plastic Pallet Drainage and Drying After Washing: How to Prevent Water Retention in Hygienic Warehouses</a></h3>
-                </div>
-              </article>
-            
-              
-              
-              
-              <article class="resource-card">
-                <a class="resource-card__media" href="/resources/insights/2626-anti-static-plastic-pallet-selection-guide/">
-                  
-                    <img
-  src="/images/resources/2626-anti-static-plastic-pallet-selection-guide.webp"
-  alt="Warehouse operator checking an anti-static plastic pallet with a surface resistance meter"
-  
-  loading="lazy"
-  decoding="async"
-  
->
-                  
-                </a>
-                <div class="resource-card__body">
-                  <p class="resource-card__meta">Jun 23, 2026</p>
-                  <h3 class="resource-card__title"><a href="/resources/insights/2626-anti-static-plastic-pallet-selection-guide/">Anti-Static Plastic Pallets: How to Decide When ESD Protection Belongs in Your Specification</a></h3>
                 </div>
               </article>
             

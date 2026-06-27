@@ -252,6 +252,13 @@
     const backButton = header.querySelector('[data-menu-back]');
     const title = header.querySelector('[data-menu-title]');
     const languageSwitcher = header.querySelector('[data-language-switcher]');
+    if (!toggle || !drawer) return;
+
+    const openMenuLabel = "Ouvrir le menu";
+    const closeMenuLabel = "Fermer le menu";
+    const desktopQuery = window.matchMedia('(min-width: 80rem)');
+    let isDrawerOpen = false;
+
     const menuTitles = {
       root: "Menu",
       "products": "Produits","industries": "Industries","resources": "Ressources",
@@ -269,28 +276,30 @@
       if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
     };
 
+    const setDrawerState = (open) => {
+      isDrawerOpen = open;
+      header.dataset.menuState = open ? 'open' : 'closed';
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? closeMenuLabel : openMenuLabel);
+      document.body.classList.toggle('is-menu-open', open);
+    };
+
     const closeDrawer = () => {
-      header.dataset.menuState = 'closed';
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', "Ouvrir le menu");
+      setDrawerState(false);
       drawer.hidden = true;
-      document.body.classList.remove('is-menu-open');
       showPanel('root');
     };
 
     const openDrawer = () => {
       closeLanguageSwitcher();
       drawer.hidden = false;
-      requestAnimationFrame(() => {
-        header.dataset.menuState = 'open';
-        toggle.setAttribute('aria-expanded', 'true');
-        toggle.setAttribute('aria-label', "Fermer le menu");
-        document.body.classList.add('is-menu-open');
-      });
+      setDrawerState(true);
     };
 
-    toggle.addEventListener('click', () => {
-      if (header.dataset.menuState === 'open') {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (isDrawerOpen) {
         closeDrawer();
       } else {
         openDrawer();
@@ -311,12 +320,17 @@
     document.addEventListener('keydown', (event) => {
       if (event.key !== 'Escape') return;
       closeLanguageSwitcher();
-      if (header.dataset.menuState === 'open') closeDrawer();
+      if (isDrawerOpen) closeDrawer();
     });
 
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1280) closeDrawer();
-    });
+    const handleDesktopQueryChange = (event) => {
+      if (event.matches) closeDrawer();
+    };
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', handleDesktopQueryChange);
+    } else {
+      desktopQuery.addListener(handleDesktopQueryChange);
+    }
 
     showPanel('root');
     closeDrawer();
@@ -380,6 +394,34 @@
         <div class="resources-listing__body">
           
             <div class="resources-grid">
+              
+                
+                
+                
+                <article class="resource-card">
+                  <a class="resource-card__media" href="/fr/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">
+                    
+                      <img
+  src="/images/resources/2629-plastic-pallet-pallet-jack-compatibility.webp"
+  alt="Operateur d&#39;entrepot controlant l&#39;entree d&#39;un transpalette manuel sous une palette plastique bleue"
+  
+  loading="lazy"
+  decoding="async"
+  
+>
+                    
+                  </a>
+                  <div class="resource-card__body">
+                    <p class="resource-card__meta">
+                      2026-06-27
+                      <span aria-hidden="true">/</span>
+                      11 min
+                    </p>
+                    <h2 class="resource-card__title"><a href="/fr/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">Compatibilite palette plastique et transpalette : eviter les problemes d&#39;entree, roues et dessous</a></h2>
+                    <p class="resource-card__desc">Guide pratique pour les equipes entrepot et achats afin de verifier si une palette plastique fonctionne avec transpalettes manuels, transpalettes electriques et trajets charges reels.</p>
+                    <a class="resource-card__link" href="/fr/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">Lire l&#39;article</a>
+                  </div>
+                </article>
               
                 
                 

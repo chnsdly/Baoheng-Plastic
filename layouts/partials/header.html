@@ -246,6 +246,13 @@
     const backButton = header.querySelector('[data-menu-back]');
     const title = header.querySelector('[data-menu-title]');
     const languageSwitcher = header.querySelector('[data-language-switcher]');
+    if (!toggle || !drawer) return;
+
+    const openMenuLabel = {{ printf "%q" (i18n "open_menu" | default "Open menu") | safeJS }};
+    const closeMenuLabel = {{ printf "%q" (i18n "close_menu" | default "Close menu") | safeJS }};
+    const desktopQuery = window.matchMedia('(min-width: 80rem)');
+    let isDrawerOpen = false;
+
     const menuTitles = {
       root: {{ printf "%q" (i18n "menu" | default "Menu") | safeJS }},
       {{ range $menu }}{{ if .HasChildren }}{{ printf "%q" (.Identifier | default (.Name | anchorize)) | safeJS }}: {{ printf "%q" .Name | safeJS }},{{ end }}{{ end }}
@@ -263,28 +270,30 @@
       if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
     };
 
+    const setDrawerState = (open) => {
+      isDrawerOpen = open;
+      header.dataset.menuState = open ? 'open' : 'closed';
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? closeMenuLabel : openMenuLabel);
+      document.body.classList.toggle('is-menu-open', open);
+    };
+
     const closeDrawer = () => {
-      header.dataset.menuState = 'closed';
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', {{ printf "%q" (i18n "open_menu" | default "Open menu") | safeJS }});
+      setDrawerState(false);
       drawer.hidden = true;
-      document.body.classList.remove('is-menu-open');
       showPanel('root');
     };
 
     const openDrawer = () => {
       closeLanguageSwitcher();
       drawer.hidden = false;
-      requestAnimationFrame(() => {
-        header.dataset.menuState = 'open';
-        toggle.setAttribute('aria-expanded', 'true');
-        toggle.setAttribute('aria-label', {{ printf "%q" (i18n "close_menu" | default "Close menu") | safeJS }});
-        document.body.classList.add('is-menu-open');
-      });
+      setDrawerState(true);
     };
 
-    toggle.addEventListener('click', () => {
-      if (header.dataset.menuState === 'open') {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (isDrawerOpen) {
         closeDrawer();
       } else {
         openDrawer();
@@ -305,12 +314,17 @@
     document.addEventListener('keydown', (event) => {
       if (event.key !== 'Escape') return;
       closeLanguageSwitcher();
-      if (header.dataset.menuState === 'open') closeDrawer();
+      if (isDrawerOpen) closeDrawer();
     });
 
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1280) closeDrawer();
-    });
+    const handleDesktopQueryChange = (event) => {
+      if (event.matches) closeDrawer();
+    };
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', handleDesktopQueryChange);
+    } else {
+      desktopQuery.addListener(handleDesktopQueryChange);
+    }
 
     showPanel('root');
     closeDrawer();

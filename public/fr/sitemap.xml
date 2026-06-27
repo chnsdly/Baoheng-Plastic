@@ -164,20 +164,40 @@
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/products/pallets/specialty-pallets/"/>
   </url><url>
     <loc>http://localhost:1313/fr/</loc>
-    <lastmod>2026-06-26T00:00:00&#43;00:00</lastmod>
+    <lastmod>2026-06-27T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/"/>
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/"/>
   </url><url>
+    <loc>http://localhost:1313/fr/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/</loc>
+    <lastmod>2026-06-27T00:00:00&#43;00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/"/>
+    <image:image>
+      <image:loc>http://localhost:1313/images/resources/2629-plastic-pallet-pallet-jack-compatibility.webp</image:loc>
+      <image:title>Compatibilite palette plastique et transpalette : eviter les problemes d&#39;entree, roues et dessous</image:title>
+    </image:image>
+  </url><url>
     <loc>http://localhost:1313/fr/resources/insights/</loc>
-    <lastmod>2026-06-26T00:00:00&#43;00:00</lastmod>
+    <lastmod>2026-06-27T00:00:00&#43;00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/insights/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/insights/"/>
+  </url><url>
+    <loc>http://localhost:1313/fr/resources/</loc>
+    <lastmod>2026-06-27T00:00:00&#43;00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/"/>
   </url><url>
     <loc>http://localhost:1313/fr/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/</loc>
     <lastmod>2026-06-26T00:00:00&#43;00:00</lastmod>
@@ -190,14 +210,6 @@
       <image:loc>http://localhost:1313/images/resources/2628-plastic-pallet-load-shift-prevention-transport.webp</image:loc>
       <image:title>Prevention du deplacement de charge sur palette plastique : specifier pour camion et conteneur</image:title>
     </image:image>
-  </url><url>
-    <loc>http://localhost:1313/fr/resources/</loc>
-    <lastmod>2026-06-26T00:00:00&#43;00:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/resources/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="http://localhost:1313/resources/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/resources/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="http://localhost:1313/es/resources/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/resources/"/>
   </url><url>
     <loc>http://localhost:1313/fr/resources/insights/2627-plastic-pallet-drainage-drying-after-washing/</loc>
     <lastmod>2026-06-24T00:00:00&#43;00:00</lastmod>

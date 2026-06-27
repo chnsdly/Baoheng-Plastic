@@ -251,6 +251,13 @@
     const backButton = header.querySelector('[data-menu-back]');
     const title = header.querySelector('[data-menu-title]');
     const languageSwitcher = header.querySelector('[data-language-switcher]');
+    if (!toggle || !drawer) return;
+
+    const openMenuLabel = "Abrir menú";
+    const closeMenuLabel = "Cerrar menú";
+    const desktopQuery = window.matchMedia('(min-width: 80rem)');
+    let isDrawerOpen = false;
+
     const menuTitles = {
       root: "Menú",
       "products": "Productos","industries": "Industrias","resources": "Recursos",
@@ -268,28 +275,30 @@
       if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
     };
 
+    const setDrawerState = (open) => {
+      isDrawerOpen = open;
+      header.dataset.menuState = open ? 'open' : 'closed';
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? closeMenuLabel : openMenuLabel);
+      document.body.classList.toggle('is-menu-open', open);
+    };
+
     const closeDrawer = () => {
-      header.dataset.menuState = 'closed';
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', "Abrir menú");
+      setDrawerState(false);
       drawer.hidden = true;
-      document.body.classList.remove('is-menu-open');
       showPanel('root');
     };
 
     const openDrawer = () => {
       closeLanguageSwitcher();
       drawer.hidden = false;
-      requestAnimationFrame(() => {
-        header.dataset.menuState = 'open';
-        toggle.setAttribute('aria-expanded', 'true');
-        toggle.setAttribute('aria-label', "Cerrar menú");
-        document.body.classList.add('is-menu-open');
-      });
+      setDrawerState(true);
     };
 
-    toggle.addEventListener('click', () => {
-      if (header.dataset.menuState === 'open') {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (isDrawerOpen) {
         closeDrawer();
       } else {
         openDrawer();
@@ -310,12 +319,17 @@
     document.addEventListener('keydown', (event) => {
       if (event.key !== 'Escape') return;
       closeLanguageSwitcher();
-      if (header.dataset.menuState === 'open') closeDrawer();
+      if (isDrawerOpen) closeDrawer();
     });
 
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1280) closeDrawer();
-    });
+    const handleDesktopQueryChange = (event) => {
+      if (event.matches) closeDrawer();
+    };
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', handleDesktopQueryChange);
+    } else {
+      desktopQuery.addListener(handleDesktopQueryChange);
+    }
 
     showPanel('root');
     closeDrawer();
@@ -339,6 +353,14 @@
   <h1>Tags</h1>
   
   <ul>
+    
+      <li><a href="/es/tags/compatibilidad-de-palet-plastico-con-transpaleta/">Compatibilidad De Palet Plastico Con Transpaleta</a></li>
+    
+      <li><a href="/es/tags/holgura-de-entrada-de-horquillas/">Holgura De Entrada De Horquillas</a></li>
+    
+      <li><a href="/es/tags/manipulacion-en-almacen/">Manipulacion en Almacen</a></li>
+    
+      <li><a href="/es/tags/transpaleta-manual/">Transpaleta Manual</a></li>
     
       <li><a href="/es/tags/carga-en-contenedor/">Carga en Contenedor</a></li>
     

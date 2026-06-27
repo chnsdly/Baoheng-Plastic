@@ -251,6 +251,13 @@
     const backButton = header.querySelector('[data-menu-back]');
     const title = header.querySelector('[data-menu-title]');
     const languageSwitcher = header.querySelector('[data-language-switcher]');
+    if (!toggle || !drawer) return;
+
+    const openMenuLabel = "打开菜单";
+    const closeMenuLabel = "关闭菜单";
+    const desktopQuery = window.matchMedia('(min-width: 80rem)');
+    let isDrawerOpen = false;
+
     const menuTitles = {
       root: "菜单",
       "products": "产品","industries": "应用行业","resources": "资源",
@@ -268,28 +275,30 @@
       if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
     };
 
+    const setDrawerState = (open) => {
+      isDrawerOpen = open;
+      header.dataset.menuState = open ? 'open' : 'closed';
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? closeMenuLabel : openMenuLabel);
+      document.body.classList.toggle('is-menu-open', open);
+    };
+
     const closeDrawer = () => {
-      header.dataset.menuState = 'closed';
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', "打开菜单");
+      setDrawerState(false);
       drawer.hidden = true;
-      document.body.classList.remove('is-menu-open');
       showPanel('root');
     };
 
     const openDrawer = () => {
       closeLanguageSwitcher();
       drawer.hidden = false;
-      requestAnimationFrame(() => {
-        header.dataset.menuState = 'open';
-        toggle.setAttribute('aria-expanded', 'true');
-        toggle.setAttribute('aria-label', "关闭菜单");
-        document.body.classList.add('is-menu-open');
-      });
+      setDrawerState(true);
     };
 
-    toggle.addEventListener('click', () => {
-      if (header.dataset.menuState === 'open') {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (isDrawerOpen) {
         closeDrawer();
       } else {
         openDrawer();
@@ -310,12 +319,17 @@
     document.addEventListener('keydown', (event) => {
       if (event.key !== 'Escape') return;
       closeLanguageSwitcher();
-      if (header.dataset.menuState === 'open') closeDrawer();
+      if (isDrawerOpen) closeDrawer();
     });
 
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1280) closeDrawer();
-    });
+    const handleDesktopQueryChange = (event) => {
+      if (event.matches) closeDrawer();
+    };
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', handleDesktopQueryChange);
+    } else {
+      desktopQuery.addListener(handleDesktopQueryChange);
+    }
 
     showPanel('root');
     closeDrawer();
@@ -345,6 +359,8 @@
   
   
   
+    
+      
     
       
     
@@ -631,6 +647,28 @@
               
               
               <article class="resource-card">
+                <a class="resource-card__media" href="/zh/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">
+                  
+                    <img
+  src="/images/resources/2629-plastic-pallet-pallet-jack-compatibility.webp"
+  alt="仓库操作员正在检查手动搬运车是否能顺利进入蓝色塑料托盘底部"
+  
+  loading="lazy"
+  decoding="async"
+  
+>
+                  
+                </a>
+                <div class="resource-card__body">
+                  <p class="resource-card__meta">2026-06-27</p>
+                  <h3 class="resource-card__title"><a href="/zh/resources/insights/2629-plastic-pallet-pallet-jack-compatibility/">塑料托盘与手动搬运车兼容性：如何避免叉孔、轮路和底部结构问题</a></h3>
+                </div>
+              </article>
+            
+              
+              
+              
+              <article class="resource-card">
                 <a class="resource-card__media" href="/zh/resources/insights/2628-plastic-pallet-load-shift-prevention-transport/">
                   
                     <img
@@ -668,28 +706,6 @@
                 <div class="resource-card__body">
                   <p class="resource-card__meta">2026-06-24</p>
                   <h3 class="resource-card__title"><a href="/zh/resources/insights/2627-plastic-pallet-drainage-drying-after-washing/">塑料托盘清洗后的排水与干燥：如何避免卫生型仓库中的积水问题</a></h3>
-                </div>
-              </article>
-            
-              
-              
-              
-              <article class="resource-card">
-                <a class="resource-card__media" href="/zh/resources/insights/2626-anti-static-plastic-pallet-selection-guide/">
-                  
-                    <img
-  src="/images/resources/2626-anti-static-plastic-pallet-selection-guide.webp"
-  alt="仓库操作员使用表面电阻测试仪检查防静电塑料托盘"
-  
-  loading="lazy"
-  decoding="async"
-  
->
-                  
-                </a>
-                <div class="resource-card__body">
-                  <p class="resource-card__meta">2026-06-23</p>
-                  <h3 class="resource-card__title"><a href="/zh/resources/insights/2626-anti-static-plastic-pallet-selection-guide/">防静电塑料托盘：如何判断 ESD 保护是否应写进采购规格</a></h3>
                 </div>
               </article>
             
