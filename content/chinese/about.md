@@ -109,32 +109,6 @@ sustainability:
       content: "可套叠和可折叠产品可以减少空载回运和仓库存储体积。"
     - title: "材料复核"
       content: "可根据卫生、强度和成本需求评估新料或受控再生料。"
-organization:
-  "@context": "https://schema.org"
-  "@type": "Organization"
-  name: "Baoheng Plastic"
-  legalName: "Shandong Baoheng Plastic Co., Ltd."
-  url: "https://www.baohengplastic.com/"
-  logo: "https://www.baohengplastic.com/images/logo.png"
-  foundingDate: "2013-01-01"
-  address:
-    "@type": "PostalAddress"
-    streetAddress: "Xianghe Industrial Park"
-    addressLocality: "Linyi City"
-    addressRegion: "Shandong"
-    postalCode: "276000"
-    addressCountry: "CN"
-  contactPoint:
-    - "@type": "ContactPoint"
-      contactType: "sales"
-      email: "sales@baohengplastic.com"
-      telephone: "+86 13325077372"
-      areaServed: "Worldwide"
-      availableLanguage:
-        - "en"
-        - "es"
-        - "fr"
-        - "zh"
 ---
 
 宝恒塑业为仓储、物流和制造客户生产塑料托盘、围板箱、周转筐、容器和垃圾桶，并提供可靠的选型、质量控制和出口交付支持。

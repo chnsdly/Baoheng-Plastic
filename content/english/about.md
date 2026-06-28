@@ -109,32 +109,6 @@ sustainability:
       content: "Nestable and foldable products can reduce empty return and warehouse storage volume."
     - title: "Material review"
       content: "Virgin or controlled recycled-content material can be reviewed according to hygiene, strength, and cost requirements."
-organization:
-  "@context": "https://schema.org"
-  "@type": "Organization"
-  name: "Baoheng Plastic"
-  legalName: "Shandong Baoheng Plastic Co., Ltd."
-  url: "https://www.baohengplastic.com/"
-  logo: "https://www.baohengplastic.com/images/logo.png"
-  foundingDate: "2013-01-01"
-  address:
-    "@type": "PostalAddress"
-    streetAddress: "Xianghe Industrial Park"
-    addressLocality: "Linyi City"
-    addressRegion: "Shandong"
-    postalCode: "276000"
-    addressCountry: "CN"
-  contactPoint:
-    - "@type": "ContactPoint"
-      contactType: "sales"
-      email: "sales@baohengplastic.com"
-      telephone: "+86 13325077372"
-      areaServed: "Worldwide"
-      availableLanguage:
-        - "en"
-        - "es"
-        - "fr"
-        - "zh"
 ---
 
 Baoheng Plastic manufactures plastic pallets, pallet boxes, crates, containers, and waste bins for warehousing, logistics, and manufacturing customers, with dependable model selection, quality control, and export delivery support.

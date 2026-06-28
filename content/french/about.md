@@ -109,32 +109,6 @@ sustainability:
       content: "Les produits emboîtables et pliables peuvent réduire le volume de retour vide et de stockage."
     - title: "Revue matière"
       content: "Matière vierge ou contenu recyclé contrôlé peuvent être étudiés selon exigences d'hygiène, résistance et coût."
-organization:
-  "@context": "https://schema.org"
-  "@type": "Organization"
-  name: "Baoheng Plastic"
-  legalName: "Shandong Baoheng Plastic Co., Ltd."
-  url: "https://www.baohengplastic.com/"
-  logo: "https://www.baohengplastic.com/images/logo.png"
-  foundingDate: "2013-01-01"
-  address:
-    "@type": "PostalAddress"
-    streetAddress: "Xianghe Industrial Park"
-    addressLocality: "Linyi City"
-    addressRegion: "Shandong"
-    postalCode: "276000"
-    addressCountry: "CN"
-  contactPoint:
-    - "@type": "ContactPoint"
-      contactType: "sales"
-      email: "sales@baohengplastic.com"
-      telephone: "+86 13325077372"
-      areaServed: "Worldwide"
-      availableLanguage:
-        - "en"
-        - "es"
-        - "fr"
-        - "zh"
 ---
 
 Baoheng Plastic fabrique palettes plastique, caisses-palettes, bacs, conteneurs et bacs à déchets pour clients d'entrepôt, logistique et fabrication, avec sélection fiable, contrôle qualité et support livraison export.

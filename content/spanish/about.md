@@ -109,32 +109,6 @@ sustainability:
       content: "Productos anidables y plegables pueden reducir volumen de retorno vacío y almacenamiento."
     - title: "Revisión de material"
       content: "Material virgen o contenido reciclado controlado puede revisarse según higiene, resistencia y costo."
-organization:
-  "@context": "https://schema.org"
-  "@type": "Organization"
-  name: "Baoheng Plastic"
-  legalName: "Shandong Baoheng Plastic Co., Ltd."
-  url: "https://www.baohengplastic.com/"
-  logo: "https://www.baohengplastic.com/images/logo.png"
-  foundingDate: "2013-01-01"
-  address:
-    "@type": "PostalAddress"
-    streetAddress: "Xianghe Industrial Park"
-    addressLocality: "Linyi City"
-    addressRegion: "Shandong"
-    postalCode: "276000"
-    addressCountry: "CN"
-  contactPoint:
-    - "@type": "ContactPoint"
-      contactType: "sales"
-      email: "sales@baohengplastic.com"
-      telephone: "+86 13325077372"
-      areaServed: "Worldwide"
-      availableLanguage:
-        - "en"
-        - "es"
-        - "fr"
-        - "zh"
 ---
 
 Baoheng Plastic fabrica palets plásticos, cajas pallet, gavetas, contenedores y bines de residuos para clientes de almacén, logística y fabricación, con selección fiable, control de calidad y soporte de entrega de exportación.
