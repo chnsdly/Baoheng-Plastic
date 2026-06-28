@@ -1,6 +1,6 @@
 .home-hero {
   position: relative;
-  min-height: calc(84svh - var(--height-header));
+  min-height: calc(78svh - var(--height-header));
   display: grid;
   align-items: stretch;
   overflow: hidden;
@@ -22,10 +22,10 @@
   background:
     linear-gradient(
       90deg,
-      rgba(14, 26, 30, 0.56) 0%,
-      rgba(14, 26, 30, 0.42) 36%,
-      rgba(14, 26, 30, 0.18) 68%,
-      rgba(14, 26, 30, 0.06) 100%
+      rgba(14, 26, 30, 0.62) 0%,
+      rgba(14, 26, 30, 0.5) 36%,
+      rgba(14, 26, 30, 0.24) 68%,
+      rgba(14, 26, 30, 0.1) 100%
     ),
     linear-gradient(
       180deg,
@@ -40,21 +40,21 @@
   display: grid;
   grid-template-rows: minmax(min-content, 1fr) auto;
   gap: space(3);
-  min-height: calc(84svh - var(--height-header));
+  min-height: calc(78svh - var(--height-header));
   align-content: stretch;
   padding-block: clamp(4rem, 8vh, 6.5rem) clamp(1.5rem, 4vh, 2.75rem);
 }
 
 .home-hero__content {
   display: grid;
-  gap: space(2.4);
+  gap: space(2.05);
   align-self: center;
   max-width: 50rem;
 }
 
 .home-hero__eyebrow {
   margin: 0;
-  color: color-mix(in srgb, var(--accent) 56%, white);
+  color: color-mix(in srgb, var(--brand-soft) 82%, white);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
   letter-spacing: 0;
@@ -104,12 +104,12 @@
   min-height: 2.25rem;
   padding: space(0.5) space(0.8);
   border: 1px solid color-mix(in srgb, var(--on-brand) 24%, transparent);
-  border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--on-brand) 9%, transparent);
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--on-brand) 7%, transparent);
   color: color-mix(in srgb, var(--on-brand) 88%, transparent);
   font-size: var(--type-body-sm);
   font-weight: var(--weight-semibold);
-  backdrop-filter: blur(8px);
+  backdrop-filter: none;
 }
 
 .home-hero__stats {
@@ -125,9 +125,9 @@
   gap: space(0.25);
   padding: space(1.05) space(1.15);
   border: 1px solid color-mix(in srgb, var(--on-brand) 18%, transparent);
-  border-radius: var(--radius-l);
-  background: color-mix(in srgb, var(--on-brand) 10%, transparent);
-  backdrop-filter: blur(12px);
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--on-brand) 8%, transparent);
+  backdrop-filter: none;
 }
 
 .home-hero__stat strong {
@@ -142,12 +142,13 @@
 }
 
 .home-hero .button {
-  background: var(--accent);
+  border-color: var(--brand);
+  background: var(--brand);
 }
 
 .home-hero .button:hover,
 .home-hero .button:focus-visible {
-  background: color-mix(in srgb, var(--accent) 86%, black);
+  background: var(--brand-strong);
 }
 
 .home-hero .button--secondary {

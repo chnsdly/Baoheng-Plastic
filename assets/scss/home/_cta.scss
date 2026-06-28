@@ -19,15 +19,15 @@
 .cta__intro {
   display: grid;
   gap: space(1.4);
-  padding: var(--panel-padding);
-  border: 1px solid color-mix(in srgb, var(--on-brand) 16%, transparent);
-  border-radius: var(--radius-l);
-  background: color-mix(in srgb, var(--on-brand) 7%, transparent);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .cta__eyebrow {
   margin: 0;
-  color: color-mix(in srgb, var(--accent) 62%, white);
+  color: color-mix(in srgb, var(--brand-soft) 82%, white);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
   letter-spacing: 0;
@@ -94,7 +94,7 @@
   inline-size: 1.9rem;
   block-size: 1.9rem;
   border-radius: var(--radius-pill);
-  background: color-mix(in srgb, var(--accent) 72%, white);
+  background: color-mix(in srgb, var(--brand) 48%, white);
   color: var(--brand-strong);
 }
 
@@ -106,10 +106,10 @@
 .cta__card {
   padding: var(--panel-padding);
   border: var(--border);
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-m);
   background: var(--card);
   color: var(--on-surface);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow);
 }
 
 .cta__form-head {

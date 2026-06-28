@@ -21,8 +21,8 @@
   grid-template-rows: auto 1fr;
   min-width: 0;
   border: var(--border);
-  border-radius: var(--radius-m);
-  background: var(--surface);
+  border-radius: var(--radius-s);
+  background: var(--card);
   box-shadow: none;
   overflow: hidden;
   transition:
@@ -33,7 +33,7 @@
 .industries__item:hover,
 .industries__item:focus-within {
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .industries__media {
@@ -53,7 +53,7 @@
 
 .industries__item:hover .industries__image,
 .industries__item:focus-within .industries__image {
-  transform: scale(1.025);
+  transform: none;
 }
 
 .industries__content {

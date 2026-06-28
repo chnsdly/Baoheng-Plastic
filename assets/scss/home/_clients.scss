@@ -39,9 +39,9 @@
     flex: 0 0 calc((100% - (var(--clients-gap) * (var(--clients-columns) - 1))) / var(--clients-columns));
     max-width: clamp(12rem, 25vw, 18rem);
     border: var(--border);
-    border-radius: var(--radius-l);
+    border-radius: var(--radius-s);
     background: var(--card);
-    box-shadow: var(--shadow-soft);
+    box-shadow: none;
     overflow: hidden;
     isolation: isolate;
   }

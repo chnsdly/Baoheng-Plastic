@@ -4,7 +4,7 @@
    =========================================================================== */
 
 :root {
-  /* Color: precise industrial palette with warmer action accents */
+  /* Color: blue-led industrial palette with restrained support accents */
   --brand: #10698f;
   --brand-strong: #193941;
   --brand-soft: #e3f2f6;
@@ -16,15 +16,15 @@
   --green-soft: #e1f0ec;
   --on-brand: #ffffff;
 
-  --surface: #f4f6f5;
-  --surface-alt: #eef2f1;
-  --surface-strong: #d8e2df;
+  --surface: #f5f7f8;
+  --surface-alt: #eef3f5;
+  --surface-strong: #d8e2e6;
   --card: #ffffff;
   --on-surface: #172529;
   --secondary: #52646a;
   --muted: #748186;
-  --line: #d6e0de;
-  --line-strong: #c4d1ce;
+  --line: #d8e2e5;
+  --line-strong: #c4d1d7;
 
   --success: #1d7566;
   --warning: #946000;
@@ -35,7 +35,7 @@
   --on-danger: #ffffff;
 
   --img-bg:
-    linear-gradient(180deg, color-mix(in srgb, var(--brand-soft) 45%, white) 0%, var(--surface-alt) 100%);
+    linear-gradient(180deg, color-mix(in srgb, var(--brand-soft) 36%, white) 0%, var(--surface-alt) 100%);
 
   /* Layout */
   --container: 76rem;
@@ -59,10 +59,10 @@
   --radius-pill: 999px;
 
   /* Elevation */
-  --shadow: 0 1px 2px rgba(20, 35, 37, 0.05), 0 8px 18px rgba(20, 35, 37, 0.06);
-  --shadow-lg: 0 3px 8px rgba(20, 35, 37, 0.08), 0 18px 42px rgba(20, 35, 37, 0.11);
-  --shadow-hover: 0 3px 8px rgba(20, 35, 37, 0.08), 0 12px 28px rgba(20, 35, 37, 0.1);
-  --shadow-soft: 0 1px 2px rgba(20, 35, 37, 0.045);
+  --shadow: 0 1px 2px rgba(20, 35, 37, 0.04), 0 6px 16px rgba(20, 35, 37, 0.045);
+  --shadow-lg: 0 2px 6px rgba(20, 35, 37, 0.06), 0 14px 32px rgba(20, 35, 37, 0.08);
+  --shadow-hover: 0 1px 3px rgba(20, 35, 37, 0.06), 0 8px 20px rgba(20, 35, 37, 0.07);
+  --shadow-soft: 0 1px 1px rgba(20, 35, 37, 0.035);
   --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.76), inset 0 0 0 1px rgba(20, 35, 37, 0.04);
 
   /* Type */

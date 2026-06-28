@@ -1,6 +1,7 @@
 .home-featured {
   padding-block: var(--section-padding);
   background: var(--surface);
+  border-block: var(--border);
 }
 
 .home-featured__inner {
@@ -34,7 +35,7 @@
 .home-section-head__eyebrow,
 .home-product-card__type {
   margin: 0;
-  color: var(--accent);
+  color: var(--brand);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
   letter-spacing: 0;
@@ -89,7 +90,7 @@
 
 .home-section-head__link:hover,
 .home-section-head__link:focus-visible {
-  color: var(--accent-strong);
+  color: var(--brand-strong);
   text-decoration: underline;
 }
 
@@ -110,8 +111,8 @@
 
 .home-family-card {
   gap: space(1);
-  padding-top: space(1);
-  border-top: 2px solid var(--line-strong);
+  padding-top: space(0.9);
+  border-top: var(--border-strong);
   transition: border-color var(--transition-base);
 }
 
@@ -122,7 +123,7 @@
 
 .home-product-card {
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-s);
   background: var(--card);
   overflow: hidden;
   transition:
@@ -133,7 +134,7 @@
 .home-product-card:hover,
 .home-product-card:focus-within {
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
-  box-shadow: var(--shadow-hover);
+  box-shadow: none;
 }
 
 .home-family-card__media,
@@ -142,7 +143,7 @@
   place-items: center;
   aspect-ratio: 5 / 4;
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-s);
   background: color-mix(in srgb, var(--surface-alt) 62%, var(--card));
   overflow: hidden;
 }
@@ -165,7 +166,7 @@
 .home-family-card:focus-within img,
 .home-product-card:hover img,
 .home-product-card:focus-within img {
-  transform: scale(1.02);
+  transform: none;
 }
 
 .home-product-card__placeholder {
@@ -241,7 +242,7 @@
 
 .home-product-card__quote:hover,
 .home-product-card__quote:focus-visible {
-  color: var(--accent-strong);
+  color: var(--brand-strong);
 }
 
 @include mq-up(tablet) {

@@ -89,7 +89,7 @@ img {
 
 .page-eyebrow {
   margin: 0;
-  color: var(--accent);
+  color: var(--brand);
   font-size: var(--type-eyebrow);
   font-weight: var(--weight-extrabold);
   letter-spacing: 0;
@@ -121,7 +121,7 @@ img {
 
 .text-link:hover,
 .text-link:focus-visible {
-  color: var(--accent-strong);
+  color: var(--brand-strong);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
@@ -194,10 +194,10 @@ summary:focus-visible {
   min-width: 0;
   padding: var(--card-padding);
   border: var(--border);
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-m);
   background: var(--card);
   color: var(--on-surface);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
 }
 
 .industrial-card h3,
@@ -234,7 +234,7 @@ summary:focus-visible {
 }
 
 .industrial-panel--dark .page-eyebrow {
-  color: color-mix(in srgb, var(--accent) 62%, white);
+  color: color-mix(in srgb, var(--brand-soft) 82%, white);
 }
 
 .industrial-panel--dark .check-list li::before {

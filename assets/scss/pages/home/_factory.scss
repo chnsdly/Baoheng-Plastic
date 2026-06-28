@@ -17,7 +17,8 @@
   display: grid;
   min-width: 0;
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-top: var(--border-strong);
+  border-radius: var(--radius-s);
   background: var(--card);
   box-shadow: none;
   overflow: hidden;
@@ -29,7 +30,7 @@
 .factory__item:hover,
 .factory__item:focus-within {
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .factory__image {
