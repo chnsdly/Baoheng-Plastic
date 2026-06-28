@@ -17,21 +17,19 @@
   display: grid;
   min-width: 0;
   border: var(--border);
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-m);
   background: var(--card);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
   overflow: hidden;
   transition:
-    transform var(--transition-base),
     box-shadow var(--transition-base),
     border-color var(--transition-base);
 }
 
 .factory__item:hover,
 .factory__item:focus-within {
-  transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
-  box-shadow: var(--shadow-hover);
+  box-shadow: var(--shadow);
 }
 
 .factory__image {
@@ -63,5 +61,9 @@
 @include mq-up(tablet) {
   .factory__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .factory__item {
+    grid-template-rows: auto 1fr;
   }
 }

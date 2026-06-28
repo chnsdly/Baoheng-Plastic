@@ -17,7 +17,6 @@
   text-decoration: none;
   white-space: normal;
   transition:
-    transform var(--transition-base),
     box-shadow var(--transition-base),
     background-color var(--transition-base),
     border-color var(--transition-base),
@@ -29,14 +28,12 @@
 .button:focus-visible {
   background: var(--brand-strong);
   color: var(--on-brand);
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-1px);
+  box-shadow: var(--shadow);
   text-decoration: none;
 }
 
 .button:active {
   background: color-mix(in srgb, var(--brand-strong) 92%, black);
-  transform: translateY(0);
   box-shadow: var(--shadow-soft);
 }
 

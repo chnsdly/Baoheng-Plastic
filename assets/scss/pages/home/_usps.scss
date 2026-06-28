@@ -1,12 +1,12 @@
 .usps {
-  padding-block: space(2.5);
+  padding-block: 0;
   background: var(--card);
-  border-bottom: var(--border);
+  border-block: var(--border);
 }
 
 .usps__list {
   display: grid;
-  gap: space(1);
+  gap: 0;
 }
 
 .usps__item {
@@ -15,11 +15,13 @@
   gap: space(1);
   align-items: start;
   min-width: 0;
-  padding: space(1.25);
-  border: var(--border);
-  border-radius: var(--radius-l);
-  background: var(--surface);
-  box-shadow: var(--shadow-soft);
+  padding: space(1.35) 0;
+  border-top: var(--border);
+  background: transparent;
+}
+
+.usps__item:first-child {
+  border-top: 0;
 }
 
 .usps__number {
@@ -28,8 +30,8 @@
   width: 2rem;
   height: 2rem;
   border-radius: var(--radius-s);
-  background: var(--brand-soft);
-  color: var(--brand-strong);
+  background: var(--brand-strong);
+  color: var(--on-brand);
   font-size: var(--type-caption);
   font-weight: var(--weight-extrabold);
 }
@@ -56,5 +58,20 @@
 @include mq-up(laptop) {
   .usps__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .usps__item {
+    padding: space(1.55) space(1.5);
+    border-top: 0;
+    border-left: var(--border);
+  }
+
+  .usps__item:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .usps__item:last-child {
+    padding-right: 0;
   }
 }

@@ -6,9 +6,9 @@ body.is-menu-open {
   position: sticky;
   top: 0;
   z-index: var(--z-header);
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 88%, transparent);
-  background: color-mix(in srgb, var(--card) 94%, transparent);
-  box-shadow: 0 10px 28px rgba(20, 35, 37, 0.08);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 92%, transparent);
+  background: color-mix(in srgb, var(--card) 97%, transparent);
+  box-shadow: 0 1px 0 rgba(20, 35, 37, 0.04);
   backdrop-filter: saturate(150%) blur(14px);
   overflow-x: clip;
 }
@@ -86,7 +86,7 @@ body.is-menu-open {
   min-height: 2.45rem;
   padding-inline: space(0.9);
   border-radius: var(--radius-s);
-  color: color-mix(in srgb, var(--on-surface) 90%, transparent);
+  color: color-mix(in srgb, var(--on-surface) 88%, transparent);
   font-size: var(--type-ui);
   font-weight: var(--weight-semibold);
   letter-spacing: 0;
@@ -99,7 +99,7 @@ body.is-menu-open {
 .site-header__nav-link:focus-visible,
 .site-header__nav-link--current {
   color: var(--brand-strong);
-  background: var(--brand-soft);
+  background: color-mix(in srgb, var(--brand-soft) 74%, var(--card));
 }
 
 .site-header__nav-link--current {
@@ -243,7 +243,7 @@ body.is-menu-open {
 .site-header__language-link:focus-visible,
 .site-header__language-link--current {
   color: var(--brand-strong);
-  background: var(--brand-soft);
+  background: color-mix(in srgb, var(--brand-soft) 74%, var(--card));
 }
 
 .site-header__menu-toggle {
@@ -409,7 +409,7 @@ body.is-menu-open {
 .site-header__back:hover,
 .site-header__back:focus-visible {
   color: var(--brand-strong);
-  background: var(--brand-soft);
+  background: color-mix(in srgb, var(--brand-soft) 74%, var(--card));
 }
 
 .site-header__submenu,
@@ -474,7 +474,7 @@ body.is-menu-open {
 .site-header__submenu-link:focus-visible,
 .site-header__submenu-link--current {
   color: var(--brand-strong);
-  background: var(--brand-soft);
+  background: color-mix(in srgb, var(--brand-soft) 74%, var(--card));
 }
 
 .site-header__mega {
@@ -580,7 +580,7 @@ body.is-menu-open {
 .site-header__mega-link:hover,
 .site-header__mega-link:focus-visible {
   color: var(--brand-strong);
-  background: var(--brand-soft);
+  background: color-mix(in srgb, var(--brand-soft) 74%, var(--card));
 }
 
 @include mq-up(tablet) {
