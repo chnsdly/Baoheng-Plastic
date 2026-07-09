@@ -1,7 +1,7 @@
 ---
 
 title: "De pallets de madera a palets plásticos: guía práctica para actualizar el almacén"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Guía para pasar de pallets de madera a palets plásticos revisando almacenamiento, racks, higiene, retorno y coste total antes del cambio."
 layout: "resources/"
 cover_image: "images/resources/2511-wooden-to-plastic-pallets-warehouse-upgrade.webp"
 categories: "articles" # articles | downloads | news | faq

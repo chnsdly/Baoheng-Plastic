@@ -1,7 +1,7 @@
 ---
 
 title: "Cajas pallet plegables: cómo calcular el ahorro de espacio en retornos"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Método para calcular si las cajas pallet plegables reducen volumen de retorno vacío, presión de almacenamiento y coste de circulación."
 layout: "resources/"
 cover_image: "images/resources/2621-foldable-pallet-box-return-space-calculation.webp"
 categories: "articles" # articles | downloads | news | faq

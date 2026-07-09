@@ -1,7 +1,7 @@
 ---
 
 title: "Palets plásticos de superficie cerrada: cuándo especificar una cara lisa"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Criterios para decidir cuándo un palet plástico de superficie cerrada mejora higiene, soporte de producto, limpieza e inspección."
 layout: "resources/"
 cover_image: "images/resources/2620-closed-deck-plastic-pallet.webp"
 categories: "articles" # articles | downloads | news | faq

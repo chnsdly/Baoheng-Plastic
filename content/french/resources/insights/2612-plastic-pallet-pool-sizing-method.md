@@ -1,7 +1,7 @@
 ---
 
 title: "Comment dimensionner un parc de palettes plastique pour entrepôt et logistique"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Méthode pour calculer la taille d'un parc de palettes plastique, le stock de sécurité et les buffers par flux logistique."
 layout: "resources/"
 cover_image: "images/resources/2612-plastic-pallet-pool-sizing-method.webp"
 categories: "articles" # articles | downloads | news | faq

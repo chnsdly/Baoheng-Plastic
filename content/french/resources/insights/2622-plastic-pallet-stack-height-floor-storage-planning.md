@@ -1,7 +1,7 @@
 ---
 
 title: "Hauteur d’empilage des palettes plastique : planifier un stockage au sol sûr"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Guide pour planifier hauteur d'empilage, charge au sol et limites de manutention avant stockage en bloc de palettes plastique."
 layout: "resources/"
 cover_image: "images/resources/stack-height.webp"
 categories: "articles" # articles | downloads | news | faq

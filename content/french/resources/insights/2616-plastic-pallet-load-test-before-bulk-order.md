@@ -1,7 +1,7 @@
 ---
 
 title: "Essais de charge des palettes plastique avant commande en volume"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Plan de validation pour tester charge, flèche, compatibilité rack et manutention avant d'approuver une commande volume de palettes."
 layout: "resources/"
 cover_image: "images/resources/2616-plastic-pallet-load-test-before-bulk-order.webp"
 categories: "articles" # articles | downloads | news | faq

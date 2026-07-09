@@ -1,4 +1,4 @@
 ---
 title: "产品"
-description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
+description: "按产品家族、搬运场景和可询价型号浏览宝恒塑业塑料托盘、围板箱、周转筐、容器和垃圾桶。"
 ---

@@ -1,7 +1,7 @@
 ---
 
 title: "Maîtrise des impacts de chariot pour prolonger la durée de vie des palettes plastique"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "SOP pour réduire les dommages de chariot sur palettes plastique avec contrôle des impacts, codes incident et règles par allée."
 layout: "resources/"
 cover_image: "images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
 categories: "articles" # articles | downloads | news | faq

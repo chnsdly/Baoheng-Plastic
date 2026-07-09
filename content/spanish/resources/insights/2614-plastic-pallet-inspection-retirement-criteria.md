@@ -1,7 +1,7 @@
 ---
 
 title: "Criterios de inspección: cuándo reparar, degradar o retirar un palet plástico"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Criterios para inspeccionar palets plásticos y decidir si siguen en servicio, se degradan a uso ligero o se retiran antes de generar riesgos."
 layout: "resources/"
 cover_image: "images/resources/2614-plastic-pallet-inspection-retirement-criteria.webp"
 categories: "articles" # articles | downloads | news | faq

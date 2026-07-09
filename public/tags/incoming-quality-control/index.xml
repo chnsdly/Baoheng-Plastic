@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Incoming Quality Control on Baoheng Plastic</title>
-    <link>http://localhost:1313/tags/incoming-quality-control/</link>
+    <link>https://www.baohengplastic.com/tags/incoming-quality-control/</link>
     <description>Recent content in Incoming Quality Control on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/incoming-quality-control/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.baohengplastic.com/tags/incoming-quality-control/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Incoming Inspection for Plastic Pallets: A Practical QC Plan Before Warehouse Deployment</title>
-      <link>http://localhost:1313/resources/insights/2617-plastic-pallet-incoming-inspection-plan/</link>
+      <link>https://www.baohengplastic.com/resources/insights/2617-plastic-pallet-incoming-inspection-plan/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/insights/2617-plastic-pallet-incoming-inspection-plan/</guid>
+      <guid>https://www.baohengplastic.com/resources/insights/2617-plastic-pallet-incoming-inspection-plan/</guid>
       <description>&lt;p&gt;A plastic pallet shipment can look acceptable at the dock and still create problems after it enters daily warehouse circulation. The risk is not only cracked pallets. A small dimensional drift, uneven bottom runner, excessive warpage, weak label area, or inconsistent fork entry can lead to rejected loads, unstable stacking, conveyor stoppages, or disputes between procurement and operations.&lt;/p&gt;&#xA;&lt;p&gt;For procurement teams, the practical question is straightforward:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What should be checked when a new plastic pallet lot arrives, before it is released into production, storage, or outbound logistics?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

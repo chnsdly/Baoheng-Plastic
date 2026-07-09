@@ -1,7 +1,7 @@
 ---
 
 title: "Caisses-palettes pliables : comment calculer le gain d’espace au retour"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Méthode pour calculer si les caisses-palettes pliables réduisent volume de retour, pression de stockage et coût de circulation."
 layout: "resources/"
 cover_image: "images/resources/2621-foldable-pallet-box-return-space-calculation.webp"
 categories: "articles" # articles | downloads | news | faq

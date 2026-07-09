@@ -1,7 +1,7 @@
 ---
 
 title: "Comment valider un programme pilote de palettes plastique en 90 jours"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Cadre de pilote sur 90 jours pour valider les palettes plastique avant déploiement : sécurité rack, ROI, incidents et acceptation terrain."
 layout: "resources/"
 cover_image: "images/resources/2604-plastic-pallet-pilot-program-warehouse-rollout.webp"
 categories: "articles" # articles | downloads | news | faq

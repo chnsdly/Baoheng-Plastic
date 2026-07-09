@@ -1,7 +1,7 @@
 ---
 
 title: "Comment réduire la perte de palettes plastique en logistique en boucle fermée"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Programme pour réduire la perte de palettes plastique en boucle fermée avec règles de flux, propriété, KPI retour et exceptions."
 layout: "resources/"
 cover_image: "images/resources/2613-plastic-pallet-loss-control-return-program.webp"
 categories: "articles" # articles | downloads | news | faq

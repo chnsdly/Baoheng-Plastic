@@ -1,7 +1,7 @@
 ---
 
 title: "Palets plásticos encajables vs. palets para estantería: cómo elegir"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Compare palets encajables y rackables según carga, retorno vacío, exposición a estantería, transporte y coste total en operaciones B2B."
 layout: "resources/"
 cover_image: "images/resources/2606-nestable-vs-rackable-plastic-pallets.webp"
 categories: "articles" # articles | downloads | news | faq

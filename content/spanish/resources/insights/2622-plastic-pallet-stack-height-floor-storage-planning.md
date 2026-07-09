@@ -1,7 +1,7 @@
 ---
 
 title: "Altura de apilado de palets plásticos: planificación segura en suelo"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Guía para planificar altura de apilado, carga de suelo y límites de manejo antes de aprobar palets plásticos para almacenamiento en bloque."
 layout: "resources/"
 cover_image: "images/resources/stack-height.webp"
 categories: "articles" # articles | downloads | news | faq

@@ -1,7 +1,7 @@
 ---
 
 title: "SOP de limpieza para palets plásticos en almacenes alimentarios"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Procedimiento para limpiar y liberar palets plásticos en almacenes alimentarios sin comprometer higiene o ritmo operativo."
 layout: "resources/"
 cover_image: "images/resources/2611-plastic-pallet-sanitation-sop-for-food-warehouses.webp"
 categories: "articles" # articles | downloads | news | faq

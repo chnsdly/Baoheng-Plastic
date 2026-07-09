@@ -1,7 +1,7 @@
 ---
 
 title: "Control de impactos de montacargas para prolongar la vida útil del palet plástico"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "SOP para reducir daños por montacargas en palets plásticos mediante control de impactos, códigos de incidente y reglas por carril."
 layout: "resources/"
 cover_image: "images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
 categories: "articles" # articles | downloads | news | faq

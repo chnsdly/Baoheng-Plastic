@@ -1,7 +1,7 @@
 ---
 
 title: "Palettes plastique à plateau fermé : quand spécifier une surface lisse"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Critères pour décider quand une palette plastique à plateau fermé améliore hygiène, support produit, nettoyage et inspection."
 layout: "resources/"
 cover_image: "images/resources/2620-closed-deck-plastic-pallet.webp"
 categories: "articles" # articles | downloads | news | faq

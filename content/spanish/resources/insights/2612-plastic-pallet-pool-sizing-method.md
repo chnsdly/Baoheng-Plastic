@@ -1,7 +1,7 @@
 ---
 
 title: "Cómo dimensionar un pool de palets plásticos para almacén y logística"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Método para calcular el tamaño del pool de palets plásticos, stock de seguridad y buffers por ruta en operaciones de almacén y transporte."
 layout: "resources/"
 cover_image: "images/resources/2612-plastic-pallet-pool-sizing-method.webp"
 categories: "articles" # articles | downloads | news | faq

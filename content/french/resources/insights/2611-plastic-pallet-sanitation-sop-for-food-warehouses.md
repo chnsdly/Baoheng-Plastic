@@ -1,7 +1,7 @@
 ---
 
 title: "SOP de nettoyage des palettes plastique pour entrepôts alimentaires"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Procédure pour nettoyer et libérer des palettes plastique en entrepôt alimentaire sans compromettre hygiène ni cadence."
 layout: "resources/"
 cover_image: "images/resources/2611-plastic-pallet-sanitation-sop-for-food-warehouses.webp"
 categories: "articles" # articles | downloads | news | faq

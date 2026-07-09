@@ -1,7 +1,7 @@
 ---
 
 title: "Spécification de palettes plastique pour convoyeurs, AS/RS et automatisation"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Checklist pour palettes plastique sur convoyeurs, AS/RS et entrepôts automatisés : tolérances, dessous, flèche et essais pilotes."
 layout: "resources/"
 cover_image: "images/resources/2609-automation-ready-plastic-pallet-specification.webp"
 categories: "articles" # articles | downloads | news | faq

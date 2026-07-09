@@ -1,7 +1,7 @@
 ---
 
 title: "Sistema de trazabilidad y etiquetado para palets plásticos en almacén"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Guía para diseñar etiquetas, ID, puntos de escaneo y reglas de datos que mantengan trazabilidad de palets plásticos reutilizables."
 layout: "resources/"
 cover_image: "images/resources/2615-plastic-pallet-traceability-labeling-system.webp"
 categories: "articles" # articles | downloads | news | faq

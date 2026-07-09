@@ -1,7 +1,7 @@
 ---
 
 title: "Plan de inspección de recepción para palets plásticos"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Plan QC para inspeccionar lotes de palets plásticos antes de liberarlos: muestreo, dimensiones, pruebas funcionales, defectos y feedback."
 layout: "resources/"
 cover_image: "images/resources/2617-plastic-pallet-incoming-inspection-plan.webp"
 categories: "articles" # articles | downloads | news | faq

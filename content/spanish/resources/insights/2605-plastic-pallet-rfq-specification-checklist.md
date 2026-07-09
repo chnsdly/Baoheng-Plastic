@@ -1,7 +1,7 @@
 ---
 
 title: "Lista RFQ para especificar palets plásticos sin errores costosos"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Lista RFQ para pedir palets plásticos con datos claros de carga, rack, material, refuerzo, pruebas, embalaje, documentos y términos comerciales."
 layout: "resources/"
 cover_image: "images/resources/2605.webp"
 categories: "articles" # articles | downloads | news | faq

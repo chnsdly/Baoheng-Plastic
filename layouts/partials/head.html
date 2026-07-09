@@ -21,7 +21,11 @@
   {{- $title = truncate 68 $title -}}
 {{- end -}}
 
-{{- $rawDescription := (index $productCopy "card") | default .Description | default .Params.hero_description | default .Summary | default .Site.Params.description -}}
+{{- $rawDescription := .Params.seo_description | default .Description | default .Params.hero_description | default (index $productCopy "card") | default .Summary | default .Site.Params.description -}}
+{{- if and .IsPage (eq .Section "products") (not .Params.seo_description) -}}
+  {{- $productBaseDescription := .Description | default .Params.hero_description | default (index $productCopy "card") | default .Summary | default .Site.Params.description -}}
+  {{- $rawDescription = printf "%s: %s" (.Title | plainify) ($productBaseDescription | plainify) -}}
+{{- end -}}
 {{- $descriptionText := $rawDescription | plainify -}}
 {{- if and (lt (len $descriptionText) 50) .Params.hero_description -}}
   {{- $descriptionText = .Params.hero_description | plainify -}}
@@ -75,10 +79,6 @@
 <meta name="robots" content="{{ $robots }}">
 
 <link rel="canonical" href="{{ .Permalink }}">
-{{- if and .IsNode .Paginator }}
-{{ with .Paginator.Prev }}<link rel="prev" href="{{ .URL | absURL }}">{{ end }}
-{{ with .Paginator.Next }}<link rel="next" href="{{ .URL | absURL }}">{{ end }}
-{{- end }}
 
 {{- with .OutputFormats.Get "rss" }}
 <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} RSS" href="{{ .Permalink }}">

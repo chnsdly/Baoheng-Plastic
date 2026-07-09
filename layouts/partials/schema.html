@@ -10,7 +10,12 @@
 {{- if and .IsPage (eq .Section "products") -}}
   {{- $productCopy = partial "product-copy.html" . -}}
 {{- end -}}
-{{- $desc := ((index $productCopy "card") | default .Description | default .Params.hero_description | default .Summary | default .Site.Params.description | plainify) -}}
+{{- $descSource := .Params.seo_description | default .Description | default .Params.hero_description | default (index $productCopy "card") | default .Summary | default .Site.Params.description -}}
+{{- if and .IsPage (eq .Section "products") (not .Params.seo_description) -}}
+  {{- $productBaseDescription := .Description | default .Params.hero_description | default (index $productCopy "card") | default .Summary | default .Site.Params.description -}}
+  {{- $descSource = printf "%s: %s" (.Title | plainify) ($productBaseDescription | plainify) -}}
+{{- end -}}
+{{- $desc := ($descSource | plainify) -}}
 
 {{- $pageImageSource := "" -}}
 {{- with .Params.images -}}

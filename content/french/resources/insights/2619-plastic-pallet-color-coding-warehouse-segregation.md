@@ -1,7 +1,7 @@
 ---
 
 title: "Codage couleur des palettes plastique pour éviter les mélanges en entrepôt"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Guide pour créer un codage couleur des palettes plastique et réduire contact croisé, mélanges produit et erreurs de manutention."
 layout: "resources/"
 cover_image: "images/resources/2619-plastic-pallet-color-coding-warehouse-segregation.webp"
 categories: "articles" # articles | downloads | news | faq

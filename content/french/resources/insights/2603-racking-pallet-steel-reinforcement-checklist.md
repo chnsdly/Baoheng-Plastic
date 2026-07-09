@@ -1,7 +1,7 @@
 ---
 
 title: "Liste de contr?le du renfort par tubes acier pour palettes en rayonnage"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Checklist pour évaluer les renforts acier des palettes plastique rackables : position, charge, flèche, corrosion, échantillons et limites."
 layout: "resources/"
 cover_image: "images/resources/2603-steel-reinforced-racking-plastic-pallet-checklist.webp"
 categories: "articles" # articles | downloads | news | faq

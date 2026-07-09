@@ -1,6 +1,6 @@
 ---
-title: "1210 palet plástico para alimentos y uso médico"
-description: "1210 palet plástico para alimentos y uso médico de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Dimensiones nominales: 1200 × 1000 × 150 mm. Material: HDPE/PP. Referencia de carga: carga dinámica 0.9 t, carga estática 3 t, carga en estantería 1 t. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Palet plástico verde 1210 para alimentos y uso médico"
+description: "Palet plástico verde 1210 para alimentos y uso médico, orientado a limpieza, zonas codificadas por color y producción controlada."
 aliases:
   - "/products/pallets/food_green_1210/"
 featured_image: "/images/products/pallet/food/1210-green-hero.jpg"

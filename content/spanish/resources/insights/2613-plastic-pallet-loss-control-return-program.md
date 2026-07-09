@@ -1,7 +1,7 @@
 ---
 
 title: "Cómo reducir la pérdida de palets plásticos en logística de circuito cerrado"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Programa para reducir pérdida de palets plásticos en circuitos cerrados con reglas de ruta, propiedad, KPI de retorno y gestión de excepciones."
 layout: "resources/"
 cover_image: "images/resources/2613-plastic-pallet-loss-control-return-program.webp"
 categories: "articles" # articles | downloads | news | faq

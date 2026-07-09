@@ -1,7 +1,7 @@
 ---
 
 title: "Deflexión de palets plásticos en estantería: criterios de aceptación"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Guía para definir límites de deflexión en rack, condiciones de prueba y reglas de aceptación antes de comprar palets plásticos rackables."
 layout: "resources/"
 cover_image: "images/resources/2623-plastic-pallet-rack-deflection-acceptance-criteria.webp"
 categories: "articles" # articles | downloads | news | faq

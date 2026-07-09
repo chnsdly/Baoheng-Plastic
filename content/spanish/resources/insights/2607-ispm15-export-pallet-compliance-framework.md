@@ -1,7 +1,7 @@
 ---
 
 title: "ISPM 15 y palets de exportación: marco de decisión para equipos de compras"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Guía para equipos exportadores sobre cuándo aplica ISPM 15, dónde fallan los palets de madera y cómo evaluar alternativas plásticas."
 layout: "resources/"
 cover_image: "images/resources/2607-ispm15-export-pallet-compliance-framework.webp"
 categories: "articles" # articles | downloads | news | faq

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plastic Pallet Load Test on Baoheng Plastic</title>
-    <link>http://localhost:1313/tags/plastic-pallet-load-test/</link>
+    <link>https://www.baohengplastic.com/tags/plastic-pallet-load-test/</link>
     <description>Recent content in Plastic Pallet Load Test on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/plastic-pallet-load-test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.baohengplastic.com/tags/plastic-pallet-load-test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plastic Pallet Load Testing Before Bulk Orders: A Practical Validation Plan for B2B Buyers</title>
-      <link>http://localhost:1313/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/</link>
+      <link>https://www.baohengplastic.com/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/</guid>
+      <guid>https://www.baohengplastic.com/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/</guid>
       <description>&lt;p&gt;A plastic pallet specification can look correct on paper and still fail in a real warehouse. The problem is rarely one single number. Static load, dynamic load, and racking load are useful starting points, but they do not fully describe how a pallet behaves under uneven cartons, humid floors, fork impacts, rack beam spacing, cold-room cycles, or repeated stacking.&lt;/p&gt;&#xA;&lt;p&gt;For procurement teams, the safest approach is to validate the pallet before the bulk order is released. A structured plastic pallet load test does not need to be complicated, but it must reproduce the risks that matter in the actual operation. The goal is not to prove that a pallet can survive one impressive overload. The goal is to confirm that the selected model can support daily work without unacceptable deflection, instability, damage, or process delays.&lt;/p&gt;</description>
     </item>
   </channel>

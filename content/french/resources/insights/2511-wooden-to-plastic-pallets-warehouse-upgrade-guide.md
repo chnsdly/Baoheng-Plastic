@@ -1,7 +1,7 @@
 ---
 
 title: "Guide pratique pour passer des palettes bois aux palettes plastique dans les entrepôts"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Guide pour passer des palettes bois aux palettes plastique en vérifiant stockage, racks, hygiène, retours et coût total avant changement."
 layout: "resources/"
 cover_image: "images/resources/2511-wooden-to-plastic-pallets-warehouse-upgrade.webp"
 categories: "articles" # articles | downloads | news | faq

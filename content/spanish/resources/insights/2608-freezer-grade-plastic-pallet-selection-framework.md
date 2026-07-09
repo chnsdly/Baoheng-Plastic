@@ -1,7 +1,7 @@
 ---
 
 title: "Cómo especificar palets plásticos para cámaras de congelación de -25 °C a -18 °C"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Criterios para especificar palets plásticos en congelación de -25 °C a -18 °C, revisando material, impacto, limpieza y validación en frío."
 layout: "resources/"
 cover_image: "images/resources/2608-freezer-grade-plastic-pallet-selection-framework.webp"
 categories: "articles" # articles | downloads | news | faq

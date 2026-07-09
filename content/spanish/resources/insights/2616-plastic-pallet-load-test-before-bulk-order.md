@@ -1,7 +1,7 @@
 ---
 
 title: "Pruebas de carga de palets plásticos antes de pedidos en volumen"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Plan de validación para probar carga, deflexión, compatibilidad con rack y desempeño de manejo antes de aprobar pedidos grandes de palets."
 layout: "resources/"
 cover_image: "images/resources/2616-plastic-pallet-load-test-before-bulk-order.webp"
 categories: "articles" # articles | downloads | news | faq

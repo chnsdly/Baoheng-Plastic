@@ -1,4 +1,4 @@
 ---
 title: "Productos"
-description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
+description: "Explore las familias de productos Baoheng Plastic por categoría de fábrica, uso de manejo y modelos listos para cotizar."
 ---

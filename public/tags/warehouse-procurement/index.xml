@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Warehouse Procurement on Baoheng Plastic</title>
-    <link>http://localhost:1313/tags/warehouse-procurement/</link>
+    <link>https://www.baohengplastic.com/tags/warehouse-procurement/</link>
     <description>Recent content in Warehouse Procurement on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/warehouse-procurement/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.baohengplastic.com/tags/warehouse-procurement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nestable vs Rackable Plastic Pallets: A Buyer’s Decision Framework for Export and Warehouse Operations</title>
-      <link>http://localhost:1313/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</link>
+      <link>https://www.baohengplastic.com/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</guid>
+      <guid>https://www.baohengplastic.com/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</guid>
       <description>&lt;p&gt;Choosing plastic pallets is often treated as a material question. In real projects, the bigger question is structural: &lt;strong&gt;should you buy nestable pallets or rackable pallets&lt;/strong&gt;?&lt;/p&gt;&#xA;&lt;p&gt;For procurement teams, this decision directly affects freight cost, racking safety, handling efficiency, and replacement rate. A pallet that looks cheaper per unit can become the more expensive option once transport, storage, and damage risk are included.&lt;/p&gt;&#xA;&lt;p&gt;This guide provides a practical decision framework for procurement teams, warehouse managers, and logistics leaders who need to choose the right pallet architecture before quotation and rollout.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Plastic Pallet RFQ Checklist: 12 Specifications Buyers Should Lock Before Quoting</title>
-      <link>http://localhost:1313/resources/insights/2605-plastic-pallet-rfq-specification-checklist/</link>
+      <link>https://www.baohengplastic.com/resources/insights/2605-plastic-pallet-rfq-specification-checklist/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resources/insights/2605-plastic-pallet-rfq-specification-checklist/</guid>
+      <guid>https://www.baohengplastic.com/resources/insights/2605-plastic-pallet-rfq-specification-checklist/</guid>
       <description>&lt;p&gt;A large share of plastic pallet sourcing problems starts before production, before sampling, and before negotiation. It starts in the RFQ.&lt;/p&gt;&#xA;&lt;p&gt;When the request for quotation is vague, suppliers quote different assumptions. One quote may be based on light-duty recycled material, another on virgin HDPE with steel reinforcement, and another on a different test method. Prices look comparable on paper, but they are not quotes for the same product.&lt;/p&gt;&#xA;&lt;p&gt;For procurement teams, warehouse managers, and logistics leads, this creates a familiar cycle: a low initial price, poor field performance, urgent replacements, and difficult internal explanations. The fix is not “buy the most expensive pallet.” The fix is to define the right specification set before asking for price.&lt;/p&gt;</description>
     </item>
   </channel>

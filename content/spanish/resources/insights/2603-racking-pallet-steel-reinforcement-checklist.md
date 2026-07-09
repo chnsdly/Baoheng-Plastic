@@ -1,7 +1,7 @@
 ---
 
 title: "Lista de verificación de refuerzo con tubos de acero para palets en estantería"
-description: "Guía técnica para equipos de compras, almacén y logística: define criterios de carga, validación, calidad y RFQ antes de comprar en volumen."
+description: "Checklist para evaluar refuerzos de acero en palets plásticos rackables: posición, carga, deflexión, corrosión, muestras y límites de uso."
 layout: "resources/"
 cover_image: "images/resources/2603-steel-reinforced-racking-plastic-pallet-checklist.webp"
 categories: "articles" # articles | downloads | news | faq

@@ -1,7 +1,7 @@
 ---
 
 title: "Guide logistique pour réduire les coûts de retour des palettes vides"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Playbook pour réduire fret de retour à vide, temps d'immobilisation et pertes dans les programmes de palettes plastique."
 layout: "resources/"
 cover_image: "images/resources/2618-plastic-pallet-empty-return-logistics-playbook.webp"
 categories: "articles" # articles | downloads | news | faq

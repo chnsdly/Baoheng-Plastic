@@ -1,6 +1,6 @@
 ---
-title: "1210 palette plastique pour alimentaire et usage médical"
-description: "1210 palette plastique pour alimentaire et usage médical de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1200 × 1000 × 150 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 0.9 t, charge statique 3 t, charge en rayonnage 1 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Palette plastique bleue 1210 pour alimentaire et usage médical"
+description: "Palette plastique bleue 1210 pour alimentaire et usage médical, avec surface lisse hygiénique pour nettoyage, codage couleur et zones contrôlées."
 aliases:
   - "/products/pallets/food_blue_1210/"
 featured_image: "/images/products/pallet/food/1210-blue-hero.jpg"

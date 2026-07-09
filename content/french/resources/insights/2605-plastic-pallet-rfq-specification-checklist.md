@@ -1,7 +1,7 @@
 ---
 
 title: "Liste de contrôle RFQ pour spécifier des palettes plastique sans erreurs coûteuses"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Liste RFQ pour demander des palettes plastique avec données claires sur charge, rack, matière, renfort, essais, emballage et documents."
 layout: "resources/"
 cover_image: "images/resources/2605.webp"
 categories: "articles" # articles | downloads | news | faq

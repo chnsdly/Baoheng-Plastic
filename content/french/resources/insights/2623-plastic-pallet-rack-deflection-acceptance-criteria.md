@@ -1,7 +1,7 @@
 ---
 
 title: "Flèche des palettes plastique en rayonnage : critères d’acceptation"
-description: "Guide technique pour les équipes achats, entrepôt et logistique : définir les critères de charge, validation, qualité et RFQ avant une commande en volume."
+description: "Guide pour définir limites de flèche en rack, conditions d'essai et règles d'acceptation avant l'achat de palettes rackables."
 layout: "resources/"
 cover_image: "images/resources/2623-plastic-pallet-rack-deflection-acceptance-criteria.webp"
 categories: "articles" # articles | downloads | news | faq
