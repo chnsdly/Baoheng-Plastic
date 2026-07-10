@@ -1,3 +1,5 @@
 /public/
 /resources/_gen/
 /.codex-build/
+/prompts/
+/runs/
