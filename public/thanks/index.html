@@ -41,6 +41,7 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -137,7 +138,7 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
           <a class="site-header__cta site-header__cta--outline" href="/selection-support/">Product Selection Support</a>
           <a class="site-header__cta site-header__cta--primary" href="/contact/">Request a Quote</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="Language: EN">
               <span class="site-header__language-label font-meta">EN</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -166,7 +167,7 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="Back">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>Menu</p>
@@ -285,9 +286,11 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -295,6 +298,10 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -325,7 +332,7 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -339,7 +346,7 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <nav class="breadcrumb" aria-label="Breadcrumb">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
@@ -352,8 +359,14 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
     </div>
   </nav>
     
-  <h1>Submission received</h1>
-  <p>Thank you for your submission.</p>
+  <section class="basic-page">
+    <div class="container container--narrow">
+      <header class="basic-page__header">
+        <p class="page-eyebrow">Overview</p>
+        <h1 class="basic-page__title">Submission received</h1>
+      </header>
+
+      <div class="prose"><p>Thank you for your submission.</p>
 <a id="dl-btn" href="#" class="button font-meta" hidden>Download now</a>
 <script>
   // Build a download link from the URL query string ?dl=slug
@@ -369,11 +382,11 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
     }
   })();
 </script>
+</div>
 
-  <ul>
-    
-  </ul>
-
+      
+    </div>
+  </section>
 
   </main>
 
@@ -383,8 +396,8 @@ Download now"><meta name="twitter:image" content="http://localhost:1313/images/
       <a class="site-footer__logo" href="/">Baoheng Plastic</a>
       <p class="site-footer__summary">Factory-direct plastic pallets, pallet boxes, crates, containers, and waste bins for warehousing, logistics, food, cold-chain, manufacturing, and municipal projects.</p>
       <div class="site-footer__actions">
+        <a class="button" href="/contact/">Request a quote</a>
         <a class="button button--secondary" href="/products/">Browse products</a>
-        <a class="button button--ghost" href="/contact/">Request a quote</a>
       </div>
     </div>
 

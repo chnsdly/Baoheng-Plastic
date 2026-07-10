@@ -5,21 +5,7 @@
 {{- $secondary := $hero.secondary_cta -}}
 
 <section class="home-hero">
-  {{ with $image }}
-    {{ partial "responsive-image.html" (dict
-      "src" .
-      "alt" ""
-      "class" "home-hero__bg"
-      "sizes" "100vw"
-      "widths" (slice 768 1280 1600 1920)
-      "loading" "eager"
-      "fetch" "high"
-    ) }}
-  {{ end }}
-
-  <div class="home-hero__overlay" aria-hidden="true"></div>
-
-  <div class="container home-hero__inner">
+  <div class="container container--wide home-hero__inner">
     <div class="home-hero__content">
       <p class="home-hero__eyebrow">{{ $hero.eyebrow | default (i18n "home_hero_eyebrow") }}</p>
       <h1 class="home-hero__title">{{ $hero.title | default (i18n "home_hero_title") }}</h1>
@@ -31,21 +17,28 @@
       </div>
 
       {{ with $hero.proof_points }}
-        <ul class="home-hero__proof" role="list">
-          {{ range . }}<li>{{ . }}</li>{{ end }}
-        </ul>
+        <div class="home-hero__proof-wrap">
+          {{ with $hero.proof_title }}<p class="home-hero__proof-title">{{ . }}</p>{{ end }}
+          <ul class="home-hero__proof" role="list">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </div>
       {{ end }}
     </div>
 
-    {{ with $hero.stats }}
-      <div class="home-hero__stats" role="list" aria-label="{{ i18n "home_factory_facts" }}">
-        {{ range . }}
-          <div class="home-hero__stat" role="listitem">
-            <strong>{{ .value }}</strong>
-            <span>{{ .label }}</span>
-          </div>
-        {{ end }}
-      </div>
+    {{ with $image }}
+      <figure class="home-hero__media">
+        {{ partial "responsive-image.html" (dict
+          "src" .
+          "alt" ""
+          "class" "home-hero__image"
+          "sizes" "(min-width: 64rem) 48vw, 92vw"
+          "widths" (slice 640 960 1280 1600)
+          "loading" "eager"
+          "fetch" "high"
+        ) }}
+        {{ with $hero.visual_caption }}<figcaption class="home-hero__caption">{{ . }}</figcaption>{{ end }}
+      </figure>
     {{ end }}
   </div>
 </section>

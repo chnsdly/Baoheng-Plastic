@@ -1,32 +1,17 @@
-{{ if.Paginator.HasPages }}
-<div class="res-pager">
-    
-    {{ if.Paginator.Prev }}
-    <a href="{{.Paginator.Prev.URL }}" class="pager-prev">
-        &laquo; 上一页
-    </a>
-    {{ else }}
-    <span class="pager-prev disabled">
-        &laquo; 上一页
-    </span>
-    {{ end }}
-
-    {{ range.Paginator.Pagers }}
-        {{ $page :=. }}
-        <a href="{{ $page.URL }}" class="pager-num {{ if $page.IsCurrent }}current{{ end }}">
-            {{ $page.PageNumber }}
-        </a>
-    {{ end }}
-    
-    {{ if.Paginator.Next }}
-    <a href="{{.Paginator.Next.URL }}" class="pager-next">
-        下一页 &raquo;
-    </a>
-    {{ else }}
-    <span class="pager-next disabled">
-        下一页 &raquo;
-    </span>
-    {{ end }}
-
-</div>
+{{ if .Paginator.HasPages }}
+<nav class="res-pager" aria-label="{{ i18n "pagination" }}">
+  {{ if .Paginator.Prev }}
+    <a class="pager-prev" href="{{ .Paginator.Prev.URL }}" rel="prev">&larr; {{ i18n "pagination_previous" }}</a>
+  {{ else }}
+    <span class="pager-prev disabled" aria-disabled="true">&larr; {{ i18n "pagination_previous" }}</span>
+  {{ end }}
+  {{ range .Paginator.Pagers }}
+    <a class="pager-num{{ if .IsCurrent }} current{{ end }}" href="{{ .URL }}" aria-label="{{ i18n "pagination_page" }} {{ .PageNumber }}"{{ if .IsCurrent }} aria-current="page"{{ end }}>{{ .PageNumber }}</a>
+  {{ end }}
+  {{ if .Paginator.Next }}
+    <a class="pager-next" href="{{ .Paginator.Next.URL }}" rel="next">{{ i18n "pagination_next" }} &rarr;</a>
+  {{ else }}
+    <span class="pager-next disabled" aria-disabled="true">{{ i18n "pagination_next" }} &rarr;</span>
+  {{ end }}
+</nav>
 {{ end }}

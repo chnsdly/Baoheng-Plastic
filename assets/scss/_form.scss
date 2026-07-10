@@ -111,8 +111,7 @@
   display: none !important;
 }
 
-@media (min-width: 640px) {
-  .lead-form {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+/* Keep embedded inquiry forms readable in narrow side-by-side layouts. */
+.lead-form :is(input, textarea):user-invalid {
+  border-color: var(--danger);
 }

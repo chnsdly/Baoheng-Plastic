@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -135,7 +136,7 @@
           <a class="site-header__cta site-header__cta--outline" href="/zh/selection-support/">产品选型支持</a>
           <a class="site-header__cta site-header__cta--primary" href="/zh/contact/">请求报价</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="语言: 中文">
               <span class="site-header__language-label font-meta">中文</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -164,7 +165,7 @@
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="返回">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>菜单</p>
@@ -283,9 +284,11 @@
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -293,6 +296,10 @@
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -323,7 +330,7 @@
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -337,7 +344,7 @@
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <nav class="breadcrumb" aria-label="面包屑导航">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
@@ -465,7 +472,7 @@
     </header>
 
     <div class="container resource-single__layout">
-      <main class="resource-single__main">
+      <div class="resource-single__main">
         
           <img
   src="/images/resources/2610-forklift-impact-control-for-plastic-pallet-lifecycle.webp"
@@ -626,7 +633,7 @@
             
           </div>
         
-      </main>
+      </div>
 
       <aside class="resource-single__aside">
         <div class="resource-cta">
@@ -727,8 +734,8 @@
       <a class="site-footer__logo" href="/zh/">Baoheng Plastic</a>
       <p class="site-footer__summary">源头工厂供应塑料托盘、卡板箱、周转筐、周转箱和环卫垃圾桶，面向仓储、物流、食品、冷链、制造与市政项目提供选型和批量报价支持。</p>
       <div class="site-footer__actions">
+        <a class="button" href="/zh/contact/">提交询盘</a>
         <a class="button button--secondary" href="/zh/products/">浏览产品</a>
-        <a class="button button--ghost" href="/zh/contact/">提交询盘</a>
       </div>
     </div>
 

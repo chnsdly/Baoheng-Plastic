@@ -15,16 +15,18 @@ home_hero:
   secondary_cta:
     label: "Ver productos"
     url: "/products/"
-  stats:
-    - value: "2013"
-      label: "Enfoque en plásticos industriales"
-    - value: "20.000 m²"
-      label: "Área de fábrica y almacén"
-    - value: "30+"
-      label: "Cobertura de proyectos de exportación"
-
+  proof_title: "La selección empieza con cuatro comprobaciones"
+  proof_points:
+    - "Tipo de carga y distribución"
+    - "Interfaz con carretilla, transpaleta, rack o transportador"
+    - "Temperatura, higiene y exposición"
+    - "Cantidad, embalaje, destino y plazo"
+  visual_caption: "La recomendación sigue siendo preliminar hasta confirmar la carga real, el apoyo, el equipo de manipulación y el entorno."
 usps:
   enable: true
+  eyebrow: "Ruta práctica de selección"
+  title: "De las condiciones operativas a una especificación lista para cotizar"
+  description: "Una cotización útil empieza por el flujo de trabajo, valida las interfaces críticas y deja claras las condiciones pendientes de confirmar."
   items:
     - title: "Empezar por la aplicación"
       description: "Confirmamos tipo de carga, modo de almacenamiento, temperatura, compatibilidad con montacargas/estantería y carga de contenedor antes de recomendar modelos."
@@ -99,6 +101,7 @@ industries:
 
 clients:
   enable: true
+  eyebrow: "Colaboración de proyecto"
   title: "Visitas de fábrica, seguimiento de proyectos y suministro a largo plazo"
   description: "La colaboración real no es solo intercambio de catálogo. Apoyamos selección, muestras, carga, reposición y ajustes cuando cambian las condiciones de operación."
   items:

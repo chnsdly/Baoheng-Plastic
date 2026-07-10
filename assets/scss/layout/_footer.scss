@@ -1,7 +1,6 @@
 .site-footer {
   border-top: 1px solid color-mix(in srgb, var(--on-brand) 12%, transparent);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--brand-strong) 94%, black), var(--brand-strong));
+  background: var(--brand-strong);
   color: color-mix(in srgb, var(--on-brand) 86%, transparent);
 }
 
@@ -118,12 +117,18 @@
 }
 
 @include mq-up(tablet) {
+  .site-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include mq-up(laptop) {
   .site-footer__inner {
     grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.4fr);
     align-items: start;
   }
 
   .site-footer__grid {
-    grid-template-columns: repeat(3, minmax(9rem, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

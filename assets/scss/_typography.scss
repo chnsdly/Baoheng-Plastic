@@ -118,7 +118,7 @@ h1 {
   @extend .font-display;
   font-weight: var(--weight-bold);
   line-height: var(--line-tight);
-  letter-spacing: 0;
+  letter-spacing: var(--tracking-heading-1);
 }
 
 h2 {
@@ -126,7 +126,7 @@ h2 {
   font-size: var(--type-section-title);
   font-weight: var(--weight-bold);
   line-height: var(--line-tight);
-  letter-spacing: 0;
+  letter-spacing: var(--tracking-heading-2);
 }
 
 h3 {
@@ -134,7 +134,7 @@ h3 {
   font-size: var(--type-subsection-title);
   font-weight: var(--weight-semibold);
   line-height: var(--line-tight);
-  letter-spacing: 0;
+  letter-spacing: var(--tracking-heading-3);
 }
 
 h4 {
@@ -158,7 +158,7 @@ h6 {
   font-weight: var(--weight-bold);
   line-height: var(--line-normal);
   text-transform: uppercase;
-  letter-spacing: 0;
+  letter-spacing: var(--tracking-heading-compact);
 }
 
 .text-brand { color: var(--brand); }
@@ -241,6 +241,12 @@ h6 {
   }
 }
 
+:lang(zh) {
+  --tracking-heading-1: 0;
+  --tracking-heading-2: 0;
+  --tracking-heading-3: 0;
+  --tracking-heading-compact: 0;
+}
 @media (prefers-contrast: high) {
   :root {
     --brand: #005b80;

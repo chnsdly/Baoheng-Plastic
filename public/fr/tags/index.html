@@ -37,6 +37,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -133,7 +134,7 @@
           <a class="site-header__cta site-header__cta--outline" href="/fr/selection-support/">Aide à la sélection</a>
           <a class="site-header__cta site-header__cta--primary" href="/fr/contact/">Demander un devis</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="Langue: FR">
               <span class="site-header__language-label font-meta">FR</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -162,7 +163,7 @@
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="Retour">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>Menu</p>
@@ -281,9 +282,11 @@
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -291,6 +294,10 @@
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -321,7 +328,7 @@
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -335,7 +342,7 @@
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <nav class="breadcrumb" aria-label="Fil d&#39;Ariane">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
@@ -348,174 +355,346 @@
     </div>
   </nav>
     
-  <h1>Tags</h1>
-  
-  <ul>
-    
-      <li><a href="/fr/tags/documentation-palette/">Documentation Palette</a></li>
-    
-      <li><a href="/fr/tags/emballage-r%C3%A9utilisable/">Emballage Réutilisable</a></li>
-    
-      <li><a href="/fr/tags/eu-ppwr/">EU PPWR</a></li>
-    
-      <li><a href="/fr/tags/palettes-plastique-r%C3%A9utilisables/">Palettes Plastique Réutilisables</a></li>
-    
-      <li><a href="/fr/tags/palettes-inject%C3%A9es/">Palettes Injectées</a></li>
-    
-      <li><a href="/fr/tags/palettes-souffl%C3%A9es/">Palettes Soufflées</a></li>
-    
-      <li><a href="/fr/tags/rfq-palettes/">RFQ Palettes</a></li>
-    
-      <li><a href="/fr/tags/s%C3%A9lection-de-palettes-plastique/">Sélection De Palettes Plastique</a></li>
-    
-      <li><a href="/fr/tags/base-de-palette/">Base De Palette</a></li>
-    
-      <li><a href="/fr/tags/compatibilit%C3%A9-automatisation/">Compatibilité Automatisation</a></li>
-    
-      <li><a href="/fr/tags/manutention-entrep%C3%B4t/">Manutention Entrepôt</a></li>
-    
-      <li><a href="/fr/tags/palette-plastique-convoyeur/">Palette Plastique Convoyeur</a></li>
-    
-      <li><a href="/fr/tags/manutention-chimique/">Manutention Chimique</a></li>
-    
-      <li><a href="/fr/tags/palettes-de-r%C3%A9tention/">Palettes De Rétention</a></li>
-    
-      <li><a href="/fr/tags/stockage-de-f%C3%BBts/">Stockage De Fûts</a></li>
-    
-      <li><a href="/fr/tags/compatibilite-filmage-palette/">Compatibilite Filmage Palette</a></li>
-    
-      <li><a href="/fr/tags/documentation-hygi%C3%A8ne/">Documentation Hygiène</a></li>
-    
-      <li><a href="/fr/tags/hdpe-vs-pp/">HDPE vs PP</a></li>
-    
-      <li><a href="/fr/tags/logistique-alimentaire/">Logistique Alimentaire</a></li>
-    
-      <li><a href="/fr/tags/manutention-film-stretch/">Manutention Film Stretch</a></li>
-    
-      <li><a href="/fr/tags/mati%C3%A8re-de-palette-plastique/">Matière De Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/palette-plastique-filmeuse-stretch/">Palette Plastique Filmeuse Stretch</a></li>
-    
-      <li><a href="/fr/tags/palettes-contact-alimentaire/">Palettes Contact Alimentaire</a></li>
-    
-      <li><a href="/fr/tags/palettes-recycl%C3%A9es/">Palettes Recyclées</a></li>
-    
-      <li><a href="/fr/tags/rfq-palettes-plastique/">RFQ Palettes Plastique</a></li>
-    
-      <li><a href="/fr/tags/stabilite-unite-de-charge/">Stabilite Unite De Charge</a></li>
-    
-      <li><a href="/fr/tags/charge-ponctuelle-palette-plastique/">Charge Ponctuelle Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/manutention-de-contenants-rigides/">Manutention De Contenants Rigides</a></li>
-    
-      <li><a href="/fr/tags/palette-pour-futs/">Palette Pour Futs</a></li>
-    
-      <li><a href="/fr/tags/palette-pour-seaux/">Palette Pour Seaux</a></li>
-    
-      <li><a href="/fr/tags/palette-plastique-plateau-ajoure/">Palette Plastique Plateau Ajoure</a></li>
-    
-      <li><a href="/fr/tags/palettes-pour-produits-ensaches/">Palettes Pour Produits Ensaches</a></li>
-    
-      <li><a href="/fr/tags/stabilite-de-charge-palettisee/">Stabilite De Charge Palettisee</a></li>
-    
-      <li><a href="/fr/tags/support-de-plateau-palette-plastique/">Support De Plateau Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/compatibilit%C3%A9-chimique-palette-plastique/">Compatibilité Chimique Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/palettes-pour-manutention-chimique/">Palettes Pour Manutention Chimique</a></li>
-    
-      <li><a href="/fr/tags/sp%C3%A9cification-industrielle-de-palettes/">Spécification Industrielle De Palettes</a></li>
-    
-      <li><a href="/fr/tags/detection-palette-plastique/">Detection Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/fiabilite-automatisation-entrepot/">Fiabilite Automatisation Entrepot</a></li>
-    
-      <li><a href="/fr/tags/palettes-pour-convoyeur-automatise/">Palettes Pour Convoyeur Automatise</a></li>
-    
-      <li><a href="/fr/tags/scan-asrs-palette/">Scan ASRS Palette</a></li>
-    
-      <li><a href="/fr/tags/controle-condensation/">Controle Condensation</a></li>
-    
-      <li><a href="/fr/tags/manutention-entrepot-froid/">Manutention Entrepot Froid</a></li>
-    
-      <li><a href="/fr/tags/palette-plastique-chambre-froide/">Palette Plastique Chambre Froide</a></li>
-    
-      <li><a href="/fr/tags/palettes-chaine-du-froid/">Palettes Chaine Du Froid</a></li>
-    
-      <li><a href="/fr/tags/exposition-aux-intemp%C3%A9ries/">Exposition Aux Intempéries</a></li>
-    
-      <li><a href="/fr/tags/manutention-palettes/">Manutention Palettes</a></li>
-    
-      <li><a href="/fr/tags/stockage-ext%C3%A9rieur-palettes-plastique/">Stockage Extérieur Palettes Plastique</a></li>
-    
-      <li><a href="/fr/tags/stockage-palettes-en-cour/">Stockage Palettes en Cour</a></li>
-    
-      <li><a href="/fr/tags/achat-palettes/">Achat Palettes</a></li>
-    
-      <li><a href="/fr/tags/palettes-vides/">Palettes Vides</a></li>
-    
-      <li><a href="/fr/tags/securite-incendie-palettes-plastique/">Securite Incendie Palettes Plastique</a></li>
-    
-      <li><a href="/fr/tags/stockage-palettes-entrepot/">Stockage Palettes Entrepot</a></li>
-    
-      <li><a href="/fr/tags/compatibilite-palette-plastique-transpalette/">Compatibilite Palette Plastique Transpalette</a></li>
-    
-      <li><a href="/fr/tags/hauteur-dentree-fourches/">Hauteur D&#39;entree Fourches</a></li>
-    
-      <li><a href="/fr/tags/manutention-entrepot/">Manutention Entrepot</a></li>
-    
-      <li><a href="/fr/tags/transpalette-manuel/">Transpalette Manuel</a></li>
-    
-      <li><a href="/fr/tags/chargement-conteneur/">Chargement Conteneur</a></li>
-    
-      <li><a href="/fr/tags/deplacement-de-charge-palette-plastique/">Deplacement De Charge Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/stabilite-transport/">Stabilite Transport</a></li>
-    
-      <li><a href="/fr/tags/drainage-palette-plastique/">Drainage Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/entrep%C3%B4t-avec-lavage/">Entrepôt Avec Lavage</a></li>
-    
-      <li><a href="/fr/tags/palettes-plastiques-hygi%C3%A9niques/">Palettes Plastiques Hygiéniques</a></li>
-    
-      <li><a href="/fr/tags/s%C3%A9chage-palette/">Séchage Palette</a></li>
-    
-      <li><a href="/fr/tags/palette-dissipative/">Palette Dissipative</a></li>
-    
-      <li><a href="/fr/tags/palettes-esd/">Palettes ESD</a></li>
-    
-      <li><a href="/fr/tags/palettes-plastiques-antistatiques/">Palettes Plastiques Antistatiques</a></li>
-    
-      <li><a href="/fr/tags/s%C3%A9curit%C3%A9-entrep%C3%B4t/">Sécurité Entrepôt</a></li>
-    
-      <li><a href="/fr/tags/dimension-palette-plastique/">Dimension Palette Plastique</a></li>
-    
-      <li><a href="/fr/tags/palettes-export/">Palettes Export</a></li>
-    
-      <li><a href="/fr/tags/palettisation-cartons/">Palettisation Cartons</a></li>
-    
-      <li><a href="/fr/tags/achats-entrep%C3%B4t/">Achats Entrepôt</a></li>
-    
-      <li><a href="/fr/tags/palette-plastique-antid%C3%A9rapante/">Palette Plastique Antidérapante</a></li>
-    
-      <li><a href="/fr/tags/rebord-de-palette/">Rebord De Palette</a></li>
-    
-      <li><a href="/fr/tags/stabilit%C3%A9-de-charge/">Stabilité De Charge</a></li>
-    
-      <li><a href="/fr/tags/achats-industriels/">Achats Industriels</a></li>
-    
-      <li><a href="/fr/tags/entrep%C3%B4t/">Entrepôt</a></li>
-    
-      <li><a href="/fr/tags/palettes-plastique/">Palettes Plastique</a></li>
-    
-      <li><a href="/fr/tags/rfq/">RFQ</a></li>
-    
-      <li><a href="/fr/tags/am%C3%A9lioration-entrep%C3%B4t/">Amélioration Entrepôt</a></li>
-    
-      <li><a href="/fr/tags/s%C3%A9curit%C3%A9-manutention/">Sécurité Manutention</a></li>
-    
-  </ul>
+  <section class="basic-page">
+    <div class="container container--narrow">
+      <header class="basic-page__header">
+        <p class="page-eyebrow">Vue d&#39;ensemble</p>
+        <h1 class="basic-page__title">Tags</h1>
+      </header>
 
+      
+
+      
+        <ul class="basic-list" role="list">
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/documentation-palette/">Documentation Palette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/emballage-r%C3%A9utilisable/">Emballage Réutilisable</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/eu-ppwr/">EU PPWR</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-plastique-r%C3%A9utilisables/">Palettes Plastique Réutilisables</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-inject%C3%A9es/">Palettes Injectées</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-souffl%C3%A9es/">Palettes Soufflées</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/rfq-palettes/">RFQ Palettes</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/s%C3%A9lection-de-palettes-plastique/">Sélection De Palettes Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/base-de-palette/">Base De Palette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/compatibilit%C3%A9-automatisation/">Compatibilité Automatisation</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-entrep%C3%B4t/">Manutention Entrepôt</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-plastique-convoyeur/">Palette Plastique Convoyeur</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-chimique/">Manutention Chimique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-de-r%C3%A9tention/">Palettes De Rétention</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stockage-de-f%C3%BBts/">Stockage De Fûts</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/compatibilite-filmage-palette/">Compatibilite Filmage Palette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/documentation-hygi%C3%A8ne/">Documentation Hygiène</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/hdpe-vs-pp/">HDPE vs PP</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/logistique-alimentaire/">Logistique Alimentaire</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-film-stretch/">Manutention Film Stretch</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/mati%C3%A8re-de-palette-plastique/">Matière De Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-plastique-filmeuse-stretch/">Palette Plastique Filmeuse Stretch</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-contact-alimentaire/">Palettes Contact Alimentaire</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-recycl%C3%A9es/">Palettes Recyclées</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/rfq-palettes-plastique/">RFQ Palettes Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stabilite-unite-de-charge/">Stabilite Unite De Charge</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/charge-ponctuelle-palette-plastique/">Charge Ponctuelle Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-de-contenants-rigides/">Manutention De Contenants Rigides</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-pour-futs/">Palette Pour Futs</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-pour-seaux/">Palette Pour Seaux</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-plastique-plateau-ajoure/">Palette Plastique Plateau Ajoure</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-pour-produits-ensaches/">Palettes Pour Produits Ensaches</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stabilite-de-charge-palettisee/">Stabilite De Charge Palettisee</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/support-de-plateau-palette-plastique/">Support De Plateau Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/compatibilit%C3%A9-chimique-palette-plastique/">Compatibilité Chimique Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-pour-manutention-chimique/">Palettes Pour Manutention Chimique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/sp%C3%A9cification-industrielle-de-palettes/">Spécification Industrielle De Palettes</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/detection-palette-plastique/">Detection Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/fiabilite-automatisation-entrepot/">Fiabilite Automatisation Entrepot</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-pour-convoyeur-automatise/">Palettes Pour Convoyeur Automatise</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/scan-asrs-palette/">Scan ASRS Palette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/controle-condensation/">Controle Condensation</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-entrepot-froid/">Manutention Entrepot Froid</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-plastique-chambre-froide/">Palette Plastique Chambre Froide</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-chaine-du-froid/">Palettes Chaine Du Froid</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/exposition-aux-intemp%C3%A9ries/">Exposition Aux Intempéries</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-palettes/">Manutention Palettes</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stockage-ext%C3%A9rieur-palettes-plastique/">Stockage Extérieur Palettes Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stockage-palettes-en-cour/">Stockage Palettes en Cour</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/achat-palettes/">Achat Palettes</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-vides/">Palettes Vides</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/securite-incendie-palettes-plastique/">Securite Incendie Palettes Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stockage-palettes-entrepot/">Stockage Palettes Entrepot</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/compatibilite-palette-plastique-transpalette/">Compatibilite Palette Plastique Transpalette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/hauteur-dentree-fourches/">Hauteur D&#39;entree Fourches</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/manutention-entrepot/">Manutention Entrepot</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/transpalette-manuel/">Transpalette Manuel</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/chargement-conteneur/">Chargement Conteneur</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/deplacement-de-charge-palette-plastique/">Deplacement De Charge Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stabilite-transport/">Stabilite Transport</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/drainage-palette-plastique/">Drainage Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/entrep%C3%B4t-avec-lavage/">Entrepôt Avec Lavage</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-plastiques-hygi%C3%A9niques/">Palettes Plastiques Hygiéniques</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/s%C3%A9chage-palette/">Séchage Palette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-dissipative/">Palette Dissipative</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-esd/">Palettes ESD</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-plastiques-antistatiques/">Palettes Plastiques Antistatiques</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/s%C3%A9curit%C3%A9-entrep%C3%B4t/">Sécurité Entrepôt</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/dimension-palette-plastique/">Dimension Palette Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-export/">Palettes Export</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettisation-cartons/">Palettisation Cartons</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/achats-entrep%C3%B4t/">Achats Entrepôt</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palette-plastique-antid%C3%A9rapante/">Palette Plastique Antidérapante</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/rebord-de-palette/">Rebord De Palette</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/stabilit%C3%A9-de-charge/">Stabilité De Charge</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/achats-industriels/">Achats Industriels</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/entrep%C3%B4t/">Entrepôt</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/palettes-plastique/">Palettes Plastique</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/rfq/">RFQ</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/am%C3%A9lioration-entrep%C3%B4t/">Amélioration Entrepôt</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/fr/tags/s%C3%A9curit%C3%A9-manutention/">Sécurité Manutention</a>
+            </li>
+          
+        </ul>
+      
+    </div>
+  </section>
 
   </main>
 
@@ -525,8 +704,8 @@
       <a class="site-footer__logo" href="/fr/">Baoheng Plastic</a>
       <p class="site-footer__summary">Palettes plastique, caisses-palettes, caisses, conteneurs et bacs à déchets en direct usine pour l&#39;entreposage, la logistique, l&#39;alimentaire, la chaîne du froid, l&#39;industrie et les projets municipaux.</p>
       <div class="site-footer__actions">
+        <a class="button" href="/fr/contact/">Demander un devis</a>
         <a class="button button--secondary" href="/fr/products/">Voir les produits</a>
-        <a class="button button--ghost" href="/fr/contact/">Demander un devis</a>
       </div>
     </div>
 

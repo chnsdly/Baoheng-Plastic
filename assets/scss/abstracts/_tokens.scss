@@ -4,27 +4,27 @@
    =========================================================================== */
 
 :root {
-  /* Color: blue-led industrial palette with restrained support accents */
-  --brand: #10698f;
-  --brand-strong: #193941;
-  --brand-soft: #e3f2f6;
-  --brand-tint: #f2f8f9;
-  --accent: #b8612f;
-  --accent-strong: #8f451f;
-  --accent-soft: #f7e7dc;
-  --green: #1d7566;
-  --green-soft: #e1f0ec;
+  /* Precision-industrial palette; orange is reserved for primary action. */
+  --brand: #087495;
+  --brand-strong: #102f37;
+  --brand-soft: #dceff2;
+  --brand-tint: #f0f7f7;
+  --accent: #d85f27;
+  --accent-strong: #a8441d;
+  --accent-soft: #f8e7de;
+  --green: #246c5c;
+  --green-soft: #e0efeb;
   --on-brand: #ffffff;
 
-  --surface: #f5f7f8;
-  --surface-alt: #eef3f5;
-  --surface-strong: #d8e2e6;
+  --surface: #f3f5f4;
+  --surface-alt: #e9efed;
+  --surface-strong: #d2dcda;
   --card: #ffffff;
-  --on-surface: #172529;
-  --secondary: #52646a;
-  --muted: #748186;
-  --line: #d8e2e5;
-  --line-strong: #c4d1d7;
+  --on-surface: #14272b;
+  --secondary: #4e6265;
+  --muted: #65777a;
+  --line: #d5dfdd;
+  --line-strong: #bdccca;
 
   --success: #1d7566;
   --warning: #946000;
@@ -38,36 +38,36 @@
     linear-gradient(180deg, color-mix(in srgb, var(--brand-soft) 36%, white) 0%, var(--surface-alt) 100%);
 
   /* Layout */
-  --container: 76rem;
-  --container-wide: 90rem;
-  --container-narrow: 56rem;
+  --container: 80rem;
+  --container-wide: 96rem;
+  --container-narrow: 60rem;
   --space: 0.5rem;
-  --height-header: 4.25rem;
-  --section-padding: 3.75rem;
-  --section-gap: calc(var(--space) * 3);
-  --grid-gap: calc(var(--space) * 2);
-  --panel-padding: calc(var(--space) * 2);
-  --card-padding: calc(var(--space) * 1.75);
+  --height-header: 4.75rem;
+  --section-padding: clamp(4rem, 7vw, 6.75rem);
+  --section-gap: clamp(1.75rem, 3vw, 3.25rem);
+  --grid-gap: clamp(1rem, 2vw, 1.75rem);
+  --panel-padding: clamp(1.25rem, 3vw, 2.5rem);
+  --card-padding: clamp(1.1rem, 2vw, 1.75rem);
 
   /* Shape */
   --border: 1px solid var(--line);
   --border-strong: 1px solid var(--line-strong);
-  --radius-s: 4px;
+  --radius-s: 3px;
   --radius-m: 6px;
-  --radius-l: 8px;
+  --radius-l: 10px;
   --radius: var(--radius-m);
   --radius-pill: 999px;
 
   /* Elevation */
-  --shadow: 0 1px 2px rgba(20, 35, 37, 0.04), 0 6px 16px rgba(20, 35, 37, 0.045);
-  --shadow-lg: 0 2px 6px rgba(20, 35, 37, 0.06), 0 14px 32px rgba(20, 35, 37, 0.08);
-  --shadow-hover: 0 1px 3px rgba(20, 35, 37, 0.06), 0 8px 20px rgba(20, 35, 37, 0.07);
-  --shadow-soft: 0 1px 1px rgba(20, 35, 37, 0.035);
+  --shadow: 0 1px 2px rgba(16, 47, 55, 0.05), 0 10px 24px rgba(16, 47, 55, 0.055);
+  --shadow-lg: 0 4px 12px rgba(16, 47, 55, 0.08), 0 24px 56px rgba(16, 47, 55, 0.1);
+  --shadow-hover: 0 2px 6px rgba(16, 47, 55, 0.06), 0 14px 30px rgba(16, 47, 55, 0.08);
+  --shadow-soft: 0 1px 2px rgba(16, 47, 55, 0.045);
   --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.76), inset 0 0 0 1px rgba(20, 35, 37, 0.04);
 
   /* Type */
-  --font-body: "Segoe UI", Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-  --font-heading: "Segoe UI", Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
   --weight-light: 300;
@@ -84,10 +84,10 @@
   --text-lg: 1.0625rem;
   --text-xl: 1.1875rem;
   --text-2xl: 1.375rem;
-  --text-3xl: 1.65rem;
-  --text-4xl: 2rem;
-  --text-5xl: 2.45rem;
-  --text-6xl: 2.9rem;
+  --text-3xl: clamp(1.6rem, 2vw, 1.9rem);
+  --text-4xl: clamp(1.95rem, 3vw, 2.65rem);
+  --text-5xl: clamp(2.25rem, 4vw, 3.45rem);
+  --text-6xl: clamp(2.7rem, 5.5vw, 4.65rem);
 
   --type-caption: var(--text-xs);
   --type-meta: var(--text-sm);
@@ -104,19 +104,19 @@
   --type-hero-title: var(--text-5xl);
   --type-display: var(--type-page-title);
 
-  --line-tight: 1.16;
+  --line-tight: 1.1;
   --line-normal: 1.58;
   --line-loose: 1.74;
-  --tracking-heading-1: 0;
-  --tracking-heading-2: 0;
-  --tracking-heading-3: 0;
-  --tracking-heading-compact: 0;
-  --section-title-weight: var(--weight-bold);
+  --tracking-heading-1: -0.025em;
+  --tracking-heading-2: -0.015em;
+  --tracking-heading-3: -0.008em;
+  --tracking-heading-compact: 0.1em;
+  --section-title-weight: var(--weight-semibold);
   --section-desc-color: var(--secondary);
 
   /* Interaction */
   --transition-base: 180ms cubic-bezier(0.22, 0.72, 0.18, 1);
-  --focus-outline: 2px solid color-mix(in srgb, var(--accent) 72%, white);
+  --focus-outline: 3px solid var(--brand);
   --focus-offset: 3px;
 
   /* Layers */
@@ -128,10 +128,10 @@
 
 @media (min-width: 48rem) {
   :root {
-    --panel-padding: calc(var(--space) * 3);
-    --card-padding: calc(var(--space) * 2.25);
-    --section-gap: calc(var(--space) * 3.5);
-    --grid-gap: calc(var(--space) * 2.25);
+    --panel-padding: clamp(1.25rem, 3vw, 2.5rem);
+    --card-padding: clamp(1.1rem, 2vw, 1.75rem);
+    --section-gap: clamp(1.75rem, 3vw, 3.25rem);
+    --grid-gap: clamp(1rem, 2vw, 1.75rem);
     --type-subsection-title: var(--text-2xl);
     --type-section-title: var(--text-4xl);
     --type-page-title: var(--text-5xl);
@@ -141,9 +141,9 @@
 
 @media (min-width: 64rem) {
   :root {
-    --section-padding: 4.75rem;
-    --type-section-title: 2.2rem;
-    --type-page-title: 2.65rem;
-    --type-hero-title: 3rem;
+    --section-padding: clamp(4rem, 7vw, 6.75rem);
+    --type-section-title: var(--text-4xl);
+    --type-page-title: var(--text-5xl);
+    --type-hero-title: var(--text-6xl);
   }
 }

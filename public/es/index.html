@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Ir al contenido principal</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -135,7 +136,7 @@
           <a class="site-header__cta site-header__cta--outline" href="/es/selection-support/">Asesoría de selección</a>
           <a class="site-header__cta site-header__cta--primary" href="/es/contact/">Solicitar cotización</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="Idioma: ES">
               <span class="site-header__language-label font-meta">ES</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -164,7 +165,7 @@
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="Volver">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>Menú</p>
@@ -283,9 +284,11 @@
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -293,6 +296,10 @@
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -323,7 +330,7 @@
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -337,29 +344,12 @@
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     
     
 
 <section class="home-hero">
-  
-    <img
-  src="/images/hero_bg_1_hu_bfe1d219a3e2859d.webp"
-  srcset="/images/hero_bg_1_hu_9f45ea39546596f.webp 768w, /images/hero_bg_1_hu_fbf46708eba4a2bb.webp 1280w, /images/hero_bg_1_hu_bfe1d219a3e2859d.webp 1600w"
-  sizes="100vw"
-  width="1600"
-  height="901"
-  alt=""
-  class="home-hero__bg"
-  loading="eager"
-  decoding="async"
-  fetchpriority="high"
->
-  
-
-  <div class="home-hero__overlay" aria-hidden="true"></div>
-
-  <div class="container home-hero__inner">
+  <div class="container container--wide home-hero__inner">
     <div class="home-hero__content">
       <p class="home-hero__eyebrow">Directo de fábrica</p>
       <h1 class="home-hero__title">Palets y contenedores plásticos adaptados al trabajo real de almacén</h1>
@@ -371,41 +361,54 @@
       </div>
 
       
+        <div class="home-hero__proof-wrap">
+          <p class="home-hero__proof-title">La selección empieza con cuatro comprobaciones</p>
+          <ul class="home-hero__proof" role="list">
+            <li>Tipo de carga y distribución</li><li>Interfaz con carretilla, transpaleta, rack o transportador</li><li>Temperatura, higiene y exposición</li><li>Cantidad, embalaje, destino y plazo</li>
+          </ul>
+        </div>
+      
     </div>
 
     
-      <div class="home-hero__stats" role="list" aria-label="Datos de fábrica">
-        
-          <div class="home-hero__stat" role="listitem">
-            <strong>2013</strong>
-            <span>Enfoque en plásticos industriales</span>
-          </div>
-        
-          <div class="home-hero__stat" role="listitem">
-            <strong>20.000 m²</strong>
-            <span>Área de fábrica y almacén</span>
-          </div>
-        
-          <div class="home-hero__stat" role="listitem">
-            <strong>30&#43;</strong>
-            <span>Cobertura de proyectos de exportación</span>
-          </div>
-        
-      </div>
+      <figure class="home-hero__media">
+        <img
+  src="/images/hero_bg_1_hu_bfe1d219a3e2859d.webp"
+  srcset="/images/hero_bg_1_hu_3d341b86cdcc3f8a.webp 640w, /images/hero_bg_1_hu_e8e711e9020515c.webp 960w, /images/hero_bg_1_hu_fbf46708eba4a2bb.webp 1280w, /images/hero_bg_1_hu_bfe1d219a3e2859d.webp 1600w"
+  sizes="(min-width: 64rem) 48vw, 92vw"
+  width="1600"
+  height="901"
+  alt=""
+  class="home-hero__image"
+  loading="eager"
+  decoding="async"
+  fetchpriority="high"
+>
+        <figcaption class="home-hero__caption">La recomendación sigue siendo preliminar hasta confirmar la carga real, el apoyo, el equipo de manipulación y el entorno.</figcaption>
+      </figure>
     
   </div>
 </section>
 
-
   
-    <section class="usps" aria-label="Ventajas de abastecimiento">
-      <div class="container">
-        <ul class="usps__list" role="list">
+    <section class="usps" aria-labelledby="home-selection-path-title">
+      <div class="container usps__inner">
+        <header class="home-section-head usps__header">
+          <div class="home-section-head__body">
+            <p class="home-section-head__eyebrow">Ruta práctica de selección</p>
+            <h2 class="home-section-head__title" id="home-selection-path-title">De las condiciones operativas a una especificación lista para cotizar</h2>
+            <p class="home-section-head__desc">Una cotización útil empieza por el flujo de trabajo, valida las interfaces críticas y deja claras las condiciones pendientes de confirmar.</p>
+          </div>
+          <div class="home-section-head__actions">
+            <a class="home-section-head__link" href="/es/selection-support/">Asesoría de selección</a>
+          </div>
+        </header>
+        <ol class="usps__list">
           
             <li class="usps__item">
               <span class="usps__number" aria-hidden="true">01</span>
               <div class="usps__content">
-                <p class="usps__title">Empezar por la aplicación</p>
+                <h3 class="usps__title">Empezar por la aplicación</h3>
                 <p class="usps__text">Confirmamos tipo de carga, modo de almacenamiento, temperatura, compatibilidad con montacargas/estantería y carga de contenedor antes de recomendar modelos.</p>
               </div>
             </li>
@@ -413,7 +416,7 @@
             <li class="usps__item">
               <span class="usps__number" aria-hidden="true">02</span>
               <div class="usps__content">
-                <p class="usps__title">Control directo de fábrica</p>
+                <h3 class="usps__title">Control directo de fábrica</h3>
                 <p class="usps__text">Materiales, moldeo, refuerzos, color/logotipo e inspección de envío se mantienen dentro de un mismo flujo de fabricación.</p>
               </div>
             </li>
@@ -421,16 +424,15 @@
             <li class="usps__item">
               <span class="usps__number" aria-hidden="true">03</span>
               <div class="usps__content">
-                <p class="usps__title">Cotización con datos útiles</p>
+                <h3 class="usps__title">Cotización con datos útiles</h3>
                 <p class="usps__text">Recibe orientación de modelo, especificaciones clave, notas de embalaje y términos comerciales claros para revisión interna.</p>
               </div>
             </li>
           
-        </ul>
+        </ol>
       </div>
     </section>
   
-
 
 <section class="home-featured home-featured--families">
     <div class="container home-featured__inner">
@@ -542,89 +544,6 @@
       </div>
     </div>
   </section>
-
-  
-    <section class="factory">
-      <div class="container factory__inner">
-        <header class="home-section-head">
-          <div class="home-section-head__body">
-            <p class="home-section-head__eyebrow">Capacidad de fábrica</p>
-            <h2 class="home-section-head__title">Capacidad de fabricación detrás de la cotización</h2>
-            <p class="home-section-head__desc">Baoheng Plastic combina equipos de moldeo, selección de material, ajuste de moldes, inspección y embalaje de exportación para ayudarle a comparar especificaciones, riesgos y costos junto con el precio.</p>
-          </div>
-          
-            <div class="home-section-head__actions">
-              <a class="home-section-head__link" href="/es/manufacturing/">Ver capacidad de fabricación</a>
-            </div>
-          
-        </header>
-
-        <div class="factory__grid">
-          
-            <article class="factory__item">
-              <img
-  src="/images/home/factory-1_hu_1043861f8e6342ba.webp"
-  srcset="/images/home/factory-1_hu_44e42754fbf7e002.webp 320w, /images/home/factory-1_hu_4daf65dd586a7a06.webp 480w, /images/home/factory-1_hu_c0d805bc1a12841e.webp 640w, /images/home/factory-1_hu_1043861f8e6342ba.webp 800w"
-  sizes="(min-width: 48rem) 28vw, 92vw"
-  width="800"
-  height="480"
-  alt="Selección de material y estructura"
-  class="factory__image"
-  loading="lazy"
-  decoding="async"
-  
->
-              <div class="factory__content">
-                <h3 class="factory__item-title">Selección de material y estructura</h3>
-                <p class="factory__item-text">Opciones HDPE/PP, fórmulas modificadas al impacto, contenido reciclado, superficies antideslizantes, refuerzo de acero y color/logotipo se seleccionan según el escenario.</p>
-              </div>
-            </article>
-          
-            <article class="factory__item">
-              <img
-  src="/images/home/factory-2_hu_faa93a7831775d40.webp"
-  srcset="/images/home/factory-2_hu_e12186688d325052.webp 320w, /images/home/factory-2_hu_d1fd72509e70407f.webp 480w, /images/home/factory-2_hu_e5771f271afd14c9.webp 640w, /images/home/factory-2_hu_faa93a7831775d40.webp 800w"
-  sizes="(min-width: 48rem) 28vw, 92vw"
-  width="800"
-  height="480"
-  alt="Moldeo y soporte de moldes"
-  class="factory__image"
-  loading="lazy"
-  decoding="async"
-  
->
-              <div class="factory__content">
-                <h3 class="factory__item-title">Moldeo y soporte de moldes</h3>
-                <p class="factory__item-text">La inyección y el soplado soportan modelos estándar y ajustes de proyecto como nervaduras, textura, zonas de etiqueta y estructuras reforzadas.</p>
-              </div>
-            </article>
-          
-            <article class="factory__item">
-              <img
-  src="/images/home/factory-3_hu_ae38f94d5b6d2e79.webp"
-  srcset="/images/home/factory-3_hu_b1c0bfc54f1d4981.webp 320w, /images/home/factory-3_hu_505760a12ba44290.webp 480w, /images/home/factory-3_hu_c99ef66be774de51.webp 640w, /images/home/factory-3_hu_ae38f94d5b6d2e79.webp 800w"
-  sizes="(min-width: 48rem) 28vw, 92vw"
-  width="800"
-  height="480"
-  alt="Inspección, embalaje y entrega exportación"
-  class="factory__image"
-  loading="lazy"
-  decoding="async"
-  
->
-              <div class="factory__content">
-                <h3 class="factory__item-title">Inspección, embalaje y entrega exportación</h3>
-                <p class="factory__item-text">Revisiones por lote, inspección visual, pruebas de apilado, planes de embalaje, fotos de envío y soporte de carga ayudan a reducir riesgo de llegada.</p>
-              </div>
-            </article>
-          
-        </div>
-      </div>
-    </section>
-  
-
-
-
 
 
 <section class="industries">
@@ -780,237 +699,194 @@
 
 
 
+  
+    <section class="factory">
+      <div class="container factory__inner">
+        <header class="home-section-head">
+          <div class="home-section-head__body">
+            <p class="home-section-head__eyebrow">Capacidad de fábrica</p>
+            <h2 class="home-section-head__title">Capacidad de fabricación detrás de la cotización</h2>
+            <p class="home-section-head__desc">Baoheng Plastic combina equipos de moldeo, selección de material, ajuste de moldes, inspección y embalaje de exportación para ayudarle a comparar especificaciones, riesgos y costos junto con el precio.</p>
+          </div>
+          
+            <div class="home-section-head__actions">
+              <a class="home-section-head__link" href="/es/manufacturing/">Ver capacidad de fabricación</a>
+            </div>
+          
+        </header>
+
+        <div class="factory__grid">
+          
+            <article class="factory__item">
+              <img
+  src="/images/home/factory-1_hu_1043861f8e6342ba.webp"
+  srcset="/images/home/factory-1_hu_44e42754fbf7e002.webp 320w, /images/home/factory-1_hu_4daf65dd586a7a06.webp 480w, /images/home/factory-1_hu_c0d805bc1a12841e.webp 640w, /images/home/factory-1_hu_1043861f8e6342ba.webp 800w"
+  sizes="(min-width: 48rem) 28vw, 92vw"
+  width="800"
+  height="480"
+  alt="Selección de material y estructura"
+  class="factory__image"
+  loading="lazy"
+  decoding="async"
+  
+>
+              <div class="factory__content">
+                <h3 class="factory__item-title">Selección de material y estructura</h3>
+                <p class="factory__item-text">Opciones HDPE/PP, fórmulas modificadas al impacto, contenido reciclado, superficies antideslizantes, refuerzo de acero y color/logotipo se seleccionan según el escenario.</p>
+              </div>
+            </article>
+          
+            <article class="factory__item">
+              <img
+  src="/images/home/factory-2_hu_faa93a7831775d40.webp"
+  srcset="/images/home/factory-2_hu_e12186688d325052.webp 320w, /images/home/factory-2_hu_d1fd72509e70407f.webp 480w, /images/home/factory-2_hu_e5771f271afd14c9.webp 640w, /images/home/factory-2_hu_faa93a7831775d40.webp 800w"
+  sizes="(min-width: 48rem) 28vw, 92vw"
+  width="800"
+  height="480"
+  alt="Moldeo y soporte de moldes"
+  class="factory__image"
+  loading="lazy"
+  decoding="async"
+  
+>
+              <div class="factory__content">
+                <h3 class="factory__item-title">Moldeo y soporte de moldes</h3>
+                <p class="factory__item-text">La inyección y el soplado soportan modelos estándar y ajustes de proyecto como nervaduras, textura, zonas de etiqueta y estructuras reforzadas.</p>
+              </div>
+            </article>
+          
+            <article class="factory__item">
+              <img
+  src="/images/home/factory-3_hu_ae38f94d5b6d2e79.webp"
+  srcset="/images/home/factory-3_hu_b1c0bfc54f1d4981.webp 320w, /images/home/factory-3_hu_505760a12ba44290.webp 480w, /images/home/factory-3_hu_c99ef66be774de51.webp 640w, /images/home/factory-3_hu_ae38f94d5b6d2e79.webp 800w"
+  sizes="(min-width: 48rem) 28vw, 92vw"
+  width="800"
+  height="480"
+  alt="Inspección, embalaje y entrega exportación"
+  class="factory__image"
+  loading="lazy"
+  decoding="async"
+  
+>
+              <div class="factory__content">
+                <h3 class="factory__item-title">Inspección, embalaje y entrega exportación</h3>
+                <p class="factory__item-text">Revisiones por lote, inspección visual, pruebas de apilado, planes de embalaje, fotos de envío y soporte de carga ayudan a reducir riesgo de llegada.</p>
+              </div>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+  
+
+
+
+
 
 <section class="clients" aria-labelledby="clients-title">
   <div class="container clients__inner">
     <header class="clients__header home-section-head">
       <div class="home-section-head__body">
+        <p class="home-section-head__eyebrow">Colaboración de proyecto</p>
         <h2 id="clients-title" class="clients__title home-section-head__title">Visitas de fábrica, seguimiento de proyectos y suministro a largo plazo</h2>
-        
         <p class="clients__description home-section-head__desc">La colaboración real no es solo intercambio de catálogo. Apoyamos selección, muestras, carga, reposición y ajustes cuando cambian las condiciones de operación.</p>
-        
       </div>
     </header>
-
-    <div class="clients__carousel" role="region" aria-roledescription="carousel" aria-labelledby="clients-title">
-      <div class="clients__track" aria-live="off">
-        
-        <div class="clients__slide">
+    <ul class="clients__grid" role="list">
+      
+        <li class="clients__item">
           <img
-  src="/images/home/clients-1_hu_ef321598df8c607a.webp"
-  srcset="/images/home/clients-1_hu_8cd6f42bb5f90fec.webp 160w, /images/home/clients-1_hu_566c6982d81d989d.webp 240w, /images/home/clients-1_hu_ef321598df8c607a.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
+  src="/images/home/clients-1_hu_1bfc07cd239165b9.webp"
+  srcset="/images/home/clients-1_hu_ef321598df8c607a.webp 320w, /images/home/clients-1_hu_22b8546286fe99e9.webp 480w, /images/home/clients-1_hu_7969b435e12f0ebc.webp 640w, /images/home/clients-1_hu_1bfc07cd239165b9.webp 800w"
+  sizes="(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+  width="800"
+  height="599"
   alt="Visita de cliente a Baoheng Plastic"
   class="clients__image"
   loading="lazy"
   decoding="async"
   
 >
-        </div>
-        
-        <div class="clients__slide">
+        </li>
+      
+        <li class="clients__item">
           <img
-  src="/images/home/clients-2_hu_edcf33c2eb43d27c.webp"
-  srcset="/images/home/clients-2_hu_fbc9e8f3ebd4ccf4.webp 160w, /images/home/clients-2_hu_33ca3090aeb600c.webp 240w, /images/home/clients-2_hu_edcf33c2eb43d27c.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
+  src="/images/home/clients-2_hu_42bc64d5a27f456c.webp"
+  srcset="/images/home/clients-2_hu_edcf33c2eb43d27c.webp 320w, /images/home/clients-2_hu_2b4de4224de8bc09.webp 480w, /images/home/clients-2_hu_2a1ec7cdcdb16eed.webp 640w, /images/home/clients-2_hu_42bc64d5a27f456c.webp 800w"
+  sizes="(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+  width="800"
+  height="600"
   alt="Reunión de proyecto de productos plásticos industriales"
   class="clients__image"
   loading="lazy"
   decoding="async"
   
 >
-        </div>
-        
-        <div class="clients__slide">
+        </li>
+      
+        <li class="clients__item">
           <img
-  src="/images/home/clients-3_hu_960a3d37e930d7b1.webp"
-  srcset="/images/home/clients-3_hu_2f7d86e5695bcb61.webp 160w, /images/home/clients-3_hu_aa6c6c099c762454.webp 240w, /images/home/clients-3_hu_960a3d37e930d7b1.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
+  src="/images/home/clients-3_hu_4aed9563b9138669.webp"
+  srcset="/images/home/clients-3_hu_960a3d37e930d7b1.webp 320w, /images/home/clients-3_hu_51a5bb02889a52dc.webp 480w, /images/home/clients-3_hu_e8257e8fcdc51ff2.webp 640w, /images/home/clients-3_hu_4aed9563b9138669.webp 800w"
+  sizes="(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+  width="800"
+  height="600"
   alt="Colaboración con cliente de Baoheng Plastic"
   class="clients__image"
   loading="lazy"
   decoding="async"
   
 >
-        </div>
-        
-        <div class="clients__slide">
+        </li>
+      
+        <li class="clients__item">
           <img
-  src="/images/home/clients-4_hu_a04ff81cfe92ba36.webp"
-  srcset="/images/home/clients-4_hu_9fd6eee9f74d3ff4.webp 160w, /images/home/clients-4_hu_61234eefe819a513.webp 240w, /images/home/clients-4_hu_a04ff81cfe92ba36.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
+  src="/images/home/clients-4_hu_1eb25618039c32ab.webp"
+  srcset="/images/home/clients-4_hu_a04ff81cfe92ba36.webp 320w, /images/home/clients-4_hu_cdcb5899e2a756ed.webp 480w, /images/home/clients-4_hu_83d6639da85cdf8a.webp 640w, /images/home/clients-4_hu_1eb25618039c32ab.webp 800w"
+  sizes="(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+  width="800"
+  height="600"
   alt="Visita de fábrica y soporte de exportación"
   class="clients__image"
   loading="lazy"
   decoding="async"
   
 >
-        </div>
-        
-        <div class="clients__slide">
+        </li>
+      
+        <li class="clients__item">
           <img
-  src="/images/home/clients-5_hu_1636f893278972ab.webp"
-  srcset="/images/home/clients-5_hu_d38185a8216e5ab1.webp 160w, /images/home/clients-5_hu_bc375ca5e53b77b9.webp 240w, /images/home/clients-5_hu_1636f893278972ab.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
+  src="/images/home/clients-5_hu_d4ccfd33317cca28.webp"
+  srcset="/images/home/clients-5_hu_1636f893278972ab.webp 320w, /images/home/clients-5_hu_24cb11a47aaae379.webp 480w, /images/home/clients-5_hu_ec3e57b662ab89.webp 640w, /images/home/clients-5_hu_d4ccfd33317cca28.webp 800w"
+  sizes="(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+  width="800"
+  height="600"
   alt="Reunión de compra de palets plásticos"
   class="clients__image"
   loading="lazy"
   decoding="async"
   
 >
-        </div>
-        
-        <div class="clients__slide">
+        </li>
+      
+        <li class="clients__item">
           <img
-  src="/images/home/clients-6_hu_66fa5e914f9b14bc.webp"
-  srcset="/images/home/clients-6_hu_7c7d067792858215.webp 160w, /images/home/clients-6_hu_a3b2dabdb55765a5.webp 240w, /images/home/clients-6_hu_66fa5e914f9b14bc.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
+  src="/images/home/clients-6_hu_236be8c5be3cf9a5.webp"
+  srcset="/images/home/clients-6_hu_66fa5e914f9b14bc.webp 320w, /images/home/clients-6_hu_e37a964bf7618d81.webp 480w, /images/home/clients-6_hu_9321a7f7b67ae1d2.webp 640w, /images/home/clients-6_hu_236be8c5be3cf9a5.webp 800w"
+  sizes="(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+  width="800"
+  height="600"
   alt="Foto de cliente en fábrica Baoheng Plastic"
   class="clients__image"
   loading="lazy"
   decoding="async"
   
 >
-        </div>
-        
-        <div class="clients__slide">
-          <img
-  src="/images/home/clients-7_hu_5c7509fbcd7c02a3.webp"
-  srcset="/images/home/clients-7_hu_e222440240c52e9d.webp 160w, /images/home/clients-7_hu_8dc946534559444e.webp 240w, /images/home/clients-7_hu_5c7509fbcd7c02a3.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Cliente de proyecto de exportación visitando fábrica de productos plásticos"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-1_hu_ef321598df8c607a.webp"
-  srcset="/images/home/clients-1_hu_8cd6f42bb5f90fec.webp 160w, /images/home/clients-1_hu_566c6982d81d989d.webp 240w, /images/home/clients-1_hu_ef321598df8c607a.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Visita de cliente a Baoheng Plastic"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-2_hu_edcf33c2eb43d27c.webp"
-  srcset="/images/home/clients-2_hu_fbc9e8f3ebd4ccf4.webp 160w, /images/home/clients-2_hu_33ca3090aeb600c.webp 240w, /images/home/clients-2_hu_edcf33c2eb43d27c.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Reunión de proyecto de productos plásticos industriales"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-3_hu_960a3d37e930d7b1.webp"
-  srcset="/images/home/clients-3_hu_2f7d86e5695bcb61.webp 160w, /images/home/clients-3_hu_aa6c6c099c762454.webp 240w, /images/home/clients-3_hu_960a3d37e930d7b1.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Colaboración con cliente de Baoheng Plastic"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-4_hu_a04ff81cfe92ba36.webp"
-  srcset="/images/home/clients-4_hu_9fd6eee9f74d3ff4.webp 160w, /images/home/clients-4_hu_61234eefe819a513.webp 240w, /images/home/clients-4_hu_a04ff81cfe92ba36.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Visita de fábrica y soporte de exportación"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-5_hu_1636f893278972ab.webp"
-  srcset="/images/home/clients-5_hu_d38185a8216e5ab1.webp 160w, /images/home/clients-5_hu_bc375ca5e53b77b9.webp 240w, /images/home/clients-5_hu_1636f893278972ab.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Reunión de compra de palets plásticos"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-6_hu_66fa5e914f9b14bc.webp"
-  srcset="/images/home/clients-6_hu_7c7d067792858215.webp 160w, /images/home/clients-6_hu_a3b2dabdb55765a5.webp 240w, /images/home/clients-6_hu_66fa5e914f9b14bc.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Foto de cliente en fábrica Baoheng Plastic"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-        <div class="clients__slide clients__slide--clone">
-          <img
-  src="/images/home/clients-7_hu_5c7509fbcd7c02a3.webp"
-  srcset="/images/home/clients-7_hu_e222440240c52e9d.webp 160w, /images/home/clients-7_hu_8dc946534559444e.webp 240w, /images/home/clients-7_hu_5c7509fbcd7c02a3.webp 320w"
-  sizes="240px"
-  width="320"
-  height="240"
-  alt="Cliente de proyecto de exportación visitando fábrica de productos plásticos"
-  class="clients__image"
-  loading="lazy"
-  decoding="async"
-  
->
-        </div>
-        
-      </div>
-    </div>
+        </li>
+      
+    </ul>
   </div>
 </section>
-
 
 
 
@@ -1045,7 +921,7 @@
               Teléfono
             </p>
             <p class="cta__value">
-              <a href="#ZgotmplZ">&#43;86 13325077372</a>
+              <a href="tel:&#43;8613325077372">&#43;86 13325077372</a>
             </p>
           </li>
           
@@ -1100,7 +976,7 @@
 
 
 
-<form action="/api/lead" method="POST" class="lead-form" novalidate>
+<form action="/api/lead" method="POST" class="lead-form">
   <input type="hidden" name="form_type" value="contact">
   
   <input type="hidden" name="page_url" value="http://localhost:1313/es/">
@@ -1157,8 +1033,8 @@
       <a class="site-footer__logo" href="/es/">Baoheng Plastic</a>
       <p class="site-footer__summary">Palets plásticos, cajas pallet, cajas, contenedores y bines de residuos directamente de fábrica para almacenes, logística, alimentos, cadena de frío, fabricación y proyectos municipales.</p>
       <div class="site-footer__actions">
+        <a class="button" href="/es/contact/">Solicitar cotización</a>
         <a class="button button--secondary" href="/es/products/">Ver productos</a>
-        <a class="button button--ghost" href="/es/contact/">Solicitar cotización</a>
       </div>
     </div>
 

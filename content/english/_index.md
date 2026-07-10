@@ -15,16 +15,18 @@ home_hero:
   secondary_cta:
     label: "Browse Products"
     url: "/products/"
-  stats:
-    - value: "2013"
-      label: "Industrial plastics focus"
-    - value: "20,000 m²"
-      label: "Factory and warehouse area"
-    - value: "30+"
-      label: "Export project coverage"
-
+  proof_title: "Selection starts with four checks"
+  proof_points:
+    - "Load type and distribution"
+    - "Forklift, pallet jack, rack, or conveyor interface"
+    - "Temperature, hygiene, and exposure"
+    - "Quantity, packing, destination, and timing"
+  visual_caption: "Product recommendations remain preliminary until the actual load, support method, handling equipment, and environment are confirmed."
 usps:
   enable: true
+  eyebrow: "A practical selection path"
+  title: "Move from operating conditions to a quote-ready specification"
+  description: "A useful quotation starts with the workflow, validates the critical interfaces, and records the conditions that still require confirmation."
   items:
     - title: "Start from the application"
       description: "We confirm load type, storage mode, temperature, forklift/rack fit, and container loading before recommending models."
@@ -99,6 +101,7 @@ industries:
 
 clients:
   enable: true
+  eyebrow: "Project collaboration"
   title: "Factory visits, project follow-up, and long-term supply"
   description: "Real collaboration is not only a catalog exchange. We support selection, sample confirmation, loading, replenishment, and product adjustments when operating conditions change."
   items:

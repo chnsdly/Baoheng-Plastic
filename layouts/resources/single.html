@@ -32,7 +32,7 @@
     </header>
 
     <div class="container resource-single__layout">
-      <main class="resource-single__main">
+      <div class="resource-single__main">
         {{ with $cover }}
           {{ partial "responsive-image.html" (dict
             "src" .
@@ -63,7 +63,7 @@
             {{ end }}
           </div>
         {{ end }}
-      </main>
+      </div>
 
       <aside class="resource-single__aside">
         <div class="resource-cta">

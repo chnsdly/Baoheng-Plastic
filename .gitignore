@@ -1,5 +1,6 @@
 /public/
 /resources/_gen/
+/.hugo_cache/
 /.codex-build/
 /prompts/
 /runs/

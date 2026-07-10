@@ -15,16 +15,18 @@ home_hero:
   secondary_cta:
     label: "浏览产品"
     url: "/products/"
-  stats:
-    - value: "2013"
-      label: "专注工业塑料产品"
-    - value: "20,000 m²"
-      label: "工厂与仓储面积"
-    - value: "30+"
-      label: "出口项目覆盖市场"
-
+  proof_title: "选型先确认四类条件"
+  proof_points:
+    - "载荷类型与货物分布"
+    - "叉车、地牛、货架或输送线接口"
+    - "温度、卫生与暴露环境"
+    - "数量、包装、目的地与交期"
+  visual_caption: "在确认实际载荷、支撑方式、搬运设备和使用环境之前，产品推荐仅作为初步选型方向。"
 usps:
   enable: true
+  eyebrow: "实用选型路径"
+  title: "从真实工况走向可执行的询价规格"
+  description: "有效报价应先说明周转流程，再核对关键接口，并把仍需确认的条件清楚记录下来。"
   items:
     - title: "从应用场景开始"
       description: "推荐型号前，我们先确认载荷类型、存储方式、温度、叉车/货架适配和装柜要求。"
@@ -99,6 +101,7 @@ industries:
 
 clients:
   enable: true
+  eyebrow: "项目协作"
   title: "工厂参观、项目跟进与长期采购"
   description: "真正的合作不只是交换目录。我们支持您完成选型、样品确认、装柜、补货，并在工况变化时调整产品方案。"
   items:

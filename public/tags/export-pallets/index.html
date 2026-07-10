@@ -35,6 +35,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -131,7 +132,7 @@
           <a class="site-header__cta site-header__cta--outline" href="/selection-support/">Product Selection Support</a>
           <a class="site-header__cta site-header__cta--primary" href="/contact/">Request a Quote</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="Language: EN">
               <span class="site-header__language-label font-meta">EN</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -160,7 +161,7 @@
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="Back">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>Menu</p>
@@ -279,9 +280,11 @@
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -289,6 +292,10 @@
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -319,7 +326,7 @@
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -333,7 +340,7 @@
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <nav class="breadcrumb" aria-label="Breadcrumb">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
@@ -348,16 +355,30 @@
     </div>
   </nav>
     
-  <h1>Export Pallets</h1>
-  
-  <ul>
-    
-      <li><a href="/resources/insights/2625-plastic-pallet-size-container-loading-guide/">Plastic Pallet Size for Container Loading: How to Match Cartons, Pallets, and Export Space</a></li>
-    
-      <li><a href="/resources/insights/2607-ispm15-export-pallet-compliance-framework/">ISPM 15 and Export Pallet Compliance: A Practical Decision Framework for B2B Shipping Teams</a></li>
-    
-  </ul>
+  <section class="basic-page">
+    <div class="container container--narrow">
+      <header class="basic-page__header">
+        <p class="page-eyebrow">Overview</p>
+        <h1 class="basic-page__title">Export Pallets</h1>
+      </header>
 
+      
+
+      
+        <ul class="basic-list" role="list">
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/resources/insights/2625-plastic-pallet-size-container-loading-guide/">Plastic Pallet Size for Container Loading: How to Match Cartons, Pallets, and Export Space</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/resources/insights/2607-ispm15-export-pallet-compliance-framework/">ISPM 15 and Export Pallet Compliance: A Practical Decision Framework for B2B Shipping Teams</a>
+            </li>
+          
+        </ul>
+      
+    </div>
+  </section>
 
   </main>
 
@@ -367,8 +388,8 @@
       <a class="site-footer__logo" href="/">Baoheng Plastic</a>
       <p class="site-footer__summary">Factory-direct plastic pallets, pallet boxes, crates, containers, and waste bins for warehousing, logistics, food, cold-chain, manufacturing, and municipal projects.</p>
       <div class="site-footer__actions">
+        <a class="button" href="/contact/">Request a quote</a>
         <a class="button button--secondary" href="/products/">Browse products</a>
-        <a class="button button--ghost" href="/contact/">Request a quote</a>
       </div>
     </div>
 

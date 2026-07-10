@@ -31,7 +31,7 @@
               {{ i18n "phone" | default "Phone" }}
             </p>
             <p class="cta__value">
-              <a href="{{ $phoneHref }}">{{ . }}</a>
+              <a href="{{ $phoneHref | safeURL }}">{{ . }}</a>
             </p>
           </li>
           {{ end }}
@@ -49,7 +49,7 @@
               {{ i18n "email" }}
             </p>
             <p class="cta__value">
-              <a href="{{ $emailHref }}">{{ . }}</a>
+              <a href="{{ $emailHref | safeURL }}">{{ . }}</a>
             </p>
           </li>
           {{ end }}

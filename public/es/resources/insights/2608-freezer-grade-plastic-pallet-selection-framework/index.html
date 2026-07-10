@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Ir al contenido principal</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -135,7 +136,7 @@
           <a class="site-header__cta site-header__cta--outline" href="/es/selection-support/">Asesoría de selección</a>
           <a class="site-header__cta site-header__cta--primary" href="/es/contact/">Solicitar cotización</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="Idioma: ES">
               <span class="site-header__language-label font-meta">ES</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -164,7 +165,7 @@
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="Volver">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>Menú</p>
@@ -283,9 +284,11 @@
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -293,6 +296,10 @@
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -323,7 +330,7 @@
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -337,7 +344,7 @@
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <nav class="breadcrumb" aria-label="Ruta de navegación">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
@@ -505,7 +512,7 @@
     </header>
 
     <div class="container resource-single__layout">
-      <main class="resource-single__main">
+      <div class="resource-single__main">
         
           <img
   src="/images/resources/2608-freezer-grade-plastic-pallet-selection-framework.webp"
@@ -580,7 +587,7 @@
             
           </div>
         
-      </main>
+      </div>
 
       <aside class="resource-single__aside">
         <div class="resource-cta">
@@ -681,8 +688,8 @@
       <a class="site-footer__logo" href="/es/">Baoheng Plastic</a>
       <p class="site-footer__summary">Palets plásticos, cajas pallet, cajas, contenedores y bines de residuos directamente de fábrica para almacenes, logística, alimentos, cadena de frío, fabricación y proyectos municipales.</p>
       <div class="site-footer__actions">
+        <a class="button" href="/es/contact/">Solicitar cotización</a>
         <a class="button button--secondary" href="/es/products/">Ver productos</a>
-        <a class="button button--ghost" href="/es/contact/">Solicitar cotización</a>
       </div>
     </div>
 

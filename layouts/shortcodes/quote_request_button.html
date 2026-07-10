@@ -1,6 +1,6 @@
 {{ $label := i18n "quote_request" }}
 {{ $product := .Get "product" | default .Page.Title }}
-<a class="cta-button"
+<a class="button"
    href='{{ "contact/" | relLangURL }}?product={{ $product | urlquery }}'
    data-gtag="click_quote"
    data-product="{{ $product }}">

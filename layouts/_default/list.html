@@ -1,10 +1,22 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+  <section class="basic-page">
+    <div class="container container--narrow">
+      <header class="basic-page__header">
+        <p class="page-eyebrow">{{ i18n "overview" }}</p>
+        <h1 class="basic-page__title">{{ .Title }}</h1>
+      </header>
 
+      {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+
+      {{ with .Pages }}
+        <ul class="basic-list" role="list">
+          {{ range . }}
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </section>
 {{ end }}

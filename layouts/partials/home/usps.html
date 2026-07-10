@@ -1,18 +1,28 @@
 {{ with .Params.usps }}
   {{ if .enable }}
-    <section class="usps" aria-label="{{ i18n "home_usps_label" }}">
-      <div class="container">
-        <ul class="usps__list" role="list">
+    <section class="usps" aria-labelledby="home-selection-path-title">
+      <div class="container usps__inner">
+        <header class="home-section-head usps__header">
+          <div class="home-section-head__body">
+            {{ with .eyebrow }}<p class="home-section-head__eyebrow">{{ . }}</p>{{ end }}
+            <h2 class="home-section-head__title" id="home-selection-path-title">{{ .title }}</h2>
+            {{ with .description }}<p class="home-section-head__desc">{{ . }}</p>{{ end }}
+          </div>
+          <div class="home-section-head__actions">
+            <a class="home-section-head__link" href="{{ "/selection-support/" | relLangURL }}">{{ i18n "product_selection_support" }}</a>
+          </div>
+        </header>
+        <ol class="usps__list">
           {{ range $index, $item := .items }}
             <li class="usps__item">
               <span class="usps__number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
               <div class="usps__content">
-                <p class="usps__title">{{ .title }}</p>
+                <h3 class="usps__title">{{ .title }}</h3>
                 <p class="usps__text">{{ .description }}</p>
               </div>
             </li>
           {{ end }}
-        </ul>
+        </ol>
       </div>
     </section>
   {{ end }}

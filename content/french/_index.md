@@ -15,16 +15,18 @@ home_hero:
   secondary_cta:
     label: "Voir les produits"
     url: "/products/"
-  stats:
-    - value: "2013"
-      label: "Focus plastiques industriels"
-    - value: "20 000 m²"
-      label: "Surface usine et entrepôt"
-    - value: "30+"
-      label: "Couverture projets export"
-
+  proof_title: "La sélection commence par quatre vérifications"
+  proof_points:
+    - "Type de charge et répartition"
+    - "Interface chariot, transpalette, rack ou convoyeur"
+    - "Température, hygiène et exposition"
+    - "Quantité, emballage, destination et délai"
+  visual_caption: "La recommandation reste préliminaire tant que la charge réelle, le support, l’équipement de manutention et l’environnement ne sont pas confirmés."
 usps:
   enable: true
+  eyebrow: "Parcours de sélection pratique"
+  title: "Des conditions d’utilisation à une spécification prête à chiffrer"
+  description: "Un devis utile part du flux réel, valide les interfaces critiques et identifie clairement les points encore à confirmer."
   items:
     - title: "Commencer par l'application"
       description: "Nous confirmons type de charge, mode de stockage, température, compatibilité chariot/rayonnage et chargement conteneur avant de recommander un modèle."
@@ -99,6 +101,7 @@ industries:
 
 clients:
   enable: true
+  eyebrow: "Collaboration projet"
   title: "Visites usine, suivi projet et approvisionnement long terme"
   description: "Une vraie collaboration ne se limite pas à un catalogue. Nous accompagnons sélection, échantillons, chargement, réapprovisionnement et ajustements lorsque les conditions changent."
   items:

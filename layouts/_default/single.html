@@ -1,15 +1,24 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    {{ if .Params.featured_image }}
-      <p>{{ partial "responsive-image.html" (dict
-        "src" .Params.featured_image
-        "alt" .Title
-        "sizes" "92vw"
-        "widths" (slice 480 768 960 1200)
-        "loading" "eager"
-      ) }}</p>
-    {{ end }}
-    {{ .Content }}
-  </article>
+  <section class="basic-page">
+    <article class="container container--narrow">
+      <header class="basic-page__header">
+        <p class="page-eyebrow">{{ .Section | humanize | default (i18n "overview") }}</p>
+        <h1 class="basic-page__title">{{ .Title }}</h1>
+      </header>
+
+      {{ with .Params.featured_image }}
+        <figure>
+          {{ partial "responsive-image.html" (dict
+            "src" .
+            "alt" $.Title
+            "sizes" "(min-width: 60rem) 60rem, 92vw"
+            "widths" (slice 480 768 960 1200)
+            "loading" "eager"
+          ) }}
+        </figure>
+      {{ end }}
+
+      <div class="prose">{{ .Content }}</div>
+    </article>
+  </section>
 {{ end }}

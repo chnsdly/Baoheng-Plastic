@@ -4,39 +4,24 @@
   <div class="container clients__inner">
     <header class="clients__header home-section-head">
       <div class="home-section-head__body">
+        {{ with $clients.eyebrow }}<p class="home-section-head__eyebrow">{{ . }}</p>{{ end }}
         <h2 id="clients-title" class="clients__title home-section-head__title">{{ $clients.title }}</h2>
-        {{ with $clients.description }}
-        <p class="clients__description home-section-head__desc">{{ . }}</p>
-        {{ end }}
+        {{ with $clients.description }}<p class="clients__description home-section-head__desc">{{ . }}</p>{{ end }}
       </div>
     </header>
-
-    <div class="clients__carousel" role="region" aria-roledescription="carousel" aria-labelledby="clients-title">
-      <div class="clients__track" aria-live="off">
-        {{ range $clients.items }}
-        <div class="clients__slide">
+    <ul class="clients__grid" role="list">
+      {{ range first 6 $clients.items }}
+        <li class="clients__item">
           {{ partial "responsive-image.html" (dict
             "src" .image
             "alt" (.alt | default $clients.title)
             "class" "clients__image"
-            "sizes" "240px"
-            "widths" (slice 160 240 320)
+            "sizes" "(min-width: 64rem) 25vw, (min-width: 48rem) 33vw, 50vw"
+            "widths" (slice 320 480 640 800)
           ) }}
-        </div>
-        {{ end }}
-        {{ range $clients.items }}
-        <div class="clients__slide clients__slide--clone">
-          {{ partial "responsive-image.html" (dict
-            "src" .image
-            "alt" (.alt | default $clients.title)
-            "class" "clients__image"
-            "sizes" "240px"
-            "widths" (slice 160 240 320)
-          ) }}
-        </div>
-        {{ end }}
-      </div>
-    </div>
+        </li>
+      {{ end }}
+    </ul>
   </div>
 </section>
 {{ end }}

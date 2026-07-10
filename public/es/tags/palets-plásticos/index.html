@@ -35,6 +35,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Ir al contenido principal</a>
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -131,7 +132,7 @@
           <a class="site-header__cta site-header__cta--outline" href="/es/selection-support/">Asesoría de selección</a>
           <a class="site-header__cta site-header__cta--primary" href="/es/contact/">Solicitar cotización</a>
         </div><details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button">
+            <summary class="site-header__icon-button" aria-label="Idioma: ES">
               <span class="site-header__language-label font-meta">ES</span>
               <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
@@ -160,7 +161,7 @@
   <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
     <div class="site-header__drawer-inner">
       <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden>
+        <button class="site-header__back" type="button" data-menu-back hidden aria-label="Volver">
           <span aria-hidden="true">&lt;</span>
         </button>
         <p class="site-header__mobile-title" data-menu-title>Menú</p>
@@ -279,9 +280,11 @@
       document.body.classList.toggle('is-menu-open', open);
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (restoreFocus = true) => {
+      const wasOpen = isDrawerOpen;
       setDrawerState(false);
       drawer.hidden = true;
+      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
       showPanel('root');
     };
 
@@ -289,6 +292,10 @@
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
+      requestAnimationFrame(() => {
+        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+        if (firstControl) firstControl.focus();
+      });
     };
 
     toggle.addEventListener('click', (event) => {
@@ -319,7 +326,7 @@
     });
 
     const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer();
+      if (event.matches) closeDrawer(false);
     };
     if (desktopQuery.addEventListener) {
       desktopQuery.addEventListener('change', handleDesktopQueryChange);
@@ -333,7 +340,7 @@
 </script>
 
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <nav class="breadcrumb" aria-label="Ruta de navegación">
     <div class="container">
       <ol class="breadcrumb__list" role="list">
@@ -348,56 +355,110 @@
     </div>
   </nav>
     
-  <h1>Palets Plásticos</h1>
-  
-  <ul>
-    
-      <li><a href="/es/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/">Deflexión de palets plásticos en estantería: criterios de aceptación</a></li>
-    
-      <li><a href="/es/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/">Altura de apilado de palets plásticos: planificación segura en suelo</a></li>
-    
-      <li><a href="/es/resources/insights/2621-foldable-pallet-box-return-space-calculation/">Cajas pallet plegables: cómo calcular el ahorro de espacio en retornos</a></li>
-    
-      <li><a href="/es/resources/insights/2620-closed-deck-plastic-pallet-selection/">Palets plásticos de superficie cerrada: cuándo especificar una cara lisa</a></li>
-    
-      <li><a href="/es/resources/insights/2619-plastic-pallet-color-coding-warehouse-segregation/">Codificación por color de palets plásticos para evitar mezclas en almacén</a></li>
-    
-      <li><a href="/es/resources/insights/2618-plastic-pallet-empty-return-logistics-playbook/">Manual logístico para reducir costes de retorno de palets vacíos</a></li>
-    
-      <li><a href="/es/resources/insights/2617-plastic-pallet-incoming-inspection-plan/">Plan de inspección de recepción para palets plásticos</a></li>
-    
-      <li><a href="/es/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/">Pruebas de carga de palets plásticos antes de pedidos en volumen</a></li>
-    
-      <li><a href="/es/resources/insights/2615-plastic-pallet-traceability-labeling-system/">Sistema de trazabilidad y etiquetado para palets plásticos en almacén</a></li>
-    
-      <li><a href="/es/resources/insights/2614-plastic-pallet-inspection-retirement-criteria/">Criterios de inspección: cuándo reparar, degradar o retirar un palet plástico</a></li>
-    
-      <li><a href="/es/resources/insights/2613-plastic-pallet-loss-control-return-program/">Cómo reducir la pérdida de palets plásticos en logística de circuito cerrado</a></li>
-    
-      <li><a href="/es/resources/insights/2612-plastic-pallet-pool-sizing-method/">Cómo dimensionar un pool de palets plásticos para almacén y logística</a></li>
-    
-      <li><a href="/es/resources/insights/2611-plastic-pallet-sanitation-sop-for-food-warehouses/">SOP de limpieza para palets plásticos en almacenes alimentarios</a></li>
-    
-      <li><a href="/es/resources/insights/2610-forklift-impact-control-for-plastic-pallet-lifecycle/">Control de impactos de montacargas para prolongar la vida útil del palet plástico</a></li>
-    
-      <li><a href="/es/resources/insights/2609-automation-ready-plastic-pallet-specification/">Especificación de palets plásticos para automatización, transportadores y AS/RS</a></li>
-    
-      <li><a href="/es/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/">Cómo especificar palets plásticos para cámaras de congelación de -25 °C a -18 °C</a></li>
-    
-      <li><a href="/es/resources/insights/2607-ispm15-export-pallet-compliance-framework/">ISPM 15 y palets de exportación: marco de decisión para equipos de compras</a></li>
-    
-      <li><a href="/es/resources/insights/2606-nestable-vs-rackable-plastic-pallets/">Palets plásticos encajables vs. palets para estantería: cómo elegir</a></li>
-    
-      <li><a href="/es/resources/insights/2605-plastic-pallet-rfq-specification-checklist/">Lista RFQ para especificar palets plásticos sin errores costosos</a></li>
-    
-      <li><a href="/es/resources/insights/2604-plastic-pallet-pilot-program/">Cómo validar un programa piloto de palets plásticos en 90 días</a></li>
-    
-      <li><a href="/es/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/">Lista de verificación de refuerzo con tubos de acero para palets en estantería</a></li>
-    
-      <li><a href="/es/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/">De pallets de madera a palets plásticos: guía de decisión para almacenes</a></li>
-    
-  </ul>
+  <section class="basic-page">
+    <div class="container container--narrow">
+      <header class="basic-page__header">
+        <p class="page-eyebrow">Resumen</p>
+        <h1 class="basic-page__title">Palets Plásticos</h1>
+      </header>
 
+      
+
+      
+        <ul class="basic-list" role="list">
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/">Deflexión de palets plásticos en estantería: criterios de aceptación</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/">Altura de apilado de palets plásticos: planificación segura en suelo</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2621-foldable-pallet-box-return-space-calculation/">Cajas pallet plegables: cómo calcular el ahorro de espacio en retornos</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2620-closed-deck-plastic-pallet-selection/">Palets plásticos de superficie cerrada: cuándo especificar una cara lisa</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2619-plastic-pallet-color-coding-warehouse-segregation/">Codificación por color de palets plásticos para evitar mezclas en almacén</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2618-plastic-pallet-empty-return-logistics-playbook/">Manual logístico para reducir costes de retorno de palets vacíos</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2617-plastic-pallet-incoming-inspection-plan/">Plan de inspección de recepción para palets plásticos</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/">Pruebas de carga de palets plásticos antes de pedidos en volumen</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2615-plastic-pallet-traceability-labeling-system/">Sistema de trazabilidad y etiquetado para palets plásticos en almacén</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2614-plastic-pallet-inspection-retirement-criteria/">Criterios de inspección: cuándo reparar, degradar o retirar un palet plástico</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2613-plastic-pallet-loss-control-return-program/">Cómo reducir la pérdida de palets plásticos en logística de circuito cerrado</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2612-plastic-pallet-pool-sizing-method/">Cómo dimensionar un pool de palets plásticos para almacén y logística</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2611-plastic-pallet-sanitation-sop-for-food-warehouses/">SOP de limpieza para palets plásticos en almacenes alimentarios</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2610-forklift-impact-control-for-plastic-pallet-lifecycle/">Control de impactos de montacargas para prolongar la vida útil del palet plástico</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2609-automation-ready-plastic-pallet-specification/">Especificación de palets plásticos para automatización, transportadores y AS/RS</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/">Cómo especificar palets plásticos para cámaras de congelación de -25 °C a -18 °C</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2607-ispm15-export-pallet-compliance-framework/">ISPM 15 y palets de exportación: marco de decisión para equipos de compras</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2606-nestable-vs-rackable-plastic-pallets/">Palets plásticos encajables vs. palets para estantería: cómo elegir</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2605-plastic-pallet-rfq-specification-checklist/">Lista RFQ para especificar palets plásticos sin errores costosos</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2604-plastic-pallet-pilot-program/">Cómo validar un programa piloto de palets plásticos en 90 días</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2603-racking-pallet-steel-reinforcement-checklist/">Lista de verificación de refuerzo con tubos de acero para palets en estantería</a>
+            </li>
+          
+            <li class="basic-list__item">
+              <a class="basic-list__link" href="/es/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/">De pallets de madera a palets plásticos: guía de decisión para almacenes</a>
+            </li>
+          
+        </ul>
+      
+    </div>
+  </section>
 
   </main>
 
@@ -407,8 +468,8 @@
       <a class="site-footer__logo" href="/es/">Baoheng Plastic</a>
       <p class="site-footer__summary">Palets plásticos, cajas pallet, cajas, contenedores y bines de residuos directamente de fábrica para almacenes, logística, alimentos, cadena de frío, fabricación y proyectos municipales.</p>
       <div class="site-footer__actions">
+        <a class="button" href="/es/contact/">Solicitar cotización</a>
         <a class="button button--secondary" href="/es/products/">Ver productos</a>
-        <a class="button button--ghost" href="/es/contact/">Solicitar cotización</a>
       </div>
     </div>
 

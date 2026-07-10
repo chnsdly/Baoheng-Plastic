@@ -731,7 +731,7 @@
   }
 
   .product-hero {
-    grid-template-columns: minmax(18rem, 0.92fr) minmax(24rem, 1.08fr);
+    grid-template-columns: 1fr;
     align-items: center;
   }
 
@@ -742,11 +742,27 @@
   }
 
   .product-inquiry {
-    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .product-hero__body {
+    order: -1;
+  }
+}
+
+@include mq-up(laptop) {
+  .product-hero {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    align-items: center;
   }
 }
 
 @include mq-up(desktop) {
+  .product-inquiry {
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  }
   .product-listing__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

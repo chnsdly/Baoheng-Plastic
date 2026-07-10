@@ -22,15 +22,6 @@
   background: var(--card);
   box-shadow: none;
   overflow: hidden;
-  transition:
-    box-shadow var(--transition-base),
-    border-color var(--transition-base);
-}
-
-.factory__item:hover,
-.factory__item:focus-within {
-  border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
-  box-shadow: none;
 }
 
 .factory__image {

@@ -16,12 +16,13 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">{{ i18n "skip_to_content" | default "Skip to content" }}</a>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDZ3CGT4" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   {{ partial "header.html" . }}
-  <main>
+  <main id="main-content" tabindex="-1">
     {{ partial "breadcrumb.html" . }}
     {{ block "main" . }}{{ end }}
   </main>

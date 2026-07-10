@@ -36,8 +36,8 @@
 {{- if gt (len $descriptionText) 170 -}}
   {{- $descriptionText = truncate 160 $descriptionText -}}
 {{- end -}}
-{{- $description := $descriptionText | htmlEscape -}}
-{{- $pageTitle := .Title | default .Site.Title | plainify | htmlEscape -}}
+{{- $description := $descriptionText -}}
+{{- $pageTitle := .Title | default .Site.Title | plainify -}}
 
 {{- $imageSource := "" -}}
 {{- with .Params.images -}}

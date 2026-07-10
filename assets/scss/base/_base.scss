@@ -17,9 +17,7 @@ html {
 
 body {
   min-width: 20rem;
-  background:
-    linear-gradient(180deg, #ffffff 0, rgba(255, 255, 255, 0) 32rem),
-    var(--surface);
+  background: var(--surface);
   color: var(--on-surface);
   font-family: var(--font-body);
   line-height: var(--line-normal);
@@ -40,7 +38,7 @@ img {
   max-width: var(--container);
   width: 100%;
   margin-inline: auto;
-  padding-inline: space(2);
+  padding-inline: clamp(1rem, 3vw, 2rem);
 }
 
 .container--wide { --container: var(--container-wide); }
@@ -89,10 +87,10 @@ img {
 
 .page-eyebrow {
   margin: 0;
-  color: var(--brand);
+  color: var(--accent-strong);
   font-size: var(--type-eyebrow);
-  font-weight: var(--weight-extrabold);
-  letter-spacing: 0;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.1em;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -242,8 +240,148 @@ summary:focus-visible {
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--on-brand) 14%, transparent);
 }
 
+.skip-link {
+  position: fixed;
+  inset-block-start: space(1);
+  inset-inline-start: space(1);
+  z-index: var(--z-modal);
+  padding: space(0.8) space(1.2);
+  border-radius: var(--radius-s);
+  background: var(--brand-strong);
+  color: var(--on-brand);
+  font-weight: var(--weight-bold);
+  transform: translateY(-160%);
+  transition: transform var(--transition-base);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.basic-page {
+  padding-block: clamp(2.5rem, 6vw, 5.5rem) var(--section-padding);
+}
+
+.basic-page__header {
+  display: grid;
+  gap: space(1);
+  max-width: 48rem;
+  margin-block-end: var(--section-gap);
+}
+
+.basic-page__title {
+  margin: 0;
+  font-size: var(--type-page-title);
+  line-height: var(--line-tight);
+  font-weight: var(--weight-semibold);
+  text-wrap: balance;
+}
+
+.prose {
+  max-width: 72ch;
+  color: var(--on-surface);
+}
+
+.prose :is(h2, h3, h4) {
+  scroll-margin-top: calc(var(--height-header) + 1rem);
+  margin-block-start: clamp(2rem, 4vw, 3.5rem);
+}
+
+.prose :is(p, ul, ol, blockquote, figure, table) {
+  margin-block-end: space(2);
+}
+
+.prose a:not(.button) {
+  color: var(--brand);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.basic-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: var(--border-strong);
+  list-style: none;
+}
+
+.basic-list__item {
+  border-bottom: var(--border);
+}
+
+.basic-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: space(1.5);
+  min-height: 3.5rem;
+  padding-block: space(1.2);
+  color: var(--on-surface);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+}
+
+.basic-list__link::after {
+  content: "\2192";
+  color: var(--brand);
+  transition: transform var(--transition-base);
+}
+
+.basic-list__link:hover,
+.basic-list__link:focus-visible {
+  color: var(--brand);
+}
+
+.basic-list__link:hover::after,
+.basic-list__link:focus-visible::after {
+  transform: translateX(0.25rem);
+}
+
+.res-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: space(0.5);
+  margin-block-start: var(--section-gap);
+}
+
+.res-pager a,
+.res-pager span {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: space(0.55) space(0.8);
+  border: var(--border);
+  border-radius: var(--radius-s);
+  background: var(--card);
+  color: var(--on-surface);
+  text-decoration: none;
+}
+
+.res-pager a:hover,
+.res-pager a:focus-visible,
+.res-pager .current {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: var(--on-brand);
+}
+
+.res-pager .disabled {
+  color: var(--muted);
+  background: var(--surface-alt);
+}
+
+:lang(zh) :is(.page-eyebrow, .home-section-head__eyebrow, .product-listing__eyebrow, .product-hero__eyebrow) {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 @include mq-up(tablet) {
-  .container { padding-inline: space(3); }
+  .container { padding-inline: clamp(1.5rem, 3vw, 2rem); }
 
   .section-head--split {
     grid-template-columns: minmax(0, 0.95fr) minmax(20rem, 0.75fr);
