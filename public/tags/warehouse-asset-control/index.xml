@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Warehouse Asset Control on Baoheng Plastic</title>
-    <link>https://www.baohengplastic.com/tags/warehouse-asset-control/</link>
+    <link>http://localhost:1313/tags/warehouse-asset-control/</link>
     <description>Recent content in Warehouse Asset Control on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.baohengplastic.com/tags/warehouse-asset-control/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/warehouse-asset-control/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Reduce Plastic Pallet Loss in Closed-Loop Logistics: A Practical Return-Control Program</title>
-      <link>https://www.baohengplastic.com/resources/insights/2613-plastic-pallet-loss-control-return-program/</link>
+      <link>http://localhost:1313/resources/insights/2613-plastic-pallet-loss-control-return-program/</link>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2613-plastic-pallet-loss-control-return-program/</guid>
+      <guid>http://localhost:1313/resources/insights/2613-plastic-pallet-loss-control-return-program/</guid>
       <description>&lt;p&gt;Plastic pallets deliver the best return when they stay inside a controlled circulation system. In many B2B operations, the problem is not that the pallet fails too early. The problem is that good pallets disappear from the loop.&lt;/p&gt;&#xA;&lt;p&gt;A 2% monthly loss rate may look small on a spreadsheet, but in a pool of 8,000 pallets it means 160 pallets must be replaced every month before any growth or seasonal peak is considered. For operations that ship to distributors, co-packers, retail DCs, farms, or regional depots, pallet loss can quietly become one of the largest hidden costs in the packaging budget.&lt;/p&gt;</description>
     </item>
   </channel>

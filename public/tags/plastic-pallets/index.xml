@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plastic Pallets on Baoheng Plastic</title>
-    <link>https://www.baohengplastic.com/tags/plastic-pallets/</link>
+    <link>http://localhost:1313/tags/plastic-pallets/</link>
     <description>Recent content in Plastic Pallets on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.baohengplastic.com/tags/plastic-pallets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/plastic-pallets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation-Ready Plastic Pallets: A Specification Checklist for Conveyors, AS/RS, and High-Throughput Warehouses</title>
-      <link>https://www.baohengplastic.com/resources/insights/2609-automation-ready-plastic-pallet-specification/</link>
+      <link>http://localhost:1313/resources/insights/2609-automation-ready-plastic-pallet-specification/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2609-automation-ready-plastic-pallet-specification/</guid>
+      <guid>http://localhost:1313/resources/insights/2609-automation-ready-plastic-pallet-specification/</guid>
       <description>&lt;p&gt;Warehouse automation projects often fail for a simple reason: teams qualify robotics and software in detail, but treat pallets as a standard commodity.&lt;/p&gt;&#xA;&lt;p&gt;In conveyor lines, AS/RS lanes, shuttles, and palletizers, a small pallet variation can trigger repeated micro-stops, sensor errors, transfer jams, and unplanned manual intervention. The result is usually higher labor demand and lower OEE—even when automation hardware is correctly selected.&lt;/p&gt;&#xA;&lt;p&gt;For procurement and operations leaders, the key question is practical:&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Specify Plastic Pallets for Freezer Warehouses: A Practical Framework for -25°C to -18°C Operations</title>
-      <link>https://www.baohengplastic.com/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/</link>
+      <link>http://localhost:1313/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/</link>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/</guid>
+      <guid>http://localhost:1313/resources/insights/2608-freezer-grade-plastic-pallet-selection-framework/</guid>
       <description>&lt;p&gt;Freezer warehouses create a very different failure pattern from ambient facilities. Teams that run reliably at room temperature often see sudden pallet cracking, deck brittleness, or forklift-impact damage once operations move to &lt;strong&gt;-25°C to -18°C&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For procurement and warehouse leaders, the key question is not “plastic or wood.” It is this:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Which pallet specification keeps structural performance stable in low-temperature handling, racking, and multi-shift throughput?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This guide provides a decision framework you can use before RFQ, pilot, and full rollout.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ISPM 15 and Export Pallet Compliance: A Practical Decision Framework for B2B Shipping Teams</title>
-      <link>https://www.baohengplastic.com/resources/insights/2607-ispm15-export-pallet-compliance-framework/</link>
+      <link>http://localhost:1313/resources/insights/2607-ispm15-export-pallet-compliance-framework/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2607-ispm15-export-pallet-compliance-framework/</guid>
+      <guid>http://localhost:1313/resources/insights/2607-ispm15-export-pallet-compliance-framework/</guid>
       <description>&lt;p&gt;International shipments fail at the border for many reasons, but one recurring issue is often underestimated: &lt;strong&gt;wood packaging compliance&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For export teams, procurement managers, and warehouse operators, pallet choice is not only a load-handling decision. It is also a compliance decision that affects customs clearance speed, inspection risk, rework cost, and on-time delivery.&lt;/p&gt;&#xA;&lt;p&gt;This guide focuses on one practical question:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When does switching from wood to plastic pallets reduce export compliance risk, and how should B2B teams make that decision lane by lane?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nestable vs Rackable Plastic Pallets: A Buyer’s Decision Framework for Export and Warehouse Operations</title>
-      <link>https://www.baohengplastic.com/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</link>
+      <link>http://localhost:1313/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</guid>
+      <guid>http://localhost:1313/resources/insights/2606-nestable-vs-rackable-plastic-pallets/</guid>
       <description>&lt;p&gt;Choosing plastic pallets is often treated as a material question. In real projects, the bigger question is structural: &lt;strong&gt;should you buy nestable pallets or rackable pallets&lt;/strong&gt;?&lt;/p&gt;&#xA;&lt;p&gt;For procurement teams, this decision directly affects freight cost, racking safety, handling efficiency, and replacement rate. A pallet that looks cheaper per unit can become the more expensive option once transport, storage, and damage risk are included.&lt;/p&gt;&#xA;&lt;p&gt;This guide provides a practical decision framework for procurement teams, warehouse managers, and logistics leaders who need to choose the right pallet architecture before quotation and rollout.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Run a 90-Day Plastic Pallet Pilot Before Full Warehouse Rollout</title>
-      <link>https://www.baohengplastic.com/resources/insights/2604-plastic-pallet-pilot-program/</link>
+      <link>http://localhost:1313/resources/insights/2604-plastic-pallet-pilot-program/</link>
       <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2604-plastic-pallet-pilot-program/</guid>
-      <description>&lt;p&gt;In our cornerstone guide, &lt;a href=&#34;https://www.baohengplastic.com/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/&#34;&gt;From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades&lt;/a&gt;&#xA;, we covered the strategic “why” and key technical basics of switching pallet systems.&lt;/p&gt;&#xA;&lt;p&gt;This article goes one level deeper on one practical question that procurement and warehouse teams keep asking:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;“Before we replace thousands of pallets, how do we prove the decision with real data?”&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The answer is not another meeting. It is a &lt;strong&gt;90-day pilot program&lt;/strong&gt; with clear pass/fail criteria.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/insights/2604-plastic-pallet-pilot-program/</guid>
+      <description>&lt;p&gt;In our cornerstone guide, &lt;a href=&#34;http://localhost:1313/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/&#34;&gt;From Wooden to Plastic Pallets: A Practical Guide to Warehouse Storage Upgrades&lt;/a&gt;&#xA;, we covered the strategic “why” and key technical basics of switching pallet systems.&lt;/p&gt;&#xA;&lt;p&gt;This article goes one level deeper on one practical question that procurement and warehouse teams keep asking:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;“Before we replace thousands of pallets, how do we prove the decision with real data?”&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The answer is not another meeting. It is a &lt;strong&gt;90-day pilot program&lt;/strong&gt; with clear pass/fail criteria.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wooden to Plastic Pallets: Warehouse Upgrade Decision Guide</title>
-      <link>https://www.baohengplastic.com/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</link>
+      <link>http://localhost:1313/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</link>
       <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</guid>
+      <guid>http://localhost:1313/resources/insights/2511-wooden-to-plastic-pallets-warehouse-upgrade-guide/</guid>
       <description>&lt;p&gt;Replacing wooden pallets with plastic pallets is worth reviewing when pallet damage, moisture, hygiene controls, export paperwork, automated handling, or racking consistency create more cost or risk than the purchase price suggests. Wood can still be the practical choice for low-risk, one-way domestic moves where breakage, cleanliness, and dimensional repeatability are not critical. The useful question is not &amp;ldquo;Which material is better?&amp;rdquo; It is whether a specific pallet model, load rating, deck and base structure, material route, and inspection plan fit your goods, equipment, storage method, and reuse cycle.&lt;/p&gt;</description>
     </item>
   </channel>

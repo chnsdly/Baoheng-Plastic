@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Returnable Packaging on Baoheng Plastic</title>
-    <link>https://www.baohengplastic.com/tags/returnable-packaging/</link>
+    <link>http://localhost:1313/tags/returnable-packaging/</link>
     <description>Recent content in Returnable Packaging on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.baohengplastic.com/tags/returnable-packaging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/returnable-packaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reusable Plastic Pallet Records for EU PPWR Planning</title>
+      <link>http://localhost:1313/resources/insights/2642-reusable-plastic-pallet-records-eu-ppwr-planning/</link>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resources/insights/2642-reusable-plastic-pallet-records-eu-ppwr-planning/</guid>
+      <description>&lt;p&gt;A reusable plastic pallet is not automatically a reusable packaging system. For EU packaging planning, the practical question is not only whether the pallet is strong enough to be used again. The buyer also needs records that show how the pallet or pallet box is identified, returned, inspected, cleaned or reconditioned, counted, and removed from circulation when it is no longer fit for use.&lt;/p&gt;&#xA;&lt;p&gt;This article is a planning checklist, not legal advice. &lt;a href=&#34;https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng&#34;&gt;Regulation (EU) 2025/40&lt;/a&gt;&#xA; includes transport packaging such as pallets and foldable plastic boxes in re-use target language, and it also refers to re-use systems and reporting. Whether a specific exporter, importer, customer flow, or product category is in scope must be confirmed with the responsible EU customer, importer, or adviser.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Plastic Pallet Traceability: How to Build a Labeling System That Survives Real Warehouse Use</title>
-      <link>https://www.baohengplastic.com/resources/insights/2615-plastic-pallet-traceability-labeling-system/</link>
+      <link>http://localhost:1313/resources/insights/2615-plastic-pallet-traceability-labeling-system/</link>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2615-plastic-pallet-traceability-labeling-system/</guid>
+      <guid>http://localhost:1313/resources/insights/2615-plastic-pallet-traceability-labeling-system/</guid>
       <description>&lt;p&gt;Reusable plastic pallets only become manageable assets when the warehouse can identify them quickly and consistently. A pallet may be durable, rackable, and easy to clean, but if nobody can tell which pool it belongs to, where it was last shipped, or whether it is approved for the current lane, it will still create avoidable cost.&lt;/p&gt;&#xA;&lt;p&gt;For manufacturers, 3PL operators, food distributors, and closed-loop logistics teams, the practical question is not whether every pallet should carry a label. The better question is:&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Palets de plástico on Baoheng Plastic</title>
-    <link>https://www.baohengplastic.com/es/products/pallets/</link>
+    <link>http://localhost:1313/es/products/pallets/</link>
     <description>Recent content in Palets de plástico on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="https://www.baohengplastic.com/es/products/pallets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/es/products/pallets/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

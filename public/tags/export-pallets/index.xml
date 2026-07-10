@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Export Pallets on Baoheng Plastic</title>
-    <link>https://www.baohengplastic.com/tags/export-pallets/</link>
+    <link>http://localhost:1313/tags/export-pallets/</link>
     <description>Recent content in Export Pallets on Baoheng Plastic</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.baohengplastic.com/tags/export-pallets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/export-pallets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plastic Pallet Size for Container Loading: How to Match Cartons, Pallets, and Export Space</title>
-      <link>https://www.baohengplastic.com/resources/insights/2625-plastic-pallet-size-container-loading-guide/</link>
+      <link>http://localhost:1313/resources/insights/2625-plastic-pallet-size-container-loading-guide/</link>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2625-plastic-pallet-size-container-loading-guide/</guid>
+      <guid>http://localhost:1313/resources/insights/2625-plastic-pallet-size-container-loading-guide/</guid>
       <description>&lt;p&gt;Plastic pallet size is often chosen too late in an export project. Cartons are already confirmed, the container plan is already estimated, and the warehouse team is asked to &amp;ldquo;find a standard pallet that works.&amp;rdquo; That sequence creates avoidable problems: carton overhang, wasted container floor space, unstable unit loads, forklift entry conflicts, and different assumptions between procurement and suppliers.&lt;/p&gt;&#xA;&lt;p&gt;For export shipments, the right plastic pallet size is not simply the most common local size. It is the size that connects four things at the same time: the carton footprint, the pallet deck, the container loading pattern, and the handling method at origin and destination.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ISPM 15 and Export Pallet Compliance: A Practical Decision Framework for B2B Shipping Teams</title>
-      <link>https://www.baohengplastic.com/resources/insights/2607-ispm15-export-pallet-compliance-framework/</link>
+      <link>http://localhost:1313/resources/insights/2607-ispm15-export-pallet-compliance-framework/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.baohengplastic.com/resources/insights/2607-ispm15-export-pallet-compliance-framework/</guid>
+      <guid>http://localhost:1313/resources/insights/2607-ispm15-export-pallet-compliance-framework/</guid>
       <description>&lt;p&gt;International shipments fail at the border for many reasons, but one recurring issue is often underestimated: &lt;strong&gt;wood packaging compliance&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For export teams, procurement managers, and warehouse operators, pallet choice is not only a load-handling decision. It is also a compliance decision that affects customs clearance speed, inspection risk, rework cost, and on-time delivery.&lt;/p&gt;&#xA;&lt;p&gt;This guide focuses on one practical question:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When does switching from wood to plastic pallets reduce export compliance risk, and how should B2B teams make that decision lane by lane?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
