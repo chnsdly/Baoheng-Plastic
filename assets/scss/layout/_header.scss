@@ -8,7 +8,7 @@ body.is-menu-open {
   z-index: var(--z-header);
   border-bottom: var(--border);
   background: color-mix(in srgb, var(--card) 96%, transparent);
-  box-shadow: 0 1px 0 rgba(16, 47, 55, 0.06);
+  box-shadow: 0 1px 0 rgba(16, 47, 55, 0.05);
   backdrop-filter: blur(14px);
   overflow-x: clip;
 }
@@ -37,7 +37,7 @@ body.is-menu-open {
 .site-header__logo-image {
   display: block;
   width: auto;
-  height: 2.7rem;
+  height: 2.55rem;
 }
 
 .site-header__nav {
@@ -83,7 +83,7 @@ body.is-menu-open {
   display: inline-flex;
   align-items: center;
   gap: space(0.35);
-  min-height: 2.45rem;
+  min-height: 2.75rem;
   padding-inline: space(0.9);
   border-radius: var(--radius-s);
   color: color-mix(in srgb, var(--on-surface) 88%, transparent);
@@ -99,7 +99,7 @@ body.is-menu-open {
 .site-header__nav-link:focus-visible,
 .site-header__nav-link--current {
   color: var(--brand-strong);
-  background: var(--surface);
+  background: var(--brand-tint);
 }
 
 .site-header__nav-link--current {
@@ -129,11 +129,11 @@ body.is-menu-open {
 }
 
 .site-header__cta {
-  min-height: 2.45rem;
+  min-height: 2.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: space(0.5) space(0.85);
+  padding: space(0.55) space(1);
   border: 1px solid transparent;
   border-radius: var(--radius-s);
   font-size: var(--type-ui);
@@ -175,7 +175,7 @@ body.is-menu-open {
   align-items: center;
   justify-content: space-between;
   gap: space(0.35);
-  min-height: 2.45rem;
+  min-height: 2.75rem;
   padding: space(0.5) space(0.55);
   border: 1px solid transparent;
   border-radius: var(--radius-s);

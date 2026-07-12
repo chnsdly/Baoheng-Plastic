@@ -53,7 +53,7 @@ img {
 .section-head {
   display: grid;
   gap: space(1);
-  max-width: 60rem;
+  max-width: 62rem;
   margin-bottom: var(--section-gap);
 }
 
@@ -89,7 +89,7 @@ img {
   margin: 0;
   color: var(--accent-strong);
   font-size: var(--type-eyebrow);
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-bold);
   letter-spacing: 0.1em;
   line-height: 1.2;
   text-transform: uppercase;
@@ -192,7 +192,7 @@ summary:focus-visible {
   min-width: 0;
   padding: var(--card-padding);
   border: var(--border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-l);
   background: var(--card);
   color: var(--on-surface);
   box-shadow: none;
@@ -224,7 +224,7 @@ summary:focus-visible {
   background: var(--brand-strong);
   color: var(--on-brand);
   border-color: color-mix(in srgb, var(--on-brand) 16%, transparent);
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
 }
 
 .industrial-panel--dark :is(h2, h3, p, li) {

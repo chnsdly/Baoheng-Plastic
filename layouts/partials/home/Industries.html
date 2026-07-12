@@ -29,6 +29,7 @@
           <h3><a href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ .title }}</a></h3>
           {{ with .summary }}<p>{{ . }}</p>{{ end }}
           {{ with .products }}<p class="industries__products"><span>{{ i18n "home_typical_fit" }}</span>{{ . }}</p>{{ end }}
+          <a class="text-link" href="{{ partial "menu-url.html" (dict "url" .url) }}">{{ i18n "industry_view_application" }}</a>
         </div>
       </article>
       {{ end }}

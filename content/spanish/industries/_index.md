@@ -5,7 +5,7 @@ hero:
   eyebrow: "Primero la aplicación"
   title: "Seleccione productos plásticos de manejo según el entorno operativo"
   text: "Un palet o contenedor que funciona en almacenamiento en piso puede fallar en estanterías, cámaras frías, zonas higiénicas o manejo químico. Empiece por la aplicación más cercana para que la cotización refleje el riesgo real de operación."
-  image: "/images/home/industries-1.jpg"
+  image: "/images/industry/high-1.jpg"
 overview:
   title: "Cómo usar estas páginas"
   points:

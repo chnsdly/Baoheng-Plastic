@@ -5,7 +5,7 @@ hero:
   eyebrow: "先看应用场景"
   title: "按真实工况选择塑料搬运包装产品"
   text: "同一款托盘或容器，在地面堆码、货架存储、低温冷库、卫生区域和化学品搬运中的风险完全不同。先匹配最接近的行业场景，报价才能真正反映现场使用条件。"
-  image: "/images/home/industries-1.jpg"
+  image: "/images/industry/high-1.jpg"
 overview:
   title: "行业页面如何帮助采购决策"
   points:

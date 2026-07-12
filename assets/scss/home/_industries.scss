@@ -79,6 +79,11 @@
   font-size: var(--type-body-sm);
 }
 
+.industries__content .text-link {
+  align-self: end;
+  margin-top: auto;
+  padding-top: space(0.35);
+}
 .industries__products {
   display: grid;
   gap: space(0.25);
@@ -97,16 +102,5 @@
 @include mq-up(laptop) {
   .industries__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .industries__item:first-child {
-    grid-column: span 2;
-    grid-template-columns: minmax(0, 1.08fr) minmax(18rem, 0.92fr);
-    grid-template-rows: 1fr;
-  }
-
-  .industries__item:first-child .industries__media {
-    aspect-ratio: auto;
-    min-height: 100%;
   }
 }

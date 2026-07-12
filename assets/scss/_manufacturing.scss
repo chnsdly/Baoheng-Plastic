@@ -51,7 +51,7 @@
 
 .manufacturing-hero__media > img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   border: var(--border);
   border-radius: var(--radius-l);
@@ -108,13 +108,13 @@
   border: var(--border);
   border-radius: var(--radius-l);
   background: var(--surface);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
   overflow: hidden;
 }
 
 .manufacturing-process-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
@@ -136,6 +136,12 @@
   color: var(--secondary);
   font-size: var(--type-body-sm);
   line-height: var(--line-normal);
+}
+
+.manufacturing-section--materials .industrial-card {
+  border-top: 3px solid var(--brand);
+  padding-top: calc(var(--card-padding) - 2px);
+  background: color-mix(in srgb, var(--card) 88%, var(--brand-tint));
 }
 
 .manufacturing-quality__grid {
@@ -184,7 +190,7 @@
 }
 
 .manufacturing-rfq {
-  padding-block: var(--section-padding);
+  padding-block: clamp(3.25rem, 5vw, 4.75rem);
   background: var(--brand-strong);
   color: var(--on-brand);
 }
@@ -226,12 +232,29 @@
     grid-template-columns: minmax(0, 0.95fr) minmax(24rem, 1.05fr);
   }
 
-  .manufacturing-hero__facts,
+  .manufacturing-hero__facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: -3rem;
+    padding-inline: space(1);
+  }
+
   .manufacturing-process-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .manufacturing-quality__grid,
+  .manufacturing-quality__grid {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    align-items: center;
+  }
+
+  .manufacturing-quality__grid .section-head {
+    margin-bottom: 0;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .manufacturing-rfq__inner {
     grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   }

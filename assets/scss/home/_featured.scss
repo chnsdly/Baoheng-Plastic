@@ -265,7 +265,7 @@
 
 @include mq-up(desktop) {
   .home-family-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .home-product-grid {
@@ -273,14 +273,14 @@
   }
 
   .home-family-card {
-    grid-template-columns: minmax(12rem, 0.78fr) minmax(0, 1.22fr);
-    grid-template-rows: 1fr;
-    gap: space(1.5);
-    padding-block: space(1.4);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: space(1);
+    padding-block: space(1.2);
   }
 
   .home-family-card__media {
-    aspect-ratio: auto;
-    min-height: 18rem;
+    aspect-ratio: 4 / 3;
+    min-height: 0;
   }
 }

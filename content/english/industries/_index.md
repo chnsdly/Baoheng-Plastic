@@ -5,7 +5,7 @@ hero:
   eyebrow: "Applications first"
   title: "Select plastic handling products by operating environment"
   text: "A pallet or container that works in floor storage may fail in racking, cold rooms, hygiene zones, or chemical handling. Start with the closest application so the quotation can reflect real operating risk."
-  image: "/images/home/industries-1.jpg"
+  image: "/images/industry/high-1.jpg"
 overview:
   title: "How industry pages help buyers"
   points:

@@ -7,7 +7,7 @@
 .site-footer__inner {
   display: grid;
   gap: space(3);
-  padding-block: space(5);
+  padding-block: clamp(3.5rem, 6vw, 5rem);
 }
 
 .site-footer__brand {
@@ -25,7 +25,8 @@
 
 .site-footer__summary {
   margin: 0;
-  color: color-mix(in srgb, var(--on-brand) 74%, transparent);
+  color: color-mix(in srgb, var(--on-brand) 80%, transparent);
+  line-height: 1.7;
   overflow-wrap: anywhere;
 }
 
@@ -75,7 +76,8 @@
 }
 
 .site-footer__link {
-  color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+  color: color-mix(in srgb, var(--on-brand) 82%, transparent);
+  font-size: var(--type-body-sm);
   text-decoration: none;
   overflow-wrap: anywhere;
 }
@@ -94,7 +96,8 @@
 
 .site-footer__contact-row {
   margin: 0;
-  color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+  color: color-mix(in srgb, var(--on-brand) 82%, transparent);
+  font-size: var(--type-body-sm);
   overflow-wrap: anywhere;
 }
 

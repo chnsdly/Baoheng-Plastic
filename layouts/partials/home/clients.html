@@ -10,7 +10,7 @@
       </div>
     </header>
     <ul class="clients__grid" role="list">
-      {{ range first 6 $clients.items }}
+      {{ range first 5 $clients.items }}
         <li class="clients__item">
           {{ partial "responsive-image.html" (dict
             "src" .image

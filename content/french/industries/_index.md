@@ -5,7 +5,7 @@ hero:
   eyebrow: "L'application d'abord"
   title: "Sélectionner les produits plastiques de manutention selon l'environnement réel"
   text: "Une palette ou un conteneur adapté au stockage au sol peut échouer en rayonnage, chambre froide, zone hygiénique ou manutention chimique. Commencez par l'application la plus proche afin que le devis reflète les risques réels d'exploitation."
-  image: "/images/home/industries-1.jpg"
+  image: "/images/industry/high-1.jpg"
 overview:
   title: "Comment utiliser ces pages"
   points:
