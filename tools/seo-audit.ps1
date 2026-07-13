@@ -5,11 +5,30 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-if (-not $SkipBuild) {
-  hugo --destination $Destination --cleanDestinationDir
+$projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$buildRoot = [IO.Path]::GetFullPath((Join-Path $projectRoot ".codex-build"))
+$destinationPath = if ([IO.Path]::IsPathRooted($Destination)) { [IO.Path]::GetFullPath($Destination) } else { [IO.Path]::GetFullPath((Join-Path $projectRoot $Destination)) }
+$buildPrefix = $buildRoot.TrimEnd('\') + '\'
+if (-not $destinationPath.StartsWith($buildPrefix, [StringComparison]::OrdinalIgnoreCase)) {
+  throw "SEO audit destination must stay under $buildRoot. Refusing to write to $destinationPath."
 }
 
-$root = Resolve-Path $Destination
+$cachePath = Join-Path $buildRoot "hugo-cache"
+New-Item -ItemType Directory -Force -Path $cachePath | Out-Null
+$env:HUGO_CACHEDIR = $cachePath
+
+if (-not $SkipBuild) {
+  hugo --gc --minify --destination $destinationPath --cleanDestinationDir
+  if ($LASTEXITCODE -ne 0) {
+    throw "Hugo build failed with exit code $LASTEXITCODE."
+  }
+}
+
+if (-not (Test-Path $destinationPath)) {
+  throw "SEO audit destination does not exist: $destinationPath"
+}
+
+$root = Resolve-Path $destinationPath
 $issues = New-Object System.Collections.Generic.List[object]
 
 function Add-SeoIssue {
@@ -40,19 +59,74 @@ function Get-MatchValue {
   return $null
 }
 
+function Get-AttributeValue {
+  param(
+    [string]$Tag,
+    [string]$Attribute
+  )
+
+  $pattern = '(?i)(?:^|\s)' + [regex]::Escape($Attribute) + '\s*=\s*(?:"([^"]*)"|''([^'']*)''|([^\s>]+))'
+  $match = [regex]::Match($Tag, $pattern)
+  if (-not $match.Success) {
+    return $null
+  }
+
+  foreach ($groupNumber in 1..3) {
+    $value = $match.Groups[$groupNumber].Value
+    if ($null -ne $value -and $value.Length -gt 0) {
+      return $value.Trim()
+    }
+  }
+
+  return $null
+}
+
+function Get-TagByAttributeValue {
+  param(
+    [string]$Text,
+    [string]$TagName,
+    [string]$Attribute,
+    [string]$Value
+  )
+
+  $tagPattern = '<' + [regex]::Escape($TagName) + '\b[^>]*>'
+  foreach ($match in [regex]::Matches($Text, $tagPattern, [Text.RegularExpressions.RegexOptions]::IgnoreCase)) {
+    $tag = $match.Value
+    $actualValue = Get-AttributeValue $tag $Attribute
+    if ($actualValue -and $actualValue -ieq $Value) {
+      return $tag
+    }
+  }
+
+  return $null
+}
+
+function Test-TagAttribute {
+  param(
+    [string]$Tag,
+    [string]$Attribute
+  )
+
+  $pattern = '(?i)(?:^|\s)' + [regex]::Escape($Attribute) + '(?:\s*=|\s|>)'
+  return [regex]::IsMatch($Tag, $pattern)
+}
+
 $htmlFiles = Get-ChildItem -Path $root -Recurse -Filter "index.html"
 
 foreach ($file in $htmlFiles) {
   $html = Get-Content -Raw -Encoding UTF8 $file.FullName
 
-  if ($html -match 'http-equiv=["'']refresh["'']') {
+  $refreshTag = Get-TagByAttributeValue $html "meta" "http-equiv" "refresh"
+  if ($refreshTag) {
     continue
   }
 
   $relative = Resolve-Path -Relative $file.FullName
-  $htmlLang = Get-MatchValue $html '<html\s+lang=["'']([^"'']+)["'']'
+  $htmlTag = [regex]::Match($html, '<html\b[^>]*>', [Text.RegularExpressions.RegexOptions]::IgnoreCase).Value
+  $htmlLang = Get-AttributeValue $htmlTag "lang"
   $minDescriptionLength = if ($htmlLang -match "^zh") { 25 } else { 50 }
-  $robots = Get-MatchValue $html '<meta\s+name=["'']robots["'']\s+content=["'']([^"'']+)["'']'
+  $robotsTag = Get-TagByAttributeValue $html "meta" "name" "robots"
+  $robots = Get-AttributeValue $robotsTag "content"
   $isIndexable = -not ($robots -and $robots -match "noindex")
 
   $title = Get-MatchValue $html '<title>(.*?)</title>'
@@ -62,7 +136,8 @@ foreach ($file in $htmlFiles) {
     Add-SeoIssue "warning" $relative "Title is longer than 70 characters ($($title.Length))."
   }
 
-  $description = Get-MatchValue $html '<meta\s+name=["'']description["'']\s+content=["'']([^"'']*)["'']'
+  $descriptionTag = Get-TagByAttributeValue $html "meta" "name" "description"
+  $description = Get-AttributeValue $descriptionTag "content"
   if (-not $description) {
     Add-SeoIssue "error" $relative "Missing meta description."
   } elseif ($isIndexable -and $description.Length -lt $minDescriptionLength) {
@@ -71,21 +146,31 @@ foreach ($file in $htmlFiles) {
     Add-SeoIssue "warning" $relative "Meta description is longer than 170 characters ($($description.Length))."
   }
 
-  if ($isIndexable -and $html -notmatch '<link\s+rel=["'']canonical["'']') {
+  $canonicalTag = Get-TagByAttributeValue $html "link" "rel" "canonical"
+  if ($isIndexable -and -not $canonicalTag) {
     Add-SeoIssue "error" $relative "Indexable page is missing canonical URL."
   }
 
-  if ($isIndexable -and $html -notmatch 'rel=["'']alternate["'']\s+hreflang=') {
+  $hasHreflangAlternate = $false
+  foreach ($linkMatch in [regex]::Matches($html, '<link\b[^>]*>', [Text.RegularExpressions.RegexOptions]::IgnoreCase)) {
+    $linkTag = $linkMatch.Value
+    if ((Get-AttributeValue $linkTag "rel") -ieq "alternate" -and (Test-TagAttribute $linkTag "hreflang")) {
+      $hasHreflangAlternate = $true
+      break
+    }
+  }
+  if ($isIndexable -and -not $hasHreflangAlternate) {
     Add-SeoIssue "warning" $relative "Indexable page has no hreflang alternate links."
   }
 
-  if ($isIndexable -and $html -notmatch 'application/ld\+json') {
+  $jsonLdTag = Get-TagByAttributeValue $html "script" "type" "application/ld+json"
+  if ($isIndexable -and -not $jsonLdTag) {
     Add-SeoIssue "warning" $relative "Indexable page has no JSON-LD structured data."
   }
 
   foreach ($imgMatch in [regex]::Matches($html, '<img\b[^>]*>', [Text.RegularExpressions.RegexOptions]::IgnoreCase)) {
     $img = $imgMatch.Value
-    if ($img -notmatch '\salt=') {
+    if (-not (Test-TagAttribute $img "alt")) {
       Add-SeoIssue "error" $relative "Image tag is missing an alt attribute: $img"
     }
   }
