@@ -15,16 +15,9 @@ home_hero:
   secondary_cta:
     label: "Ver productos"
     url: "/products/"
-  proof_title: "La selección empieza con cuatro comprobaciones"
-  proof_points:
-    - "Tipo de carga y distribución"
-    - "Interfaz con carretilla, transpaleta, rack o transportador"
-    - "Temperatura, higiene y exposición"
-    - "Cantidad, embalaje, destino y plazo"
-  visual_caption: "La recomendación sigue siendo preliminar hasta confirmar la carga real, el apoyo, el equipo de manipulación y el entorno."
+  visual_caption: "Como fabricante de productos plásticos industriales, combinamos experiencia de producción y apoyo a proyectos de exportación para coordinar con clientes internacionales la selección, las muestras, el seguimiento del pedido y la preparación del envío."
 usps:
   enable: true
-  eyebrow: "Ruta práctica de selección"
   title: "De las condiciones operativas a una especificación lista para cotizar"
   description: "Una cotización útil empieza por el flujo de trabajo, valida las interfaces críticas y deja claras las condiciones pendientes de confirmar."
   items:
@@ -37,7 +30,6 @@ usps:
 
 product_groups:
   enable: true
-  eyebrow: "Centro de productos"
   title: "Elija por familia de producto y refine por condiciones operativas"
   description: "Empiece por el producto de manejo que necesita y luego use carga, tamaño, estantería, higiene o retorno para definir la especificación."
   items:
@@ -64,7 +56,6 @@ product_groups:
 
 industries:
   enable: true
-  eyebrow: "Aplicaciones por industria"
   title: "Ajuste productos a la forma real en que se mueven las mercancías"
   description: "Cada industria falla por razones distintas: deflexión en rack, impacto en frío, higiene, fugas químicas, costo de retorno o tolerancia de automatización. Use el escenario más cercano como punto de partida."
   items:
@@ -101,7 +92,6 @@ industries:
 
 clients:
   enable: true
-  eyebrow: "Colaboración de proyecto"
   title: "Visitas de fábrica, seguimiento de proyectos y suministro a largo plazo"
   description: "La colaboración real no es solo intercambio de catálogo. Apoyamos selección, muestras, carga, reposición y ajustes cuando cambian las condiciones de operación."
   items:

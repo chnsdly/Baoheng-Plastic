@@ -15,16 +15,9 @@ home_hero:
   secondary_cta:
     label: "浏览产品"
     url: "/products/"
-  proof_title: "选型先确认四类条件"
-  proof_points:
-    - "载荷类型与货物分布"
-    - "叉车、地牛、货架或输送线接口"
-    - "温度、卫生与暴露环境"
-    - "数量、包装、目的地与交期"
-  visual_caption: "在确认实际载荷、支撑方式、搬运设备和使用环境之前，产品推荐仅作为初步选型方向。"
+  visual_caption: "作为工业塑料制品制造商，我们将生产经验与出口项目服务相结合，为海外客户提供选型沟通、样品确认、订单跟进和装运衔接支持。"
 usps:
   enable: true
-  eyebrow: "实用选型路径"
   title: "从真实工况走向可执行的询价规格"
   description: "有效报价应先说明周转流程，再核对关键接口，并把仍需确认的条件清楚记录下来。"
   items:
@@ -37,7 +30,6 @@ usps:
 
 product_groups:
   enable: true
-  eyebrow: "产品中心"
   title: "先按产品族选择，再按工况细化规格"
   description: "您可以先选择所需的搬运产品，再根据载重、尺寸、货架、卫生或回收物流要求缩小规格范围。"
   items:
@@ -64,7 +56,6 @@ product_groups:
 
 industries:
   enable: true
-  eyebrow: "行业应用"
   title: "按货物流转方式匹配产品"
   description: "不同行业的失效原因不同：货架挠度、低温冲击、卫生清洁、化学泄漏、回收空间成本或自动化公差。请从最接近的场景开始选型。"
   items:
@@ -101,7 +92,6 @@ industries:
 
 clients:
   enable: true
-  eyebrow: "项目协作"
   title: "工厂参观、项目跟进与长期采购"
   description: "真正的合作不只是交换目录。我们支持您完成选型、样品确认、装柜、补货，并在工况变化时调整产品方案。"
   items:

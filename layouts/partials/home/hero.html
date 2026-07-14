@@ -16,14 +16,6 @@
         {{ with $secondary.url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $secondary.label | default (i18n "browse_products") }}</a>{{ else }}<a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ i18n "browse_products" }}</a>{{ end }}
       </div>
 
-      {{ with $hero.proof_points }}
-        <div class="home-hero__proof-wrap">
-          {{ with $hero.proof_title }}<p class="home-hero__proof-title">{{ . }}</p>{{ end }}
-          <ul class="home-hero__proof" role="list">
-            {{ range . }}<li>{{ . }}</li>{{ end }}
-          </ul>
-        </div>
-      {{ end }}
     </div>
 
     {{ with $image }}

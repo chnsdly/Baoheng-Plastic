@@ -15,16 +15,9 @@ home_hero:
   secondary_cta:
     label: "Voir les produits"
     url: "/products/"
-  proof_title: "La sélection commence par quatre vérifications"
-  proof_points:
-    - "Type de charge et répartition"
-    - "Interface chariot, transpalette, rack ou convoyeur"
-    - "Température, hygiène et exposition"
-    - "Quantité, emballage, destination et délai"
-  visual_caption: "La recommandation reste préliminaire tant que la charge réelle, le support, l’équipement de manutention et l’environnement ne sont pas confirmés."
+  visual_caption: "Fabricant de produits plastiques industriels, nous associons expérience de production et accompagnement de projets export pour coordonner avec nos clients internationaux la sélection, les échantillons, le suivi de commande et la préparation de l’expédition."
 usps:
   enable: true
-  eyebrow: "Parcours de sélection pratique"
   title: "Des conditions d’utilisation à une spécification prête à chiffrer"
   description: "Un devis utile part du flux réel, valide les interfaces critiques et identifie clairement les points encore à confirmer."
   items:
@@ -37,7 +30,6 @@ usps:
 
 product_groups:
   enable: true
-  eyebrow: "Centre produits"
   title: "Choisir par famille de produits, puis affiner selon les conditions d'exploitation"
   description: "Commencez par le produit de manutention requis, puis utilisez charge, dimensions, rayonnage, hygiène ou logistique retour pour préciser la spécification."
   items:
@@ -64,7 +56,6 @@ product_groups:
 
 industries:
   enable: true
-  eyebrow: "Applications par industrie"
   title: "Adapter les produits à la façon dont les marchandises circulent vraiment"
   description: "Chaque industrie échoue pour des raisons différentes : flèche en rayonnage, impact au froid, hygiène, fuite chimique, coût de retour ou tolérance automatisation. Utilisez le scénario le plus proche comme point de départ."
   items:
@@ -101,7 +92,6 @@ industries:
 
 clients:
   enable: true
-  eyebrow: "Collaboration projet"
   title: "Visites usine, suivi projet et approvisionnement long terme"
   description: "Une vraie collaboration ne se limite pas à un catalogue. Nous accompagnons sélection, échantillons, chargement, réapprovisionnement et ajustements lorsque les conditions changent."
   items:

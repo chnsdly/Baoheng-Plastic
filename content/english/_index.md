@@ -15,16 +15,9 @@ home_hero:
   secondary_cta:
     label: "Browse Products"
     url: "/products/"
-  proof_title: "Selection starts with four checks"
-  proof_points:
-    - "Load type and distribution"
-    - "Forklift, pallet jack, rack, or conveyor interface"
-    - "Temperature, hygiene, and exposure"
-    - "Quantity, packing, destination, and timing"
-  visual_caption: "Product recommendations remain preliminary until the actual load, support method, handling equipment, and environment are confirmed."
+  visual_caption: "As an industrial plastic products manufacturer, we combine production experience with export project support, helping overseas customers coordinate selection, samples, order follow-up, and shipment preparation."
 usps:
   enable: true
-  eyebrow: "A practical selection path"
   title: "Move from operating conditions to a quote-ready specification"
   description: "A useful quotation starts with the workflow, validates the critical interfaces, and records the conditions that still require confirmation."
   items:
@@ -37,7 +30,6 @@ usps:
 
 product_groups:
   enable: true
-  eyebrow: "Product center"
   title: "Choose by product family, then refine by operating conditions"
   description: "Start with the handling product you need, then use load, size, rack, hygiene, or return-logistics details to narrow the specification."
   items:
@@ -64,7 +56,6 @@ product_groups:
 
 industries:
   enable: true
-  eyebrow: "Industry applications"
   title: "Match products to the way goods actually move"
   description: "Different industries fail for different reasons: rack deflection, cold impact, sanitation, chemical leakage, return-space cost, or automation tolerance. Use the closest scenario as the starting point for selection."
   items:
@@ -101,7 +92,6 @@ industries:
 
 clients:
   enable: true
-  eyebrow: "Project collaboration"
   title: "Factory visits, project follow-up, and long-term supply"
   description: "Real collaboration is not only a catalog exchange. We support selection, sample confirmation, loading, replenishment, and product adjustments when operating conditions change."
   items:

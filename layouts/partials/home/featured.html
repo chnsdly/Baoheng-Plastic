@@ -4,7 +4,6 @@
     <div class="container home-featured__inner">
       <header class="home-section-head">
         <div class="home-section-head__body">
-          {{ with $groups.eyebrow }}<p class="home-section-head__eyebrow">{{ . }}</p>{{ end }}
           <h2 class="home-section-head__title">{{ $groups.title }}</h2>
           {{ with $groups.description }}<p class="home-section-head__desc">{{ . }}</p>{{ end }}
         </div>
@@ -47,7 +46,6 @@
     <div class="container home-featured__inner">
       <header class="home-section-head">
         <div class="home-section-head__body">
-          <p class="home-section-head__eyebrow">{{ i18n "home_featured_eyebrow" }}</p>
           <h2 class="home-section-head__title">{{ i18n "home_featured_title" }}</h2>
         </div>
         <div class="home-section-head__actions">
