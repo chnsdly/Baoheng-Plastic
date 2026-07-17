@@ -46,17 +46,8 @@ specs_order:
   - material
   - process
 
-hero_description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds. It significantly reduces return logistics volume and is ideal for reusable circulation. Our engineers will recommend the most suitable pallet box solution based on your goods and application scenarios. Contact us to get your personalized quotation."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: |-
-  1. These foldable pallet boxes support stacking storage and are compatible with pallet jacks, forklifts, and automated warehouses. They are widely used in food processing, cold-chain distribution, chemicals, warehousing, logistics, and manufacturing, meeting the needs of bulk materials and packaged goods in storage and transportation.
-  
-  2. The one-piece structural design ensures durability with no weak joints. The container is impact-resistant, easy to clean, moisture-proof, low-temperature tolerant, and resistant to acids and alkalis. It complies with international logistics standards, and the collapsible design greatly reduces warehouse space and return freight costs.
-  
-  3. Load values shown on this page are model reference data. Confirm the final usable load against actual load distribution, support span, temperature, storage duration, handling frequency, and safety margin before purchase.
-  
-  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 industry_gallery:
   - image: "/images/products/fold/industry-1.jpg"
     alt: "1210-BF-FPBSMDD98A industry use 1"
@@ -65,7 +56,6 @@ industry_gallery:
   - image: "/images/products/fold/industry-3.jpg"
     alt: "1210-BF-FPBSMDD98A industry use 1"
 form_title: "Tell us about your load requirements"
-form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
 
 

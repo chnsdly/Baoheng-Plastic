@@ -46,17 +46,8 @@ specs_order:
   - material
   - process
 
-hero_description: "1210 plateau ajouré 3 semelles Palette plastique de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1200 × 1000 × 150 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 0.9 t, charge statique 3 t, charge en rayonnage 1 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
 contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
-detail_intro: |-
-  1. 1210 plateau ajouré 3 semelles Palette plastique est conçue pour les applications d'entrepôt, de logistique ou de production qui exigent une solution plastique stable, réutilisable et simple à spécifier.
-
-  2. La structure utilise HDPE/PP et doit être validée selon le flux réel de chariots élévateurs, d'empilage, de nettoyage et de stockage.
-
-  3. Paramètres de référence : dimensions 1200 × 1000 × 150 mm; charge dynamique 0.9 t; charge statique 3 t; charge en rayonnage 1 t. Confirmez toujours la répartition de charge et les conditions d'utilisation.
-
-  4. Baoheng Plastic accompagne la sélection du modèle, la couleur, le logo, l'emballage export et le devis en volume pour les commandes par projet ou les réassorts.
 industry_gallery:
   - image: "/images/products/pallet/3-runner/industry-1.jpg"
     alt: "1210 plateau ajouré 3 semelles Palette plastique industry utilisation 1"
@@ -65,7 +56,6 @@ industry_gallery:
   - image: "/images/products/pallet/3-runner/industry-3.jpg"
     alt: "1210 plateau ajouré 3 semelles Palette plastique industry utilisation 1"
 form_title: "Parlez-nous de vos exigences de charge"
-form_description: "Partagez environnement d’usage, circulation, hygiène, couleur ou logo ; nous répondrons avec un devis adapté."
 ---
 
 

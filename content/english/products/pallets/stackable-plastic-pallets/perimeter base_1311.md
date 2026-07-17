@@ -43,17 +43,8 @@ specs_order:
   - material
   - process
 
-hero_description: "A three-runner pallet with a robust cross-reinforced base and one-piece molded construction, engineered to deliver stable support and high impact resistance for heavy-duty loads. Designed for frequent forklift operations, offering strong load capacity, long service life, and reliable performance in warehouses and racking systems. Contact us to get your personalized quote."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: |-
-  1. This three-runner pallet is manufactured with brand-new HDPE/PP material and molded in one piece. The reinforced cross-runner structure provides stable load support with no joints or welds, making it suitable for heavy-duty applications such as automotive parts, metal components, chemical materials, large equipment, and high-bay racking systems.
-
-  2. The deck, base structure, and reinforcement options should be confirmed against the actual load distribution, forklift route, stacking method, cleaning process, and storage duration rather than selected by nominal load rating alone.
-
-  3. The stable three-runner base is rack-compatible and supports four-way forklift entry, improving material-handling efficiency while offering durability and lower overall operating costs.
-
-  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
 industry_gallery:
   - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
     alt: "1311 open deck perimeter-base plastic pallet industry use 1"
@@ -62,7 +53,6 @@ industry_gallery:
   - image: "/images/products/pallet/perimeter-base/industry-3.jpg"
     alt: "1311 open deck perimeter-base plastic pallet industry use 3"
 form_title: "Tell us about your load requirements"
-form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
 
 

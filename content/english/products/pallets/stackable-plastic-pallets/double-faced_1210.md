@@ -44,18 +44,8 @@ specs_order:
   - material
   - process
 
-hero_description: "This double-sided, stackable pallet features a fully integrated design with reinforced ribs on both surfaces, providing maximum protection and high load capacity for heavy goods. Usable on both sides, it offers extended service life and reliable performance. Contact us for a custom quotation."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: |-
-  1. This pallet is made from virgin HDPE/PP with a fully symmetrical, double-sided structure and reinforced rib design. With no joints or welds, it is built to handle heavy loads and is ideal for automotive components, heavy metals, chemical materials, large equipment and high-bay warehouse storage.
-
-  2. The deck, base structure, and reinforcement options should be confirmed against the actual load distribution, forklift route, stacking method, cleaning process, and storage duration rather than selected by nominal load rating alone.
-
-  3. Both sides can be used interchangeably, helping reduce pallet damage and save budget. The four-way forklift entry ensures convenient and durable handling.
-
-  4. Share the application, quantity, handling equipment, storage method, and destination so the factory can confirm whether this model is suitable for quotation, sampling, or further technical review.
-
 industry_gallery:
   - image: "/images/products/pallet/double-faced/industry-1.jpg"
     alt: "1210-BP-OD3R15 industry use 1"
@@ -64,7 +54,6 @@ industry_gallery:
   - image: "/images/products/pallet/double-faced/industry-3.jpg"
     alt: "1210-BP-OD3R15 industry use 1"
 form_title: "Tell us about your load requirements"
-form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
 
 

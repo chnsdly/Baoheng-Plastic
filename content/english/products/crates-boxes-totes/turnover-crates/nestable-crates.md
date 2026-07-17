@@ -17,12 +17,8 @@ product_kind: "series"
 pallet_category:
   - "Turnover Crates"
 
-hero_description: "This stackable plastic crate is made from durable PP/HDPE and features a ventilated mesh design. It is lightweight, strong, easy to handle, and suitable for storage, logistics, food processing, and general material handling. Available in multiple sizes and colors."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: |-
-  Made with high-strength virgin material, this crate is injection-molded for excellent rigidity and durability. The mesh structure provides ventilation and drainage, making it ideal for fruits and vegetables, food processing, supermarket distribution, and factory material turnover. Its stackable/nestable design saves space during return transport, while multiple size and color options support diverse applications. Smooth handles ensure comfortable carrying, and the crate is easy to clean, resistant to low temperatures and chemicals, and built to withstand heavy-duty, high-frequency use.
-
 product_showcase:
   enable: true
   title: "Product List"
@@ -54,7 +50,6 @@ industry_gallery:
   - image: "/images/products/crate-box/nestable-crates-industry-3.jpg"
     alt: "nestable-crates industry use 3"
 form_title: "Tell us about your load requirements"
-form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
 
 

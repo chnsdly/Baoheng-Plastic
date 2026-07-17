@@ -18,13 +18,8 @@ product_kind: "series"
 pallet_category:
   - "Freezing Trays"
 
-hero_description: "Shallow single-freeze/air-drying trays are molded from virgin HDPE/PP with precision tooling. The ventilated grid speeds up chilling and drainage, making them ideal for seafood, meat, dough, fruits and vegetables during freezing, drying, and in-process staging. Our engineers will match the right size to your line hygiene needs—contact us for a tailored quote."
 contact_cta_label: "Request a quote"
 contact_cta_link: "/contact"
-detail_intro: |-
-  These low-profile mesh trays can be stacked directly or paired with carts and racks, spanning lengths from a few dozen centimeters up to around 900 mm to move smoothly through freezers, drying rooms, and processing lines. Smooth reinforced rims prevent warping, support stable stacking, and keep ingredients or packaged items ventilated for quick draining.
-
-  The one-piece body is low-temperature tolerant, easy to sanitize, and resistant to acids and alkalis for high-frequency reuse. Color, mesh, and size options can be customized to align with your workflow zoning and fast turnarounds.
 product_showcase:
   enable: true
   title: "Product List"
@@ -68,7 +63,6 @@ industry_gallery:
   - image: "/images/products/crate-box/drying-trays-industry-3.jpg"
     alt: "drying-trays industry use 3"
 form_title: "Tell us about your load requirements"
-form_description: "Share your handling environment, pallet circulation, and hygiene targets—we will respond with a tailored quote in one business day."
 ---
 
 
