@@ -9,10 +9,13 @@
   --brand-strong: #102f37;
   --brand-soft: #dceff2;
   --brand-tint: #f0f7f7;
-  // Keeps white text above the WCAG AA 4.5:1 contrast threshold on accent controls.
+  // Text and decorative accent; interactive controls use dedicated tokens below.
   --accent: #bd4d1f;
   --accent-strong: #a8441d;
   --accent-soft: #f8e7de;
+  --button-primary-bg: #e6742d;
+  --button-primary-bg-hover: #e5722c;
+  --button-primary-text: var(--brand-strong);
   --green: #246c5c;
   --green-soft: #e0efeb;
   --on-brand: #ffffff;

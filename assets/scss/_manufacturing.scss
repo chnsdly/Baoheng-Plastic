@@ -215,12 +215,14 @@
 
 .manufacturing-rfq .button {
   justify-self: start;
-  background: var(--accent);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
 }
 
 .manufacturing-rfq .button:hover,
 .manufacturing-rfq .button:focus-visible {
-  background: color-mix(in srgb, var(--accent) 82%, black);
+  background: var(--button-primary-bg-hover);
+  color: var(--button-primary-text);
 }
 
 .manufacturing-split .industrial-panel h2 {

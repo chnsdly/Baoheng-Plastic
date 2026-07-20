@@ -150,9 +150,9 @@ body.is-menu-open {
 }
 
 .site-header__cta--primary {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--on-brand);
+  border-color: var(--button-primary-bg);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
   box-shadow: none;
 }
 
@@ -165,9 +165,9 @@ body.is-menu-open {
 
 .site-header__cta--primary:hover,
 .site-header__cta--primary:focus-visible {
-  border-color: var(--accent-strong);
-  background: var(--accent-strong);
-  color: var(--on-brand);
+  border-color: var(--button-primary-bg-hover);
+  background: var(--button-primary-bg-hover);
+  color: var(--button-primary-text);
 }
 
 .site-header__icon-button {

@@ -7,8 +7,8 @@
   padding: 0.72rem 1.2rem;
   border: 1px solid transparent;
   border-radius: var(--radius-s);
-  background: var(--accent);
-  color: var(--on-brand);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
   box-shadow: none;
   font-size: var(--type-ui);
   font-weight: var(--weight-bold);
@@ -26,14 +26,14 @@
 
 .button:hover,
 .button:focus-visible {
-  background: var(--accent-strong);
-  color: var(--on-brand);
+  background: var(--button-primary-bg-hover);
+  color: var(--button-primary-text);
   box-shadow: none;
   text-decoration: none;
 }
 
 .button:active {
-  background: color-mix(in srgb, var(--accent-strong) 90%, black);
+  background: var(--button-primary-bg-hover);
   box-shadow: none;
 }
 
