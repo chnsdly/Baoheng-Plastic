@@ -1,4 +1,4 @@
 ---
 title: "Produits"
-description: "Parcourez les familles de produits Baoheng Plastic par catégorie usine, usage de manutention et modèles prêts à chiffrer."
+description: "Baoheng Plastic fabrique des palettes en plastique, caisses-palettes, bacs, caisses, grands conteneurs, plateaux, cuves et poubelles."
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Palettes plastique pour racks"
-description: "Palettes plastique ouvertes à trois semelles pour racks, chariots élévateurs, transpalettes et entrepôts automatisés."
+title: "Palettes en plastique pour rayonnage"
+description: "Palettes en plastique ajourées à trois semelles pour le rayonnage, les chariots élévateurs, les transpalettes et les entrepôts automatisés."
 weight: 10
 product_family: "Plastic Pallets"
 product_series: "Rackable 3-Runner Pallets"

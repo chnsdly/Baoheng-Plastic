@@ -1,7 +1,7 @@
 ---
 
 title: "1210 FPBVS75 Grey Large Bulk Container"
-description: "This large pallet box is molded from virgin HDPE/PP with precision tooling for a strong, reliable structure."
+description: "Rigid large plastic container for bulk goods, industrial parts, and repeated handling. Share the load, discharge method, and stacking requirements."
 aliases:
   - "/products/bulk-containers/1210-fpbvs75-grey/"
 featured_image: "/images/products/l-container/1210-fpbvs75-grey-hero.jpg"

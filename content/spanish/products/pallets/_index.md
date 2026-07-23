@@ -1,6 +1,6 @@
 ---
 title: "Palets de plástico"
-description: "Explore palets plásticos inyectados y soplados por estructura, carga y aplicación."
+description: "Palets de plástico inyectados o soplados para exportación, apilado en suelo, estanterías, cámaras frías, alimentación e industria."
 weight: 10
 product_family: "Plastic Pallets"
 ---

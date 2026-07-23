@@ -1,7 +1,7 @@
 ---
 
 title: "周转箱"
-description: "多功能塑料周转箱采用全新 HDPE 一体成型，轻便结实，可用于清洗、分拣、暂存物料，适合厨房、车间与仓储等多种场景。"
+description: "用于零部件、原料或在制品周转的长方形塑料容器。请提供所需容积和尺寸。"
 aliases:
   - "/products/crates/rectangular-container/"
   - "/products/crates-boxes-totes/rectangular-container/"

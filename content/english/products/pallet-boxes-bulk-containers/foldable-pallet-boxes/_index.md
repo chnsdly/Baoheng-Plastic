@@ -1,6 +1,6 @@
 ---
 title: "Foldable Pallet Boxes"
-description: "Compare foldable pallet boxes for reusable circulation, return logistics, bulk handling, automotive parts, produce, and warehouse storage."
+description: "Foldable pallet boxes for returnable logistics, bulk handling, automotive parts, produce, warehouse storage, and compact empty returns."
 weight: 10
 product_family: "Pallet Boxes & Bulk Containers"
 product_series: "Foldable Pallet Boxes"

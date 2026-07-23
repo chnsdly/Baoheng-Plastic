@@ -1,5 +1,5 @@
 ---
 title: "FAQ"
-description: "Answers to the most common questions about plastic pallet performance, customization, and logistics."
+description: "塑料托盘承重、货架使用、材料、定制、清洗、运输和采购常见问题解答。"
 ---
 

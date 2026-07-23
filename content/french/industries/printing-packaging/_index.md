@@ -1,11 +1,11 @@
 ---
 title: "Impression et emballage"
-description: "Palettes et conteneurs plastique pour impression, papier, emballage et circulation interne d'usine."
+description: "Palettes et conteneurs en plastique pour l'impression, le papier, l'emballage, les ateliers de production et les transferts internes."
 weight: 25
 industry_key: "printing-packaging"
 hero:
   eyebrow: "Manutention plane et propre"
-  title: "Palettes plastique pour impression, papier et emballage"
+  title: "Palettes en plastique pour l'impression, le papier et l'emballage"
   text: "Les opérations d'impression et d'emballage exigent souvent un support plat, des surfaces propres, un gerbage stable et des mouvements prévisibles entre production, stockage et expédition."
   image: "/images/home/industries-6.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Checklist de spécification RFQ"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
 cta:
-  title: "Envoyez vos détails impression ou emballage"
+  title: "Décrivez vos produits imprimés ou emballés"
   text: "Incluez type de produit, hauteur de pile, préférence plateau, dimensions palette, charge, fréquence de circulation et quantité."
 ---

@@ -1,16 +1,16 @@
 ---
 title: "Ressources"
-description: "Guides pratiques de sourcing, checklists RFQ, notes qualité et cadres de sélection pour palettes plastique et produits industriels de manutention."
+description: "Guides d'achat, listes de contrôle RFQ, informations qualité et comparatifs pour les palettes et produits de manutention en plastique."
 aliases:
   - "/resources/blog-news/"
 hero:
   title: "Centre de ressources"
-  subtitle: "Guides d'achat et connaissances projet pour palettes plastique, caisses-palettes, bacs, conteneurs et logistique d'entrepôt."
+  subtitle: "Guides d'achat et informations techniques sur les palettes en plastique, les caisses-palettes, les bacs, les conteneurs et la logistique d'entrepôt."
 sections:
-  - label: "Insights"
+  - label: "Guides techniques"
     url: "/resources/insights/"
-    summary: "Checklists de spécification, cadres de sélection et guides opérationnels d'entrepôt."
-  - label: "Checklist RFQ"
+    summary: "Listes de spécifications, comparatifs de produits et guides pratiques pour l'entrepôt."
+  - label: "Liste de contrôle RFQ"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-    summary: "Une base pratique pour envoyer des demandes de devis comparables pour palettes plastique."
+    summary: "Les informations nécessaires pour demander des devis comparables pour une palette en plastique."
 ---

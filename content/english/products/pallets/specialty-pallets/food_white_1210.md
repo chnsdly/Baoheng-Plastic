@@ -1,7 +1,7 @@
 ---
 
 title: "White 1210 food & medical plastic pallet"
-description: "White 1210 food and medical plastic pallet with smooth closed surface for clean handling, inspection, and hygiene-focused production areas."
+description: "Smooth hygienic plastic pallet for food production and areas that require frequent washing. Share the cleaning and food-contact requirements."
 aliases:
   - "/products/pallets/food_white_1210/"
 featured_image: "/images/products/pallet/food/1210-white-hero.jpg"

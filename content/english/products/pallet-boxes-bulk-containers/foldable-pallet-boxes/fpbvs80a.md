@@ -1,7 +1,7 @@
 ---
 
 title: "1210-BF-FPBVS80A"
-description: "The foldable pallet box is manufactured with virgin HDPE/PP using large precision injection molds."
+description: "Foldable pallet box for storage, transport, and returnable packaging loops. Share the load, filling method, and stacking requirements."
 aliases:
   - "/products/foldable-pallet-boxes/fpbvs80a/"
 featured_image: "/images/products/fold/vs80a-hero.jpg"

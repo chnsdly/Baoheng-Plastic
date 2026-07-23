@@ -1,6 +1,6 @@
 ---
-title: "1412-BP-CD9L15B"
-description: "1412-BP-CD9L15B de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Dimensiones nominales: 1400 × 1200 × 150 mm. Material: HDPE/PP. Referencia de carga: carga dinámica 1 t, carga estática 3 t. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Palet de plástico soplado de nueve patas – 1412"
+description: "Palet monobloque de plástico soplado para impactos, cargas pesadas y entornos exigentes. Confirme la carga y las condiciones de uso."
 aliases:
   - "/products/blow-molded-pallets/blow-molding_1412/"
 featured_image: "/images/products/blow-molded/1412-hero.jpg"
@@ -17,13 +17,13 @@ pallet_category:
   - "Nestable Blow-Molded Pallets"
 showcase_gallery:
   - image: "/images/products/blow-molded/1412-showcase.jpg"
-    alt: "1412-BP-CD9L15B showcase 1"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – foto del producto 1"
   - image: "/images/products/blow-molded/showcase-1.jpg"
-    alt: "1412-BP-CD9L15B showcase 2"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – foto del producto 2"
   - image: "/images/products/blow-molded/showcase-2.jpg"
-    alt: "1412-BP-CD9L15B showcase 3"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – foto del producto 3"
   - image: "/images/products/blow-molded/showcase-3.jpg"
-    alt: "1412-BP-CD9L15B showcase 4"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – foto del producto 4"
 
 specs:
   dimensions: "1400 × 1200 × 150 mm"
@@ -46,11 +46,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/blow-molded/industry-1.jpg"
-    alt: "1412-BP-CD9L15B industry uso 1"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – ejemplo de uso 1"
   - image: "/images/products/blow-molded/industry-2.jpg"
-    alt: "1412-BP-CD9L15B industry uso 2"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – ejemplo de uso 2"
   - image: "/images/products/blow-molded/industry-3.jpg"
-    alt: "1412-BP-CD9L15B industry uso 3"
+    alt: "Palet de plástico soplado de nueve patas – 1412 – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "Chaîne du froid et surgelés"
-description: "Palettes, bacs et plateaux plastique pour chambres froides, surgelés, logistique basse température et entrepôts réfrigérés."
+description: "Palettes, bacs et plateaux en plastique pour les chambres froides, les surgelés, le transport à basse température et les entrepôts réfrigérés."
 weight: 27
 industry_key: "cold-chain-frozen-food"
 hero:
   eyebrow: "Manutention basse température"
-  title: "Palettes et bacs plastique pour chaîne du froid et surgelés"
+  title: "Palettes et bacs en plastique pour chambres froides et surgelés"
   text: "Les environnements froids augmentent les risques d'impact et rendent la ténacité matière, le nettoyage, le gerbage et la discipline de manutention plus importants qu'en entrepôt ambiant."
   image: "/images/industry/cold-1.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Planification du gerbage en chaîne du froid"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
 cta:
-  title: "Envoyez vos conditions chaîne du froid"
+  title: "Décrivez vos besoins en chambre froide"
   text: "Incluez plage de température, charge, portée de rayonnage, durée de stockage, type de chariot, méthode de nettoyage et quantité."
 ---

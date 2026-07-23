@@ -1,6 +1,6 @@
 ---
 title: "Plateaux de congélation"
-description: "Plateaux plastique de congélation et séchage pour fruits de mer, viande, pâtisserie, produits frais, chaîne du froid et drainage rapide."
+description: "Plateaux de congélation et de séchage en plastique pour les produits de la mer, la viande, la boulangerie, les fruits et légumes et l'égouttage rapide."
 weight: 30
 product_family: "Plastic Crates & Boxes"
 product_series: "Freezing Trays"

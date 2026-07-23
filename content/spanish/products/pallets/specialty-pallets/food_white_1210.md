@@ -1,6 +1,6 @@
 ---
-title: "Palet plástico blanco 1210 para alimentos y uso médico"
-description: "Palet plástico blanco 1210 para alimentos y uso médico, con superficie cerrada lisa para limpieza, inspección y manejo higiénico."
+title: "Palet higiénico blanco de plástico – 1210"
+description: "Palet higiénico de superficie lisa para alimentación y zonas con lavado frecuente. Indique los requisitos de limpieza y contacto alimentario."
 aliases:
   - "/products/pallets/food_white_1210/"
 featured_image: "/images/products/pallet/food/1210-white-hero.jpg"
@@ -17,13 +17,13 @@ pallet_category:
   - "Food & Pharmaceutical Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/food/1210-white-showcase.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico showcase 1"
+    alt: "Palet higiénico blanco de plástico – 1210 – foto del producto 1"
   - image: "/images/products/pallet/food/1210-white-hero.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico showcase 2"
+    alt: "Palet higiénico blanco de plástico – 1210 – foto del producto 2"
   - image: "/images/products/pallet/food/showcase-3.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico showcase 3"
+    alt: "Palet higiénico blanco de plástico – 1210 – foto del producto 3"
   - image: "/images/products/pallet/food/showcase-3.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico showcase 3"
+    alt: "Palet higiénico blanco de plástico – 1210 – foto del producto 4"
 
 specs:
   dimensions: "1200 × 1000 × 150 mm"
@@ -48,11 +48,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/food/industry-1.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico industry uso 1"
+    alt: "Palet higiénico blanco de plástico – 1210 – ejemplo de uso 1"
   - image: "/images/products/pallet/food/1210-white-showcase.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico industry uso 2"
+    alt: "Palet higiénico blanco de plástico – 1210 – ejemplo de uso 2"
   - image: "/images/products/pallet/food/showcase-3.jpg"
-    alt: "1210 palet plástico para alimentos y uso médico industry uso 1"
+    alt: "Palet higiénico blanco de plástico – 1210 – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

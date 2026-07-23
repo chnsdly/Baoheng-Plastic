@@ -1,6 +1,6 @@
 ---
-title: "plateaux de séchage plastique"
-description: "plateaux de séchage plastique de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Plateau ajouré pour congélation et séchage"
+description: "Plateau ajouré pour la congélation, le séchage et la circulation de l’air autour des produits. Confirmez la température, la charge et les dimensions."
 aliases:
   - "/products/crates/drying-trays/"
   - "/products/crates-boxes-totes/drying-trays/"
@@ -56,11 +56,11 @@ product_showcase:
 
 industry_gallery:
   - image: "/images/products/crate-box/drying-trays-industry-1.jpg"
-    alt: "drying-trays industry utilisation 1"
+    alt: "Plateau ajouré pour congélation et séchage – exemple d'utilisation 1"
   - image: "/images/products/crate-box/drying-trays-industry-2.jpg"
-    alt: "drying-trays industry utilisation 2"
+    alt: "Plateau ajouré pour congélation et séchage – exemple d'utilisation 2"
   - image: "/images/products/crate-box/drying-trays-industry-3.jpg"
-    alt: "drying-trays industry utilisation 3"
+    alt: "Plateau ajouré pour congélation et séchage – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

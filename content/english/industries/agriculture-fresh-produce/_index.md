@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Agriculture & Fresh Produce"
 description: "Plastic crates, pallet boxes, and pallets for harvest, washing, cooling, fresh produce handling, and return logistics."
 weight: 26
@@ -6,11 +6,11 @@ industry_key: "agriculture-fresh-produce"
 hero:
   eyebrow: "Produce logistics"
   title: "Reusable crates and pallet boxes for fresh produce handling"
-  text: "Agriculture and fresh produce workflows need ventilation, drainage, washing, stacking, nesting, and return-space efficiency from harvest to cold storage and distribution."
+  text: "Fresh produce crates and pallet boxes need good ventilation and drainage, must withstand repeated washing and stacking, and should save space when returned empty."
   image: "/images/home/industries-7.jpg"
 challenges:
   - "Single-use or weak packaging increases product damage and replacement cost"
-  - "Poor ventilation slows cooling or drying in produce workflows"
+  - "Poor ventilation slows cooling or drying in produce handling"
   - "Empty return volume becomes expensive after seasonal peak volume"
   - "Mixed crate sizes reduce truck, warehouse, and washing-line efficiency"
 selection_factors:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Empty Return Logistics Playbook"
     url: "/resources/insights/2618-plastic-pallet-empty-return-logistics-playbook/"
 cta:
-  title: "Send your produce handling flow"
+  title: "Tell us about your produce handling"
   text: "Include product type, crate size, harvest/packing/washing steps, return flow, temperature, and quantity."
 ---

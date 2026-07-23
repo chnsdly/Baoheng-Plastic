@@ -1,12 +1,12 @@
 ---
 title: "Agriculture et produits frais"
-description: "Bacs, caisses-palettes et palettes plastique pour récolte, lavage, refroidissement, produits frais et logistique retour."
+description: "Bacs, caisses-palettes et palettes en plastique pour la récolte, le lavage, le refroidissement, les produits frais et les retours à vide."
 weight: 26
 industry_key: "agriculture-fresh-produce"
 hero:
   eyebrow: "Logistique produits frais"
   title: "Bacs et caisses-palettes réutilisables pour produits frais"
-  text: "Les flux agricoles et produits frais demandent ventilation, drainage, lavage, gerbage, emboîtement et efficacité de retour depuis la récolte jusqu'au stockage froid et à la distribution."
+  text: "Les bacs et caisses-palettes pour produits frais doivent être ventilés, bien drainés, lavables et stables au gerbage, tout en occupant moins de place lors du retour à vide."
   image: "/images/home/industries-7.jpg"
 challenges:
   - "Un emballage faible ou à usage unique augmente dommages produit et coût de remplacement"
@@ -21,7 +21,7 @@ selection_factors:
   - title: "Logistique retour"
     text: "Les designs emboîtables ou pliables réduisent volume de retour et stockage vide."
 recommended_products:
-  - title: "Bacs emboîtables ou stack-nest"
+  - title: "Caisses emboîtables ou gerbables et emboîtables"
     url: "/products/crates-boxes-totes/turnover-crates/"
     image: "/images/products/crate-box/stacknest-crate-hero.jpg"
     summary: "Pour récolte, transport, lavage et circulation retournable des produits frais."
@@ -39,6 +39,6 @@ related_resources:
   - title: "Guide logistique de retour des vides"
     url: "/resources/insights/2618-plastic-pallet-empty-return-logistics-playbook/"
 cta:
-  title: "Envoyez votre flux produits frais"
+  title: "Décrivez la manutention de vos produits frais"
   text: "Incluez type de produit, dimensions de bac, étapes récolte/emballage/lavage, flux retour, température et quantité."
 ---

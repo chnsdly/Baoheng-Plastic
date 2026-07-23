@@ -1,7 +1,7 @@
 ---
 
 title: "可堆叠可嵌套周转筐"
-description: "这款带金属把手的塑料周转筐采用全新 HDPE 一体成型，把手外翻便于搬运，把手内翻可作为堆叠支撑，兼顾人工搬运与高效周转。"
+description: "装货时可堆码、空筐时可套叠的塑料周转筐。请提供尺寸、载荷和搬运方式。"
 aliases:
   - "/products/crates/stacknest-crate/"
   - "/products/crates-boxes-totes/stacknest-crate/"

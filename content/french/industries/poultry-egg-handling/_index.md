@@ -5,7 +5,7 @@ weight: 28
 industry_key: "poultry-egg-handling"
 hero:
   eyebrow: "Circulation œufs et volaille"
-  title: "Produits plastiques réutilisables pour flux volaille et œufs"
+  title: "Palettes et bacs réutilisables pour la volaille et les œufs"
   text: "Les opérations volaille et œufs ont besoin de systèmes lavables, répétables et stables qui réduisent la casse, s'adaptent aux plateaux et simplifient le retour."
   image: "/images/home/industries-8.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Programme de contrôle perte et retour palettes"
     url: "/resources/insights/2613-plastic-pallet-loss-control-return-program/"
 cta:
-  title: "Envoyez votre implantation volaille ou œufs"
+  title: "Décrivez vos plateaux et votre méthode de manutention"
   text: "Incluez dimensions de plateau, empreinte palette, méthode de lavage, hauteur de gerbage, cycle retour et quantité cible."
 ---

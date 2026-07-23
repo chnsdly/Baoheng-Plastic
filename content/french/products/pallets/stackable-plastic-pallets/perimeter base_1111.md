@@ -1,6 +1,6 @@
 ---
-title: "1111 plateau ajouré semelle périmétrique Palette plastique"
-description: "1111 plateau ajouré semelle périmétrique Palette plastique de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1100 × 1100 × 150 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 1 t, charge statique 3 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Palette en plastique à base périmétrique – 1111"
+description: "Palette stable à base périmétrique pour gerbage, convoyeurs et manutention répétée. La compatibilité avec le rayonnage doit être vérifiée selon la portée et la charge."
 aliases:
   - "/products/pallets/perimeter-base_1111/"
 featured_image: "/images/products/pallet/perimeter-base/1111-hero.jpg"
@@ -17,13 +17,13 @@ pallet_category:
   - "Perimeter-Base Stackable Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/perimeter-base/1111-showcase.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique showcase 1"
+    alt: "Palette en plastique à base périmétrique – 1111 – photo du produit 1"
   - image: "/images/products/pallet/perimeter-base/showcase-1.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique showcase 2"
+    alt: "Palette en plastique à base périmétrique – 1111 – photo du produit 2"
   - image: "/images/products/pallet/perimeter-base/showcase-2.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique showcase 3"
+    alt: "Palette en plastique à base périmétrique – 1111 – photo du produit 3"
   - image: "/images/products/pallet/perimeter-base/showcase-3.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique showcase 4"
+    alt: "Palette en plastique à base périmétrique – 1111 – photo du produit 4"
 
 specs:
   dimensions: "1100 × 1100 × 150 mm"
@@ -46,11 +46,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique industry utilisation 1"
+    alt: "Palette en plastique à base périmétrique – 1111 – exemple d'utilisation 1"
   - image: "/images/products/pallet/perimeter-base/industry-2.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique industry utilisation 2"
+    alt: "Palette en plastique à base périmétrique – 1111 – exemple d'utilisation 2"
   - image: "/images/products/pallet/perimeter-base/industry-3.jpg"
-    alt: "1111 plateau ajouré semelle périmétrique Palette plastique industry utilisation 3"
+    alt: "Palette en plastique à base périmétrique – 1111 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 title: "1208 open deck 3-runner plastic pallet"
-description: "Rackable plastic pallets made from 100% virgin HDPE/PP using large precision one-piece molds."
+description: "Three-runner plastic pallet for beam racking, forklifts, pallet jacks, and repeated warehouse use. Confirm rack span, load distribution, storage time, and temperature."
 aliases:
   - "/products/pallets/3-runner_1208/"
 featured_image: "/images/products/pallet/3-runner/1208-hero.jpg"

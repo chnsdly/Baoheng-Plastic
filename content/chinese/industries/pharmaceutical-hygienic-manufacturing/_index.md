@@ -1,12 +1,12 @@
 ---
 title: "医药与洁净制造"
-description: "用于洁净制造、受控搬运、包装区域和追溯管理流程的塑料托盘与容器。"
+description: "适用于洁净制造、受控搬运、包装区域和追溯管理的塑料托盘与容器。"
 weight: 23
 industry_key: "pharmaceutical-hygienic-manufacturing"
 hero:
   eyebrow: "受控搬运"
   title: "用于洁净制造环境的塑料搬运产品"
-  text: "医药相关和洁净制造流程需要支持清洁、追溯、区域隔离和稳定搬运的托盘与容器。"
+  text: "医药和洁净生产区域使用的托盘与容器应便于清洁、识别和检查，并能按照区域要求进行隔离管理。"
   image: "/images/home/industries-4.jpg"
 challenges:
   - "破损、多孔或难清洁的搬运资产带来污染风险"
@@ -39,6 +39,6 @@ related_resources:
   - title: "来料检验计划"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "发送您的洁净搬运要求"
+  title: "告诉我们洁净区域的使用要求"
   text: "请提供区域类型、材料偏好、清洗方式、颜色分区、追溯要求和载重数据。"
 ---

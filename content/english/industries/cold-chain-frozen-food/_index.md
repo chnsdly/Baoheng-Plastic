@@ -1,11 +1,11 @@
-﻿---
+---
 title: "Cold Chain & Frozen Food"
-description: "Plastic pallets, crates, and trays for cold rooms, frozen food handling, low-temperature logistics, and chilled warehouse operations."
+description: "Plastic pallets, crates, and trays for cold rooms, frozen food, low-temperature transport, and refrigerated warehouses."
 weight: 27
 industry_key: "cold-chain-frozen-food"
 hero:
   eyebrow: "Low-temperature handling"
-  title: "Plastic pallets and crates for cold chain and frozen food workflows"
+  title: "Plastic pallets and crates for cold storage and frozen food"
   text: "Cold environments increase impact risk and make material toughness, cleaning, stacking, and handling discipline more important than in ambient warehouses."
   image: "/images/industry/cold-1.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Cold Chain Stack Height Planning"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
 cta:
-  title: "Send your cold-chain conditions"
+  title: "Tell us about your cold-storage requirements"
   text: "Include temperature range, load, rack span, storage duration, forklift type, cleaning method, and quantity."
 ---

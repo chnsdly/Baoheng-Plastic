@@ -1,7 +1,7 @@
 ---
 
 title: "1412 open deck perimeter-base plastic pallet"
-description: "A three-runner pallet with a robust cross-reinforced base and one-piece molded construction, engineered to deliver stable support and high impact resistance for heavy-duty loads."
+description: "Stable perimeter-base plastic pallet for stacking, conveyors, and repeated handling. Rack use must be checked against the rack span and actual load."
 aliases:
   - "/products/pallets/perimeter-base_1412/"
 featured_image: "/images/products/pallet/perimeter-base/1412-hero.jpg"

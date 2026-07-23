@@ -1,7 +1,7 @@
 ---
 
 title: "1111-BP-CD9L15B"
-description: "Blow-molded 9-leg plastic pallets are made from virgin HDPE/PP with a one-piece blow-molded construction and a nine-leg layout for reliable load-bearing."
+description: "One-piece blow-molded plastic pallet for impact resistance, heavy loads, and demanding operating conditions. Confirm the load and intended use."
 aliases:
   - "/products/blow-molded-pallets/blow-molding_1111/"
 featured_image: "/images/products/blow-molded/1111-hero.jpg"

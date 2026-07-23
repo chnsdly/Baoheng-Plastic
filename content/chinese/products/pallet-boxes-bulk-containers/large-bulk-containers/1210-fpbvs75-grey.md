@@ -1,7 +1,7 @@
 ---
 
 title: "1210 FPBVS75 灰色大型散装容器"
-description: "大型卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。箱体结构稳固，可高效保护和周转散装物料与包装货物。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
+description: "用于散料、工业零部件和频繁搬运的大型塑料容器。请提供载荷、卸料方式和堆码要求。"
 aliases:
   - "/products/bulk-containers/1210-fpbvs75-grey/"
 featured_image: "/images/products/l-container/1210-fpbvs75-grey-hero.jpg"

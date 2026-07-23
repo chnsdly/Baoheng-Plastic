@@ -1,4 +1,4 @@
 ---
 title: "Guides techniques"
-description: "Guides techniques et checklists pour sélectionner palettes plastique, caisses-palettes et conteneurs."
+description: "Guides techniques et listes de contrôle pour choisir des palettes en plastique, des caisses-palettes et des conteneurs."
 ---

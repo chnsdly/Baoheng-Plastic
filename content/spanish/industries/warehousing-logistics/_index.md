@@ -1,12 +1,12 @@
 ---
 title: "Almacenaje y logística"
-description: "Selección de palets plásticos para estanterías, tráfico de montacargas, apilado en piso, distribución de almacén y logística de retorno."
+description: "Selección de palets de plástico para estanterías, tráfico de montacargas, apilado en piso, distribución de almacén y logística de retorno."
 weight: 21
 industry_key: "warehousing-logistics"
 hero:
   eyebrow: "Selección de palets para almacén"
-  title: "Palets plásticos para estanterías, montacargas y flujo de distribución"
-  text: "Los compradores de almacén necesitan palets que coincidan con la carga, la luz de estantería, el manejo con montacargas, el apilado en piso y el retorno de vacíos. El modelo correcto protege el costo unitario y la estabilidad diaria de operación."
+  title: "Palets de plástico para estanterías, montacargas y distribución"
+  text: "El palet debe adaptarse a la carga unitaria, la luz de la estantería, el montacargas o transpaleta, el apilado en el suelo y el retorno en vacío. Su construcción influye directamente en la seguridad, la vida útil y el coste total de manipulación."
   image: "/images/home/industries-1.jpg"
 challenges:
   - "Se cotiza carga en estantería sin indicar luz entre vigas ni expectativa de deflexión"
@@ -21,24 +21,24 @@ selection_factors:
   - title: "Equipo de manejo"
     text: "Montacargas, transpaleta, transportador y automatización afectan la dirección de entrada y la tolerancia dimensional."
 recommended_products:
-  - title: "Palets plásticos aptos para estanterías"
+  - title: "Palets de plástico aptos para estanterías"
     url: "/products/pallets/rackable-plastic-pallets/"
     image: "/images/products/pallet/3-runner/1210-hero.jpg"
     summary: "Para estanterías sobre vigas y circulación repetida donde importan rigidez y control de deflexión."
-  - title: "Palets plásticos apilables"
+  - title: "Palets de plástico apilables"
     url: "/products/pallets/stackable-plastic-pallets/"
     image: "/images/products/pallet/perimeter-base/1210-hero.jpg"
     summary: "Para apilado estable en piso, almacenamiento y manejo con una base de apoyo más fuerte."
-  - title: "Palets plásticos anidables"
+  - title: "Palets de plástico encajables"
     url: "/products/pallets/nestable-plastic-pallets/"
     image: "/images/products/pallet/nine-leg/1210-hero.jpg"
     summary: "Para movimientos de una vía, exportación y control del costo de retorno de vacíos."
 related_resources:
-  - title: "Lista RFQ para palets plásticos"
+  - title: "Lista RFQ para palets de plástico"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
   - title: "Criterios de deflexión en estantería"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:
-  title: "Envíe sus condiciones de almacén"
+  title: "Describa los requisitos de su almacén"
   text: "Incluya carga por palet, luz de estantería, tiempo de almacenamiento, tipo de montacargas, altura de apilado y cantidad objetivo."
 ---

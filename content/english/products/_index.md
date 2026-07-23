@@ -1,4 +1,4 @@
 ---
 title: "Products"
-description: "Browse Baoheng Plastic product families by source factory category, handling use, and quote-ready model."
+description: "Plastic pallets, pallet boxes, crates, bulk containers, trays, tanks, and waste bins manufactured by Baoheng Plastic."
 ---

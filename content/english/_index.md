@@ -1,37 +1,37 @@
 ---
 title: "Baoheng Plastic"
-description: "Factory-direct plastic pallets, pallet boxes, crates, and industrial handling products with practical model selection, quality control, and reliable delivery."
+description: "Baoheng Plastic manufactures plastic pallets, pallet boxes, crates, bulk containers, and waste bins for warehousing, logistics, and industrial use."
 
 home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "Factory-direct supply"
-  title: "Plastic pallets and containers matched to real warehouse work"
-  description: "Baoheng Plastic manufactures HDPE/PP pallets, pallet boxes, crates, bulk containers, and waste bins, helping you confirm structure, load rating, material, packing, and delivery details before ordering."
+  eyebrow: "Industrial plastic products manufacturer"
+  title: "Plastic pallets and containers for warehousing and material handling"
+  description: "Choose from HDPE/PP pallets, pallet boxes, crates, bulk containers, and waste bins. We help you confirm the right structure, load rating, material, packing, and delivery terms before you order."
   primary_cta:
     label: "Send RFQ"
     url: "/contact/?intent=quote"
   secondary_cta:
     label: "Browse Products"
     url: "/products/"
-  visual_caption: "As an industrial plastic products manufacturer, we combine production experience with export project support, helping overseas customers coordinate selection, samples, order follow-up, and shipment preparation."
+  visual_caption: "Work directly with our factory team on product selection, samples, production updates, inspection, packing, and export shipment."
 usps:
   enable: true
-  title: "Move from operating conditions to a quote-ready specification"
-  description: "A useful quotation starts with the workflow, validates the critical interfaces, and records the conditions that still require confirmation."
+  title: "What we check before we quote"
+  description: "Tell us what you are moving, how it will be stored and handled, and where it needs to go. We will recommend suitable models and clearly note anything that still needs to be confirmed."
   items:
-    - title: "Start from the application"
-      description: "We confirm load type, storage mode, temperature, forklift/rack fit, and container loading before recommending models."
-    - title: "Factory-direct control"
-      description: "Material selection, molding, reinforcement, logo/color options, and shipment inspection stay under one manufacturing workflow."
-    - title: "Quote with usable details"
-      description: "You receive model direction, key specs, packing notes, and commercial terms that are clear enough for internal review."
+    - title: "Tell us how the product will be used"
+      description: "We check the load, storage method, temperature, forklift and rack requirements, and container loading needs before suggesting a model."
+    - title: "Confirm material and construction"
+      description: "Our factory reviews the material, molding process, reinforcement, color or logo options, and inspection requirements for your order."
+    - title: "Receive a clear, comparable quote"
+      description: "The quote identifies the proposed model, key specifications, packing method, commercial terms, and any points that remain open."
 
 product_groups:
   enable: true
-  title: "Choose by product family, then refine by operating conditions"
-  description: "Start with the handling product you need, then use load, size, rack, hygiene, or return-logistics details to narrow the specification."
+  title: "Browse our plastic handling products"
+  description: "Our catalog covers pallets, pallet boxes, crates, bulk containers, and waste bins. Compare the available models by size, load, racking, hygiene, and return-shipping requirements."
   items:
     - title: "Plastic Pallets"
       url: "/products/pallets/"
@@ -56,8 +56,8 @@ product_groups:
 
 industries:
   enable: true
-  title: "Match products to the way goods actually move"
-  description: "Different industries fail for different reasons: rack deflection, cold impact, sanitation, chemical leakage, return-space cost, or automation tolerance. Use the closest scenario as the starting point for selection."
+  title: "Find products for your industry"
+  description: "Racking, low temperatures, hygiene rules, chemical exposure, empty returns, and automation all place different demands on a pallet or container. See the products and buying considerations for your industry."
   items:
     - title: "Warehousing & Logistics"
       url: "/industries/warehousing-logistics/"
@@ -67,7 +67,7 @@ industries:
     - title: "Food & Beverage"
       url: "/industries/food-beverage/"
       image: "images/home/industries-3.jpg"
-      summary: "Washable pallets and containers for cleaner production and distribution workflows."
+      summary: "Washable pallets and containers for food production and distribution."
       products: "Food-grade pallets, crates, color-coded handling"
     - title: "Cold Chain & Frozen Food"
       url: "/industries/cold-chain-frozen-food/"
@@ -92,8 +92,8 @@ industries:
 
 clients:
   enable: true
-  title: "Factory visits, project follow-up, and long-term supply"
-  description: "Real collaboration is not only a catalog exchange. We support selection, sample confirmation, loading, replenishment, and product adjustments when operating conditions change."
+  title: "A factory partner for repeat orders"
+  description: "Visit our factory, approve samples, follow production, and reorder with the same specifications. If your load or handling method changes, we can review the product again before the next order."
   items:
     - image: "images/home/clients-1.jpg"
       alt: "Customer visit at Baoheng Plastic"
@@ -112,21 +112,21 @@ clients:
 
 factory:
   enable: true
-  title: "Manufacturing capability behind the quotation"
-  description: "Baoheng Plastic combines molding equipment, material selection, tooling adjustment, production inspection, and export packing to help you compare specifications, risk, and cost together."
+  title: "Production and quality control"
+  description: "See how we select materials, mold products, adjust tooling, inspect orders, and pack bulky plastic products for export."
   cta:
-    label: "View manufacturing capability"
+    label: "See how we manufacture"
     url: "/manufacturing/"
   items:
-    - title: "Material and structure selection"
-      content: "HDPE/PP options, impact-modified formulas, recycled-content choices, anti-slip surfaces, steel reinforcement, and color/logo requirements are selected around the operating scenario."
+    - title: "Materials and product construction"
+      content: "We review HDPE or PP, impact-modified material, recycled content, anti-slip surfaces, steel reinforcement, and color or logo requirements against the intended use."
       image: "images/home/factory-1.jpg"
-    - title: "Molding and tooling support"
-      content: "Injection and blow-molding production supports standard models and project adjustments such as ribs, deck texture, label zones, and reinforced structures."
+    - title: "Molding and tooling"
+      content: "Injection and blow molding cover our standard models. For suitable volume orders, tooling can be adjusted for ribs, deck texture, label areas, and reinforcement."
       image: "images/home/factory-2.jpg"
-    - title: "Inspection, packing, and export delivery"
-      content: "Batch checks, visual inspection, stacking tests, packing plans, shipment photos, and container loading support help reduce arrival and use-risk after delivery."
+    - title: "Inspection, packing, and export"
+      content: "Batch checks, visual inspection, stacking tests, packing plans, shipment photos, and container loading records help you verify the order before it leaves the factory."
       image: "images/home/factory-3.jpg"
 ---
 
-Baoheng Plastic manufactures plastic pallets, pallet boxes, crates, containers, and waste bins for warehousing, logistics, and manufacturing customers, with dependable model selection, quality control, and export delivery support.
+Baoheng Plastic manufactures plastic pallets, pallet boxes, crates, bulk containers, and waste bins for warehousing, logistics, food handling, manufacturing, and municipal use.

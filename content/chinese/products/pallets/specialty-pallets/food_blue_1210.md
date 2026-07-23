@@ -1,7 +1,7 @@
 ---
 
 title: "蓝色1210食品与医用塑料托盘"
-description: "蓝色 1210 食品与医用塑料托盘采用平整易清洁表面，适合卫生分区、颜色管理和受控生产环境。"
+description: "表面平整、便于清洗的食品级塑料托盘，适合食品生产和高频清洁区域。请说明清洗方式和食品接触要求。"
 aliases:
   - "/products/pallets/food_blue_1210/"
 featured_image: "/images/products/pallet/food/1210-blue-hero.jpg"

@@ -1,6 +1,6 @@
 ---
-title: "Egg Tray transport palette système"
-description: "Egg Tray transport palette système de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Système de palette pour plateaux d'œufs"
+description: "Système réutilisable pour empiler, déplacer et protéger les plateaux d’œufs. Indiquez le format des plateaux, la hauteur d’empilage et le mode de transport."
 aliases:
   - "/products/pallets/egg-tray-pallet-system/"
 featured_image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-hero.jpg"
@@ -19,20 +19,20 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 showcase_gallery:
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-1.jpg"
-    alt: "Egg tray transport palette système showcase 1"
+    alt: "Système de palette pour plateaux d'œufs – photo du produit 1"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-2.jpg"
-    alt: "Egg tray transport palette système showcase 2"
+    alt: "Système de palette pour plateaux d'œufs – photo du produit 2"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-3.jpg"
-    alt: "Egg tray transport palette système showcase 3"
+    alt: "Système de palette pour plateaux d'œufs – photo du produit 3"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-showcase-4.jpg"
-    alt: "Egg tray transport palette système showcase 4"
+    alt: "Système de palette pour plateaux d'œufs – photo du produit 4"
 industry_gallery:
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-industry-1.jpg"
-    alt: "Egg tray transport palette système industry utilisation 1"
+    alt: "Système de palette pour plateaux d'œufs – exemple d'utilisation 1"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-industry-2.jpg"
-    alt: "Egg tray transport palette système industry utilisation 2"
+    alt: "Système de palette pour plateaux d'œufs – exemple d'utilisation 2"
   - image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-industry-3.jpg"
-    alt: "Egg tray transport palette système industry utilisation 3"
+    alt: "Système de palette pour plateaux d'œufs – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

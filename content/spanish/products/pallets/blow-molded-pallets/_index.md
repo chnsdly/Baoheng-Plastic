@@ -1,6 +1,6 @@
 ---
-title: "Palets plásticos soplados"
-description: "Palets soplados encajables para exportación, distribución minorista y logística de retorno con ahorro de espacio."
+title: "Palets de plástico soplado"
+description: "Palets encajables de plástico soplado para exportación, distribución, uso exterior y retornos en vacío con menos volumen."
 weight: 40
 product_family: "Plastic Pallets"
 product_series: "Nestable Blow-Molded Pallets"

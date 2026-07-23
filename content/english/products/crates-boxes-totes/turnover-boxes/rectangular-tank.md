@@ -1,7 +1,7 @@
 ---
 
 title: "Rectangular Plastic Tank"
-description: "This heavy-duty plastic utility tank is molded from HDPE/POE with a reinforced base and large open top."
+description: "Rectangular plastic tank for storing and handling liquids or bulk material. Confirm the volume, contents, and operating conditions."
 aliases:
   - "/products/crates/rectangular-tank/"
   - "/products/crates-boxes-totes/rectangular-tank/"

@@ -1,18 +1,18 @@
-﻿---
+---
 title: "Industry Applications"
-description: "Choose plastic pallets, pallet boxes, crates, and containers by warehouse, food, cold chain, chemical, agriculture, printing, pharma, and poultry handling scenarios."
+description: "Plastic pallets, pallet boxes, crates, and containers for warehousing, food, cold chain, chemical handling, agriculture, printing, pharmaceutical, and poultry operations."
 hero:
-  eyebrow: "Applications first"
-  title: "Select plastic handling products by operating environment"
-  text: "A pallet or container that works in floor storage may fail in racking, cold rooms, hygiene zones, or chemical handling. Start with the closest application so the quotation can reflect real operating risk."
+  eyebrow: "Industries"
+  title: "Plastic pallets and containers by industry"
+  text: "A product used on warehouse racks has different requirements from one used in a freezer, hygiene area, or chemical store. Choose your industry to see relevant products and the details to confirm before buying."
   image: "/images/industry/high-1.jpg"
 overview:
-  title: "How industry pages help buyers"
+  title: "Choose products by where and how they will be used"
   points:
-    - "Clarify the handling pain point before choosing a model"
-    - "Connect each application to suitable product families"
-    - "Collect the right RFQ details for faster quotation"
-    - "Reduce mismatch between price comparison and field performance"
+    - "See the product types commonly used in each industry"
+    - "Check the load, storage, cleaning, temperature, and handling requirements"
+    - "Prepare the information needed for an accurate quote"
+    - "Avoid choosing a product on price alone"
 items:
   - title: "Warehousing & Logistics"
     key: "warehousing-logistics"
@@ -63,8 +63,8 @@ items:
     summary: "Reusable handling for egg trays, poultry facilities, and washing cycles."
     focus: "Tray fit, washability, breakage control, return flow"
 cta:
-  title: "Not sure which product fits?"
-  text: "Send your application, load, size, temperature, rack details, quantity, and destination. We will recommend a practical product direction before quoting."
+  title: "Need help choosing a product?"
+  text: "Send the goods, load, size, temperature, rack details, quantity, and destination. We will recommend suitable products and confirm any missing information before quoting."
   url: "/selection-support/"
   label: "Get selection support"
 ---

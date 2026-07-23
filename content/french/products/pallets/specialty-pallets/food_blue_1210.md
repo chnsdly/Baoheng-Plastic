@@ -1,6 +1,6 @@
 ---
-title: "Palette plastique bleue 1210 pour alimentaire et usage médical"
-description: "Palette plastique bleue 1210 pour alimentaire et usage médical, avec surface lisse hygiénique pour nettoyage, codage couleur et zones contrôlées."
+title: "Palette hygiénique bleue en plastique – 1210"
+description: "Palette hygiénique à surface lisse pour l’agroalimentaire et les zones soumises à des lavages fréquents. Précisez les exigences de nettoyage et de contact alimentaire."
 aliases:
   - "/products/pallets/food_blue_1210/"
 featured_image: "/images/products/pallet/food/1210-blue-hero.jpg"
@@ -18,13 +18,13 @@ pallet_category:
   - "Food & Pharmaceutical Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/food/1210-blue-showcase.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical showcase 1"
+    alt: "Palette hygiénique bleue en plastique – 1210 – photo du produit 1"
   - image: "/images/products/pallet/food/showcase-blue-1.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical showcase 2"
+    alt: "Palette hygiénique bleue en plastique – 1210 – photo du produit 2"
   - image: "/images/products/pallet/food/showcase-blue-2.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical showcase 3"
+    alt: "Palette hygiénique bleue en plastique – 1210 – photo du produit 3"
   - image: "/images/products/pallet/food/showcase-3.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical showcase 3"
+    alt: "Palette hygiénique bleue en plastique – 1210 – photo du produit 4"
 
 specs:
   dimensions: "1200 × 1000 × 150 mm"
@@ -49,11 +49,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/food/industry-1.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical industry utilisation 1"
+    alt: "Palette hygiénique bleue en plastique – 1210 – exemple d'utilisation 1"
   - image: "/images/products/pallet/food/showcase-blue-1.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical industry utilisation 2"
+    alt: "Palette hygiénique bleue en plastique – 1210 – exemple d'utilisation 2"
   - image: "/images/products/pallet/food/showcase-blue-2.jpg"
-    alt: "1210 palette plastique pour alimentaire et usage médical industry utilisation 1"
+    alt: "Palette hygiénique bleue en plastique – 1210 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "周转筐、周转箱"
-description: "浏览周转箱、周转筐、单冻器和折叠筐产品，适用于食品加工、农业、生鲜周转、仓储、清洗和分拣。"
+description: "用于食品加工、农业、仓储、清洗和分拣的塑料周转箱、通风周转筐、单冻器、水箱及折叠筐。"
 weight: 30
 product_family: "Plastic Crates & Boxes"
 aliases:

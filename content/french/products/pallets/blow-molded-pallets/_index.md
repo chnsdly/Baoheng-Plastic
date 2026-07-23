@@ -1,6 +1,6 @@
 ---
-title: "Palettes plastique soufflées"
-description: "Palettes soufflées emboîtables pour export, distribution retail et retours logistiques compacts."
+title: "Palettes soufflées en plastique"
+description: "Palettes en plastique soufflé et emboîtables pour l'export, la distribution, l'extérieur et les retours à vide peu volumineux."
 weight: 40
 product_family: "Plastic Pallets"
 product_series: "Nestable Blow-Molded Pallets"

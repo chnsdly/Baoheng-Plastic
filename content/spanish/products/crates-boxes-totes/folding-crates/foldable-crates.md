@@ -1,6 +1,6 @@
 ---
-title: "cajas plásticas plegables"
-description: "cajas plásticas plegables de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Caja plegable de plástico"
+description: "Caja plegable y reutilizable que reduce el volumen en los retornos en vacío. Indique las dimensiones, la carga y la ventilación necesaria."
 aliases:
   - "/products/crates/foldable-crates/"
   - "/products/crates-boxes-totes/foldable-crates/"
@@ -30,11 +30,11 @@ product_showcase:
     alt: "stacknest-caja"
 industry_gallery:
   - image: "/images/products/crate-box/foldable-crates-industry-1.jpg"
-    alt: "foldable-cajas industry uso 1"
+    alt: "Caja plegable de plástico – ejemplo de uso 1"
   - image: "/images/products/crate-box/foldable-crates-industry-2.jpg"
-    alt: "foldable-cajas industry uso 2"
+    alt: "Caja plegable de plástico – ejemplo de uso 2"
   - image: "/images/products/crate-box/foldable-crates-industry-3.jpg"
-    alt: "foldable-cajas industry uso 3"
+    alt: "Caja plegable de plástico – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

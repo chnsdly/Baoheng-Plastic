@@ -1,6 +1,6 @@
 ---
 title: "Bandejas de congelación"
-description: "Bandejas plásticas de congelación y secado para mariscos, carne, panadería, productos frescos, cadena de frío y drenaje rápido."
+description: "Bandejas de congelación y secado de plástico para marisco, carne, panadería, frutas y verduras, procesos en frío y drenaje rápido."
 weight: 30
 product_family: "Plastic Crates & Boxes"
 product_series: "Freezing Trays"

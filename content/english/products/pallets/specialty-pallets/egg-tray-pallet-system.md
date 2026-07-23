@@ -1,7 +1,7 @@
 ---
 
 title: "Egg Tray Transport Pallet System"
-description: "The egg tray transport pallet system combines a plastic base pallet, interlayer divider sheets, and stacked egg trays to support unitized handling for egg circulation, storage, and short-haul distribution."
+description: "Reusable pallet system for stacking, moving, and protecting egg trays. Share the tray format, stacking height, and transport method."
 aliases:
   - "/products/pallets/egg-tray-pallet-system/"
 featured_image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-hero.jpg"

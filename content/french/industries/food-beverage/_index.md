@@ -1,11 +1,11 @@
 ---
 title: "Alimentaire et boissons"
-description: "Palettes et bacs plastique pour manutention alimentaire, lavage, zones hygiéniques et logistique codée par couleur."
+description: "Palettes et bacs en plastique lavables pour la production alimentaire, les zones hygiéniques, le froid et la gestion par couleur."
 weight: 22
 industry_key: "food-beverage"
 hero:
   eyebrow: "Manutention hygiénique"
-  title: "Palettes et conteneurs plastique lavables pour flux alimentaires"
+  title: "Palettes et conteneurs en plastique lavables pour l'agroalimentaire"
   text: "Les opérations alimentaires ont souvent besoin de surfaces nettoyables, de matières contrôlées, de séparation par couleur et d'une manutention stable de la production à la distribution."
   image: "/images/industry/food-1.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Sélection de palettes plastique à plateau fermé"
     url: "/resources/insights/2620-closed-deck-plastic-pallet-selection/"
 cta:
-  title: "Envoyez vos exigences hygiène et manutention"
+  title: "Décrivez vos exigences d'hygiène et de manutention"
   text: "Indiquez catégorie alimentaire, méthode de nettoyage, température, charge, exigences couleur et quantité."
 ---

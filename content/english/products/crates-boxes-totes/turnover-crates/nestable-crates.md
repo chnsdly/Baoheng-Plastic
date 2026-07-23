@@ -1,7 +1,7 @@
 ---
 
 title: "Nestable Plastic Crates"
-description: "This stackable plastic crate is made from durable PP/HDPE and features a ventilated mesh design."
+description: "Nestable plastic crate that saves space during storage and empty returns. Share the dimensions, load, and ventilation requirements."
 aliases:
   - "/products/crates/nestable-crates/"
   - "/products/crates-boxes-totes/nestable-crates/"

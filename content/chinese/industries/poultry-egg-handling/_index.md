@@ -1,11 +1,11 @@
 ---
 title: "禽类与鸡蛋搬运"
-description: "用于禽类养殖、鸡蛋加工、清洗和配送流程的塑料托盘、周转筐和蛋托搬运系统。"
+description: "适用于禽类养殖、鸡蛋加工、清洗、仓储和配送的塑料托盘、周转筐及蛋托系统。"
 weight: 28
 industry_key: "poultry-egg-handling"
 hero:
   eyebrow: "蛋品与禽类周转"
-  title: "用于禽类和鸡蛋流程的可重复塑料搬运产品"
+  title: "禽类与鸡蛋搬运用可重复塑料托盘和周转筐"
   text: "禽类和鸡蛋工况需要可清洗、可重复、稳定的搬运系统，以降低破损、匹配蛋托并简化回收周转。"
   image: "/images/home/industries-8.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "塑料托盘丢失控制与回收计划"
     url: "/resources/insights/2613-plastic-pallet-loss-control-return-program/"
 cta:
-  title: "发送您的禽蛋搬运布局"
+  title: "告诉我们蛋托和搬运方式"
   text: "请提供蛋托尺寸、托盘尺寸、清洗方式、堆码高度、回收周期和目标数量。"
 ---

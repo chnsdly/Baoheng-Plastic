@@ -1,11 +1,11 @@
 ---
 title: "Alimentos y bebidas"
-description: "Palets y gavetas plásticas para manejo de alimentos y bebidas, lavado, zonas higiénicas y logística codificada por color."
+description: "Palets y cajas plásticas para manejo de alimentos y bebidas, lavado, zonas higiénicas y logística codificada por color."
 weight: 22
 industry_key: "food-beverage"
 hero:
   eyebrow: "Manejo higiénico"
-  title: "Palets y contenedores plásticos lavables para flujos alimentarios"
+  title: "Palets y contenedores de plástico lavables para alimentación"
   text: "Las operaciones de alimentos y bebidas suelen necesitar superficies limpiables, selección controlada de material, separación por color y manejo estable desde producción hasta distribución."
   image: "/images/industry/food-1.jpg"
 challenges:
@@ -21,11 +21,11 @@ selection_factors:
   - title: "Color y trazabilidad"
     text: "Los productos codificados por color separan áreas, grupos de producto o circuitos de retorno."
 recommended_products:
-  - title: "Palets plásticos grado alimentario"
+  - title: "Palets de plástico grado alimentario"
     url: "/products/pallets/specialty-pallets/food_white_1210/"
     image: "/images/products/pallet/food/1210-white-hero.jpg"
     summary: "Para zonas de manejo más limpias donde material, color y lavabilidad son importantes."
-  - title: "Gavetas y cajas plásticas"
+  - title: "Cajas y cajas plásticas"
     url: "/products/crates-boxes-totes/"
     image: "/images/products/crate-box/nestable-crates-hero.jpg"
     summary: "Para circulación en producción, reposición, lavado y separación de productos."
@@ -36,9 +36,9 @@ recommended_products:
 related_resources:
   - title: "SOP de limpieza para palets en almacenes alimentarios"
     url: "/resources/insights/2611-plastic-pallet-sanitation-sop-for-food-warehouses/"
-  - title: "Selección de palets plásticos de cubierta cerrada"
+  - title: "Selección de palets de plástico de cubierta cerrada"
     url: "/resources/insights/2620-closed-deck-plastic-pallet-selection/"
 cta:
-  title: "Envíe sus requisitos de higiene y manejo"
+  title: "Describa sus requisitos de higiene y manipulación"
   text: "Indique categoría alimentaria, método de limpieza, temperatura, carga, requisitos de color y cantidad."
 ---

@@ -1,12 +1,12 @@
 ---
 title: "食品与饮料"
-description: "用于食品饮料搬运、清洗流程、卫生区域和分色物流的塑料托盘与周转筐。"
+description: "适用于食品饮料生产、清洗、卫生区域、冷藏和分色管理的可清洗塑料托盘与周转筐。"
 weight: 22
 industry_key: "food-beverage"
 hero:
   eyebrow: "卫生搬运"
-  title: "用于食品搬运流程的可清洗塑料托盘和容器"
-  text: "食品与饮料工况通常需要易清洁表面、可控材料、颜色分区，以及从生产到配送都稳定的搬运表现。"
+  title: "食品生产用可清洗塑料托盘和容器"
+  text: "食品与饮料生产及配送通常需要易清洁表面、可控材料、颜色分区和稳定的搬运表现。"
   image: "/images/industry/food-1.jpg"
 challenges:
   - "木托盘在洁净区域容易带来吸湿和卫生隐患"
@@ -39,6 +39,6 @@ related_resources:
   - title: "闭面塑料托盘选型"
     url: "/resources/insights/2620-closed-deck-plastic-pallet-selection/"
 cta:
-  title: "发送您的卫生与搬运要求"
+  title: "告诉我们卫生与搬运要求"
   text: "请说明食品类别、清洗方式、温度、载重、颜色要求和采购数量。"
 ---

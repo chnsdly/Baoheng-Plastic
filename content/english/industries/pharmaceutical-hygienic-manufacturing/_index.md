@@ -1,23 +1,23 @@
-﻿---
+---
 title: "Pharmaceutical & Hygienic Manufacturing"
-description: "Plastic pallets and containers for hygienic manufacturing, controlled handling, packaging areas, and traceability-focused workflows."
+description: "Plastic pallets and containers for hygienic manufacturing, controlled handling, packaging areas, and traceability requirements."
 weight: 23
 industry_key: "pharmaceutical-hygienic-manufacturing"
 hero:
   eyebrow: "Controlled handling"
   title: "Plastic handling products for hygienic manufacturing environments"
-  text: "Pharma-adjacent and hygienic production workflows need products that support cleanliness, traceability, area separation, and predictable handling."
+  text: "Pharmaceutical and hygienic production areas need pallets and containers that are easy to clean, identify, inspect, and keep within controlled zones."
   image: "/images/home/industries-4.jpg"
 challenges:
   - "Contamination risk from damaged, porous, or hard-to-clean handling assets"
-  - "Insufficient lot or area identification for controlled workflows"
+  - "Insufficient lot or area identification for controlled operations"
   - "Unclear material choice between cost-driven and hygiene-sensitive areas"
   - "Pallet designs that trap residue or are difficult to inspect"
 selection_factors:
   - title: "Area classification"
     text: "Separate primary clean handling, packaging, warehouse, and external logistics requirements."
   - title: "Material and color"
-    text: "Virgin material and color zoning may be appropriate for cleaner or more traceable workflows."
+    text: "Virgin material and color zoning may be appropriate for cleaner or more traceable operations."
   - title: "Surface and inspection"
     text: "Deck style, drainage, labels, and visual inspection points should support SOPs."
 recommended_products:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Incoming Inspection Plan"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "Send your clean-handling requirements"
+  title: "Tell us about your clean-area requirements"
   text: "Include area type, material preference, cleaning method, color coding, traceability, and load data."
 ---

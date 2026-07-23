@@ -1,7 +1,7 @@
 ---
 
 title: "单冻器"
-description: "浅型单冻器/风干盘，采用全新 HDPE/PP 原料与大型精密模具一次成型。网眼结构帮助快速散热沥水，适合海产、肉类、面点、果蔬等食材的单冻、风干和周转。我们的工程师将根据您的工艺流程与洁净需求，推荐匹配规格，欢迎咨询获取专属报价。"
+description: "用于速冻、干燥和通风处理的网格托盘。请提供使用温度、载荷和所需尺寸。"
 aliases:
   - "/products/crates/drying-trays/"
   - "/products/crates-boxes-totes/drying-trays/"

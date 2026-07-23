@@ -1,7 +1,7 @@
 ---
 
 title: "1111-网格川字型塑料托盘"
-description: "可上架塑料托盘，采用HDPE/PP全新料，大型精密模具一体成型，我们的工程师将会根据您的具体货物与使用场景，为您推荐最合适的塑料托盘，欢迎咨询，获取您的专属报价。"
+description: "适用于横梁式货架、叉车和托盘搬运车的川字型塑料托盘。请提供货架跨度、货物重量与分布、存放时间和使用温度。"
 aliases:
   - "/products/pallets/3-runner_1111/"
 featured_image: "/images/products/pallet/3-runner/1111-hero.jpg"

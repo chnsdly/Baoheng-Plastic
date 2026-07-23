@@ -1,6 +1,6 @@
 ---
-title: "cajas plásticas encajables"
-description: "cajas plásticas encajables de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Caja encajable de plástico"
+description: "Caja encajable que ahorra espacio durante el almacenamiento y los retornos en vacío. Indique las dimensiones, la carga y la ventilación necesaria."
 aliases:
   - "/products/crates/nestable-crates/"
   - "/products/crates-boxes-totes/nestable-crates/"
@@ -43,11 +43,11 @@ product_showcase:
 
 industry_gallery:
   - image: "/images/products/crate-box/nestable-crates-industry-1.jpg"
-    alt: "encajable-cajas industry uso 1"
+    alt: "Caja encajable de plástico – ejemplo de uso 1"
   - image: "/images/products/crate-box/nestable-crates-industry-2.jpg"
-    alt: "encajable-cajas industry uso 2"
+    alt: "Caja encajable de plástico – ejemplo de uso 2"
   - image: "/images/products/crate-box/nestable-crates-industry-3.jpg"
-    alt: "encajable-cajas industry uso 3"
+    alt: "Caja encajable de plástico – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

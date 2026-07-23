@@ -1,6 +1,6 @@
 ---
-title: "1412 cubierta abierta base perimetral Palet plástico"
-description: "1412 cubierta abierta base perimetral Palet plástico de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Dimensiones nominales: 1400 × 1200 × 150 mm. Material: HDPE/PP. Referencia de carga: carga dinámica 1 t, carga estática 3 t. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Palet de plástico con base perimetral – 1412"
+description: "Palet estable con base perimetral para apilado, transportadores y manipulación repetida. El uso en estanterías debe verificarse según la luz y la carga."
 aliases:
   - "/products/pallets/perimeter-base_1412/"
 featured_image: "/images/products/pallet/perimeter-base/1412-hero.jpg"
@@ -17,13 +17,13 @@ pallet_category:
   - "Perimeter-Base Stackable Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/perimeter-base/1412-showcase.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico showcase 1"
+    alt: "Palet de plástico con base perimetral – 1412 – foto del producto 1"
   - image: "/images/products/pallet/perimeter-base/showcase-1.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico showcase 2"
+    alt: "Palet de plástico con base perimetral – 1412 – foto del producto 2"
   - image: "/images/products/pallet/perimeter-base/showcase-2.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico showcase 3"
+    alt: "Palet de plástico con base perimetral – 1412 – foto del producto 3"
   - image: "/images/products/pallet/perimeter-base/showcase-3.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico showcase 4"
+    alt: "Palet de plástico con base perimetral – 1412 – foto del producto 4"
 
 specs:
   dimensions: "1400 × 1200 × 150 mm"
@@ -46,11 +46,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/perimeter-base/industry-1.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico industry uso 1"
+    alt: "Palet de plástico con base perimetral – 1412 – ejemplo de uso 1"
   - image: "/images/products/pallet/perimeter-base/industry-2.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico industry uso 2"
+    alt: "Palet de plástico con base perimetral – 1412 – ejemplo de uso 2"
   - image: "/images/products/pallet/perimeter-base/industry-3.jpg"
-    alt: "1412 cubierta abierta base perimetral Palet plástico industry uso 3"
+    alt: "Palet de plástico con base perimetral – 1412 – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

@@ -1,84 +1,84 @@
 ---
 title: "Baoheng Plastic"
-description: "Palets plásticos, cajas pallet, gavetas y productos industriales de manejo directo de fábrica, con selección práctica, control de calidad y entrega fiable."
+description: "Baoheng Plastic fabrica palets de plástico, cajas palet, cajas, contenedores a granel y contenedores de residuos para almacenes, logística e industria."
 
 home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "Directo de fábrica"
-  title: "Palets y contenedores plásticos adaptados al trabajo real de almacén"
-  description: "Baoheng Plastic fabrica palets HDPE/PP, cajas pallet, gavetas, contenedores a granel y bines de residuos, y ayuda a confirmar estructura, carga, material, embalaje y entrega antes de ordenar."
+  eyebrow: "Fabricante de productos plásticos industriales"
+  title: "Palets y contenedores de plástico para almacenes y manipulación de materiales"
+  description: "Fabricamos palets de HDPE/PP, cajas palet, cajas, contenedores a granel y contenedores de residuos. Antes del pedido, revisamos con usted la estructura, la carga, el material, el embalaje y las condiciones de entrega."
   primary_cta:
-    label: "Enviar RFQ"
+    label: "Solicitar cotización"
     url: "/contact/?intent=quote"
   secondary_cta:
     label: "Ver productos"
     url: "/products/"
-  visual_caption: "Como fabricante de productos plásticos industriales, combinamos experiencia de producción y apoyo a proyectos de exportación para coordinar con clientes internacionales la selección, las muestras, el seguimiento del pedido y la preparación del envío."
+  visual_caption: "Trate directamente con nuestro equipo de fábrica para elegir el producto, aprobar muestras, seguir la producción, revisar la inspección, preparar el embalaje y coordinar el envío."
 usps:
   enable: true
-  title: "De las condiciones operativas a una especificación lista para cotizar"
-  description: "Una cotización útil empieza por el flujo de trabajo, valida las interfaces críticas y deja claras las condiciones pendientes de confirmar."
+  title: "Qué necesitamos para preparar una cotización precisa"
+  description: "Indíquenos qué mercancía va a mover, cómo se almacenará y manipulará y cuál es el destino. Le recomendaremos modelos adecuados y señalaremos lo que aún deba confirmarse."
   items:
-    - title: "Empezar por la aplicación"
-      description: "Confirmamos tipo de carga, modo de almacenamiento, temperatura, compatibilidad con montacargas/estantería y carga de contenedor antes de recomendar modelos."
-    - title: "Control directo de fábrica"
-      description: "Materiales, moldeo, refuerzos, color/logotipo e inspección de envío se mantienen dentro de un mismo flujo de fabricación."
-    - title: "Cotización con datos útiles"
-      description: "Recibe orientación de modelo, especificaciones clave, notas de embalaje y términos comerciales claros para revisión interna."
+    - title: "Explique cómo se utilizará el producto"
+      description: "Antes de recomendar un modelo, revisamos la carga, el almacenamiento, la temperatura, el montacargas, la estantería y la carga del contenedor."
+    - title: "Confirme el material y la construcción"
+      description: "La fábrica revisa el material, el proceso de moldeo, los refuerzos, el color o logotipo y los controles necesarios para el pedido."
+    - title: "Reciba una cotización clara y comparable"
+      description: "La cotización indica el modelo propuesto, las especificaciones principales, el embalaje, las condiciones comerciales y los puntos pendientes."
 
 product_groups:
   enable: true
-  title: "Elija por familia de producto y refine por condiciones operativas"
-  description: "Empiece por el producto de manejo que necesita y luego use carga, tamaño, estantería, higiene o retorno para definir la especificación."
+  title: "Explore nuestros palets, cajas y contenedores de plástico"
+  description: "Nuestra gama incluye palets, cajas palet, cajas, contenedores de gran volumen y contenedores de residuos. Compare los modelos por tamaño, carga, uso en estanterías, higiene y retorno en vacío."
   items:
-    - title: "Palets plásticos"
+    - title: "Palets de plástico"
       url: "/products/pallets/"
       image: "images/products/pallet/3-runner/1210-hero.jpg"
-      summary: "Palets anidables, rackables, apilables, soplados, grado alimentario, antiderrame y especiales."
+      summary: "Palets encajables, para estanterías, apilables, soplados, higiénicos, de retención y especiales."
       fit: "Para almacenes, exportación, estanterías, cámaras frías, alimentos y circulación industrial."
-    - title: "Cajas pallet y contenedores a granel"
+    - title: "Cajas palet y contenedores de gran volumen"
       url: "/products/pallet-boxes-bulk-containers/"
       image: "images/products/fold/smdd86a-hero.jpg"
-      summary: "Cajas pallet plegables y contenedores grandes para manejo cerrado y logística de retorno."
+      summary: "Cajas palet plegables y contenedores grandes para circuitos reutilizables y retornos en vacío."
       fit: "Para autopartes, agricultura, componentes industriales y distribución de alto volumen."
-    - title: "Gavetas y cajas plásticas"
+    - title: "Cajas y recipientes de plástico"
       url: "/products/crates-boxes-totes/"
       image: "images/products/crate-box/foldable-crates-hero.jpg"
-      summary: "Gavetas plegables, cajas de rotación, stack-nest, tanques y bandejas de congelado/secado."
+      summary: "Cajas plegables, recipientes de manipulación, cajas apilables y encajables, depósitos y bandejas de congelación o secado."
       fit: "Para productos frescos, alimentos, retail, congelado y circulación interna."
-    - title: "Bines plásticos de residuos"
+    - title: "Contenedores de residuos de plástico"
       url: "/products/waste-bins/"
       image: "images/products/waste/240l-waste-hero.jpg"
-      summary: "Bines para exterior e instalaciones en capacidades comunes para uso municipal e industrial."
+      summary: "Contenedores de capacidades habituales para exteriores, servicios municipales e instalaciones industriales."
       fit: "Para saneamiento, fábricas, áreas públicas y programas de clasificación de residuos."
 
 industries:
   enable: true
-  title: "Ajuste productos a la forma real en que se mueven las mercancías"
-  description: "Cada industria falla por razones distintas: deflexión en rack, impacto en frío, higiene, fugas químicas, costo de retorno o tolerancia de automatización. Use el escenario más cercano como punto de partida."
+  title: "Productos para distintos sectores"
+  description: "Las estanterías, las bajas temperaturas, la higiene, el contacto químico, los retornos en vacío y la automatización exigen prestaciones diferentes. Consulte los productos y criterios de compra para su sector."
   items:
     - title: "Almacenaje y logística"
       url: "/industries/warehousing-logistics/"
       image: "images/home/industries-1.jpg"
       summary: "Estanterías, montacargas, apilado en piso y distribución de alta rotación."
-      products: "Palets rackables, base perimetral, palets anidables"
+      products: "Palets para estanterías, palets con base perimetral, palets encajables"
     - title: "Alimentos y bebidas"
       url: "/industries/food-beverage/"
       image: "images/home/industries-3.jpg"
       summary: "Palets y contenedores lavables para producción y distribución más limpias."
-      products: "Palets grado alimentario, gavetas, manejo por color"
+      products: "Palets higiénicos, cajas, identificación por colores"
     - title: "Cadena de frío y congelados"
       url: "/industries/cold-chain-frozen-food/"
       image: "images/industry/cold-1.jpg"
       summary: "Manejo a baja temperatura donde importan impacto y apilado estable."
-      products: "Palets HDPE, bandejas freezer, gavetas para cámara fría"
+      products: "Palets de HDPE, bandejas de congelación, cajas para cámaras frigoríficas"
     - title: "Químicos y control de derrames"
       url: "/industries/chemical-spill-control/"
       image: "images/home/industries-5.jpg"
       summary: "Contención y resistencia química para tambores, líquidos y zonas de riesgo."
-      products: "Palets antiderrame, palets químicos, cubiertas pesadas"
+      products: "Palets de retención, palets resistentes a productos químicos, modelos para cargas pesadas"
     - title: "Agricultura y productos frescos"
       url: "/industries/agriculture-fresh-produce/"
       image: "images/home/industries-7.jpg"
@@ -88,12 +88,12 @@ industries:
       url: "/industries/printing-packaging/"
       image: "images/home/industries-6.jpg"
       summary: "Planitud, manejo limpio y circulación repetida para papel y empaques."
-      products: "Palets planos, palets apilables, cajas de rotación"
+      products: "Palets de superficie cerrada, palets apilables, recipientes de manipulación"
 
 clients:
   enable: true
-  title: "Visitas de fábrica, seguimiento de proyectos y suministro a largo plazo"
-  description: "La colaboración real no es solo intercambio de catálogo. Apoyamos selección, muestras, carga, reposición y ajustes cuando cambian las condiciones de operación."
+  title: "Un fabricante para pedidos recurrentes"
+  description: "Visite la fábrica, apruebe muestras, siga la producción y repita pedidos con las mismas especificaciones. Si cambia la carga o la forma de manipulación, revisamos de nuevo el producto antes de la siguiente compra."
   items:
     - image: "images/home/clients-1.jpg"
       alt: "Visita de cliente a Baoheng Plastic"
@@ -112,21 +112,21 @@ clients:
 
 factory:
   enable: true
-  title: "Capacidad de fabricación detrás de la cotización"
-  description: "Baoheng Plastic combina equipos de moldeo, selección de material, ajuste de moldes, inspección y embalaje de exportación para ayudarle a comparar especificaciones, riesgos y costos junto con el precio."
+  title: "Fabricación y control de calidad"
+  description: "Conozca cómo seleccionamos los materiales, moldeamos los productos, ajustamos los moldes, inspeccionamos los pedidos y preparamos productos voluminosos para la exportación."
   cta:
-    label: "Ver capacidad de fabricación"
+    label: "Ver cómo fabricamos"
     url: "/manufacturing/"
   items:
-    - title: "Selección de material y estructura"
-      content: "Opciones HDPE/PP, fórmulas modificadas al impacto, contenido reciclado, superficies antideslizantes, refuerzo de acero y color/logotipo se seleccionan según el escenario."
+    - title: "Materiales y construcción"
+      content: "Revisamos el uso previsto para definir HDPE o PP, resistencia al impacto, contenido reciclado, superficie antideslizante, refuerzo de acero y color o logotipo."
       image: "images/home/factory-1.jpg"
-    - title: "Moldeo y soporte de moldes"
-      content: "La inyección y el soplado soportan modelos estándar y ajustes de proyecto como nervaduras, textura, zonas de etiqueta y estructuras reforzadas."
+    - title: "Moldeo y moldes"
+      content: "Los modelos estándar se fabrican por inyección o soplado. Para volúmenes adecuados, podemos estudiar cambios en nervaduras, textura, zonas de etiqueta o refuerzos."
       image: "images/home/factory-2.jpg"
-    - title: "Inspección, embalaje y entrega exportación"
-      content: "Revisiones por lote, inspección visual, pruebas de apilado, planes de embalaje, fotos de envío y soporte de carga ayudan a reducir riesgo de llegada."
+    - title: "Inspección, embalaje y exportación"
+      content: "Los controles por lote, la inspección visual, las pruebas de apilado, el plan de embalaje y las fotos de carga permiten verificar el pedido antes de que salga de fábrica."
       image: "images/home/factory-3.jpg"
 ---
 
-Baoheng Plastic fabrica palets plásticos, cajas pallet, gavetas, contenedores y bines para clientes de almacén, logística y fabricación, con selección fiable, control de calidad y soporte de exportación.
+Baoheng Plastic fabrica palets de plástico, cajas palet, cajas, contenedores a granel y contenedores de residuos para almacenes, logística, alimentación, industria y recogida de residuos.

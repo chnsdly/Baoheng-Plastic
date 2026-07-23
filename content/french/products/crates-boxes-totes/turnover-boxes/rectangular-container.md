@@ -1,6 +1,6 @@
 ---
-title: "conteneur plastique rectangulaire"
-description: "conteneur plastique rectangulaire de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Bac rectangulaire en plastique"
+description: "Bac rectangulaire réutilisable pour la manutention de pièces, d’ingrédients ou de produits en cours de fabrication. Indiquez le volume et les dimensions nécessaires."
 aliases:
   - "/products/crates/rectangular-container/"
   - "/products/crates-boxes-totes/rectangular-container/"

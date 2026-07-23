@@ -1,6 +1,6 @@
 ---
-title: "caisses plastique pliables"
-description: "caisses plastique pliables de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Caisse pliante en plastique"
+description: "Caisse pliante et réutilisable pour réduire le volume lors des retours à vide. Indiquez les dimensions, la charge et le besoin de ventilation."
 aliases:
   - "/products/crates/foldable-crates/"
   - "/products/crates-boxes-totes/foldable-crates/"
@@ -30,11 +30,11 @@ product_showcase:
     alt: "stacknest-caisse"
 industry_gallery:
   - image: "/images/products/crate-box/foldable-crates-industry-1.jpg"
-    alt: "foldable-caisses industry utilisation 1"
+    alt: "Caisse pliante en plastique – exemple d'utilisation 1"
   - image: "/images/products/crate-box/foldable-crates-industry-2.jpg"
-    alt: "foldable-caisses industry utilisation 2"
+    alt: "Caisse pliante en plastique – exemple d'utilisation 2"
   - image: "/images/products/crate-box/foldable-crates-industry-3.jpg"
-    alt: "foldable-caisses industry utilisation 3"
+    alt: "Caisse pliante en plastique – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

@@ -1,18 +1,18 @@
 ---
 title: "Applications par industrie"
-description: "Choisissez palettes plastique, caisses-palettes, bacs et conteneurs selon les scénarios d'entrepôt, alimentaire, chaîne du froid, chimie, agriculture, impression, fabrication hygiénique et œufs."
+description: "Palettes en plastique, caisses-palettes, bacs et conteneurs pour l'entreposage, l'agroalimentaire, le froid, la chimie, l'agriculture, l'impression, la pharmacie et l'aviculture."
 hero:
-  eyebrow: "L'application d'abord"
-  title: "Sélectionner les produits plastiques de manutention selon l'environnement réel"
-  text: "Une palette ou un conteneur adapté au stockage au sol peut échouer en rayonnage, chambre froide, zone hygiénique ou manutention chimique. Commencez par l'application la plus proche afin que le devis reflète les risques réels d'exploitation."
+  eyebrow: "Secteurs d'activité"
+  title: "Palettes et conteneurs en plastique par secteur"
+  text: "Un produit utilisé en rayonnage n'a pas les mêmes exigences qu'un produit destiné au froid, à une zone hygiénique ou au stockage de produits chimiques. Choisissez votre secteur pour voir les produits adaptés et les informations à vérifier avant l'achat."
   image: "/images/industry/high-1.jpg"
 overview:
-  title: "Comment utiliser ces pages"
+  title: "Choisir selon le lieu et le mode d'utilisation"
   points:
-    - "Clarifier le problème de manutention avant de choisir un modèle"
-    - "Relier chaque application aux familles de produits adaptées"
-    - "Collecter les bons détails RFQ pour accélérer le devis"
-    - "Réduire l'écart entre comparaison de prix et performance terrain"
+    - "Voir les produits couramment utilisés dans chaque secteur"
+    - "Vérifier la charge, le stockage, le nettoyage, la température et la manutention"
+    - "Préparer les informations nécessaires à un devis précis"
+    - "Éviter de choisir uniquement en fonction du prix"
 items:
   - title: "Entreposage et logistique"
     key: "warehousing-logistics"
@@ -63,8 +63,8 @@ items:
     summary: "Manutention réutilisable pour plateaux d'œufs, sites avicoles et cycles de lavage."
     focus: "Compatibilité plateaux, lavabilité, casse, flux retour"
 cta:
-  title: "Vous hésitez sur le bon produit ?"
-  text: "Envoyez application, charge, dimensions, température, détails de rayonnage, quantité et destination. Nous recommanderons une orientation pratique avant devis."
+  title: "Besoin d'aide pour choisir ?"
+  text: "Indiquez la marchandise, la charge, les dimensions, la température, le rayonnage, la quantité et la destination. Nous vous proposerons des produits adaptés et vérifierons les informations manquantes avant le devis."
   url: "/selection-support/"
   label: "Demander une aide à la sélection"
 ---

@@ -1,7 +1,7 @@
 ---
 
 title: "Stack-Nest Plastic Crate"
-description: "This HDPE plastic crate features robust metal swing handles that fold out for comfortable manual carrying and fold in to act as stacking supports, combining easy handling with space-efficient storage."
+description: "Reusable plastic crate that stacks when loaded and nests when empty. Share the dimensions, load, and handling method."
 aliases:
   - "/products/crates/stacknest-crate/"
   - "/products/crates-boxes-totes/stacknest-crate/"

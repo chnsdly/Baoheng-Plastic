@@ -6,7 +6,7 @@ industry_key: "warehousing-logistics"
 hero:
   eyebrow: "仓储托盘选型"
   title: "用于货架、叉车搬运和配送周转的塑料托盘"
-  text: "仓储采购需要让托盘匹配单托载重、货架跨度、叉车方式、地面堆码和空托回收计划。合适的结构不只影响单价，更影响日常作业稳定性。"
+  text: "选择托盘时应核对单托载重、货架跨度、叉车或液压车、地面堆码方式和空托回收计划。产品结构会直接影响使用安全、寿命和总体搬运成本。"
   image: "/images/home/industries-1.jpg"
 challenges:
   - "只给货架载重，不说明横梁跨度和允许挠度"
@@ -39,6 +39,6 @@ related_resources:
   - title: "货架挠度验收标准"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:
-  title: "发送您的仓库工况"
+  title: "告诉我们仓库的使用要求"
   text: "请提供单托载重、货架跨度、存储时长、叉车类型、堆码高度和目标采购数量。"
 ---

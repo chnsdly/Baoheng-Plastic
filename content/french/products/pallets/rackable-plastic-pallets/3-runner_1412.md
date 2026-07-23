@@ -1,6 +1,6 @@
 ---
-title: "1412 plateau ajouré 3 semelles Palette plastique"
-description: "1412 plateau ajouré 3 semelles Palette plastique de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1400 × 1200 × 150 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 1 t, charge statique 3 t, charge en rayonnage 1 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Palette en plastique ajourée à trois semelles – 1412"
+description: "Palette en plastique à trois semelles pour rayonnages, chariots élévateurs et transpalettes. Confirmez la portée du rayonnage, la répartition de la charge, la durée de stockage et la température."
 aliases:
   - "/products/pallets/3-runner_1412/"
 featured_image: "/images/products/pallet/3-runner/1412-hero.jpg"
@@ -18,13 +18,13 @@ pallet_category:
   - "Rackable 3-Runner Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/3-runner/1412-showcase.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique showcase 1"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – photo du produit 1"
   - image: "/images/products/pallet/3-runner/showcase-1.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique showcase 2"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – photo du produit 2"
   - image: "/images/products/pallet/3-runner/showcase-2.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique showcase 3"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – photo du produit 3"
   - image: "/images/products/pallet/3-runner/showcase-3.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique showcase 3"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – photo du produit 4"
 
 specs:
   dimensions: "1400 × 1200 × 150 mm"
@@ -49,11 +49,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/3-runner/industry-1.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique industry utilisation 1"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – exemple d'utilisation 1"
   - image: "/images/products/pallet/3-runner/industry-2.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique industry utilisation 2"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – exemple d'utilisation 2"
   - image: "/images/products/pallet/3-runner/industry-3.jpg"
-    alt: "1412 plateau ajouré 3 semelles Palette plastique industry utilisation 1"
+    alt: "Palette en plastique ajourée à trois semelles – 1412 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

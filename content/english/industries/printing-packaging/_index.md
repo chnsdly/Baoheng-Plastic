@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Printing & Packaging"
-description: "Plastic pallets and handling containers for printing, paper, packaging, and factory circulation workflows."
+description: "Plastic pallets and containers for printing, paper, packaging, production areas, and internal factory transport."
 weight: 25
 industry_key: "printing-packaging"
 hero:
@@ -39,6 +39,6 @@ related_resources:
   - title: "RFQ Specification Checklist"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
 cta:
-  title: "Send your print or packaging handling details"
+  title: "Tell us about your printing or packaging operation"
   text: "Include product type, stack height, deck preference, pallet size, load, circulation frequency, and quantity."
 ---

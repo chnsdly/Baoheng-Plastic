@@ -1,6 +1,6 @@
 ---
 title: "资源中心"
-description: "面向塑料托盘和工业搬运产品的实用采购指南、RFQ 清单、质量说明和选型框架。"
+description: "塑料托盘及工业搬运产品的采购指南、RFQ 清单、质量说明和产品比较。"
 aliases:
   - "/resources/blog-news/"
 hero:
@@ -9,8 +9,8 @@ hero:
 sections:
   - label: "选型洞察"
     url: "/resources/insights/"
-    summary: "规格清单、选型框架和仓储作业指南。"
+    summary: "规格清单、产品比较和仓储作业指南。"
   - label: "RFQ 清单"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-    summary: "用于发送可比较塑料托盘询价需求的实用基线。"
+    summary: "整理供应商报价所需的塑料托盘规格。"
 ---

@@ -1,11 +1,11 @@
 ---
 title: "Chimie et contrôle des déversements"
-description: "Palettes antidérive et palettes plastique pour stockage de fûts, rétention secondaire et zones de sécurité industrielles."
+description: "Palettes de rétention et palettes en plastique pour le stockage de fûts, la rétention secondaire et les zones industrielles à risque."
 weight: 24
 industry_key: "chemical-spill-control"
 hero:
   eyebrow: "Manutention chimique"
-  title: "Palettes plastique et solutions de rétention pour liquides"
+  title: "Palettes en plastique et bacs de rétention pour liquides"
   text: "Le stockage chimique et la manutention de fûts demandent plus que la capacité de charge. Il faut considérer rétention, contact chimique, plateau, accès chariot et procédures de sécurité."
   image: "/images/home/industries-5.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "Plan d'inspection à réception"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "Envoyez votre scénario chimique"
+  title: "Décrivez les produits chimiques et les contenants"
   text: "Incluez type de contenant, contact liquide ou chimique, charge, besoin de rétention, fréquence de mouvement et destination."
 ---

@@ -1,6 +1,6 @@
 ---
-title: "1210-BF-FPBSMDD98A"
-description: "1210-BF-FPBSMDD98A de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Dimensiones nominales: 1200 x 1000 x 980 mm. Material: HDPE/PP. Referencia de carga: carga dinámica 1 t, carga estática 4 t, carga en estantería 0.7 t. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Caja palet plegable – FPBSMDD98A"
+description: "Caja palet plegable para almacenamiento, transporte y circuitos de retorno. Indique la carga, el método de llenado y los requisitos de apilado."
 aliases:
   - "/products/foldable-pallet-boxes/fpbsmdd98a/"
 featured_image: "/images/products/fold/smdd98a-hero.jpg"
@@ -18,13 +18,13 @@ pallet_category:
   - "Foldable Pallet Boxes"
 showcase_gallery:
   - image: "/images/products/fold/smdd98a-showcase.jpg"
-    alt: "1210-BF-FPBSMDD98A showcase 1"
+    alt: "Caja palet plegable – FPBSMDD98A – foto del producto 1"
   - image: "/images/products/fold/showcase-1.jpg"
-    alt: "1210-BF-FPBSMDD98A showcase 2"
+    alt: "Caja palet plegable – FPBSMDD98A – foto del producto 2"
   - image: "/images/products/fold/showcase-2.jpg"
-    alt: "1210-BF-FPBSMDD98A showcase 3"
+    alt: "Caja palet plegable – FPBSMDD98A – foto del producto 3"
   - image: "/images/products/fold/showcase-3.jpg"
-    alt: "1210-BF-FPBSMDD98A showcase 3"
+    alt: "Caja palet plegable – FPBSMDD98A – foto del producto 4"
 
 specs:
   dimensions: "1200 x 1000 x 980 mm"
@@ -49,11 +49,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/fold/industry-1.jpg"
-    alt: "1210-BF-FPBSMDD98A industry uso 1"
+    alt: "Caja palet plegable – FPBSMDD98A – ejemplo de uso 1"
   - image: "/images/products/fold/industry-2.jpg"
-    alt: "1210-BF-FPBSMDD98A industry uso 2"
+    alt: "Caja palet plegable – FPBSMDD98A – ejemplo de uso 2"
   - image: "/images/products/fold/industry-3.jpg"
-    alt: "1210-BF-FPBSMDD98A industry uso 1"
+    alt: "Caja palet plegable – FPBSMDD98A – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

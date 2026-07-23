@@ -1,6 +1,6 @@
 ---
-title: "1412 plateau ajouré double face Palette plastique"
-description: "1412 plateau ajouré double face Palette plastique de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1400 × 1200 × 150 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 2 t, charge statique 6 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Palette en plastique double face – 1412"
+description: "Palette double face pour charges lourdes, gerbage et manutention fréquente. Précisez les équipements utilisés et la charge réelle afin de confirmer le modèle."
 aliases:
   - "/products/pallets/double-faced_1412/"
 featured_image: "/images/products/pallet/double-faced/1412-hero.jpg"
@@ -18,13 +18,13 @@ pallet_category:
   - "Double-Faced Heavy-Duty Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/double-faced/1412-showcase.jpg"
-    alt: "1412-BP-OD3R15 showcase 1"
+    alt: "Palette en plastique double face – 1412 – photo du produit 1"
   - image: "/images/products/pallet/double-faced/showcase-1.jpg"
-    alt: "1412-BP-OD3R15 showcase 2"
+    alt: "Palette en plastique double face – 1412 – photo du produit 2"
   - image: "/images/products/pallet/double-faced/showcase-2.jpg"
-    alt: "1412-BP-OD3R15 showcase 3"
+    alt: "Palette en plastique double face – 1412 – photo du produit 3"
   - image: "/images/products/pallet/double-faced/showcase-3.jpg"
-    alt: "1412-BP-OD3R15 showcase 3"
+    alt: "Palette en plastique double face – 1412 – photo du produit 4"
 
 specs:
   dimensions: "1400 × 1200 × 150 mm"
@@ -47,11 +47,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/double-faced/industry-1.jpg"
-    alt: "1412-BP-OD3R15 industry utilisation 1"
+    alt: "Palette en plastique double face – 1412 – exemple d'utilisation 1"
   - image: "/images/products/pallet/double-faced/industry-2.jpg"
-    alt: "1412-BP-OD3R15 industry utilisation 2"
+    alt: "Palette en plastique double face – 1412 – exemple d'utilisation 2"
   - image: "/images/products/pallet/double-faced/industry-3.jpg"
-    alt: "1412-BP-OD3R15 industry utilisation 1"
+    alt: "Palette en plastique double face – 1412 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

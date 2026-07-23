@@ -1,7 +1,7 @@
 ---
 
 title: "可嵌套周转筐"
-description: "这款可嵌套塑料周转筐采用耐用 PP/HDPE 材料，网眼透气结构，坚固轻便，适用于各类仓储、物流、食品加工与日常搬运场景，多尺寸多颜色可选。"
+description: "空筐可套叠的塑料周转筐，可节省仓储和返程空间。请提供尺寸、载荷和通风要求。"
 aliases:
   - "/products/crates/nestable-crates/"
   - "/products/crates-boxes-totes/nestable-crates/"

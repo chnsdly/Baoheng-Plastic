@@ -1,7 +1,7 @@
 ---
 
 title: "1208 open deck 9-leg plastic pallet"
-description: "Grid-deck 9-leg plastic pallets are one-piece injection molded from virgin HDPE/PP, with a nine-leg support layout for reliable load-bearing."
+description: "Lightweight nine-leg plastic pallet that nests when empty to reduce return and storage volume. Share the load, handling equipment, and required dimensions."
 aliases:
   - "/products/pallets/nine-leg_1208/"
 featured_image: "/images/products/pallet/nine-leg/1208-hero.jpg"

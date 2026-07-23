@@ -1,11 +1,11 @@
 ---
 title: "Químicos y control de derrames"
-description: "Palets antiderrame y palets plásticos para manejo químico, almacenamiento de tambores, contención secundaria y zonas industriales de seguridad."
+description: "Palets antiderrame y palets de plástico para manejo químico, almacenamiento de tambores, contención secundaria y zonas industriales de seguridad."
 weight: 24
 industry_key: "chemical-spill-control"
 hero:
   eyebrow: "Manejo químico"
-  title: "Palets plásticos y productos de contención para manejo seguro de líquidos"
+  title: "Palets de plástico y productos de contención para manejo seguro de líquidos"
   text: "El almacenamiento químico y el manejo de tambores exigen más que capacidad de carga. El comprador debe revisar contención, contacto químico, diseño de cubierta, acceso de montacargas y procedimientos de seguridad."
   image: "/images/home/industries-5.jpg"
 challenges:
@@ -21,11 +21,11 @@ selection_factors:
   - title: "Patrón de manejo"
     text: "Acceso de montacargas, condición del piso, duración de almacenamiento y frecuencia de movimiento afectan el diseño."
 recommended_products:
-  - title: "Palets plásticos antiderrame"
+  - title: "Palets de plástico antiderrame"
     url: "/products/pallets/specialty-pallets/spill_130130-30/"
     image: "/images/products/pallet/spill/130130-30-hero.jpg"
     summary: "Para almacenamiento de tambores y contención secundaria en zonas químicas o industriales."
-  - title: "Palets plásticos de alta resistencia"
+  - title: "Palets de plástico de alta resistencia"
     url: "/products/pallets/stackable-plastic-pallets/"
     image: "/images/products/pallet/double-faced/1210-hero.jpg"
     summary: "Para apilado pesado en piso o movimiento industrial donde la cubierta debe ser fuerte."
@@ -39,6 +39,6 @@ related_resources:
   - title: "Plan de inspección de recepción"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "Envíe su escenario de manejo químico"
+  title: "Describa los productos químicos y los recipientes"
   text: "Incluya tipo de recipiente, contacto líquido o químico, carga, necesidad de contención, frecuencia de movimiento y destino."
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Contenedores plásticos de residuos"
-description: "Outdoor Contenedores plásticos de residuos en multiple capacities para municipal saneamiento, campuses, communities, comercial facilities, y collection systems."
+title: "Contenedores de residuos de plástico"
+description: "Contenedores de residuos de plástico con ruedas y varias capacidades para municipios, comunidades, campus, comercios y fábricas."
 weight: 40
 product_family: "Plastic Waste Bins"
 ---

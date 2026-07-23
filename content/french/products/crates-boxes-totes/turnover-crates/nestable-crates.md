@@ -1,6 +1,6 @@
 ---
-title: "caisses plastique emboîtables"
-description: "caisses plastique emboîtables de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Caisse emboîtable en plastique"
+description: "Caisse emboîtable pour gagner de la place lors du stockage et des retours à vide. Indiquez les dimensions, la charge et le besoin de ventilation."
 aliases:
   - "/products/crates/nestable-crates/"
   - "/products/crates-boxes-totes/nestable-crates/"
@@ -43,11 +43,11 @@ product_showcase:
 
 industry_gallery:
   - image: "/images/products/crate-box/nestable-crates-industry-1.jpg"
-    alt: "emboîtable-caisses industry utilisation 1"
+    alt: "Caisse emboîtable en plastique – exemple d'utilisation 1"
   - image: "/images/products/crate-box/nestable-crates-industry-2.jpg"
-    alt: "emboîtable-caisses industry utilisation 2"
+    alt: "Caisse emboîtable en plastique – exemple d'utilisation 2"
   - image: "/images/products/crate-box/nestable-crates-industry-3.jpg"
-    alt: "emboîtable-caisses industry utilisation 3"
+    alt: "Caisse emboîtable en plastique – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

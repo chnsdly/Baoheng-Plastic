@@ -1,6 +1,6 @@
 ---
-title: "Palets plásticos apilables"
-description: "Palets plásticos de base perimetral y doble cara para apilado estable y cargas industriales pesadas."
+title: "Palets apilables de plástico"
+description: "Palets de plástico de base perimetral o doble cara para apilado en suelo, manipulación repetida y cargas industriales pesadas."
 weight: 30
 product_family: "Plastic Pallets"
 product_series: "Stackable Plastic Pallets"

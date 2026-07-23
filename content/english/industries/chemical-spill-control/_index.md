@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Chemical & Spill Control"
 description: "Plastic spill pallets and chemical handling pallets for drum storage, secondary containment, and industrial safety zones."
 weight: 24
@@ -39,6 +39,6 @@ related_resources:
   - title: "Incoming Inspection Plan"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "Send your chemical handling scenario"
+  title: "Tell us about the chemicals and containers"
   text: "Include container type, liquid/chemical contact, load, spill-control needs, movement frequency, and destination."
 ---

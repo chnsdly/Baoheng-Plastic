@@ -1,6 +1,6 @@
 ---
-title: "30L plástico contenedor de residuos"
-description: "30L plástico contenedor de residuos de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Contenedor de residuos de plástico – 30 L"
+description: "Contenedor de plástico de 30 litros para recoger y mover residuos. Confirme el tipo de tapa, las ruedas y las condiciones de uso."
 featured_image: "/images/products/waste/30l-waste-hero.jpg"
 product_type: "Plastic Waste Bins"
 product_family: "Plastic Waste Bins"
@@ -16,11 +16,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/waste/industry-1.jpg"
-    alt: "industry uso 1"
+    alt: "Contenedor de residuos de plástico – 30 L – ejemplo de uso 1"
   - image: "/images/products/waste/industry-2.jpg"
-    alt: "industry uso 2"
+    alt: "Contenedor de residuos de plástico – 30 L – ejemplo de uso 2"
   - image: "/images/products/waste/industry-3.jpg"
-    alt: "industry uso 1"
+    alt: "Contenedor de residuos de plástico – 30 L – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

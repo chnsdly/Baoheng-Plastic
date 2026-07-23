@@ -1,12 +1,12 @@
 ---
 title: "Pharmaceutique et fabrication hygiénique"
-description: "Palettes et conteneurs plastique pour fabrication hygiénique, manutention contrôlée, zones d'emballage et flux orientés traçabilité."
+description: "Palettes et conteneurs en plastique pour la fabrication hygiénique, la manutention contrôlée, les zones d'emballage et la traçabilité."
 weight: 23
 industry_key: "pharmaceutical-hygienic-manufacturing"
 hero:
   eyebrow: "Manutention contrôlée"
   title: "Produits plastiques de manutention pour environnements hygiéniques"
-  text: "Les flux pharmaceutiques adjacents et hygiéniques ont besoin de produits qui soutiennent propreté, traçabilité, séparation des zones et manutention prévisible."
+  text: "Les zones pharmaceutiques et de production hygiénique ont besoin de palettes et de conteneurs faciles à nettoyer, identifier et inspecter, avec une séparation claire entre les zones."
   image: "/images/home/industries-4.jpg"
 challenges:
   - "Des actifs endommagés, poreux ou difficiles à nettoyer augmentent le risque contamination"
@@ -39,6 +39,6 @@ related_resources:
   - title: "Plan d'inspection à réception"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "Envoyez vos exigences de manutention propre"
+  title: "Décrivez les exigences de votre zone propre"
   text: "Incluez type de zone, préférence matière, méthode de nettoyage, codage couleur, traçabilité et données de charge."
 ---

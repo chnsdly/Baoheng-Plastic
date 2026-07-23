@@ -1,6 +1,6 @@
 ---
 title: "印刷与包装"
-description: "用于印刷、纸张、包装和工厂内部周转流程的塑料托盘与搬运容器。"
+description: "适用于印刷、纸张、包装、生产区域和厂内运输的塑料托盘与容器。"
 weight: 25
 industry_key: "printing-packaging"
 hero:
@@ -39,6 +39,6 @@ related_resources:
   - title: "RFQ 规格清单"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
 cta:
-  title: "发送您的印刷或包装搬运信息"
+  title: "告诉我们印刷或包装产品的搬运方式"
   text: "请提供产品类型、堆码高度、板面偏好、托盘尺寸、载重、周转频率和采购数量。"
 ---

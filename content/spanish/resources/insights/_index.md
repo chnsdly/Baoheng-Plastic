@@ -1,4 +1,4 @@
 ---
 title: "Guías técnicas"
-description: "Guías técnicas y listas de verificación para seleccionar palets plásticos, cajas pallet y contenedores."
+description: "Guías técnicas y listas de control para elegir palets de plástico, cajas palet y contenedores."
 ---

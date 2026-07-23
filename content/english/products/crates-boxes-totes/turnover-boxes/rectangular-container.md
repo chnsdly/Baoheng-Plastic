@@ -1,7 +1,7 @@
 ---
 
 title: "Rectangular Plastic Container"
-description: "This multi-purpose plastic tote is molded from virgin HDPE for a lightweight yet robust structure."
+description: "Reusable rectangular plastic container for parts, ingredients, or work in process. Share the required volume and dimensions."
 aliases:
   - "/products/crates/rectangular-container/"
   - "/products/crates-boxes-totes/rectangular-container/"

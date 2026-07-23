@@ -1,6 +1,6 @@
 ---
-title: "1212 cubierta abierta doble cara Palet plástico"
-description: "1212 cubierta abierta doble cara Palet plástico de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Dimensiones nominales: 1200 × 1200 × 150 mm. Material: HDPE/PP. Referencia de carga: carga dinámica 2 t, carga estática 6 t. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Palet de plástico de doble cara – 1212"
+description: "Palet de doble cara para cargas pesadas, apilado y manipulación frecuente. Indique el equipo utilizado y la carga real para confirmar el modelo."
 aliases:
   - "/products/pallets/double-faced_1212/"
 featured_image: "/images/products/pallet/double-faced/1212-hero.jpg"
@@ -17,13 +17,13 @@ pallet_category:
   - "Double-Faced Heavy-Duty Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/double-faced/1212-showcase.jpg"
-    alt: "1212-BP-OD3R15 showcase 1"
+    alt: "Palet de plástico de doble cara – 1212 – foto del producto 1"
   - image: "/images/products/pallet/double-faced/showcase-1.jpg"
-    alt: "1212-BP-OD3R15 showcase 2"
+    alt: "Palet de plástico de doble cara – 1212 – foto del producto 2"
   - image: "/images/products/pallet/double-faced/showcase-2.jpg"
-    alt: "1212-BP-OD3R15 showcase 3"
+    alt: "Palet de plástico de doble cara – 1212 – foto del producto 3"
   - image: "/images/products/pallet/double-faced/showcase-3.jpg"
-    alt: "1212-BP-OD3R15 showcase 3"
+    alt: "Palet de plástico de doble cara – 1212 – foto del producto 4"
 
 specs:
   dimensions: "1200 × 1200 × 150 mm"
@@ -46,11 +46,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/double-faced/industry-1.jpg"
-    alt: "1212-BP-OD3R15 industry uso 1"
+    alt: "Palet de plástico de doble cara – 1212 – ejemplo de uso 1"
   - image: "/images/products/pallet/double-faced/industry-2.jpg"
-    alt: "1212-BP-OD3R15 industry uso 2"
+    alt: "Palet de plástico de doble cara – 1212 – ejemplo de uso 2"
   - image: "/images/products/pallet/double-faced/industry-3.jpg"
-    alt: "1212-BP-OD3R15 industry uso 1"
+    alt: "Palet de plástico de doble cara – 1212 – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "contenedor plástico rectangular"
-description: "contenedor plástico rectangular de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Recipiente rectangular de plástico"
+description: "Recipiente rectangular reutilizable para piezas, ingredientes o productos en proceso. Indique el volumen y las dimensiones necesarias."
 aliases:
   - "/products/crates/rectangular-container/"
   - "/products/crates-boxes-totes/rectangular-container/"

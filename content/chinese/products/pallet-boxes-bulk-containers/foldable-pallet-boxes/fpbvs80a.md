@@ -1,7 +1,7 @@
 ---
 
 title: "1210-BF-FPBVS80A"
-description: "可折叠卡板箱，采用全新 HDPE/PP 原料与大型精密模具一体成型。可大幅降低回空运输体积，适合循环周转。我们的工程师将根据您的货物属性与使用场景，为您推荐最合适的卡板箱方案，欢迎咨询获取专属报价。"
+description: "用于仓储、运输和循环周转的折叠围板箱。请提供载荷、装料方式和堆码要求。"
 aliases:
   - "/products/foldable-pallet-boxes/fpbvs80a/"
 featured_image: "/images/products/fold/vs80a-hero.jpg"

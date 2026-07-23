@@ -1,7 +1,7 @@
 ---
 
 title: "1111-网格九脚型塑料托盘"
-description: "网格九脚托盘，采用HDPE/PP全新料生产而成，一体注塑成型，九脚分布式支撑，增强承重。托盘轻便耐用，四向插取，方便操作，可提升仓库空间利用率和搬运效率。 欢迎咨询，获取您的专属报价。"
+description: "九脚型轻量塑料托盘，空载时可套叠，节省仓储和返程空间。请提供载荷、搬运设备和所需尺寸。"
 aliases:
   - "/products/pallets/nine-leg_1111/"
 featured_image: "/images/products/pallet/nine-leg/1111-hero.jpg"

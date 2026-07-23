@@ -6,7 +6,7 @@ industry_key: "agriculture-fresh-produce"
 hero:
   eyebrow: "鲜果蔬物流"
   title: "用于鲜果蔬搬运的可重复周转筐和围板箱"
-  text: "农业和鲜果蔬流程需要兼顾通风、排水、清洗、堆叠、套叠以及从采收到冷库和配送的空筐回收效率。"
+  text: "鲜果蔬周转筐和围板箱需要通风、排水，能够反复清洗和堆叠，并在空箱回收时尽量少占空间。"
   image: "/images/home/industries-7.jpg"
 challenges:
   - "一次性或强度不足的包装增加产品损耗和替换成本"
@@ -39,6 +39,6 @@ related_resources:
   - title: "空箱空托回运物流指南"
     url: "/resources/insights/2618-plastic-pallet-empty-return-logistics-playbook/"
 cta:
-  title: "发送您的鲜果蔬搬运流程"
+  title: "告诉我们鲜果蔬如何搬运"
   text: "请提供产品类型、筐尺寸、采收/包装/清洗步骤、回收路线、温度和数量。"
 ---

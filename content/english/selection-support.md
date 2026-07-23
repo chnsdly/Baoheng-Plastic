@@ -1,42 +1,42 @@
 ---
 title: "Product Selection Support"
 layout: "selection-support"
-description: "Share your handling conditions when you are not sure which plastic pallet, pallet box, crate, tote, or container to buy. Baoheng Plastic helps confirm the product direction before quoting."
+description: "Not sure which plastic pallet, pallet box, crate, or container to buy? Share your load and handling details, and Baoheng Plastic will recommend suitable options before quoting."
 hero:
-  eyebrow: "Application-first sourcing"
+  eyebrow: "Help choosing a product"
   title: "Not sure which plastic pallet or container to choose?"
-  text: "If you have not locked a model yet, send us the load, goods, racking, temperature, handling method, and quantity. We will help narrow the product family, structure, and key specifications before a practical quote."
+  text: "Tell us what you are moving, the load, racking, temperature, handling equipment, and quantity. We will narrow the options and explain which specifications still need to be confirmed before we quote."
   image: "images/home/industries-1.jpg"
   image_alt: "Plastic pallet selection for warehouse and logistics applications"
-  primary_label: "Send operating conditions"
+  primary_label: "Send product requirements"
   primary_url: "#selection-support-form"
   secondary_label: "Browse product categories"
   secondary_url: "/products/"
   proof_points:
-    - "Start from application, then recommend a model direction"
+    - "Recommendations based on the way the product will actually be used"
     - "Review load, racking, forklift, temperature, hygiene, and container loading together"
-    - "Make the later quotation based on the same technical assumptions"
+    - "A quote that states the technical assumptions clearly"
 situations:
   eyebrow: "When to use this"
-  title: "For buyers still defining the right direction"
-  text: "If you already know the model and quantity, request a quote directly. If you are comparing structures, applications, and specifications, start here."
+  title: "Use this page if you need a model recommendation"
+  text: "If you already know the model and quantity, request a quote directly. If you are still comparing product types or structures, the information below will help us recommend suitable options."
   items:
     - label: "01"
-      title: "You are not sure which product family fits"
-      text: "Pallets, pallet boxes, crates, totes, and bulk containers solve different handling problems. Start from the goods flow."
+      title: "You are not sure which type of product fits"
+      text: "Tell us what you are moving and how it will be stored and handled. We will identify the relevant product types."
     - label: "02"
       title: "The structures are hard to compare"
       text: "Nestable, 3-runner, perimeter base, double-faced, blow-molded, closed-deck, and spill-control designs fit different loads and risks."
     - label: "03"
-      title: "The operating conditions are specific"
-      text: "Racking, freezer rooms, food hygiene, chemical contact, automation, and export loading can all change the recommendation."
+      title: "The application has special requirements"
+      text: "Racking, freezer rooms, food hygiene, chemical contact, automation, and export loading can all change which model is suitable."
     - label: "04"
       title: "You need to replace old pallets or wooden pallets"
       text: "Existing size, failure reason, return flow, and equipment details help us narrow the feasible model range."
 requirements:
   eyebrow: "What helps"
-  title: "Clarify the operating conditions first"
-  text: "You do not need a perfect RFQ at the first step. The closer the information is to real daily use, the more stable the recommendation and quote will be."
+  title: "Details that help us recommend the right product"
+  text: "You do not need a complete RFQ to contact us. Share whatever you know about daily use; we will identify any missing details that affect the model or price."
   groups:
     - title: "Goods and load"
       items:
@@ -59,9 +59,9 @@ requirements:
         - "Sample timing, lead time, packaging, and container loading needs"
         - "Repeat purchase, replacement project, or one-way export use"
 product_directions:
-  eyebrow: "Product direction"
-  title: "Narrow the range by product family first"
-  text: "We first confirm whether the project needs pallets, pallet boxes, crates and totes, or facility products, then move into size, load, and structure."
+  eyebrow: "Product types"
+  title: "Products for different handling jobs"
+  text: "Pallets support unit loads; pallet boxes and crates contain loose goods; waste bins collect and move waste. The product pages list the available sizes, load ratings, and structures."
   fit_label: "Typical fit"
   link_label: "View category"
   items:
@@ -86,11 +86,11 @@ product_directions:
       summary: "For factories, parks, sanitation projects, public areas, and separated waste collection."
       fit: "Common-capacity bins and outdoor facility support."
 selection_paths:
-  eyebrow: "Common paths"
-  title: "Use the application to judge an initial direction"
-  text: "These are starting points, not final specifications. They help buyers remove obviously mismatched options before quoting."
-  condition_label: "If the site needs"
-  direction_label: "Start with"
+  eyebrow: "Common requirements"
+  title: "Products for common operating requirements"
+  text: "The table links common requirements to relevant product types. Final specifications still depend on the load, equipment, environment, and test requirements."
+  condition_label: "Requirement"
+  direction_label: "Products to consider"
   items:
     - condition: "One-way export or low empty-return cost"
       direction: "Nestable plastic pallets"
@@ -109,8 +109,8 @@ selection_paths:
       note: "Compare volume, folded return ratio, forklift compatibility, and circulation cost."
 industry_links:
   eyebrow: "Applications"
-  title: "You can also start from the closest industry scenario"
-  text: "The industry pages summarize typical risks, selection factors, and recommended product directions for internal discussion."
+  title: "Browse products by industry"
+  text: "Each industry page lists common operating risks, the details to check before buying, and relevant product categories."
   items:
     - title: "Warehousing and logistics"
       url: "/industries/warehousing-logistics/"
@@ -154,11 +154,11 @@ resources:
 form:
   type: "selection-support"
   eyebrow: "Send details"
-  title: "Let us confirm the product direction first"
-  text: "If you do not have a model yet, describe the site conditions. Photos, old pallet size, goods weight, racking details, and destination port can all be added in the message."
+  title: "Tell us what you need to move"
+  text: "You do not need a model number. Describe the goods and daily use, and include any photos, existing pallet dimensions, load weight, rack details, and destination port you already have."
   message_placeholder: "Tell us the goods, unit load weight, size, application, whether it will be racked, temperature, quantity, destination port, or current pallet problem."
   points:
-    - "You do not need to know the model, but please describe the real application"
+    - "No model number is required; a clear description of the intended use is enough to start"
     - "Photos or old specifications can be shared later by email or WhatsApp"
-    - "We usually reply with a selection direction and next quote inputs within one business day"
+    - "We usually reply within one business day with suitable options and any details needed for a quote"
 ---

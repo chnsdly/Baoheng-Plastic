@@ -1,6 +1,6 @@
 ---
-title: "1311-BP-CD9L15B"
-description: "1311-BP-CD9L15B de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1300 × 1100 × 150 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 1 t, charge statique 3 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Palette en plastique soufflé à neuf pieds – 1311"
+description: "Palette monobloc en plastique soufflé, conçue pour les chocs, les charges lourdes et les environnements exigeants. Confirmez la charge et les conditions d’utilisation."
 aliases:
   - "/products/blow-molded-pallets/blow-molding_1311/"
 featured_image: "/images/products/blow-molded/1311-hero.jpg"
@@ -17,13 +17,13 @@ pallet_category:
   - "Nestable Blow-Molded Pallets"
 showcase_gallery:
   - image: "/images/products/blow-molded/1311-showcase.jpg"
-    alt: "1311-BP-CD9L15B showcase 1"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – photo du produit 1"
   - image: "/images/products/blow-molded/showcase-1.jpg"
-    alt: "1311-BP-CD9L15B showcase 2"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – photo du produit 2"
   - image: "/images/products/blow-molded/showcase-2.jpg"
-    alt: "1311-BP-CD9L15B showcase 3"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – photo du produit 3"
   - image: "/images/products/blow-molded/showcase-3.jpg"
-    alt: "1311-BP-CD9L15B showcase 4"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – photo du produit 4"
 
 specs:
   dimensions: "1300 × 1100 × 150 mm"
@@ -46,11 +46,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/blow-molded/industry-1.jpg"
-    alt: "1311-BP-CD9L15B industry utilisation 1"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – exemple d'utilisation 1"
   - image: "/images/products/blow-molded/industry-2.jpg"
-    alt: "1311-BP-CD9L15B industry utilisation 2"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – exemple d'utilisation 2"
   - image: "/images/products/blow-molded/industry-3.jpg"
-    alt: "1311-BP-CD9L15B industry utilisation 3"
+    alt: "Palette en plastique soufflé à neuf pieds – 1311 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

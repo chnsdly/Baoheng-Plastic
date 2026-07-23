@@ -1,37 +1,37 @@
 ---
 title: "Baoheng Plastic"
-description: "宝恒塑业生产塑料托盘、围板箱、周转筐和工业搬运产品，支持实用选型、质量控制与稳定交付。"
+description: "宝恒塑业生产塑料托盘、围板箱、周转筐、大型容器和垃圾桶，适用于仓储、物流及工业搬运。"
 
 home_hero:
   enable: true
   images:
     - "images/hero_bg_1.webp"
-  eyebrow: "厂家直供"
-  title: "匹配真实仓储工况的塑料托盘与容器"
-  description: "宝恒塑业生产 HDPE/PP 托盘、围板箱、周转筐、大型容器和垃圾桶，帮助您在下单前确认结构、承重、材料、包装和交付方案。"
+  eyebrow: "工业塑料制品生产厂家"
+  title: "仓储与搬运用塑料托盘及容器"
+  description: "我们生产 HDPE/PP 塑料托盘、围板箱、周转筐、大型容器和垃圾桶，并在下单前协助确认结构、承重、材料、包装和交货要求。"
   primary_cta:
     label: "发送 RFQ"
     url: "/contact/?intent=quote"
   secondary_cta:
     label: "浏览产品"
     url: "/products/"
-  visual_caption: "作为工业塑料制品制造商，我们将生产经验与出口项目服务相结合，为海外客户提供选型沟通、样品确认、订单跟进和装运衔接支持。"
+  visual_caption: "选型、样品、生产进度、检验、包装和出口装运均由工厂团队直接与您沟通。"
 usps:
   enable: true
-  title: "从真实工况走向可执行的询价规格"
-  description: "有效报价应先说明周转流程，再核对关键接口，并把仍需确认的条件清楚记录下来。"
+  title: "准确报价前，我们会确认这些信息"
+  description: "告诉我们装什么货、怎样存放和搬运、送往哪里。我们会推荐合适的型号，并在报价中注明仍需确认的项目。"
   items:
-    - title: "从应用场景开始"
-      description: "推荐型号前，我们先确认载荷类型、存储方式、温度、叉车/货架适配和装柜要求。"
-    - title: "源头工厂可控"
-      description: "材料选择、成型生产、加固结构、颜色/Logo 选项和出货检验都在同一制造流程内管理。"
-    - title: "让报价便于内部评审"
-      description: "您会获得型号方向、关键规格、包装说明和商务条款，便于把不同方案放在同一标准下比较。"
+    - title: "说明产品的使用方式"
+      description: "推荐型号前，我们会确认载荷、存储方式、温度、叉车与货架要求以及装柜需求。"
+    - title: "确认材料和产品结构"
+      description: "工厂会根据订单核对材料、成型工艺、加固方式、颜色或 Logo 以及检验要求。"
+    - title: "获得清楚、便于比较的报价"
+      description: "报价会列明建议型号、关键规格、包装方式、商务条款以及尚未确定的事项。"
 
 product_groups:
   enable: true
-  title: "先按产品族选择，再按工况细化规格"
-  description: "您可以先选择所需的搬运产品，再根据载重、尺寸、货架、卫生或回收物流要求缩小规格范围。"
+  title: "浏览塑料托盘、周转箱及其他搬运产品"
+  description: "产品按塑料托盘、围板箱、大型容器、周转筐箱和垃圾桶分类。选择具体型号时，请核对尺寸、载重、货架、卫生和空箱回运要求。"
   items:
     - title: "塑料托盘"
       url: "/products/pallets/"
@@ -56,8 +56,8 @@ product_groups:
 
 industries:
   enable: true
-  title: "按货物流转方式匹配产品"
-  description: "不同行业的失效原因不同：货架挠度、低温冲击、卫生清洁、化学泄漏、回收空间成本或自动化公差。请从最接近的场景开始选型。"
+  title: "查看各行业适用的产品"
+  description: "货架存储、低温、卫生要求、化学品接触、空托回收和自动化设备对托盘与容器的要求各不相同。您可以按所在行业查看产品和采购注意事项。"
   items:
     - title: "仓储与物流"
       url: "/industries/warehousing-logistics/"
@@ -67,7 +67,7 @@ industries:
     - title: "食品与饮料"
       url: "/industries/food-beverage/"
       image: "images/home/industries-3.jpg"
-      summary: "用于较洁净生产和配送流程的可清洗托盘与容器。"
+      summary: "用于食品生产和配送的可清洗托盘与容器。"
       products: "食品级托盘、周转筐、分色搬运"
     - title: "冷链与冷冻食品"
       url: "/industries/cold-chain-frozen-food/"
@@ -92,8 +92,8 @@ industries:
 
 clients:
   enable: true
-  title: "工厂参观、项目跟进与长期采购"
-  description: "真正的合作不只是交换目录。我们支持您完成选型、样品确认、装柜、补货，并在工况变化时调整产品方案。"
+  title: "适合长期采购与重复订单的工厂"
+  description: "您可以来厂参观、确认样品、了解生产进度，并按相同规格补货。如果载荷或搬运方式发生变化，我们也可以在下一次采购前重新核对型号。"
   items:
     - image: "images/home/clients-1.jpg"
       alt: "客户到访宝恒塑业"
@@ -112,21 +112,21 @@ clients:
 
 factory:
   enable: true
-  title: "报价背后的制造能力"
-  description: "宝恒塑业把成型设备、材料选择、模具调整、生产检验和出口包装结合起来，帮助您把规格、风险和成本一起看清楚。"
+  title: "生产与质量控制"
+  description: "了解我们如何选择材料、完成注塑或吹塑生产、调整模具、检验订单，并为出口运输包装大体积塑料产品。"
   cta:
-    label: "查看制造能力"
+    label: "查看生产流程"
     url: "/manufacturing/"
   items:
-    - title: "材料与结构选型"
-      content: "围绕实际工况选择 HDPE/PP、抗冲击改性材料、再生料比例、防滑表面、钢管加固和颜色/Logo 要求。"
+    - title: "材料与产品结构"
+      content: "根据实际用途确认 HDPE 或 PP、抗冲击改性材料、再生料比例、防滑表面、钢管加固以及颜色或 Logo。"
       image: "images/home/factory-1.jpg"
-    - title: "成型与模具支持"
-      content: "注塑和吹塑生产支持标准型号，也支持筋位、板面纹理、标签区和加固结构等项目调整。"
+    - title: "成型生产与模具"
+      content: "标准型号采用注塑或吹塑生产；达到合适采购量时，可评估筋位、板面纹理、标签区和加固结构等模具调整。"
       image: "images/home/factory-2.jpg"
-    - title: "检验、包装与出口交付"
-      content: "批次检查、外观检验、堆码测试、包装方案、出货照片和装柜支持，帮助降低到货后的沟通和使用风险。"
+    - title: "检验、包装与出口"
+      content: "通过批次检查、外观检验、堆码测试、包装方案、出货照片和装柜记录，您可以在产品离厂前核对订单。"
       image: "images/home/factory-3.jpg"
 ---
 
-宝恒塑业为仓储、物流和制造客户生产塑料托盘、围板箱、周转筐、容器和垃圾桶，并提供可靠的选型、质量控制和出口交付支持。
+宝恒塑业为仓储、物流、食品加工、制造业和环卫项目生产塑料托盘、围板箱、周转筐、大型容器和垃圾桶。

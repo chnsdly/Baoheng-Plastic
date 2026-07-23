@@ -1,6 +1,6 @@
 ---
-title: "cuve plastique rectangulaire"
-description: "cuve plastique rectangulaire de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Cuve rectangulaire en plastique"
+description: "Cuve rectangulaire pour le stockage et la manutention de liquides ou de matières en vrac. Confirmez le volume, le contenu et les conditions d’utilisation."
 aliases:
   - "/products/crates/rectangular-tank/"
   - "/products/crates-boxes-totes/rectangular-tank/"
@@ -47,11 +47,11 @@ product_showcase:
 
 industry_gallery:
   - image: "/images/products/crate-box/rectangular-tank-industry-1.jpg"
-    alt: "rectangular-tank industry utilisation 1"
+    alt: "Cuve rectangulaire en plastique – exemple d'utilisation 1"
   - image: "/images/products/crate-box/rectangular-tank-industry-2.jpg"
-    alt: "rectangular-tank industry utilisation 2"
+    alt: "Cuve rectangulaire en plastique – exemple d'utilisation 2"
   - image: "/images/products/crate-box/rectangular-tank-industry-3.jpg"
-    alt: "rectangular-tank industry utilisation 3"
+    alt: "Cuve rectangulaire en plastique – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

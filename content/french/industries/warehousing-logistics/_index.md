@@ -1,12 +1,12 @@
 ---
 title: "Entreposage et logistique"
-description: "Sélection de palettes plastique pour rayonnage, trafic chariot, gerbage au sol, distribution entrepôt et logistique retour."
+description: "Palettes en plastique pour le rayonnage, les chariots élévateurs, le gerbage au sol, la distribution en entrepôt et les retours à vide."
 weight: 21
 industry_key: "warehousing-logistics"
 hero:
   eyebrow: "Sélection palettes entrepôt"
-  title: "Palettes plastique pour rayonnage, chariots et flux de distribution"
-  text: "Les acheteurs entrepôt ont besoin de palettes alignées avec la charge, la portée de rayonnage, la manutention chariot, le gerbage au sol et le retour des vides. Le bon modèle protège le coût unitaire et la stabilité quotidienne."
+  title: "Palettes en plastique pour rayonnages, chariots et distribution"
+  text: "La palette doit être adaptée à la charge unitaire, à la portée du rayonnage, au chariot ou au transpalette, au gerbage au sol et au retour à vide. Sa construction influence directement la sécurité, la durée de vie et le coût global de manutention."
   image: "/images/home/industries-1.jpg"
 challenges:
   - "La charge en rayonnage est cotée sans portée de poutre ni attente de flèche"
@@ -39,6 +39,6 @@ related_resources:
   - title: "Critères d'acceptation de la flèche en rayonnage"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:
-  title: "Envoyez vos conditions d'entrepôt"
+  title: "Décrivez les besoins de votre entrepôt"
   text: "Incluez charge par palette, portée de rayonnage, durée de stockage, type de chariot, hauteur de gerbage et quantité cible."
 ---

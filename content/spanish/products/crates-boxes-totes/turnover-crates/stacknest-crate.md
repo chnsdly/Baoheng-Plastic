@@ -1,6 +1,6 @@
 ---
-title: "caja plástica apilable y encajable"
-description: "caja plástica apilable y encajable de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Caja apilable y encajable de plástico"
+description: "Caja reutilizable que se apila cuando está cargada y se encaja cuando está vacía. Indique las dimensiones, la carga y el método de manipulación."
 aliases:
   - "/products/crates/stacknest-crate/"
   - "/products/crates-boxes-totes/stacknest-crate/"

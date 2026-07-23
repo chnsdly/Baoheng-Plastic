@@ -1,7 +1,7 @@
 ---
 
 title: "1210 open deck double-faced plastic pallet"
-description: "This double-sided, stackable pallet features a fully integrated design with reinforced ribs on both surfaces, providing maximum protection and high load capacity for heavy goods."
+description: "Double-faced plastic pallet for heavy loads, stacking, and frequent handling. Confirm the handling equipment and actual load before selecting a model."
 aliases:
   - "/products/pallets/double-faced_1210/"
 featured_image: "/images/products/pallet/double-faced/1210-hero.jpg"

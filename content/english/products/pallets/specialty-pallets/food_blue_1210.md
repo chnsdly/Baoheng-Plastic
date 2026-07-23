@@ -1,7 +1,7 @@
 ---
 
 title: "Blue 1210 food & medical plastic pallet"
-description: "Blue 1210 food and medical plastic pallet with smooth hygienic deck, easy cleaning, color segregation, and HDPE/PP construction for controlled areas."
+description: "Smooth hygienic plastic pallet for food production and areas that require frequent washing. Share the cleaning and food-contact requirements."
 aliases:
   - "/products/pallets/food_blue_1210/"
 featured_image: "/images/products/pallet/food/1210-blue-hero.jpg"

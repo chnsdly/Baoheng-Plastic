@@ -1,6 +1,6 @@
 ---
 title: "Caisses-palettes pliables"
-description: "Caisses-palettes pliables pour circulation réutilisable, logistique retour, vrac, pièces automobiles, produits frais et stockage."
+description: "Caisses-palettes pliables pour les circuits réutilisables, le vrac, les pièces automobiles, les produits frais, le stockage et les retours à vide compacts."
 weight: 10
 product_family: "Pallet Boxes & Bulk Containers"
 product_series: "Foldable Pallet Boxes"

@@ -1,16 +1,16 @@
 ---
 title: "Recursos"
-description: "Guías prácticas de abastecimiento, checklists RFQ, notas de calidad y marcos de selección para palets plásticos y productos industriales de manejo."
+description: "Guías de compra, listas de control para RFQ, información de calidad y comparativas de palets y productos de manipulación de plástico."
 aliases:
   - "/resources/blog-news/"
 hero:
   title: "Centro de recursos"
-  subtitle: "Guías de compra y conocimiento de proyecto para palets plásticos, cajas pallet, gavetas, contenedores y logística de almacén."
+  subtitle: "Guías de compra e información técnica sobre palets de plástico, cajas palet, cajas, contenedores y logística de almacén."
 sections:
-  - label: "Insights"
+  - label: "Guías técnicas"
     url: "/resources/insights/"
-    summary: "Listas de especificación, marcos de selección y guías operativas de almacén."
-  - label: "Checklist RFQ"
+    summary: "Listas de especificaciones, comparativas de productos y guías prácticas para almacenes."
+  - label: "Lista de control para RFQ"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-    summary: "Una base práctica para enviar solicitudes comparables de cotización de palets plásticos."
+    summary: "La información necesaria para solicitar presupuestos comparables de un palet de plástico."
 ---

@@ -39,6 +39,6 @@ related_resources:
   - title: "来料检验计划"
     url: "/resources/insights/2617-plastic-pallet-incoming-inspection-plan/"
 cta:
-  title: "发送您的化工搬运场景"
+  title: "告诉我们化学品和容器信息"
   text: "请提供容器类型、液体或化学接触、载重、防泄漏需求、移动频率和目的地。"
 ---

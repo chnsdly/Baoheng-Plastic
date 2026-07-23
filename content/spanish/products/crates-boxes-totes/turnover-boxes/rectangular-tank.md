@@ -1,6 +1,6 @@
 ---
-title: "tanque plástico rectangular"
-description: "tanque plástico rectangular de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Depósito rectangular de plástico"
+description: "Depósito rectangular para almacenar y manipular líquidos o materiales a granel. Confirme el volumen, el contenido y las condiciones de uso."
 aliases:
   - "/products/crates/rectangular-tank/"
   - "/products/crates-boxes-totes/rectangular-tank/"
@@ -47,11 +47,11 @@ product_showcase:
 
 industry_gallery:
   - image: "/images/products/crate-box/rectangular-tank-industry-1.jpg"
-    alt: "rectangular-tank industry uso 1"
+    alt: "Depósito rectangular de plástico – ejemplo de uso 1"
   - image: "/images/products/crate-box/rectangular-tank-industry-2.jpg"
-    alt: "rectangular-tank industry uso 2"
+    alt: "Depósito rectangular de plástico – ejemplo de uso 2"
   - image: "/images/products/crate-box/rectangular-tank-industry-3.jpg"
-    alt: "rectangular-tank industry uso 3"
+    alt: "Depósito rectangular de plástico – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

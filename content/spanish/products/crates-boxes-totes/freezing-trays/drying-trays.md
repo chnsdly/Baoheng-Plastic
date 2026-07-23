@@ -1,6 +1,6 @@
 ---
-title: "bandejas plásticas de secado"
-description: "bandejas plásticas de secado de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Material: HDPE/PP. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Bandeja perforada para congelación y secado"
+description: "Bandeja perforada para congelación, secado y circulación de aire alrededor del producto. Confirme la temperatura, la carga y las dimensiones."
 aliases:
   - "/products/crates/drying-trays/"
   - "/products/crates-boxes-totes/drying-trays/"
@@ -56,11 +56,11 @@ product_showcase:
 
 industry_gallery:
   - image: "/images/products/crate-box/drying-trays-industry-1.jpg"
-    alt: "drying-trays industry uso 1"
+    alt: "Bandeja perforada para congelación y secado – ejemplo de uso 1"
   - image: "/images/products/crate-box/drying-trays-industry-2.jpg"
-    alt: "drying-trays industry uso 2"
+    alt: "Bandeja perforada para congelación y secado – ejemplo de uso 2"
   - image: "/images/products/crate-box/drying-trays-industry-3.jpg"
-    alt: "drying-trays industry uso 3"
+    alt: "Bandeja perforada para congelación y secado – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

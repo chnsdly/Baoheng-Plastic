@@ -1,6 +1,6 @@
 ---
-title: "caisse plastique gerbable et emboîtable"
-description: "caisse plastique gerbable et emboîtable de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Matériau : HDPE/PP. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Caisse gerbable et emboîtable en plastique"
+description: "Caisse réutilisable qui se gerbe en charge et s’emboîte à vide. Précisez les dimensions, la charge et le mode de manutention."
 aliases:
   - "/products/crates/stacknest-crate/"
   - "/products/crates-boxes-totes/stacknest-crate/"

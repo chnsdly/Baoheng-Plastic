@@ -1,7 +1,7 @@
 ---
 
 title: "折叠周转箱"
-description: "这款折叠塑料周转筐采用全新 HDPE 一体成型，卡口拉合即可完成开合，折叠后高度约为原来的 1/6，大幅节省仓储与运输空间"
+description: "可重复使用的折叠周转筐，空箱折叠后可减少仓储和返程空间。请提供尺寸、载荷和通风要求。"
 aliases:
   - "/products/crates/foldable-crates/"
   - "/products/crates-boxes-totes/foldable-crates/"

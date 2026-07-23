@@ -1,11 +1,11 @@
 ---
 title: "冷链与冷冻食品"
-description: "用于冷库、冷冻食品处理、低温物流和冷藏仓储作业的塑料托盘、周转筐和托盘。"
+description: "适用于冷库、冷冻食品、低温运输和冷藏仓储的塑料托盘、周转筐及单冻器。"
 weight: 27
 industry_key: "cold-chain-frozen-food"
 hero:
   eyebrow: "低温搬运"
-  title: "用于冷链和冷冻食品流程的塑料托盘与周转筐"
+  title: "冷库与冷冻食品用塑料托盘和周转筐"
   text: "低温环境会放大冲击风险，因此材料韧性、清洁、堆码和搬运纪律比常温仓库更重要。"
   image: "/images/industry/cold-1.jpg"
 challenges:
@@ -39,6 +39,6 @@ related_resources:
   - title: "冷链堆码高度规划"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
 cta:
-  title: "发送您的冷链工况"
+  title: "告诉我们冷库的使用要求"
   text: "请提供温度范围、载重、货架跨度、存储时长、叉车类型、清洗方式和数量。"
 ---

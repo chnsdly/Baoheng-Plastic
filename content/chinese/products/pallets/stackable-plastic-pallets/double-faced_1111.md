@@ -1,7 +1,7 @@
 ---
 
 title: "1111-网格双面型塑料托盘"
-description: "双面可用的堆叠塑料托盘，适合地面堆码和双向周转场景。具体承重、叉车适配和堆码高度需结合货物分布与使用条件确认。欢迎提交数量、应用和使用要求获取报价。"
+description: "双面塑料托盘，适合重载、堆码和频繁搬运。请提供所用设备和实际载荷，以便确认型号。"
 aliases:
   - "/products/pallets/double-faced_1111/"
 featured_image: "/images/products/pallet/double-faced/1111-hero.jpg"

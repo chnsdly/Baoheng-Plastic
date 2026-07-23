@@ -1,6 +1,6 @@
 ---
-title: "1210 FPBSS75 gris grand conteneur vrac"
-description: "1210 FPBSS75 gris grand conteneur vrac de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1200 x 1000 x 760 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 1 t, charge statique 4 t, charge en rayonnage 0.7 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Grand conteneur en plastique gris – 1210 FPBSS75"
+description: "Grand conteneur rigide pour vrac, pièces industrielles et manutention répétée. Précisez la charge, le mode de vidage et les exigences de gerbage."
 aliases:
   - "/products/bulk-containers/1210-fpbss75-grey/"
 featured_image: "/images/products/l-container/1210-fpbss75-grey-hero.jpg"
@@ -39,11 +39,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/l-container/industry-1.jpg"
-    alt: "1210-fpbss75-grey industry utilisation 1"
+    alt: "Grand conteneur en plastique gris – 1210 FPBSS75 – exemple d'utilisation 1"
   - image: "/images/products/l-container/industry-2.jpg"
-    alt: "1210-fpbss75-grey industry utilisation 2"
+    alt: "Grand conteneur en plastique gris – 1210 FPBSS75 – exemple d'utilisation 2"
   - image: "/images/products/l-container/industry-3.jpg"
-    alt: "1210-fpbss75-grey industry utilisation 3"
+    alt: "Grand conteneur en plastique gris – 1210 FPBSS75 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

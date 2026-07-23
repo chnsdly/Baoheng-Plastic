@@ -1,11 +1,11 @@
-﻿---
+---
 title: "Poultry & Egg Handling"
-description: "Plastic pallets, crates, and egg tray handling systems for poultry farms, egg processing, washing, and distribution workflows."
+description: "Plastic pallets, crates, and egg tray systems for poultry farms, egg processing, washing, storage, and distribution."
 weight: 28
 industry_key: "poultry-egg-handling"
 hero:
   eyebrow: "Egg and poultry circulation"
-  title: "Reusable plastic handling products for poultry and egg workflows"
+  title: "Reusable plastic pallets and crates for poultry and egg handling"
   text: "Poultry and egg operations need washable, repeatable, and stable handling systems that reduce breakage, support tray fit, and simplify return circulation."
   image: "/images/home/industries-8.jpg"
 challenges:
@@ -39,7 +39,7 @@ related_resources:
   - title: "Plastic Pallet Loss Control Return Program"
     url: "/resources/insights/2613-plastic-pallet-loss-control-return-program/"
 cta:
-  title: "Send your poultry or egg handling layout"
+  title: "Tell us about your egg trays and handling process"
   text: "Include tray size, pallet footprint, washing method, stack height, return cycle, and target quantity."
 ---
 

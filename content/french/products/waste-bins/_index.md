@@ -1,6 +1,6 @@
 ---
-title: "Bacs à déchets plastique"
-description: "Outdoor Bacs à déchets plastique dans multiple capacities pour municipal assainissement, campuses, communities, commercial facilities, et collection systems."
+title: "Poubelles en plastique"
+description: "Poubelles roulantes en plastique, disponibles en plusieurs volumes, pour les collectivités, résidences, sites commerciaux, campus et usines."
 weight: 40
 product_family: "Plastic Waste Bins"
 ---

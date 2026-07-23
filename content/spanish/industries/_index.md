@@ -1,18 +1,18 @@
 ---
 title: "Aplicaciones por industria"
-description: "Seleccione palets plásticos, cajas pallet, gavetas y contenedores por escenarios de almacén, alimentos, cadena de frío, químicos, agricultura, impresión, fabricación higiénica y manejo de huevos."
+description: "Palets de plástico, cajas palet, cajas y contenedores para almacenes, alimentación, cadena de frío, químicos, agricultura, impresión, fabricación higiénica y avicultura."
 hero:
-  eyebrow: "Primero la aplicación"
-  title: "Seleccione productos plásticos de manejo según el entorno operativo"
-  text: "Un palet o contenedor que funciona en almacenamiento en piso puede fallar en estanterías, cámaras frías, zonas higiénicas o manejo químico. Empiece por la aplicación más cercana para que la cotización refleje el riesgo real de operación."
+  eyebrow: "Sectores"
+  title: "Palets y contenedores de plástico por sector"
+  text: "Un producto utilizado en estanterías tiene requisitos distintos de otro destinado a cámaras frías, zonas higiénicas o almacenes químicos. Elija su sector para ver productos adecuados y los datos que conviene confirmar antes de comprar."
   image: "/images/industry/high-1.jpg"
 overview:
-  title: "Cómo usar estas páginas"
+  title: "Elija según dónde y cómo se utilizará el producto"
   points:
-    - "Aclaran el punto de dolor antes de elegir un modelo"
-    - "Conectan cada aplicación con familias de producto adecuadas"
-    - "Reúnen los datos RFQ necesarios para cotizar más rápido"
-    - "Reducen la brecha entre comparar precio y desempeño en campo"
+    - "Consulte los productos habituales de cada sector"
+    - "Revise carga, almacenamiento, limpieza, temperatura y manipulación"
+    - "Prepare la información necesaria para una cotización precisa"
+    - "Evite elegir únicamente por precio"
 items:
   - title: "Almacenaje y logística"
     key: "warehousing-logistics"
@@ -63,8 +63,8 @@ items:
     summary: "Manejo reutilizable para bandejas de huevo, instalaciones avícolas y ciclos de lavado."
     focus: "Compatibilidad de bandejas, lavabilidad, control de rotura, retorno"
 cta:
-  title: "¿No sabe qué producto encaja?"
-  text: "Envíe aplicación, carga, tamaño, temperatura, datos de estantería, cantidad y destino. Recomendaremos una dirección práctica antes de cotizar."
+  title: "¿Necesita ayuda para elegir?"
+  text: "Indique la mercancía, la carga, el tamaño, la temperatura, la estantería, la cantidad y el destino. Le recomendaremos productos adecuados y confirmaremos los datos que falten antes de cotizar."
   url: "/selection-support/"
   label: "Solicitar ayuda de selección"
 ---

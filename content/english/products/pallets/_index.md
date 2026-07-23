@@ -1,6 +1,6 @@
 ---
 title: "Plastic Pallets"
-description: "Browse injection-molded and blow-molded plastic pallets by handling structure, load use, and application."
+description: "Injection-molded and blow-molded plastic pallets for export, floor stacking, racking, cold storage, food handling, and industrial use."
 weight: 10
 product_family: "Plastic Pallets"
 ---

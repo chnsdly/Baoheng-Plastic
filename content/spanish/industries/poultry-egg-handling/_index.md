@@ -1,11 +1,11 @@
 ---
 title: "Aves y manejo de huevos"
-description: "Palets, gavetas y sistemas de bandejas para huevos en granjas avícolas, procesamiento, lavado y distribución."
+description: "Palets, cajas y sistemas de bandejas para huevos en granjas avícolas, procesamiento, lavado y distribución."
 weight: 28
 industry_key: "poultry-egg-handling"
 hero:
   eyebrow: "Circulación de huevos y aves"
-  title: "Productos plásticos reutilizables para flujos avícolas y de huevo"
+  title: "Palets y cajas reutilizables para aves y huevos"
   text: "Las operaciones avícolas y de huevo necesitan sistemas lavables, repetibles y estables que reduzcan roturas, ajusten con las bandejas y simplifiquen el retorno."
   image: "/images/home/industries-8.jpg"
 challenges:
@@ -25,11 +25,11 @@ recommended_products:
     url: "/products/pallets/specialty-pallets/egg-tray-pallet-system/"
     image: "/images/products/pallet/egg-tray-system/egg-tray-pallet-system-hero.jpg"
     summary: "Para apilado, movimiento y circulación repetible de bandejas donde importan huella y compatibilidad."
-  - title: "Gavetas plásticas"
+  - title: "Cajas plásticas"
     url: "/products/crates-boxes-totes/turnover-crates/"
     image: "/images/products/crate-box/nestable-crates-hero.jpg"
     summary: "Para circulación en instalaciones avícolas, lavado y distribución reutilizable."
-  - title: "Palets plásticos anidables"
+  - title: "Palets de plástico encajables"
     url: "/products/pallets/nestable-plastic-pallets/"
     image: "/images/products/pallet/nine-leg/1210-hero.jpg"
     summary: "Para movimiento liviano y logística de retorno donde el anidado reduce volumen vacío."
@@ -39,6 +39,6 @@ related_resources:
   - title: "Programa de control de pérdida y retorno de palets"
     url: "/resources/insights/2613-plastic-pallet-loss-control-return-program/"
 cta:
-  title: "Envíe su layout de manejo avícola o de huevos"
+  title: "Describa sus bandejas y el proceso de manipulación"
   text: "Incluya tamaño de bandeja, huella de palet, método de lavado, altura de pila, ciclo de retorno y cantidad objetivo."
 ---

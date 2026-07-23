@@ -1,12 +1,12 @@
-﻿---
+---
 title: "Warehousing & Logistics"
 description: "Plastic pallet selection for racking, forklift traffic, floor stacking, warehouse distribution, and return logistics."
 weight: 21
 industry_key: "warehousing-logistics"
 hero:
   eyebrow: "Warehouse pallet selection"
-  title: "Plastic pallets for racking, forklift movement, and distribution flow"
-  text: "Warehouse buyers need pallets that match load weight, rack span, forklift handling, floor stacking, and empty return plans. The right model protects both unit cost and daily operating stability."
+  title: "Plastic pallets for racking, forklifts, and warehouse distribution"
+  text: "Choose a pallet that matches the unit load, rack span, forklift or pallet jack, floor-stacking method, and empty-return plan. The right construction affects safety, service life, and total handling cost."
   image: "/images/home/industries-1.jpg"
 challenges:
   - "Racking load is quoted without beam span or deflection expectation"
@@ -39,6 +39,6 @@ related_resources:
   - title: "Rack Deflection Acceptance Criteria"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:
-  title: "Send your warehouse operating conditions"
+  title: "Tell us about your warehouse requirements"
   text: "Include load per pallet, rack span, storage duration, forklift type, stacking height, and target quantity."
 ---

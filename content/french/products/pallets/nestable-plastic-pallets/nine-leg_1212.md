@@ -1,6 +1,6 @@
 ---
-title: "1212 plateau ajouré 9-leg Palette plastique"
-description: "1212 plateau ajouré 9-leg Palette plastique de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1200 × 1200 × 140 mm. Matériau : HDPE. Référence de charge : charge dynamique 0.8 t, charge statique 2 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Palette en plastique emboîtable à neuf pieds – 1212"
+description: "Palette légère à neuf pieds, emboîtable à vide pour réduire le volume de retour. Indiquez la charge, le mode de manutention et les dimensions requises."
 aliases:
   - "/products/pallets/nine-leg_1212/"
 featured_image: "/images/products/pallet/nine-leg/1212-hero.jpg"
@@ -18,13 +18,13 @@ pallet_category:
   - "Nestable 9-Leg Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/nine-leg/1212-showcase.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique showcase 1"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – photo du produit 1"
   - image: "/images/products/pallet/nine-leg/showcase-1.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique showcase 2"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – photo du produit 2"
   - image: "/images/products/pallet/nine-leg/showcase-2.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique showcase 3"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – photo du produit 3"
   - image: "/images/products/pallet/nine-leg/showcase-3.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique showcase 3"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – photo du produit 4"
 
 
 specs:
@@ -48,11 +48,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/nine-leg/industry-1.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique industry utilisation 1"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – exemple d'utilisation 1"
   - image: "/images/products/pallet/nine-leg/industry-2.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique industry utilisation 2"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – exemple d'utilisation 2"
   - image: "/images/products/pallet/nine-leg/industry-3.jpg"
-    alt: "1212 plateau ajouré 9-leg Palette plastique industry utilisation 1"
+    alt: "Palette en plastique emboîtable à neuf pieds – 1212 – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 

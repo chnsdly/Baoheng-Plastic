@@ -1,6 +1,6 @@
 ---
-title: "1210 cubierta abierta 9-leg Palet plástico"
-description: "1210 cubierta abierta 9-leg Palet plástico de Baoheng Plastic para operaciones industriales de almacén, logística y producción. Dimensiones nominales: 1200 × 1000 × 140 mm. Material: HDPE. Referencia de carga: carga dinámica 0.7 t, carga estática 2 t. Comparta cantidad, aplicación y requisitos de uso para recibir una cotización ajustada."
+title: "Palet de plástico encajable de nueve patas – 1210"
+description: "Palet ligero de nueve patas que se encaja cuando está vacío para reducir el volumen de retorno. Indique la carga, el equipo de manipulación y las dimensiones necesarias."
 aliases:
   - "/products/pallets/nine-leg_1210/"
 featured_image: "/images/products/pallet/nine-leg/1210-hero.jpg"
@@ -19,13 +19,13 @@ pallet_category:
   - "Nestable 9-Leg Pallets"
 showcase_gallery:
   - image: "/images/products/pallet/nine-leg/1210-showcase.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico showcase 1"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – foto del producto 1"
   - image: "/images/products/pallet/nine-leg/showcase-1.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico showcase 2"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – foto del producto 2"
   - image: "/images/products/pallet/nine-leg/showcase-2.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico showcase 3"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – foto del producto 3"
   - image: "/images/products/pallet/nine-leg/showcase-3.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico showcase 3"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – foto del producto 4"
 
 
 specs:
@@ -49,11 +49,11 @@ contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/pallet/nine-leg/industry-1.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico industry uso 1"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – ejemplo de uso 1"
   - image: "/images/products/pallet/nine-leg/industry-2.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico industry uso 2"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – ejemplo de uso 2"
   - image: "/images/products/pallet/nine-leg/industry-3.jpg"
-    alt: "1210 cubierta abierta 9-leg Palet plástico industry uso 1"
+    alt: "Palet de plástico encajable de nueve patas – 1210 – ejemplo de uso 3"
 form_title: "Cuéntenos sus requisitos de carga"
 ---
 

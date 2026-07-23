@@ -5,7 +5,7 @@ weight: 25
 industry_key: "printing-packaging"
 hero:
   eyebrow: "Manejo plano y limpio"
-  title: "Palets plásticos para circulación de impresión, papel y empaque"
+  title: "Palets de plástico para impresión, papel y embalaje"
   text: "Las operaciones de impresión y empaque suelen necesitar soporte plano, superficies limpias, apilado estable y movimiento predecible entre producción, almacén y despacho."
   image: "/images/home/industries-6.jpg"
 challenges:
@@ -25,7 +25,7 @@ recommended_products:
     url: "/products/pallets/specialty-pallets/print_105075/"
     image: "/images/products/pallet/print/105075-hero.jpg"
     summary: "Para papel, impresión y empaques donde se requiere soporte plano y manejo limpio."
-  - title: "Palets plásticos apilables"
+  - title: "Palets de plástico apilables"
     url: "/products/pallets/stackable-plastic-pallets/"
     image: "/images/products/pallet/perimeter-base/1210-hero.jpg"
     summary: "Para apilado estable en piso y circulación repetida entre fábrica y almacén."
@@ -39,6 +39,6 @@ related_resources:
   - title: "Lista de especificación RFQ"
     url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
 cta:
-  title: "Envíe sus datos de impresión o empaque"
+  title: "Describa sus productos impresos o embalados"
   text: "Incluya tipo de producto, altura de pila, preferencia de cubierta, tamaño de palet, carga, frecuencia de circulación y cantidad."
 ---

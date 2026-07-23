@@ -1,6 +1,6 @@
 ---
-title: "1210-BF-FPBSS80B"
-description: "1210-BF-FPBSS80B de Baoheng Plastic pour opérations industrielles d'entrepôt, de logistique et de production. Dimensions nominales : 1200 x 1000 x 800 mm. Matériau : HDPE/PP. Référence de charge : charge dynamique 1 t, charge statique 4 t, charge en rayonnage 0.7 t. Partagez quantité, application et exigences d'utilisation pour recevoir un devis adapté."
+title: "Caisse-palette pliable – FPBSS80B"
+description: "Caisse-palette pliable pour le stockage, le transport et les circuits de retour. Indiquez la charge, le type de remplissage et les contraintes de gerbage."
 aliases:
   - "/products/foldable-pallet-boxes/fpbss80b/"
 featured_image: "/images/products/fold/ss80b-hero.jpg"
@@ -18,13 +18,13 @@ pallet_category:
   - "Foldable Pallet Boxes"
 showcase_gallery:
   - image: "/images/products/fold/ss80b-showcase.jpg"
-    alt: "1210-BF-FPBSS80B showcase 1"
+    alt: "Caisse-palette pliable – FPBSS80B – photo du produit 1"
   - image: "/images/products/fold/showcase-1.jpg"
-    alt: "1210-BF-FPBSS80B showcase 2"
+    alt: "Caisse-palette pliable – FPBSS80B – photo du produit 2"
   - image: "/images/products/fold/showcase-2.jpg"
-    alt: "1210-BF-FPBSS80B showcase 3"
+    alt: "Caisse-palette pliable – FPBSS80B – photo du produit 3"
   - image: "/images/products/fold/showcase-3.jpg"
-    alt: "1210-BF-FPBSS80B showcase 3"
+    alt: "Caisse-palette pliable – FPBSS80B – photo du produit 4"
 
 specs:
   dimensions: "1200 x 1000 x 800 mm"
@@ -49,11 +49,11 @@ contact_cta_label: "Demander un devis"
 contact_cta_link: "/contact"
 industry_gallery:
   - image: "/images/products/fold/industry-1.jpg"
-    alt: "1210-BF-FPBSS80B industry utilisation 1"
+    alt: "Caisse-palette pliable – FPBSS80B – exemple d'utilisation 1"
   - image: "/images/products/fold/industry-2.jpg"
-    alt: "1210-BF-FPBSS80B industry utilisation 2"
+    alt: "Caisse-palette pliable – FPBSS80B – exemple d'utilisation 2"
   - image: "/images/products/fold/industry-3.jpg"
-    alt: "1210-BF-FPBSS80B industry utilisation 1"
+    alt: "Caisse-palette pliable – FPBSS80B – exemple d'utilisation 3"
 form_title: "Parlez-nous de vos exigences de charge"
 ---
 
