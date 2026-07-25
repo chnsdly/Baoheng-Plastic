@@ -34,8 +34,8 @@ recommended_products:
     image: "/images/products/pallet/nine-leg/1210-hero.jpg"
     summary: "Pour flux aller simple, export et maîtrise du volume de retour à vide."
 related_resources:
-  - title: "Checklist RFQ palettes plastique"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "Palettes emboîtables ou rackables"
+    url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
   - title: "Critères d'acceptation de la flèche en rayonnage"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:

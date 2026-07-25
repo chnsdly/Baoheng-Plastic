@@ -10,15 +10,15 @@ home_hero:
   title: "Palettes et conteneurs en plastique pour le stockage et la manutention"
   description: "Nous fabriquons des palettes en HDPE/PP, des caisses-palettes, des bacs, des grands conteneurs et des poubelles. Avant la commande, nous vérifions avec vous la structure, la charge, la matière, l'emballage et les conditions de livraison."
   primary_cta:
-    label: "Demander un devis"
-    url: "/contact/?intent=quote"
-  secondary_cta:
     label: "Voir les produits"
     url: "/products/"
+  secondary_cta:
+    label: "Nous contacter"
+    url: "/contact/"
   visual_caption: "Échangez directement avec notre usine pour le choix du produit, les échantillons, le suivi de production, le contrôle, l'emballage et l'expédition."
 usps:
   enable: true
-  title: "Les informations nécessaires pour établir un devis précis"
+  title: "Ce que nous confirmons avant votre commande"
   description: "Indiquez-nous la marchandise, le mode de stockage et de manutention ainsi que la destination. Nous vous proposerons des modèles adaptés et préciserons les points qui restent à valider."
   items:
     - title: "Décrivez l'utilisation prévue"

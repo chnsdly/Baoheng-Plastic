@@ -95,19 +95,31 @@ identifier = "resources"
 weight = 40
 
   [[main]]
-  name = "Guides techniques"
+  name = "Guides d'achat"
   url = "/resources/insights/"
   parent = "resources"
   weight = 41
 
   [[main]]
-  name = "Checklist RFQ"
-  url = "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  name = "Cas clients"
+  url = "/resources/case-studies/"
   parent = "resources"
   weight = 42
+
+  [[main]]
+  name = "FAQ"
+  url = "/resources/faq/"
+  parent = "resources"
+  weight = 43
 
 [[main]]
 name = "À propos"
 url = "/about/"
 identifier = "about"
 weight = 50
+
+[[main]]
+name = "Contact"
+url = "/contact/"
+identifier = "contact"
+weight = 60

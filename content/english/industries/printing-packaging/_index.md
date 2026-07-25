@@ -36,8 +36,8 @@ recommended_products:
 related_resources:
   - title: "Plastic Pallet Stack Height Planning"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
-  - title: "RFQ Specification Checklist"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "Plastic Pallet Stretch Wrapper Compatibility"
+    url: "/resources/insights/2636-plastic-pallet-stretch-wrapper-compatibility/"
 cta:
   title: "Tell us about your printing or packaging operation"
   text: "Include product type, stack height, deck preference, pallet size, load, circulation frequency, and quantity."

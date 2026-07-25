@@ -10,15 +10,15 @@ home_hero:
   title: "Plastic pallets and containers for warehousing and material handling"
   description: "Choose from HDPE/PP pallets, pallet boxes, crates, bulk containers, and waste bins. We help you confirm the right structure, load rating, material, packing, and delivery terms before you order."
   primary_cta:
-    label: "Send RFQ"
-    url: "/contact/?intent=quote"
-  secondary_cta:
-    label: "Browse Products"
+    label: "View Products"
     url: "/products/"
+  secondary_cta:
+    label: "Contact Us"
+    url: "/contact/"
   visual_caption: "Work directly with our factory team on product selection, samples, production updates, inspection, packing, and export shipment."
 usps:
   enable: true
-  title: "What we check before we quote"
+  title: "What we confirm before your order"
   description: "Tell us what you are moving, how it will be stored and handled, and where it needs to go. We will recommend suitable models and clearly note anything that still needs to be confirmed."
   items:
     - title: "Tell us how the product will be used"

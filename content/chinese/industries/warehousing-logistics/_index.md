@@ -34,8 +34,8 @@ recommended_products:
     image: "/images/products/pallet/nine-leg/1210-hero.jpg"
     summary: "适合一次性流转、出口发货和需要控制空托回运体积的项目。"
 related_resources:
-  - title: "塑料托盘 RFQ 清单"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "套叠式 vs 上架型塑料托盘"
+    url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
   - title: "货架挠度验收标准"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:

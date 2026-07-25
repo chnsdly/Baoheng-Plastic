@@ -10,15 +10,15 @@ home_hero:
   title: "Palets y contenedores de plástico para almacenes y manipulación de materiales"
   description: "Fabricamos palets de HDPE/PP, cajas palet, cajas, contenedores a granel y contenedores de residuos. Antes del pedido, revisamos con usted la estructura, la carga, el material, el embalaje y las condiciones de entrega."
   primary_cta:
-    label: "Solicitar cotización"
-    url: "/contact/?intent=quote"
-  secondary_cta:
     label: "Ver productos"
     url: "/products/"
+  secondary_cta:
+    label: "Contactar"
+    url: "/contact/"
   visual_caption: "Trate directamente con nuestro equipo de fábrica para elegir el producto, aprobar muestras, seguir la producción, revisar la inspección, preparar el embalaje y coordinar el envío."
 usps:
   enable: true
-  title: "Qué necesitamos para preparar una cotización precisa"
+  title: "Lo que confirmamos antes de su pedido"
   description: "Indíquenos qué mercancía va a mover, cómo se almacenará y manipulará y cuál es el destino. Le recomendaremos modelos adecuados y señalaremos lo que aún deba confirmarse."
   items:
     - title: "Explique cómo se utilizará el producto"

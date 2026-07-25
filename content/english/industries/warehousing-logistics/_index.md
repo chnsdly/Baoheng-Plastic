@@ -34,8 +34,8 @@ recommended_products:
     image: "/images/products/pallet/nine-leg/1210-hero.jpg"
     summary: "For one-way movement, export shipping, and empty return cost control."
 related_resources:
-  - title: "Plastic Pallet RFQ Checklist"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "Nestable vs Rackable Plastic Pallets"
+    url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
   - title: "Rack Deflection Acceptance Criteria"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:

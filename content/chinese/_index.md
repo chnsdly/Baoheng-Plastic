@@ -10,15 +10,15 @@ home_hero:
   title: "仓储与搬运用塑料托盘及容器"
   description: "我们生产 HDPE/PP 塑料托盘、围板箱、周转筐、大型容器和垃圾桶，并在下单前协助确认结构、承重、材料、包装和交货要求。"
   primary_cta:
-    label: "发送 RFQ"
-    url: "/contact/?intent=quote"
-  secondary_cta:
-    label: "浏览产品"
+    label: "查看产品"
     url: "/products/"
+  secondary_cta:
+    label: "联系我们"
+    url: "/contact/"
   visual_caption: "选型、样品、生产进度、检验、包装和出口装运均由工厂团队直接与您沟通。"
 usps:
   enable: true
-  title: "准确报价前，我们会确认这些信息"
+  title: "下单前，我们会确认这些信息"
   description: "告诉我们装什么货、怎样存放和搬运、送往哪里。我们会推荐合适的型号，并在报价中注明仍需确认的项目。"
   items:
     - title: "说明产品的使用方式"

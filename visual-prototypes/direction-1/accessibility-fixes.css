@@ -1,0 +1,19 @@
+/* Shared contrast refinements for dark prototype surfaces. */
+
+.d1-section--dark .d1-kicker,
+.d1-industry-hero .d1-kicker,
+.d1-article-hero .d1-kicker,
+.d1-suite-hub .d1-kicker,
+.d1-checks .d1-kicker,
+.d1-clients .d1-kicker {
+  color: #f3a071;
+}
+
+.d1-section--dark .d1-kicker span,
+.d1-industry-hero .d1-kicker span,
+.d1-article-hero .d1-kicker span,
+.d1-suite-hub .d1-kicker span,
+.d1-checks .d1-kicker span,
+.d1-clients .d1-kicker span {
+  color: var(--d1-lime);
+}

@@ -19,7 +19,7 @@ hero:
 situations:
   eyebrow: "适用情况"
   title: "还没有确定型号时，我们可以协助选型"
-  text: "如果已经知道型号和数量，可以直接询价；如果还在比较产品类型或结构，请参考下面的信息，我们会据此推荐合适的产品。"
+  text: "如果已经知道型号和数量，可以直接联系我们；如果还在比较产品类型或结构，请参考下面的信息，我们会据此推荐合适的产品。"
   items:
     - label: "01"
       title: "不确定哪类产品合适"
@@ -142,9 +142,9 @@ resources:
   text: "如果您正在整理内部 RFQ 或对比供应商，这些文章可以帮助把问题问得更具体。"
   link_label: "阅读资料"
   items:
-    - title: "塑料托盘 RFQ 规格清单"
-      url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-      summary: "把载荷、货架、材料、测试和商务条款整理成可比较的询价输入。"
+    - title: "塑料托盘批量采购前的载荷测试"
+      url: "/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/"
+      summary: "批量采购前验证承载能力、挠度、货架匹配和实际搬运表现。"
     - title: "可套叠托盘 vs 可上货架托盘"
       url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
       summary: "适合在出口运输、仓储升级和回空成本之间做初步判断。"

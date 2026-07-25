@@ -36,8 +36,8 @@ recommended_products:
 related_resources:
   - title: "Planification de hauteur de gerbage"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
-  - title: "Checklist de spécification RFQ"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "Compatibilité avec filmeuse stretch"
+    url: "/resources/insights/2636-plastic-pallet-stretch-wrapper-compatibility/"
 cta:
   title: "Décrivez vos produits imprimés ou emballés"
   text: "Incluez type de produit, hauteur de pile, préférence plateau, dimensions palette, charge, fréquence de circulation et quantité."

@@ -1,0 +1,81 @@
+/* Visual QA corrections after route-by-route review. */
+
+.site-footer__actions .button--secondary {
+  border-color: rgba(255, 254, 251, 0.5);
+  background: transparent;
+  color: var(--on-brand);
+}
+
+.site-footer__actions .button--secondary:hover,
+.site-footer__actions .button--secondary:focus-visible {
+  border-color: var(--on-brand);
+  background: var(--on-brand);
+  color: var(--brand-strong);
+}
+
+.product-hero {
+  align-items: start;
+}
+
+.product-hero__body {
+  min-width: 0;
+}
+
+.product-hero__media {
+  min-height: 25rem;
+}
+
+.product-hero__specs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product-hero__specs > div {
+  min-width: 0;
+  grid-template-columns: minmax(4.25rem, 0.62fr) minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.product-hero__specs dd {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.manufacturing-hero__facts {
+  border-radius: 0;
+  background: transparent;
+}
+
+.manufacturing-fact {
+  border-radius: 0;
+  border-left: 2px solid var(--button-primary-bg);
+  box-shadow: none;
+}
+
+@media (max-width: 67.99rem) {
+  .product-single__content {
+    order: 1;
+  }
+
+  .product-single .product-sidebar {
+    order: 2;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .product-hero__specs {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero__specs > div {
+    grid-template-columns: minmax(5.5rem, 0.55fr) minmax(0, 1fr);
+  }
+
+  .product-hero__specs > div + div {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+
+@import "direction-one-final";
+@import "direction-one-mobile-qa";
+@import "direction-one-about-qa";

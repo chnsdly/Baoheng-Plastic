@@ -36,8 +36,8 @@ recommended_products:
 related_resources:
   - title: "塑料托盘堆码高度规划"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
-  - title: "RFQ 规格清单"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "塑料托盘与缠绕膜机兼容性"
+    url: "/resources/insights/2636-plastic-pallet-stretch-wrapper-compatibility/"
 cta:
   title: "告诉我们印刷或包装产品的搬运方式"
   text: "请提供产品类型、堆码高度、板面偏好、托盘尺寸、载重、周转频率和采购数量。"

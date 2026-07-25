@@ -19,7 +19,7 @@ hero:
 situations:
   eyebrow: "Cuándo usarlo"
   title: "Utilice esta página si necesita una recomendación de modelo"
-  text: "Si ya conoce el modelo y la cantidad, solicite una cotización directa. Si todavía compara tipos de producto o estructuras, la información siguiente nos ayudará a recomendarle opciones adecuadas."
+  text: "Si ya conoce el modelo y la cantidad, contacte directamente con nuestro equipo. Si todavía compara tipos de producto o estructuras, la información siguiente nos ayudará a recomendarle opciones adecuadas."
   items:
     - label: "01"
       title: "No sabe qué tipo de producto necesita"
@@ -142,9 +142,9 @@ resources:
   text: "Si prepara una RFQ o compara proveedores, estas guías ayudan a hacer preguntas más específicas."
   link_label: "Leer guía"
   items:
-    - title: "Lista de especificaciones RFQ para palets de plástico"
-      url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-      summary: "Reúna la carga, la estantería, el material, las pruebas y las condiciones comerciales en una solicitud comparable."
+    - title: "Pruebas de carga antes de pedidos en volumen"
+      url: "/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/"
+      summary: "Valide carga, deflexión, compatibilidad con rack y manejo antes de aprobar un pedido grande."
     - title: "Palets encajables frente a palets para estanterías"
       url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
       summary: "Base práctica para exportación, mejora de almacén y costo de retorno vacío."

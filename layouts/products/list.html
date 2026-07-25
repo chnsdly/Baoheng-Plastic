@@ -4,7 +4,6 @@
   {{ $families := slice }}
   {{ with $productsRoot }}{{ $families = .Sections.ByWeight }}{{ end }}
   {{ $contactURL := "/contact/" | relLangURL }}
-  {{ $rfqURL := "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}
   {{ $selectionURL := "/selection-support/" | relLangURL }}
 
   <section class="product-listing">
@@ -22,8 +21,7 @@
           </p>
         </div>
         <div class="product-listing__hero-actions">
-          <a class="button" href="{{ $contactURL }}">{{ i18n "request_quote" }}</a>
-          <a class="button button--secondary" href="{{ $rfqURL }}">{{ i18n "rfq_checklist" }}</a>
+          <a class="button" href="{{ $contactURL }}">{{ i18n "contact_us" }}</a>
         </div>
       </header>
 

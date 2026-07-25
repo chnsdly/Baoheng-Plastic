@@ -19,7 +19,7 @@ hero:
 situations:
   eyebrow: "Quand l'utiliser"
   title: "À utiliser si vous avez besoin d'une recommandation"
-  text: "Si vous connaissez déjà le modèle et la quantité, demandez directement un devis. Si vous comparez encore les types de produits ou les structures, les informations ci-dessous nous aideront à vous conseiller."
+  text: "Si vous connaissez déjà le modèle et la quantité, contactez directement notre équipe. Si vous comparez encore les types de produits ou les structures, les informations ci-dessous nous aideront à vous conseiller."
   items:
     - label: "01"
       title: "Vous ne savez pas quel type de produit choisir"
@@ -142,9 +142,9 @@ resources:
   text: "Si vous préparez un RFQ ou comparez des fournisseurs, ces guides aident à poser des questions plus précises."
   link_label: "Lire le guide"
   items:
-    - title: "Checklist RFQ pour palettes plastiques"
-      url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-      summary: "Regrouper la charge, le rayonnage, la matière, les essais et les conditions commerciales dans une demande comparable."
+    - title: "Essais de charge avant commande en volume"
+      url: "/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/"
+      summary: "Validez charge, flèche, compatibilité rack et manutention avant d'approuver une commande en volume."
     - title: "Palettes emboîtables vs palettes rackables"
       url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
       summary: "Base pratique pour export, modernisation d'entrepôt et coût de retour à vide."

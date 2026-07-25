@@ -19,7 +19,7 @@ hero:
 situations:
   eyebrow: "When to use this"
   title: "Use this page if you need a model recommendation"
-  text: "If you already know the model and quantity, request a quote directly. If you are still comparing product types or structures, the information below will help us recommend suitable options."
+  text: "If you already know the model and quantity, contact our team directly. If you are still comparing product types or structures, the information below will help us recommend suitable options."
   items:
     - label: "01"
       title: "You are not sure which type of product fits"
@@ -142,9 +142,9 @@ resources:
   text: "If you are preparing an RFQ or comparing suppliers, these guides help make the questions more specific."
   link_label: "Read guide"
   items:
-    - title: "Plastic pallet RFQ specification checklist"
-      url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
-      summary: "Turn load, racking, material, testing, and commercial terms into comparable RFQ inputs."
+    - title: "Plastic pallet load testing before bulk orders"
+      url: "/resources/insights/2616-plastic-pallet-load-test-before-bulk-order/"
+      summary: "Validate load capacity, deflection, rack fit, and handling performance before approving a bulk order."
     - title: "Nestable vs rackable plastic pallets"
       url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
       summary: "A practical starting point for export shipping, warehouse upgrades, and empty-return cost."

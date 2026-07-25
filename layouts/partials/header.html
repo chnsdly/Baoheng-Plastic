@@ -3,9 +3,66 @@
 {{- $languageShortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
 {{- $currentLanguageShort := default (upper .Site.Language.Lang) (index $languageShortLabels .Site.Language.Lang) -}}
 {{- $recommendURL := "/selection-support/" | relLangURL -}}
-{{- $quoteURL := "/contact/" | relLangURL -}}
+{{- $contactPhone := .Site.Params.contact_phone -}}
+{{- $contactEmail := .Site.Params.contact_email -}}
+{{- $phoneHref := printf "tel:%s" (replaceRE "[^\\d+]" "" $contactPhone) -}}
+{{- $emailHref := printf "mailto:%s" $contactEmail -}}
 
 <header class="site-header" data-site-header>
+  <div class="site-header__utility">
+    <div class="site-header__utility-inner">
+      <p class="site-header__utility-copy">{{ i18n "header_utility_copy" }}</p>
+
+      <div class="site-header__utility-actions">
+        <div class="site-header__utility-contact" aria-label="{{ i18n "contact_us" }}">
+          {{- with $contactPhone }}
+            <a class="site-header__utility-contact-link" href="{{ $phoneHref | safeURL }}">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.6 3.6 9.4 7.7 7.8 9.4c1 2.2 2.8 4 5 5l1.7-1.6 4.1 2.8-.8 3.4c-.2.8-.9 1.4-1.8 1.4C9.1 20.4 3.6 14.9 3.6 8c0-.9.6-1.6 1.4-1.8l1.6-.4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+              </svg>
+              <span>{{ . }}</span>
+            </a>
+          {{- end }}
+          {{- with $contactEmail }}
+            <a class="site-header__utility-contact-link site-header__utility-contact-link--email" href="{{ $emailHref | safeURL }}">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3.5" y="5.5" width="17" height="13" rx="1" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="m4.5 7 7.5 5.5L19.5 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
+              </svg>
+              <span>{{ . }}</span>
+            </a>
+          {{- end }}
+        </div>
+
+      {{- if gt (len $languages) 1 -}}
+        <details class="site-header__language" data-language-switcher>
+          <summary class="site-header__utility-language" aria-label="{{ i18n "language" }}: {{ $currentLanguageShort }}">
+            <span class="site-header__language-label">{{ $currentLanguageShort }}</span>
+            <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+            </svg>
+          </summary>
+          <ul class="site-header__language-list" role="list">
+            {{- range $languages -}}
+              {{- $langCode := .Lang -}}
+              {{- $target := "/" | relURL -}}
+              {{- range $.Site.Sites -}}
+                {{- if eq .Language.Lang $langCode -}}{{- $target = .Home.RelPermalink -}}{{- end -}}
+              {{- end -}}
+              {{- range $.AllTranslations -}}
+                {{- if eq .Language.Lang $langCode -}}{{- $target = .RelPermalink -}}{{- end -}}
+              {{- end -}}
+              <li>
+                <a class="site-header__language-link{{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}" href="{{ $target }}" lang="{{ .Locale | default .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="true"{{ end }}>{{ .Label | default .Lang }}</a>
+              </li>
+            {{- end -}}
+          </ul>
+        </details>
+      {{- end }}
+      </div>
+    </div>
+  </div>
+
   <div class="site-header__bar">
     <div class="site-header__inner">
       <a class="site-header__logo" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}">
@@ -78,8 +135,8 @@
                                 <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
                               {{- end -}}
                             {{- end -}}
-                            <li><a class="site-header__mega-link" href="{{ "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/" | relLangURL }}">{{ i18n "rfq_spec_checklist" }}</a></li>
-                            <li><a class="site-header__mega-link" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a></li>
+                            <li><a class="site-header__mega-link" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a></li>
+                            <li><a class="site-header__mega-link" href="{{ "/contact/" | relLangURL }}">{{ i18n "contact_us" }}</a></li>
                           </ul>
                         </div>
                       </div>
@@ -133,37 +190,6 @@
       </nav>
 
       <div class="site-header__actions">
-        <div class="site-header__cta-group" aria-label="{{ i18n "header_conversion_actions" }}">
-          <a class="site-header__cta site-header__cta--outline" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a>
-          <a class="site-header__cta site-header__cta--primary" href="{{ $quoteURL }}">{{ i18n "nav_request_quote" }}</a>
-        </div>
-
-        {{- if gt (len $languages) 1 -}}
-          <details class="site-header__language" data-language-switcher>
-            <summary class="site-header__icon-button" aria-label="{{ i18n "language" }}: {{ $currentLanguageShort }}">
-              <span class="site-header__language-label font-meta">{{ $currentLanguageShort }}</span>
-              <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
-              </svg>
-            </summary>
-            <ul class="site-header__language-list" role="list">
-              {{- range $languages -}}
-                {{- $langCode := .Lang -}}
-                {{- $target := "/" | relURL -}}
-                {{- range $.Site.Sites -}}
-                  {{- if eq .Language.Lang $langCode -}}{{- $target = .Home.RelPermalink -}}{{- end -}}
-                {{- end -}}
-                {{- range $.AllTranslations -}}
-                  {{- if eq .Language.Lang $langCode -}}{{- $target = .RelPermalink -}}{{- end -}}
-                {{- end -}}
-                <li>
-                  <a class="site-header__language-link font-meta{{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}" href="{{ $target }}" lang="{{ .Locale | default .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="true"{{ end }}>{{ .Label | default .Lang }}</a>
-                </li>
-              {{- end -}}
-            </ul>
-          </details>
-        {{- end -}}
-
         <button class="site-header__menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" | default "Open menu" }}' data-menu-toggle>
           <span class="site-header__menu-toggle-box" aria-hidden="true">
             <span class="site-header__menu-toggle-line"></span>
@@ -205,10 +231,6 @@
             {{- end -}}
           </ul>
 
-          <div class="site-header__mobile-cta" aria-label="{{ i18n "header_conversion_actions" }}">
-            <a class="site-header__cta site-header__cta--outline" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a>
-            <a class="site-header__cta site-header__cta--primary" href="{{ $quoteURL }}">{{ i18n "nav_request_quote" }}</a>
-          </div>
         </div>
 
         {{- range $menu -}}

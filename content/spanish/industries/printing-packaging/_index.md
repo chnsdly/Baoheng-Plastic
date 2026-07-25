@@ -36,8 +36,8 @@ recommended_products:
 related_resources:
   - title: "Planificación de altura de apilado"
     url: "/resources/insights/2622-plastic-pallet-stack-height-floor-storage-planning/"
-  - title: "Lista de especificación RFQ"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "Compatibilidad con envolvedoras stretch"
+    url: "/resources/insights/2636-plastic-pallet-stretch-wrapper-compatibility/"
 cta:
   title: "Describa sus productos impresos o embalados"
   text: "Incluya tipo de producto, altura de pila, preferencia de cubierta, tamaño de palet, carga, frecuencia de circulación y cantidad."

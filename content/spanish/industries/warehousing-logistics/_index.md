@@ -34,8 +34,8 @@ recommended_products:
     image: "/images/products/pallet/nine-leg/1210-hero.jpg"
     summary: "Para movimientos de una vía, exportación y control del costo de retorno de vacíos."
 related_resources:
-  - title: "Lista RFQ para palets de plástico"
-    url: "/resources/insights/2605-plastic-pallet-rfq-specification-checklist/"
+  - title: "Palets encajables vs. rackeables"
+    url: "/resources/insights/2606-nestable-vs-rackable-plastic-pallets/"
   - title: "Criterios de deflexión en estantería"
     url: "/resources/insights/2623-plastic-pallet-rack-deflection-acceptance-criteria/"
 cta:

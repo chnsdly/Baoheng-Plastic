@@ -1,0 +1,13 @@
+/* Homepage-only responsive refinements for the approved traditional navigation revision. */
+
+@media (max-width: 68rem) {
+  .d1-quote {
+    background: var(--d1-paper);
+  }
+
+  .d1-quote__copy {
+    max-width: 46rem;
+    padding: clamp(2rem, 5vw, 3.5rem);
+    background: var(--d1-orange);
+  }
+}
