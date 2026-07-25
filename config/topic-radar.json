@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "core_sources": [
+    {
+      "id": "eu-packaging",
+      "name": "European Commission — Packaging Waste",
+      "source_url": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en",
+      "source_type": "regulator",
+      "jurisdiction": "European Union",
+      "coverage": "Packaging and reuse obligations affecting pallets and transport packaging",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "eur-lex-packaging",
+      "name": "EUR-Lex — Regulation (EU) 2025/40",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng",
+      "source_type": "legislation",
+      "jurisdiction": "European Union",
+      "coverage": "Primary legal text for packaging and packaging waste requirements",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "osha-powered-industrial-trucks",
+      "name": "OSHA — Powered Industrial Trucks",
+      "source_url": "https://www.osha.gov/powered-industrial-trucks",
+      "source_type": "regulator",
+      "jurisdiction": "United States",
+      "coverage": "Forklift, attachment, load-handling, and warehouse safety guidance",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "hse-workplace-transport",
+      "name": "HSE — Workplace Transport",
+      "source_url": "https://www.hse.gov.uk/workplacetransport/index.htm",
+      "source_type": "regulator",
+      "jurisdiction": "United Kingdom",
+      "coverage": "Warehouse transport, loading, handling, and pallet safety guidance",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "fda-food-contact",
+      "name": "FDA — Food Contact Substances",
+      "source_url": "https://www.fda.gov/food/packaging-food-contact-substances-fcs/food-contact-substances-fcs",
+      "source_type": "regulator",
+      "jurisdiction": "United States",
+      "coverage": "Food-contact material context and regulatory developments",
+      "priority": "medium",
+      "enabled": true
+    },
+    {
+      "id": "iso-pallets",
+      "name": "ISO — Pallets for Materials Handling",
+      "source_url": "https://www.iso.org/committee/48136.html",
+      "source_type": "standards_body",
+      "jurisdiction": "International",
+      "coverage": "Pallet testing, terminology, and standards developments",
+      "priority": "medium",
+      "enabled": true
+    },
+    {
+      "id": "mhi-industry",
+      "name": "MHI — Material Handling Industry",
+      "source_url": "https://www.mhi.org/",
+      "source_type": "industry_body",
+      "jurisdiction": "International industry",
+      "coverage": "Material-handling, warehousing, automation, and logistics developments",
+      "priority": "medium",
+      "enabled": true
+    }
+  ],
+  "open_query_lanes": [
+    {
+      "id": "regulation-compliance",
+      "label": "Regulation and compliance change",
+      "languages": ["en", "zh", "es", "fr"],
+      "search_focus": "New or revised rules, official consultations, enforcement guidance, and standards changes affecting pallets, reusable transport packaging, hygiene, safety, or trade.",
+      "priority": "high"
+    },
+    {
+      "id": "warehouse-safety",
+      "label": "Warehouse handling and safety",
+      "languages": ["en", "zh", "es", "fr"],
+      "search_focus": "Forklift, pallet-jack, racking, loading, damage, manual handling, and workplace transport changes with a defined buyer decision.",
+      "priority": "high"
+    },
+    {
+      "id": "automation-operations",
+      "label": "Automation and operating change",
+      "languages": ["en", "zh", "es", "fr"],
+      "search_focus": "Conveyors, AS/RS, sensing, wrapping, robotics, traceability, and process changes that alter pallet selection or approval.",
+      "priority": "high"
+    },
+    {
+      "id": "materials-sustainability",
+      "label": "Materials, circularity, and claims",
+      "languages": ["en", "zh", "es", "fr"],
+      "search_focus": "Polymer, recycled-content, reuse, cleaning, chemical, environmental, and claim-substantiation developments.",
+      "priority": "medium"
+    },
+    {
+      "id": "hygiene-controlled-use",
+      "label": "Hygiene and controlled-use environments",
+      "languages": ["en", "zh", "es", "fr"],
+      "search_focus": "Food, beverage, pharmaceutical, cold-chain, contamination, and sanitation developments affecting plastic-pallet use.",
+      "priority": "medium"
+    },
+    {
+      "id": "transport-export",
+      "label": "Transport and export routes",
+      "languages": ["en", "zh", "es", "fr"],
+      "search_focus": "Container, export, return-loop, load-stability, trade, and receiving-route changes affecting pallet decisions.",
+      "priority": "medium"
+    }
+  ],
+  "retention": {
+    "max_recent_scans": 12,
+    "max_events": 80
+  }
+}
