@@ -291,11 +291,19 @@ summary:focus-visible {
   margin-block-end: space(2);
 }
 
-.prose a:not(.button) {
+.prose a:not(.button),
+.resource-single__body a:not(.button) {
   color: var(--brand);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
+}
+
+.prose a:not(.button):hover,
+.resource-single__body a:not(.button):hover {
+  color: var(--brand-strong);
+  text-decoration-thickness: 2px;
 }
 
 .basic-list {
