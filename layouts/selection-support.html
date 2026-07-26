@@ -17,8 +17,8 @@
           {{ with $hero.text }}<p class="selection-hero__text">{{ . }}</p>{{ end }}
 
           <div class="selection-hero__actions">
-            {{ with $hero.primary_url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.primary_label | default (i18n "product_selection_support") }}</a>{{ end }}
-            {{ with $hero.secondary_url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.secondary_label | default (i18n "browse_products") }}</a>{{ end }}
+            {{ with $hero.primary_url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.primary_label }}</a>{{ end }}
+            {{ with $hero.secondary_url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.secondary_label }}</a>{{ end }}
           </div>
 
           {{ with $hero.proof_points }}

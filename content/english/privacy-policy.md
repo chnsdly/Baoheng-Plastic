@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+eyebrow: "Overview"
 description: "How Baoheng Plastic collects, uses, and protects personal information shared through website and lead forms."
 robots: "noindex, follow"
 ---

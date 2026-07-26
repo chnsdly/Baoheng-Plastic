@@ -1,0 +1,254 @@
+// 首页行动号召区块。
+// 规则归属于本组件；main.scss 仍按原层叠时点输出基础层与视觉层。
+
+@mixin home-cta-base {
+  .cta {
+    position: relative;
+    padding-block: var(--section-padding);
+    background: var(--brand-strong);
+    color: var(--on-brand);
+  }
+
+  .cta .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta__grid {
+    display: grid;
+    gap: var(--grid-gap);
+    align-items: stretch;
+  }
+
+  .cta__intro {
+    display: grid;
+    gap: space(1.4);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .cta__eyebrow {
+    margin: 0;
+    color: color-mix(in srgb, var(--brand-soft) 82%, white);
+    font-size: var(--type-eyebrow);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .cta__title {
+    margin: 0;
+    color: var(--on-brand);
+    font-size: var(--type-section-title);
+    line-height: var(--line-tight);
+    font-weight: var(--section-title-weight);
+    text-wrap: balance;
+  }
+
+  .cta__desc {
+    max-inline-size: 62ch;
+    margin: 0;
+    color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+    font-size: var(--type-lede);
+  }
+
+  .cta__contact {
+    display: grid;
+    gap: space(0.8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .cta__contact-item {
+    display: grid;
+    gap: space(0.35);
+    padding-block: space(0.9);
+    border-top: 1px solid color-mix(in srgb, var(--on-brand) 14%, transparent);
+  }
+
+  .cta__label {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: space(0.65);
+    color: color-mix(in srgb, var(--on-brand) 62%, transparent);
+    font-size: var(--type-eyebrow);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .cta__value {
+    margin: 0;
+    color: var(--on-brand);
+    font-weight: var(--weight-semibold);
+  }
+
+  .cta__contact-item a {
+    color: inherit;
+  }
+
+  .cta__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 1.9rem;
+    block-size: 1.9rem;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--brand) 48%, white);
+    color: var(--brand-strong);
+  }
+
+  .cta__icon svg {
+    inline-size: 1.05rem;
+    block-size: 1.05rem;
+  }
+
+  .cta__card {
+    padding: var(--panel-padding);
+    border: var(--border);
+    border-radius: var(--radius-m);
+    background: var(--card);
+    color: var(--on-surface);
+    box-shadow: var(--shadow);
+  }
+
+  .cta__form-head {
+    display: grid;
+    gap: space(0.75);
+    margin-block-end: space(1.5);
+  }
+
+  .cta__form-title {
+    margin: 0;
+    color: var(--on-surface);
+    font-size: var(--type-subsection-title);
+    line-height: var(--line-tight);
+    font-weight: var(--weight-bold);
+  }
+
+  @media (min-width: 64rem) {
+    .cta__grid {
+      grid-template-columns: minmax(20rem, 0.82fr) minmax(0, 1.18fr);
+    }
+  }
+}
+
+@mixin home-cta-visual {
+  .cta__eyebrow {
+    margin: 0;
+    color: var(--accent);
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .cta {
+    padding-block: var(--section-padding);
+  }
+
+  .cta {
+    background: linear-gradient(90deg, var(--button-primary-bg) 0 39%, var(--surface) 39% 100%);
+  }
+
+  .cta__grid {
+    display: grid;
+    align-items: start;
+  }
+
+  .cta__title {
+    margin-top: 1.1rem;
+    color: var(--brand-strong);
+    font-size: var(--type-section-title);
+    letter-spacing: var(--tracking-heading-2);
+  }
+
+  .cta__desc {
+    color: color-mix(in srgb, var(--brand-strong) 80%, transparent);
+  }
+
+  .cta__contact {
+    border-top: 1px solid rgba(11, 37, 44, 0.34);
+  }
+
+  .cta__contact-item {
+    border-color: rgba(11, 37, 44, 0.34);
+  }
+
+  .cta__card {
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--card);
+  }
+
+  @media (max-width: 67.99rem) {
+    .cta {
+      background: var(--surface);
+    }
+
+    .cta__intro {
+      max-width: 48rem;
+      padding: clamp(2rem, 5vw, 3.5rem);
+      background: var(--button-primary-bg);
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .cta__card {
+      box-shadow: 0.75rem 0.75rem 0 var(--brand-strong);
+    }
+  }
+
+  .cta {
+    background: linear-gradient(90deg, var(--button-primary-bg) 0 42%, var(--surface) 42% 100%);
+  }
+
+  .cta__desc,
+  .cta__contact-item {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .cta__eyebrow {
+    font-size: 0.72rem;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.075em;
+  }
+
+  .cta {
+    background: linear-gradient(90deg, var(--button-primary-bg) 0 36%, var(--surface) 36% 100%);
+  }
+
+  .cta__grid {
+    grid-template-columns: minmax(18rem, 0.72fr) minmax(0, 1.28fr);
+    gap: clamp(3rem, 6vw, 5.75rem);
+  }
+
+  .cta__title {
+    font-weight: var(--weight-bold);
+    line-height: 1.08;
+  }
+
+  .cta__card {
+    box-shadow: 0.6rem 0.6rem 0 var(--brand-strong);
+  }
+
+  @media (max-width: 47.99rem) {
+    .cta {
+      background: var(--surface);
+    }
+
+    .cta__intro {
+      padding: 1.5rem;
+      background: var(--button-primary-bg);
+    }
+  }
+
+  @media (max-width: 67.99rem) {
+    .cta__grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}

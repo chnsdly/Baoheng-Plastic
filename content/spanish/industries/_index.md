@@ -67,4 +67,15 @@ cta:
   text: "Indique la mercancía, la carga, el tamaño, la temperatura, la estantería, la cantidad y el destino. Le recomendaremos productos adecuados y confirmaremos los datos que falten antes de cotizar."
   url: "/selection-support/"
   label: "Solicitar ayuda de selección"
+
+detail:
+  risks_eyebrow: "Riesgos habituales"
+  risks_title: "Qué suele fallar"
+  factors_eyebrow: "Factores de selección"
+  factors_title: "Datos a confirmar antes de cotizar"
+  recommended_eyebrow: "Productos recomendados"
+  recommended_title: "Familias de producto para evaluar primero"
+  recommended_intro: "Consulte estas familias de productos y confirme después el modelo según la carga, las dimensiones, el material, la temperatura, la estantería y el equipo de manipulación."
+  resources_eyebrow: "Recursos de compra"
+  resources_title: "Guías útiles para esta aplicación"
 ---

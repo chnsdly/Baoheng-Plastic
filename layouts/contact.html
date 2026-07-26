@@ -1,23 +1,25 @@
 {{ define "main" }}
+  {{ $hero := .Params.hero }}
+  {{ $form := .Params.form }}
   <section class="contact-hero">
     <div class="container contact-hero__grid contact-hero__grid--balanced">
       <div class="contact-hero__intro">
         <p class="contact-hero__eyebrow">{{ .Site.Params.company_name }}</p>
-        <h1 class="contact-hero__headline">{{ i18n "contact_hero_title" }}</h1>
-        <p class="contact-hero__lede">{{ i18n "contact_hero_text" }}</p>
+        <h1 class="contact-hero__headline">{{ $hero.title }}</h1>
+        <p class="contact-hero__lede">{{ $hero.text }}</p>
 
-        <div class="contact-hero__steps" role="list" aria-label="{{ i18n "contact_steps_label" }}">
+        <div class="contact-hero__steps" role="list" aria-label="{{ $hero.steps_label }}">
           <div class="contact-hero__step" role="listitem">
             <span>1</span>
-            <p>{{ i18n "contact_step_1" }}</p>
+            <p>{{ index $hero.steps 0 }}</p>
           </div>
           <div class="contact-hero__step" role="listitem">
             <span>2</span>
-            <p>{{ i18n "contact_step_2" }}</p>
+            <p>{{ index $hero.steps 1 }}</p>
           </div>
           <div class="contact-hero__step" role="listitem">
             <span>3</span>
-            <p>{{ i18n "contact_step_3" }}</p>
+            <p>{{ index $hero.steps 2 }}</p>
           </div>
         </div>
       </div>
@@ -25,12 +27,17 @@
       <div class="contact-hero__form">
         <div class="contact-form-card">
           <div class="contact-form-card__header">
-            <p class="contact-panel__eyebrow">{{ i18n "contact_form_eyebrow" }}</p>
-            <h2>{{ i18n "factory_quote" }}</h2>
-            <p>{{ i18n "contact_form_note" }}</p>
+            <p class="contact-panel__eyebrow">{{ $form.eyebrow }}</p>
+            <h2>{{ $form.title }}</h2>
+            <p>{{ $form.note }}</p>
           </div>
           <div class="contact-form-card__body">
-            {{ partial "lead-form.html" (dict "type" "contact" "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+            {{ partial "lead-form.html" (dict
+              "type" "contact"
+              "page" .
+              "sitekey" .Site.Params.turnstile_site_key
+              "message_placeholder" $form.message_placeholder
+            ) }}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ $products := .RegularPagesRecursive.ByTitle }}
   {{ $productsRoot := .Site.GetPage "section" "products" }}
+  {{ $listingCopy := $productsRoot.Params.listing }}
   {{ $families := slice }}
   {{ with $productsRoot }}{{ $families = .Sections.ByWeight }}{{ end }}
   {{ $contactURL := "/contact/" | relLangURL }}
@@ -10,13 +11,13 @@
     <div class="container product-listing__inner">
       <header class="product-listing__hero">
         <div class="product-listing__hero-copy">
-          <p class="product-listing__eyebrow">{{ i18n "product_listing_eyebrow" }}</p>
+          <p class="product-listing__eyebrow">{{ $listingCopy.eyebrow }}</p>
           <h1 class="product-listing__title">{{ .Title }}</h1>
           <p class="product-listing__intro">
             {{ with .Description }}
               {{ . }}
             {{ else }}
-              {{ i18n "product_listing_intro" }}
+              {{ $listingCopy.intro }}
             {{ end }}
           </p>
         </div>

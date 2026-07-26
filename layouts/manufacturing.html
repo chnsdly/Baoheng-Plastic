@@ -8,8 +8,8 @@
           <h1 class="manufacturing-hero__title">{{ $hero.title | default .Title }}</h1>
           {{ with $hero.text }}<p class="manufacturing-hero__text">{{ . }}</p>{{ end }}
           <div class="manufacturing-hero__actions">
-            {{ with $hero.cta_url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.cta_label | default (i18n "request_quote") }}</a>{{ end }}
-            {{ with $hero.secondary_url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.secondary_label | default (i18n "browse_products") }}</a>{{ end }}
+            {{ with $hero.cta_url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.cta_label }}</a>{{ end }}
+            {{ with $hero.secondary_url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $hero.secondary_label }}</a>{{ end }}
           </div>
         </div>
         <div class="manufacturing-hero__media">
@@ -144,7 +144,7 @@
             {{ with .title }}<h2>{{ . }}</h2>{{ end }}
             {{ with .text }}<p>{{ . }}</p>{{ end }}
           </div>
-          {{ with .url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $.Params.rfq.label | default (i18n "submit_request") }}</a>{{ end }}
+          {{ with .url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $.Params.rfq.label }}</a>{{ end }}
         </div>
       </section>
     {{ end }}

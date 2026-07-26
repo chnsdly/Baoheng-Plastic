@@ -1,0 +1,54 @@
+// Theme-level document and typography rules.
+
+html {
+  scroll-padding-top: calc(var(--height-header) + 1rem);
+}
+
+body {
+  min-width: 20rem;
+  background-color: var(--surface);
+  background-image: linear-gradient(rgba(11, 37, 44, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 37, 44, 0.028) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  color: var(--secondary);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--brand-strong);
+}
+
+main {
+  overflow: clip;
+}
+
+.section-head h2 {
+  color: var(--brand-strong);
+  text-wrap: balance;
+}
+
+.prose h2 {
+  padding-top: 1rem;
+  border-top: 2px solid var(--brand-strong);
+}
+
+body {
+  background-image: none;
+}
+
+.container {
+  padding-inline: clamp(1.25rem, 3vw, 2rem);
+}
+
+h1,
+h2 {
+  font-weight: var(--weight-bold);
+}
+
+.section-head h1,
+.section-head h2 {
+  font-weight: var(--weight-bold);
+  line-height: 1.08;
+  letter-spacing: var(--tracking-heading-2);
+}

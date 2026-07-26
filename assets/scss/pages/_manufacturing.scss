@@ -4,13 +4,15 @@
 }
 
 .manufacturing-hero {
-  padding-block: var(--section-padding);
-  background: var(--surface);
+  padding-block: clamp(3.75rem, 6vw, 5.5rem);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(90deg, var(--surface) 0 58%, var(--surface-alt) 58% 100%);
 }
 
 .manufacturing-hero__grid {
   display: grid;
-  gap: space(3);
+  grid-template-columns: minmax(0, 0.95fr) minmax(24rem, 1.05fr);
+  gap: clamp(3rem, 5vw, 5rem);
   align-items: center;
 }
 
@@ -21,20 +23,22 @@
 }
 
 .manufacturing-hero__title {
-  max-width: 22ch;
-  margin: 0;
-  color: var(--on-surface);
+  max-width: 28ch;
+  margin: 1rem 0 0;
+  color: var(--brand-strong);
   font-size: var(--type-page-title);
-  line-height: var(--line-tight);
   font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-heading-1);
+  line-height: 1.04;
   text-wrap: balance;
 }
 
 .manufacturing-hero__text {
-  max-width: 64ch;
+  max-width: 58ch;
   margin: 0;
-  color: var(--secondary);
-  font-size: var(--type-body);
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 .manufacturing-hero__actions {
@@ -47,11 +51,16 @@
   position: relative;
   display: grid;
   gap: space(1);
+  margin: 0 0.55rem 0.55rem 0;
+  padding: 0.65rem;
+  border: 0;
+  background: var(--card);
+  box-shadow: 0.6rem 0.6rem 0 var(--button-primary-bg);
 }
 
 .manufacturing-hero__media > img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border: var(--border);
   border-radius: var(--radius-l);
@@ -62,6 +71,8 @@
 .manufacturing-hero__facts {
   display: grid;
   gap: space(1);
+  border-radius: 0;
+  background: transparent;
 }
 
 .manufacturing-fact {
@@ -69,10 +80,10 @@
   gap: space(0.25);
   padding: space(1.05);
   border: var(--border);
-  border-left: 3px solid var(--green);
-  border-radius: var(--radius-l);
+  border-left: 2px solid var(--button-primary-bg);
+  border-radius: 0;
   background: var(--card);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
 }
 
 .manufacturing-fact strong {
@@ -90,31 +101,38 @@
   padding-block: var(--section-padding);
 }
 
-.manufacturing-section--processes,
+.manufacturing-section--processes {
+  border-block: var(--border);
+  background: transparent;
+}
+
+.manufacturing-section--materials,
 .manufacturing-section--quality,
 .manufacturing-section--split-blocks {
+  border-block: 1px solid var(--line);
   background: var(--card);
-  border-block: var(--border);
 }
 
 .manufacturing-process-grid {
   display: grid;
-  gap: var(--grid-gap);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .manufacturing-process-card {
   display: grid;
   grid-template-rows: auto 1fr;
-  border: var(--border);
-  border-radius: var(--radius-l);
-  background: var(--surface);
+  border: 0;
+  border-bottom: 2px solid var(--brand-strong);
+  border-radius: 0;
+  background: var(--card);
   box-shadow: none;
   overflow: hidden;
 }
 
 .manufacturing-process-card img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
@@ -128,14 +146,15 @@
   margin: 0;
   color: var(--on-surface);
   font-size: var(--type-card-title);
-  line-height: var(--line-tight);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
 }
 
 .manufacturing-process-card__body p {
   margin: 0;
   color: var(--secondary);
-  font-size: var(--type-body-sm);
-  line-height: var(--line-normal);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .manufacturing-section--materials .industrial-card {
@@ -189,6 +208,14 @@
   line-height: var(--line-normal);
 }
 
+.manufacturing-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  border: 0;
+  background: transparent;
+}
+
 .manufacturing-rfq {
   padding-block: clamp(3.25rem, 5vw, 4.75rem);
   background: var(--brand-strong);
@@ -210,7 +237,7 @@
 
 .manufacturing-rfq p {
   margin: space(0.75) 0 0;
-  color: color-mix(in srgb, var(--on-brand) 76%, transparent);
+  color: rgba(255, 254, 251, 0.68);
 }
 
 .manufacturing-rfq .button {
@@ -230,18 +257,10 @@
 }
 
 @include mq-up(tablet) {
-  .manufacturing-hero__grid {
-    grid-template-columns: minmax(0, 0.95fr) minmax(24rem, 1.05fr);
-  }
-
   .manufacturing-hero__facts {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-top: -3rem;
     padding-inline: space(1);
-  }
-
-  .manufacturing-process-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .manufacturing-quality__grid {
@@ -263,5 +282,40 @@
 
   .manufacturing-rfq .button {
     justify-self: end;
+  }
+}
+
+@media (max-width: 67.99rem) {
+  .manufacturing-hero {
+    background: var(--surface);
+  }
+
+  .manufacturing-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .manufacturing-hero__media {
+    max-width: 44rem;
+  }
+
+  .manufacturing-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .manufacturing-process-grid,
+  .manufacturing-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .manufacturing-hero__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .manufacturing-hero__actions .button {
+    width: 100%;
   }
 }

@@ -2,7 +2,7 @@
   <section class="basic-page">
     <article class="container container--narrow">
       <header class="basic-page__header">
-        <p class="page-eyebrow">{{ .Section | humanize | default (i18n "overview") }}</p>
+        <p class="page-eyebrow">{{ .Params.eyebrow | default (.Section | humanize) }}</p>
         <h1 class="basic-page__title">{{ .Title }}</h1>
       </header>
 

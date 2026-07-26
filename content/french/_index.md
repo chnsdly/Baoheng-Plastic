@@ -127,6 +127,13 @@ factory:
     - title: "Contrôle, emballage et export"
       content: "Les contrôles par lot, l'inspection visuelle, les essais de gerbage, le plan d'emballage et les photos de chargement vous permettent de vérifier la commande avant son départ."
       image: "images/home/factory-3.jpg"
+
+contact_cta:
+  eyebrow: "Contact"
+  title: "Parlez-nous de votre besoin"
+  description: "Indiquez le type de produit, la charge, les dimensions, la quantité, l’utilisation et la date de livraison souhaitée."
+  form_title: "Contacter notre équipe"
+  message_placeholder: "Indiquez le modèle, la quantité, l'application, la charge ou les exigences de dimensions."
 ---
 
 Baoheng Plastic fabrique des palettes en plastique, caisses-palettes, bacs, grands conteneurs et poubelles pour le stockage, la logistique, l'agroalimentaire, l'industrie et la collecte des déchets.

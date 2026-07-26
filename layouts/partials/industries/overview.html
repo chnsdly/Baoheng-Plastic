@@ -71,7 +71,7 @@
           {{ with .title }}<h2>{{ . }}</h2>{{ end }}
           {{ with .text }}<p>{{ . }}</p>{{ end }}
         </div>
-        {{ with .url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $.Params.cta.label | default (i18n "product_selection_support") }}</a>{{ end }}
+        {{ with .url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $.Params.cta.label }}</a>{{ end }}
       </section>
     </div>
   {{ end }}

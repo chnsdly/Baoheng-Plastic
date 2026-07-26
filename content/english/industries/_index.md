@@ -67,4 +67,15 @@ cta:
   text: "Send the goods, load, size, temperature, rack details, quantity, and destination. We will recommend suitable products and confirm any missing information before quoting."
   url: "/selection-support/"
   label: "Get selection support"
+
+detail:
+  risks_eyebrow: "Common risks"
+  risks_title: "What usually goes wrong"
+  factors_eyebrow: "Selection factors"
+  factors_title: "Details to confirm before quoting"
+  recommended_eyebrow: "Recommended products"
+  recommended_title: "Product families to evaluate first"
+  recommended_intro: "Review these product families, then confirm the final model against the load, dimensions, material, temperature, rack, and handling equipment."
+  resources_eyebrow: "Buying resources"
+  resources_title: "Useful guides for this application"
 ---

@@ -9,6 +9,7 @@
   {{ $seriesLabel := $series }}
   {{ $hasSeriesSection := false }}
   {{ $productsRoot := .Site.GetPage "section" "products" }}
+  {{ $singleCopy := $productsRoot.Params.single }}
   {{ $families := slice }}
   {{ with $productsRoot }}{{ $families = .Sections.ByWeight }}{{ end }}
   {{ $pageURL := .RelPermalink }}
@@ -24,7 +25,7 @@
     {{ end }}
   {{ end }}
   {{ if and (not $hasSeriesSection) (ne .Site.Language.Lang "en") }}{{ $seriesLabel = "" }}{{ end }}
-  {{ $detailHeading := .Params.detail_heading | default (i18n "product_detail_heading") }}
+  {{ $detailHeading := .Params.detail_heading | default $singleCopy.detail_heading }}
   {{ $detailIntro := (index $productCopy "detailsMarkdown") | default .Params.detail_intro | default .Params.detail_description }}
   {{ $dimensions := index $specs "dimensions" }}
   {{ $dynamicLoad := index $specs "dynamic_load" }}
@@ -78,7 +79,7 @@
                 {{ with $rackingLoad }}<div><dt>{{ i18n "racking_load" }}</dt><dd>{{ . }}</dd></div>{{ end }}
                 {{ with $material }}<div><dt>{{ i18n "material" }}</dt><dd>{{ . }}</dd></div>{{ end }}
               </dl>
-              <p class="product-hero__load-note">{{ i18n "product_load_note" }}</p>
+              <p class="product-hero__load-note">{{ $singleCopy.load_note }}</p>
             {{ end }}
 
             <div class="product-hero__actions">
@@ -90,7 +91,7 @@
 
         <section class="product-details" aria-labelledby="product-details-heading">
           <div class="product-details__header">
-            <p class="product-details__eyebrow">{{ i18n "selection_notes" }}</p>
+            <p class="product-details__eyebrow">{{ $singleCopy.selection_eyebrow }}</p>
             <h2 class="product-details__title" id="product-details-heading">{{ $detailHeading }}</h2>
             {{ with $detailIntro }}
               <div class="product-details__intro">{{ . | markdownify }}</div>
@@ -175,21 +176,27 @@
 
           <section class="product-inquiry" id="product-inquiry">
             <div class="product-inquiry__copy">
-              <p class="product-inquiry__eyebrow">{{ i18n "product_inquiry" }}</p>
-              <h2 class="product-inquiry__title">{{ .Params.form_title | default (i18n "product_form_title") }}</h2>
+              <p class="product-inquiry__eyebrow">{{ $singleCopy.inquiry_eyebrow }}</p>
+              <h2 class="product-inquiry__title">{{ .Params.form_title | default $singleCopy.form_title }}</h2>
               <p class="product-inquiry__description">
-                {{ (index $productCopy "form") | default .Params.form_description | default (i18n "product_form_description") }}
+                {{ (index $productCopy "form") | default .Params.form_description | default $singleCopy.form_description }}
               </p>
             </div>
-            {{ partial "lead-form.html" (dict "type" "product-detail" "slug" .File.ContentBaseName "page" . "sitekey" .Site.Params.turnstile_site_key) }}
+            {{ partial "lead-form.html" (dict
+              "type" "product-detail"
+              "slug" .File.ContentBaseName
+              "page" .
+              "sitekey" .Site.Params.turnstile_site_key
+              "message_placeholder" $singleCopy.message_placeholder
+            ) }}
           </section>
         </section>
 
         {{ if gt (len $related) 0 }}
           <section class="product-related" aria-labelledby="related-products-title">
             <div class="product-related__header">
-              <p class="product-related__eyebrow">{{ i18n "related_products" }}</p>
-              <h2 class="product-related__title" id="related-products-title">{{ i18n "compare_similar_models" }}</h2>
+              <p class="product-related__eyebrow">{{ $singleCopy.related_eyebrow }}</p>
+              <h2 class="product-related__title" id="related-products-title">{{ $singleCopy.related_title }}</h2>
             </div>
             <div class="product-related__grid">
               {{ range first 3 $related.ByTitle }}

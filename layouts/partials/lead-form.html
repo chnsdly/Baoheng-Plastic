@@ -6,7 +6,7 @@
 {{ $intent := .intent | default "" }}
 {{ $industry := .industry | default "" }}
 {{ $product := .product | default "" }}
-{{ $messagePlaceholder := .message_placeholder | default (i18n "contact_form_message_placeholder") }}
+{{ $messagePlaceholder := .message_placeholder }}
 
 <form action="/api/lead" method="POST" class="lead-form">
   <input type="hidden" name="form_type" value="{{ $type }}">
@@ -30,7 +30,7 @@
   <label>{{ i18n "company" }}<input name="company" autocomplete="organization"></label>
   <label>{{ i18n "country_required" }}<input name="country" required autocomplete="country-name"></label>
   <label>{{ i18n "contact_form_phone_required" }}<input name="phone" type="tel" required autocomplete="tel"></label>
-  <label class="lead-form__message">{{ i18n "contact_form_message" }}<textarea name="message" rows="4" placeholder="{{ $messagePlaceholder }}"></textarea></label>
+  <label class="lead-form__message">{{ i18n "contact_form_message" }}<textarea name="message" rows="4"{{ with $messagePlaceholder }} placeholder="{{ . }}"{{ end }}></textarea></label>
 
   <!-- Turnstile -->
   <div class="cf-turnstile" data-sitekey="{{ $sitekey }}"></div>

@@ -1,5 +1,6 @@
 ---
 title: "隐私政策"
+eyebrow: "概览"
 description: "宝恒塑业如何收集、使用并保护通过网站和询盘表单提交的个人信息。"
 robots: "noindex, follow"
 ---

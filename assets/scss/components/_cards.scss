@@ -1,0 +1,15 @@
+/* Shared card primitive used across page templates. */
+
+.card {
+  padding: var(--panel-padding);
+  border: var(--border);
+  border-radius: var(--radius-l);
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 47.99rem) {
+  .card {
+    padding: space(1.25);
+  }
+}

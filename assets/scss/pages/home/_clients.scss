@@ -1,0 +1,190 @@
+// 首页客户展示区块。
+// 规则归属于本组件；main.scss 仍按原层叠时点输出基础层与视觉层。
+
+@mixin home-clients-base {
+  .clients {
+    padding-block: var(--section-padding);
+    border-top: var(--border);
+    background: var(--brand-tint);
+    color: var(--on-surface);
+  }
+
+  .clients__inner {
+    display: grid;
+    gap: var(--section-gap);
+  }
+
+  .clients__header {
+    margin: 0;
+  }
+
+  .clients__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--grid-gap);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .clients__item {
+    min-width: 0;
+    margin: 0;
+    border: var(--border);
+    background: var(--card);
+    overflow: hidden;
+  }
+
+  .clients__item:first-child {
+    grid-column: span 2;
+  }
+
+  .clients__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  @include mq-up(tablet) {
+    .clients__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .clients__item:first-child {
+      grid-column: span 2;
+    }
+  }
+
+  @include mq-up(laptop) {
+    .clients__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .clients__item:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+}
+
+@mixin home-clients-visual {
+  .clients {
+    padding-block: var(--section-padding);
+  }
+
+  .clients {
+    background: var(--brand-strong);
+    color: var(--on-brand);
+  }
+
+  .clients__inner {
+    display: grid;
+    align-items: center;
+  }
+
+  .clients .home-section-head {
+    display: block;
+    margin: 0;
+  }
+
+  .clients .home-section-head__title {
+    color: var(--on-brand);
+  }
+
+  .clients .home-section-head__desc {
+    color: rgba(255, 254, 251, 0.64);
+  }
+
+  .clients__grid {
+    display: grid;
+  }
+
+  .clients__item {
+    border: 0;
+    border-radius: 0;
+    background: #15373e;
+    overflow: hidden;
+  }
+
+  .clients__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  @media (max-width: 67.99rem) {
+    .clients__grid {
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .clients__item,
+    .clients__item:first-child {
+      width: 100%;
+    }
+  }
+
+  .clients__inner {
+    grid-template-columns: minmax(17rem, 0.72fr) minmax(0, 1.28fr);
+    gap: clamp(3rem, 6vw, 5.5rem);
+  }
+
+  .clients__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .clients__item {
+    min-height: 0;
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 1;
+  }
+
+  .clients__item:first-child {
+    min-height: 0;
+    aspect-ratio: 1;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .clients__image {
+    filter: saturate(0.86) contrast(1.03);
+  }
+
+  @media (max-width: 67.99rem) {
+    .clients__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .clients__inner {
+      gap: 2.5rem;
+    }
+
+    .clients__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .clients__item,
+    .clients__item:first-child {
+      grid-column: auto;
+      grid-row: auto;
+      aspect-ratio: 4 / 3;
+    }
+  }
+
+  .clients .home-section-head__body {
+    max-width: none;
+  }
+
+  @media (max-width: 67.99rem) {
+    .clients__inner {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}

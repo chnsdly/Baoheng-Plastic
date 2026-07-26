@@ -1,61 +1,140 @@
-.factory {
-  padding-block: var(--section-padding);
-  background: var(--surface);
-}
+// 首页工厂实力区块。
+// 规则归属于本组件；main.scss 仍按原层叠时点输出基础层与视觉层。
 
-.factory__inner {
-  display: grid;
-  gap: var(--section-gap);
-}
+@mixin home-factory-base {
+  .factory {
+    padding-block: var(--section-padding);
+    background: var(--surface);
+  }
 
-.factory__grid {
-  display: grid;
-  gap: var(--grid-gap);
-}
+  .factory__inner {
+    display: grid;
+    gap: var(--section-gap);
+  }
 
-.factory__item {
-  display: grid;
-  min-width: 0;
-  border: var(--border);
-  border-top: var(--border-strong);
-  border-radius: var(--radius-s);
-  background: var(--card);
-  box-shadow: none;
-  overflow: hidden;
-}
-
-.factory__image {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-}
-
-.factory__content {
-  display: grid;
-  gap: space(0.75);
-  padding: var(--card-padding);
-}
-
-.factory__item-title {
-  margin: 0;
-  color: var(--on-surface);
-  font-size: var(--type-card-title);
-  line-height: var(--line-tight);
-  font-weight: var(--weight-bold);
-}
-
-.factory__item-text {
-  margin: 0;
-  color: var(--secondary);
-  font-size: var(--type-body-sm);
-}
-
-@include mq-up(tablet) {
   .factory__grid {
+    display: grid;
+    gap: var(--grid-gap);
+  }
+
+  .factory__item {
+    display: grid;
+    min-width: 0;
+    border: var(--border);
+    border-top: var(--border-strong);
+    border-radius: var(--radius-s);
+    background: var(--card);
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .factory__image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .factory__content {
+    display: grid;
+    gap: space(0.75);
+    padding: var(--card-padding);
+  }
+
+  .factory__item-title {
+    margin: 0;
+    color: var(--on-surface);
+    font-size: var(--type-card-title);
+    line-height: var(--line-tight);
+    font-weight: var(--weight-bold);
+  }
+
+  .factory__item-text {
+    margin: 0;
+    color: var(--secondary);
+    font-size: var(--type-body-sm);
+  }
+
+  @include mq-up(tablet) {
+    .factory__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .factory__item {
+      grid-template-rows: auto 1fr;
+    }
+  }
+}
+
+@mixin home-factory-visual {
+  .factory {
+    padding-block: var(--section-padding);
+  }
+
+  .factory {
+    background: var(--surface);
+  }
+
+  .factory__grid {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .factory__item {
-    grid-template-rows: auto 1fr;
+    border: 0;
+    border-bottom: 4px solid var(--brand-strong);
+    border-radius: 0;
+    background: var(--card);
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .factory__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    filter: saturate(0.82) contrast(1.04);
+  }
+
+  .factory__item-title {
+    margin: 0;
+    color: var(--brand-strong);
+  }
+
+  .factory__item-text {
+    color: var(--muted);
+  }
+
+  @media (max-width: 47.99rem) {
+    .factory__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .factory__item-text {
+      font-size: 0.95rem;
+    }
+  }
+
+  .factory__grid {
+    gap: 1rem;
+  }
+
+  .factory__item {
+    border-bottom-width: 2px;
+  }
+
+  .factory__content {
+    padding: 1.4rem;
+  }
+
+  .factory__item-title {
+    font-size: 1.22rem;
+    font-weight: var(--weight-semibold);
+    line-height: 1.2;
+  }
+
+  .factory__item-text {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }

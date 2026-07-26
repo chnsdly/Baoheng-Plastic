@@ -1,19 +1,20 @@
 {{ define "main" }}
   {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
   {{ $root := .Site.GetPage "section" "resources" }}
+  {{ $listingCopy := $root.Params.listing }}
   {{ $sections := cond (and $root (gt (len $root.Sections) 0)) $root.Sections slice }}
 
   <section class="resources-listing">
     <div class="container resources-listing__inner">
       <header class="resources-listing__hero">
         <div>
-          <p class="resources-listing__eyebrow">{{ i18n "resources_eyebrow" }}</p>
+          <p class="resources-listing__eyebrow">{{ $listingCopy.eyebrow }}</p>
           <h1 class="resources-listing__title">{{ .Title }}</h1>
           <p class="resources-listing__intro">
             {{ with .Description }}
               {{ . }}
             {{ else }}
-              {{ i18n "resources_intro" }}
+              {{ $listingCopy.intro }}
             {{ end }}
           </p>
         </div>
@@ -75,8 +76,8 @@
             </div>
           {{ else }}
             <div class="resources-empty">
-              <h2>{{ i18n "content_preparation" }}</h2>
-              <p>{{ i18n "resources_empty_text" }}</p>
+              <h2>{{ $listingCopy.empty_title }}</h2>
+              <p>{{ $listingCopy.empty_text }}</p>
               <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "submit_request" }}</a>
             </div>
           {{ end }}

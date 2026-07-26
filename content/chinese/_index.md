@@ -127,6 +127,13 @@ factory:
     - title: "检验、包装与出口"
       content: "通过批次检查、外观检验、堆码测试、包装方案、出货照片和装柜记录，您可以在产品离厂前核对订单。"
       image: "images/home/factory-3.jpg"
+
+contact_cta:
+  eyebrow: "联系我们"
+  title: "告诉我们您的需求"
+  description: "请说明产品类型、载重、尺寸、数量、用途和所需交货时间。"
+  form_title: "联系我们的团队"
+  message_placeholder: "请填写产品型号、数量、使用场景、承重或尺寸要求。"
 ---
 
 宝恒塑业为仓储、物流、食品加工、制造业和环卫项目生产塑料托盘、围板箱、周转筐、大型容器和垃圾桶。

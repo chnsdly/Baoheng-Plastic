@@ -42,15 +42,6 @@
   border-color: transparent;
 }
 
-.site-footer .button--ghost {
-  color: color-mix(in srgb, var(--on-brand) 82%, transparent);
-}
-
-.site-footer .button--ghost:hover,
-.site-footer .button--ghost:focus-visible {
-  color: var(--on-brand);
-}
-
 .site-footer__grid {
   display: grid;
   gap: space(2);

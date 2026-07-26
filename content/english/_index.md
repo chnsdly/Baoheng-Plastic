@@ -127,6 +127,13 @@ factory:
     - title: "Inspection, packing, and export"
       content: "Batch checks, visual inspection, stacking tests, packing plans, shipment photos, and container loading records help you verify the order before it leaves the factory."
       image: "images/home/factory-3.jpg"
+
+contact_cta:
+  eyebrow: "Contact"
+  title: "Tell us what you need"
+  description: "Share the product type, load, dimensions, quantity, application, and required delivery date."
+  form_title: "Contact our team"
+  message_placeholder: "Tell us the product model, quantity, application, load, or size requirements."
 ---
 
 Baoheng Plastic manufactures plastic pallets, pallet boxes, crates, bulk containers, and waste bins for warehousing, logistics, food handling, manufacturing, and municipal use.

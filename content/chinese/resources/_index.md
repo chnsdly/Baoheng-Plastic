@@ -16,4 +16,17 @@ sections:
   - label: "FAQ"
     url: "/resources/faq/"
     summary: "产品选择、承重、材料、定制和运输等常见问题解答。"
+
+listing:
+  eyebrow: "采购资源"
+  intro: "塑料托盘、卡板箱、周转筐和容器的采购指南、规格清单、质量说明和项目案例。"
+  empty_title: "内容整理中"
+  empty_text: "如需选择塑料托盘或周转容器，请提交要求，我们会协助确认型号。"
+single:
+  eyebrow: "采购指南"
+  cta_eyebrow: "需要选型帮助？"
+  cta_title: "提交采购要求"
+  cta_text: "请提供产品类型、数量、载重、尺寸和用途，我们会协助确认适用型号。"
+  related_eyebrow: "继续阅读"
+  related_title: "相关采购内容"
 ---

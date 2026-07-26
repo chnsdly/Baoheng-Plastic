@@ -1,0 +1,181 @@
+// 首页通用区块标题。
+// 规则归属于本组件；main.scss 仍按原层叠时点输出基础层与视觉层。
+
+@mixin home-shared-base {
+  .home-section-head {
+    display: grid;
+    gap: space(1.2);
+    text-align: center;
+  }
+
+  .home-section-head__body {
+    display: grid;
+    gap: space(0.9);
+    max-width: 64rem;
+    margin-inline: auto;
+  }
+
+  .home-section-head__title {
+    margin: 0;
+    color: var(--on-surface);
+    font-size: clamp(1.75rem, 2.5vw, 2.35rem);
+    line-height: var(--line-tight);
+    font-weight: var(--section-title-weight);
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  .home-section-head__desc {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--secondary);
+    line-height: var(--line-normal);
+  }
+
+  .home-section-head__actions {
+    justify-self: end;
+  }
+
+  .home-section-head__link {
+    display: inline-flex;
+    align-items: center;
+    gap: space(0.45);
+    color: var(--brand);
+    font-size: var(--type-body-sm);
+    font-weight: var(--weight-bold);
+    line-height: 1.3;
+    text-decoration: none;
+    text-underline-offset: 0.2em;
+    white-space: nowrap;
+  }
+
+  .home-section-head__link::after {
+    content: "";
+    width: 0.45rem;
+    height: 0.45rem;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg);
+  }
+
+  .home-section-head__link:hover {
+    color: var(--brand-strong);
+    text-decoration: underline;
+  }
+
+  .home-section-head__link:focus-visible {
+    color: var(--brand-strong);
+    text-decoration: underline;
+  }
+}
+
+@mixin home-shared-visual {
+  .home-section-head__title {
+    color: var(--brand-strong);
+    text-wrap: balance;
+  }
+
+  .home-section-head__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: var(--brand);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  :lang(zh) .home-section-head__link {
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .home-section-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+  }
+
+  .home-section-head__title {
+    margin: 0;
+    font-size: var(--type-section-title);
+  }
+
+  @media (max-width: 47.99rem) {
+    .home-section-head {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+  }
+
+  .home-section-head__title {
+    font-weight: var(--weight-bold);
+    line-height: 1.08;
+    letter-spacing: var(--tracking-heading-2);
+  }
+
+  .home-section-head__desc {
+    max-width: 58ch;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .home-section-head__link {
+    min-height: 2.25rem;
+    font-size: 0.78rem;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.035em;
+  }
+
+  .home-section-head {
+    gap: clamp(1.5rem, 3vw, 3rem);
+    margin-bottom: var(--section-gap);
+  }
+
+  .home-section-head__desc {
+    margin-top: 0.8rem;
+  }
+
+  .home-section-head {
+    text-align: left;
+  }
+
+  .home-section-head__body {
+    width: 100%;
+    max-width: 68rem;
+    margin-inline: 0;
+  }
+
+  .home-section-head__title {
+    max-width: none;
+  }
+
+  .home-section-head__desc {
+    margin: 0.8rem 0 0;
+  }
+
+  .home-section-head__link::after {
+    content: "\2192";
+    width: auto;
+    height: auto;
+    border: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1;
+    transform: none;
+    transition: transform var(--transition-base);
+  }
+
+  .home-section-head__link:hover::after,
+  .home-section-head__link:focus-visible::after {
+    transform: translateX(0.22rem);
+  }
+
+  @media (max-width: 47.99rem) {
+    .home-section-head__body {
+      max-width: none;
+    }
+  }
+}

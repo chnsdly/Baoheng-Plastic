@@ -1,39 +1,56 @@
 ﻿@import "abstracts/tokens";
 @import "abstracts/mixins";
 
+@import "pages/home/shared";
+@import "pages/home/hero";
+@import "pages/home/usps";
+@import "pages/home/factory";
+@import "pages/home/industries";
+@import "pages/home/clients";
+@import "pages/home/featured";
+@import "pages/home/cta";
+
 @import "base/reset";
 @import "base/base";
 
 @import "layout/header";
 @import "layout/footer";
 
-@import "pages/home/hero";
-@import "pages/home/usps";
-@import "pages/home/factory";
+@include home-usps-base;
+@include home-factory-base;
 
 @import "components/buttons";
 @import "components/breadcrumb";
-@import "typography";
-@import "home/industries";
-@import "home/clients";
-@import "home/featured";
-@import "home/cta";
-@import "products";
-@import "industries-list";
-@import "manufacturing";
-@import "resources-list";
-@import "resources-single";
-@import "selection-support";
-@import "form";
-@import "contact";
-@import "about";
+@import "base/typography";
+@include home-industries-base;
+@include home-clients-base;
+@include home-shared-base;
+@include home-featured-base;
+@include home-cta-base;
+@import "components/cards";
+@import "pages/industries/list";
+@import "pages/manufacturing";
+@import "pages/selection-support";
+@import "components/forms";
+@import "pages/contact";
+@import "pages/about";
 
-@import "direction-one-core";
-@import "direction-one-home";
-@import "direction-one-catalog";
-@import "direction-one-pages";
-@import "direction-one-responsive";
-@import "direction-one-polish";
-@import "direction-one-calibration";
-@import "direction-one-qa";
+@import "abstracts/theme";
+@import "base/theme";
+@import "components/content-theme";
+@import "components/controls-theme";
+@import "layout/header-theme";
+@import "layout/footer-theme";
+@include home-hero;
+@include home-cta-visual;
+@include home-shared-visual;
+@include home-usps-visual;
+@include home-featured-visual;
+@include home-factory-visual;
+@include home-industries-visual;
+@include home-clients-visual;
+@import "pages/products/list";
+@import "pages/products/single";
+@import "pages/resources/list";
+@import "pages/resources/single";
 

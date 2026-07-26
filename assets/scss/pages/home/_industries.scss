@@ -1,0 +1,322 @@
+// 首页行业应用区块。
+// 规则归属于本组件；main.scss 仍按原层叠时点输出基础层与视觉层。
+
+@mixin home-industries-base {
+  .industries {
+    padding-block: var(--section-padding);
+    background: var(--card);
+    color: var(--on-surface);
+    border-block: var(--border);
+  }
+
+  .industries__inner {
+    display: grid;
+    gap: var(--section-gap);
+  }
+
+  .industries__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: var(--grid-gap);
+  }
+
+  .industries__item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-width: 0;
+    border: var(--border);
+    border-radius: var(--radius-s);
+    background: var(--card);
+    box-shadow: none;
+    overflow: hidden;
+    transition: box-shadow var(--transition-base),
+    border-color var(--transition-base);
+  }
+
+  .industries__item:hover {
+    border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
+    box-shadow: none;
+  }
+
+  .industries__item:focus-within {
+    border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
+    box-shadow: none;
+  }
+
+  .industries__media {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--surface-alt);
+  }
+
+  .industries__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-base);
+  }
+
+  .industries__item:hover .industries__image {
+    transform: none;
+  }
+
+  .industries__item:focus-within .industries__image {
+    transform: none;
+  }
+
+  .industries__content {
+    display: grid;
+    align-content: start;
+    gap: space(0.75);
+    padding: var(--card-padding);
+  }
+
+  .industries__content h3 {
+    margin: 0;
+    font-size: var(--type-card-title);
+    line-height: var(--line-tight);
+  }
+
+  .industries__content h3 a {
+    text-decoration: none;
+  }
+
+  .industries__content p {
+    margin: 0;
+    color: var(--secondary);
+    font-size: var(--type-body-sm);
+  }
+
+  .industries__content .text-link {
+    align-self: end;
+    margin-top: auto;
+    padding-top: space(0.35);
+  }
+
+  .industries__products {
+    display: grid;
+    gap: space(0.25);
+    padding-top: space(0.8);
+    border-top: var(--border);
+  }
+
+  .industries__products span {
+    color: var(--green);
+    font-size: var(--type-eyebrow);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  @include mq-up(laptop) {
+    .industries__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+@mixin home-industries-visual {
+  .industries {
+    padding-block: var(--section-padding);
+  }
+
+  .industries__products span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--accent);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .industries {
+    border-block: 1px solid var(--line);
+    background: var(--card);
+  }
+
+  .industries__inner {
+    display: grid;
+  }
+
+  .industries .home-section-head {
+    display: block;
+  }
+
+  .industries__grid {
+    display: grid;
+  }
+
+  .industries__item {
+    display: grid;
+    padding-block: 1.35rem;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .industries__media {
+    background: var(--surface-alt);
+    overflow: hidden;
+  }
+
+  .industries__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    filter: saturate(0.8) contrast(1.04);
+  }
+
+  .industries__content {
+    padding: 0;
+  }
+
+  .industries__content h3 {
+    margin: 0;
+    color: var(--brand-strong);
+  }
+
+  .industries__content > p {
+    margin-top: 0.55rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 67.99rem) {
+    .industries__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .industries__products span {
+    font-size: 0.7rem;
+  }
+
+  .industries__inner {
+    display: block;
+  }
+
+  .industries .home-section-head {
+    display: grid;
+    margin-bottom: var(--section-gap);
+  }
+
+  .industries__grid {
+    background: var(--line);
+  }
+
+  .industries__item {
+    grid-template-rows: 1fr;
+    align-items: stretch;
+    border: 0;
+    background: var(--card);
+    overflow: hidden;
+  }
+
+  .industries__media {
+    width: 100%;
+    min-width: 0;
+    align-self: stretch;
+  }
+
+  .industries__image {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .industries__content {
+    min-width: 0;
+  }
+
+  .industries__content h3 {
+    line-height: 1.18;
+  }
+
+  @media (max-width: 67.99rem) {
+    .industries__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .industries__inner {
+    display: grid;
+    grid-template-columns: minmax(17rem, 0.62fr) minmax(0, 1.38fr);
+    gap: clamp(3.5rem, 7vw, 6.5rem);
+    align-items: start;
+  }
+
+  .industries .home-section-head {
+    position: sticky;
+    top: calc(var(--height-header) + 2rem);
+    display: block;
+    margin: 0;
+  }
+
+  .industries .home-section-head__actions {
+    margin-top: 1.5rem;
+  }
+
+  .industries__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 0;
+    border-top: 2px solid var(--brand-strong);
+    background: transparent;
+  }
+
+  .industries__item {
+    grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+  }
+
+  .industries__media {
+    min-height: 7rem;
+    aspect-ratio: 4 / 3;
+  }
+
+  .industries__content h3 {
+    font-size: 1.12rem;
+    font-weight: var(--weight-semibold);
+  }
+
+  .industries__content > p,
+  .industries__products {
+    font-size: 0.86rem;
+    line-height: 1.52;
+  }
+
+  @media (max-width: 67.99rem) {
+    .industries__inner {
+      display: block;
+    }
+
+    .industries .home-section-head {
+      position: static;
+      display: grid;
+      margin-bottom: var(--section-gap);
+    }
+
+    .industries .home-section-head__actions {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .industries__item {
+      grid-template-columns: 6.25rem minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .industries__media {
+      min-height: 6.25rem;
+    }
+  }
+
+  .industries .home-section-head__body {
+    max-width: none;
+  }
+}

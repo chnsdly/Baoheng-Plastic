@@ -1,0 +1,73 @@
+// Theme design tokens and shared custom properties.
+
+:root {
+  --brand: #08758b;
+  --brand-strong: #0b252c;
+  --brand-soft: #dfe6e3;
+  --brand-tint: #edf1ef;
+  --accent: #ba481d;
+  --accent-strong: #963713;
+  --accent-soft: #f3d8c8;
+  --button-primary-bg: #ee712f;
+  --button-primary-bg-hover: #0b252c;
+  --button-primary-text: #0b252c;
+  --on-brand: #fffefb;
+  --surface: #f3f1ea;
+  --surface-alt: #dfe6e3;
+  --surface-strong: #c6d0cd;
+  --card: #fffefb;
+  --on-surface: #0b252c;
+  --secondary: #254950;
+  --muted: #5b6e71;
+  --line: #c6d0cd;
+  --line-strong: #9eb0ac;
+  --radius-s: 0;
+  --radius-m: 0;
+  --radius-l: 0;
+  --radius: 0;
+  --shadow-lg: 1rem 1rem 0 #ee712f;
+  --shadow-soft: 0 0 0 1px rgba(11, 37, 44, 0.06);
+  --shadow-inset: none;
+  --focus-outline: 3px solid #ee712f;
+  --focus-offset: 4px;
+  --container: 78rem;
+  --container-wide: 86rem;
+  --container-narrow: 50rem;
+  --height-header: 6.5rem;
+  --section-padding: clamp(4rem, 5.7vw, 5.5rem);
+  --section-gap: clamp(2rem, 3.2vw, 3rem);
+  --grid-gap: clamp(1rem, 1.8vw, 1.4rem);
+  --panel-padding: clamp(1.5rem, 2.7vw, 2.35rem);
+  --card-padding: clamp(1.25rem, 2vw, 1.75rem);
+  --text-3xl: clamp(1.75rem, 2.4vw, 2.15rem);
+  --text-4xl: clamp(2.05rem, 2.8vw, 2.6rem);
+  --text-5xl: clamp(2.55rem, 3.6vw, 3.35rem);
+  --text-6xl: clamp(3.05rem, 4.1vw, 3.65rem);
+  --type-section-title: var(--text-4xl);
+  --type-page-title: var(--text-5xl);
+  --type-hero-title: var(--text-6xl);
+  --line-tight: 1.06;
+  --tracking-heading-1: -0.032em;
+  --tracking-heading-2: -0.022em;
+  --tracking-heading-3: -0.012em;
+  --section-title-weight: var(--weight-bold);
+  --shadow: 0 0.8rem 2rem rgba(11, 37, 44, 0.08);
+  --shadow-hover: 0 1rem 2.2rem rgba(11, 37, 44, 0.11);
+}
+
+@media (max-width: 67.99rem) {
+  :root {
+    --height-header: 6.15rem;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  :root {
+    --height-header: 5.95rem;
+    --section-padding: clamp(3.25rem, 11vw, 4rem);
+    --section-gap: clamp(1.75rem, 7vw, 2.4rem);
+    --type-section-title: clamp(1.9rem, 8vw, 2.25rem);
+    --type-page-title: clamp(2.25rem, 10vw, 2.75rem);
+    --type-hero-title: clamp(2.45rem, 10.8vw, 3rem);
+  }
+}

@@ -127,6 +127,13 @@ factory:
     - title: "Inspección, embalaje y exportación"
       content: "Los controles por lote, la inspección visual, las pruebas de apilado, el plan de embalaje y las fotos de carga permiten verificar el pedido antes de que salga de fábrica."
       image: "images/home/factory-3.jpg"
+
+contact_cta:
+  eyebrow: "Contacto"
+  title: "Cuéntenos qué necesita"
+  description: "Indique el tipo de producto, la carga, las dimensiones, la cantidad, el uso y la fecha de entrega necesaria."
+  form_title: "Contacte con nuestro equipo"
+  message_placeholder: "Indique el modelo, la cantidad, la aplicación, la carga o los requisitos de tamaño."
 ---
 
 Baoheng Plastic fabrica palets de plástico, cajas palet, cajas, contenedores a granel y contenedores de residuos para almacenes, logística, alimentación, industria y recogida de residuos.

@@ -76,7 +76,7 @@
         ) }}
       </a>
 
-      <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" | default "Primary navigation" }}'>
+      <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" }}'>
         <ul class="site-header__nav-list" role="list">
           {{- range $menu -}}
             {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
@@ -190,7 +190,7 @@
       </nav>
 
       <div class="site-header__actions">
-        <button class="site-header__menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" | default "Open menu" }}' data-menu-toggle>
+        <button class="site-header__menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" }}' data-menu-toggle>
           <span class="site-header__menu-toggle-box" aria-hidden="true">
             <span class="site-header__menu-toggle-line"></span>
             <span class="site-header__menu-toggle-line"></span>
@@ -207,7 +207,7 @@
         <button class="site-header__back" type="button" data-menu-back hidden aria-label="{{ i18n "back" }}">
           <span aria-hidden="true">&lt;</span>
         </button>
-        <p class="site-header__mobile-title" data-menu-title>{{ i18n "menu" | default "Menu" }}</p>
+        <p class="site-header__mobile-title" data-menu-title>{{ i18n "menu" }}</p>
       </div>
 
       <div class="site-header__mobile-panels">
@@ -270,13 +270,13 @@
     const languageSwitcher = header.querySelector('[data-language-switcher]');
     if (!toggle || !drawer) return;
 
-    const openMenuLabel = {{ printf "%q" (i18n "open_menu" | default "Open menu") | safeJS }};
-    const closeMenuLabel = {{ printf "%q" (i18n "close_menu" | default "Close menu") | safeJS }};
+    const openMenuLabel = {{ printf "%q" (i18n "open_menu") | safeJS }};
+    const closeMenuLabel = {{ printf "%q" (i18n "close_menu") | safeJS }};
     const desktopQuery = window.matchMedia('(min-width: 80rem)');
     let isDrawerOpen = false;
 
     const menuTitles = {
-      root: {{ printf "%q" (i18n "menu" | default "Menu") | safeJS }},
+      root: {{ printf "%q" (i18n "menu") | safeJS }},
       {{ range $menu }}{{ if .HasChildren }}{{ printf "%q" (.Identifier | default (.Name | anchorize)) | safeJS }}: {{ printf "%q" .Name | safeJS }},{{ end }}{{ end }}
     };
 

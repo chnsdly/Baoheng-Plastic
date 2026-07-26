@@ -1,5 +1,6 @@
 ---
 title: "Politique de confidentialité"
+eyebrow: "Vue d'ensemble"
 description: "Comment Baoheng Plastic collecte, utilise et protège les informations personnelles transmises via le site et les formulaires."
 robots: "noindex, follow"
 ---

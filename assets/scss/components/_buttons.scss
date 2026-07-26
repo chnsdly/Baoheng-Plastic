@@ -49,20 +49,3 @@
   color: var(--brand-strong);
   border-color: color-mix(in srgb, var(--brand) 58%, var(--line));
 }
-
-.button--ghost {
-  min-height: 2.65rem;
-  padding-inline: 0;
-  background: transparent;
-  color: var(--brand);
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.button--ghost:hover,
-.button--ghost:focus-visible {
-  background: transparent;
-  color: var(--brand-strong);
-  border-color: transparent;
-  box-shadow: none;
-}

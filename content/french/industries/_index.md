@@ -67,4 +67,15 @@ cta:
   text: "Indiquez la marchandise, la charge, les dimensions, la température, le rayonnage, la quantité et la destination. Nous vous proposerons des produits adaptés et vérifierons les informations manquantes avant le devis."
   url: "/selection-support/"
   label: "Demander une aide à la sélection"
+
+detail:
+  risks_eyebrow: "Risques courants"
+  risks_title: "Ce qui pose souvent problème"
+  factors_eyebrow: "Facteurs de sélection"
+  factors_title: "Détails à confirmer avant devis"
+  recommended_eyebrow: "Produits recommandés"
+  recommended_title: "Familles de produits à évaluer en priorité"
+  recommended_intro: "Consultez ces familles de produits, puis confirmez le modèle selon la charge, les dimensions, la matière, la température, le rayonnage et les équipements de manutention."
+  resources_eyebrow: "Ressources d'achat"
+  resources_title: "Guides utiles pour cette application"
 ---

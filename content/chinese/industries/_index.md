@@ -67,4 +67,15 @@ cta:
   text: "请发送货物、载重、尺寸、温度、货架信息、数量和目的港。我们会推荐合适的产品，并在报价前确认缺失信息。"
   url: "/selection-support/"
   label: "获取选型支持"
+
+detail:
+  risks_eyebrow: "常见风险"
+  risks_title: "现场通常会出什么问题"
+  factors_eyebrow: "选型确认项"
+  factors_title: "报价前需要确认的细节"
+  recommended_eyebrow: "推荐产品"
+  recommended_title: "优先评估的产品系列"
+  recommended_intro: "可先查看以下产品类别，最终型号仍需根据载重、尺寸、材料、温度、货架和搬运设备确认。"
+  resources_eyebrow: "采购资源"
+  resources_title: "适用于该场景的实用指南"
 ---

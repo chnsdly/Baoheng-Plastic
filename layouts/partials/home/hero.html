@@ -1,19 +1,18 @@
 {{- $hero := .Params.home_hero -}}
-{{- $images := $hero.images | default (slice "images/hero_bg_1.webp") -}}
-{{- $image := index $images 0 -}}
+{{- $image := index $hero.images 0 -}}
 {{- $primary := $hero.primary_cta -}}
 {{- $secondary := $hero.secondary_cta -}}
 
 <section class="home-hero">
   <div class="container container--wide home-hero__inner">
     <div class="home-hero__content">
-      <p class="home-hero__eyebrow">{{ $hero.eyebrow | default (i18n "home_hero_eyebrow") }}</p>
-      <h1 class="home-hero__title">{{ $hero.title | default (i18n "home_hero_title") }}</h1>
-      <p class="home-hero__text">{{ $hero.description | default (i18n "home_hero_text") }}</p>
+      <p class="home-hero__eyebrow">{{ $hero.eyebrow }}</p>
+      <h1 class="home-hero__title">{{ $hero.title }}</h1>
+      <p class="home-hero__text">{{ $hero.description }}</p>
 
       <div class="home-hero__actions">
-        {{ with $primary.url }}<a class="button" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $primary.label | default (i18n "request_quote") }}</a>{{ else }}<a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a>{{ end }}
-        {{ with $secondary.url }}<a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" .) }}">{{ $secondary.label | default (i18n "browse_products") }}</a>{{ else }}<a class="button button--secondary" href="{{ "/products/" | relLangURL }}">{{ i18n "browse_products" }}</a>{{ end }}
+        <a class="button" href="{{ partial "menu-url.html" (dict "url" $primary.url) }}">{{ $primary.label }}</a>
+        <a class="button button--secondary" href="{{ partial "menu-url.html" (dict "url" $secondary.url) }}">{{ $secondary.label }}</a>
       </div>
 
     </div>

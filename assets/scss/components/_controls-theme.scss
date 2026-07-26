@@ -1,0 +1,111 @@
+// Theme styling for shared interactive controls.
+
+.button {
+  border: 1px solid var(--button-primary-bg);
+  border-radius: 0;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  transition: background-color var(--transition-base), border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+.button:hover,
+.button:focus-visible {
+  border-color: var(--button-primary-bg-hover);
+  background: var(--button-primary-bg-hover);
+  color: var(--on-brand);
+  transform: translateY(-2px);
+}
+
+.button--secondary {
+  border-color: var(--brand-strong);
+  background: transparent;
+  color: var(--brand-strong);
+}
+
+.button--secondary:hover,
+.button--secondary:focus-visible {
+  border-color: var(--brand-strong);
+  background: var(--brand-strong);
+  color: var(--on-brand);
+}
+
+.breadcrumb {
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+}
+
+.lead-form {
+  gap: 1rem;
+}
+
+.lead-form label {
+  color: var(--brand-strong);
+  font-weight: var(--weight-bold);
+}
+
+.lead-form :is(input, textarea, select) {
+  border: 0;
+  border-bottom: 1px solid var(--secondary);
+  border-radius: 0;
+  background: var(--brand-tint);
+  color: var(--brand-strong);
+  box-shadow: none;
+}
+
+.lead-form :is(input, textarea, select):focus {
+  border-color: var(--brand);
+  outline: 2px solid color-mix(in srgb, var(--brand) 28%, transparent);
+  outline-offset: 1px;
+}
+
+.lead-form button[type="submit"] {
+  border-radius: 0;
+  background: var(--button-primary-bg);
+  color: var(--brand-strong);
+  font-weight: var(--weight-extrabold);
+}
+
+.lead-form button[type="submit"]:hover,
+.lead-form button[type="submit"]:focus-visible {
+  background: var(--brand-strong);
+  color: var(--on-brand);
+}
+
+.wa-fab__btn {
+  border-radius: 0 !important;
+  box-shadow: 0.55rem 0.55rem 0 rgba(11, 37, 44, 0.28) !important;
+}
+
+.breadcrumb {
+  color: var(--secondary);
+}
+
+.lead-form label {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.lead-form :is(input, select) {
+  min-height: 3.15rem;
+}
+
+.lead-form textarea {
+  min-height: 8.5rem;
+}
+
+.button {
+  min-height: 3rem;
+  padding: 0.82rem 1.25rem;
+  font-size: 0.88rem;
+  font-weight: var(--weight-bold);
+}
+
+.breadcrumb {
+  font-size: 0.86rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
