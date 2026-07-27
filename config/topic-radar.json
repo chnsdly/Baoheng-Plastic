@@ -70,6 +70,36 @@
       "coverage": "Material-handling, warehousing, automation, and logistics developments",
       "priority": "medium",
       "enabled": true
+    },
+    {
+      "id": "unece-ctu-code",
+      "name": "UNECE — Cargo Transport Units Code",
+      "source_url": "https://unece.org/transport/documents/standards/ctu-code",
+      "source_type": "standards_body",
+      "jurisdiction": "International",
+      "coverage": "Container packing, load distribution, securing, condensation, responsibility, and receiving practices",
+      "priority": "medium",
+      "enabled": true
+    },
+    {
+      "id": "pmmi-business-intelligence",
+      "name": "PMMI — Packaging and Processing Research",
+      "source_url": "https://www.pmmi.org/business-intelligence",
+      "source_type": "industry_body",
+      "jurisdiction": "International packaging industry",
+      "coverage": "Original packaging-machinery, processing, automation, and operator research affecting pallet interfaces",
+      "priority": "medium",
+      "enabled": true
+    },
+    {
+      "id": "gcca-cold-chain",
+      "name": "Global Cold Chain Alliance — Resources",
+      "source_url": "https://www.gcca.org/resources/",
+      "source_type": "industry_body",
+      "jurisdiction": "International cold chain",
+      "coverage": "Cold-storage, refrigerated-logistics, hygiene, facility, and operating research affecting pallet decisions",
+      "priority": "medium",
+      "enabled": true
     }
   ],
   "open_query_lanes": [

@@ -308,14 +308,16 @@
       showPanel('root');
     };
 
-    const openDrawer = () => {
+    const openDrawer = (moveFocus = false) => {
       closeLanguageSwitcher();
       drawer.hidden = false;
       setDrawerState(true);
-      requestAnimationFrame(() => {
-        const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
-        if (firstControl) firstControl.focus();
-      });
+      if (moveFocus) {
+        requestAnimationFrame(() => {
+          const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
+          if (firstControl) firstControl.focus();
+        });
+      }
     };
 
     toggle.addEventListener('click', (event) => {
@@ -324,7 +326,9 @@
       if (isDrawerOpen) {
         closeDrawer();
       } else {
-        openDrawer();
+        // Keep touch focus on the toggle. Moving it inside the transformed
+        // drawer can make iOS Safari drop the drawer's painted layer.
+        openDrawer(event.detail === 0);
       }
     });
 

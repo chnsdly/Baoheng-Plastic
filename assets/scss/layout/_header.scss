@@ -246,6 +246,26 @@ legacy header CTA and icon controls.site-header__language {
   transform: translateY(0);
 }
 
+// iOS Safari can stop painting an interactive drawer when a transformed
+// descendant sits inside a sticky, backdrop-filtered ancestor.
+@media (max-width: 79.99rem) {
+  .site-header[data-menu-state] {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .site-header__drawer,
+  .site-header[data-menu-state="open"] .site-header__drawer {
+    transform: none;
+  }
+
+  .site-header__drawer {
+    transition:
+      opacity 180ms ease,
+      visibility 180ms ease;
+  }
+}
+
 .site-header__drawer-inner {
   height: 100%;
   display: flex;
