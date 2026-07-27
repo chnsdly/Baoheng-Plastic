@@ -1,67 +1,11 @@
 {{- $menu := .Site.Menus.main -}}
-{{- $languages := .Site.Languages -}}
-{{- $languageShortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
-{{- $currentLanguageShort := default (upper .Site.Language.Lang) (index $languageShortLabels .Site.Language.Lang) -}}
-{{- $recommendURL := "/selection-support/" | relLangURL -}}
-{{- $contactPhone := .Site.Params.contact_phone -}}
-{{- $contactEmail := .Site.Params.contact_email -}}
-{{- $phoneHref := printf "tel:%s" (replaceRE "[^\\d+]" "" $contactPhone) -}}
-{{- $emailHref := printf "mailto:%s" $contactEmail -}}
+{{- $headerScript := resources.Get "js/site-navigation.js" -}}
+{{- if hugo.IsProduction -}}
+  {{- $headerScript = $headerScript | minify | fingerprint -}}
+{{- end -}}
 
-<header class="site-header" data-site-header>
-  <div class="site-header__utility">
-    <div class="site-header__utility-inner">
-      <p class="site-header__utility-copy">{{ i18n "header_utility_copy" }}</p>
-
-      <div class="site-header__utility-actions">
-        <div class="site-header__utility-contact" aria-label="{{ i18n "contact_us" }}">
-          {{- with $contactPhone }}
-            <a class="site-header__utility-contact-link" href="{{ $phoneHref | safeURL }}">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6.6 3.6 9.4 7.7 7.8 9.4c1 2.2 2.8 4 5 5l1.7-1.6 4.1 2.8-.8 3.4c-.2.8-.9 1.4-1.8 1.4C9.1 20.4 3.6 14.9 3.6 8c0-.9.6-1.6 1.4-1.8l1.6-.4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
-              </svg>
-              <span>{{ . }}</span>
-            </a>
-          {{- end }}
-          {{- with $contactEmail }}
-            <a class="site-header__utility-contact-link site-header__utility-contact-link--email" href="{{ $emailHref | safeURL }}">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3.5" y="5.5" width="17" height="13" rx="1" fill="none" stroke="currentColor" stroke-width="1.6" />
-                <path d="m4.5 7 7.5 5.5L19.5 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" />
-              </svg>
-              <span>{{ . }}</span>
-            </a>
-          {{- end }}
-        </div>
-
-      {{- if gt (len $languages) 1 -}}
-        <details class="site-header__language" data-language-switcher>
-          <summary class="site-header__utility-language" aria-label="{{ i18n "language" }}: {{ $currentLanguageShort }}">
-            <span class="site-header__language-label">{{ $currentLanguageShort }}</span>
-            <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
-            </svg>
-          </summary>
-          <ul class="site-header__language-list" role="list">
-            {{- range $languages -}}
-              {{- $langCode := .Lang -}}
-              {{- $target := "/" | relURL -}}
-              {{- range $.Site.Sites -}}
-                {{- if eq .Language.Lang $langCode -}}{{- $target = .Home.RelPermalink -}}{{- end -}}
-              {{- end -}}
-              {{- range $.AllTranslations -}}
-                {{- if eq .Language.Lang $langCode -}}{{- $target = .RelPermalink -}}{{- end -}}
-              {{- end -}}
-              <li>
-                <a class="site-header__language-link{{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}" href="{{ $target }}" lang="{{ .Locale | default .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="true"{{ end }}>{{ .Label | default .Lang }}</a>
-              </li>
-            {{- end -}}
-          </ul>
-        </details>
-      {{- end }}
-      </div>
-    </div>
-  </div>
+<header class="site-header" data-site-header data-menu-state="closed">
+  {{ partial "navigation/utility-bar.html" . }}
 
   <div class="site-header__bar">
     <div class="site-header__inner">
@@ -76,290 +20,44 @@
         ) }}
       </a>
 
-      <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" }}'>
-        <ul class="site-header__nav-list" role="list">
-          {{- range $menu -}}
-            {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
-            {{- $isMega := in (slice "products" "industries") $itemKey -}}
-            {{- $isCurrent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
-            {{- $menuHref := partial "menu-url.html" (dict "url" .URL) -}}
-            <li class="site-header__nav-item{{ if .HasChildren }} site-header__nav-item--has-children{{ end }}{{ if $isMega }} site-header__nav-item--mega{{ end }}">
-              <a class="site-header__nav-link{{ if $isCurrent }} site-header__nav-link--current{{ end }}" href="{{ $menuHref }}"{{ if $isCurrent }} aria-current="page"{{ end }}>
-                <span>{{ .Name }}</span>
-                {{- if .HasChildren -}}
-                  <svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
-                  </svg>
-                {{- end -}}
-              </a>
+      {{ partial "navigation/desktop-menu.html" (dict "page" . "menu" $menu) }}
 
-              {{- if .HasChildren -}}
-                {{- if eq $itemKey "products" -}}
-                  <div class="site-header__mega site-header__mega--products" aria-label="{{ .Name }}">
-                    <div class="container container--wide site-header__mega-inner">
-                      <div class="site-header__mega-lede">
-                        <p class="site-header__mega-eyebrow">{{ i18n "header_mega_eyebrow" }}</p>
-                        <h2 class="site-header__mega-title">{{ i18n "header_mega_title" }}</h2>
-                        <p class="site-header__mega-text">{{ i18n "header_mega_text" }}</p>
-                        <a class="button button--secondary site-header__mega-cta" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ i18n "view_all_products" }}</a>
-                      </div>
-
-                      <div class="site-header__mega-columns">
-                        <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ i18n "header_mega_pallets" }}</p>
-                          <ul class="site-header__mega-list" role="list">
-                            {{- range .Children -}}
-                              {{- if in .URL "/pallets/" -}}
-                                <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
-                              {{- end -}}
-                            {{- end -}}
-                          </ul>
-                        </div>
-
-                        <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ i18n "header_mega_boxes" }}</p>
-                          <ul class="site-header__mega-list" role="list">
-                            {{- range .Children -}}
-                              {{- if or (in .URL "/pallet-boxes-bulk-containers/") (in .URL "/crates-boxes-totes/") -}}
-                                <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
-                              {{- end -}}
-                            {{- end -}}
-                          </ul>
-                        </div>
-
-                        <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ i18n "header_mega_support" }}</p>
-                          <ul class="site-header__mega-list" role="list">
-                            {{- range .Children -}}
-                              {{- if in .URL "/waste-bins/" -}}
-                                <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
-                              {{- end -}}
-                            {{- end -}}
-                            <li><a class="site-header__mega-link" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a></li>
-                            <li><a class="site-header__mega-link" href="{{ "/contact/" | relLangURL }}">{{ i18n "contact_us" }}</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                {{- else if eq $itemKey "industries" -}}
-                  <div class="site-header__mega site-header__mega--industries" aria-label="{{ .Name }}">
-                    <div class="container container--wide site-header__mega-inner">
-                      <div class="site-header__mega-lede">
-                        <p class="site-header__mega-eyebrow">{{ i18n "header_industries_mega_eyebrow" }}</p>
-                        <h2 class="site-header__mega-title">{{ i18n "header_industries_mega_title" }}</h2>
-                        <p class="site-header__mega-text">{{ i18n "header_industries_mega_text" }}</p>
-                        <a class="button button--secondary site-header__mega-cta" href="{{ $recommendURL }}">{{ i18n "product_selection_support" }}</a>
-                      </div>
-
-                      <div class="site-header__mega-columns site-header__mega-columns--industries">
-                        <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ i18n "header_industries_mega_core" }}</p>
-                          <ul class="site-header__mega-list" role="list">
-                            {{- range first 4 .Children -}}
-                              <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
-                            {{- end -}}
-                          </ul>
-                        </div>
-
-                        <div class="site-header__mega-column">
-                          <p class="site-header__mega-heading">{{ i18n "header_industries_mega_specialized" }}</p>
-                          <ul class="site-header__mega-list" role="list">
-                            {{- range after 4 .Children -}}
-                              <li><a class="site-header__mega-link" href="{{ partial "menu-url.html" (dict "url" .URL) }}">{{ .Name }}</a></li>
-                            {{- end -}}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                {{- else -}}
-                  <ul class="site-header__submenu" role="list">
-                    {{- range .Children -}}
-                      {{- $childCurrent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
-                      <li class="site-header__submenu-item">
-                        <a class="site-header__submenu-link{{ if $childCurrent }} site-header__submenu-link--current{{ end }}" href="{{ partial "menu-url.html" (dict "url" .URL) }}"{{ if $childCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a>
-                      </li>
-                    {{- end -}}
-                  </ul>
-                {{- end -}}
-              {{- end -}}
-            </li>
-          {{- end -}}
-        </ul>
-      </nav>
-
-      <div class="site-header__actions">
-        <button class="site-header__menu-toggle" type="button" aria-expanded="false" aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" }}' data-menu-toggle>
-          <span class="site-header__menu-toggle-box" aria-hidden="true">
-            <span class="site-header__menu-toggle-line"></span>
-            <span class="site-header__menu-toggle-line"></span>
-            <span class="site-header__menu-toggle-line"></span>
-          </span>
-        </button>
-      </div>
+      <button
+        class="site-header__menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-navigation"
+        aria-label="{{ i18n "open_menu" }}"
+        data-menu-toggle
+      >
+        <span class="site-header__menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
     </div>
   </div>
 
-  <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
-    <div class="site-header__drawer-inner">
-      <div class="site-header__mobile-head">
-        <button class="site-header__back" type="button" data-menu-back hidden aria-label="{{ i18n "back" }}">
-          <span aria-hidden="true">&lt;</span>
-        </button>
-        <p class="site-header__mobile-title" data-menu-title>{{ i18n "menu" }}</p>
+  <div
+    class="mobile-navigation"
+    id="mobile-navigation"
+    data-menu-drawer
+    data-close-label="{{ i18n "close_menu" }}"
+    hidden
+  >
+    <div class="mobile-navigation__inner">
+      <div class="mobile-navigation__heading">
+        <p>{{ i18n "menu" }}</p>
+        <span>{{ i18n "header_mobile_menu_hint" }}</span>
       </div>
-
-      <div class="site-header__mobile-panels">
-        <div class="site-header__mobile-panel site-header__mobile-panel--root" data-menu-panel="root">
-          <ul class="site-header__mobile-list" role="list">
-            {{- range $menu -}}
-              {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
-              {{- $mobileHref := partial "menu-url.html" (dict "url" .URL) -}}
-              <li class="site-header__mobile-item">
-                {{- if .HasChildren -}}
-                  <button class="site-header__mobile-link site-header__mobile-link--submenu" type="button" data-menu-open="{{ $itemKey }}">
-                    <span>{{ .Name }}</span>
-                    <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
-                    </svg>
-                  </button>
-                {{- else -}}
-                  <a class="site-header__mobile-link" href="{{ $mobileHref }}">{{ .Name }}</a>
-                {{- end -}}
-              </li>
-            {{- end -}}
-          </ul>
-
-        </div>
-
-        {{- range $menu -}}
-          {{- $itemKey := .Identifier | default (.Name | anchorize) -}}
-          {{- $panelHref := partial "menu-url.html" (dict "url" .URL) -}}
-          {{- $panelLabel := printf "%s %s" (i18n "all_menu_prefix") .Name -}}
-          {{- if .HasChildren -}}
-            <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
-              <ul class="site-header__mobile-list" role="list">
-                <li class="site-header__mobile-item">
-                  <a class="site-header__mobile-link site-header__mobile-link--strong" href="{{ $panelHref }}">{{ $panelLabel }}</a>
-                </li>
-                {{- range .Children -}}
-                  {{- $childHref := partial "menu-url.html" (dict "url" .URL) -}}
-                  <li class="site-header__mobile-item">
-                    <a class="site-header__mobile-link" href="{{ $childHref }}">{{ .Name }}</a>
-                  </li>
-                {{- end -}}
-              </ul>
-            </div>
-          {{- end -}}
-        {{- end -}}
-      </div>
+      {{ partial "navigation/mobile-menu.html" (dict "page" . "menu" $menu) }}
     </div>
   </div>
 </header>
 
-<script>
-  (() => {
-    const header = document.querySelector('[data-site-header]');
-    if (!header) return;
-
-    const toggle = header.querySelector('[data-menu-toggle]');
-    const drawer = header.querySelector('[data-menu-drawer]');
-    const backButton = header.querySelector('[data-menu-back]');
-    const title = header.querySelector('[data-menu-title]');
-    const languageSwitcher = header.querySelector('[data-language-switcher]');
-    if (!toggle || !drawer) return;
-
-    const openMenuLabel = {{ printf "%q" (i18n "open_menu") | safeJS }};
-    const closeMenuLabel = {{ printf "%q" (i18n "close_menu") | safeJS }};
-    const desktopQuery = window.matchMedia('(min-width: 80rem)');
-    let isDrawerOpen = false;
-
-    const menuTitles = {
-      root: {{ printf "%q" (i18n "menu") | safeJS }},
-      {{ range $menu }}{{ if .HasChildren }}{{ printf "%q" (.Identifier | default (.Name | anchorize)) | safeJS }}: {{ printf "%q" .Name | safeJS }},{{ end }}{{ end }}
-    };
-
-    const closeLanguageSwitcher = () => {
-      if (languageSwitcher) languageSwitcher.removeAttribute('open');
-    };
-
-    const showPanel = (panelName) => {
-      header.querySelectorAll('[data-menu-panel]').forEach((panel) => {
-        panel.hidden = panel.dataset.menuPanel !== panelName;
-      });
-      if (backButton) backButton.hidden = panelName === 'root';
-      if (title) title.textContent = menuTitles[panelName] || menuTitles.root;
-    };
-
-    const setDrawerState = (open) => {
-      isDrawerOpen = open;
-      header.dataset.menuState = open ? 'open' : 'closed';
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.setAttribute('aria-label', open ? closeMenuLabel : openMenuLabel);
-      document.body.classList.toggle('is-menu-open', open);
-    };
-
-    const closeDrawer = (restoreFocus = true) => {
-      const wasOpen = isDrawerOpen;
-      setDrawerState(false);
-      drawer.hidden = true;
-      if (restoreFocus && wasOpen) requestAnimationFrame(() => toggle.focus());
-      showPanel('root');
-    };
-
-    const openDrawer = (moveFocus = false) => {
-      closeLanguageSwitcher();
-      drawer.hidden = false;
-      setDrawerState(true);
-      if (moveFocus) {
-        requestAnimationFrame(() => {
-          const firstControl = drawer.querySelector('[data-menu-panel="root"] a, [data-menu-panel="root"] button');
-          if (firstControl) firstControl.focus();
-        });
-      }
-    };
-
-    toggle.addEventListener('click', (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      if (isDrawerOpen) {
-        closeDrawer();
-      } else {
-        // Keep touch focus on the toggle. Moving it inside the transformed
-        // drawer can make iOS Safari drop the drawer's painted layer.
-        openDrawer(event.detail === 0);
-      }
-    });
-
-    header.querySelectorAll('[data-menu-open]').forEach((button) => {
-      button.addEventListener('click', () => showPanel(button.dataset.menuOpen));
-    });
-
-    if (backButton) backButton.addEventListener('click', () => showPanel('root'));
-
-    document.addEventListener('click', (event) => {
-      if (!languageSwitcher || !languageSwitcher.hasAttribute('open')) return;
-      if (!languageSwitcher.contains(event.target)) closeLanguageSwitcher();
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key !== 'Escape') return;
-      closeLanguageSwitcher();
-      if (isDrawerOpen) closeDrawer();
-    });
-
-    const handleDesktopQueryChange = (event) => {
-      if (event.matches) closeDrawer(false);
-    };
-    if (desktopQuery.addEventListener) {
-      desktopQuery.addEventListener('change', handleDesktopQueryChange);
-    } else {
-      desktopQuery.addListener(handleDesktopQueryChange);
-    }
-
-    showPanel('root');
-    closeDrawer();
-  })();
-</script>
-
+<script
+  src="{{ $headerScript.RelPermalink }}"
+  defer
+  {{- if and hugo.IsProduction $headerScript.Data.Integrity }} integrity="{{ $headerScript.Data.Integrity }}" crossorigin="anonymous"{{ end -}}
+></script>

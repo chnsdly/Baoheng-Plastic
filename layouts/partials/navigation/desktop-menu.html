@@ -1,0 +1,55 @@
+{{- $page := .page -}}
+
+<nav class="desktop-navigation" aria-label="{{ i18n "primary_navigation" }}">
+  <ul class="desktop-navigation__list">
+    {{- range .menu }}
+      {{- $key := .Identifier | default (.Name | anchorize) -}}
+      {{- $isMega := in (slice "products" "industries") $key -}}
+      {{- $isExactCurrent := $page.IsMenuCurrent "main" . -}}
+      {{- $isSectionCurrent := or $isExactCurrent ($page.HasMenuCurrent "main" .) -}}
+      {{- $href := partial "menu-url.html" (dict "url" .URL) -}}
+      <li
+        class="desktop-navigation__item{{ if .HasChildren }} desktop-navigation__item--parent{{ end }}{{ if $isMega }} desktop-navigation__item--mega{{ end }}{{ if $isSectionCurrent }} desktop-navigation__item--current{{ end }}"
+        {{- if .HasChildren }} data-desktop-menu-item{{ end -}}
+      >
+        <div class="desktop-navigation__entry">
+          <a href="{{ $href }}"{{ if $isExactCurrent }} aria-current="page"{{ end }}>
+            {{ .Name }}
+          </a>
+          {{- if .HasChildren }}
+            <button
+              class="desktop-navigation__disclosure"
+              type="button"
+              aria-expanded="false"
+              aria-controls="desktop-menu-{{ $key }}"
+              aria-label="{{ i18n "header_open_submenu" }}: {{ .Name }}"
+              data-desktop-menu-toggle
+            >
+              <span class="navigation-chevron" aria-hidden="true"></span>
+            </button>
+          {{- end }}
+        </div>
+
+        {{- if .HasChildren }}
+          {{- if $isMega }}
+            {{ partial "navigation/mega-menu.html" (dict "page" $page "item" . "key" $key) }}
+          {{- else }}
+            <div class="desktop-navigation__panel desktop-navigation__panel--compact" id="desktop-menu-{{ $key }}">
+              <ul class="desktop-navigation__submenu">
+                {{- range .Children }}
+                  {{- $childCurrent := $page.IsMenuCurrent "main" . -}}
+                  <li>
+                    <a href="{{ partial "menu-url.html" (dict "url" .URL) }}"{{ if $childCurrent }} aria-current="page"{{ end }}>
+                      <span>{{ .Name }}</span>
+                      <span class="navigation-arrow" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                {{- end }}
+              </ul>
+            </div>
+          {{- end }}
+        {{- end }}
+      </li>
+    {{- end }}
+  </ul>
+</nav>

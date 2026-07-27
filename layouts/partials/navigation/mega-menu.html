@@ -1,0 +1,56 @@
+{{- $page := .page -}}
+{{- $item := .item -}}
+{{- $key := .key -}}
+{{- $isProducts := eq $key "products" -}}
+{{- $allLabel := cond $isProducts (i18n "view_all_products") (i18n "header_view_all_industries") -}}
+{{- $eyebrow := cond $isProducts (i18n "header_mega_eyebrow") (i18n "header_industries_mega_eyebrow") -}}
+{{- $title := cond $isProducts (i18n "header_mega_title") (i18n "header_industries_mega_title") -}}
+{{- $description := cond $isProducts (i18n "header_mega_text") (i18n "header_industries_mega_text") -}}
+{{- $overviewHref := partial "menu-url.html" (dict "url" $item.URL) -}}
+
+<div class="desktop-navigation__panel mega-menu mega-menu--{{ $key }}" id="desktop-menu-{{ $key }}">
+  <div class="mega-menu__inner">
+    <section class="mega-menu__intro" aria-labelledby="mega-menu-title-{{ $key }}">
+      <p class="mega-menu__eyebrow">{{ $eyebrow }}</p>
+      <h2 id="mega-menu-title-{{ $key }}">{{ $title }}</h2>
+      <p class="mega-menu__description">{{ $description }}</p>
+      <a class="mega-menu__overview-link" href="{{ $overviewHref }}">
+        <span>{{ $allLabel }}</span>
+        <span class="navigation-arrow" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <div class="mega-menu__directory">
+      <p class="mega-menu__directory-label">
+        {{ cond $isProducts (i18n "header_product_categories") (i18n "header_industry_directory") }}
+      </p>
+      <ul class="mega-menu__grid">
+        {{- range $index, $child := $item.Children }}
+          {{- $childCurrent := $page.IsMenuCurrent "main" $child -}}
+          <li>
+            <a href="{{ partial "menu-url.html" (dict "url" $child.URL) }}"{{ if $childCurrent }} aria-current="page"{{ end }}>
+              <span class="mega-menu__index" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+              <span class="mega-menu__item-copy">
+                <strong>{{ $child.Name }}</strong>
+                <small>{{ cond $isProducts (i18n "header_explore_category") (i18n "header_view_industry") }}</small>
+              </span>
+              <span class="navigation-arrow" aria-hidden="true"></span>
+            </a>
+          </li>
+        {{- end }}
+      </ul>
+    </div>
+
+    {{- if $isProducts }}
+      <aside class="mega-menu__support" aria-label="{{ i18n "product_selection_support" }}">
+        <p class="mega-menu__support-kicker">{{ i18n "header_selection_kicker" }}</p>
+        <h3>{{ i18n "product_selection_support" }}</h3>
+        <p>{{ i18n "header_selection_text" }}</p>
+        <a href="{{ "/selection-support/" | relLangURL }}">
+          <span>{{ i18n "header_start_selection" }}</span>
+          <span class="navigation-arrow" aria-hidden="true"></span>
+        </a>
+      </aside>
+    {{- end }}
+  </div>
+</div>

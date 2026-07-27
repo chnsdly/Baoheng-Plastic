@@ -1,0 +1,53 @@
+{{- $page := .page -}}
+
+<nav class="mobile-menu" aria-label="{{ i18n "primary_navigation" }}">
+  <ul class="mobile-menu__list">
+    {{- range .menu }}
+      {{- $isExactCurrent := $page.IsMenuCurrent "main" . -}}
+      {{- $isSectionCurrent := or $isExactCurrent ($page.HasMenuCurrent "main" .) -}}
+      {{- $href := partial "menu-url.html" (dict "url" .URL) -}}
+      <li class="mobile-menu__item{{ if $isSectionCurrent }} mobile-menu__item--current{{ end }}">
+        {{- if .HasChildren }}
+          <details class="mobile-menu__group" data-mobile-menu-group>
+            <summary>
+              <span>{{ .Name }}</span>
+              <span class="navigation-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="mobile-menu__children">
+              <ul>
+                <li>
+                  <a class="mobile-menu__all-link" href="{{ $href }}"{{ if $isExactCurrent }} aria-current="page"{{ end }}>
+                    <span>{{ i18n "all_menu_prefix" }} {{ .Name }}</span>
+                    <span class="navigation-arrow" aria-hidden="true"></span>
+                  </a>
+                </li>
+                {{- range .Children }}
+                  {{- $childCurrent := $page.IsMenuCurrent "main" . -}}
+                  <li>
+                    <a href="{{ partial "menu-url.html" (dict "url" .URL) }}"{{ if $childCurrent }} aria-current="page"{{ end }}>
+                      <span>{{ .Name }}</span>
+                      <span class="navigation-arrow" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                {{- end }}
+              </ul>
+            </div>
+          </details>
+        {{- else }}
+          <a class="mobile-menu__primary-link" href="{{ $href }}"{{ if $isExactCurrent }} aria-current="page"{{ end }}>
+            <span>{{ .Name }}</span>
+            <span class="navigation-arrow" aria-hidden="true"></span>
+          </a>
+        {{- end }}
+      </li>
+    {{- end }}
+  </ul>
+
+  <a class="mobile-menu__support" href="{{ "/selection-support/" | relLangURL }}">
+    <span>
+      <small>{{ i18n "header_selection_kicker" }}</small>
+      <strong>{{ i18n "product_selection_support" }}</strong>
+    </span>
+    <span class="navigation-arrow" aria-hidden="true"></span>
+  </a>
+</nav>

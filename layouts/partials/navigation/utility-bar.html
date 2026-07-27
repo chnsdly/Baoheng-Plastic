@@ -1,0 +1,48 @@
+{{- $languages := .Site.Languages -}}
+{{- $shortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
+{{- $currentShort := default (upper .Site.Language.Lang) (index $shortLabels .Site.Language.Lang) -}}
+{{- $phone := .Site.Params.contact_phone -}}
+{{- $email := .Site.Params.contact_email -}}
+
+<div class="site-utility">
+  <div class="site-utility__inner">
+    <p class="site-utility__message">{{ i18n "header_utility_copy" }}</p>
+
+    <div class="site-utility__actions">
+      <div class="site-utility__contact" aria-label="{{ i18n "contact_us" }}">
+        {{- with $phone }}
+          <a href="tel:{{ replaceRE "[^\\d+]" "" . | safeURL }}">{{ . }}</a>
+        {{- end }}
+        {{- with $email }}
+          <a class="site-utility__email" href="mailto:{{ . }}">{{ . }}</a>
+        {{- end }}
+      </div>
+
+      {{- if gt (len $languages) 1 }}
+        <details class="language-menu" data-language-menu>
+          <summary aria-label="{{ i18n "language" }}: {{ $currentShort }}">
+            <span>{{ $currentShort }}</span>
+            <span class="navigation-chevron" aria-hidden="true"></span>
+          </summary>
+          <ul class="language-menu__list">
+            {{- range $languages }}
+              {{- $langCode := .Lang -}}
+              {{- $target := "/" | relURL -}}
+              {{- range $.Site.Sites }}
+                {{- if eq .Language.Lang $langCode }}{{- $target = .Home.RelPermalink -}}{{- end }}
+              {{- end }}
+              {{- range $.AllTranslations }}
+                {{- if eq .Language.Lang $langCode }}{{- $target = .RelPermalink -}}{{- end }}
+              {{- end }}
+              <li>
+                <a href="{{ $target }}" lang="{{ .Locale | default .Lang }}"{{ if eq $.Site.Language.Lang .Lang }} aria-current="page"{{ end }}>
+                  {{ .Label | default .Lang }}
+                </a>
+              </li>
+            {{- end }}
+          </ul>
+        </details>
+      {{- end }}
+    </div>
+  </div>
+</div>
