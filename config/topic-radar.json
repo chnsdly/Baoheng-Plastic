@@ -1,5 +1,37 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
+  "source_families": [
+    {
+      "id": "regulatory-authority",
+      "label": "Regulators, legislation, and official enforcement",
+      "purpose": "Find binding rules, official guidance, consultations, and enforcement facts with explicit jurisdiction.",
+      "acceptable_evidence": "Primary government, regulator, or legislation source."
+    },
+    {
+      "id": "standards-testing",
+      "label": "Standards and test-method owners",
+      "purpose": "Find scope boundaries, terminology, test conditions, revisions, and application limits.",
+      "acceptable_evidence": "Official standards-body pages, published scopes, or original test-method institutions."
+    },
+    {
+      "id": "equipment-process-owner",
+      "label": "Equipment and process owners",
+      "purpose": "Find original interface requirements for forklifts, conveyors, AS/RS, AGVs, wrappers, washers, racks, sensors, and related processes.",
+      "acceptable_evidence": "Original equipment manuals, technical documentation, or system-owner guidance; marketing claims alone are not evidence."
+    },
+    {
+      "id": "logistics-pool-operator",
+      "label": "Logistics, carrier, and pool operators",
+      "purpose": "Find route, receiving, return-loop, container, securing, inspection, and ownership handoff requirements.",
+      "acceptable_evidence": "Original carrier, intermodal, pool-operator, or logistics-institution documents with stated scope."
+    },
+    {
+      "id": "industry-research",
+      "label": "Original industry research and institutions",
+      "purpose": "Find durable operating problems, research findings, and implementation constraints that can be traced to the originating institution.",
+      "acceptable_evidence": "Original institutional report, survey methodology, technical paper, or member guidance; search summaries are leads only."
+    }
+  ],
   "core_sources": [
     {
       "id": "eu-packaging",
@@ -9,7 +41,8 @@
       "jurisdiction": "European Union",
       "coverage": "Packaging and reuse obligations affecting pallets and transport packaging",
       "priority": "high",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "regulatory-authority"
     },
     {
       "id": "eur-lex-packaging",
@@ -19,7 +52,8 @@
       "jurisdiction": "European Union",
       "coverage": "Primary legal text for packaging and packaging waste requirements",
       "priority": "high",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "regulatory-authority"
     },
     {
       "id": "osha-powered-industrial-trucks",
@@ -29,7 +63,8 @@
       "jurisdiction": "United States",
       "coverage": "Forklift, attachment, load-handling, and warehouse safety guidance",
       "priority": "high",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "regulatory-authority"
     },
     {
       "id": "hse-workplace-transport",
@@ -39,7 +74,8 @@
       "jurisdiction": "United Kingdom",
       "coverage": "Warehouse transport, loading, handling, and pallet safety guidance",
       "priority": "high",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "regulatory-authority"
     },
     {
       "id": "fda-food-contact",
@@ -49,7 +85,8 @@
       "jurisdiction": "United States",
       "coverage": "Food-contact material context and regulatory developments",
       "priority": "medium",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "regulatory-authority"
     },
     {
       "id": "iso-pallets",
@@ -59,7 +96,8 @@
       "jurisdiction": "International",
       "coverage": "Pallet testing, terminology, and standards developments",
       "priority": "medium",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "standards-testing"
     },
     {
       "id": "mhi-industry",
@@ -69,7 +107,8 @@
       "jurisdiction": "International industry",
       "coverage": "Material-handling, warehousing, automation, and logistics developments",
       "priority": "medium",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "industry-research"
     },
     {
       "id": "unece-ctu-code",
@@ -79,7 +118,8 @@
       "jurisdiction": "International",
       "coverage": "Container packing, load distribution, securing, condensation, responsibility, and receiving practices",
       "priority": "medium",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "logistics-pool-operator"
     },
     {
       "id": "pmmi-business-intelligence",
@@ -89,7 +129,8 @@
       "jurisdiction": "International packaging industry",
       "coverage": "Original packaging-machinery, processing, automation, and operator research affecting pallet interfaces",
       "priority": "medium",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "industry-research"
     },
     {
       "id": "gcca-cold-chain",
@@ -99,55 +140,239 @@
       "jurisdiction": "International cold chain",
       "coverage": "Cold-storage, refrigerated-logistics, hygiene, facility, and operating research affecting pallet decisions",
       "priority": "medium",
-      "enabled": true
+      "enabled": true,
+      "source_family_id": "industry-research"
+    }
+  ],
+  "portfolio_axes": [
+    {
+      "id": "load-support-strength",
+      "label": "Load, support, and structural evidence",
+      "buyer_questions": [
+        "Does the evidence match the real load distribution and support condition?",
+        "Where does a rating or test scope stop?"
+      ]
+    },
+    {
+      "id": "handling-equipment-interface",
+      "label": "Forklift and pallet-truck interfaces",
+      "buyer_questions": [
+        "Will the actual truck, fork, wheel path, load centre, and route work together?",
+        "What equipment change requires re-approval?"
+      ]
+    },
+    {
+      "id": "storage-racking-stacking",
+      "label": "Storage, racking, and stacking",
+      "buyer_questions": [
+        "What support geometry, dwell time, temperature, and stack condition control approval?",
+        "What failure should stop storage release?"
+      ]
+    },
+    {
+      "id": "automation-machine-interface",
+      "label": "Automation and machine interfaces",
+      "buyer_questions": [
+        "Which pallet surfaces, tolerances, sensors, transfers, or controls must be validated?",
+        "What line change invalidates the prior trial?"
+      ]
+    },
+    {
+      "id": "hygiene-controlled-environment",
+      "label": "Hygiene and controlled environments",
+      "buyer_questions": [
+        "What cleanability, contamination, zoning, temperature, or material evidence is required?",
+        "Who releases the pallet back into controlled use?"
+      ]
+    },
+    {
+      "id": "transport-export-securing",
+      "label": "Transport, export, and securing",
+      "buyer_questions": [
+        "Which pallet facts transfer to the unit-load or route approval and which do not?",
+        "Who owns the handoff at loading and receiving?"
+      ]
+    },
+    {
+      "id": "reuse-pooling-traceability",
+      "label": "Reuse, pooling, and traceability",
+      "buyer_questions": [
+        "How are ownership, identity, rotation, loss, return, and retirement controlled?",
+        "What record changes a reuse claim?"
+      ]
+    },
+    {
+      "id": "materials-environment-change",
+      "label": "Materials, environment, and change control",
+      "buyer_questions": [
+        "Which resin, recycled-content, chemical, weather, or temperature condition changes performance?",
+        "What supplier change requires confirmation?"
+      ]
+    },
+    {
+      "id": "safety-fire-esd",
+      "label": "Safety, fire, and electrostatic conditions",
+      "buyer_questions": [
+        "What site-specific hazard review is required beyond a pallet specification?",
+        "Which claim must remain with EHS, insurer, equipment owner, or authority?"
+      ]
+    },
+    {
+      "id": "procurement-verification-handoff",
+      "label": "Procurement, verification, and handoff",
+      "buyer_questions": [
+        "What evidence should the buyer request, test, record, accept, or reject?",
+        "Which party owns the final decision?"
+      ]
     }
   ],
   "open_query_lanes": [
     {
       "id": "regulation-compliance",
       "label": "Regulation and compliance change",
-      "languages": ["en", "zh", "es", "fr"],
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr"
+      ],
       "search_focus": "New or revised rules, official consultations, enforcement guidance, and standards changes affecting pallets, reusable transport packaging, hygiene, safety, or trade.",
-      "priority": "high"
+      "priority": "high",
+      "source_family_ids": [
+        "regulatory-authority",
+        "standards-testing",
+        "industry-research"
+      ],
+      "query_patterns": [
+        "plastic pallet transport packaging official guidance {current_year}",
+        "reusable transport packaging pallet enforcement consultation official",
+        "pallet standard scope revision official site"
+      ]
     },
     {
       "id": "warehouse-safety",
       "label": "Warehouse handling and safety",
-      "languages": ["en", "zh", "es", "fr"],
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr"
+      ],
       "search_focus": "Forklift, pallet-jack, racking, loading, damage, manual handling, and workplace transport changes with a defined buyer decision.",
-      "priority": "high"
+      "priority": "high",
+      "source_family_ids": [
+        "regulatory-authority",
+        "equipment-process-owner",
+        "industry-research"
+      ],
+      "query_patterns": [
+        "palletized load forklift load centre visibility official guidance",
+        "pallet handling racking stacking loading incident technical guidance",
+        "plastic pallet pallet truck dock route safety manual"
+      ]
     },
     {
       "id": "automation-operations",
       "label": "Automation and operating change",
-      "languages": ["en", "zh", "es", "fr"],
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr"
+      ],
       "search_focus": "Conveyors, AS/RS, sensing, wrapping, robotics, traceability, and process changes that alter pallet selection or approval.",
-      "priority": "high"
+      "priority": "high",
+      "source_family_ids": [
+        "equipment-process-owner",
+        "standards-testing",
+        "industry-research"
+      ],
+      "query_patterns": [
+        "plastic pallet conveyor ASRS AGV interface technical manual",
+        "pallet transfer sensor tolerance equipment integration guide",
+        "empty pallet dispenser denesting palletizer original technical documentation"
+      ]
     },
     {
       "id": "materials-sustainability",
       "label": "Materials, circularity, and claims",
-      "languages": ["en", "zh", "es", "fr"],
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr"
+      ],
       "search_focus": "Polymer, recycled-content, reuse, cleaning, chemical, environmental, and claim-substantiation developments.",
-      "priority": "medium"
+      "priority": "medium",
+      "source_family_ids": [
+        "regulatory-authority",
+        "standards-testing",
+        "industry-research"
+      ],
+      "query_patterns": [
+        "plastic pallet recycled content verification primary guidance",
+        "reusable plastic transport packaging lifecycle original research",
+        "polymer pallet chemical temperature performance test guidance"
+      ]
     },
     {
       "id": "hygiene-controlled-use",
       "label": "Hygiene and controlled-use environments",
-      "languages": ["en", "zh", "es", "fr"],
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr"
+      ],
       "search_focus": "Food, beverage, pharmaceutical, cold-chain, contamination, and sanitation developments affecting plastic-pallet use.",
-      "priority": "medium"
+      "priority": "medium",
+      "source_family_ids": [
+        "regulatory-authority",
+        "equipment-process-owner",
+        "industry-research"
+      ],
+      "query_patterns": [
+        "reusable pallet sanitation validation food cold chain official guidance",
+        "plastic pallet wash drying contamination technical guidance",
+        "pallet controlled area hygiene receiving release original guidance"
+      ]
     },
     {
       "id": "transport-export",
       "label": "Transport and export routes",
-      "languages": ["en", "zh", "es", "fr"],
+      "languages": [
+        "en",
+        "zh",
+        "es",
+        "fr"
+      ],
       "search_focus": "Container, export, return-loop, load-stability, trade, and receiving-route changes affecting pallet decisions.",
-      "priority": "medium"
+      "priority": "medium",
+      "source_family_ids": [
+        "regulatory-authority",
+        "logistics-pool-operator",
+        "equipment-process-owner",
+        "industry-research"
+      ],
+      "query_patterns": [
+        "palletized unit load container securing carrier technical guidance",
+        "reusable pallet export receiving return loop operator requirements",
+        "pallet unit load dimensions route handoff intermodal guidance"
+      ]
     }
   ],
+  "discovery_requirements": {
+    "contract_id": "multi-lead-v1",
+    "minimum_source_families": 4,
+    "minimum_open_query_lanes": 2,
+    "minimum_portfolio_axes": 3,
+    "minimum_leads_discovered": 8,
+    "minimum_leads_deep_checked": 3,
+    "minimum_evergreen_leads_deep_checked": 1,
+    "no_publication_warning_after": 3
+  },
   "retention": {
-    "max_recent_scans": 12,
-    "max_events": 80
+    "max_recent_scans": 30,
+    "max_events": 160
   }
 }
