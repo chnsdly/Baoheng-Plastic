@@ -2,6 +2,7 @@ baseURL = 'https://www.baohengplastic.com/'
 languageCode = 'en-us'
 title = 'Baoheng Plastic'
 enableRobotsTXT = true
+disableKinds = ['rss']
 
 # 站点级参数已统一到 config/_default/params.toml
 
