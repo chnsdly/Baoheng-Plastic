@@ -3,6 +3,7 @@
 {{ define "main" }}
   {{ $root := .Site.GetPage "section" "resources" }}
   {{ $singleCopy := $root.Params.single }}
+  {{ $sectionLabel := .Parent.Title | default $singleCopy.eyebrow }}
   {{ $cover := or .Params.cover_image .Params.featured_image }}
   {{ $coverAlt := .Params.cover_alt | default .Title }}
   {{ $all := where .Site.RegularPages "Section" "resources" }}
@@ -21,7 +22,7 @@
   <article class="resource-single">
     <header class="resource-single__hero">
       <div class="container resource-single__hero-inner">
-        <p class="resource-single__eyebrow">{{ $singleCopy.eyebrow }}</p>
+        <p class="resource-single__eyebrow">{{ $sectionLabel }}</p>
         <h1 class="resource-single__title">{{ .Title }}</h1>
         <p class="resource-single__meta">
           {{ .Date.Format (i18n "date_format") }}

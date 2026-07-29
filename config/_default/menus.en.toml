@@ -95,22 +95,28 @@ identifier = "resources"
 weight = 40
 
   [[main]]
-  name = "Buying Guides"
+  name = "Industry Insights"
   url = "/resources/insights/"
   parent = "resources"
   weight = 41
 
   [[main]]
+  name = "Buying Guides"
+  url = "/resources/buying-guides/"
+  parent = "resources"
+  weight = 42
+
+  [[main]]
   name = "Customer Cases"
   url = "/resources/case-studies/"
   parent = "resources"
-  weight = 42
+  weight = 43
 
   [[main]]
   name = "FAQ"
   url = "/resources/faq/"
   parent = "resources"
-  weight = 43
+  weight = 44
 
 [[main]]
 name = "About"

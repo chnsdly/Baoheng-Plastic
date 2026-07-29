@@ -22,7 +22,8 @@ Use the pages below to identify a suitable product family, compare operating req
 
 ## Buying resources
 
-- [Insights](https://www.baohengplastic.com/resources/insights/): Practical guides for specifying, testing, operating, and maintaining plastic load carriers.
+- [Industry Insights](https://www.baohengplastic.com/resources/insights/): Technical analysis and practical guidance for specifying, testing, operating, and maintaining plastic load carriers.
+- [Buying Guides](https://www.baohengplastic.com/resources/buying-guides/): End-to-end guidance for comparing plastic pallets, preparing specifications, and approving a purchase.
 - [RFQ Specification Checklist](https://www.baohengplastic.com/resources/insights/2605-plastic-pallet-rfq-specification-checklist/): Information to collect before requesting a quotation.
 
 ## Language versions

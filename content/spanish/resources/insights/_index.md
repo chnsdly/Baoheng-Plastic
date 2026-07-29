@@ -1,4 +1,4 @@
 ---
-title: "Guías técnicas"
-description: "Guías técnicas y listas de control para elegir palets de plástico, cajas palet y contenedores."
+title: "Perspectivas del sector"
+description: "Análisis técnico, contexto normativo y orientación operativa para palets de plástico y unidades de carga industriales."
 ---

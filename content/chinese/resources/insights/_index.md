@@ -1,4 +1,4 @@
 ---
-title: "文章"
-description: ""
+title: "行业洞察"
+description: "面向塑料托盘及工业载具的技术分析、标准背景与实用作业指导。"
 ---
