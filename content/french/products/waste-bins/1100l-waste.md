@@ -1,0 +1,28 @@
+---
+title: "Poubelle en plastique – 1100 L"
+description: "Poubelle en plastique de grande capacité pour la collecte et le déplacement des déchets dans les installations municipales, commerciales et industrielles. Confirmez le couvercle, les roues et les conditions d’utilisation."
+featured_image: "/images/products/waste/1100l-waste-hero.jpg"
+product_type: "Plastic Waste Bins"
+product_family: "Plastic Waste Bins"
+product_series: "Four-Wheel Waste Bins"
+product_filters:
+  - "Wheeled"
+  - "Outdoor"
+  - "High Capacity"
+  - "Municipal Collection"
+product_kind: "model"
+pallet_category:
+  - "Four-Wheel Waste Bins"
+contact_cta_label: "Demander un devis"
+contact_cta_link: "/contact"
+industry_gallery:
+  - image: "/images/products/waste/industry-1.jpg"
+    alt: "Poubelle en plastique de 1100 L – exemple d’utilisation 1"
+  - image: "/images/products/waste/industry-2.jpg"
+    alt: "Poubelle en plastique de 1100 L – exemple d’utilisation 2"
+  - image: "/images/products/waste/industry-3.jpg"
+    alt: "Poubelle en plastique de 1100 L – exemple d’utilisation 3"
+form_title: "Parlez-nous de vos besoins en collecte de déchets"
+---
+
+{{< quote_request_button >}}
