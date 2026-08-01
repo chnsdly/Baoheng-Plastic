@@ -31,3 +31,9 @@ disableKinds = ['rss']
     direction = 'ltr'
     weight = 8
     contentDir = 'content/french'
+  [languages.ru]
+    label = 'Русский'
+    locale = 'ru-RU'
+    direction = 'ltr'
+    weight = 9
+    contentDir = 'content/russian'

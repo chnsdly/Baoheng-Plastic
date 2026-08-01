@@ -20,6 +20,10 @@ theme = []
   category = "categories"
   tag      = "tags"
 
+[languages.ru.taxonomies]
+  category = 'categories'
+  tag      = 'tags'
+
 [languages.fr.taxonomies]
   category = "categories"
   tag      = "tags"

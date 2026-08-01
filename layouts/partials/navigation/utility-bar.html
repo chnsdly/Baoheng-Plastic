@@ -1,5 +1,5 @@
 {{- $languages := .Site.Languages -}}
-{{- $shortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" -}}
+{{- $shortLabels := dict "en" "EN" "zh" "中文" "es" "ES" "fr" "FR" "ru" "RU" -}}
 {{- $currentShort := default (upper .Site.Language.Lang) (index $shortLabels .Site.Language.Lang) -}}
 {{- $phone := .Site.Params.contact_phone -}}
 {{- $email := .Site.Params.contact_email -}}

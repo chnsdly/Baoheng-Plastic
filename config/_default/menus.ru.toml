@@ -1,0 +1,131 @@
+[[main]]
+name = 'Продукция'
+url = '/products/'
+identifier = 'products'
+weight = 10
+
+  [[main]]
+  name = 'Пластиковые поддоны'
+  url = '/products/pallets/'
+  parent = 'products'
+  weight = 11
+
+  [[main]]
+  name = 'Паллетные и крупногабаритные контейнеры'
+  url = '/products/pallet-boxes-bulk-containers/'
+  parent = 'products'
+  weight = 12
+
+  [[main]]
+  name = 'Пластиковые ящики и контейнеры'
+  url = '/products/crates-boxes-totes/'
+  parent = 'products'
+  weight = 13
+
+  [[main]]
+  name = 'Пластиковые мусорные контейнеры'
+  url = '/products/waste-bins/'
+  parent = 'products'
+  weight = 14
+
+[[main]]
+name = 'Отрасли'
+url = '/industries/'
+identifier = 'industries'
+weight = 20
+
+  [[main]]
+  name = 'Складская логистика'
+  url = '/industries/warehousing-logistics/'
+  parent = 'industries'
+  weight = 21
+
+  [[main]]
+  name = 'Пищевая промышленность'
+  url = '/industries/food-beverage/'
+  parent = 'industries'
+  weight = 22
+
+  [[main]]
+  name = 'Фармацевтическое и гигиеническое производство'
+  url = '/industries/pharmaceutical-hygienic-manufacturing/'
+  parent = 'industries'
+  weight = 23
+
+  [[main]]
+  name = 'Химическая промышленность и защита от проливов'
+  url = '/industries/chemical-spill-control/'
+  parent = 'industries'
+  weight = 24
+
+  [[main]]
+  name = 'Полиграфия и упаковка'
+  url = '/industries/printing-packaging/'
+  parent = 'industries'
+  weight = 25
+
+  [[main]]
+  name = 'Сельское хозяйство и свежая продукция'
+  url = '/industries/agriculture-fresh-produce/'
+  parent = 'industries'
+  weight = 26
+
+  [[main]]
+  name = 'Холодовая цепь и замороженные продукты'
+  url = '/industries/cold-chain-frozen-food/'
+  parent = 'industries'
+  weight = 27
+
+  [[main]]
+  name = 'Птицеводство и обработка яиц'
+  url = '/industries/poultry-egg-handling/'
+  parent = 'industries'
+  weight = 28
+
+[[main]]
+name = 'Производство'
+url = '/manufacturing/'
+identifier = 'manufacturing'
+weight = 30
+
+[[main]]
+name = 'Материалы'
+url = '/resources/'
+identifier = 'resources'
+weight = 40
+
+  [[main]]
+  name = 'Отраслевые статьи'
+  url = '/resources/insights/'
+  parent = 'resources'
+  weight = 41
+
+  [[main]]
+  name = 'Руководства по выбору'
+  url = '/resources/buying-guides/'
+  parent = 'resources'
+  weight = 42
+
+  [[main]]
+  name = 'Примеры проектов'
+  url = '/resources/case-studies/'
+  parent = 'resources'
+  weight = 43
+
+  [[main]]
+  name = 'Вопросы и ответы'
+  url = '/resources/faq/'
+  parent = 'resources'
+  weight = 44
+
+[[main]]
+name = 'О компании'
+url = '/about/'
+identifier = 'about'
+weight = 50
+
+[[main]]
+name = 'Контакты'
+url = '/contact/'
+identifier = 'contact'
+weight = 60

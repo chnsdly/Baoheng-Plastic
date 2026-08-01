@@ -29,3 +29,11 @@ locale = "fr"
 direction = "ltr"
 contentDir = "content/french"
 weight = 8
+
+################ Russian language ##################
+[ru]
+label = 'Русский'
+locale = 'ru-RU'
+direction = 'ltr'
+contentDir = 'content/russian'
+weight = 9
