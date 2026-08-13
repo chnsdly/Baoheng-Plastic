@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Locale | default .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  {{- if eq .Site.Language.Lang "zh" }}
+  <meta name="robots" content="noindex, follow">
+  {{- end }}
+  <title>{{ .Permalink }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+</head>
+</html>

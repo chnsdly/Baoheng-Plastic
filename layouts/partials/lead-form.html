@@ -17,6 +17,10 @@
   <input type="hidden" name="intent" value="{{ $intent }}">
   <input type="hidden" name="industry" value="{{ $industry }}">
   <input type="hidden" name="product" value="{{ $product }}">
+  <input type="hidden" name="language" value="{{ $page.Language.Lang }}">
+  <input type="hidden" name="referrer_url">
+  <input type="hidden" name="landing_page_url">
+  <input type="hidden" name="content_asset">
   <input type="hidden" name="utm_source">
   <input type="hidden" name="utm_medium">
   <input type="hidden" name="utm_campaign">
@@ -41,12 +45,44 @@
 <script>
   (function(){
     const p = new URLSearchParams(location.search);
-    for (const k of ["intent","industry","product","utm_source","utm_medium","utm_campaign","utm_term","utm_content"]) {
+    const directKeys = ["intent","industry","product","content_asset","utm_source","utm_medium","utm_campaign","utm_term","utm_content"];
+    const attributionKeys = ["language","referrer_url","landing_page_url","content_asset","utm_source","utm_medium","utm_campaign","utm_term","utm_content"];
+    let attribution = window.baohengLeadAttribution || {};
+    const allowStorage = navigator.doNotTrack !== "1" && window.globalPrivacyControl !== true;
+    if (!Object.keys(attribution).length && allowStorage) {
+      try {
+        attribution = JSON.parse(localStorage.getItem("baoheng_lead_attribution_v1") || "{}");
+      } catch (_) {
+        attribution = {};
+      }
+    }
+
+    for (const k of directKeys) {
       const value = p.get(k);
       if (!value) continue;
       document.querySelectorAll(`input[name="${k}"]`).forEach((el) => {
-        el.value = value;
+        el.value = value.slice(0, 512);
       });
     }
+
+    for (const k of attributionKeys) {
+      const value = attribution[k];
+      if (!value) continue;
+      document.querySelectorAll(`input[name="${k}"]`).forEach((el) => {
+        if (!el.value) el.value = String(value).slice(0, 512);
+      });
+    }
+
+    document.querySelectorAll("form.lead-form").forEach((form) => {
+      form.addEventListener("submit", () => {
+        const allowed = ["form_type", "intent", "industry", "product", "language", "content_asset"];
+        const pending = { submitted_at: Date.now() };
+        for (const key of allowed) {
+          const field = form.querySelector(`[name="${key}"]`);
+          if (field && field.value) pending[key] = String(field.value).slice(0, 160);
+        }
+        try { sessionStorage.setItem("baoheng_pending_lead_submit_v1", JSON.stringify(pending)); } catch (_) {}
+      });
+    });
   })();
 </script>

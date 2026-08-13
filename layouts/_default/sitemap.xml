@@ -9,7 +9,7 @@
 {{- range .Data.Pages }}
   {{- $robots := .Params.robots | default "" -}}
   {{- $excludedKind := in (slice "taxonomy" "term") .Kind -}}
-  {{- if and (not $excludedKind) (not (in $robots "noindex")) }}
+  {{- if and (ne .Language.Lang "zh") (not $excludedKind) (not (in $robots "noindex")) }}
   {{- $pageTitle := .Title -}}
   {{- $xDefaultURL := .Permalink -}}
   {{- if $defaultLang -}}
@@ -41,7 +41,7 @@
     <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     {{- end }}
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}"/>
-    {{- range .AllTranslations }}
+    {{- range where .AllTranslations "Language.Lang" "ne" "zh" }}
       {{- $hreflang := .Language.Locale | default .Language.Lang }}
     <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}"/>
     {{- end }}

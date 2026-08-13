@@ -73,7 +73,7 @@
           <p class="resource-cta__eyebrow">{{ $singleCopy.cta_eyebrow }}</p>
           <h2>{{ $singleCopy.cta_title }}</h2>
           <p>{{ $singleCopy.cta_text }}</p>
-          <a class="button" href="{{ "/contact/" | relLangURL }}">{{ i18n "request_quote" }}</a>
+          <a class="button" href="{{ "/contact/" | relLangURL }}?intent=content-inquiry&amp;content_asset={{ .RelPermalink | urlquery }}">{{ i18n "request_quote" }}</a>
         </div>
       </aside>
     </div>

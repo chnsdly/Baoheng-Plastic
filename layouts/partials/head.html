@@ -61,6 +61,9 @@
 {{- end -}}
 
 {{- $robots := .Params.robots | default (cond (in (slice "taxonomy" "term") .Kind) "noindex, follow" "index, follow") -}}
+{{- if eq .Language.Lang "zh" -}}
+  {{- $robots = "noindex, follow" -}}
+{{- end -}}
 {{- if and (not (in $robots "noindex")) (not (in $robots "max-image-preview")) -}}
   {{- $robots = printf "%s, max-image-preview:large" $robots -}}
 {{- end -}}
@@ -100,7 +103,7 @@
   {{- end -}}
 {{- end -}}
 <link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}">
-{{- range .AllTranslations -}}
+{{- range where .AllTranslations "Language.Lang" "ne" "zh" -}}
 <link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ .Permalink }}">
 {{- end -}}
 

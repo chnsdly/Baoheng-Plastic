@@ -1,120 +1,178 @@
-// [新增说明] 在类型里加上 N8N_WEBHOOK_URL，供后面调用 n8n 使用
-export const onRequestPost: PagesFunction<{
-  DB: D1Database,
-  R2: R2Bucket,
-  TURNSTILE_SECRET: string,
-  N8N_WEBHOOK_URL: string, // [新增] n8n Webhook 的完整 URL，由 Cloudflare Pages 环境变量提供
-}> = async ({ request, env }) => {
-  const f = await request.formData();
+interface LeadEnvironment {
+  DB: D1Database;
+  R2: R2Bucket;
+  TURNSTILE_SECRET: string;
+  N8N_WEBHOOK_URL?: string;
+}
 
-  // 1) 蜜罐（有值直接吞）
-  if ((f.get("website") as string)?.trim()) {
+const MAX_LENGTHS: Record<string, number> = {
+  name: 200,
+  email: 320,
+  phone: 100,
+  company: 250,
+  country: 120,
+  message: 5000,
+  form_type: 80,
+  page_url: 512,
+  download_slug: 200,
+  intent: 160,
+  industry: 160,
+  product: 250,
+  language: 20,
+  referrer_url: 512,
+  landing_page_url: 512,
+  content_asset: 512,
+  utm_source: 160,
+  utm_medium: 160,
+  utm_campaign: 160,
+  utm_term: 160,
+  utm_content: 160,
+};
+
+function cleanPageUrl(value: string, requestUrl: string): string {
+  if (!value) return "";
+  try {
+    const url = new URL(value, requestUrl);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+    if (url.origin !== new URL(requestUrl).origin) return "";
+    return `${url.origin}${url.pathname}`.slice(0, 512);
+  } catch (_) {
+    return "";
+  }
+}
+
+function cleanReferrerUrl(value: string, requestUrl: string): string {
+  if (!value) return "";
+  try {
+    const url = new URL(value, requestUrl);
+    if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+    const requestOrigin = new URL(requestUrl).origin;
+    return (url.origin === requestOrigin ? `${url.origin}${url.pathname}` : url.origin).slice(0, 512);
+  } catch (_) {
+    return "";
+  }
+}
+
+function cleanAsset(value: string): string {
+  if (!value) return "";
+  try {
+    const url = new URL(value, "https://www.baohengplastic.com");
+    return url.pathname.startsWith("/resources/") ? url.pathname.slice(0, 512) : "";
+  } catch (_) {
+    return "";
+  }
+}
+
+export const onRequestPost: PagesFunction<LeadEnvironment> = async ({ request, env }) => {
+  const form = await request.formData();
+
+  if (String(form.get("website") || "").trim()) {
     return new Response("ok", { status: 200 });
   }
 
-  // 2) Turnstile 服务端校验
-  const token = String(f.get("cf-turnstile-response") || "");
+  const token = String(form.get("cf-turnstile-response") || "");
   const ip = request.headers.get("CF-Connecting-IP") || "";
-  const v = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+  const verification = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
     body: new URLSearchParams({
       secret: env.TURNSTILE_SECRET,
       response: token,
-      remoteip: ip
+      remoteip: ip,
     }),
-  }).then(r => r.json());
+  }).then((response) => response.json() as Promise<{ success?: boolean }>);
 
-  if (!v.success) {
+  if (!verification.success) {
     return new Response("Bot check failed", { status: 400 });
   }
 
-  // 3) 取字段
-  const now = new Date().toISOString();
-  const get = (k: string) => String(f.get(k) || "").trim();
-  const email = get("email");
-  const name = get("name");
-  const company = get("company");
-  const country = get("country");
-  const message = get("message");
-  const formType = get("form_type") || "contact";
-  const pageUrl = get("page_url");               // 也可换成 request.headers.get("Referer") 兜底
-  const downloadSlug = get("download_slug");
-  const consent = get("consent") || "no";
-  const utm = (k: string) => get(k);
-  const ua = request.headers.get("User-Agent") || "";
-
-  // [新增] 从表单中取 phone 字段，前端表单需要增加 name="phone" 的输入框
-  const phone = get("phone");
-
-  // [新增] 统一构造一份线索数据，既给 D1 用，也给 n8n 用
-  const leadPayload = {
-    name,
-    email,
-    phone,
-    company,
-    country,
-    message,
-    formType,
-    pageUrl,
-    createdAt: now,
-    ip,
-    userAgent: ua,
-    consent,
-    utm_source: utm("utm_source"),
-    utm_medium: utm("utm_medium"),
-    utm_campaign: utm("utm_campaign"),
-    utm_term: utm("utm_term"),
-    utm_content: utm("utm_content"),
+  const get = (key: string): string => {
+    const value = String(form.get(key) || "").trim();
+    return value.slice(0, MAX_LENGTHS[key] || 512);
   };
 
-  // 4) 入库（leads）
-  // [变更说明] 这里给 leads 表新增 phone 列：
-  //  (created_at, name, email, phone, company, ...) 并在 VALUES 中增加一个占位符和绑定参数
-  //  上线前请先在 D1 执行：ALTER TABLE leads ADD COLUMN phone TEXT;
-  await env.DB.prepare(`
-    INSERT INTO leads
-      (created_at, name, email, phone, company, country, message, form_type, page_url,
-       utm_source, utm_medium, utm_campaign, utm_term, utm_content, ip, user_agent, consent)
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-  `).bind(
-    now,
-    name,
-    email,
-    phone,            // [新增绑定] phone
-    company,
-    country,
-    message,
+  const now = new Date().toISOString();
+  const pageUrl = cleanPageUrl(get("page_url") || request.headers.get("Referer") || "", request.url);
+  const referrerUrl = cleanReferrerUrl(get("referrer_url"), request.url);
+  const landingPageUrl = cleanPageUrl(get("landing_page_url"), request.url);
+  const formType = get("form_type") || "contact";
+  const downloadSlug = get("download_slug");
+  const consent = get("consent") || "no";
+  const userAgent = (request.headers.get("User-Agent") || "").slice(0, 512);
+
+  const leadPayload = {
+    name: get("name"),
+    email: get("email"),
+    phone: get("phone"),
+    company: get("company"),
+    country: get("country"),
+    message: get("message"),
     formType,
     pageUrl,
-    utm("utm_source"),
-    utm("utm_medium"),
-    utm("utm_campaign"),
-    utm("utm_term"),
-    utm("utm_content"),
+    intent: get("intent"),
+    industry: get("industry"),
+    product: get("product"),
+    language: get("language"),
+    referrerUrl,
+    landingPageUrl,
+    contentAsset: cleanAsset(get("content_asset")),
+    createdAt: now,
     ip,
-    ua,
-    consent
-  ).run();
+    userAgent,
+    consent,
+    utm_source: get("utm_source"),
+    utm_medium: get("utm_medium"),
+    utm_campaign: get("utm_campaign"),
+    utm_term: get("utm_term"),
+    utm_content: get("utm_content"),
+  };
 
-  // [新增] 5) 写完 D1 之后，把同一份线索数据 POST 给 n8n Webhook
-  // 目的：让 n8n → Espo 自动生成“潜在客户”
-  // 这里用 try/catch，避免 n8n 暂时不可用时影响用户提交体验
+  try {
+    await env.DB.prepare(`
+      INSERT INTO leads
+        (created_at, name, email, phone, company, country, message, form_type, page_url,
+         intent, industry, product, language, referrer_url, landing_page_url, content_asset,
+         utm_source, utm_medium, utm_campaign, utm_term, utm_content, ip, user_agent, consent)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+    `).bind(
+      leadPayload.createdAt, leadPayload.name, leadPayload.email, leadPayload.phone,
+      leadPayload.company, leadPayload.country, leadPayload.message, leadPayload.formType,
+      leadPayload.pageUrl, leadPayload.intent, leadPayload.industry, leadPayload.product,
+      leadPayload.language, leadPayload.referrerUrl, leadPayload.landingPageUrl,
+      leadPayload.contentAsset, leadPayload.utm_source, leadPayload.utm_medium,
+      leadPayload.utm_campaign, leadPayload.utm_term, leadPayload.utm_content,
+      leadPayload.ip, leadPayload.userAgent, leadPayload.consent,
+    ).run();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (!/no column named|has no column named/i.test(message)) throw error;
+
+    // Preserve submissions during a rolling deploy if application code arrives before the additive migration.
+    await env.DB.prepare(`
+      INSERT INTO leads
+        (created_at, name, email, phone, company, country, message, form_type, page_url,
+         utm_source, utm_medium, utm_campaign, utm_term, utm_content, ip, user_agent, consent)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+    `).bind(
+      leadPayload.createdAt, leadPayload.name, leadPayload.email, leadPayload.phone,
+      leadPayload.company, leadPayload.country, leadPayload.message, leadPayload.formType,
+      leadPayload.pageUrl, leadPayload.utm_source, leadPayload.utm_medium,
+      leadPayload.utm_campaign, leadPayload.utm_term, leadPayload.utm_content,
+      leadPayload.ip, leadPayload.userAgent, leadPayload.consent,
+    ).run();
+  }
+
   try {
     if (env.N8N_WEBHOOK_URL) {
       await fetch(env.N8N_WEBHOOK_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(leadPayload),
       });
     }
-  } catch (err) {
-    // [可选记录] 这里只做日志，不向前端暴露错误
-    console.error("Failed to send lead to n8n", err);
+  } catch (error) {
+    console.error("Failed to send lead to n8n", error);
   }
 
-  // 6) 下载型：写票据 + Set-Cookie + 303 跳感谢页（带 ?dl=slug）
   if (formType === "download" && downloadSlug) {
     const id = crypto.randomUUID();
     const expiresAt = new Date(Date.now() + 15 * 60 * 1000).toISOString();
@@ -130,15 +188,14 @@ export const onRequestPost: PagesFunction<{
     return new Response(null, {
       status: 303,
       headers: {
-        "Location": url.toString(),
-        "Set-Cookie": `dl_ticket=${id}; Path=/downloads; HttpOnly; Secure; SameSite=Lax; Max-Age=900`
-      }
+        Location: url.toString(),
+        "Set-Cookie": `dl_ticket=${id}; Path=/downloads; HttpOnly; Secure; SameSite=Lax; Max-Age=900`,
+      },
     });
   }
 
-  // 7) 联系表单：无票据，直接去 /thanks/
   return new Response(null, {
     status: 303,
-    headers: { "Location": new URL("/thanks/", request.url).toString() }
+    headers: { Location: new URL("/thanks/", request.url).toString() },
   });
 };

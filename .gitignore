@@ -2,7 +2,12 @@
 /resources/_gen/
 /.hugo_cache/
 /.codex-build/
+/.seo-local/
 /prompts/
 /runs/
 /tools/
+/ops/
+/docs/
+/tests/
+/migrations/
 /AGENTS.md

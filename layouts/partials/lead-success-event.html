@@ -1,0 +1,25 @@
+<script>
+  (function () {
+    if (!/\/thanks\/?$/.test(location.pathname)) return;
+    const key = "baoheng_pending_lead_submit_v1";
+    let pending = null;
+    try {
+      pending = JSON.parse(sessionStorage.getItem(key) || "null");
+      sessionStorage.removeItem(key);
+    } catch (_) {
+      try { sessionStorage.removeItem(key); } catch (_) {}
+      return;
+    }
+    if (!pending || !Number.isFinite(pending.submitted_at) || Date.now() - pending.submitted_at > 15 * 60 * 1000) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "baoheng_lead_submit_success",
+      form_type: pending.form_type || "",
+      intent: pending.intent || "",
+      industry: pending.industry || "",
+      product: pending.product || "",
+      language: pending.language || "",
+      content_asset: pending.content_asset || ""
+    });
+  })();
+</script>

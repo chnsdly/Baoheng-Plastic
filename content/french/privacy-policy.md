@@ -6,7 +6,7 @@ robots: "noindex, follow"
 ---
 
 Date d'entrée en vigueur : 2025-12-16
-Dernière mise à jour : 2025-12-16
+Dernière mise à jour : 2026-08-12
 
 Cette Politique de confidentialité explique comment Baoheng Plastic collecte et traite les informations personnelles transmises via le site web, les formulaires en ligne, les formulaires Facebook/Meta Lead Ads et les communications associées.
 
@@ -18,7 +18,11 @@ Nous ne demandons pas volontairement de données personnelles sensibles. Si vous
 
 ## 2. Utilisation des informations
 
-Nous utilisons les informations pour répondre aux demandes, préparer des devis, gérer les prospects dans le CRM, préparer les contrats, coordonner échantillons, commandes, production, livraison et service après-vente, respecter nos obligations légales et améliorer le site ainsi que le support client.
+Nous utilisons les informations pour répondre aux demandes, préparer des devis, gérer les prospects dans le CRM, préparer les contrats, coordonner échantillons, commandes, production, livraison et service après-vente, respecter nos obligations légales et améliorer le site ainsi que le support client. Nous enregistrons aussi, de façon limitée, la page d'entrée, la ressource, le produit, le secteur, la langue et la campagne précédant une demande afin d'analyser globalement quelles pages génèrent des demandes utiles.
+
+Pour l'attribution du premier contact, le site peut conserver dans votre navigateur un ensemble limité de données relatives à la page d'arrivée, au référent, à la langue, à la ressource de contenu et à la campagne pendant 90 jours au maximum. Les URL d'attribution ne conservent ni paramètres de requête ni fragments. Ce stockage n'est pas utilisé lorsque Global Privacy Control est activé ou lorsque le navigateur envoie « Do Not Track: 1 » ; vous pouvez aussi le supprimer dans les réglages du navigateur.
+
+Nous pouvons utiliser des outils automatisés, notamment une classification assistée par l'IA, pour organiser les sujets des demandes et créer des résumés internes anonymisés. Nous ne publions pas les communications d'origine, citations, images ou détails permettant d'identifier un client sans examen séparé et, lorsque nécessaire, autorisation.
 
 ## 3. Bases légales
 

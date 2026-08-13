@@ -1,0 +1,71 @@
+{{- $contentAsset := "" -}}
+{{- if and .IsPage (eq .Section "resources") -}}
+  {{- $contentAsset = .RelPermalink -}}
+{{- end -}}
+<script>
+  (function () {
+    const storageKey = "baoheng_lead_attribution_v1";
+    const utmKeys = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+    const contentAsset = {{ $contentAsset | jsonify | safeJS }};
+    const language = {{ .Language.Lang | jsonify | safeJS }};
+    const allowStorage = navigator.doNotTrack !== "1" && window.globalPrivacyControl !== true;
+
+    const cleanUrl = (value) => {
+      if (!value) return "";
+      try {
+        const url = new URL(value, location.origin);
+        if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+        return (url.origin === location.origin ? `${url.origin}${url.pathname}` : url.origin).slice(0, 512);
+      } catch (_) {
+        return "";
+      }
+    };
+
+    let state = {};
+    if (allowStorage) {
+      try {
+        state = JSON.parse(localStorage.getItem(storageKey) || "{}");
+        const capturedAt = Date.parse(state.captured_at || "");
+        if (!Number.isFinite(capturedAt) || Date.now() - capturedAt > 90 * 24 * 60 * 60 * 1000) {
+          state = {};
+        }
+      } catch (_) {
+        state = {};
+      }
+    }
+
+    const referrerUrl = cleanUrl(document.referrer);
+    if (!state.landing_page_url) state.landing_page_url = cleanUrl(location.href);
+    if (!state.referrer_url && referrerUrl) state.referrer_url = referrerUrl;
+    if (!state.language) state.language = language;
+    if (!state.captured_at) state.captured_at = new Date().toISOString();
+
+    if (contentAsset && !state.content_asset) {
+      state.content_asset = contentAsset;
+    } else if (!state.content_asset && referrerUrl) {
+      try {
+        const referrer = new URL(referrerUrl);
+        if (referrer.origin === location.origin && /\/resources\/[^/]+/.test(referrer.pathname)) {
+          state.content_asset = referrer.pathname;
+        }
+      } catch (_) {
+        // A malformed referrer is ignored.
+      }
+    }
+
+    const params = new URLSearchParams(location.search);
+    for (const key of utmKeys) {
+      const value = params.get(key);
+      if (value && !state[key]) state[key] = value.slice(0, 160);
+    }
+
+    window.baohengLeadAttribution = state;
+    if (allowStorage) {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(state));
+      } catch (_) {
+        // The current-page context still works when local storage is unavailable.
+      }
+    }
+  })();
+</script>

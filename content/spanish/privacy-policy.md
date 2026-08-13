@@ -6,7 +6,7 @@ robots: "noindex, follow"
 ---
 
 Fecha efectiva: 2025-12-16
-Última actualización: 2025-12-16
+Última actualización: 2026-08-12
 
 Esta Política de privacidad explica cómo Baoheng Plastic recopila y procesa información personal enviada a través del sitio web, formularios en línea, formularios de clientes potenciales de Facebook/Meta y comunicaciones relacionadas.
 
@@ -18,7 +18,11 @@ No solicitamos intencionadamente datos personales sensibles. Si se envían volun
 
 ## 2. Cómo usamos la información
 
-Usamos la información para responder consultas, preparar cotizaciones, gestionar clientes potenciales en CRM, preparar contratos, coordinar muestras, pedidos, producción, entrega y servicio posventa, cumplir obligaciones legales y mejorar el sitio y la atención al cliente.
+Usamos la información para responder consultas, preparar cotizaciones, gestionar clientes potenciales en CRM, preparar contratos, coordinar muestras, pedidos, producción, entrega y servicio posventa, cumplir obligaciones legales y mejorar el sitio y la atención al cliente. También registramos de forma limitada la página de entrada, el recurso, producto, sector, idioma y campaña anteriores a una consulta para analizar de forma agregada qué páginas generan consultas útiles.
+
+Para la atribución del primer contacto, el sitio puede guardar en su navegador un conjunto limitado de datos sobre la página de entrada, la referencia, el idioma, el recurso de contenido y la campaña durante un máximo de 90 días. Las URL de atribución no conservan parámetros de consulta ni fragmentos. Este almacenamiento no se utiliza cuando está activado Global Privacy Control o el navegador envía “Do Not Track: 1”; también puede borrarlo desde la configuración del navegador.
+
+Podemos utilizar herramientas automatizadas, incluida la clasificación asistida por IA, para organizar los temas de las consultas y crear resúmenes internos anonimizados. No publicamos comunicaciones originales, citas, imágenes ni detalles identificables de clientes sin revisión separada y, cuando corresponda, autorización.
 
 ## 3. Bases legales
 

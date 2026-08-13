@@ -6,8 +6,8 @@ robots: "noindex, follow"
 ---
 
 Effective Date: 2025-12-16
-Last Updated: 2025-12-16
-This Privacy Policy explains how [Company/Legal Entity Name] (“we”, “us”, “our”) collects and processes personal information via our website, online forms, Facebook/Meta Lead Ads (Instant Forms), and related communications.
+Last Updated: 2026-08-12
+This Privacy Policy explains how Shandong Baoheng Plastic Co., Ltd. (“we”, “us”, “our”) collects and processes personal information via our website, online forms, Facebook/Meta Lead Ads (Instant Forms), and related communications.
 
 1. Information We Collect
 
@@ -54,6 +54,12 @@ Perform or prepare to perform a contract (sampling, ordering, production, delive
 Security and compliance (fraud prevention, abuse detection, legal/regulatory obligations)
 
 Improve our services and operations (website optimization, customer support quality)
+
+Measure which landing pages, content resources, products, industries, languages, and campaigns contribute to an inquiry. We use bounded attribution fields for aggregate performance analysis; raw customer communications are not published or used as public case material without separate review and, where required, permission.
+
+For first-touch attribution, the website may store a limited set of landing-page, referrer, language, content-resource, and campaign fields in your browser for up to 90 days. URL query strings and fragments are not retained in these attribution URLs. This browser storage is not used when a Global Privacy Control signal is enabled or the browser sends “Do Not Track: 1”; you can also clear it through your browser settings.
+
+We may use automated tools, including AI-assisted classification, to organize inquiry topics and prepare anonymized internal summaries. Human review is required before any customer-derived fact, quotation, image, or identifiable case detail is approved for public content.
 
 3. Legal Bases for Processing (Where Applicable)
 
@@ -136,7 +142,7 @@ Our services are intended for businesses and adults. We do not knowingly collect
 
 If you submitted your information via Facebook/Meta Lead Ads and want us to delete your related data, please email:
 
-Email: [Privacy Contact Email]
+Email: sales@baohengplastic.com
 
 Subject: “Data Deletion Request”
 
@@ -147,11 +153,11 @@ We will verify your identity and process your request within a reasonable timefr
 
 For questions or requests regarding this Policy:
 
-Company: [Shandong Baoheng Plastic Co., Ltd.]
+Company: Shandong Baoheng Plastic Co., Ltd.
 
-Email: [weibenlong6@gmail.com]
+Email: sales@baohengplastic.com
 
-Address: [Xianghe Industrial Park, Linyi City, Shandong, China]
+Address: Xianghe Industrial Park, Linyi City, Shandong, China
 
 13. Changes to This Policy
 
