@@ -1,4 +1,4 @@
 ---
 title: "Case Studies"
-description: ""
+description: "Baoheng Plastic case studies for material-handling applications and project insights."
 ---
