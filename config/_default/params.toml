@@ -30,13 +30,6 @@ addressRegion = "Shandong"
 postalCode = "276000"
 addressCountry = "CN"
 
-# 社交媒体链接
-[social]
-  linkedin = "https://linkedin.com/company/globaltech"
-  twitter = "https://twitter.com/globaltech"
-  facebook = "https://facebook.com/"
-  youtube = "https://www.youtube.com/@globaltech"
-
 # 热门文章数量
 [blog.popular]
   limit = 3  
