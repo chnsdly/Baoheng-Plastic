@@ -29,6 +29,19 @@ const MAX_LENGTHS: Record<string, number> = {
   utm_content: 160,
 };
 
+const THANKS_PATHS: Record<string, string> = {
+  en: "/thanks/",
+  es: "/es/thanks/",
+  fr: "/fr/thanks/",
+  ru: "/ru/thanks/",
+  zh: "/zh/thanks/",
+};
+
+function getThanksUrl(language: string, requestUrl: string): URL {
+  const normalizedLanguage = language.trim().toLowerCase();
+  return new URL(THANKS_PATHS[normalizedLanguage] || THANKS_PATHS.en, requestUrl);
+}
+
 function cleanPageUrl(value: string, requestUrl: string): string {
   if (!value) return "";
   try {
@@ -96,6 +109,7 @@ export const onRequestPost: PagesFunction<LeadEnvironment> = async ({ request, e
   const landingPageUrl = cleanPageUrl(get("landing_page_url"), request.url);
   const formType = get("form_type") || "contact";
   const downloadSlug = get("download_slug");
+  const language = get("language");
   const consent = get("consent") || "no";
   const userAgent = (request.headers.get("User-Agent") || "").slice(0, 512);
 
@@ -111,7 +125,7 @@ export const onRequestPost: PagesFunction<LeadEnvironment> = async ({ request, e
     intent: get("intent"),
     industry: get("industry"),
     product: get("product"),
-    language: get("language"),
+    language,
     referrerUrl,
     landingPageUrl,
     contentAsset: cleanAsset(get("content_asset")),
@@ -182,7 +196,7 @@ export const onRequestPost: PagesFunction<LeadEnvironment> = async ({ request, e
       VALUES (?,?,?,?)
     `).bind(id, downloadSlug, now, expiresAt).run();
 
-    const url = new URL("/thanks/", request.url);
+    const url = getThanksUrl(language, request.url);
     url.searchParams.set("dl", downloadSlug);
 
     return new Response(null, {
@@ -196,6 +210,6 @@ export const onRequestPost: PagesFunction<LeadEnvironment> = async ({ request, e
 
   return new Response(null, {
     status: 303,
-    headers: { Location: new URL("/thanks/", request.url).toString() },
+    headers: { Location: getThanksUrl(language, request.url).toString() },
   });
 };

@@ -3,20 +3,21 @@ title: "Merci"
 robots: "noindex, nofollow"
 ---
 
-<p>Thank vous pour votre submission.</p>
-<un id="dl-btn" href="#" class="button font-meta" hidden>Download now</un>
+<p>Merci pour votre demande.</p>
+<a id="dl-btn" href="#" class="button font-meta" hidden>Télécharger maintenant</a>
 
 <script>
   // Build a download link from the URL query string ?dl=slug
   (function () {
     var p = new URLSearchParams(location.search);
     var slug = p.get('dl');                  // e.g. brochure-a4
-    var un = document.getElementById('dl-btn');
+    var a = document.getElementById('dl-btn');
     if (slug) {
-      un.setAttribute('href', '/downloads/' + slug);
+      a.setAttribute('href', '/downloads/' + slug);
+      a.hidden = false;
     } else {
       // Hide the button if no download is available
-      un.style.display = 'none';
+      a.style.display = 'none';
     }
   })();
 </script>
