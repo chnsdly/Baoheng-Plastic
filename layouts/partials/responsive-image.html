@@ -48,8 +48,23 @@
 >
 {{- else -}}
   {{- $fallbackSrc := cond $imageData.isRemote $imageData.raw ($imageData.path | relURL) -}}
+  {{- $fallbackWidth := 0 -}}
+  {{- $fallbackHeight := 0 -}}
+  {{- if and (not $imageData.isRemote) $imageData.path -}}
+    {{- $extension := lower (path.Ext $imageData.path) -}}
+    {{- $rasterExtensions := slice ".avif" ".bmp" ".gif" ".heic" ".heif" ".jpeg" ".jpg" ".png" ".tif" ".tiff" ".webp" -}}
+    {{- $staticPath := path.Join "static" $imageData.path -}}
+    {{- if and (in $rasterExtensions $extension) (fileExists $staticPath) -}}
+      {{- with images.Config $staticPath -}}
+        {{- $fallbackWidth = .Width -}}
+        {{- $fallbackHeight = .Height -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
 <img
   src="{{ $fallbackSrc }}"
+  {{ if gt $fallbackWidth 0 }}width="{{ $fallbackWidth }}"{{ end }}
+  {{ if gt $fallbackHeight 0 }}height="{{ $fallbackHeight }}"{{ end }}
   alt="{{ $alt }}"
   {{ with $class }}class="{{ . }}"{{ end }}
   loading="{{ $loading }}"

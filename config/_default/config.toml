@@ -4,6 +4,9 @@ title = "Baoheng Plastic"
 enableRobotsTXT = true
 theme = []
 
+[pagination]
+  pagerSize = 12
+
 [markup]
   [markup.goldmark.renderer]
     unsafe = true # 允许在 Markdown 中使用原始 HTML，便于嵌入复杂组件
