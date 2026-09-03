@@ -2,6 +2,10 @@
 <html lang="{{ .Site.Language.Locale | default .Site.Language.Lang }}" dir="{{ .Site.Language.Direction | default "ltr" }}">
 
 <head>
+  {{ if and (eq .Kind "section") (eq .Section "resources") }}
+    {{ $resourcePages := .RegularPagesRecursive.ByDate.Reverse }}
+    {{ .Store.Set "resourcePaginator" (.Paginate $resourcePages) }}
+  {{ end }}
   {{ partial "head.html" . }}
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {

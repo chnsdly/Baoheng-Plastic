@@ -38,6 +38,12 @@
 {{- end -}}
 {{- $description := $descriptionText -}}
 {{- $pageTitle := .Title | default .Site.Title | plainify -}}
+{{- $pageURL := .Permalink -}}
+{{- $resourcePageNumber := 1 -}}
+{{- with .Store.Get "resourcePaginator" -}}
+  {{- $pageURL = .URL | absURL -}}
+  {{- $resourcePageNumber = .PageNumber -}}
+{{- end -}}
 
 {{- $imageSource := "" -}}
 {{- with .Params.images -}}
@@ -81,7 +87,7 @@
 <meta name="author" content="{{ .Site.Params.company_name | default .Site.Title }}">
 <meta name="robots" content="{{ $robots }}">
 
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="canonical" href="{{ $pageURL }}">
 
 {{- with .OutputFormats.Get "rss" }}
 <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} RSS" href="{{ .Permalink }}">
@@ -98,13 +104,21 @@
 {{- if and $defaultLang .IsTranslated -}}
   {{- with where .AllTranslations "Language.Lang" $defaultLang -}}
     {{- with index . 0 -}}
-      {{- $xDefaultURL = .Permalink -}}
+      {{- $translationURL := .Permalink -}}
+      {{- if gt $resourcePageNumber 1 -}}
+        {{- $translationURL = printf "%spage/%d/" .Permalink $resourcePageNumber -}}
+      {{- end -}}
+      {{- $xDefaultURL = $translationURL -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 <link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}">
 {{- range where .AllTranslations "Language.Lang" "ne" "zh" -}}
-<link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ .Permalink }}">
+  {{- $translationURL := .Permalink -}}
+  {{- if gt $resourcePageNumber 1 -}}
+    {{- $translationURL = printf "%spage/%d/" .Permalink $resourcePageNumber -}}
+  {{- end -}}
+<link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ $translationURL }}">
 {{- end -}}
 
 <link rel="stylesheet" href="{{ $style.RelPermalink }}"{{ if and hugo.IsProduction $style.Data.Integrity }} integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"{{ end }}>
@@ -112,7 +126,7 @@
 {{- /* Open Graph */ -}}
 <meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $description }}">
-<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:url" content="{{ $pageURL }}">
 <meta property="og:type" content="{{ if and .IsPage (eq .Section "products") }}product{{ else if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="{{ replace (.Site.Language.Locale | default .Site.Language.Lang) "-" "_" }}">

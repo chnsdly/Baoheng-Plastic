@@ -58,9 +58,45 @@
 }
 
 .lead-form__message,
+.lead-form__privacy,
+.lead-form__status,
 .lead-form .cf-turnstile,
 .lead-form button {
   grid-column: 1 / -1;
+}
+
+.lead-form__privacy,
+.lead-form__status {
+  margin: 0;
+  font-size: var(--type-body-sm);
+  line-height: 1.55;
+}
+
+.lead-form__privacy {
+  color: var(--secondary);
+}
+
+.lead-form__privacy a {
+  color: var(--brand-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lead-form__privacy a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--brand) 35%, transparent);
+  outline-offset: 2px;
+}
+
+.lead-form__status {
+  padding: space(0.75) space(0.9);
+  border: 1px solid var(--danger);
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--danger) 8%, var(--surface));
+  color: var(--danger);
+}
+
+.lead-form__status[hidden] {
+  display: none;
 }
 
 .lead-form .cf-turnstile {

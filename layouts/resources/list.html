@@ -1,6 +1,9 @@
 {{ define "main" }}
   {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
-  {{ $paginator := .Paginate $pages }}
+  {{ $paginator := .Store.Get "resourcePaginator" }}
+  {{ if not $paginator }}
+    {{ $paginator = .Paginate $pages }}
+  {{ end }}
   {{ $root := .Site.GetPage "section" "resources" }}
   {{ $listingCopy := $root.Params.listing }}
   {{ $sections := cond (and $root (gt (len $root.Sections) 0)) $root.Sections slice }}

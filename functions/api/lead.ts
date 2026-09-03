@@ -110,7 +110,7 @@ export const onRequestPost: PagesFunction<LeadEnvironment> = async ({ request, e
   const formType = get("form_type") || "contact";
   const downloadSlug = get("download_slug");
   const language = get("language");
-  const consent = get("consent") || "no";
+  const consent = get("consent");
   const userAgent = (request.headers.get("User-Agent") || "").slice(0, 512);
 
   const leadPayload = {

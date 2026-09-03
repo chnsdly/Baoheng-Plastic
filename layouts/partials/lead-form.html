@@ -8,7 +8,11 @@
 {{ $product := .product | default "" }}
 {{ $messagePlaceholder := .message_placeholder }}
 
-<form action="/api/lead" method="POST" class="lead-form">
+<form action="/api/lead" method="POST" class="lead-form"
+  data-submitting-label="{{ i18n "contact_form_submitting" }}"
+  data-error-bot="{{ i18n "contact_form_error_bot" }}"
+  data-error-server="{{ i18n "contact_form_error_server" }}"
+  data-error-network="{{ i18n "contact_form_error_network" }}">
   <input type="hidden" name="form_type" value="{{ $type }}">
   {{ if eq $type "download" }}
     <input type="hidden" name="download_slug" value="{{ $slug }}">
@@ -36,8 +40,14 @@
   <label>{{ i18n "contact_form_phone_required" }}<input name="phone" type="tel" required autocomplete="tel"></label>
   <label class="lead-form__message">{{ i18n "contact_form_message" }}<textarea name="message" rows="4"{{ with $messagePlaceholder }} placeholder="{{ . }}"{{ end }}></textarea></label>
 
+  <p class="lead-form__privacy">
+    {{ i18n "contact_form_privacy_notice" }}
+    <a href="{{ "/privacy-policy/" | relLangURL }}">{{ i18n "privacy_policy" }}</a>{{ if eq $page.Language.Lang "zh" }}。{{ else }}.{{ end }}
+  </p>
+
   <!-- Turnstile -->
   <div class="cf-turnstile" data-sitekey="{{ $sitekey }}"></div>
+  <p class="lead-form__status" role="alert" aria-live="assertive" tabindex="-1" hidden></p>
   <button type="submit">{{ i18n "submit_inquiry" }}</button>
 </form>
 
@@ -73,8 +83,7 @@
       });
     }
 
-    document.querySelectorAll("form.lead-form").forEach((form) => {
-      form.addEventListener("submit", () => {
+    function rememberPendingSubmission(form) {
         const allowed = ["form_type", "intent", "industry", "product", "language", "content_asset"];
         const pending = { submitted_at: Date.now() };
         for (const key of allowed) {
@@ -82,6 +91,57 @@
           if (field && field.value) pending[key] = String(field.value).slice(0, 160);
         }
         try { sessionStorage.setItem("baoheng_pending_lead_submit_v1", JSON.stringify(pending)); } catch (_) {}
+    }
+
+    function resetTurnstile() {
+      try {
+        if (window.turnstile && typeof window.turnstile.reset === "function") window.turnstile.reset();
+      } catch (_) {}
+    }
+
+    document.querySelectorAll("form.lead-form").forEach((form) => {
+      form.addEventListener("submit", async (event) => {
+        rememberPendingSubmission(form);
+        if (typeof window.fetch !== "function" || typeof window.FormData !== "function") return;
+
+        event.preventDefault();
+        const button = form.querySelector('button[type="submit"]');
+        const status = form.querySelector(".lead-form__status");
+        if (!button || !status) return;
+
+        const originalLabel = button.textContent;
+        status.hidden = true;
+        status.textContent = "";
+        button.disabled = true;
+        button.textContent = form.dataset.submittingLabel;
+
+        let failed = false;
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            credentials: "same-origin",
+          });
+
+          if (response.ok && response.redirected && response.url) {
+            window.location.assign(response.url);
+            return;
+          }
+
+          failed = true;
+          status.textContent = response.status === 400 ? form.dataset.errorBot : form.dataset.errorServer;
+        } catch (_) {
+          failed = true;
+          status.textContent = form.dataset.errorNetwork;
+        } finally {
+          if (failed) {
+            status.hidden = false;
+            button.disabled = false;
+            button.textContent = originalLabel;
+            resetTurnstile();
+            status.focus();
+          }
+        }
       });
     });
   })();
