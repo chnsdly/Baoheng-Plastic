@@ -17,6 +17,8 @@ Un fournisseur remet un rapport ISO 8611 pour une palette plastique plate. Votre
 
 [ISO 8611-1:2025](https://www.iso.org/standard/87543.html) spécifie des méthodes d'essai pour les **palettes plates neuves**. Son champ d'application publié indique aussi qu'il ne s'applique pas à une palette avec superstructure fixe, ni à un conteneur rigide autoportant mécaniquement fixé à la palette lorsque ce conteneur contribue à la résistance. Cela ne signifie pas que l'ensemble est dangereux ; cela délimite la preuve. L'acheteur doit identifier l'objet réellement essayé avant d'approuver le parcours.
 
+[ISO 13194:2011](https://www.iso.org/standard/53478.html), **Caisses-palettes — Exigences principales et méthodes d'essai**, constitue la référence normative la plus directe pour une caisse-palette. Son champ publié couvre les caisses-palettes de tous matériaux, y compris les unités empilables manutentionnées par chariot élévateur ou transpalette ; il exclut les palettes-citernes et les palettes-silos, les autres dispositifs de levage et le contenu. Ce champ ne prouve pas que le modèle proposé a été essayé selon ISO 13194 : il indique la famille de norme et la configuration exacte à confirmer.
+
 La décision utile est simple : utilisez le rapport de palette plate pour comprendre la palette plate essayée ; approuvez une caisse-palette, un sleeve pack ou tout autre support assemblé avec un document propre à cette configuration.
 
 ## Nommez l'objet à approuver
