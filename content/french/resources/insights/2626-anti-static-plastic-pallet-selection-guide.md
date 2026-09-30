@@ -1,24 +1,24 @@
 ---
-title: "Palettes plastiques antistatiques : quand intégrer la protection ESD au cahier des charges"
-description: "Guide pratique pour les équipes achats, entrepôt et sécurité afin de savoir quand les palettes plastiques antistatiques sont nécessaires, quoi spécifier et comment valider la performance ESD avant le déploiement."
+title: "Palettes, caisses-palettes et bacs antistatiques : définir le rôle ESD"
+description: "Séparez l'article protégé, l'emballage intérieur, le rôle du support de charge et la preuve du modèle avant de spécifier une palette, caisse-palette ou un bac antistatique."
 layout: "resources/"
 cover_image: "images/resources/2626-anti-static-plastic-pallet-selection-guide.webp"
 cover_alt: "Opérateur d'entrepôt contrôlant une palette plastique antistatique avec un mesureur de résistance de surface"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palettes plastiques antistatiques", "palettes ESD", "palette dissipative", "sécurité entrepôt"]
+tags: ["palettes plastiques antistatiques", "caisses-palettes ESD", "bacs ESD", "supports de charge dissipatifs"]
 reading: "8 min"
 file_size: ""
 date: 2026-06-23
 popular: false
 ---
 
-Les palettes plastiques antistatiques sont souvent demandées tard dans un projet d'achat, en général après une question sur des composants électroniques, l'air sec en entrepôt, des matières inflammables ou un audit client. La demande semble simple : "il faut une palette antistatique". En pratique, cette phrase est trop vague pour protéger l'acheteur comme le fournisseur.
+Les palettes, caisses-palettes et bacs antistatiques sont souvent demandés tard dans un projet d'achat, après une question sur des composants électroniques, une zone contrôlée ESD, un environnement sec ou un audit. La demande semble simple : « le support doit être antistatique ». Elle ne précise pourtant ni ce qui doit être protégé ni le rôle du support.
 
-Le risque électrostatique ne dépend pas seulement de la matière. Il dépend du produit manutentionne, de la surface de l'emballage, de l'etat du sol, de l'humidité, de la vitesse de manutention, du chemin de mise a la terre, de la méthode de nettoyage et de la façon dont la palette circule dans l'entrepôt. Une palette plastique standard peut convenir parfaitement au stockage de cartons ordinaires, tandis qu'une zone d'assemblage sensible a l'ESD peut exiger une solution dissipative contrôlée avec des critères d'acceptation mesurables.
+Pour les dispositifs électroniques, la maîtrise électrostatique relève du programme ESD complet de l'acheteur. La décision dépend de la sensibilité du dispositif, de l'emballage intérieur, du parcours, du lieu d'ouverture, du sol et de la mise à la terre, du nettoyage, de l'usure et de la méthode d'essai convenue. Les risques d'inflammation liés aux liquides, gaz ou poudres inflammables et aux dispositifs initiés électriquement exigent une étude de sécurité séparée ; ils ne relèvent pas du champ électronique utilisé ici.
 
 La bonne question achats est :
 
-**Quand une operation a-t-elle vraiment besoin d'une palette plastique antistatique, et comment formuler cette exigence pour qu'elle soit vérifiable ?**
+**Quel rôle ESD la palette, la caisse-palette ou le bac doit-il jouer, et quelles preuves du modèle exact le démontreront ?**
 
 ---
 
@@ -120,6 +120,21 @@ Cette distinction evite la sur-spécification. Elle protege aussi l'acheteur con
 
 ---
 
+## Pour une caisse-palette ou un bac, séparer quatre niveaux
+
+Une caisse-palette ou un bac peut contenir des dispositifs sensibles sans être lui-même l'emballage protecteur. [IEC 61340-5-1:2024](https://webstore.iec.ch/en/publication/74748) place l'emballage, le transport et la manutention dans un programme de contrôle ESD. [IEC 61340-5-3:2022](https://webstore.iec.ch/en/publication/64718) traite des propriétés et de la classification des emballages destinés à protéger les dispositifs sensibles. Aucun de ces textes n'approuve le modèle précis d'un fournisseur ni n'impose à tout contenant extérieur la même fonction qu'un sachet, plateau ou calage ESD intérieur.
+
+Rédigez l'exigence en quatre niveaux :
+
+1. **Article protégé.** Identifiez le composant, l'ensemble ou l'équipement et la sensibilité ou le programme client qui le contrôle. « Électronique » n'est pas une limite d'acceptation.
+2. **Emballage intérieur.** Indiquez si les dispositifs restent scellés dans des sachets, plateaux, séparateurs ou autres emballages qualifiés et où ils sont ouverts. Une caisse extérieure dissipative ne corrige pas forcément un emballage intérieur inadapté.
+3. **Rôle du support.** Déterminez si la caisse ou le bac reste hors de la zone protégée, y entre fermé, sert à l'ouverture, touche des articles non emballés ou doit être relié à une mise à la terre définie. La propriété requise découle de ce rôle.
+4. **Preuve du support fini.** Définissez la méthode, le conditionnement, les points de mesure, les limites, l'échantillonnage et le déclencheur de nouvel essai. Couvrez le fond, les parois, le couvercle, les charnières, les verrous, les séparateurs, les contacts, le nettoyage, l'abrasion, les réparations et les changements de matière ou de procédé lorsqu'ils influencent le résultat.
+
+Si l'emballage intérieur qualifié reste fermé et que le support extérieur n'entre pas dans la zone contrôlée, une caisse-palette standard peut suffire ; le programme ESD de l'acheteur doit toutefois le décider. Si le support entre, sert à l'ouverture ou touche les articles sensibles, l'acheteur doit d'abord définir sa fonction et sa vérification. Le fournisseur précise ensuite quels relevés existent pour le modèle fini. Sans ces relevés, ne remplacez pas la preuve par une couleur, un nom de résine, une étiquette d'additif ou une déclaration générale de conformité ESD.
+
+---
+
 ## Specifier la performance après usage reel
 
 Certaines proprietes antistatiques dépendent des additifs, de l'etat de surface et de l'environnement. Une palette peut reussir un essai simple lorsqu'elle est neuve et echouer après abrasion, lavage, exposition exterieure, accumulation de poussiere ou contacts repetes avec les fourches.
@@ -205,8 +220,8 @@ Ces risques se maitrisent lorsqu'ils sont ecrits dans la spécification avant co
 
 ## Regle de decision pratique
 
-Choisissez des palettes plastiques antistatiques seulement lorsque le parcours de manutention justifie le controle électrostatique, puis définissez l'exigence en termes mesurables.
+Choisissez une palette, une caisse-palette ou un bac antistatique seulement lorsque le parcours et le programme ESD de l'acheteur lui attribuent une fonction de contrôle définie, puis exprimez cette fonction en termes mesurables.
 
-Commencez par le risque produit et site. Confirmez si la palette entre vraiment dans une zone sensible ESD ou contrôlée par la sécurité. Separez les besoins de retention des besoins de controle électrostatique. Definissez comportement requis, méthode d'essai, zones de palette, conditions environnementales et regles de recontrole. Validez les échantillons sur le parcours reel avant l'achat en volume.
+Commencez par l'article protégé et l'emballage intérieur. Confirmez si le support entre dans une zone protégée ESD, sert à l'ouverture ou touche des dispositifs non emballés. Séparez la contention de la protection ESD et la protection électronique de l'étude du risque d'inflammation. Définissez comportement, méthode, zones, environnement et recontrôle ; validez le modèle fini exact sur le parcours réel avant l'achat en volume.
 
-La bonne palette antistatique n'est pas simplement une palette avec une etiquette speciale. C'est un support de charge dont le comportement électrostatique, la structure, la tolerance au nettoyage et le plan d'inspection correspondent au systeme d'entrepôt qui l'utilisera.
+Le bon support ESD n'est pas un produit muni d'une étiquette spéciale. C'est un modèle fini exact dont le comportement documenté, la structure, la tolérance au nettoyage et le plan d'inspection correspondent au système de contrôle complet de l'acheteur.
