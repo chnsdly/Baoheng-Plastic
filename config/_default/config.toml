@@ -30,3 +30,7 @@ theme = []
 [languages.fr.taxonomies]
   category = "categories"
   tag      = "tags"
+
+[languages.ko.taxonomies]
+  category = "categories"
+  tag      = "tags"

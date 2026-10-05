@@ -35,6 +35,7 @@ const THANKS_PATHS: Record<string, string> = {
   fr: "/fr/thanks/",
   ru: "/ru/thanks/",
   zh: "/zh/thanks/",
+  ko: "/ko/thanks/",
 };
 
 function getThanksUrl(language: string, requestUrl: string): URL {

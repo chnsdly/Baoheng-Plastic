@@ -37,3 +37,11 @@ locale = 'ru-RU'
 direction = 'ltr'
 contentDir = 'content/russian'
 weight = 9
+
+################ Korean language ###################
+[ko]
+label = "한국어"
+locale = "ko-KR"
+direction = "ltr"
+contentDir = "content/korean"
+weight = 10

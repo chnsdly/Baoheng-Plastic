@@ -37,3 +37,9 @@ disableKinds = ['rss']
     direction = 'ltr'
     weight = 9
     contentDir = 'content/russian'
+  [languages.ko]
+    label = '한국어'
+    locale = 'ko-KR'
+    direction = 'ltr'
+    weight = 10
+    contentDir = 'content/korean'
