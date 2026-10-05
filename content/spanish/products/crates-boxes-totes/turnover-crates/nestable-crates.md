@@ -18,6 +18,13 @@ pallet_category:
 
 contact_cta_label: "Solicitar cotización"
 contact_cta_link: "/contact"
+detail_intro: |-
+  Antes de elegir una caja para alimentos, productos agrícolas o cadena de frío, clasifique el contacto. Manipular mercancía envasada o moverla por el almacén no es lo mismo que el contacto directo con alimentos sin envasar ni que un uso en el que sea razonablemente previsible una transferencia al alimento.
+
+  - **Defina el uso:** indique el producto, si toca la base o las paredes, el tiempo y la temperatura de contacto, la ventilación o el drenaje, los productos químicos de lavado y el ciclo de reutilización.
+  - **Vincule los documentos al modelo y al mercado exactos:** el nombre de una resina, la materia prima virgen, el color o la categoría del catálogo no demuestran por sí solos que la caja terminada cumpla las normas de contacto alimentario. Para contacto directo o previsible, identifique el mercado aplicable y solicite la declaración escrita y las pruebas exigidas para esa caja, material y condición de uso.
+  - **Mantenga claro el alcance actual de suministro:** Baoheng puede revisar opciones de materia prima virgen para almacenamiento, circulación y logística sin contacto directo en empresas alimentarias. No deduzca de esta página o de las imágenes que la caja es apta para contacto directo; ese uso requiere confirmación específica del modelo y del mercado.
+  - **Después compruebe el ajuste de la caja:** antes de normalizar un modelo, confirme dimensiones útiles, peso de llenado, ventilación, apilado y encajado, ruta de manipulación, limpieza, temperatura, cantidad y destino.
 product_showcase:
   enable: true
   title: "Product List"
@@ -53,3 +60,4 @@ form_title: "Cuéntenos sus requisitos de carga"
 
 
 {{< quote_request_button >}}
+

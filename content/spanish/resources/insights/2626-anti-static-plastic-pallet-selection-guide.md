@@ -1,24 +1,24 @@
 ---
-title: "Palets plásticos antiestáticos: cómo decidir si la protección ESD debe entrar en la especificación"
-description: "Guía práctica para equipos de compras, almacén y seguridad sobre cuándo se necesitan palets plásticos antiestáticos, qué especificar y cómo validar el rendimiento ESD antes del despliegue."
+title: "Palets, cajas palet y contenedores antiestáticos: defina la función ESD"
+description: "Separe el artículo protegido, el embalaje interior, la función del portacargas y la evidencia del modelo antes de especificar un palet, caja palet o contenedor antiestático."
 layout: "resources/"
 cover_image: "images/resources/2626-anti-static-plastic-pallet-selection-guide.webp"
 cover_alt: "Operario de almacén comprobando un palet plástico antiestático con un medidor de resistencia superficial"
 categories: "articles" # articles | downloads | news | faq
-tags: ["palets plásticos antiestáticos", "palets ESD", "palet disipativo", "seguridad en almacén"]
+tags: ["palets plásticos antiestáticos", "cajas palet ESD", "contenedores ESD", "portacargas disipativos"]
 reading: "8 min"
 file_size: ""
 date: 2026-06-23
 popular: false
 ---
 
-Los palets plásticos antiestáticos suelen solicitarse tarde en un proyecto de compra, normalmente después de que alguien mencione componentes electrónicos, aire seco en el almacén, materiales inflamables o auditorías de clientes. La petición parece sencilla: "que el palet sea antiestático". En la práctica, esa frase es demasiado vaga para proteger al comprador y al proveedor.
+Los palets, cajas palet y contenedores antiestáticos suelen solicitarse tarde en un proyecto de compra, después de una duda sobre componentes electrónicos, una zona controlada ESD, condiciones secas o una auditoría. La petición parece sencilla: "que el portacargas sea antiestático". En realidad, no identifica qué debe protegerse ni qué función debe cumplir el portacargas.
 
-El riesgo electrostático no depende solo del material. Depende del producto manipulado, la superficie del embalaje, el estado del suelo, la humedad, la velocidad de manipulación, la ruta de descarga a tierra, el método de limpieza y la forma en que el palet se mueve por el almacén. Un palet plástico estándar puede ser perfectamente adecuado para cajas normales, mientras que una zona de ensamblaje sensible a ESD puede requerir una solución disipativa controlada con criterios de aceptación medibles.
+Para dispositivos electrónicos, el control electrostático pertenece al programa ESD completo del comprador. La decisión depende de la sensibilidad del dispositivo, el embalaje interior, la ruta, el punto de apertura, el suelo y la puesta a tierra, la limpieza, el desgaste y el método de ensayo acordado. Los riesgos de ignición con líquidos, gases, polvos inflamables o dispositivos iniciados eléctricamente exigen una revisión de seguridad separada; no pertenecen al alcance de dispositivos electrónicos usado aquí.
 
 La pregunta útil para compras es:
 
-**¿Cuándo necesita realmente una operación un palet plástico antiestático y cómo debe escribirse ese requisito para que pueda comprobarse?**
+**¿Qué función ESD debe cumplir el palet, la caja palet o el contenedor, y qué evidencia del modelo exacto lo demostrará?**
 
 ---
 
@@ -120,6 +120,21 @@ Esta distinción evita sobreespecificar. También protege al comprador de especi
 
 ---
 
+## Para una caja palet o un contenedor, separe cuatro capas
+
+Una caja palet o un contenedor puede transportar dispositivos sensibles a ESD sin ser necesariamente el embalaje protector. [IEC 61340-5-1:2024](https://webstore.iec.ch/en/publication/74748) sitúa embalaje, transporte y manipulación dentro de un programa de control ESD. [IEC 61340-5-3:2022](https://webstore.iec.ch/en/publication/64718) trata las propiedades y la clasificación del embalaje destinado a proteger dispositivos sensibles. Ninguna referencia aprueba el modelo concreto de un proveedor ni obliga a que todo contenedor exterior cumpla la misma función que una bolsa, bandeja o amortiguación ESD interior.
+
+Escriba el requisito en cuatro capas:
+
+1. **Artículo protegido.** Identifique el componente, conjunto o equipo y la sensibilidad o programa del cliente que lo controla. “Electrónica” no es un límite de aceptación.
+2. **Embalaje interior.** Indique si los dispositivos permanecen sellados en bolsas, bandejas, separadores u otros embalajes cualificados y dónde se abren. No suponga que una caja exterior disipativa corrige un embalaje interior inadecuado.
+3. **Función del portacargas.** Decida si queda fuera del área protegida, entra sellado, sirve para abrir el embalaje, toca artículos sin embalar o debe conectarse a una puesta a tierra definida. La propiedad requerida depende de esta función.
+4. **Evidencia del portacargas terminado.** Defina método, acondicionamiento, puntos de medida, límites, muestreo y disparador de reensayo. Incluya base, paredes, tapa, bisagras, cierres, separadores, puntos de contacto, limpieza, abrasión, reparaciones y cambios de material o proceso cuando puedan afectar al resultado.
+
+Si el embalaje interior cualificado permanece sellado y el portacargas exterior no entra en la zona controlada, una caja palet estándar puede ser suficiente, pero debe decidirlo el programa ESD del comprador. Si entra, soporta la apertura o toca artículos sensibles, el comprador debe definir primero su función y verificación. El proveedor indicará después qué registros existen para el modelo terminado. Sin esos registros, no sustituya la evidencia por color, nombre de resina, etiqueta de aditivo o una declaración general de conformidad ESD.
+
+---
+
 ## Especifique el rendimiento después del uso real
 
 Algunas propiedades antiestaticas dependen de aditivos, condicion superficial y ambiente. Un palet puede pasar una prueba básica cuando es nuevo y fallar después de abrasión, lavado, exposición exterior, acumulación de polvo o contacto repetido con horquillas.
@@ -205,8 +220,8 @@ Estos riesgos son manejables cuando se escriben en la especificación antes de c
 
 ## Regla práctica de decisión
 
-Elija palets plásticos antiestáticos solo cuando la ruta de manipulación justifique el control electrostático, y defina el requisito en términos medibles.
+Elija un palet, una caja palet o un contenedor antiestático solo cuando la ruta y el programa ESD del comprador le asignen una función de control definida; exprese después esa función en términos medibles.
 
-Empiece por el riesgo del producto y de la planta. Confirme si el palet entra realmente en una zona sensible a ESD o controlada por seguridad. Separe las necesidades de contención de las de control electrostático. Defina comportamiento requerido, método de ensayo, zonas del palet, condiciones ambientales y reglas de reensayo. Valide las muestras en la ruta real antes de comprar en volumen.
+Empiece por el artículo protegido y el embalaje interior. Confirme si el portacargas entra en un área protegida ESD, sirve para abrir el embalaje o toca dispositivos sin embalar. Separe contención de protección ESD y protección electrónica de la revisión del riesgo de ignición. Defina comportamiento, método, zonas, ambiente y reensayo; valide el modelo terminado exacto en la ruta real antes de comprar en volumen.
 
-El palet antiestático correcto no es simplemente un palet con una etiqueta especial. Es un portacargas cuyo comportamiento electrostático, estructura, tolerancia a la limpieza y plan de inspección encajan con el sistema de almacén que lo usara.
+El portacargas ESD adecuado no es un producto con una etiqueta especial. Es un modelo terminado exacto cuyo comportamiento documentado, estructura, tolerancia a la limpieza y plan de inspección encajan con el sistema de control completo del comprador.

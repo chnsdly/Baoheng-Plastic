@@ -17,6 +17,8 @@ A supplier sends an ISO 8611 report for a flat plastic pallet. Your project uses
 
 [ISO 8611-1:2025](https://www.iso.org/standard/87543.html) specifies test methods for **new flat pallets**. Its published scope also says it does not apply to a pallet with a fixed superstructure, or to a rigid self-supporting container mechanically attached to the pallet when that container contributes to the strength. That wording is a scope boundary, not a statement that the assembled carrier is unsafe. It means the buyer must identify what was actually tested before approving the route.
 
+[ISO 13194:2011](https://www.iso.org/standard/53478.html), **Box pallets — Principal requirements and test methods**, is the more direct standards reference for a box pallet. Its published scope covers box pallets of all materials, including units that can be stacked and handled by forklift or pallet truck; it excludes tank and silo pallets, other lifting devices, and the contents. That scope does not prove that a quoted model was tested to ISO 13194. It tells the buyer which standard family and exact configuration to ask about.
+
 The useful decision is simple: use a flat-pallet report to understand the tested flat pallet; use a configuration-specific record to approve a pallet box, sleeve pack, cage, or other assembled load carrier.
 
 ## First, name the item being approved

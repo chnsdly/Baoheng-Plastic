@@ -17,6 +17,8 @@ Un proveedor entrega un informe ISO 8611 de un palet plano de plástico. En su p
 
 [ISO 8611-1:2025](https://www.iso.org/standard/87543.html) especifica métodos de ensayo para **palets planos nuevos**. Su alcance publicado también indica que no se aplica a un palet con una superestructura fija ni a un contenedor rígido autoportante unido mecánicamente al palet cuando el contenedor contribuye a la resistencia. No afirma que el conjunto sea inseguro; delimita la evidencia. Antes de aprobar la ruta, el comprador debe identificar qué se ensayó realmente.
 
+[ISO 13194:2011](https://www.iso.org/standard/53478.html), **Cajas-palet — Requisitos principales y métodos de ensayo**, es la referencia normativa más directa para una caja-palet. Su alcance publicado cubre cajas-palet de cualquier material, incluidas las unidades apilables manipuladas con carretilla elevadora o transpaleta; excluye los palets cisterna y silo, otros dispositivos de elevación y el contenido. Ese alcance no demuestra que el modelo cotizado haya sido ensayado según ISO 13194: indica qué familia normativa y qué configuración exacta debe confirmar el comprador.
+
 La decisión útil es sencilla: use el informe de palet plano para entender el palet plano ensayado; apruebe una caja-palet, un sleeve pack o cualquier portacargas ensamblado con un registro específico de esa configuración.
 
 ## Nombre el objeto que se va a aprobar
