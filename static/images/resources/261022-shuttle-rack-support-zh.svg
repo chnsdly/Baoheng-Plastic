@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">四向穿梭车立体库货位支撑原理示意</title>
+  <desc id="desc">箱装饮料位于蓝色塑料托盘上。托盘两侧由货位支撑件承托，中间留有穿梭车运行与顶升空间。图中尺寸和结构均为示意。</desc>
+  <style>
+    text{font-family:'Arial','Noto Sans','Microsoft YaHei','Malgun Gothic',sans-serif;fill:#173650}
+    .label{font-size:21px;font-weight:700}
+    .note{font-size:18px;fill:#496983}
+    .thin{stroke:#7997ae;stroke-width:2;fill:none}
+  </style>
+  <rect width="1200" height="500" fill="#f8fafc"/>
+  <rect x="36" y="32" width="1128" height="430" rx="22" fill="#ffffff" stroke="#d9e5ee" stroke-width="2"/>
+  <rect x="265" y="105" width="670" height="135" rx="8" fill="#d6b285" stroke="#b28c5e" stroke-width="3"/>
+  <path d="M488 105v135M712 105v135M265 172h670" stroke="#b28c5e" stroke-width="3"/>
+  <text class="label" x="600" y="86" text-anchor="middle">实际饮料包装与堆码</text>
+  <rect x="235" y="246" width="730" height="31" rx="7" fill="#2376aa"/>
+  <rect x="260" y="277" width="136" height="40" rx="5" fill="#2376aa"/>
+  <rect x="804" y="277" width="136" height="40" rx="5" fill="#2376aa"/>
+  <text class="label" x="1042" y="260" text-anchor="middle">塑料托盘</text>
+  <path class="thin" d="M966 258h32"/>
+  <rect x="210" y="318" width="210" height="26" rx="4" fill="#e5a649"/>
+  <rect x="780" y="318" width="210" height="26" rx="4" fill="#e5a649"/>
+  <path d="M242 348v38M958 348v38" stroke="#a8bdce" stroke-width="7"/>
+  <text class="label" x="145" y="337" text-anchor="middle">货位支撑</text>
+  <path class="thin" d="M205 333h-28"/>
+  <text class="label" x="1053" y="337" text-anchor="middle">货位支撑</text>
+  <path class="thin" d="M994 333h-20"/>
+  <rect x="458" y="310" width="284" height="93" rx="12" fill="#e9f3f9" stroke="#6ca1bf" stroke-width="2" stroke-dasharray="9 7"/>
+  <rect x="514" y="344" width="172" height="40" rx="13" fill="#7899af"/>
+  <circle cx="542" cy="386" r="8" fill="#45687f"/><circle cx="658" cy="386" r="8" fill="#45687f"/>
+  <text class="note" x="600" y="434" text-anchor="middle">穿梭车运行与顶升空间：按设备图纸核对</text>
+  <path d="M421 395h35m-12-9 12 9-12 9M744 395h35m-23-9-12 9 12 9" stroke="#668ca8" stroke-width="2.5" fill="none"/>
+  <text class="note" x="600" y="478" text-anchor="middle">承托位置、间距、接触宽度及允许变形均以实际货位要求为准</text>
+</svg>

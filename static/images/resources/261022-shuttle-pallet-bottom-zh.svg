@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="475" viewBox="0 0 1200 475" role="img" aria-labelledby="title desc">
+  <title id="title">川字和田字塑料托盘底部结构分类示意</title>
+  <desc id="desc">左侧以三条纵向支撑梁示意川字底部；右侧以外框和交叉支撑梁示意田字底部。图形不代表具体产品尺寸或设备适配性。</desc>
+  <style>
+    text{font-family:'Arial','Noto Sans','Microsoft YaHei','Malgun Gothic',sans-serif;fill:#173650}
+    .heading{font-size:28px;font-weight:700}
+    .note{font-size:18px;fill:#5d788d}
+    .frame{fill:#f1f7fb;stroke:#cadce8;stroke-width:2}
+  </style>
+  <rect width="1200" height="475" fill="#f8fafc"/>
+  <rect class="frame" x="36" y="35" width="542" height="390" rx="22"/>
+  <rect class="frame" x="622" y="35" width="542" height="390" rx="22"/>
+  <text class="heading" x="307" y="89" text-anchor="middle">川字底部示意</text>
+  <text class="heading" x="893" y="89" text-anchor="middle">田字底部示意</text>
+  <rect x="118" y="124" width="378" height="225" rx="10" fill="#dcecf6" stroke="#a7c3d6" stroke-width="3"/>
+  <rect x="145" y="143" width="54" height="187" rx="5" fill="#2477aa"/>
+  <rect x="280" y="143" width="54" height="187" rx="5" fill="#2477aa"/>
+  <rect x="415" y="143" width="54" height="187" rx="5" fill="#2477aa"/>
+  <rect x="704" y="124" width="378" height="225" rx="10" fill="#dcecf6" stroke="#a7c3d6" stroke-width="3"/>
+  <rect x="731" y="143" width="324" height="187" rx="5" fill="none" stroke="#2477aa" stroke-width="30"/>
+  <rect x="871" y="143" width="44" height="187" fill="#2477aa"/>
+  <rect x="731" y="214" width="324" height="44" fill="#2477aa"/>
+  <text class="note" x="307" y="391" text-anchor="middle">纵向支撑梁的位置仍需核对</text>
+  <text class="note" x="893" y="391" text-anchor="middle">开口与交叉梁的位置仍需核对</text>
+  <text class="note" x="600" y="458" text-anchor="middle">仅表示结构分类，不代表某一型号已适配四向穿梭车</text>
+</svg>
