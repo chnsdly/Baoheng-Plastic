@@ -2,8 +2,8 @@
 title: "Palets de plástico para dispensadores automáticos"
 description: "Compruebe los puntos de agarre, la altura de la pila encajada y la salida al transportador antes de comprar palets para un dispensador automático."
 layout: "resources/"
-cover_image: "images/resources/261105-plastic-pallet-automatic-dispenser-compatibility.webp"
-cover_alt: "Tres palets de plástico azules encajados junto a un dispensador protegido y un transportador de rodillos"
+cover_image: "images/products/pallet/nine-leg/1208-hero.jpg"
+cover_alt: "Palet de plástico azul Baoheng 1208 con tablero de rejilla y nueve patas"
 categories: "buying-guides"
 tags: ["palets de plástico", "dispensadores de palets", "automatización de almacenes"]
 reading: "4 min"
@@ -15,7 +15,7 @@ author: "Baoheng Plastic"
 
 Un palet de plástico vacío puede caber en el dispensador y arrastrar otro al salir. Si va a cambiar los palets de una línea automatizada, valide el diseño exacto con la configuración del dispensador. La máquina debe sujetar la pila por los puntos previstos, separar un palet y entregarlo al siguiente transportador en la posición correcta.
 
-*La imagen de portada es una ilustración generada con IA de un puesto de suministro de palets.*
+*Imagen del catálogo Baoheng. [Palet encajable de nueve patas 1208](/products/pallets/nestable-plastic-pallets/nine-leg_1208/).*
 
 ## Marque los puntos donde la máquina sujeta la pila
 

@@ -2,8 +2,8 @@
 title: "自动供板机用塑料托盘怎么选？"
 description: "为自动供板机选塑料托盘时，核对夹持位置、套叠增高量和输送交接，并在批量采购前验证每次只供一张托盘。"
 layout: "resources/"
-cover_image: "images/resources/261105-plastic-pallet-automatic-dispenser-compatibility.webp"
-cover_alt: "带防护围栏的供板设备和滚筒输送机旁，套叠着三张蓝色塑料托盘"
+cover_image: "images/products/pallet/nine-leg/1208-hero.jpg"
+cover_alt: "宝恒 1208 蓝色网格九脚型塑料托盘"
 categories: "buying-guides"
 tags: ["塑料托盘", "自动供板机", "仓储自动化"]
 reading: "4分钟"
@@ -15,7 +15,7 @@ author: "Baoheng Plastic"
 
 空塑料托盘放得进托盘库，出料时却可能带出第二张。自动化产线更换托盘时，要把具体托盘结构和供板机的设置一起验收。设备应在指定位置托住托盘，让一张托盘顺利脱离整垛，再按要求的方向和位置送到下游输送机。
 
-*封面为 AI 生成的托盘供板工位示意图。*
+*封面采用宝恒产品目录原图。[1208 网格九脚型塑料托盘](/products/pallets/nestable-plastic-pallets/nine-leg_1208/)*
 
 ## 先标出设备在哪儿托住整垛
 

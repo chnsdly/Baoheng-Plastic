@@ -2,8 +2,8 @@
 title: "자동 팔레트 공급기용 플라스틱 팔레트 선택 가이드"
 description: "자동 공급기용 플라스틱 팔레트를 고를 때는 지지 위치, 포개 쌓기 간격, 컨베이어 인계를 확인하고 한 장씩 공급되는지 시험하세요."
 layout: "resources/"
-cover_image: "images/resources/261105-plastic-pallet-automatic-dispenser-compatibility.webp"
-cover_alt: "안전 울타리가 설치된 자동 공급기와 롤러 컨베이어 앞에 포개 놓은 파란 플라스틱 팔레트 세 장"
+cover_image: "images/products/pallet/nine-leg/1208-hero.jpg"
+cover_alt: "격자형 상판과 아홉 개의 받침발이 있는 파란색 Baoheng 1208 플라스틱 팔레트"
 categories: "buying-guides"
 tags: ["플라스틱 팔레트", "자동 팔레트 공급기", "물류 자동화"]
 reading: "4분"
@@ -15,7 +15,7 @@ author: "Baoheng Plastic"
 
 빈 플라스틱 팔레트가 공급기 적재부에 들어가더라도 배출할 때 두 장이 함께 나올 수 있습니다. 자동화 라인의 팔레트를 교체하려면 실제 사용할 팔레트 형상과 공급기 설정을 함께 검증하세요. 장비가 정해진 위치에서 팔레트 더미를 지지하고 한 장만 분리해 다음 컨베이어의 지정된 위치에 보내야 합니다.
 
-*표지 이미지는 팔레트 공급 공정을 표현한 AI 일러스트입니다.*
+*Baoheng 제품 카탈로그 이미지입니다. [1208 격자형 9발 플라스틱 팔레트](/products/pallets/nestable-plastic-pallets/nine-leg_1208/)*
 
 ## 공급기가 팔레트 더미를 지지하는 위치부터 확인하세요
 

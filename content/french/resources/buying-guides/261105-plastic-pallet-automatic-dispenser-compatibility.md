@@ -2,8 +2,8 @@
 title: "Palettes en plastique pour dépileurs automatiques"
 description: "Vérifiez la prise, le pas d’emboîtement et le transfert vers le convoyeur avant d’acheter des palettes en plastique pour un dépileur automatique."
 layout: "resources/"
-cover_image: "images/resources/261105-plastic-pallet-automatic-dispenser-compatibility.webp"
-cover_alt: "Trois palettes en plastique bleues emboîtées près d’un dépileur protégé et d’un convoyeur à rouleaux"
+cover_image: "images/products/pallet/nine-leg/1208-hero.jpg"
+cover_alt: "Palette en plastique bleue Baoheng 1208 à plateau ajouré et neuf pieds"
 categories: "buying-guides"
 tags: ["palettes en plastique", "dépileurs de palettes", "automatisation d’entrepôt"]
 reading: "4 min"
@@ -15,7 +15,7 @@ author: "Baoheng Plastic"
 
 Une palette vide en plastique peut entrer dans le magasin du dépileur et entraîner une deuxième palette à la sortie. Si vous changez de modèle sur une ligne automatisée, validez la palette et les réglages du dépileur ensemble. La machine doit retenir la pile aux points prévus, séparer une palette et la présenter au convoyeur suivant dans la bonne position.
 
-*L’image de couverture est une illustration d’un poste d’alimentation en palettes générée par IA.*
+*Image du catalogue Baoheng. [Palette emboîtable à neuf pieds 1208](/products/pallets/nestable-plastic-pallets/nine-leg_1208/).*
 
 ## Repérez les points où le dépileur retient la pile
 

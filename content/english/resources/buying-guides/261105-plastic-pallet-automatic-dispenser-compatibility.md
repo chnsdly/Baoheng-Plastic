@@ -2,8 +2,8 @@
 title: "Plastic Pallets for Automatic Pallet Dispensers"
 description: "Check grip points, nesting pitch and conveyor handoff when choosing plastic pallets for an automatic dispenser. Verify one-pallet feeding before bulk orders."
 layout: "resources/"
-cover_image: "images/resources/261105-plastic-pallet-automatic-dispenser-compatibility.webp"
-cover_alt: "Three nested blue plastic pallets near a guarded pallet dispenser and roller conveyor"
+cover_image: "images/products/pallet/nine-leg/1208-hero.jpg"
+cover_alt: "Blue Baoheng 1208 plastic pallet with an open grid deck and nine nesting feet"
 categories: "buying-guides"
 tags: ["plastic pallets", "pallet dispensers", "warehouse automation"]
 reading: "4 min"
@@ -15,7 +15,7 @@ author: "Baoheng Plastic"
 
 An empty plastic pallet can fit inside the dispenser’s magazine and still bring a second pallet with it on release. If you are replacing pallets on an automated line, approve the exact pallet design and dispenser setup together. The sample has to be held at the right points, separate cleanly from the stack and arrive on the next conveyor in the correct position.
 
-*The cover is an AI-generated illustration of a pallet-feeding station.*
+*Cover image from the Baoheng catalog. [1208 open-deck nine-leg plastic pallet](/products/pallets/nestable-plastic-pallets/nine-leg_1208/).*
 
 ## Mark where the dispenser holds the stack
 
