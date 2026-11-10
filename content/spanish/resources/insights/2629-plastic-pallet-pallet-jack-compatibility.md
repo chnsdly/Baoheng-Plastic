@@ -78,7 +78,7 @@ Para recepcion de mercancias, anada la entrada de transpaleta a la inspeccion de
 
 ## Siga la trayectoria de las ruedas, no solo la abertura de horquilla
 
-Las ruedas de carga son las que mas rapidamente revelan una incompatibilidad. Cuando la transpaleta entra en un palet, sus ruedas delanteras avanzan por delante de las puntas de las horquillas. Si encuentran una pata vertical, una nervadura alta, una transicion brusca o un hueco sin soporte, la transpaleta puede detenerse o subir de forma desigual.
+Compruebe la posición real del conjunto de ruedas y su recorrido por la base, sin dar por supuesta su posición respecto a las puntas de las horquillas. La [guía de seguridad de palets del HSE británico (PM15, cuarta edición, página 8)](https://www.hse.gov.uk/pubns/pm15.pdf) advierte que las ruedas de la transpaleta pueden dañar las tablas de la base. Con el equipo elegido, compruebe el contacto con patas, patines y nervaduras al entrar, elevar y retirar las horquillas. Detenga la prueba si se atasca o exige forzar la entrada.
 
 Inspeccione la parte inferior desde el punto de vista de la transpaleta:
 

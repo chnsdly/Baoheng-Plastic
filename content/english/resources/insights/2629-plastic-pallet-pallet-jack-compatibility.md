@@ -78,7 +78,7 @@ For inbound receiving, add pallet jack entry to the regular release inspection. 
 
 ## Follow the load-wheel path, not only the fork pocket
 
-The load wheels are the parts most likely to expose a mismatch. When a pallet jack enters a pallet, its front wheels roll ahead of the fork tips. If those wheels meet a vertical leg, high cross rib, sharp transition, or unsupported gap, the jack can stop or climb unevenly.
+Check the actual wheel assembly and its path through the pallet base rather than assuming where the wheels sit relative to the fork tips. The UK HSE's [Pallet safety guidance (PM15, fourth edition, page 8)](https://www.hse.gov.uk/pubns/pm15.pdf) warns that pallet-truck finger wheels can damage baseboards. For the selected truck, check wheel contact with legs, runners and ribs during entry, lifting and withdrawal. Stop the trial if the truck catches or needs forcing.
 
 Inspect the pallet underside from the jack's point of view:
 

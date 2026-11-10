@@ -78,7 +78,7 @@ Pour la reception, ajoutez l'entree transpalette a l'inspection de liberation. L
 
 ## Suivre le chemin des roues, pas seulement la poche de fourche
 
-Les roues de charge revelent souvent l'incompatibilite. Lorsqu'un transpalette entre dans une palette, ses roues avant roulent devant les pointes de fourche. Si elles rencontrent un pied vertical, une nervure haute, une transition brusque ou un vide non supporte, le transpalette peut se bloquer ou monter de travers.
+Vérifiez la position réelle des roues et leur passage dans la base, sans présumer de leur position par rapport aux pointes des fourches. Le [guide britannique du HSE sur la sécurité des palettes (PM15, quatrième édition, page 8)](https://www.hse.gov.uk/pubns/pm15.pdf) signale que les petites roues du transpalette peuvent endommager les planches de base. Avec le transpalette choisi, vérifiez le contact avec les pieds, patins et nervures à l'entrée, au levage et au retrait. Arrêtez l'essai en cas de blocage ou si l'entrée exige de forcer.
 
 Inspectez le dessous depuis le point de vue du transpalette :
 
