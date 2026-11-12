@@ -9,6 +9,7 @@ tags: ["foldable pallet boxes", "manual handling", "returnable packaging", "ware
 reading: "6 min"
 file_size: ""
 date: 2026-08-15
+lastmod: 2026-11-12
 popular: false
 author: "Baoheng Plastic"
 ---
@@ -25,6 +26,10 @@ Do not turn a simple observation into a blanket approval. HSE's filters are indi
 
 ## Use the workstation decision table
 
+Swipe or scroll the tables horizontally to view every column.
+
+<div role="region" aria-label="Workstation decision table" tabindex="0" style="max-width:100%;overflow-x:auto">
+
 | Work step | Confirm before rollout | Hold and escalate when |
 | --- | --- | --- |
 | Open or fold sidewalls | The sequence is clear, hands can stay clear of pinch points, and the operator can work without excessive reach, twist, force, or unstable posture. | A panel sticks, requires forceful pulling, creates a trapping risk, or the sequence depends on an undocumented workaround. |
@@ -33,11 +38,15 @@ Do not turn a simple observation into a blanket approval. HSE's filters are indi
 | Move the box | The chosen pallet truck, forklift, trolley, conveyor, or manual method fits the actual box and route. | The route has slopes, poor surfaces, tight turns, obstructions, poor visibility, or a force/posture issue that was not assessed. |
 | Handle exceptions | A clearly identified owner can quarantine damage, unclear lock status, contamination, or a changed box revision. | The team has no hold area, no escalation owner, or no supplier/manufacturer instruction for the exception. |
 
+</div>
+
 The first outcome can be **proceed with the defined method**. The second is **proceed only after a controlled change**, such as better layout, a handling aid, revised stack rule, or clearer work instruction. The third is **hold for a more detailed assessment**. Choose the third whenever the task includes significant force, twisting, repetitive work, difficult grip, constrained space, variable conditions, or a near miss. Do not solve a design or layout problem by asking operators simply to “lift carefully.”
 
 ## Turn the check into an RFQ and launch record
 
 Keep the commercial and operational questions together:
+
+<div role="region" aria-label="RFQ and launch records" tabindex="0" style="max-width:100%;overflow-x:auto">
 
 | Record | Why it matters |
 | --- | --- |
@@ -46,6 +55,8 @@ Keep the commercial and operational questions together:
 | Intended work sequence and peak frequency | A single demonstration does not show the effort of a recurring shift task. |
 | Workstation drawing or photos, route, floor condition, and handling aids | These identify reach, space, push/pull, and stacking conditions that catalog data cannot prove. |
 | Operator feedback, observed exceptions, and an escalation owner | The people doing the task can expose practical problems before the purchase becomes a fleet-wide issue. |
+
+</div>
 
 If a return loop depends on foldability, assess the folding task and the return-space calculation separately. [Foldable pallet box return-space calculation](/resources/insights/2621-foldable-pallet-box-return-space-calculation/) helps test the logistics case; this page decides whether the proposed workstation needs a changed method, a handling aid, or a fuller review. For the wider choice between a pallet, box, or tote, use the [load carrier selection guide](/resources/insights/2643-plastic-load-carrier-selection-guide/).
 

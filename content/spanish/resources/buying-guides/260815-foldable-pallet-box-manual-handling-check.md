@@ -9,6 +9,7 @@ tags: ["cajas paletizables plegables", "manipulación manual", "embalaje retorna
 reading: "6 min"
 file_size: ""
 date: 2026-08-15
+lastmod: 2026-11-12
 popular: false
 author: "Baoheng Plastic"
 ---
@@ -25,6 +26,10 @@ No convierta una observación simple en una aprobación general. Los filtros de 
 
 ## Use la tabla de decisión del puesto
 
+Deslice o desplace las tablas horizontalmente para ver todas las columnas.
+
+<div role="region" aria-label="Tabla de decisión del puesto" tabindex="0" style="max-width:100%;overflow-x:auto">
+
 | Paso | Confirme antes de implantar | Retenga y escale cuando |
 | --- | --- | --- |
 | Abrir o plegar paneles | La secuencia es clara, las manos evitan puntos de atrapamiento y no exige alcance, torsión, fuerza o postura inestable excesivos. | Un panel se atasca, exige tirón fuerte, crea atrapamiento o requiere un arreglo no documentado. |
@@ -33,9 +38,13 @@ No convierta una observación simple en una aprobación general. Los filtros de 
 | Mover la caja | La transpaleta, carretilla, carro, transportador o método manual se ajusta a la caja y ruta reales. | Hay pendiente, suelo deficiente, giro cerrado, obstáculo, mala visibilidad o problema de fuerza/postura sin evaluar. |
 | Gestionar excepciones | Existe responsable para poner en cuarentena daños, contaminación, bloqueo incierto o cambio de versión. | No hay área de retención, responsable de escalamiento ni instrucción del fabricante. |
 
+</div>
+
 El resultado puede ser: avanzar con el método definido; avanzar solo después de un cambio controlado; o detenerse para una evaluación más detallada. Elija la última opción cuando haya fuerza significativa, torsión, repetición, agarre difícil, espacio limitado, condiciones variables o casi accidente. No sustituya una mejora de diseño o disposición por pedir a los operarios que “levanten con cuidado”.
 
 ## Convierta la comprobación en un registro de RFQ y lanzamiento
+
+<div role="region" aria-label="Registros de RFQ y puesta en servicio" tabindex="0" style="max-width:100%;overflow-x:auto">
 
 | Registro | Por qué importa |
 | --- | --- |
@@ -44,6 +53,8 @@ El resultado puede ser: avanzar con el método definido; avanzar solo después d
 | Secuencia prevista y frecuencia máxima | Una demostración no muestra el esfuerzo de una tarea repetida. |
 | Plano o fotos del puesto, ruta, suelo y ayudas | Revelan condiciones de alcance, espacio, empuje/tirón y apilado que el catálogo no prueba. |
 | Comentarios de operarios, excepciones y responsable | Quienes realizan la tarea pueden detectar problemas antes de una compra masiva. |
+
+</div>
 
 Si el circuito de retorno depende del plegado, evalúe el puesto y el cálculo de espacio de retorno por separado. La [calculadora de espacio de retorno](/resources/insights/2621-foldable-pallet-box-return-space-calculation/) prueba el caso logístico; esta página decide si el puesto necesita otro método, una ayuda o una revisión completa.
 

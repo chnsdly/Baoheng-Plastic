@@ -9,6 +9,7 @@ tags: ["caisses-palettes pliables", "manutention manuelle", "emballage réemploy
 reading: "6 min"
 file_size: ""
 date: 2026-08-15
+lastmod: 2026-11-12
 popular: false
 author: "Baoheng Plastic"
 ---
@@ -25,6 +26,10 @@ Une simple observation ne doit pas devenir une approbation générale. Les filtr
 
 ## Utilisez la table de décision du poste
 
+Faites défiler les tableaux horizontalement pour lire toutes les colonnes.
+
+<div role="region" aria-label="Table de décision du poste" tabindex="0" style="max-width:100%;overflow-x:auto">
+
 | Étape | À confirmer avant déploiement | Mettre en attente et escalader si |
 | --- | --- | --- |
 | Ouvrir ou plier les panneaux | La séquence est claire, les mains évitent les pincements et l'opérateur ne force pas, ne se tord pas ni ne travaille en posture instable. | Un panneau bloque, exige une traction forte, crée un pincement ou nécessite un contournement non documenté. |
@@ -33,9 +38,13 @@ Une simple observation ne doit pas devenir une approbation générale. Les filtr
 | Déplacer la caisse | Le transpalette, chariot, convoyeur ou mode manuel correspond à la caisse et au trajet réels. | Il y a pente, sol dégradé, virage serré, obstacle, mauvaise visibilité ou effort/posture non évalué. |
 | Gérer les exceptions | Un responsable peut isoler dommage, contamination, verrou incertain ou changement de version. | Il n'existe ni zone d'isolement, ni responsable, ni instruction fabricant pour l'exception. |
 
+</div>
+
 Le résultat est : procéder avec la méthode définie ; procéder après modification maîtrisée ; ou suspendre pour une évaluation plus détaillée. Choisissez la dernière option s'il existe effort important, torsion, répétition, prise difficile, espace contraint, conditions variables ou quasi-accident. Ne remplacez pas une amélioration de conception ou d'implantation par la consigne « soulevez avec précaution ».
 
 ## Transformez le contrôle en dossier RFQ et de lancement
+
+<div role="region" aria-label="Dossier de devis et de mise en service" tabindex="0" style="max-width:100%;overflow-x:auto">
 
 | Dossier | Pourquoi |
 | --- | --- |
@@ -44,6 +53,8 @@ Le résultat est : procéder avec la méthode définie ; procéder après modifi
 | Séquence prévue et fréquence de pointe | Une démonstration ne montre pas l'effort d'une tâche répétée. |
 | Plan ou photos du poste, trajet, sol et aides | Ils révèlent les conditions de portée, d'espace, de poussée/tirage et d'empilage invisibles dans un catalogue. |
 | Retours opérateurs, exceptions et responsable | Les personnes qui travaillent peuvent signaler les problèmes avant l'achat en volume. |
+
+</div>
 
 Si le circuit de retour dépend du pliage, évaluez séparément le poste et le calcul de volume de retour. Le [calcul de gain de volume](/resources/insights/2621-foldable-pallet-box-return-space-calculation/) teste l'intérêt logistique ; cette page indique si le poste exige une autre méthode, une aide ou une revue complète.
 
